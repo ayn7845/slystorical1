@@ -443,7 +443,7 @@ ITA_propaganda_campaigns = {
 
 		modifier = {
 			recruitable_population = 0.05
-			consumer_goods_expected_value = 0.15
+			consumer_goods_expected_value = 0.075
 		}
 
 		complete_effect = {

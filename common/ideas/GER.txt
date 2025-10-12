@@ -499,7 +499,7 @@ ideas = {
 			picture = ger_rebuild_the_nation
 
 			modifier = {
-				consumer_goods_expected_value = -0.50
+				consumer_goods_expected_value = -0.050
 			}
 		}
 
@@ -643,7 +643,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_expected_value = -0.15
+				consumer_goods_expected_value = -0.05
 			}
 		}
 
@@ -1027,7 +1027,7 @@ ideas = {
 			picture = HUN_treaty_of_triannon
 
 			modifier = {
-				consumer_goods_expected_value = -0.15
+				consumer_goods_expected_value = -0.05
 			}
 		}
 
@@ -1049,7 +1049,7 @@ ideas = {
 			picture = HUN_treaty_of_triannon
 
 			modifier = {
-				consumer_goods_expected_value = -0.15
+				consumer_goods_expected_value = -0.05
 				compliance_growth = 0.02
 			}
 		}
@@ -1081,7 +1081,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_expected_value = -0.2
+				consumer_goods_expected_value = -0.1
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				min_export = 0.15
@@ -1358,7 +1358,7 @@ ideas = {
 			picture = EST_exploit_the_banks
 
 			modifier = {
-				consumer_goods_expected_value = 0.1
+				consumer_goods_expected_value = 0.05
 			}
 		}
 
@@ -1377,7 +1377,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1407,7 +1407,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1437,7 +1437,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1467,7 +1467,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1497,7 +1497,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1527,7 +1527,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1557,7 +1557,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1587,7 +1587,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1617,7 +1617,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1647,7 +1647,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1677,7 +1677,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1707,7 +1707,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1737,7 +1737,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1767,7 +1767,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1797,7 +1797,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1827,7 +1827,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1857,7 +1857,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1887,7 +1887,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.33
+				consumer_goods_expected_value = -0.053
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1921,7 +1921,7 @@ ideas = {
 				#		has_dynamic_modifier = { modifier = GER_wirtschaftswunder_modifier }
 				#	}
 				#	set_variable = { #These numbers must match the once set in the event to stop the #mefo bills
-				#		GER_industrial_consumer_goods_expected_value = 0.1
+				#		GER_industrial_consumer_goods_expected_value = 0.05
 				#	}
 				#}
 				if = {
@@ -1935,7 +1935,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_expected_value = 0.40
+				consumer_goods_expected_value = 0.20
 			}
 		}
 
@@ -2054,7 +2054,7 @@ ideas = {
 				research_speed_factor = 0.1
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
-				consumer_goods_expected_value = -0.15
+				consumer_goods_expected_value = -0.05
 				local_resources_factor = 0.10
 			}
 		}
@@ -2973,7 +2973,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_expected_value = 0.025
 			}
 
 			targeted_modifier = {
@@ -3043,7 +3043,7 @@ ideas = {
 			picture = EST_exploit_the_banks
 
 			modifier = {
-				consumer_goods_expected_value = 0.1
+				consumer_goods_expected_value = 0.05
 			}
 		}
 

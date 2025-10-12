@@ -124,7 +124,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_expected_value = 0.1				
+				consumer_goods_expected_value = 0.05				
 			}
 		}
 
@@ -146,7 +146,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_expected_value = 0.05			
+				consumer_goods_expected_value = 0.025			
 			}
 		}
 		ROM_agrarian_economy_modernized = {
@@ -386,7 +386,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.1 
-				consumer_goods_expected_value = 0.05
+				consumer_goods_expected_value = 0.025
 			}
 		}
 
@@ -446,7 +446,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_expected_value = 0.025
 			}
 		}
 
@@ -773,7 +773,7 @@ ideas = {
 			}
 	
 			modifier = {
-				consumer_goods_expected_value = 0.1
+				consumer_goods_expected_value = 0.05
 				stability_factor = -0.4
 				production_speed_industrial_complex_factor = 0.40
 			}
@@ -824,7 +824,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_expected_value = 0.025
 				stability_factor = -0.2
 				production_speed_industrial_complex_factor = 0.40
 

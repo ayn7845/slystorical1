@@ -155,7 +155,7 @@ ideas = {
                 stability_factor = -0.1
                 industry_free_repair_factor = -0.5
                 industrial_capacity_factory = -0.25
-                consumer_goods_expected_value = -0.5
+                consumer_goods_expected_value = -0.05
             }
         }
 

@@ -1795,13 +1795,6 @@ focus_tree = {
 			}
 			
 			custom_effect_tooltip = SOV_increase_aircraft_production_ns_tt
-
-			add_tech_bonus = {
-				name = SOV_increase_aircraft_production
-				bonus = 1.0
-				uses = 2
-				category = cas_bomber
-			}
 		}
 	}
 

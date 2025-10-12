@@ -1816,7 +1816,7 @@ war_measures = {
 		cost = GER_war_bonds_var?50
 
 		modifier = {
-			consumer_goods_expected_value = -0.075
+			consumer_goods_expected_value = -0.05
 		}
 
 		ai_will_do = {

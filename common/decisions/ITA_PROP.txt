@@ -366,7 +366,7 @@ ITA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			consumer_goods_expected_value = -0.1
+			consumer_goods_expected_value = -0.03
 			production_speed_buildings_factor = 0.05
 		}
 

@@ -54,7 +54,8 @@ on_actions = {
 				}
 			
 			}
-			SOV = { 
+			SOV = {
+				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.05 }
 					
 			if = {
 				limit = {

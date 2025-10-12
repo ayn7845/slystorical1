@@ -31,7 +31,7 @@ FRA_maginot_line_dynamic_modifier = { #State Modifer
 	enable = { always = yes }
 
 	icon = GFX_modifiers_generic_defense
-    state_bunker_max_level_terrain_limit = 7
+    state_bunker_max_level_terrain_limit = 6
 }
 
 
@@ -169,7 +169,7 @@ AUS_habsburg_monarchy_restored = {
 	neutrality_drift = AUS_habsburg_monarchy_restored_neutrality_drift
 	drift_defence_factor = AUS_habsburg_monarchy_restored_drift_defence_factor
 	party_popularity_stability_factor = AUS_habsburg_monarchy_restored_party_popularity_stability_factor
-	consumer_goods_factor = AUS_habsburg_monarchy_restored_consumer_goods_factor
+	consumer_goods_expected_value = AUS_habsburg_monarchy_restored_consumer_goods_factor
 	training_time_factor = AUS_habsburg_monarchy_restored_training_time_factor
 	stability_factor = AUS_habsburg_monarchy_restored_stability_factor
 	political_power_factor = AUS_habsburg_monarchy_restored_political_power_factor
@@ -189,7 +189,7 @@ AUS_austrian_monarchy_restored = {
 	neutrality_drift = AUS_habsburg_monarchy_restored_neutrality_drift
 	drift_defence_factor = AUS_habsburg_monarchy_restored_drift_defence_factor
 	party_popularity_stability_factor = AUS_habsburg_monarchy_restored_party_popularity_stability_factor
-	consumer_goods_factor = AUS_habsburg_monarchy_restored_consumer_goods_factor
+	consumer_goods_expected_value = AUS_habsburg_monarchy_restored_consumer_goods_factor
 	training_time_factor = AUS_habsburg_monarchy_restored_training_time_factor
 	stability_factor = AUS_habsburg_monarchy_restored_stability_factor
 	political_power_factor = AUS_habsburg_monarchy_restored_political_power_factor
@@ -407,7 +407,7 @@ AUS_navy = {
 AUS_compensation_for_guarantee = { #bribe for guarantee
 	enable = { always = yes}
 	icon = GFX_idea_generic_goods_red_bonus
-	consumer_goods_factor = AUS_compensation_for_guarantee_consumer_goods_factor
+	consumer_goods_expected_value = AUS_compensation_for_guarantee_consumer_goods_factor
 }
 
 AUS_garrisoned_state_modifier = { #state modifier
@@ -463,7 +463,7 @@ GER_mefo_bills_modifier = { #MEFO Bills and Economy of Conquest uses the same co
 	enable = { always = yes }
 	icon = GFX_idea_ger_mefo_bills
 	custom_modifier_tooltip = GER_industrial_consumer_goods_factor_tt
-	consumer_goods_factor = GER_industrial_consumer_goods_factor
+	consumer_goods_expected_value = GER_industrial_consumer_goods_factor
 	civilian_intel_to_others = GER_industrial_civilian_intel_to_others
 	army_intel_to_others = GER_industrial_army_intel_to_others
 	navy_intel_to_others = GER_industrial_navy_intel_to_others
@@ -492,10 +492,19 @@ GER_mefo_bills_modifier = { #MEFO Bills and Economy of Conquest uses the same co
 }
 
 GER_economy_of_conquest_modifier = { #MEFO Bills and Economy of Conquest uses the same consumer goods modifier and tooltip
+	
+	remove_trigger = {
+		#This is a failsafe to avoid exploits where you can have BOTH Economy of Conquest AND Recovering Economy. The game isn't smart enough to handle the genius that is our player base
+		OR = {
+			has_dynamic_modifier = { modifier = GER_recovering_economy_modifier } 
+			has_dynamic_modifier = { modifier = GER_wirtschaftswunder_modifier } 
+		}
+	}
+
 	enable = { always = yes }
 	icon = GFX_idea_GER_economy_of_conquest
 	custom_modifier_tooltip = GER_industrial_consumer_goods_factor_tt
-	consumer_goods_factor = GER_industrial_consumer_goods_factor
+	consumer_goods_expected_value = GER_industrial_consumer_goods_factor
 	production_speed_arms_factory_factor = GER_industrial_production_speed_arms_factory_factor
 	production_speed_dockyard_factor = GER_industrial_production_speed_dockyard_factor
 	industrial_capacity_factory = GER_industrial_industrial_capacity_factory
@@ -522,7 +531,7 @@ GER_economy_of_conquest_modifier = { #MEFO Bills and Economy of Conquest uses th
 GER_recovering_economy_modifier = { #Recovering Economy NS #Aufrüstung and Recovering Economy/Wirtschaftswunder uses the same modifiers so that you can switch from Aufrüstung to Recovering Economy and keep the modifiers
 	enable = { always = yes }
 	icon = GFX_idea_GER_recovering_economy
-	consumer_goods_factor = GER_industrial_consumer_goods_factor
+	consumer_goods_expected_value = GER_industrial_consumer_goods_factor
 	production_speed_arms_factory_factor = GER_industrial_production_speed_arms_factory_factor
 	production_speed_dockyard_factor = GER_industrial_production_speed_dockyard_factor
 	industrial_capacity_factory = GER_industrial_industrial_capacity_factory
@@ -552,7 +561,7 @@ GER_recovering_economy_modifier = { #Recovering Economy NS #Aufrüstung and Reco
 GER_wirtschaftswunder_modifier = { #Wirtschaftswunder NS #Aufrüstung and Recovering Economy/Wirtschaftswunder uses the same modifiers so that you can switch from Aufrüstung to Recovering Economy and keep the modifiers
 	enable = { always = yes }
 	icon = GFX_idea_GER_wirtschaftswunder
-	consumer_goods_factor = GER_industrial_consumer_goods_factor
+	consumer_goods_expected_value = GER_industrial_consumer_goods_factor
 	production_speed_arms_factory_factor = GER_industrial_production_speed_arms_factory_factor
 	production_speed_dockyard_factor = GER_industrial_production_speed_dockyard_factor
 	industrial_capacity_factory = GER_industrial_industrial_capacity_factory
@@ -836,6 +845,8 @@ GER_communist_intel_modifier = {
 	communism_drift = GER_communist_intel_communism_drift
 	subversive_activites_upkeep = GER_communist_intel_subversive_activities_upkeep
 	intel_network_gain_factor = GER_communist_intel_intel_network_gain
+	decryption_factor = GER_communist_intel_decryption_factor
+	encryption_factor = GER_communist_intel_encryption_factor
 }
 
 GER_stasi_modifier = {
@@ -916,7 +927,7 @@ GER_alfred_rosenberg_modifier = { # Alfred Rosenberg NS
 	enable = { always = yes }
 	# This one granting the modifiers is hidden but they can be observed in the scripted GUI by hovering over Rosenberg
 	#icon = GFX_portrait_GER_alfred_rosenberg_small  Yes this is intentional 
-	consumer_goods_factor = GER_alfred_rosenberg_modifier_consumer_goods_factor
+	consumer_goods_expected_value = GER_alfred_rosenberg_modifier_consumer_goods_factor
 	production_speed_arms_factory_factor = GER_alfred_rosenberg_modifier_production_speed_arms_factory_factor
 	industrial_capacity_factory = GER_alfred_rosenberg_modifier_industrial_capacity_factory
 	subjects_autonomy_gain = GER_alfred_rosenberg_modifier_subjects_autonomy_gain
@@ -957,7 +968,6 @@ GER_blitzkrieg_modifier = { #Attack bonuses for Germany in enemy states
 	icon = GFX_modifiers_GER_blitzkrieg
 
 	breakthrough_factor = 0.05
-	army_speed_factor = 0.05
 	army_armor_attack_factor = 0.05
 	#motorized_attack_factor = GER_motor_and_mech_attack_motorized_attack_factor
 	#mechanized_attack_factor = GER_motor_and_mech_attack_mechanized_attack_factor
@@ -967,9 +977,8 @@ GER_blitzkrieg_modifier_lvl_2 = { #Attack bonuses for Germany in enemy states
 	enable = { always = yes } 
 	icon = GFX_modifiers_GER_blitzkrieg
 
-	breakthrough_factor = 0.05
+	breakthrough_factor = 0.075
 	army_armor_attack_factor = 0.1
-	army_speed_factor = 0.1
 	#motorized_attack_factor = GER_motor_and_mech_attack_motorized_attack_factor
 	#mechanized_attack_factor = GER_motor_and_mech_attack_mechanized_attack_factor
 	custom_modifier_tooltip = GER_motor_and_mech_attack_tt 
@@ -980,7 +989,6 @@ GER_blitzkrieg_modifier_lvl_3 = { #Attack bonuses for Germany in enemy states
 
 	breakthrough_factor = 0.1
 	army_armor_attack_factor = 0.15
-	army_speed_factor = 0.1
 	#motorized_attack_factor = GER_motor_and_mech_attack_motorized_attack_factor
 	#mechanized_attack_factor = GER_motor_and_mech_attack_mechanized_attack_factor
 	custom_modifier_tooltip = GER_motor_and_mech_attack_tt 
@@ -1355,7 +1363,7 @@ enable = { always = yes }
 		}
 	}
 	
-	consumer_goods_factor = BEL_economic_downturn_consumer_goods_factor
+	consumer_goods_expected_value = BEL_economic_downturn_consumer_goods_factor
 	industrial_capacity_factory = BEL_economic_downturn_industrial_capacity_factory
 
 }
@@ -1377,7 +1385,7 @@ BEL_gold_reserves_dynamic_modifier = {
 enable = { always = yes }
 	icon = GFX_idea_SPR_seize_the_gold_reserves 
 	
-	consumer_goods_factor = BEL_gold_reserves_consumer_goods_factor
+	consumer_goods_expected_value = BEL_gold_reserves_consumer_goods_factor
 }
 
 #Rexist Legion
@@ -1551,7 +1559,7 @@ COG_belgian_congo_colonial_dynamic_modifier = {
 	democratic_drift = BEL.COG_belgian_congo_colonial_dynamic_modifier_democratic_drift
 	autonomy_gain_global_factor = BEL.COG_belgian_congo_colonial_dynamic_modifier_autonomy_gain_global_factor
 	research_speed_factor = BEL.COG_belgian_congo_colonial_dynamic_modifier_research_speed_factor
-	consumer_goods_factor = BEL.COG_belgian_congo_colonial_dynamic_modifier_consumer_goods_factor
+	consumer_goods_expected_value = BEL.COG_belgian_congo_colonial_dynamic_modifier_consumer_goods_factor
 	local_resources_factor = BEL.COG_belgian_congo_colonial_dynamic_modifier_local_resources_factor
 	stability_factor = BEL.COG_belgian_congo_colonial_dynamic_modifier_stability_factor
 	production_speed_industrial_complex_factor = BEL.COG_belgian_congo_colonial_dynamic_modifier_production_speed_industrial_complex_factor
@@ -1567,6 +1575,13 @@ COG_belgian_congo_colonial_dynamic_modifier = {
 # Colonial Returns
 BEL_belgian_congo_colonial_returns_dynamic_modifier = {
 	enable = { always = yes }
+	remove_trigger = {
+		COG = {
+			NOT = {
+				is_subject_of =  ROOT
+			}
+		}
+	}
 	icon = GFX_idea_BEL_belgian_congo_colonial_returns_dynamic_modifier
 	political_power_factor = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_political_power_factor
 	resource_trade_cost_bonus_per_factory = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_resource_trade_cost_bonus_per_factory
@@ -1574,7 +1589,7 @@ BEL_belgian_congo_colonial_returns_dynamic_modifier = {
 	industrial_capacity_factory = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_industrial_capacity_factory 
 	industrial_capacity_dockyard = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_industrial_capacity_dockyard
 	autonomy_manpower_share = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_autonomy_manpower_share
-	consumer_goods_factor = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_consumer_goods_factor
+	consumer_goods_expected_value = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_consumer_goods_factor
 	air_training_xp_gain_factor = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_air_training_xp_gain_factor
 	production_speed_air_base_factor = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_production_speed_air_base_factor
 }

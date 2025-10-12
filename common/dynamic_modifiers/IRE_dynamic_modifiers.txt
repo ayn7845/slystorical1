@@ -6,7 +6,7 @@ enable = { always = yes }
 	remove_trigger = { 
 		AND = {
 			check_variable = {
-				var = IRE_economic_downturn_consumer_goods_factor
+				var = IRE_economic_downturn_consumer_goods_expected_value
 				value = 0
 				compare = less_than_or_equals
 			}
@@ -18,7 +18,7 @@ enable = { always = yes }
 		}
 	}
 	
-	consumer_goods_factor = IRE_economic_downturn_consumer_goods_factor
+	consumer_goods_expected_value = IRE_economic_downturn_consumer_goods_expected_value
 	industrial_capacity_factory = IRE_economic_downturn_industrial_capacity_factory
 
 }

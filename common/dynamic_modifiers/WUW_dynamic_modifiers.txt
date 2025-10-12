@@ -463,7 +463,7 @@ GER_mefo_bills_modifier = { #MEFO Bills and Economy of Conquest uses the same co
 	enable = { always = yes }
 	icon = GFX_idea_ger_mefo_bills
 	custom_modifier_tooltip = GER_industrial_consumer_goods_factor_tt
-	consumer_goods_expected_value = GER_industrial_consumer_goods_factor
+	consumer_goods_factor = GER_industrial_consumer_goods_factor
 	civilian_intel_to_others = GER_industrial_civilian_intel_to_others
 	army_intel_to_others = GER_industrial_army_intel_to_others
 	navy_intel_to_others = GER_industrial_navy_intel_to_others
@@ -504,7 +504,7 @@ GER_economy_of_conquest_modifier = { #MEFO Bills and Economy of Conquest uses th
 	enable = { always = yes }
 	icon = GFX_idea_GER_economy_of_conquest
 	custom_modifier_tooltip = GER_industrial_consumer_goods_factor_tt
-	consumer_goods_expected_value = GER_industrial_consumer_goods_factor
+	consumer_goods_factor = GER_industrial_consumer_goods_factor
 	production_speed_arms_factory_factor = GER_industrial_production_speed_arms_factory_factor
 	production_speed_dockyard_factor = GER_industrial_production_speed_dockyard_factor
 	industrial_capacity_factory = GER_industrial_industrial_capacity_factory
@@ -531,7 +531,7 @@ GER_economy_of_conquest_modifier = { #MEFO Bills and Economy of Conquest uses th
 GER_recovering_economy_modifier = { #Recovering Economy NS #Aufrüstung and Recovering Economy/Wirtschaftswunder uses the same modifiers so that you can switch from Aufrüstung to Recovering Economy and keep the modifiers
 	enable = { always = yes }
 	icon = GFX_idea_GER_recovering_economy
-	consumer_goods_expected_value = GER_industrial_consumer_goods_factor
+	consumer_goods_factor = GER_industrial_consumer_goods_factor
 	production_speed_arms_factory_factor = GER_industrial_production_speed_arms_factory_factor
 	production_speed_dockyard_factor = GER_industrial_production_speed_dockyard_factor
 	industrial_capacity_factory = GER_industrial_industrial_capacity_factory
@@ -561,7 +561,7 @@ GER_recovering_economy_modifier = { #Recovering Economy NS #Aufrüstung and Reco
 GER_wirtschaftswunder_modifier = { #Wirtschaftswunder NS #Aufrüstung and Recovering Economy/Wirtschaftswunder uses the same modifiers so that you can switch from Aufrüstung to Recovering Economy and keep the modifiers
 	enable = { always = yes }
 	icon = GFX_idea_GER_wirtschaftswunder
-	consumer_goods_expected_value = GER_industrial_consumer_goods_factor
+	consumer_goods_factor = GER_industrial_consumer_goods_factor
 	production_speed_arms_factory_factor = GER_industrial_production_speed_arms_factory_factor
 	production_speed_dockyard_factor = GER_industrial_production_speed_dockyard_factor
 	industrial_capacity_factory = GER_industrial_industrial_capacity_factory

@@ -125,85 +125,13 @@ GER_mefo_bills_category = {
 		}
 
 		timeout_effect = {
-			if = {
-				limit = {
-					has_country_flag = ger_has_cancelled_mefo
+			add_to_variable = { 
+					GER_mefo_power_cost = 0.15
 				}
-				#GER_remove_mefo_bills = yes
-				#1
-				GER_pay_back_mefo_bills = yes
-			}
-			else = {
-				custom_effect_tooltip = GER_mefo_bills_mission_tt #TODO_Danne Re-write this to better fit the new circumstances!
-				custom_effect_tooltip = GER_mefo_bills_effect_in_days
-				hidden_effect = {
-					set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
-					set_country_flag = paid_for_mefo
-				}
-				#GER_mefo_bills_level_up = yes
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
-					}
-					hidden_effect = { set_variable = { var = GER_mefo_bill_counter value = 10 } }
-				}
-				add_to_variable = { var = GER_mefo_bill_counter value = 10 }
-
-				hidden_effect = {
-					activate_mission = GER_mefo_bills_mission
-				}
-			}
 		}
 
 		ai_will_do = {
 			base = 200
-		}
-	}
-
-	GER_cancel_mefos = {
-
-		icon = ger_mefo_bills
-
-		ai_will_do = {
-			base = 0
-		}
-
-		available = {
-			has_game_rule = {
-				rule = Germany_Cancel_Mefo
-				option = Germany_cancel_MEFO_Bills
-			}
-		}
-
-		cost = 0
-
-		fire_only_once = no
-
-		visible = {
-			has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
-			#hidden_trigger = { #These are showing up as triggers for cancelation
-			#	NOT = {
-			#		has_country_flag = ger_has_cancelled_mefo
-			#		has_idea = GER_mefo_bills_ended
-			#	}
-			#}
-		}
-
-		cancel_if_not_visible = yes
-
-		remove_effect = {
-			set_country_flag = ger_has_cancelled_mefo
-		}
-
-		complete_effect = {
-			effect_tooltip = {
-				retire_character = GER_hjalmar_schacht
-				show_ideas_tooltip = hjalmar_schacht
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			GER_stop_rearmament = yes
 		}
 	}
 

@@ -9043,8 +9043,6 @@ leader_traits = {
 
 	energy_supply_company = {
 		random = no
-
-		consumer_goods_expected_value = -0.025
 		#project_research_time_factor = -0.1 #TODO_Manu: Figure out syntax (no doc available)
 
 		ai_will_do = {
@@ -10397,7 +10395,6 @@ leader_traits = {
 	GER_reich_minister_of_economy = { #Funk 
 		sprite = 10
 		random = no
-		consumer_goods_expected_value = -0.03
 		production_speed_supply_node_factor = 0.15
 		production_lack_of_resource_penalty_factor = -0.05
 		industry_free_repair_factor = 0.15
@@ -10464,7 +10461,6 @@ leader_traits = {
 		random = no
 		political_advisor_cost_factor = -0.15
 		political_power_factor = 0.1
-		consumer_goods_expected_value = -0.025
 	}
 
 	GER_reich_architect = { #Speer
@@ -10692,7 +10688,6 @@ leader_traits = {
 		democratic_drift = -0.05
 		neutrality_drift = -0.05
 		fascism_acceptance = -20
-		consumer_goods_expected_value = -0.03
 		war_support_factor = 0.05
 	}
 

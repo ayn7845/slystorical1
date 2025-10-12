@@ -155,7 +155,7 @@ ideas = {
                 stability_factor = -0.1
                 industry_free_repair_factor = -0.5
                 industrial_capacity_factory = -0.25
-                consumer_goods_factor = -0.5
+                consumer_goods_expected_value = -0.5
             }
         }
 
@@ -238,7 +238,7 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 				industry_free_repair_factor = 0.20
 				industry_repair_factor = 0.30
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
 				}
 		}
 
@@ -265,7 +265,7 @@ ideas = {
 			modifier = {
 				military_industrial_organization_research_bonus = -0.1
 				production_factory_efficiency_gain_factor = -0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				conversion_cost_civ_to_mil_factor = -0.25
 				industrial_capacity_factory = 0.10
 				}

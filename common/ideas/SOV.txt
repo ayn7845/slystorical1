@@ -124,7 +124,7 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.15
 				production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = 0.10
+				consumer_goods_expected_value = 0.10
 				production_speed_industrial_complex_factor = 0.05
 			}
 		}
@@ -143,7 +143,7 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.1 #-0.1
 				production_factory_max_efficiency_factor = 0.05 #0.05
-				consumer_goods_factor = 0.2 #0.2
+				consumer_goods_expected_value = 0.2 #0.2
 				production_speed_industrial_complex_factor = 0.05 #0.05
 				industrial_concern_cost_factor = -0.15 #-0.15
 			}
@@ -882,7 +882,7 @@ ideas = {
 			modifier = {
 				industry_repair_factor = 0.1
 				production_speed_infrastructure_factor = 0.1
-				consumer_goods_factor = 0.10
+				consumer_goods_expected_value = 0.10
 			}
 		}
 
@@ -922,7 +922,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.05
-				consumer_goods_factor = -0.06
+				consumer_goods_expected_value = -0.06
 				global_building_slots = 1
 			}
 		}
@@ -1378,7 +1378,7 @@ ideas = {
 				research_speed_factor = 0.02
 				drift_defence_factor = 0.05
 				communism_drift = 0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 
@@ -1685,7 +1685,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
 				cic_to_overlord_factor = 0.5
 				mic_to_overlord_factor = 0.5
 				extra_trade_to_overlord_factor = 0.25
@@ -1707,7 +1707,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_expected_value = -0.25
 				cic_to_overlord_factor = 0.5
 				mic_to_overlord_factor = 0.5
 				extra_trade_to_overlord_factor = 0.25
@@ -1730,7 +1730,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
 				cic_to_overlord_factor = 0.5
 				mic_to_overlord_factor = 0.5
 				extra_trade_to_overlord_factor = 0.25
@@ -1803,7 +1803,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
 				cic_to_overlord_factor = 0.5
 				mic_to_overlord_factor = 0.5
 				extra_trade_to_overlord_factor = 0.25
@@ -1825,7 +1825,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_expected_value = -0.25
 				cic_to_overlord_factor = 0.5
 				mic_to_overlord_factor = 0.5
 				extra_trade_to_overlord_factor = 0.25
@@ -1848,7 +1848,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
 				cic_to_overlord_factor = 0.5
 				mic_to_overlord_factor = 0.5
 				extra_trade_to_overlord_factor = 0.25
@@ -1888,7 +1888,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.10
+				consumer_goods_expected_value = -0.10
 				country_resource_steel = 20 
 				country_resource_oil = 30
 				country_resource_chromium = 6
@@ -2003,7 +2003,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
 			}
 		}
 
@@ -2297,7 +2297,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.10
+				consumer_goods_expected_value = -0.10
 				industry_repair_factor = 0.25
 			}
 		}
@@ -2381,7 +2381,7 @@ ideas = {
 				communism_drift = -0.01
 				stability_factor = 0.1
 				political_power_factor = 0.05
-				consumer_goods_factor = -0.10
+				consumer_goods_expected_value = -0.10
 			}
 		}
 		SOV_church_power_4 = {
@@ -2403,7 +2403,7 @@ ideas = {
 				communism_drift = -0.01
 				stability_factor = 0.1
 				political_power_factor = 0.1
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
 			}
 		}
 
@@ -2462,7 +2462,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.10
+				consumer_goods_expected_value = -0.10
 				conscription = 0.01
 			}
 		}
@@ -2894,7 +2894,7 @@ ideas = {
 
 			modifier = {
 				conscription = 0.01
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
 				global_building_slots_factor = -0.1
 			}
 		}
@@ -2914,7 +2914,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
 			}
 		}
 		SOV_local_organizations_idea = {
@@ -3034,7 +3034,7 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = -0.1
-				consumer_goods_factor = 0.20
+				consumer_goods_expected_value = 0.20
 			}
 		}
 		SOV_covert_military_buildup_idea = {
@@ -3070,7 +3070,7 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = -0.05
-				consumer_goods_factor = 0.30
+				consumer_goods_expected_value = 0.30
 			}
 		}
 
@@ -3118,7 +3118,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_expected_value = -0.25
 			}
 		}
 
@@ -3137,7 +3137,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
 				attrition = -0.1
 			}
 		}
@@ -3377,7 +3377,7 @@ ideas = {
 				cic_to_target_factor = 0.05
 			}
 			modifier = {
-				consumer_goods_factor = -0.10
+				consumer_goods_expected_value = -0.10
 			}
 		}
 
@@ -3409,7 +3409,7 @@ ideas = {
 				overlord_trade_cost_factor = -0.2
 				cic_to_overlord_factor = 0.15
 				mic_to_overlord_factor = 0.15
-				consumer_goods_factor = -0.10
+				consumer_goods_expected_value = -0.10
 			}
 		}
 	}
@@ -9613,7 +9613,7 @@ ideas = {
 			traits = { industrial_concern }
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 			
 			ai_will_do = {
@@ -9844,7 +9844,7 @@ ideas = {
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
 				production_factory_max_efficiency_factor = 0.1
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
 			}
 		}
 
@@ -9965,7 +9965,7 @@ ideas = {
 				license_purchase_cost = -0.25
 				line_change_production_efficiency_factor = 0.1
 				production_lack_of_resource_penalty_factor = -0.1
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
 			}
 		}
 
@@ -10086,7 +10086,7 @@ ideas = {
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
 				production_factory_efficiency_gain_factor = 0.05
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
 			}
 		}
 
@@ -10205,7 +10205,7 @@ ideas = {
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
 				production_factory_start_efficiency_factor = 0.1
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
 			}
 		}
 

@@ -10,7 +10,7 @@ ideas = {
                 army_defence_factor = -0.50
                 breakthrough_factor = -0.60
                 winter_attrition_factor = 0.50
-                consumer_goods_factor = 0.80
+                consumer_goods_expected_value = 0.80
             }
         }
         winter_of_1942 = {
@@ -167,7 +167,7 @@ ideas = {
             }
 
             modifier = { 
-                consumer_goods_factor = 1
+                consumer_goods_expected_value = 1
             }
         }
     }

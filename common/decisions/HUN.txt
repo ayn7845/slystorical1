@@ -333,7 +333,7 @@ HUN_gyor_program_initiatives_category = {
 		cost = 75
 
 		modifier = {
-			consumer_goods_factor = 0.2
+			consumer_goods_expected_value = 0.2
 		}
 
 		complete_effect = { 
@@ -420,7 +420,7 @@ HUN_gyor_program_initiatives_category = {
 		cost = 75
 
 		modifier = {
-			consumer_goods_factor = 0.15
+			consumer_goods_expected_value = 0.15
 		}
 
 		complete_effect = { 
@@ -496,7 +496,7 @@ HUN_gyor_program_initiatives_category = {
 		cost = 50
 
 		modifier = {
-			consumer_goods_factor = 0.15
+			consumer_goods_expected_value = 0.15
 		}
 
 		complete_effect = { 
@@ -576,7 +576,7 @@ HUN_gyor_program_initiatives_category = {
 		cost = 50
 
 		modifier = {
-			consumer_goods_factor = 0.15
+			consumer_goods_expected_value = 0.15
 		}
 
 		complete_effect = { 
@@ -660,7 +660,7 @@ HUN_gyor_program_initiatives_category = {
 		cost = 50
 
 		modifier = {
-			consumer_goods_factor = 0.2
+			consumer_goods_expected_value = 0.2
 		}
 
 		complete_effect = { 
@@ -772,7 +772,7 @@ HUN_gyor_program_initiatives_category = {
 		cost = 100
 
 		modifier = {
-			consumer_goods_factor = 0.2
+			consumer_goods_expected_value = 0.2
 		}
 
 		complete_effect = { 
@@ -865,7 +865,7 @@ HUN_gyor_program_initiatives_category = {
 		cost = 50
 
 		modifier = {
-			consumer_goods_factor = 0.1
+			consumer_goods_expected_value = 0.1
 		}
 
 		complete_effect = { 
@@ -926,7 +926,7 @@ HUN_gyor_program_initiatives_category = {
 		cost = 50
 
 		modifier = {
-			consumer_goods_factor = 0.20
+			consumer_goods_expected_value = 0.20
 		}
 
 		complete_effect = { 
@@ -1005,7 +1005,7 @@ HUN_gyor_program_initiatives_category = {
 		cost = 25
 
 		modifier = {
-			consumer_goods_factor = 0.15
+			consumer_goods_expected_value = 0.15
 		}
 
 		complete_effect = { 
@@ -1080,7 +1080,7 @@ HUN_gyor_program_initiatives_category = {
 		cost = 35
 
 		modifier = {
-			consumer_goods_factor = 0.15
+			consumer_goods_expected_value = 0.15
 		}
 
 		complete_effect = { 

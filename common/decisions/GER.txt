@@ -109,11 +109,8 @@ GER_mefo_bills_category = {
 		fire_only_once = yes
 
 		cancel_trigger = {
-			hidden_trigger = {
-				OR = {
-					NOT = { has_dynamic_modifier = { modifier = GER_mefo_bills_modifier } }
-					has_idea = GER_mefo_bills_ended
-				}
+			GER = {
+				has_war = yes
 			}
 		}
 
@@ -125,8 +122,12 @@ GER_mefo_bills_category = {
 		}
 
 		timeout_effect = {
+			custom_effect_tooltip = GER_mefo_bills_effect_in_days
 			add_to_variable = { 
-					GER_mefo_power_cost = 0.15
+				GER_mefo_power_cost = 0.15
+				}
+			hidden_effect = {
+					activate_mission = GER_mefo_bills_mission
 				}
 		}
 

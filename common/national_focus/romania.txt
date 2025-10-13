@@ -636,67 +636,30 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ROM_appoint_german_friendly_government
+		id = Polish_Slums
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = ROM_elections_of_1937 }
-		x = 1
+		prerequisite = { focus = ROM_national_recovery }
+		x = 6
 		y = 1
-		relative_position_id = ROM_elections_of_1937
+		relative_position_id = ROM_national_recovery
 
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_war_with = GER
-			}
-		}
+		cost = 1
 
 		available = {
-			is_subject = no
-			GER = {
-				is_faction_leader = yes
-				has_government = fascism
-			}
-			# has_completed_focus = ROM_elections_of_1937
-		}
-
-		bypass = {
-
+			has_full_control_of_state = 43
+			has_full_control_of_state = 155
+			has_full_control_of_state = 974
+			has_full_control_of_state = 973
+			has_full_control_of_state = 154
+		
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			set_rule = { can_join_factions = yes }
-			GER = { add_to_faction = ROOT }
-			add_popularity = {
-				popularity = 0.05
-				ideology = fascism
-			}
-
-			custom_effect_tooltip = CHL_skip_one_line_tt
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = ROM_mihail_sturdza
-			add_stability = -0.05
-			add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = GER }
-			GER = { add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = ROOT } }
-		
-
-			custom_effect_tooltip = CHL_skip_one_line_tt
-
+			add_ideas = free_trade
 			
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			764 = {
-				add_claim_by = ROOT
-			}
-
 		}
 	}
 

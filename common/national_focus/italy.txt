@@ -7306,32 +7306,7 @@ focus_tree = {
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_all_eth_initial_states_controlled_tt
-				NOT = {
-					any_state = {
-						is_initial_ethiopian_state = yes
-						is_controlled_by_ROOT_or_subject = no
-					}
-				}
-			}
 			
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = ITA_the_new_emperor_of_ethiopia_has_idea_vittorio_emanuele_tt
-					OR = {
-						has_idea = vittorio_emanuele
-						has_idea = vittorio_emanuele_king_of_albania
-					}
-				}
-				has_country_leader = {
-					character = ITA_vittorio_emanuele_iii
-					ruling_only = yes
-				}
-				has_completed_focus = ITA_capo_supremo
-				has_completed_focus = ITA_divino_duce
-			}
-			is_subject = no
 		}
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -12179,19 +12154,6 @@ focus = {
 		cost = 1
 		available = {
 			GER = { has_war = yes }
-			GER = { controls_state = 16 }
-			is_subject = no
-			GRE = { exists = yes }
-			NOT = { is_in_faction_with = GRE }
-			NOT = { has_guaranteed = GRE }
-			NOT = { has_non_aggression_pact_with = GRE }
-			NOT = { GRE = { is_subject_of = ROOT } }
-
-			YUG = { exists = yes }
-			NOT = { is_in_faction_with = YUG }
-			NOT = { has_guaranteed = YUG }
-			NOT = { has_non_aggression_pact_with = YUG }
-			NOT = { YUG = { is_subject_of = ROOT } }
 		}
 
 		bypass = {

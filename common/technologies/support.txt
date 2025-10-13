@@ -1937,9 +1937,10 @@ technologies = {
 
 	sp_armored_maintenance_tech = {
 		allow = {
-	 		ROOT = {
-				has_tech = special_armored_vechile
-			}
+	 		#ROOT = {
+				#has_tech = special_armored_vechile
+			#}
+			always = no
 		}
 
 		is_special_project_tech = yes

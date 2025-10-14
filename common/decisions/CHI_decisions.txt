@@ -14,7 +14,7 @@ CHI_army_reform = {
 			tag = CHI
 			has_war_with = JAP
 			OR = {
-			casualties > 750000
+			casualties > 1000000
 			surrender_progress > 0.12			
 				}
 		    }
@@ -163,7 +163,7 @@ CHI_army_reform = {
 			tag = CHI
 			has_war_with = JAP
 			OR = {
-			casualties > 1500000
+			casualties > 2500000
 			surrender_progress > 0.34			
 		    }
         }
@@ -297,7 +297,7 @@ CHI_army_reform = {
 			tag = CHI
 			has_war_with = JAP
 			OR = {
-			casualties > 4500000
+			casualties > 6500000
 			surrender_progress > 0.60			
 		   	 	}			
 		    }

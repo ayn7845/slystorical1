@@ -45,6 +45,9 @@ CHI_army_reform = {
 		            infantry = { x = 1 y = 3 }
 		            infantry = { x = 1 y = 4 }
 				}
+				support = {  		
+					anti_air = { x = 0 y = 0 }
+				}
 			}
 			every_state = {
 				limit = {	
@@ -101,6 +104,10 @@ CHI_army_reform = {
 				}
 			}
 			add_ideas = CHI_wave1
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment_1
+				amount = 5000
+			}
 		}
 	}
 
@@ -147,6 +154,9 @@ CHI_army_reform = {
 		            infantry = { x = 1 y = 2 }
 		            infantry = { x = 1 y = 3 }
 		            infantry = { x = 1 y = 4 }
+				}
+				support = {  		
+					anti_air = { x = 0 y = 0 }
 				}
 			}
 			every_state = {
@@ -253,6 +263,9 @@ CHI_army_reform = {
 		            infantry = { x = 1 y = 2 }
 		            infantry = { x = 1 y = 3 }
 		            infantry = { x = 1 y = 4 }
+				}
+				support = {  		
+					anti_air = { x = 0 y = 0 }
 				}
 			}
 			every_state = {

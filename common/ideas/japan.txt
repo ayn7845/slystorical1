@@ -39,6 +39,46 @@ ideas = {
 				can_create_factions = no
 			}
 		}
+		imperial_society = {
+			name = "Imperial Society"
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			picture = jap_militarism_shogun
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				#production_speed_rail_way_factor = 0.2
+				#production_speed_supply_node_factor = 0.2
+				#stability_factor = 0.10
+				#global_building_slots_factor = 1
+			}
+		}
+		kwantung_army = {
+
+		name =  "Kwantung Army Ambitious"
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			picture = generic_japanese_conflict
+			removal_cost = -1
+	
+			modifier = {
+				supply_node_range = 0.25
+			}
+		}
 	
 			JAP_japan_patriarchate_restored = {
 			picture = YUG_orthodox_church_support

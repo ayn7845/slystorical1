@@ -1,0 +1,504 @@
+﻿division_template = {
+	priority = 2
+	name = "EARLY CHI" 	
+	division_names_group = JAP_INF_01
+				regiments = {		
+					infantry = { x = 0 y = 0 }		
+					infantry = { x = 0 y = 1 }		
+					infantry = { x = 0 y = 2 }	
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }		
+					infantry = { x = 1 y = 0 }		
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }		
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }		
+					infantry = { x = 2 y = 0 }			
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }	
+					infantry = { x = 2 y = 4 }		
+					infantry = { x = 3 y = 0 }
+					#infantry = { x = 3 y = 1 }
+					#infantry = { x = 3 y = 2 }
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
+					artillery_brigade = { x = 4 y = 3 }	
+					#medium_tank_destroyer_brigade = { x = 4 y = 2 }
+					#medium_tank_destroyer_brigade = { x = 4 y = 3 }
+				}
+				support = {  		
+					artillery = { x = 0 y = 0 }
+					anti_air = { x = 0 y = 1 }
+					engineer = { x = 0 y = 2 }
+					field_hospital = { x = 0 y = 3 }
+					logistics_company = { x = 0 y = 4 }
+					#light_tank_recon = { x = 0 y = 5 }
+				}
+			}
+	division_template = {
+		name = "20w MARINE"				#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
+		division_names_group = JAP_MAR_01
+			regiments = {
+			marine = { x = 0 y = 0 }
+			marine = { x = 0 y = 1 }
+			marine = { x = 0 y = 2 }
+			marine = { x = 0 y = 3 }
+			marine = { x = 0 y = 4 }
+			marine = { x = 1 y = 0 }
+			marine = { x = 1 y = 1 }
+			marine = { x = 1 y = 2 }
+			marine = { x = 1 y = 3 }
+			marine = { x = 1 y = 4 }
+		}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}	
+	priority = 2
+	}
+##### OOB #####
+
+units = { 
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "20w MARINE"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12043
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12043
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11822
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11822
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11822
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9776
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9776
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6969
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6969
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3955
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3955
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6904
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6904
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1137
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1137
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1137
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1590
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1590
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 828
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 828
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7545
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7545
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4612
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4612
+		division_template = "EARLY CHI"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+	}
+}
+
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	add_equipment_to_stockpile = {
+		type = light_tank_equipment_1
+		amount = 600
+		producer = JAP	
+		}
+
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 16000
+		producer = JAP	
+		}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 2000
+		producer = JAP	
+		}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 2000
+		producer = JAP	
+		}
+	}

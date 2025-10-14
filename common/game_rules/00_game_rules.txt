@@ -190,6 +190,11 @@ china_war_difficulty = {
 		text = "REasy"
 		desc = "China will get no divisions at all (Not Recommmended)"
 	}
+	option = {
+		name = spawns
+		text = "RSpawn ins"
+		desc = "China will get spawn in divisions(Not Recommmended)"
+	}
 	default = {
 		name = yes
 		text = "GNormal"

@@ -102,6 +102,42 @@ CHI_army_reform = {
 					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
 					owner = CHI
 				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
 			}
 			add_ideas = CHI_wave1
 			add_equipment_to_stockpile = {
@@ -172,6 +208,30 @@ CHI_army_reform = {
 						is_controlled_by = CHI
 					}
 					
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
 				}
 				create_unit = {
 					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"

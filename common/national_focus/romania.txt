@@ -39,7 +39,7 @@ focus_tree = {
 		id = ROM_encourage_trade_with_germany
 		prerequisite = { focus = ROM_national_recovery }
 		
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_GER_prioritize_the_four_year_plan
 		x = -2
 		y = 1
 		relative_position_id = ROM_national_recovery
@@ -154,7 +154,7 @@ focus_tree = {
 		prerequisite = { focus = ROM_national_recovery }
 		mutually_exclusive = { focus = ROM_the_stabilization_plan }
 		
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_focus_PER_increase_oil_sales
 		x = 2
 		y = 1
 		relative_position_id = ROM_national_recovery
@@ -476,7 +476,7 @@ focus_tree = {
 		id = ROM_ensure_agricultural_self_sufficiency
 		prerequisite = { focus = ROM_more_efficient_agricultural_procurement }
 		
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_BEL_christian_corporatism
 		x = 0
 		y = 1
 		relative_position_id = ROM_more_efficient_agricultural_procurement
@@ -541,6 +541,10 @@ focus_tree = {
 		y = 0
 
 		cost = 5
+
+		available = {
+			date > 1937.6.1
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -618,7 +622,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_expand_the_university_of_bucharest
-		icon = GFX_focus_research
+		icon = GFX_focus_ARG_universidad_de_buenos_aires
 		prerequisite = { focus = ROM_national_recovery }
 		x = -4
 		y = 1
@@ -637,7 +641,7 @@ focus_tree = {
 
 	focus = {
 		id = Polish_Slums
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_SOV_zemsky_sobor
 		prerequisite = { focus = ROM_national_recovery }
 		x = 6
 		y = 1
@@ -1659,7 +1663,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_civil_works
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_BEL_belgica
 		prerequisite = { focus = ROM_national_recovery  }
 		x = 4
 		y = 1

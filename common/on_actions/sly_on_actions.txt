@@ -27,6 +27,7 @@ on_actions = {
 				amount = 150000
 				producer = CHI	
 				}
+			add_equipment_to_stockpile = {
 				type = infantry_equipment_0
 				amount = 500000
 				producer = CHI	

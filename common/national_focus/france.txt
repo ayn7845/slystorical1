@@ -3160,6 +3160,9 @@
 			else = {
 				 remove_ideas = FPM_disjointed_government1
 			}
+			hidden_effect = { 
+				add_ideas = FPM_disjointed_government2
+			}
 		}
 	}
 
@@ -4061,13 +4064,17 @@ focus = {
 				}
 				remove_ideas = FPM_disjointed_government
 			}
-
-			
 			if = { 
 				limit = { 
 					has_ideas = FPM_disjointed_government1
 				}
 				remove_ideas = FPM_disjointed_government1
+			}
+			if = { 
+				limit = { 
+					has_ideas = FPM_disjointed_government2
+				}
+				remove_ideas = FPM_disjointed_government2
 			}
 
 			add_offsite_building = {

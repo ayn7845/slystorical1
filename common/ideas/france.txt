@@ -1397,6 +1397,31 @@ ideas = {
 				surrender_limit = -0.25
 			}
 		}
+		FPM_disjointed_government2 = {
+			
+			name = "Disjointed Government"
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}			
+			
+			available = {
+				has_focus_tree = french_focus
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				surrender_limit = -0.20
+			}
+		}
 		FPM_disjointed_government = {
 			name = "Improving Government"
 			
@@ -1418,9 +1443,9 @@ ideas = {
 			picture = generic_disjointed_gov
 			
 			modifier = {
-				political_power_cost = 0.4
-				stability_factor = -0.05
-				surrender_limit = -0.125
+				political_power_cost = 0.5
+				stability_factor = -0.07
+				surrender_limit = -0.20
 			}
 		}
 

@@ -13,9 +13,10 @@ CHI_army_reform = {
                     }
 			tag = CHI
 			has_war_with = JAP
+			OR = {
+			casualties > 750000
 			surrender_progress > 0.12			
-			
-			
+				}
 		    }
         }
 
@@ -161,9 +162,12 @@ CHI_army_reform = {
                     }
 			tag = CHI
 			has_war_with = JAP
+			OR = {
+			casualties > 1500000
 			surrender_progress > 0.34			
 		    }
         }
+	}
 
 		ai_will_do = {
 			factor = 200
@@ -292,9 +296,10 @@ CHI_army_reform = {
                     }
 			tag = CHI
 			has_war_with = JAP
+			OR = {
+			casualties > 4500000
 			surrender_progress > 0.60			
-			
-			
+		   	 	}			
 		    }
         }
 
@@ -389,18 +394,18 @@ CHI_army_reform = {
 					division = "division_template = \"Juntuan\" force_equipment_variants = { infantry_equipment_0 = { owner = \"CHI\" } } start_experience_factor = 0.1 start_equipment_factor = 1.0"
 					owner = CHI
 				}
-				# create_unit = {
-				# 	division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
-				# 	owner = CHI
-				# }
-				# create_unit = {
-				# 	division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
-				# 	owner = CHI
-				# }
-				# create_unit = {
-				# 	division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
-				# 	owner = CHI
-				# }
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+				 	division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				 	owner = CHI
+				 }
+				create_unit = {
+				 	division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				 	owner = CHI
+				 }
 			}
 			add_ideas = CHI_wave3
 		}

@@ -87,6 +87,7 @@ ideas = {
 				navy_intel_to_others = 50
 				army_intel_to_others = 50
 				airforce_intel_to_others = 50
+				civilian_intel_to_others = 50
 			}
 		}
 		blm_ai = {

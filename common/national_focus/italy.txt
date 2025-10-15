@@ -4112,17 +4112,8 @@ focus_tree = {
 		relative_position_id = ITA_superaereo
 		cost = 5
 		available = {
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				has_tech = improved_small_airframe
-				has_tech = improved_medium_airframe
-			}
-			else = {
 				has_tech = fighter2
 				has_tech = tactical_bomber2
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -7923,7 +7914,6 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_government = fascism
-			ITA_has_disbanded_blackshirts = no
 		}
 
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}
@@ -7957,8 +7947,6 @@ focus_tree = {
 
 		cost = 10
 		available = {
-			has_government = fascism
-			ITA_has_disbanded_blackshirts = no
 		}
 
 		search_filters = {}
@@ -8591,10 +8579,6 @@ focus_tree = {
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
 		available = {
-			NOT = {
-				has_completed_focus = ITA_unite_the_opposition
-				has_completed_focus = ITA_defy_the_duce
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL}

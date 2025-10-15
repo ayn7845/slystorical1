@@ -231,7 +231,10 @@ ENG_infantry_focus:0 "The British Grenadiers"
 # JAP
 JAP_domestic_air_production: "Domestic Aircraft Production"
 
+# ROM 
 
+ROM_free_trade:0 "Free Trade"
+ROM_free_trade_desc:0 "Axis need your stuff."
 
 # Map Modding
 

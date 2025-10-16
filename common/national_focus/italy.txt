@@ -7947,6 +7947,11 @@ focus_tree = {
 
 		cost = 10
 		available = {
+			date = 1941.1.1  
+			FRA = {
+				owns_state = 16
+				controls_state = 16
+			}
 		}
 
 		search_filters = {}

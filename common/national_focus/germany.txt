@@ -727,6 +727,10 @@ focus_tree = {
 				GER_mefo_power_cost = -0.05
 				tooltip = political_power_cost_tt
 			}
+			add_to_variable = { 
+				GER_mefo_production_speed_arms_factory_factor = 0.05
+				tooltip = production_speed_arms_factory_factor_tt
+			}
 
 		}
 	}
@@ -9001,7 +9005,7 @@ focus_tree = {
 
 		icon = GFX_focus_GER_danzig_or_war
 		alternate_icon = GFX_focus_GER_danzig_or_war_historical
-
+		
 		#prerequisite = { focus = GER_reassert_eastern_claims }
 		prerequisite = { focus = GER_molotov_ribbentrop_pact }
 		prerequisite = { focus = GER_fate_of_czechoslovakia }
@@ -9014,67 +9018,13 @@ focus_tree = {
 		will_lead_to_war_with = POL
 
 		bypass = {
-			OR = {
-				has_war_with = POL
-				is_in_faction_with = POL
-				NOT = {
-					85 = {
-						controller = {
-							original_tag = POL 
-						}
-						owner = {
-							original_tag = POL 
-						}
-					}
-				}
-			}
+
 		}
 
 		continue_if_invalid = yes
 
 		available = {
-			if = { 
-				limit = {
-					has_game_rule = {
-						rule = danzig_date_lock
-						option = locked
-					}	
-				}
-				date > 1939.6.1
-			}
-			
-			is_subject = no
-			#100 div			
-			#Make custom trigger tooltip here
-			85 = {
-				owner = {
-					original_tag = POL
-				}
-				controller = {
-					original_tag = POL
-				}
-			}
-			OR = {
-				POL = {
-					has_civil_war = no
-				}
-				#custom_trigger_tooltip = {
-					#tooltip = GER_danzig_trigger_polish_civil_war
-					AND = {
-						any_other_country = {
-							original_tag = POL
-							has_civil_war = yes
-							OR = {
-								is_in_faction_with = ROOT
-								has_volunteers_amount_from = {
-									tag = GER
-									count > 0
-								}
-							}
-						}
-					}
-				#}
-			}
+			date > 1939.6.1
 		}
 
 		ai_will_do = {
@@ -9105,79 +9055,204 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 		
 		completion_reward = {
-			hidden_effect = {				
+			custom_effect_tooltip = GER_war_warning_tt
+			hidden_effect = {
+			add_to_variable = { 
+				GER_mefo_production_speed_arms_factory_factor = -0.25
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+			add_to_variable = { 
+				GER_mefo_production_speed_dockyard_factor = -0.25
+				tooltip = production_speed_dockyard_factor_tt
+			}
+			add_to_variable = { 
+				GER_mefo_production_speed_synthetic_refinery_factor = -0.15
+				tooltip = production_speed_industrial_synthetic_refinery_factor_tt
+			}
 				FIN = {
 					country_event = { id = wuw_GER_realpolitik.1 days = 1 }
 				}
+				declare_war_on = {
+					target = CAN
+					type = take_state_focus
+					generator = { 5 }
+				}
+				declare_war_on = {
+					target = RAJ
+					type = take_state_focus
+					generator = { 5 }
+				}
+				declare_war_on = {
+					target = SAF
+					type = take_state_focus
+					generator = { 5 }
+				}
+				declare_war_on = {
+					target = AST
+					type = take_state_focus
+					generator = { 5 }
+				}
+				ROM = {
+					declare_war_on = {
+						target = POL
+						type = take_state_focus
+					}
+					declare_war_on = {
+						target = ENG
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = FRA
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = CAN
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = RAJ
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = SAF
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = AST
+						type = take_state_focus
+						generator = { 5 }
+					}
+				}
+				SPR = {
+					declare_war_on = {
+						target = POL
+						type = take_state_focus
+					}
+					declare_war_on = {
+						target = ENG
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = FRA
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = CAN
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = RAJ
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = SAF
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = AST
+						type = take_state_focus
+						generator = { 5 }
+					}
+				}
+				HUN = {
+					declare_war_on = {
+						target = POL
+						type = take_state_focus
+					}
+					declare_war_on = {
+						target = ENG
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = FRA
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = CAN
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = RAJ
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = SAF
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = AST
+						type = take_state_focus
+						generator = { 5 }
+					}
+				}
+				BUL = {
+					declare_war_on = {
+						target = POL
+						type = take_state_focus
+					}
+					declare_war_on = {
+						target = ENG
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = FRA
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = CAN
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = RAJ
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = SAF
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = AST
+						type = take_state_focus
+						generator = { 5 }
+					}
+				}
 			}
 			add_named_threat = { threat = 30 name = GER_danzig_or_war }
-			if = {
-				limit = {
-					85 = {
-						controller = {
-							tag = POL
-							has_civil_war = no
-						}
-					}
-				}
-				effect_tooltip = {
-					transfer_state = 85
-					add_state_core = 85
-					transfer_state = 807
-					add_state_core = 807
-					remove_state_claim = 86
-					remove_state_claim = 762
-				}
-				POL = {
-					country_event = { id = germany.86 }
-					if = {
-						limit = { NOT = { is_in_faction_with = ROOT } }
-						custom_effect_tooltip = needs_approval
-					}
-					if = {
-						limit = { 
-							is_in_faction_with = ROOT 
-							ROOT = { is_faction_leader = yes }
-						}
-						custom_effect_tooltip = GER_danzig_or_war_POL_faction_GER_leader
-					}
-					if = {
-						limit = {
-							is_in_faction_with = ROOT 
-							NOT = { ROOT = { is_faction_leader = yes } }
-						}
-						custom_effect_tooltip = GER_danzig_or_war_POL_faction_GER_noleader
-					}
-				}
+			declare_war_on = {
+					target = POL
+					type = take_state_focus
 			}
-			if = {
-				limit = {
-					85 = {
-						owner = {
-							OR = {
-								original_tag = POL
-								tag = POL
-							}
-							has_civil_war = yes
-						}
-					}
-				}
-				random_other_country = {
-					limit = {
-						original_tag = POL
-						has_civil_war = yes
-						OR = {
-							is_in_faction_with = GER
-							has_volunteers_amount_from = {
-								tag = GER
-								count > 0
-							}
-						}
-					}
-					country_event = { id = germany.113 days = 1 }
-				}
-				custom_effect_tooltip = GER_danzig_or_war_POL_civil_war
+			declare_war_on = {
+					target = ENG
+					type = take_state_focus
+					generator = { 5 }
 			}
+			declare_war_on = {
+					target = FRA
+					type = take_state_focus
+					generator = { 5 }
+			}
+			
 		}
 	}
 	
@@ -9328,7 +9403,72 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			#limit wargoals to when it makes sense to give them. No faction, war or non exist
+			hidden_effect = {
+				ROM = {
+					declare_war_on = {
+						target = BEL
+						type = take_state_focus
+					}
+					declare_war_on = {
+						target = HOL
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = LUX
+						type = take_state_focus
+						generator = { 5 }
+					}
+				}
+				SPR = {
+					declare_war_on = {
+						target = BEL
+						type = take_state_focus
+					}
+					declare_war_on = {
+						target = HOL
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = LUX
+						type = take_state_focus
+						generator = { 5 }
+					}
+				}
+				HUN = {
+					declare_war_on = {
+						target = BEL
+						type = take_state_focus
+					}
+					declare_war_on = {
+						target = HOL
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = LUX
+						type = take_state_focus
+						generator = { 5 }
+					}
+				}
+				BUL = {
+					declare_war_on = {
+						target = BEL
+						type = take_state_focus
+					}
+					declare_war_on = {
+						target = HOL
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = LUX
+						type = take_state_focus
+						generator = { 5 }
+					}
+				}
+			}
 			if = { 
 				limit = {
 					country_exists = BEL

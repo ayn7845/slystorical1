@@ -11379,7 +11379,6 @@ focus_tree = {
 		cost = 2
 		
 		available = {
-			date = 1942.1.1
 			if = {
 				limit = {
 					is_ai = yes
@@ -12600,7 +12599,6 @@ focus_tree = {
 		cost = 2
 		
 		available = {
-			date = 1942.1.1
 			if = {
 				limit = {
 					is_ai = yes

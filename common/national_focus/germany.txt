@@ -1704,29 +1704,13 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			if = {
-				limit = {
-					OR = {
-						has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
-						has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
-					}
-				}
-				GER_modify_industrial_modifier = yes
-				custom_effect_tooltip = GER_reduce_increasing_consumer_goods_tt
-				subtract_from_variable = { GER_monthly_consumer_goods_increase = GER_change_monthly_CG_price_controls }
-			}
-			else = {
 				GER_modify_industrial_modifier = yes
 				add_to_variable = { 
-					GER_industrial_consumer_goods_factor = -0.1
-					tooltip = consumer_goods_factor_tt
+					GER_mefo_power_cost = -0.15
+					tooltip = political_power_cost_tt
 				}
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = GER_unlock_price_controls_decision_tt
 		}
 	}
 	
@@ -1740,10 +1724,6 @@ focus_tree = {
 		relative_position_id = GER_autarky_efforts
 		cost = 5
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = GER_industrial_consumer_goods_factor_limit_tt
-				check_variable = { GER_industrial_consumer_goods_factor < 0.9 }
-			}
 		}
 
 		continue_if_invalid = yes
@@ -1785,23 +1765,6 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = GER_unlock_reichswerke_tt
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			GER_modify_industrial_modifier = yes
-			add_to_variable = { 
-				GER_industrial_consumer_goods_factor = 0.1
-				tooltip = consumer_goods_factor_tt
-			}
-			if = {
-				limit = {
-					OR = {
-						has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
-						has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
-					}
-				}
-				GER_add_mefo_bills_penalty = yes
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -2009,10 +1972,6 @@ focus_tree = {
 		relative_position_id = GER_autarky_efforts
 		cost = 5
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = GER_industrial_consumer_goods_factor_limit_tt
-				check_variable = { GER_industrial_consumer_goods_factor < 0.9 }
-			}
 		}
 
 		continue_if_invalid = yes
@@ -2165,10 +2124,6 @@ focus_tree = {
 		relative_position_id = GER_coal_liquefaction
 		cost = 5
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = GER_industrial_consumer_goods_factor_limit_tt
-				check_variable = { GER_industrial_consumer_goods_factor < 0.9 }
-			}
 			has_tech = rubber_processing
 		}
 
@@ -2230,21 +2185,6 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			GER_modify_industrial_modifier = yes
-			add_to_variable = { 
-				GER_industrial_consumer_goods_factor = 0.1
-				tooltip = consumer_goods_factor_tt
-			}
-			if = {
-				limit = {
-					OR = {
-						has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
-						has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
-					}
-				}
-				GER_add_mefo_bills_penalty = yes
-			}
 		}
 	}
 	
@@ -7698,7 +7638,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		available = {
-                date > 1936.5.10
+                date > 1938.1.1
             }
 
 	
@@ -7724,6 +7664,28 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.1
+			add_stability = 0.05
+			army_experience = 10
+			GER = {
+				annex_country = {
+					target = AUS
+					transfer_troops = yes
+				}
+				every_state = {
+					limit = {
+						is_core_of = BUL 
+						is_controlled_by = ITA
+					}
+					add_core_of = GER
+				}
+			}
+			GER_modify_industrial_modifier = yes
+			add_to_variable = { 
+				GER_mefo_power_cost = -0.15
+				tooltip = political_power_cost_tt
+			}
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -7734,210 +7696,6 @@ focus_tree = {
 					tooltip = operative_slot_tt
 				}
 				GER_create_operative_otto_skorzeny = yes
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			if = {
-				limit = {
-					country_exists = AUS
-					AUS = {
-						has_civil_war = no
-						OR = {
-							owns_state = 4
-							owns_state = 152
-							owns_state = 153
-							owns_state = 848
-							owns_state = 975
-							owns_state = 976
-						}
-					}
-				}
-				if = {
-					limit = {
-						NOT = { has_dlc = "Gotterdammerung" }
-						ITA = {
-							has_completed_focus = ITA_guarantee_austrian_independence
-							has_guaranteed = AUS
-						}
-					}
-			
-					ITA = {
-						country_event = {
-							id = BBA_italy_interaction_events.24
-							days = 1
-						}
-					}
-				}
-				else = { #ITA has not Guaranteed Austrian Independence
-					AUS = {
-						country_event = {
-							id = germany.28
-							days = 1
-						}
-					}		
-					effect_tooltip = {
-						custom_effect_tooltip = if_they_accept_tt
-						add_political_power = 75
-						add_war_support = 0.1
-						add_stability = 0.05
-						army_experience = 10
-
-						custom_effect_tooltip = generic_skip_one_line_tt
-
-						annex_country = { target = AUS transfer_troops = yes }
-												
-						GER_anschluss_modify_mefo_bills_or_economy_of_conquest = yes
-
-						custom_effect_tooltip = if_they_refuse_tt
-						create_wargoal = {
-							type = take_state_focus
-							target = AUS
-							generator = { 4 152 153 848 975 976 }
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					any_other_country = {
-						original_tag = AUS
-						has_civil_war = yes
-						OR = {
-							owns_state = 4
-							owns_state = 152
-							owns_state = 153
-							owns_state = 848
-							owns_state = 975
-							owns_state = 976
-						}
-						
-					}
-					ITA = {
-						NOT = {
-							has_completed_focus = ITA_guarantee_austrian_independence
-						}
-					}
-				}
-				custom_effect_tooltip = germany.126.warning
-				random_other_country = {
-					limit = {
-						original_tag = AUS
-						OR = {
-							has_government = fascism
-							AND = {
-								has_government = neutrality
-								NOT = {
-									any_other_country = {
-										original_tag = AUS
-										has_government = fascism
-									}
-								}
-							}
-							NOT = {
-								any_other_country = {
-									original_tag = AUS
-									OR = {
-										has_government = fascism
-										has_government = neutrality
-									}
-								}
-							}							
-						}
-						
-					}
-					country_event = { id = germany.126 days = 1 }
-				}
-			}
-
-			if = {
-				limit = {
-					4 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 4
-			}
-			if = {
-				limit = {
-					152 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 152
-			}
-			if = {
-				limit = {
-					153 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 153
-			}
-			if = {
-				limit = {
-					848 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 848
-			}
-			IF = {
-				limit = {
-					975 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 975
-			}
-			IF = {
-				limit = {
-					976 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 976
 			}
 		}
 	}

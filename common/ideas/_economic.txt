@@ -375,6 +375,18 @@ ideas = {
 
 			available = {
 				has_war_support > 0.5
+				if = {
+					limit = {
+						tag = GER
+					}
+					GER = {
+						OR = {
+							has_completed_focus = GER_prioritize_economic_growth
+							has_completed_focus = GER_the_four_year_plan
+						}
+					}
+				}
+				
 				OR = {
 					has_government = fascism
 					has_government = communism

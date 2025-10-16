@@ -2981,9 +2981,6 @@ characters = {
 			}
 			available = {
 				has_completed_focus = GER_prioritize_economic_growth
-				GER_walther_funk = {
-					is_hired_as_advisor = no
-				}
 			}
 			traits = {
 				economic_reformer

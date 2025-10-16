@@ -7947,7 +7947,7 @@ focus_tree = {
 		relative_position_id = ITA_security_militias
 
 
-		cost = 10
+		cost = 1
 		available = {
 			date = 1941.1.1  
 			FRA = {
@@ -7973,7 +7973,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_battaglioni_d_assalto
-		cost = 10
+		cost = 1
 		available = {
 			has_government = fascism
 			ITA_has_disbanded_blackshirts = no

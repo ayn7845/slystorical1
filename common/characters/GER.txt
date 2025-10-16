@@ -1812,7 +1812,7 @@ characters = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_instill_auftragstaktik
+				has_government = fascism
 			}
 			traits = {
 				army_chief_offensive_2
@@ -2532,11 +2532,9 @@ characters = {
 			}
 			available = {
 				has_government = fascism
+				
 				GER_hjalmar_schacht = {
 					is_hired_as_advisor  = no 
-				}
-				GER_ludwig_erhard = {
-					is_hired_as_advisor = no
 				}
 			}
 			visible = {

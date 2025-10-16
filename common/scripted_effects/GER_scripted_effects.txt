@@ -199,12 +199,12 @@ GER_remove_mefo_bills = { #TODO_Danne Remove this once the MEFO Bills have been 
 }
 
 give_SOV_armor_research_bonuses = { #this effect is run for the Soviets!
-		#add_tech_bonus = {
-		#	name = armor_bonus
-			#ahead_reduction = 0.5
-			#technology = advanced_medium_tank
-			#technology = advanced_heavy_tank
-		#}
+		add_tech_bonus = {
+			name = armor_bonus
+			ahead_reduction = 0.25
+			technology = advanced_medium_tank
+			technology = advanced_heavy_tank
+		}
 		add_tech_bonus = {
 			name = armor_bonus
 			bonus = 1.0

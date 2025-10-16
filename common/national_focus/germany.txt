@@ -139,6 +139,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL_CHARACTER }
 
 		completion_reward = {
+			custom_effect_tooltip = GER_warning_tt
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
 				GER_industrial_production_factory_max_efficiency_factor = -0.1

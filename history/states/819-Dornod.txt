@@ -8,11 +8,6 @@ state={
 	history={
 		owner = WST
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-		}
-		victory_points = {
-			12557 1 #Choibalsan
 		}
 		add_core_of = WST
 	}

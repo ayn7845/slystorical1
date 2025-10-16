@@ -238,6 +238,10 @@ JAP_domestic_air_production: "Domestic Aircraft Production"
 ROM_free_trade:0 "Free Trade"
 ROM_free_trade_desc:0 "Axis need your stuff."
 
+# FIN
+
+winter_war_ns1:0 "Arm Against the Rus"
+
 # Map Modding
 
 # State modifiers

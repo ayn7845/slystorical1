@@ -11130,6 +11130,9 @@ focus_tree = {
 			GRE = { 
 				has_capitulated = yes
 			}
+			YUG = { 
+				has_capitulated = yes
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}

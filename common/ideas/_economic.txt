@@ -381,7 +381,7 @@ ideas = {
 					}
 					GER = {
 						OR = {
-							has_completed_focus = GER_prioritize_economic_growth
+							has_completed_focus = GER_agricultural_reforms
 							has_completed_focus = GER_the_four_year_plan
 						}
 					}

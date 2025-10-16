@@ -1,0 +1,7 @@
+Tutorials = {
+    icon = GFX_decision_categ
+    visible_when_empty = yes
+	allowed = {
+		always = yes
+	}
+}

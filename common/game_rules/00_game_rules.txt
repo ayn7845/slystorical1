@@ -527,7 +527,23 @@ larp_barb = {
 		desc = "Operation Barbarossa will have larp events"
 	}
 }
+# RAILROAD decisions
 
+railroad_australia = {
+	name = "Railroad Australia"
+	group = "Railroading Countries"
+	icon = "GFX_decision_generic_merge_plant_materiel"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Australia will not be railroaded"		
+	}
+	option = {
+		name = on
+		text = "ROn"
+		desc = "Australia will be railroaded"
+	}
+}
 # VANILLA GAME RULES 
 
 allow_wargoals = {

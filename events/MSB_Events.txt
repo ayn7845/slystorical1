@@ -155,3 +155,54 @@ country_event = {
 		set_country_flag = blum_resigned
 	}
 }
+
+country_event = {
+	id = msb.9
+	title = msb.9.t
+	desc = msb.9.d
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes
+		option = {
+		name = msb.9.a
+	}
+}
+country_event = {
+	id = msb.10
+	title = msb.10.t
+	desc = msb.10.d
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes
+		option = {
+		name = msb.10.a
+	}
+}
+country_event = {
+	id = msb.11
+	title = msb.11.t
+	desc = msb.11.d
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes
+		option = {
+		name = msb.11.a
+	}
+}
+country_event = {
+	id = msb.12
+	title = msb.12.t
+	desc = msb.12.d
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes
+		option = {
+		name = msb.12.a
+	}
+}
+country_event = {
+	id = msb.13
+	title = msb.13.t
+	desc = msb.13.d
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes
+		option = {
+		name = msb.13.a
+	}
+}

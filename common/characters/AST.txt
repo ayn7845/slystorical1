@@ -583,7 +583,10 @@ characters={
 			}
 			cost = 150.000
 			available = {
-				has_completed_focus = AST_australian_army_catering_corps
+				OR = {
+					has_completed_focus = AST_australian_army_catering_corps
+					has_completed_focus = AST_australian_army_catering_corps_r
+				}
 			}
 			traits = {
 				army_logistics_2
@@ -682,7 +685,10 @@ characters={
 					limit = {
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_support_the_policy_of_appeasement 
+					OR = {
+					has_completed_focus = AST_support_the_policy_of_appeasement
+					has_completed_focus = AST_support_the_policy_of_appeasement_r
+					}
 				}
 			}
 		}		

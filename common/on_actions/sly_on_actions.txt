@@ -1,6 +1,15 @@
 on_actions = {
 	on_startup = {
 		effect = {
+		if = {
+			limit = {
+				has_game_rule = { rule = railroad_australia option = on }
+			}
+			AST = {
+			country_event = { id = msb.13 }
+			}
+		}
+		}
 			if = { 
 				limit = { 
 					BUL = { 

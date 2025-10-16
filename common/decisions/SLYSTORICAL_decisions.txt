@@ -761,7 +761,6 @@ Technologies = {
         }
     }
 }
-
 templates = {
 	Hide_Templates = {
 		icon = decision_generic_decision
@@ -1145,6 +1144,55 @@ E_ll = {
 	}
 }	
 
+Tutorials = {
+    msb_event_9_decision = {
+        icon = generic_focus_generic
+        allowed = { tag = AST }
+        visible = { tag = AST }
+        available = { always = yes }
+        cost = 0
+        days_re_enable = 1
+        complete_effect = {
+            country_event = { id = msb.9 }
+        }
+    }
+
+    msb_event_10_decision = {
+        icon = generic_focus_generic
+        allowed = { tag = AST }
+        visible = { tag = AST }
+        available = { always = yes }
+        cost = 0
+        days_re_enable = 1
+        complete_effect = {
+            country_event = { id = msb.10 }
+        }
+    }
+
+    msb_event_11_decision = {
+        icon = generic_focus_generic
+        allowed = { tag = AST }
+        visible = { tag = AST }
+        available = { always = yes }
+        cost = 0
+        days_re_enable = 1
+        complete_effect = {
+            country_event = { id = msb.11 }
+        }
+    }
+
+    msb_event_12_decision = {
+        icon = generic_focus_generic
+        allowed = { tag = AST }
+        visible = { tag = AST }
+        available = { always = yes }
+        cost = 0
+        days_re_enable = 1
+        complete_effect = {
+            country_event = { id = msb.12 }
+        }
+    }
+}
 
 
 

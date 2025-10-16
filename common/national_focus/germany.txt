@@ -9404,6 +9404,11 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
+				ENG = {
+					add_to_faction = HOL
+					add_to_faction = BEL
+					add_to_faction = LUX
+				}
 				ROM = {
 					declare_war_on = {
 						target = BEL
@@ -9546,55 +9551,9 @@ focus_tree = {
 		will_lead_to_war_with = NOR
 		
 		bypass = {
-			AND = {
-				DEN = { 
-					OR = {
-						is_in_faction_with = ROOT
-						exists = no
-					}
-				}
-				NOR = { 
-					OR = {
-						is_in_faction_with = ROOT
-						exists = no
-					}
-				}
-			}
 		}
 
 		available = {
-			is_subject = no
-			hidden_trigger = {
-				OR = {
-					AND = {
-						is_ai = yes
-						NOT = { has_country_flag = SWE_GER_avoid_dow_nordics }
-					}
-
-					is_ai = no
-				}
-			}
-
-			10 = {
-				controller = {
-					OR = {
-						is_in_faction_with = ROOT
-						original_tag = GER
-					}
-				}
-			}
-			85 = {
-				controller = {
-					OR = {
-						is_in_faction_with = ROOT
-						original_tag = GER
-					}
-				}
-			}
-			OR = { 
-				has_war_with = ENG
-				NOT = {country_exists = ENG}
-			}
 		}
 
 		ai_will_do = {
@@ -9628,34 +9587,61 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
-			if = {
-				limit = {
-					NOT = { DEN = { is_in_faction_with = GER } }
-					country_exists = DEN					
-				} 
-				create_wargoal = {
-					type = take_state_focus
-					target = DEN
-					expire = 0
-					generator = { 37 }
+			hidden_effect = {
+				ROM = {
+					declare_war_on = {
+						target = DEN
+						type = take_state_focus
+					}
+					declare_war_on = {
+						target = NOR
+						type = take_state_focus
+					}
+				}
+				SPR = {
+					declare_war_on = {
+						target = DEN
+						type = take_state_focus
+					}
+					declare_war_on = {
+						target = NOR
+						type = take_state_focus
+					}
+				}
+				HUN = {
+					declare_war_on = {
+						target = DEN
+						type = take_state_focus
+					}
+					declare_war_on = {
+						target = NOR
+						type = take_state_focus
+					}
+				}
+				BUL = {
+					declare_war_on = {
+						target = DEN
+						type = take_state_focus
+					}
+					declare_war_on = {
+						target = NOR
+						type = take_state_focus
+					}
+				}
+				ENG = {
+					add_to_faction = DEN
+					add_to_faction = NOR
+					news_event = { hours = 6 id = news.233 }
 				}
 			}
-
-
-			if = {
-				limit = {
-					NOT = { NOR = { is_in_faction_with = GER } }
-					country_exists = NOR					
-				} 
-				create_wargoal = {
-					type = take_state_focus
-					target = NOR
-					expire = 0
-					generator = { 110 }
-				}
+			declare_war_on = {
+				target = DEN
+				type = take_state_focus
 			}
-			
+			declare_war_on = {
+				target = NOR
+				type = take_state_focus
+			}
 			add_tech_bonus = {
 				name = tp_bonus
 				bonus = 1.0
@@ -9663,10 +9649,6 @@ focus_tree = {
 				uses = 1
 				category = tp_tech
 			}
-			hidden_effect = {
-				news_event = { hours = 6 id = news.233 }
-			}
-
 			custom_effect_tooltip = GER_weserubung_tt
 		}
 	}

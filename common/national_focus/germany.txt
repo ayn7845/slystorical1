@@ -7696,6 +7696,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			hidden_effect = {
+				152 = {
+					add_extra_state_shared_building_slots = 10
+					add_building_construction = {
+						type = arms_factory
+						level = 10
+						instant_build = yes
+					}
+				}
+			}
 			add_political_power = 75
 			add_war_support = 0.1
 			add_stability = 0.05
@@ -8197,188 +8207,22 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			### CLAIMS
-			if = {
-				limit = {
-					69 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 69
+			GER = { 
+				transfer_state = 69
+				transfer_state = 972
+				transfer_state = 74
 			}
-			if = {
-				limit = {
-					972 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 972
+			hidden_effect = {
+				69 = {
+				add_core_of = GER
 			}
-			if = {
-				limit = {
-					74 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 74
+			972 = {
+				add_core_of = GER
 			}
-
-			### EVENT CHAIN - MUNICH CONFERENCE (CZE is always involved) ###
-			if = {
-				limit = {
-					CZE = {
-						OR = {
-							controls_state = 69
-							controls_state = 972
-							controls_state = 74
-						}
-					}
-				}
-				if = { # HOL has formed EU and CZE is part of it - Alt-hist
-					limit = {
-						CZE = {
-							is_in_faction_with = HOL
-							is_subject = no
-						}
-						HOL = {
-							has_completed_focus = HOL_foundations_for_a_european_union
-							is_faction_leader = yes
-							is_subject = no
-							exists = yes
-						}
-						NOT = { has_war_with = HOL }
-						NOT = { has_war_with = FRA }
-						OR = {
-							HUN = {
-								NOT = {
-									has_completed_focus = HUN_protect_czechoslovakia #DOD only
-								}
-							}
-							CZE = {
-								has_country_flag = HUN_AH_CZE_refused
-							}
-						}
-					}
-					HOL = {
-						country_event = germany.40
-					}
-				}
-				else_if = { #THIS IS THE HISTORICAL OUTCOME THAT SHOULD HAPPEN ON HISTORICAL - HISTORICAL HERE!! 
-					limit = {
-						ENG = {
-							NOT = { has_completed_focus = ENG_a_change_in_course }
-							exists = yes
-							is_subject = no
-						}
-						NOT = { has_war_with = ENG }
-						NOT = { has_war_with = FRA }
-						CZE = {
-							is_subject = no
-							NOT = { is_in_faction_with = GER }
-							NOT = { has_war_with = ENG }
-							OR = {
-								controls_state = 69
-								controls_state = 972
-								controls_state = 74
-							}
-						}
-						OR = {
-							HUN = {
-								NOT = {
-									has_completed_focus = HUN_protect_czechoslovakia #DOD only
-								}
-							}
-							CZE = {
-								has_country_flag = HUN_AH_CZE_refused
-							}
-						}
-					}
-					ENG = {
-						country_event = germany.40
-					}
-				}
-
-				### EVENT CHAIN - ALT-HIST DEMAND OF SUDETENLAND TO CZE OR THEIR OVERLORD ###
-				else_if = { # If not historical and CZE is independent or GER subject, send event to them
-					limit = {
-						CZE = {
-							OR = {
-								is_subject = no
-								is_subject_of = ROOT
-							}
-						}
-					}
-					CZE = {
-						country_event = { id = germany.122 }
-					}
-				}
-				else_if = { # If not historical and CZE is subject of someone else, send event to overlord
-					limit = {
-						CZE = { is_subject = yes }
-					}
-					CZE = {
-						overlord = { country_event = { id = germany.122 } }
-					}
-				}
+			74 = {
+				add_core_of = GER
 			}
-
-			### EVENT CHAIN - ALT-HIST SOME ONE ELSE CONTROLS SUDETENLAND STATES ###
-			if = { #If other countries control Sudetenland states -> send event to them or overlord
-				limit = {
-					any_other_country = {
-						NOT = { tag = CZE }
-						OR = {
-							controls_state = 69
-							controls_state = 972
-							controls_state = 74
-						}
-						NOT = { has_war_with = ROOT }
-					}
-				}
-				every_other_country = {
-					limit = {
-						NOT = { tag = CZE }
-						OR = {
-							controls_state = 69
-							controls_state = 972
-							controls_state = 74
-						}
-						NOT = { has_war_with = ROOT }
-					}
-					if = { # If independent or GER subject, send event to them
-						limit = {
-							OR = {
-								is_subject = no
-								is_subject_of = ROOT
-							}
-						}
-						country_event = { id = germany.1041 days = 4 random_days = 2 }
-					}
-					else = { #If subject of someone else, send event to overlord
-						if = {
-							limit = {
-								overlord = { NOT = { has_war_with = ROOT } }
-							}
-							overlord = { country_event = { id = germany.1041 days = 4 random_days = 2 } }
-						}
-					}
-				}
-			}
+			}		
 
 			add_named_threat = { threat = 4 name = GER_demand_sudetenland_threat }
 		}
@@ -8436,8 +8280,12 @@ focus_tree = {
 		
 		completion_reward = {
 			HUN = {
-				country_event = { id = germany.51 }
-				event_option_tooltip = germany.51.a
+				transfer_state = 664
+			}
+			hidden_effect = {
+				664 = {
+					add_core_of = HUN
+				}
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -8477,21 +8325,7 @@ focus_tree = {
 		will_lead_to_war_with = CZE
 
 		bypass = {
-			OR = {
-				has_war_with = CZE
-				CZE = { 
-					is_in_faction_with = ROOT
-					NOT = { is_subject_of = ROOT }
-				}
-				NOT = {
-					country_exists = CZE
-					9 = { is_controlled_by = ROOT }
-					75 = { is_controlled_by = ROOT }
-				}
-				any_allied_country = {
-					has_subject = CZE
-				}
-			}
+			
 		}
 		
 		available = { 
@@ -8503,52 +8337,33 @@ focus_tree = {
 
 		completion_reward = {
 			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			if = {
-				limit = {
-					CZE = {
-						has_war = no
-						is_subject = no
-					}
-				}
-				set_global_flag = end_of_czechoslovakia
-				CZE = { country_event = germany.53 }
+			GER = { 
+				transfer_state = 9
+				transfer_state = 75
 			}
-			else_if = {
-				limit = {
-					CZE = { 
-						is_subject_of = ROOT
-					}
-				}
-				CZE = { country_event = { id = wuw_GER_diplomacy.117 days = 1 }}
+			HUN = {
+				transfer_state = 70
+				transfer_state = 71
+				transfer_state = 73
 			}
-			else_if = {
-				limit = {
-					CZE = {
-						exists = no
-					}
-					9 = {
-						is_controlled_by = ROOT
-					}
-					75 = {
-						is_controlled_by = ROOT
-					}
+			hidden_effect = {
+				POL = {
+					transfer_state = 72
 				}
-				add_state_claim = 9
-				add_state_claim = 75
-				country_event = { id = germany.55 hours = 6 }
-			}
-			else_if = {
-				limit = {
-					CZE = { exists = yes }
+				9 = {
+					add_core_of = GER
 				}
-				add_state_claim = 9
-				add_state_claim = 75
-				create_wargoal = {
-					type = annex_everything
-					target = CZE
+				75 = {
+					add_core_of = GER
+				}
+				70 = {
+					add_core_of = HUN
+				}
+				71 = {
+					add_core_of = HUN
+				}
+				73 = {
+					add_core_of = HUN
 				}
 			}
 		}
@@ -8893,16 +8708,12 @@ focus_tree = {
 			762 = { add_claim_by = GER }
 
 			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
-
-			random_other_country = {
-				limit = {
-					owns_state = 188
-					controls_state = 188 
-				}
-				country_event = { 
-					id = baltic.4 
-					days = 1
-					random_days = 3
+			GER = {
+				transfer_state = 188
+			}
+			hidden_effect = {
+				188 = {
+					add_core_of = GER
 				}
 			}
 

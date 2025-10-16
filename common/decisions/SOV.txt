@@ -5570,36 +5570,63 @@ SOV_diplomacy_baltic_decision_category = {
 		visible = {
 		}
 
-		days_remove = SOV_ultimatum_days
+		fire_only_once = yes
 
 		cost = SOV_send_ultimatum_to_country_cost
 
-		remove_effect = {
+		complete_effect = {
 			if = {
 				limit = {
 					FROM = { tag = EST }
 				}
-				EST = {
-					set_country_flag = SOV_ultimatum_sent_flag
-					country_event = { id = baltic.1 hours = 16 random_hours = 8 }
+				SOV = {
+					annex_country = {
+						target = EST
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = EST 
+							is_controlled_by = SOV
+						}
+						add_core_of = SOV
+					}
 				}
 			}
 			else_if = {
 				limit = {
 					FROM = { tag = LAT }
 				}
-				LAT = {
-					set_country_flag = SOV_ultimatum_sent_flag
-					country_event = { id = baltic.2 hours = 16 random_hours = 8 }
+				SOV = {
+					annex_country = {
+						target = LAT
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = LAT 
+							is_controlled_by = SOV
+						}
+						add_core_of = SOV
+					}
 				}
 			}
 			else_if = {
 				limit = {
 					FROM = { tag = LIT }
 				}
-				LIT = {
-					set_country_flag = SOV_ultimatum_sent_flag
-					country_event = { id = baltic.3 hours = 16 random_hours = 8 }
+				SOV = {
+					annex_country = {
+						target = LIT
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = LIT 
+							is_controlled_by = SOV
+						}
+						add_core_of = SOV
+					}
 				}
 			}
 			custom_effect_tooltip = SOV_ultimatum_baltic_effects_tt

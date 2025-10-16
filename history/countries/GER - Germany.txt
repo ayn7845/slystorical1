@@ -288,6 +288,10 @@ set_variable = { GER_puppet_economies_integration_days = 365 } #Days remove for 
 
 
 #MILITARY-INTELLIGENCE SERVICE
+set_variable = { GER_military_intelligence_service_resistance_target = -0.05 }
+set_variable = { GER_military_intelligence_service_resistance_growth = -0.1 }
+set_variable = { GER_military_intelligence_service_resistance_damage_to_garrison = -0.12 }
+set_variable = { GER_military_intelligence_service_compliance_gain = 0.01 }
 set_variable = { GER_military_intelligence_service_operative_slot = 0 }
 set_variable = { GER_military_intelligence_service_intelligence_agency_defense = 0 }
 set_variable = { GER_military_intelligence_service_agency_upgrade_time = 0 }

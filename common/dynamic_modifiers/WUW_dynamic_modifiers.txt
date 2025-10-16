@@ -798,6 +798,10 @@ GER_military_intelligence_service_modifier = { #Spy Stuff
 	# Basic
 	master_ideology_drift = GER_military_intelligence_service_master_ideology_drift
 	consumer_goods_factor = GER_military_intelligence_service_consumer_goods_factor
+	compliance_gain =  GER_military_intelligence_service_compliance_gain #0.01 
+	resistance_damage_to_garrison = GER_military_intelligence_service_resistance_damage_to_garrison #-0.1
+	resistance_growth = GER_military_intelligence_service_resistance_growth #-0.1
+	resistance_target = GER_military_intelligence_service_resistance_target #-0.05
 
 	# LaR
 	operative_slot = GER_military_intelligence_service_operative_slot

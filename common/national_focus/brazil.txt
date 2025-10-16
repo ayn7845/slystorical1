@@ -222,6 +222,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			ENG = {
+				add_to_faction =  BRA
+			}
 			custom_effect_tooltip = BRA_modify_estado_novo_ns_intro
 			add_to_variable = { BRA_estado_novo_neutrality_factor = 0.1 tooltip = neutrality_drift_factor_tt }
 			remove_dynamic_modifier = { modifier = BRA_weak_government }
@@ -1546,7 +1549,7 @@ focus_tree = {
 			focus = BRA_cooperation_in_the_americas 
 			#focus = BRA_the_international_crisis
 		}
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = BRA_cooperation_in_the_americas
 		cost = 10
@@ -1691,48 +1694,15 @@ focus_tree = {
 	#	}
 	#}
 
-
-	focus = {
-		id = BRA_washington_accords
-		icon = GFX_focus_chi_mission_to_the_us
-		prerequisite = { 
-			focus = BRA_cooperation_in_the_americas 
-		}
-		x = -1
-		y = 1
-		relative_position_id = BRA_cooperation_in_the_americas
-		cost = 5
-		ai_will_do = {
-			factor = 20
-		}
-		available = {	
-			
-		}
-
-		bypass = {
-			is_in_faction_with = USA
-		}
-		cancel_if_invalid = yes
-
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			ENG = {
-				add_to_faction =  BRA
-			}
-		}
-	}
-
 	focus = {
 		id = BRA_potenji_river_conference
 		icon = GFX_focus_BRA_rio_protocol
 		prerequisite = { 
-			focus = BRA_washington_accords 
-			#focus = BRA_the_international_crisis
+			focus = BRA_cooperation_in_the_americas 
 		}
 		x = 0
 		y = 1
-		relative_position_id = BRA_washington_accords
+		relative_position_id = BRA_cooperation_in_the_americas
 		cost = 10
 		bypass = {
 			is_in_faction_with = USA
@@ -1760,14 +1730,12 @@ focus_tree = {
 		icon = GFX_focus_generic_air_bases
 
 		prerequisite = { 
-			focus = BRA_washington_accords 
-			#focus = BRA_the_international_crisis
+			focus = BRA_cooperation_in_the_americas 
 		}
 
 		x = -2
 		y = 1
-
-		relative_position_id = BRA_washington_accords
+		relative_position_id = BRA_cooperation_in_the_americas
 
 		cost = 5
 		ai_will_do = {

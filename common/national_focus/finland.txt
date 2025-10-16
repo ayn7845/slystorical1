@@ -1039,6 +1039,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			
+			add_ideas = winter_war_ns1 
+			
 			if = { #Just for tooltip purposes
 				limit = {
 					has_war = no

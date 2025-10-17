@@ -8363,8 +8363,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 		
 		completion_reward = {
+		
 			custom_effect_tooltip = GER_war_warning_tt
 			hidden_effect = {
+			add_war_support = 0.1
 			add_to_variable = { 
 				GER_mefo_production_speed_arms_factory_factor = -0.25
 				tooltip = production_speed_arms_factory_factor_tt
@@ -8401,6 +8403,7 @@ focus_tree = {
 					generator = { 5 }
 				}
 				ROM = {
+				add_war_support = 0.1
 					declare_war_on = {
 						target = POL
 						type = take_state_focus
@@ -8437,6 +8440,7 @@ focus_tree = {
 					}
 				}
 				SPR = {
+				add_war_support = 0.1
 					declare_war_on = {
 						target = POL
 						type = take_state_focus
@@ -8473,6 +8477,7 @@ focus_tree = {
 					}
 				}
 				HUN = {
+				add_war_support = 0.1
 					declare_war_on = {
 						target = POL
 						type = take_state_focus
@@ -8509,6 +8514,7 @@ focus_tree = {
 					}
 				}
 				BUL = {
+				add_war_support = 0.1
 					declare_war_on = {
 						target = POL
 						type = take_state_focus

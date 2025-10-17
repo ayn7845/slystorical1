@@ -1,6 +1,5 @@
 ﻿capital = 41 # Madrid
 
-oob = "SPR_1936"
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -92,18 +91,6 @@ if = {
 		has_dlc = "La Resistance"
 	}
 	every_owned_state = {
-		limit = {
-			NOT = {
-				state = 177
-				state = 178
-				state = 290
-				state = 699
-				state = 783
-				state = 297
-			}
-		}
-		set_variable = { var = SPA_garrison_control value = 1 }
-		SPA_garrison_control_cost_calculation = yes
 	}
 	set_popularities = {
 		democratic = 41
@@ -142,8 +129,8 @@ if = {
 	    reserve_dynamic_country = yes
 	}
 	SPR = {
-		set_variable = { var = spa_civil_war_divisions_counter_var value = 17 }
-		set_variable = { var = spr_civil_war_divisions_counter_var value = 66 }
+		set_variable = { var = spa_civil_war_divisions_counter_var value = 0 }
+		set_variable = { var = spr_civil_war_divisions_counter_var value = 0 }
 	}
 	for_each_scope_loop = {
 	    array = core_states
@@ -250,15 +237,6 @@ if = {
 	recruit_character = SPR_manuel_azana
 	recruit_character = SPA_juan_yague_armor
 	recruit_character = SPR_mohamed_meziane_armor
-	165 = {
-		add_dynamic_modifier = { modifier = autonomous_state }
-	}
-	171 = {
-		add_dynamic_modifier = { modifier = autonomous_state }
-	}
-	792 = {
-		add_dynamic_modifier = { modifier = autonomous_state }
-	}
 
 	SPR_enrique_lister = {
 		set_character_flag = SPR_do_not_align_me_flag

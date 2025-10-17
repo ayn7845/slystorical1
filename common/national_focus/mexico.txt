@@ -2415,7 +2415,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_army_expansion_programme
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -2447,6 +2447,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = MEX_heavy_artillery
+			add_ideas = MEX_aerial_artillery
 		}
 	}	
 }

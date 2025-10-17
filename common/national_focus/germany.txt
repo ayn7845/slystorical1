@@ -8213,6 +8213,16 @@ focus_tree = {
 				transfer_state = 74
 			}
 			hidden_effect = {
+			ENG = {
+				add_war_support = 0.1
+			}
+			FRA = {
+				add_war_support = 0.1
+			}
+			GER = {
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
 				69 = {
 				add_core_of = GER
 			}
@@ -8347,6 +8357,16 @@ focus_tree = {
 				transfer_state = 73
 			}
 			hidden_effect = {
+				ENG = {
+				add_war_support = 0.1
+			}
+			FRA = {
+				add_war_support = 0.1
+			}
+			GER = {
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
 				POL = {
 					transfer_state = 72
 				}

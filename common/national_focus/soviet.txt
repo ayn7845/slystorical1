@@ -7599,7 +7599,7 @@ focus = {
 		id = SOV_the_comintern
 		icon = GFX_sov_the_cominform
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = 9
+		x = 10
 		y = 0
 		relative_position_id = SOV_addressing_internal_affairs
 		cost = 5
@@ -7623,7 +7623,7 @@ focus = {
 		id = SOV_send_military_advisors_to_spain
 		icon = GFX_sov_spanish_war
 		prerequisite = { focus = SOV_the_comintern }
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = SOV_the_comintern
 		cost = 0
@@ -7660,7 +7660,7 @@ focus = {
 		id = SOV_policy_of_collective_security
 		icon = GFX_focus_ger_great_red_menace
 		prerequisite = { focus = SOV_the_comintern }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = SOV_the_comintern
 		cost = 5
@@ -7693,7 +7693,7 @@ focus = {
 		id = SOV_anti_sealion
 		icon = GFX_focus_attack_germany
 		prerequisite = { focus = SOV_the_comintern }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = SOV_the_comintern
 		cost = 5
@@ -7786,7 +7786,7 @@ focus = {
 		id = SOV_middle_east_diplomacy
 		icon = GFX_focus_TUR_treaty_of_saadabad
 		prerequisite = { focus = SOV_the_comintern }
-		x = 7
+		x = 6
 		y = 1
 		relative_position_id = SOV_the_comintern
 		cost = 5
@@ -7961,7 +7961,7 @@ focus = {
 		id = SOV_prepare_a_war_with_japan
 		icon = GFX_focus_AST_war_japan
 		prerequisite = { focus = SOV_the_comintern }
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = SOV_the_comintern
 		cost = 5
@@ -8215,7 +8215,7 @@ focus = {
 		id = SOV_baltic_security
 		icon = GFX_focus_FIN_keepers_of_the_baltic_countries
 		prerequisite = { focus = SOV_the_comintern }
-		x = -4
+		x = -5
 		y = 1
 		relative_position_id = SOV_the_comintern
 		cost = 5

@@ -254,12 +254,12 @@ tradebacks = {
 	name = "Tradeback Idea"
 	group = "MSB Rules"
 	icon = GFX_decision_generic_forestry
-	default = {
+	option = {
 		name = off
 		text = "GOff"
 		desc = "No tradeback idea (Recommmended)"
 	}
-	option = {
+	default = {
 		name = on
 		text = "ROn"
 		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty. (Not Recommmended)"

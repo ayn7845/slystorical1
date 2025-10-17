@@ -706,107 +706,6 @@ characters={
 		}
 	}
 
-	SPA_emilio_mola={ # Falangist/Francoist
-		instance = {
-			allowed = {
-				has_dlc = "La Resistance"
-			}
-			name=SPA_emilio_mola
-			portraits={
-				army={
-					large="GFX_portrait_SPA_emilio_mola"
-					small=GFX_portrait_SPA_emilio_mola_small
-				}
-			}
-			advisor={	
-				slot = high_command
-				idea_token = SPA_emilio_mola
-				ledger = army
-				allowed = {
-					has_dlc = "La Resistance"
-					original_tag = SPR
-				}
-	
-				visible = {
-					NOT = {
-						tag = SPD
-						tag = SPC
-					}
-				}
-	
-				available = {
-					NOT = {
-						has_completed_focus = SPR_masters_of_our_own_fate
-						has_completed_focus = SPA_no_compromise_on_carlist_ideals
-					}
-					custom_trigger_tooltip = {
-						tooltip = SPA_not_republican_spain_tt
-						NOT = { tag = SPD }
-					}
-				}
-				traits = {
-					army_infantry_2
-				}
-				cost = 100
-			}
-			
-			field_marshal={
-				traits={ trait_cautious trait_SPA_nationalist_sympathies thorough_planner organisational_leader }
-				skill=3
-				attack_skill=2
-				defense_skill=2
-				planning_skill=4
-				logistics_skill=2
-				legacy_id=1111
-				visible = {
-					OR = {
-						NOT = { has_global_flag = spanish_civil_war }
-						AND = {
-							tag = SPA
-							has_global_flag = spanish_civil_war
-						}
-					}
-				}
-			}
-		}
-		instance = {
-			allowed = {
-				NOT = { has_dlc = "La Resistance" }
-			}
-			name=SPA_emilio_mola_vidal
-			portraits={
-				army={
-					large="GFX_portrait_SPA_emilio_mola"
-					small="GFX_idea_generic_army_europe_5"
-				}
-			}
-			advisor={
-				slot = army_chief
-				idea_token = SPA_emilio_mola_vidal
-				name = SPA_emilio_mola_vidal
-				allowed = {
-					NOT = {
-						has_dlc = "La Resistance"
-					}
-					original_tag = SPR
-				}
-				visible = {
-					has_government = fascism
-				}
-				available = {
-					has_government = fascism
-				}
-				traits = {
-					army_chief_offensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-			}
-		}
-	}
-
 	SPA_juan_yague={ # Falangist
 		instance = {
 			allowed = {
@@ -4547,16 +4446,6 @@ characters={
 			}
 
 			available = {
-				NOT = {
-					has_completed_focus = SPA_no_compromise_on_carlist_ideals
-				}
-				NOT = {
-					has_completed_focus = SPA_banish_the_party_leaders
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-					NOT = { tag = SPD }
-				}
 			}
 			traits = {
 				falangist_syndicalist 

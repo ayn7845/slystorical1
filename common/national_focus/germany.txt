@@ -7831,6 +7831,9 @@ focus_tree = {
 				transfer_state = 73
 			}
 			hidden_effect = {
+				add_to_faction = HUN
+				add_to_faction = ROM
+				add_to_faction = BUL
 				ENG = {
 				add_war_support = 0.1
 			}

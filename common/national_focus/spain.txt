@@ -237,19 +237,18 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_unify_the_nationalist_front }
+		prerequisite = { focus = SPA_con_paquito }
 		
 		icon = GFX_focus_befriend_italy
 		x = -3
 		y = 1
-		relative_position_id = SPA_unify_the_nationalist_front
+		relative_position_id = SPA_con_paquito
 		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			ITA = {
-				add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
 				add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
 			}
 			add_tech_bonus = {
@@ -273,19 +272,18 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_unify_the_nationalist_front }
+		prerequisite = { focus = SPA_con_paquito }
 		
 		icon = GFX_focus_chi_mission_to_germany
 		x = -5
 		y = 1
-		relative_position_id = SPA_unify_the_nationalist_front
+		relative_position_id = SPA_con_paquito
 		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			GER = {
-				add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
 				add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
 			}
 			add_tech_bonus = {
@@ -1165,7 +1163,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_save_the_alcazar }
 		
 		icon = GFX_martyrdom_for_primo_de_rivera
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = SPA_save_the_alcazar
 		cost = 10
@@ -1190,7 +1188,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_save_the_alcazar }
 		
 		icon = GFX_focus_spa_caudillo_of_spain
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = SPA_save_the_alcazar
 		cost = 10
@@ -1258,9 +1256,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_martyrdom_for_primo_de_rivera }
 		prerequisite = { focus = SPA_caudillo_of_spain }
+		prerequisite = { focus = SPA_foment_a_carlist_split }
 		
 		icon = GFX_SPR_church
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SPA_martyrdom_for_primo_de_rivera
 		cost = 10
@@ -1283,12 +1282,12 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_unify_the_nationalist_front }
+		prerequisite = { focus = SPA_con_paquito }
 		
 		icon = GFX_goal_generic_position_armies
 		x = 3
 		y = 1
-		relative_position_id = SPA_unify_the_nationalist_front
+		relative_position_id = SPA_con_paquito
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1370,12 +1369,12 @@ focus_tree = {
 		bypass = {
 			has_global_flag = SPR_carlist_uprising_flag
 		}
-		prerequisite = { focus = SPA_consolidate_the_north }
+		prerequisite = { focus = SPA_save_the_alcazar }
 		
 		icon = GFX_foment_a_carlist_split
-		x = 0
-		y = 2
-		relative_position_id = SPA_consolidate_the_north
+		x = 2
+		y = 1
+		relative_position_id = SPA_save_the_alcazar
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1393,74 +1392,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SPA_integrate_the_requetes
-		available = {
-		}
-		bypass = {
-			has_global_flag = SPR_carlist_uprising_flag
-		}
-		prerequisite = { focus = SPA_foment_a_carlist_split }
-		
-		icon = GFX_revive_the_spirit_of_the_carlist_wars
-		x = 1
-		y = 1
-		relative_position_id = SPA_foment_a_carlist_split
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-			add_popularity = {
-			    ideology = neutrality
-			    popularity = 0.1
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_idea = SPA_carlism_2
-						has_idea = SPA_carlism_5
-					}
-				}
-				effect_tooltip = {
-					swap_ideas = {
-						remove_idea = SPA_carlism_2
-						add_idea = SPA_carlism_3
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_idea = SPA_carlism_2
-				}
-				swap_ideas = {
-					remove_idea = SPA_carlism_2
-					add_idea = SPA_carlism_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = SPA_carlism_5
-				}
-				swap_ideas = {
-					remove_idea = SPA_carlism_5
-					add_idea = SPA_carlism_4
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = SPA_utilize_the_intellectuals
 		available = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_integrate_the_requetes }
+		prerequisite = { focus = SPA_consolidate_the_north }
 		
 		icon = GFX_focus_research
 		x = 0
 		y = 1
-		relative_position_id = SPA_integrate_the_requetes
+		relative_position_id = SPA_consolidate_the_north
 		cost = 5
 
 		available_if_capitulated = yes
@@ -1480,7 +1422,6 @@ focus_tree = {
 			has_global_flag = SPR_carlist_uprising_flag
 		}
 		prerequisite = { focus = SPA_extol_the_martyrs_of_the_war }
-		prerequisite = { focus = SPA_foment_a_carlist_split }
 		
 		icon = GFX_SPR_take
 		x = 2
@@ -1492,8 +1433,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CARLIST_UPRISING}
 		completion_reward = {
 			add_political_power = 200
-			custom_effect_tooltip = remove_political_advisor
-			show_ideas_tooltip = SPA_manuel_hedilla
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SPA_raimundo_fernandez_cuesta
 			add_days_mission_timeout = {
@@ -1529,30 +1468,7 @@ focus_tree = {
 			}
 			set_party_name = { ideology = fascism long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
 			set_party_name = { ideology = neutrality long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
-			if = {
-				limit = {
-					has_idea = SPA_carlism_2
-				}
-					remove_idea = SPA_carlism_2
-			}
-			if = {
-				limit = {
-					has_idea = SPA_carlism_3
-				}
-					remove_idea = SPA_carlism_3
-			}
-			if = {
-				limit = {
-					has_idea = SPA_carlism_1
-				}
-					remove_idea = SPA_carlism_1
-			}
-			if = {
-				limit = {
-					has_idea = SPA_carlism_4
-				}
-					remove_idea = SPA_carlism_4
-			}
+			remove_ideas = SPA_carlism_2
 			custom_effect_tooltip = SPA_fuse_the_parties_tt
 		}
 	}

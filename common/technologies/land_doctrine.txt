@@ -544,9 +544,6 @@ technologies = {
 				motorized = {
 			combat_width = -0.1
 		}
-		mechanized = {
-			combat_width = -0.1
-		}
 		enable_tactic = tactic_overwhelming_fire
 		
 		path = {

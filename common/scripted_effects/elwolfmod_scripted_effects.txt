@@ -39,6 +39,7 @@ elwolfmod_vichy_france = {
 		transfer_state = 462
 		transfer_state = 460
 		transfer_state = 513
+		transfer_state = 514
 		462 = {
 			set_demilitarized_zone = yes
 		}
@@ -49,6 +50,9 @@ elwolfmod_vichy_france = {
 			set_demilitarized_zone = yes
 		}
 		513 = {
+			set_demilitarized_zone = yes
+		}
+		514 = {
 			set_demilitarized_zone = yes
 		}
 		460 = {

@@ -5,16 +5,23 @@ state={
 	manpower = 1
 	
 	state_category = wasteland
-	impassable = yes
+	impassable = no
 
 	history={
 		
-	
-	
+	owner = FRA
+		add_core_of = WST
+		buildings = {
+		infrastructure = 1
+		}
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={
-		12022
+		12727 5024 12813 7995 10850 12749 5058 4968 5027 7970 12455 2027 10917 12866 1126 1967 5053 4970 12888 9943
 	}
 
 	local_supplies=0.0 

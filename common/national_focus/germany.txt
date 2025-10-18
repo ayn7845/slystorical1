@@ -637,7 +637,10 @@ focus_tree = {
 		relative_position_id = GER_kdf_wagen_factories
 		cost = 10
 		available = {
+			AND = {
 			industrial_complex > 49
+			has_completed_focus = GER_treaty_with_the_ussr
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
@@ -6810,7 +6813,7 @@ focus_tree = {
 		prerequisite = { focus = GER_reorganize_the_wehrmacht }
 
 
-		x = 0
+		x = -3
 		y = 1
 		relative_position_id = GER_reorganize_the_wehrmacht
 
@@ -6864,7 +6867,7 @@ focus_tree = {
 
 		prerequisite = { focus = GER_reorganize_the_wehrmacht  }
 
-		x = -3
+		x = 0
 		y = 1
 		relative_position_id = GER_reorganize_the_wehrmacht
 		cost = 10
@@ -6881,30 +6884,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			OR = {
-				AUS = {
-					OR = {
-						is_subject = yes
-						exists = no 
-						AND = {
-							is_in_faction = yes
-							NOT = { is_in_faction_with = GER }
-							any_other_country = {
-								is_in_faction_with = AUS
-								is_subject = no
-							}
-						}
-					}
-				}
-				GER = {
-					owns_state = 4
-					owns_state = 152
-					owns_state = 153
-					owns_state = 848
-					owns_state = 975
-					owns_state = 976
-				}
-			}
+	
 		}
 
 		continue_if_invalid = yes
@@ -6912,8 +6892,19 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		available = {
-                date > 1936.5.10
+			if = { 
+				limit = { 
+					has_game_rule {
+					rule = tradebacks
+					option = on
+				}
+			}
+                date > 1938.1.1
             }
+			else = { 
+				date > 1936.5.10
+			}
+		}
 
 	
 
@@ -7562,7 +7553,7 @@ focus_tree = {
 
 		mutually_exclusive = { focus = GER_befriend_czechoslovakia }
 
-		x = 3
+		x = 0
 		y = 1
 		relative_position_id = GER_anschluss
 
@@ -7984,7 +7975,7 @@ focus_tree = {
 		icon = GFX_focus_GER_demonstration_of_military_achievements
 		prerequisite = { focus = GER_anschluss }
 
-		x = -1
+		x = -4
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 5
@@ -8217,7 +8208,7 @@ focus_tree = {
 		icon = GFX_focus_generic_liechtenstein_coa
 		prerequisite = { focus = GER_anschluss }
 
-		x = 1
+		x = -2
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 5
@@ -8264,7 +8255,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_anschluss }
 		prerequisite = { focus = GER_treaty_with_the_ussr }
-		x = 5
+		x = 2
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 5

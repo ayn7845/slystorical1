@@ -7404,11 +7404,20 @@ focus_tree = {
 				}
 				mark_focus_tree_layout_dirty = yes
 			}
-		upgrade_economy_law = yes
-		add_ideas = SPA_expand_conscription
+			if = { 
+				limit = { 
+					has_game_rule = { 
+						rule = tradebacks
+						option = on
+					}
+				}
+				add_ideas = SPA_expand_conscription
+			}
+		else = {
+			upgrade_economy_law = yes
+			add_ideas = SPA_expand_conscription
+			}
 		}
-		
-
 	}
 	
 	focus = {

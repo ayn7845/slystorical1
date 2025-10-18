@@ -1,6 +1,20 @@
 on_actions = {
 	on_startup = {
 		effect = {
+		if = { #eng civs for no tradeback
+			limit = {
+				has_game_rule = {
+					rule = tradebacks
+					option = on
+				}
+			}
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 6
+				}
+			}
+		}
 			if = { 
 				limit = { 
 					BUL = { 

@@ -167,6 +167,7 @@ SPR_mohamed_meziane_armor:0 "Mohamed Meziane"
 SPA_juan_yague_armor:0 "Juan Yagüe"
 SPA_mech_gens:0 "§RWILL RECIEVE 2 MECH GENERALS§W"
 SPA_tank_gens:0 "§RWILL RECIEVE 2 TANK GENERALS§W"
+AX_inf_gens:0 "§RWILL RECIEVE 2 INFANTRY GENERALS§W"
 
 # USA
 USA_vic_plan:0 "Victory Plan"

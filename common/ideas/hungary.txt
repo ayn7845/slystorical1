@@ -261,12 +261,12 @@ ideas = {
 			picture = HUN_wuw_HUN_gombos_trade_treaty
 
 			cancel = {
-				has_war_with = GER
+				has_war = yes
 			}
 
 			modifier = {
 				political_power_factor = -0.15
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.05
 				production_speed_buildings_factor = 0.05
 				fascism_drift = 0.01
 				custom_modifier_tooltip = HUN_gombos_trade_treaty_arms_market_tt
@@ -680,10 +680,8 @@ ideas = {
 			picture = HUN_the_cult_of_arpad_idea
 
 			modifier = {
-				army_attack_against_major_factor = 0.05
-				army_defence_against_major_factor = 0.1
-				conscription_factor = 0.05
-				mobilization_speed = 0.15
+				army_attack_against_major_factor = 0.025
+				army_defence_against_major_factor = 0.025
 			}
 		}
 
@@ -809,7 +807,7 @@ ideas = {
 			picture = HUN_revaluing_the_pengo
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 				stability_factor = -0.1
 			}
 		}
@@ -824,7 +822,7 @@ ideas = {
 			picture = generic_improved_industries
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 				stability_factor = -0.05
 				war_support_factor = 0.05
 			}
@@ -1055,8 +1053,7 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.15
 				war_support_factor = 0.05
-				stability_factor = 0.05
-				conscription = 0.01
+				stability_factor = 0.1
 				political_advisor_cost_factor = -0.25
 			}
 		}

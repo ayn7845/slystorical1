@@ -653,16 +653,16 @@ characters = {
 			
 			# Will be upgradeable through various focuses
 			corps_commander = {
-				traits = { trait_HUN_vitez infantry_officer }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 2
+				traits = {  trait_HUN_vitez adaptable brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer ranger urban_assault_specialist infantry_leader infantry_expert }
+				skill = 6
+				attack_skill = 4
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
 				legacy_id = -1 
 				visible = {
-					NOT = {
-						has_government = fascism
+					visible = {
+						has_completed_focus = wuw_HUN_strenghten_the_order_of_vitez
 					}
 				}
 			}
@@ -689,7 +689,7 @@ characters = {
 
 			corps_commander = {
 				traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger urban_assault_specialist }
-				skill = 4
+				skill = 6
 				attack_skill = 3
 				defense_skill = 3
 				planning_skill = 5
@@ -702,7 +702,6 @@ characters = {
 			allowed = {
 				has_dlc = "Gotterdammerung"
 			}
-
 			name = HUN_ivan_hindy
 
 			portraits = {
@@ -714,13 +713,16 @@ characters = {
 
 			# Will be upgradeable thorugh the focus tree
 			corps_commander = {
-				traits = { trickster }
-				skill = 2
-				attack_skill = 2
+				traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger urban_assault_specialist }
+				skill = 6
+				attack_skill = 1
 				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
 				legacy_id = -1
+				visible = {
+						has_completed_focus = wuw_HUN_award_military_promotions
+				}
 			}
 
 			advisor = {
@@ -728,9 +730,6 @@ characters = {
 				idea_token = HUN_ivan_hindy
 				allowed = {
 					original_tag = HUN
-				}
-				available = {
-					has_completed_focus = wuw_HUN_award_military_promotions
 				}
 				traits = {
 					army_logistics_2
@@ -849,16 +848,17 @@ characters = {
 
 			corps_commander = {
 				traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando urban_assault_specialist camouflage_expert combined_arms_expert offensive_doctrine fortress_buster expert_improviser }
-				skill = 2
-				attack_skill = 2
+				skill = 6
+				attack_skill = 1
 				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
 				legacy_id = -1
 			}
 
 		}
 		instance = {
+
 			allowed = {
 				has_dlc = "Gotterdammerung"
 			}
@@ -873,17 +873,15 @@ characters = {
 			}
 			
 			corps_commander = {
-				traits = { armor_officer cavalry_leader }
-				skill = 2
-				attack_skill = 2
+				traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando urban_assault_specialist camouflage_expert combined_arms_expert offensive_doctrine fortress_buster expert_improviser }
+				skill = 6
+				attack_skill = 1
 				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
 				legacy_id = -1
 				visible = {
-					NOT = {
-						has_government = fascism
-					}
+						has_completed_focus = wuw_HUN_award_military_promotions
 				}
 			}
 
@@ -934,20 +932,15 @@ characters = {
 			
 			# Can become a field marshal through the military promotions focus
 			corps_commander = {
-				traits = { trait_HUN_vitez trait_HUN_fascist_sympathies }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 2
+				traits = { trait_HUN_vitez trait_HUN_fascist_sympathies infantry_leader infantry_expert trickster trait_engineer ranger hill_fighter mountaineer commando urban_assault_specialist camouflage_expert offensive_doctrine fortress_buster expert_improviser}
+				skill = 6
+				attack_skill = 6
+				defense_skill = 6
+				planning_skill = 5
+				logistics_skill = 5
 				legacy_id = -1
 				visible = {
-					NOT = {
-						OR = {
-							has_government = communism
-							has_government = democratic
-						}
-					}
+						has_completed_focus = wuw_HUN_strenghten_the_order_of_vitez
 				}
 			}
 
@@ -1901,10 +1894,6 @@ characters = {
 				original_tag = HUN
 			}
 
-			available = {
-				has_completed_focus = wuw_HUN_make_the_magyar_legiero_known
-			}
-
 			traits = {
 				air_chief_reform_2
 			}
@@ -2178,7 +2167,6 @@ characters = {
 				}
 
 				available = {
-					has_completed_focus = wuw_HUN_award_military_promotions
 				}
 
 				traits = {
@@ -2602,6 +2590,7 @@ characters = {
 					NOT = {
 						has_government = communism
 					}
+					has_war = no
 				}
 
 				traits = {
@@ -3106,6 +3095,7 @@ characters = {
 						has_government = democratic
 					}
 				}
+				has_war = no
 				has_completed_focus = wuw_HUN_devalue_the_pengo
 			}
 
@@ -3742,42 +3732,6 @@ characters = {
 
 			traits = {
 				modernizer_and_diplomat
-			}
-
-			ai_will_do = {
-				base = 1
-			}
-
-		}
-
-	}
-
-	HUN_pal_kiraly = {
-
-		name = HUN_pal_kiraly
-
-		portraits = {
-			civilian = {
-				small = "GFX_portrait_HUN_pal_kiraly_small"
-			}
-		}
-
-		advisor = {
-
-			slot = political_advisor
-
-			idea_token = HUN_pal_kiraly
-
-			allowed = {
-				original_tag = HUN
-			}
-
-			available = {
-				has_completed_focus = wuw_HUN_danuvia_submachine_guns
-			}
-
-			traits = {
-				HUN_innovative_weapons_designer
 			}
 
 			ai_will_do = {

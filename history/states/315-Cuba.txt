@@ -20,21 +20,11 @@ state= {
         owner = MEX
 		buildings = {
 			infrastructure = 3
-			air_base = 1
 			7622 = {
 				naval_base = 3
 			}
-			1550 = {
-				naval_base = 1
-			}
 		}
 		add_core_of = MEX
-		victory_points = {
-			7622 5 
-		}
-		victory_points = {
-			7590 1
-		}
 	1941.1.1 = {
 		owner = WST
 		add_core_of = WST

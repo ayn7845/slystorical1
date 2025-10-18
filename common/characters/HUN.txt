@@ -688,12 +688,12 @@ characters = {
 			}
 
 			corps_commander = {
-				traits = { trickster }
+				traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger urban_assault_specialist }
 				skill = 4
 				attack_skill = 3
-				defense_skill = 4
-				planning_skill = 2
-				logistics_skill = 4
+				defense_skill = 3
+				planning_skill = 5
+				logistics_skill = 5
 				legacy_id = -1
 			}
 
@@ -848,7 +848,7 @@ characters = {
 			}
 
 			corps_commander = {
-				traits = { armor_officer }
+				traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando urban_assault_specialist camouflage_expert combined_arms_expert offensive_doctrine fortress_buster expert_improviser }
 				skill = 2
 				attack_skill = 2
 				defense_skill = 1

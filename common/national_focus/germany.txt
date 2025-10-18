@@ -8566,7 +8566,14 @@ focus_tree = {
 					type = take_state_focus
 					generator = { 5 }
 			}
-			
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_war_with = GER
+					}
+					add_ideas = war_economy
+				}
+			}
 		}
 	}
 	

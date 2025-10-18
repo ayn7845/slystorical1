@@ -162,7 +162,7 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = USA_continue_the_new_deal }
 		available = {
-			date < 1936.5.1
+			date < 1936.3.1
 		}
 		
 		bypass = {
@@ -175,8 +175,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 		add_timed_idea = { idea = USA_establishing_the_gold_standard days = 300 }
+		custom_effect_tooltip = generic_skip_one_line_tt
 		custom_effect_tooltip = available_political_advisor
-		show_ideas_tooltip = USA_william_regnery 
+		show_ideas_tooltip = USA_william_regnery
+		custom_effect_tooltip = generic_skip_one_line_tt 
 		add_ideas = USA_rubber_in_asia
 			add_timed_idea = { idea = USA_staunch_isolationists days = 1200 }
 			add_timed_idea = {
@@ -1332,7 +1334,7 @@ focus_tree = {
 				has_war_support > 0.3
 			}
 			democratic > 0.95
-		}
+			}
 		continue_if_invalid = yes
 		x = 0
 		y = 1
@@ -1874,7 +1876,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			ENG = { 
+				has_war = yes
+			}
 		}
 		
 		bypass = {
@@ -2528,6 +2532,10 @@ focus_tree = {
 		}
 
 		available = {
+			OR = { 
+				has_completed_focus = USA_continue_the_new_deal
+				has_completed_focus = USA_reestablish_the_gold_standard
+			}
 
 		}
 		
@@ -3155,7 +3163,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 	
 		completion_reward = {
-			air_experience = 200
 				add_tech_bonus = {
 					name = USA_air_war_plans_division
 					bonus = 1
@@ -3163,7 +3170,9 @@ focus_tree = {
 					category = light_fighter
 					category = cat_heavy_fighter
 				} # REVISIT May use modifier?
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = air_war_plans_division_focus
+			air_experience = 200
 			#hidden_effect = {
 			#	add_ideas = air_war_plans_division_focus_hidden
 			#}

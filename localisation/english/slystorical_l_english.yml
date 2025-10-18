@@ -238,6 +238,10 @@ ROM_free_trade_desc:0 "Axis need your stuff."
 
 winter_war_ns1:0 "Arm Against the Rus"
 
+# Mex
+MEX_focus_Placate_General_Cedillo:0 "Placate General Cedillo"
+MEX_focus_Placate_General_Cedillo_desc:0 "General Cedillo Is given autonomy over the state of San Luis Potosí"
+
 # Map Modding
 
 # State modifiers

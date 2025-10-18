@@ -873,7 +873,7 @@ characters = {
 			}
 			
 			corps_commander = {
-				traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando urban_assault_specialist camouflage_expert combined_arms_expert offensive_doctrine fortress_buster expert_improviser }
+				traits = { cavalry_officer desert_fox panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando urban_assault_specialist camouflage_expert combined_arms_expert offensive_doctrine fortress_buster expert_improviser }
 				skill = 6
 				attack_skill = 1
 				defense_skill = 1
@@ -932,7 +932,7 @@ characters = {
 			
 			# Can become a field marshal through the military promotions focus
 			corps_commander = {
-				traits = { trait_HUN_vitez trait_HUN_fascist_sympathies infantry_leader infantry_expert trickster trait_engineer ranger hill_fighter mountaineer commando urban_assault_specialist camouflage_expert offensive_doctrine fortress_buster expert_improviser}
+				traits = { trait_HUN_vitez trait_HUN_fascist_sympathies desert_fox infantry_leader infantry_expert trickster trait_engineer ranger hill_fighter mountaineer commando urban_assault_specialist camouflage_expert offensive_doctrine fortress_buster expert_improviser}
 				skill = 6
 				attack_skill = 6
 				defense_skill = 6

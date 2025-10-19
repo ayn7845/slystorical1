@@ -38,6 +38,7 @@ SPR_the_inevitable_civil_war = {
 				}
 				remove_ideas = SPA_awaiting_the_rebellion
 			}
+						news_event = { id = lar_news.1 days = 1 }
 		}
 	}
 }	

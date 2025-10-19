@@ -952,8 +952,8 @@ ideas = {
 			picture = vauxhall
 			
 			modifier = {
-				mechanized_attack_factor = 0.05
-				mechanized_defence_factor = 0.05
+				mechanized_attack_factor = 0.025
+				mechanized_defence_factor = 0.025
 			}
 		}
 		motorized_army_two = {
@@ -973,10 +973,10 @@ ideas = {
 			picture = vauxhall
 			
 			modifier = {
-				mechanized_attack_factor = 0.05
-				mechanized_defence_factor = 0.05
-				army_armor_attack_factor = 0.05
-				army_armor_defence_factor = 0.05
+				mechanized_attack_factor = 0.025
+				mechanized_defence_factor = 0.025
+				army_armor_attack_factor = 0.025
+				army_armor_defence_factor = 0.025
 			}
 		}
 		motorized_army_three = {
@@ -996,11 +996,11 @@ ideas = {
 			picture = vauxhall
 			
 			modifier = {
-				mechanized_attack_factor = 0.05
-				mechanized_defence_factor = 0.05
-				army_armor_attack_factor = 0.05
-				army_armor_defence_factor = 0.05
-				army_armor_speed_factor = 0.1
+				mechanized_attack_factor = 0.025
+				mechanized_defence_factor = 0.025
+				army_armor_attack_factor = 0.025
+				army_armor_defence_factor = 0.025
+				army_armor_speed_factor = 0.05
 			}
 		}
 		motorized_army_four = {
@@ -1020,11 +1020,11 @@ ideas = {
 			picture = vauxhall
 			
 			modifier = {
-				mechanized_attack_factor = 0.05
-				mechanized_defence_factor = 0.05
-				army_armor_attack_factor = 0.1
-				army_armor_defence_factor = 0.05
-				army_armor_speed_factor = 0.1
+				mechanized_attack_factor = 0.025
+				mechanized_defence_factor = 0.025
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.025
+				army_armor_speed_factor = 0.05
 			}
 			
 		}
@@ -1476,6 +1476,7 @@ ideas = {
 			}
 
 			modifier = {
+				production_speed_infrastructure_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.05
 			}

@@ -3895,6 +3895,12 @@ focus_tree = {
 				uses = 1
 				category = light_fighter
 			}
+			add_tech_bonus = {
+					name = GER_aeronautical_research_institute
+					bonus = 1.0
+					uses = 1
+					category = cas_bomber
+			}
 			air_experience = 100
 
 			if = {

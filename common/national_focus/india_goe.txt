@@ -29,15 +29,16 @@ focus_tree = {
         }
     }
     default = no
-    continuous_focus_position = { x = 200 y = 3800 }
+    continuous_focus_position = { x = 200 y = 1500 }
 
     focus = {
         id = RAJ_indianize_the_army
         icon = GFX_focus_RAJ_indianisation_of_army
-        x = 0
-        y = 0
+        x = -21
+        y = 2
         mutually_exclusive = { focus = RAJ_keep_british_generals }
         cost = 5
+        prerequisite = { focus = RAJ_indian_gentleman_officers }
 
      
 
@@ -106,7 +107,7 @@ focus_tree = {
         mutually_exclusive = { focus = RAJ_provincial_autonomy focus = RAJ_his_majestys_loyal_government }
         x = -70
         y = 0
-        relative_position_id = RAJ_indianize_the_army
+
 
         cost = 5
 
@@ -16952,7 +16953,7 @@ focus = {
 	icon = GFX_focus_RAJ_all_india_forward_bloc
 	prerequisite = { focus = RAJ_his_majestys_loyal_government }
 	
-	x = -4
+	x = 0
 	y = 1
 	relative_position_id = RAJ_his_majestys_loyal_government 
 	cost = 5
@@ -17052,7 +17053,7 @@ focus = {
 	icon = GFX_focus_generic_industrialists
 	prerequisite = { focus = RAJ_work_with_local_leaders }
 	
-	x = -1
+	x = 0
 	y = 1
 	relative_position_id = RAJ_work_with_local_leaders 
 	cost = 5
@@ -17092,6 +17093,9 @@ focus = {
 	y = 1
 	relative_position_id = RAJ_work_with_local_leaders 
 	cost = 5
+    allow_branch = {
+        always = no
+     }
 
 	mutually_exclusive = { focus = RAJ_concessions_to_the_industrialists }
 
@@ -17115,7 +17119,7 @@ focus = {
 	icon = GFX_focus_RAJ_a_congress_resurgent
 	prerequisite = { focus = RAJ_concessions_to_the_industrialists focus = RAJ_empower_provincial_authorities }
 
-	x = 1
+	x = 0
 	y = 1
 	relative_position_id = RAJ_concessions_to_the_industrialists 
 	cost = 5
@@ -17176,6 +17180,9 @@ focus = {
 	mutually_exclusive = { focus = RAJ_the_integrity_of_india_act }
 
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+    allow_branch = {
+        always = no
+    }
 
 	completion_reward = {
 		custom_effect_tooltip = RAJ_modify_a_loyal_government_tt
@@ -17245,7 +17252,7 @@ focus = {
 	icon = GFX_focus_usa_voter_registration_act
 	prerequisite = { focus = RAJ_court_the_princes focus = RAJ_favor_the_muslim_league }
 
-	x = 2
+	x = 1
 	y = 1
 	relative_position_id = RAJ_favor_the_muslim_league 
 	cost = 10
@@ -17566,6 +17573,11 @@ focus = {
     available = { 
         always = no
     }
+    allow_branch = {
+        always = no
+    }
+    
+    
 
 	completion_reward = {
 		add_political_power = 100
@@ -17806,9 +17818,9 @@ focus = {
 	icon = GFX_goal_generic_dangerous_deal
 	prerequisite = { focus = RAJ_his_majestys_loyal_government }
 	
-	x = 4
-	y = 0
-	relative_position_id = RAJ_curtail_the_zamindars 
+	x = -14
+	y = 1
+	relative_position_id = RAJ_his_majestys_loyal_government 
 	cost = 5
 
 	mutually_exclusive = { focus = RAJ_curtail_the_zamindars }
@@ -17825,7 +17837,7 @@ focus = {
 	icon = GFX_focus_RAJ_tea_exports
 	prerequisite = { focus = RAJ_expand_the_zamindari_system }
 	
-	x = -1
+	x = 0
 	y = 1
 	relative_position_id = RAJ_expand_the_zamindari_system 
 	cost = 10
@@ -17897,9 +17909,9 @@ focus = {
 	icon = GFX_focus_generic_supply_line
 	prerequisite = { focus = RAJ_reform_the_agricultural_sector focus = RAJ_crown_commodities }
 	
-	x = 1
-	y = 1
-	relative_position_id = RAJ_reform_the_agricultural_sector 
+	x = 0
+	y = 2
+	relative_position_id = RAJ_expand_the_zamindari_system 
 	cost = 5
 
 	available = {
@@ -17950,10 +17962,10 @@ focus = {
 focus = {
 	id = RAJ_the_riches_of_the_raj
 	icon = GFX_focus_generic_mining_industry
-	prerequisite = { focus = RAJ_expand_the_zamindari_system }
+	prerequisite = { focus = RAJ_crown_commodities }
 	
-	x = 1
-	y = 1
+	x = 2
+	y = 2
 	relative_position_id = RAJ_expand_the_zamindari_system 
 	cost = 10
 
@@ -18105,9 +18117,9 @@ focus = {
 focus = {
 	id = RAJ_strengthen_ties_with_british_investors_GOE
 	icon = GFX_goal_generic_positive_trade_relations
-	prerequisite = { focus = RAJ_crown_commodities focus = RAJ_the_riches_of_the_raj }
+	prerequisite = { focus = RAJ_crown_commodities  }
 	
-	x = 1
+	x = -2
 	y = 1
 	relative_position_id = RAJ_crown_commodities 
 	cost = 5
@@ -18180,7 +18192,7 @@ focus = {
 	icon = GFX_goal_generic_construct_infrastructure
 	prerequisite = { focus = RAJ_the_riches_of_the_raj }
 	
-	x = 1
+	x = 0
 	y = 1
 	relative_position_id = RAJ_the_riches_of_the_raj 
 	cost = 10
@@ -18408,7 +18420,7 @@ focus = {
 	prerequisite = { focus = RAJ_crown_commodities }
 	prerequisite = { focus = RAJ_strengthen_ties_with_british_investors_GOE }
 	
-	x = -1
+	x = 1
 	y = 1
 	relative_position_id = RAJ_strengthen_ties_with_british_investors_GOE 
 	cost = 10
@@ -18505,9 +18517,9 @@ focus = {
 	icon = GFX_focus_research
 	prerequisite = { focus = RAJ_territorial_development_scheme focus = RAJ_the_empires_workshop }
 	
-	x = 1
-	y = 1
-	relative_position_id = RAJ_territorial_development_scheme 
+	x = -1
+	y = 4
+	relative_position_id = RAJ_expand_the_zamindari_system 
 	cost = 10
 
 	search_filters = { FOCUS_FILTER_RESEARCH }
@@ -18653,7 +18665,7 @@ focus = {
 	icon = GFX_focus_RAJ_indian_gentlemen_offcers
 	prerequisite = { focus = RAJ_his_majestys_loyal_government }
 	
-	x = 14
+	x = 13
 	y = 1
 	relative_position_id = RAJ_his_majestys_loyal_government 
 	cost = 5
@@ -18680,6 +18692,9 @@ focus = {
 	available = {
 		992 = { is_fully_controlled_by = ROOT }
 	}
+    allow_branch = {
+            always = no
+        }
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -18822,6 +18837,9 @@ focus = {
 			has_war = yes
 		}
 	}
+    allow_branch = { 
+        always = no
+    }
 
 	bypass = {
 		NOT = { is_subject_of = ENG }
@@ -18901,7 +18919,7 @@ focus = {
 						trait = belligerent_viceroy
 					}
 				}
-			}
+			}   
 		}
 	}
 }
@@ -18911,7 +18929,7 @@ focus = {
 	icon = GFX_focus_generic_treaty
 	prerequisite = { focus = RAJ_indian_gentleman_officers }
 	
-	x = 1
+	x = 0
 	y = 1
 	relative_position_id = RAJ_indian_gentleman_officers 
 	cost = 5
@@ -19098,6 +19116,9 @@ focus = {
 	y = 1
 	relative_position_id = RAJ_mobilization_of_the_indian_army 
 	cost = 10
+    allow_branch = {
+        always = no
+     }
 
 	available = {
 		NOT = { has_idea = RAJ_mobilization_of_the_indian_army }
@@ -19239,6 +19260,9 @@ focus = {
 	y = 1
 	relative_position_id = RAJ_mobilization_of_the_indian_army 
 	cost = 10
+    allow_branch = {
+        always = no
+     }
 
 	available = {
 		NOT = { has_idea = RAJ_mobilization_of_the_indian_army }
@@ -19521,7 +19545,7 @@ focus = {
 	prerequisite = { focus = RAJ_mobilization_of_the_indian_army }
 	
 	x = 0
-	y = 2
+	y = 1
 	relative_position_id = RAJ_mobilization_of_the_indian_army 
 	cost = 10
 
@@ -19555,6 +19579,9 @@ focus = {
 	y = 1
 	relative_position_id = RAJ_south_east_asia_command 
 	cost = 5
+    allow_branch = {
+            always = no
+        }
 
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 
@@ -20656,6 +20683,9 @@ focus = {
 	cost = 5
 
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+    allow_branch = {
+            always = no
+        }
 
 	completion_reward = {
 		custom_effect_tooltip = {
@@ -20808,6 +20838,9 @@ focus = {
         available = {
             is_in_faction_with = ENG
         }
+        allow_branch = {
+            always = no
+        }
         
         bypass = {
 
@@ -20861,7 +20894,6 @@ focus = {
 
         available = {
             has_war_support > 0.5
-            NOT = { has_idea = capital_investment_model }
         }
         
         bypass = {
@@ -21057,6 +21089,9 @@ focus = {
         available = {
             is_in_faction_with = ENG
         }
+        allow_branch = {
+            always = no
+        }
 
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -21173,6 +21208,9 @@ focus = {
         available = {
             NOT = { has_war_with = GER }
         }
+        allow_branch = {
+            always = no
+        }
 
         bypass = {
 
@@ -21199,7 +21237,7 @@ focus = {
         icon = GFX_focus_generic_befriend_usa
         prerequisite = { focus = RAJ_forming_an_indian_doctrine }
 
-        x = 0
+        x = -1
         y = 1
         relative_position_id = RAJ_forming_an_indian_doctrine
 
@@ -21237,7 +21275,7 @@ focus = {
         icon = GFX_focus_chi_mission_to_the_soviet_union
         prerequisite = { focus = RAJ_forming_an_indian_doctrine }
 
-        x = 2
+        x = 1
         y = 1
         relative_position_id = RAJ_forming_an_indian_doctrine
 
@@ -21287,6 +21325,9 @@ focus = {
         available = {
 
         }
+         allow_branch = {
+            always = no
+        }
 
         bypass = {
 
@@ -21317,7 +21358,7 @@ focus = {
         icon = GFX_focus_ETH_freedom_at_gunpoint
         prerequisite = { focus = RAJ_model_after_usa focus = RAJ_model_after_soviet }
 
-        x = 1
+        x = 0
         y = 2
         relative_position_id = RAJ_forming_an_indian_doctrine
 
@@ -21367,10 +21408,11 @@ focus = {
     focus = {
         id = RAJ_east_india_railways_dlc
         icon = GFX_goal_generic_construct_infrastructure
-        #prerequisite = { focus =  }
-        x = 7
-        y = 0
-        relative_position_id = RAJ_indianize_the_army
+        prerequisite = { focus = RAJ_great_indian_peninsula_railway_dlc }
+        x = -8
+        y = 2
+        relative_position_id = RAJ_expand_the_zamindari_system
+
         
         cost = 5
 
@@ -21381,6 +21423,9 @@ focus = {
         available = {
 
         }
+        allow_branch = {
+        always = no
+     }
         
         bypass = {
 
@@ -21614,7 +21659,7 @@ focus = {
     focus = {
         id = RAJ_bombay_baroda_and_central_india_railway
         icon = GFX_goal_generic_construct_infrastructure
-        #prerequisite = { focus =  }
+        prerequisite = { focus = RAJ_great_indian_peninsula_railway_dlc  }
         x = 4
         y = 0
         relative_position_id = RAJ_east_india_railways_dlc
@@ -21624,6 +21669,9 @@ focus = {
         ai_will_do = {
             factor = 1
         }
+        allow_branch = {
+        always = no
+     }
 
         available = {
 
@@ -21717,10 +21765,10 @@ focus = {
     focus = {
         id = RAJ_great_indian_peninsula_railway_dlc
         icon = GFX_goal_generic_construct_infrastructure
-        prerequisite = { focus = RAJ_east_india_railways_dlc focus = RAJ_bombay_baroda_and_central_india_railway }
-        x = 2
+        prerequisite = { focus = RAJ_expand_the_zamindari_system }
+        x = -4
         y = 1
-        relative_position_id = RAJ_east_india_railways_dlc 
+        relative_position_id = RAJ_expand_the_zamindari_system 
         
         cost = 5
 
@@ -21755,10 +21803,10 @@ focus = {
     focus = {
         id = RAJ_south_indian_railway_company
         icon = GFX_goal_generic_construct_infrastructure
-        prerequisite = { focus = RAJ_great_indian_peninsula_railway_dlc }
-        x = -2
+        prerequisite = { focus = RAJ_north_western_state_railway }
+        x = 4
         y = 1
-        relative_position_id = RAJ_great_indian_peninsula_railway_dlc
+        relative_position_id = RAJ_east_india_railways_dlc
         
         cost = 5
 
@@ -21794,9 +21842,9 @@ focus = {
         id = RAJ_supply_center_fortifications
         icon = GFX_goal_generic_fortify_city
         prerequisite = { focus = RAJ_great_indian_peninsula_railway_dlc }
-        x = 0
-        y = 1
-        relative_position_id = RAJ_great_indian_peninsula_railway_dlc 
+        x = 2
+        y = 0
+        relative_position_id = RAJ_east_india_railways_dlc 
         
         cost = 5
 
@@ -21844,9 +21892,9 @@ focus = {
         id = RAJ_north_western_state_railway
         icon = GFX_goal_generic_construct_infrastructure
         prerequisite = { focus = RAJ_great_indian_peninsula_railway_dlc }
-        x = 2
-        y = 1
-        relative_position_id = RAJ_great_indian_peninsula_railway_dlc 
+        x = 4
+        y = 0
+        relative_position_id = RAJ_east_india_railways_dlc 
         
         cost = 5
 
@@ -21901,6 +21949,9 @@ focus = {
         bypass = {
 
         }
+          allow_branch = {
+            always = no
+        }
 
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -21946,9 +21997,9 @@ focus = {
     focus = {
         id = RAJ_prioritize_civilian_cargo
         icon = GFX_focus_generic_railroad
-        prerequisite = { focus = RAJ_supply_center_fortifications }
+        prerequisite = { focus = RAJ_south_indian_railway_company }
         x = 4
-        y = 0
+        y = 1
         relative_position_id = RAJ_prioritize_army_cargo
         mutually_exclusive = { focus = RAJ_prioritize_army_cargo }
         
@@ -21993,10 +22044,10 @@ focus = {
     focus = {
         id = RAJ_ammunition_factory_khadki
         icon = GFX_goal_generic_construct_mil_factory
-        #prerequisite = { focus =  }
-        x = 6
-        y = 0
-        relative_position_id = RAJ_bombay_baroda_and_central_india_railway
+        prerequisite = { focus = RAJ_expand_the_zamindari_system }
+        x = 8
+        y = 1
+        relative_position_id = RAJ_expand_the_zamindari_system
         
         cost = 5
 
@@ -22050,10 +22101,10 @@ focus = {
     focus = {
         id = RAJ_royal_indian_artillery_dlc
         #icon = GFX_
-        prerequisite = {  }
-        x = 8
-        y = 0
-        relative_position_id = RAJ_ammunition_factory_khadki
+        prerequisite = { focus = RAJ_indian_gentleman_officers }
+        x = 6
+        y = 1
+        relative_position_id = RAJ_indian_gentleman_officers
         icon = GFX_focus_SWE_let_fly_all_guns
         cost = 5
 
@@ -22089,8 +22140,8 @@ focus = {
     focus = {
         id = RAJ_military_pensions
         icon = GFX_focus_SWE_defense_act
-        #prerequisite = { focus = RAJ_local_recruitment_offices }
-        x = 8
+        prerequisite = { focus = RAJ_indian_gentleman_officers }
+        x = 6
         y = 0
         relative_position_id = RAJ_royal_indian_artillery_dlc
         
@@ -22122,10 +22173,10 @@ focus = {
     focus = {
         id = RAJ_local_recruitment_offices
         icon = GFX_focus_SWE_varnplikt
-        #prerequisite = { focus =  }
-        x = 6
-        y = 0
-        relative_position_id = RAJ_military_pensions
+        prerequisite = { focus = RAJ_indian_gentleman_officers  }
+        x = -17
+        y = 2
+       
         
         cost = 5
 
@@ -22157,8 +22208,8 @@ focus = {
     focus = {
         id = RAJ_specialized_dietary_requirement
         icon = GFX_focus_RAJ_specialized_dietery_requirements
-        prerequisite = { focus = RAJ_military_pensions focus = RAJ_royal_indian_artillery_dlc  }
-        x = 1
+        prerequisite = {  focus = RAJ_royal_indian_artillery_dlc  }
+        x = -1
         y = 1
         relative_position_id = RAJ_royal_indian_artillery_dlc 
         mutually_exclusive = { focus = RAJ_standardized_rations }
@@ -22191,7 +22242,7 @@ focus = {
     focus = {
         id = RAJ_standardized_rations
         icon = GFX_focus_SWE_rations
-        prerequisite = { focus = RAJ_military_pensions focus = RAJ_royal_indian_artillery_dlc  }
+        prerequisite = { focus = RAJ_royal_indian_artillery_dlc  }
         x = 2
         y = 0
         relative_position_id = RAJ_specialized_dietary_requirement
@@ -22271,6 +22322,9 @@ focus = {
 
         ai_will_do = {
             factor = 1
+        }
+         allow_branch = {
+            always = no
         }
 
         available = {
@@ -22414,6 +22468,9 @@ focus = {
         available = {
 
         }
+       allow_branch = {
+        always = no
+       }
         
         bypass = {
 
@@ -22433,8 +22490,8 @@ focus = {
     focus = {
         id = RAJ_indian_army_corps_of_engineers
         icon = GFX_focus_SOV_organize_wreckers
-        prerequisite = { focus = RAJ_legacy_of_military_service focus = RAJ_military_pensions }
-        x = -3
+        prerequisite = {  focus = RAJ_military_pensions }
+        x = 18
         y = 1
         relative_position_id = RAJ_legacy_of_military_service
         
@@ -22617,6 +22674,9 @@ focus = {
         available = {
             always = no
         }
+        allow_branch = {
+        always = no
+     }
         
         bypass = {
 
@@ -22672,7 +22732,7 @@ focus = {
         id = RAJ_mountain_guns
         icon = GFX_focus_RAJ_mountain_guns
         prerequisite = { focus = RAJ_royal_indian_artillery_dlc }
-        x = -1
+        x = -3
         y = 1
         relative_position_id = RAJ_royal_indian_artillery_dlc
         
@@ -23052,7 +23112,7 @@ focus = {
         id = RAJ_military_engineer_services
         icon = GFX_goal_fortify_the_westwall
         prerequisite = { focus = RAJ_indian_army_corps_of_engineers }
-        x = 1
+        x = 0
         y = 1
         relative_position_id = RAJ_indian_army_corps_of_engineers
         
@@ -23136,9 +23196,9 @@ focus = {
     focus = {
         id = RAJ_re_establish_the_khyber_rifles
         icon = GFX_focus_ETH_freedom_at_gunpoint
-        prerequisite = { focus = RAJ_indian_territorial_force focus = RAJ_mountain_guns }
+        prerequisite = {  focus = RAJ_mountain_guns }
         x = -5
-        y = 1
+        y = 0
         relative_position_id = RAJ_indian_territorial_force
         
         cost = 5
@@ -23240,6 +23300,9 @@ focus = {
             factor = 1
         }
 
+        allow_branch = {
+            always = no
+        }
         available = {
             controls_state = 432
         }
@@ -23515,10 +23578,10 @@ focus = {
     focus = {
         id = RAJ_engineering_revolution
         icon = GFX_focus_SWE_landsverk
-        prerequisite = { focus = RAJ_mechanization_of_the_cavalry focus = RAJ_ordnance_factory_khamaria_jabalpur }
-        x = -2
+        prerequisite = {  focus = RAJ_ordnance_factory_khamaria_jabalpur }
+        x = -1
         y = 1
-        relative_position_id = RAJ_mechanization_of_the_cavalry
+        relative_position_id = RAJ_ordnance_factory_khamaria_jabalpur
         
         cost = 5
 
@@ -23656,7 +23719,7 @@ focus = {
         id = RAJ_ordnance_factory_kanpur_uttar_pradesh
         icon = GFX_goal_generic_construct_mil_factory
         prerequisite = { focus = RAJ_rifle_factory_ishapore_west_bengal }
-        x = 0
+        x = 1
         y = 1
         relative_position_id = RAJ_rifle_factory_ishapore_west_bengal   
         
@@ -23714,7 +23777,7 @@ focus = {
         id = RAJ_ordnance_factory_medak
         icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
         prerequisite = { focus = RAJ_rifle_factory_ishapore_west_bengal }
-        x = -2
+        x = -1
         y = 1
         relative_position_id = RAJ_rifle_factory_ishapore_west_bengal   
         
@@ -23848,14 +23911,18 @@ focus = {
         id = RAJ_indian_air_force
         icon = GFX_goal_generic_build_airforce
         #prerequisite = { focus =  }
-        x = 6
-        y = 0
-        relative_position_id = RAJ_local_recruitment_offices
+        x = -10
+        y = 2
+         prerequisite = { focus = RAJ_indian_gentleman_officers }
+
         
         cost = 5
 
         ai_will_do = {
             factor = 1
+        }
+          allow_branch = {
+            always = no
         }
 
         available = {
@@ -23945,6 +24012,9 @@ focus = {
         relative_position_id = RAJ_east_india_railways_dlc
         
         cost = 5
+        allow_branch = {
+            always = no
+        }
 
         ai_will_do = {
             factor = 1
@@ -23998,6 +24068,9 @@ focus = {
         x = -2
         y = 1
         relative_position_id = RAJ_indian_air_force
+          allow_branch = {
+        always = no
+       }
         
         cost = 5
 
@@ -24040,6 +24113,9 @@ focus = {
         relative_position_id = RAJ_indian_air_force
         
         cost = 10
+          allow_branch = {
+        always = no
+       }
 
         ai_will_do = {
             factor = 1
@@ -24619,7 +24695,7 @@ focus = {
         id = RAJ_the_ordnance_factories_board
         icon = GFX_focus_eng_concessions_to_the_trade_unions
         prerequisite = { focus = RAJ_cordite_factory_aruvankadu_tamil_nadu focus = RAJ_ordnance_factory_kanpur_uttar_pradesh }
-        x = -2
+        x = -1
         y = 1
         relative_position_id = RAJ_cordite_factory_aruvankadu_tamil_nadu
         
@@ -24668,7 +24744,7 @@ focus = {
     focus = {
         id = RAJ_smiling_buddah
         icon = GFX_focus_smiling_buddha
-        prerequisite = { focus = RAJ_british_air_experts focus = RAJ_abolish_agrarian_society_criteria }
+        prerequisite = { focus = RAJ_british_air_experts   }
         x = -3
         y = 1
         relative_position_id = RAJ_british_air_experts
@@ -24765,14 +24841,18 @@ focus = {
         icon = GFX_goal_generic_navy_doctrines_tactics
         #prerequisite = { focus = RAJ_expand_mazagon_dock_dlc
         #focus = RAJ_found_scindia_shipyard_dlc }
-        x = 8
-        y = 0
-        relative_position_id = RAJ_indian_air_force
+        x = -8
+        y = 2
+         prerequisite = { focus = RAJ_indian_gentleman_officers }
+       
 
         cost = 5
 
         ai_will_do = {
             factor = 1
+        }
+        allow_branch = {
+            always = no
         }
 
         available = {
@@ -24813,6 +24893,9 @@ focus = {
         ai_will_do = {
             factor = 20
         }
+          allow_branch = {
+        always = no
+       }
 
         available = {
 
@@ -24896,6 +24979,9 @@ focus = {
         ai_will_do = {
             factor = 20
         }
+          allow_branch = {
+        always = no
+       }
 
         available = {
             if = {
@@ -24988,6 +25074,9 @@ focus = {
         available = {
 
         }
+          allow_branch = {
+        always = no
+       }
 
         bypass = {
 

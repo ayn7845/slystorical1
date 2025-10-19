@@ -6917,6 +6917,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
+        set_country_flag = stop_unrest_events
 		add_dynamic_modifier = { modifier = RAJ_a_loyal_government }
 		
 		custom_effect_tooltip = generic_skip_one_line_tt
@@ -6958,6 +6959,10 @@ focus = {
 	y = 1
 	relative_position_id = RAJ_his_majestys_loyal_government 
 	cost = 5
+
+    available = {
+        date > 1936.7.1
+    }
 
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
@@ -7139,7 +7144,7 @@ focus = {
 	icon = GFX_focus_RAJ_seek_allies_with_the_muslim_league
 	prerequisite = { focus = RAJ_confer_with_the_congress }
 
-	x = -1
+	x = 0
 	y = 1
 	relative_position_id = RAJ_confer_with_the_congress 
 	cost = 10
@@ -7221,6 +7226,9 @@ focus = {
 	mutually_exclusive = { focus = RAJ_favor_the_muslim_league }
 
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+    allow_branch = {
+        always = no
+    }
 
 	completion_reward = {
 		custom_effect_tooltip = RAJ_modify_a_loyal_government_tt
@@ -7245,6 +7253,7 @@ focus = {
 			random_select_amount = 3
 			add_extra_state_shared_building_slots = 2
 		}
+
 	}
 }
 
@@ -7253,7 +7262,7 @@ focus = {
 	icon = GFX_focus_usa_voter_registration_act
 	prerequisite = { focus = RAJ_court_the_princes focus = RAJ_favor_the_muslim_league }
 
-	x = 1
+	x = 0
 	y = 1
 	relative_position_id = RAJ_favor_the_muslim_league 
 	cost = 10
@@ -7266,7 +7275,6 @@ focus = {
 		custom_effect_tooltip = RAJ_modify_a_loyal_government_tt
 		add_to_variable = { RAJ_a_loyal_government_resistance_target = -0.1 tooltip = resistance_target_tt }
 		add_to_variable = { RAJ_a_loyal_government_resistance_damage_to_garrison = -0.25 tooltip = resistance_damage_to_garrison_tt }
-		add_to_variable = { RAJ_a_loyal_government_political_power_factor = -0.15 tooltip = political_power_factor_tt }
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 		if = { #FREEMAN
@@ -7376,8 +7384,7 @@ focus = {
 		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = RAJ_stop_unrest_events_tt
-		set_country_flag = stop_unrest_events
+	
 	}
 }
 
@@ -8141,33 +8148,7 @@ focus = {
 		
 		custom_effect_tooltip = generic_skip_one_line_tt
 
-		if = {
-			limit = {
-				has_dlc = "Arms Against Tyranny"
-			}
-			add_equipment_subsidy = {
-				cic = 1000
-				equipment_type = infantry_equipment
-				seller_tags = { ENG } 
-			}
-			add_equipment_subsidy = {
-				cic = 1000
-				equipment_type = motorized_equipment
-				seller_tags = { ENG } 
-			}
-			add_equipment_subsidy = {
-				cic = 1000
-				equipment_type = artillery_equipment
-				seller_tags = { ENG } 
-			}
-			add_equipment_subsidy = {
-				cic = 1000
-				equipment_type = light_tank_chassis
-				seller_tags = { ENG } 
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-		}
-
+	
 		every_owned_state = {
 			limit = {
 				is_fully_controlled_by = ROOT
@@ -8206,121 +8187,16 @@ focus = {
 			add_idea = RAJ_the_zamindari_system_2
 		}
 
-		custom_effect_tooltip = RAJ_imperial_rail_renewal_act_tt
-		if = {
-			limit = {
-				OR = { #These are the two starting focuses in the industrial branch
-					has_completed_focus = RAJ_east_india_railways_dlc
-					has_completed_focus = RAJ_bombay_baroda_and_central_india_railway
-				}
-			}
-			custom_effect_tooltip = generic_current_effects
-		}
-		if = {
-			limit = {
-				has_completed_focus = RAJ_east_india_railways_dlc
-			}
-			random_owned_controlled_state = {
-				prioritize = { 431 } #WEST BENGAL (Calcutta)
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
+        random_core_state = {
+            add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
-			}
-		}
-		if = {
-			limit = {
-				has_completed_focus = RAJ_bombay_baroda_and_central_india_railway
-			}
-			random_owned_controlled_state = {
-				prioritize = { 430 } #EAST BENGAL (Bangladesh)
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_completed_focus = RAJ_great_indian_peninsula_railway_dlc
-			}
-			random_owned_controlled_state = {
-				prioritize = { 429 } #BOMBAY
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_completed_focus = RAJ_south_indian_railway_company
-			}
-			random_owned_controlled_state = {
-				prioritize = { 423 } #SOUTHERN MADRAS (Madras)
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_completed_focus = RAJ_north_western_state_railway
-			}
-			random_owned_controlled_state = {
-				prioritize = { 433 } #RAJAHSTHAN (Jaipur)
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
+        }
+
+	
 	}
 }
 
@@ -8951,42 +8827,11 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_POLITICAL_CHARACTER }
 
 	completion_reward = {
-		if = {
-			limit = {
-				ENG = { has_war = no }
-			}
-			custom_effect_tooltip = RAJ_linlithgows_declaration_of_war_tt
-		}
-		if = {
-			limit = {
-				ENG = { has_war = yes }
-			}
-			custom_effect_tooltip = RAJ_linlithgows_declaration_of_war_current_effects_tt
-			ENG = {
-				every_enemy_country = {
-					limit = {
-						NOT = { has_war_with = ROOT }
-					}
-					hidden_effect = { #Tooltip purposes
-						ROOT = {
-							declare_war_on = {
-								target = PREV
-								type = annex_everything
-							}
-						}
-					}
-				}
-			}
-		}
+	
 
-		custom_effect_tooltip = generic_skip_one_line_tt
+
 		add_political_power = 70
-		add_autonomy_score = { 
-			value = 350
-			localization = RAJ_consult_with_congress_leaders
-		}
 		
-		custom_effect_tooltip = generic_skip_one_line_tt
 		
 		if = {
 			limit = {
@@ -11767,7 +11612,7 @@ focus = {
         id = RAJ_great_indian_peninsula_railway_dlc
         icon = GFX_goal_generic_construct_infrastructure
         prerequisite = { focus = RAJ_expand_the_zamindari_system }
-        x = -4
+        x = -6
         y = 1
         relative_position_id = RAJ_expand_the_zamindari_system 
         
@@ -11805,7 +11650,7 @@ focus = {
         id = RAJ_south_indian_railway_company
         icon = GFX_goal_generic_construct_infrastructure
         prerequisite = { focus = RAJ_north_western_state_railway }
-        x = 4
+        x = 2
         y = 1
         relative_position_id = RAJ_east_india_railways_dlc
         
@@ -11843,7 +11688,7 @@ focus = {
         id = RAJ_supply_center_fortifications
         icon = GFX_goal_generic_fortify_city
         prerequisite = { focus = RAJ_great_indian_peninsula_railway_dlc }
-        x = 2
+        x = 0
         y = 0
         relative_position_id = RAJ_east_india_railways_dlc 
         
@@ -11893,7 +11738,7 @@ focus = {
         id = RAJ_north_western_state_railway
         icon = GFX_goal_generic_construct_infrastructure
         prerequisite = { focus = RAJ_great_indian_peninsula_railway_dlc }
-        x = 4
+        x = 2
         y = 0
         relative_position_id = RAJ_east_india_railways_dlc 
         
@@ -12142,7 +11987,7 @@ focus = {
         id = RAJ_military_pensions
         icon = GFX_focus_SWE_defense_act
         prerequisite = { focus = RAJ_indian_gentleman_officers }
-        x = 6
+        x = 5
         y = 0
         relative_position_id = RAJ_royal_indian_artillery_dlc
         
@@ -12492,8 +12337,8 @@ focus = {
         id = RAJ_indian_army_corps_of_engineers
         icon = GFX_focus_SOV_organize_wreckers
         prerequisite = {  focus = RAJ_military_pensions }
-        x = 18
-        y = 1
+        x = 17
+        y = 0
         relative_position_id = RAJ_legacy_of_military_service
         
         cost = 5
@@ -12927,7 +12772,9 @@ focus = {
         bypass = {
 
         } 
+       
 
+        
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
@@ -12945,74 +12792,9 @@ focus = {
                 }
                 add_potential_special_forces_tree = yes
             }
-            else = {
-                army_experience = 100
-            }
-            division_template = {
-                name = "Gurkha Rifles"
-                is_locked = no
-                #division_names_group = NAMELIST_ID # optional
-                priority = 2 # optional 
-                #template_counter = <INT> # optional
-                regiments = {
-                    infantry = { x = 0 y = 0 }
-                    infantry = { x = 0 y = 1 }
-                    infantry = { x = 0 y = 2 }
-                    infantry = { x = 0 y = 3 }
-                    infantry = { x = 1 y = 0 }
-                    infantry = { x = 1 y = 1 }
-                    infantry = { x = 1 y = 2 }
-                    infantry = { x = 1 y = 3 }
-                    artillery_brigade = { x = 2 y = 0 }
-                    
-                }
-                support = {
-                    artillery = { x = 0 y = 0 }
-                    engineer = { x = 0 y = 1 }
-                    anti_air = { x = 0 y = 2 }
-                }
-            }
 
-            random_owned_controlled_state = {
-
-                prioritize = { 439 } #optional: to pick those states first if they fulfill the limit
-                if = {
-                    limit = {
-                       ROOT = { is_subject_of = ENG } 
-                    }
-
-
-                    create_unit = {
-                        division = "name = \"1st King George V's Own Gurkha Rifles\" division_template = \"Gurkha Rifles\" start_experience_factor = 1.5 start_equipment_factor = 1 start_manpower_factor = 0.7"
-                        owner = ROOT
-                        allow_spawning_on_enemy_provs = no 
-                        country_score = {} # optional 
-                    }
-
-                    create_unit = {
-                        division = "name = \"6th Queen Elizabeth's Own Gurkha Rifles\" division_template = \"Gurkha Rifles\" start_experience_factor = 1.5 start_equipment_factor = 1 start_manpower_factor = 0.7"
-                        owner = ROOT
-                        allow_spawning_on_enemy_provs = no 
-                        country_score = {} # optional 
-                    }
-                }
-                else = {
-                    create_unit = {
-                        division = "name = \"The Sirmoor Rifles\" division_template = \"Gurkha Rifles\" start_experience_factor = 1.5 start_equipment_factor = 1 start_manpower_factor = 0.7"
-                        owner = ROOT
-                        allow_spawning_on_enemy_provs = no 
-                        country_score = {} # optional 
-                    }
-
-                    create_unit = {
-                        division = "name = \"Gurkha Rifles\" division_template = \"Gurkha Rifles\" start_experience_factor = 1.5 start_equipment_factor = 1 start_manpower_factor = 0.7"
-                        owner = ROOT
-                        allow_spawning_on_enemy_provs = no 
-                        country_score = {} # optional 
-                    }
-                }
-                
-            }
+            
+         
 
 
 
@@ -13068,7 +12850,7 @@ focus = {
         id = RAJ_indian_territorial_force
         icon = GFX_goal_generic_more_territorial_claims
         prerequisite = { focus = RAJ_frontier_corps }
-        x = -2
+        x = 2
         y = 1
         relative_position_id = RAJ_frontier_corps
         
@@ -13165,6 +12947,9 @@ focus = {
 
         }
         
+        allow_branch = {
+            always = false
+        }
         bypass = {
 
         }
@@ -13198,9 +12983,9 @@ focus = {
         id = RAJ_re_establish_the_khyber_rifles
         icon = GFX_focus_ETH_freedom_at_gunpoint
         prerequisite = {  focus = RAJ_mountain_guns }
-        x = -5
-        y = 0
-        relative_position_id = RAJ_indian_territorial_force
+        x = 0
+        y = 1
+        relative_position_id = RAJ_mountain_guns
         
         cost = 5
 
@@ -13341,10 +13126,10 @@ focus = {
     focus = {
         id = RAJ_tata_steel_dlc
         icon = GFX_goal_generic_construct_civilian
-        prerequisite = { focus = RAJ_bombay_baroda_and_central_india_railway }
-        x = 0
+        prerequisite = { focus = RAJ_great_indian_peninsula_railway_dlc }
+        x = 2
         y = 1
-        relative_position_id = RAJ_bombay_baroda_and_central_india_railway
+        relative_position_id = RAJ_great_indian_peninsula_railway_dlc
         
         cost = 5
 
@@ -13354,6 +13139,9 @@ focus = {
 
         available = {
             controls_state = 429
+        }
+        allow_branch = {
+            always = yes
         }
         
         bypass = {
@@ -13388,6 +13176,9 @@ focus = {
 
         ai_will_do = {
             factor = 1
+        }
+         allow_branch = {
+            always = false
         }
 
         available = {
@@ -13481,18 +13272,13 @@ focus = {
         continue_if_invalid = no
         available_if_capitulated = no
 
+        allow_branch = {
+            always = no
+        }
         search_filters = {FOCUS_FILTER_RESEARCH}
 
         completion_reward = {
-            if = {
-                limit = {
-                    NOT = { has_tech = tech_military_police }
-                }
-                set_technology = {
-                    tech_military_police = 1
-                    popup = yes
-                }
-            }
+        
 
             add_tech_bonus = {
                 name = RAJ_viceroys_body_guard
@@ -14723,15 +14509,7 @@ focus = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            if = {
-                limit = {
-                    has_dlc = "Arms Against Tyranny"
-                }
-
-                unlock_mio_policy_tooltip = {
-                    policy = mio_policy_RAJ_general_ordnance_factory_board
-                }
-            }
+         
             else = {
                 try_build_mil_in_core_otherwise_build_in_controlled_2_mil = yes
             }

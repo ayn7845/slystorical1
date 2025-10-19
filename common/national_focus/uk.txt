@@ -229,15 +229,10 @@ focus_tree = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 8
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 6
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -254,17 +249,13 @@ focus_tree = {
 						}
 					}
 					
-					add_extra_state_shared_building_slots = 8
-					add_building_construction = {
-						type = arms_factory
-						level = 4
-						instant_build = yes
-					}
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 4
+						level = 3
 						instant_build = yes
 					}
+					
 				}
 			}
 		}
@@ -904,10 +895,18 @@ focus_tree = {
 					category = cat_heavy_fighter
 				}
 			126 = {
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
+					instant_build = yes
+				}
+			}
+			136 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -959,7 +958,9 @@ focus_tree = {
 	focus = {
 		id = royal_ordinance_focus
 		available = {
-			threat > 0.30
+			GER = {
+				has_completed_focus = GER_anschluss
+			}
 		} #at war with major or ger in rhineland or high threat
 		
 		prerequisite = {
@@ -994,10 +995,10 @@ focus_tree = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = royal_ordinance_focus_2AF }
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = arms_factory
-					level = 8
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -1019,10 +1020,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 8
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = royal_ordinance_focus_2AF
@@ -1036,10 +1037,27 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 8
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = royal_ordinance_focus_2AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = royal_ordinance_focus_2AF
@@ -1551,7 +1569,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3923,10 +3941,10 @@ focus_tree = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 8
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 8
+						level = 4
 						instant_build = yes
 					}
 				}

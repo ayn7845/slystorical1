@@ -6,6 +6,8 @@ state={
 		tungsten=210 #added due to Portugal Setup
 	}
 	history={
+		add_extra_state_shared_building_slots = 8
+		arms_factory = 8
 		owner = SPR
 		victory_points = {
 			3874 1 

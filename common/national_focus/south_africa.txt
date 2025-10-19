@@ -126,11 +126,21 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 681 }
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
 			random_owned_controlled_state = {
 				prioritize = { 681 }
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
 			
 			add_ideas = SAF_military_complex_expansion 
@@ -213,7 +223,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_new_machine_tools
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 45
@@ -240,10 +250,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = SAF_expand_manufacturing_industry_IC
@@ -259,7 +269,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_fund_the_university_of_south_africa
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 45
@@ -369,7 +379,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_south_african_railways_harbours
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 15
@@ -400,7 +410,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_expand_the_rand_mines
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 15
@@ -464,18 +474,18 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			275 = {
-				add_extra_state_shared_building_slots = 4
+			894 = {
+				add_extra_state_shared_building_slots = 2
 			}
-			719 = {
+			895 = {
 			
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 			}
-			681 = {
-				add_extra_state_shared_building_slots = 4
+			893 = {
+				add_extra_state_shared_building_slots = 2
 			}
 			541 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 			}
 			random_owned_controlled_state = {
 				prioritize = { 275 }
@@ -643,7 +653,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_transvaal_urbanization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 15
@@ -670,10 +680,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = SAF_magazine_hill_AF
@@ -697,9 +707,8 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_war = yes
-				date > 1939.10.1
+			GER = {
+				has_completed_focus = GER_anschluss
 			}
 		}
 		
@@ -792,10 +801,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 6
 					instant_build = yes
 				}
 				set_state_flag = SAF_lenz_bomb_factory_AF
@@ -850,7 +859,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1015,16 +1024,16 @@ focus_tree = {
 					country_event = tfv_south_africa.1
 			}
 			719 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 			}
 			275 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 			}
 			681 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 			}
 			541 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 			}
 
 
@@ -1199,7 +1208,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_union_defense_force
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -1218,58 +1227,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			air_experience = 50
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = SAF_commit_to_the_five_year_plan_AB
-			}
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 2
-				category = air_doctrine
-			}
-		}
-	}
-	
-	focus = {
-		id = SAF_improve_the_hawker_hartbees
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = SAF_commit_to_the_five_year_plan }
-		#mutually_exclusive = { focus = SAF_replace_the_blenheim  }
-		x = 0
-		y = 1
-		relative_position_id = SAF_commit_to_the_five_year_plan
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 0.4
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1278,10 +1235,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = SAF_magazine_hill_AF
@@ -1328,8 +1285,8 @@ focus_tree = {
 				category = land_doctrine
 			}
 			add_tech_bonus = {				
-				bonus = 0.5
-				uses = 1
+				bonus = 1
+				uses = 2
 				category = armor
 			}	
 		}
@@ -1404,8 +1361,9 @@ focus_tree = {
 		completion_reward = {		
 			add_tech_bonus = {
 				name = SAF_mechanization_effort
-				bonus = 0.75
-				uses = 2
+				ahead_reduction = 1.0
+				bonus = 1.0
+				uses = 1
 				category = cat_mechanized_equipment
 			}
 		}
@@ -1488,7 +1446,6 @@ focus_tree = {
         icon = GFX_focus_generic_army_tanks2
         relative_position_id = SAF__south_african_military_college
         prerequisite = { focus = SAF__south_african_military_college}
-        mutually_exclusive = { focus = SAF_the_old_way }
         x = -4
         y = 2
         cost = 5
@@ -1513,7 +1470,6 @@ focus_tree = {
 		id = SAF_the_old_way
 		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = SAF__south_african_military_college }
-		mutually_exclusive = { focus = SAF_armoured_warfare }
 		x = 4
 		y = 2
 		relative_position_id = SAF__south_african_military_college
@@ -1578,7 +1534,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SAF_expand_the_south_african_artillery
 				bonus = 0.5
-				uses = 2
+				uses = 4
 				category = artillery
 			}
 		}
@@ -1686,8 +1642,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_infantry_training_school
-				bonus = 0.75
-				uses = 2
+				bonus = 1
+				uses = 4
 				category = infantry_weapons
 			}			
 		}
@@ -1697,7 +1653,7 @@ focus_tree = {
 		id = SAF_infantry_training
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = SAF_infantry_training_school }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = SAF_infantry_training_school
 		
@@ -1720,58 +1676,19 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = SAF_infantry_training
-				bonus = 0.5
-				uses = 3
-				category = infantry_tech
-			
-			}			
-		}
-	}
-
-	focus = {
-		id = SAF_south_african_commandos
-		icon = GFX_focus_eng_special_air_service
-		prerequisite = { focus = SAF_infantry_training_school }
-		x = 1
-		y = 1
-		relative_position_id = SAF_infantry_training_school
-		
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = SAF_special_forces
-				bonus = 0.5
-				uses = 2
-				category = marine_tech
-				category = mountaineers_tech
-				category = para_tech
-			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}		
 		}
 	}
 	
 	focus = {
 		id = SAF_desert_equipment
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = SAF_infantry_training focus = SAF_south_african_commandos }
+		prerequisite = { focus = SAF_infantry_training }
 		x = 0
 		y = 3
 		relative_position_id = SAF_the_old_way
@@ -1796,7 +1713,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SAF_desert_equipment
-			add_ideas = saf_expand_inf_production
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -1834,47 +1750,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {				
-				bonus = 0.75
-				uses = 1
+				bonus = 1
+				uses = 2
 				category = armor
 			}			
-		}
-	}
-
-	focus = {
-		id = SAF_crusader_tank
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = SAF_cruiser_tanks }
-		x = 1
-		y = 1
-		relative_position_id = SAF_cruiser_tanks
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {				
-				bonus = 0.75
-				uses = 1
-				category = cat_medium_armor
-				category = cat_light_armor
-			}		
-
 		}
 	}
 	
@@ -1882,7 +1761,7 @@ focus_tree = {
 		id = SAF_infantry_tank
 		icon = GFX_focus_generic_heavy_tank
 		prerequisite = { focus = SAF_cruiser_tanks }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = SAF_cruiser_tanks
 
@@ -1906,9 +1785,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {				
-				bonus = 0.75
+				ahead_reduction = 2.0
+				bonus = 1
 				uses = 1
-				category = cat_heavy_armor
+				category = cat_light_armor
 			}			
 		}
 	}
@@ -1916,7 +1796,7 @@ focus_tree = {
 	focus = {
 		id = SAF_tank_production
 		icon = GFX_focus_generic_mass_production
-		prerequisite = { focus = SAF_crusader_tank focus = SAF_infantry_tank }
+		prerequisite = { focus = SAF_infantry_tank }
 		x = 0
 		y = 2
 		relative_position_id = SAF_cruiser_tanks
@@ -2038,7 +1918,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_union_defense_force		
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -2058,6 +1938,7 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 60
+			add_war_support = 0.05
 			random_owned_controlled_state = {
 				prioritize = { 681 719 }
 				limit = {
@@ -2068,80 +1949,14 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = SAF_seaward_defence_force_DY
 			}			
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 2
-				category = naval_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = SAF_expand_the_simons_town_base
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = SAF_seaward_defence_force}
-		x = 0
-		y = 1
-		relative_position_id = SAF_seaward_defence_force
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 681 }
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = SAF_expand_the_simons_town_base_DY
-			}
-			if = {
-				limit = { 681 = { is_controlled_by = ROOT } }
-				681 = {
-					add_building_construction = {
-						type = coastal_bunker
-						province = 12589
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = SAF_expand_the_simons_town_base_NB
-				}
-			}
 		}
 	}
 }		

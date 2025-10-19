@@ -406,6 +406,9 @@ shared_focus = {
 	available = {
 
 	}
+	allow_branch = {
+		always = false
+	}
 
 	bypass = {
 		
@@ -450,7 +453,7 @@ shared_focus = {
 	icon = GFX_goal_generic_army_tanks
 	relative_position_id = SMB_motorized
 	prerequisite = { focus = SMB_motorized focus = SMB_regular_infantry }
-	x = 0
+	x = 1
 	y = 1
 
 	cost = 5
@@ -458,6 +461,7 @@ shared_focus = {
 	available = { 
 
 	}
+	
 
 	bypass = {
 		
@@ -837,7 +841,7 @@ shared_focus = {
 	relative_position_id = SMB_army_academy
 	prerequisite = { focus = SMB_army_academy focus = SMB_military_facilities }
 	mutually_exclusive = { focus = SMB_motorized }
-	x = 0
+	x = -1
 	y = 1
 
 	cost = 10
@@ -900,7 +904,7 @@ shared_focus = {
 	icon = GFX_goal_generic_army_artillery2
 	relative_position_id = SMB_regular_infantry
 	prerequisite = { focus = SMB_regular_infantry focus = SMB_motorized}
-	x = 0
+	x = 2
 	y = 1
 
 	cost = 5
@@ -952,6 +956,9 @@ shared_focus = {
 		NOT = {
 			has_idea = JUNO_license_idea
 		}
+	}
+	allow_branch = {
+		always = false
 	}
 
 	bypass = {
@@ -1011,7 +1018,7 @@ shared_focus = {
 	icon = GFX_focus_generic_military_mission
 	relative_position_id = SMB_domestic_production
 	prerequisite = { focus = SMB_domestic_production focus = SMB_foreign_designs}
-	x = 1
+	x = 0
 	y = 1
 
 	cost = 5
@@ -1164,6 +1171,9 @@ shared_focus = {
 	available = {
 
 	}
+	allow_branch = {
+		always = false
+	}
 
 	bypass = {
 		
@@ -1254,7 +1264,7 @@ shared_focus = {
 	icon = GFX_focus_eng_special_air_service
 	relative_position_id = SMB_army_professionalism
 	prerequisite = { focus = SMB_army_professionalism focus = SMB_conscription }
-	x = -2
+	x = 2
 	y = 1
 
 	cost = 5 
@@ -2792,8 +2802,8 @@ shared_focus = {
 	icon = GFX_focus_ETH_peacekeeping_forces
 	relative_position_id = SMB_regular_infantry 
 	prerequisite = { focus = SMB_regular_infantry }  
-	x = 2
-	y = 2
+	x = -3
+	y = 1
 
 	cost = 10
 

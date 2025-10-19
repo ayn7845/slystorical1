@@ -2009,7 +2009,7 @@ focus_tree = {
 				ahead_reduction = 2
 				bonus = 2.0
 				uses = 1
-				category = motorized_equipment
+				category = cat_mechanized_equipment
 			}
 		}
 	}

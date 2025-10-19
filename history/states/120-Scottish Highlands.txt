@@ -12,6 +12,7 @@ state = {
 	}
 
 	history= {
+		add_extra_state_shared_building_slots = 15
 		add_core_of = WST
 		owner = ENG
 		victory_points = {
@@ -27,7 +28,7 @@ state = {
 		buildings = {
 			infrastructure = 2
 			anti_air_building = 2
-			industrial_complex = 1
+			industrial_complex = 16
 			air_base = 1
 			11064 = {
 				naval_base = 8	

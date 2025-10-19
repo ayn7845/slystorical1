@@ -1970,20 +1970,6 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		bypass = {
-			OR = {
-				has_resources_in_country = {
-					resource = oil
-					amount > 149
-					extracted = yes
-				}
-				any_subject_country = {
-					has_resources_in_country = {
-						resource = oil
-						amount > 149
-						extracted = yes
-					}
-				}
-			}
 		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
@@ -2016,7 +2002,7 @@ focus_tree = {
 
 			custom_effect_tooltip = GER_modify_wehrwirtschaft_modifier_tt
 			add_to_variable = { 
-				GER_wehrwirtschaft_production_oil_factor = 0.1
+				GER_wehrwirtschaft_production_oil_factor = 0.35
 				tooltip = production_oil_factor_tt
 			}
 

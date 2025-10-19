@@ -822,8 +822,7 @@ ideas = {
 			picture = generic_improved_industries
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
-				stability_factor = -0.05
+				stability_factor = 0.05
 				war_support_factor = 0.05
 			}
 		}

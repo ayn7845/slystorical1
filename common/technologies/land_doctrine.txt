@@ -2806,7 +2806,6 @@ technologies = {
 		xor = {
 			peoples_army
 		}
-		conscription = 0.02
 		supply_consumption_factor = -0.10
 
 		

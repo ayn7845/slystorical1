@@ -306,10 +306,10 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = { old_guard infantry_leader organizer logistics_wizard defensive_doctrine combined_arms_expert ambusher cavalry_leader }
+			traits = { old_guard infantry_leader organizer logistics_wizard offensive_doctrine_doctrine aggressive_assaulter combined_arms_expert ambusher cavalry_leader }
 			skill = 6
 			attack_skill = 5
-			defense_skill = 10
+			defense_skill = 5
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 1206
@@ -407,7 +407,7 @@ characters = {
 			traits = { trait_reckless trait_BUL_zveno_member organizer cavalry_leader combined_arms_expert offensive_doctrine infantry_leader ambusher commando camouflage_expert skilled_staffer }
 			skill = 6
 			attack_skill = 5
-			defense_skill = 10
+			defense_skill = 5
 			planning_skill = 4
 			logistics_skill = 5
 			legacy_id = 1210

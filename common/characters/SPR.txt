@@ -4446,6 +4446,7 @@ characters={
 			}
 
 			available = {
+				has_war = no
 			}
 			traits = {
 				falangist_syndicalist 

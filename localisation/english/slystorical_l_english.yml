@@ -226,6 +226,7 @@ USA_navy_funding:0 "Navy Funding"
 # UK ENG
 ENG_american_payment:0 "Payments To America"
 ENG_american_aid:0 "American Aid"
+ENG_infantry_focus:0 "The British Grenadiers"
 
 # JAP
 JAP_domestic_air_production: "Domestic Aircraft Production"

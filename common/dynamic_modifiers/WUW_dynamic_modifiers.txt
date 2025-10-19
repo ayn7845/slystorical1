@@ -517,6 +517,7 @@ GER_economy_of_conquest_modifier = { #MEFO Bills and Economy of Conquest uses th
 	production_speed_infrastructure_factor = GER_mefo_production_speed_infrastructure_factor
 	global_building_slots_factor = GER_mefo_global_building_slots_factor
 	resource_trade_cost_bonus_per_factory = GER_industrial_resource_trade_cost_bonus_per_factory
+	consumer_goods_expected_value = 0.05
 }
 
 GER_recovering_economy_modifier = { #Recovering Economy NS #Aufrüstung and Recovering Economy/Wirtschaftswunder uses the same modifiers so that you can switch from Aufrüstung to Recovering Economy and keep the modifiers

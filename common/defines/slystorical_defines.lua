@@ -300,7 +300,7 @@ NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.15 --- modifier for d
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2.0   --vanilla 3
 NDefines.NAir.DISRUPTION_FACTOR = 4 --cas enters battle at 30+%
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2							-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.04						-- Higher value = more shot down planes
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.03						-- Higher value = more shot down planes
 NDefines.NAir.COMBAT_BETTER_SPEED_DAMAGE_INCREASE = 0.60
 NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.002 --0.001 in vanilla
 NDefines.NAir.FIELD_EXPERIENCE_MAX_PER_DAY = 3 --2 in vanilla
@@ -313,7 +313,7 @@ NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005					-- Vanilla 0,1
 NDefines.NNavy.ANTI_AIR_TARGETING = 0.7 
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.00875 --linear NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR*air_attack*thisdefine=casreduction
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.15          --Vanilla -0.35 
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.35          --Vanilla -0.35 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 50 --see plot in mod/resources
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.333
 NDefines.NAir.COMBAT_BETTER_AGILITY_DAMAGE_REDUCTION = 0.6

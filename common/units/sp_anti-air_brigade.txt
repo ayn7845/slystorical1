@@ -224,7 +224,7 @@ sub_units = {
 			anti_air
 		}
 
-		combat_width = 0
+		combat_width = 2
 
 		need = {
 			super_heavy_tank_aa_chassis = 35

@@ -234,7 +234,7 @@ sub_units = {
 			category_tank_destroyers
 		}
 
-		combat_width = 0
+		combat_width = 2
 
 		need = {
 			super_heavy_tank_destroyer_chassis = 35

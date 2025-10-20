@@ -132,17 +132,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 681 }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			
+			}			
 			add_ideas = SAF_military_complex_expansion 
 			
 		}
@@ -680,10 +670,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = SAF_magazine_hill_AF
@@ -801,10 +791,26 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SAF_lenz_bomb_factory_AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SAF_lenz_bomb_factory_AF
@@ -1644,7 +1650,10 @@ focus_tree = {
 				name = SAF_infantry_training_school
 				bonus = 1
 				uses = 4
-				category = infantry_weapons
+				technology = infantry_weapons2
+				technology = improved_infantry_weapons
+				technology = improved_infantry_weapons_2
+				technology = advanced_infantry_weapons
 			}			
 		}
 	}

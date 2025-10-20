@@ -320,7 +320,10 @@ focus_tree = {
 				name = ENG_infantry_focus
 				bonus = 1.0
 				uses = 4
-				category = infantry_weapons
+				technology = infantry_weapons2
+				technology = improved_infantry_weapons
+				technology = improved_infantry_weapons_2
+				technology = advanced_infantry_weapons
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }

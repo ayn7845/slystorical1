@@ -3104,7 +3104,10 @@ focus_tree = {
 				name = HUN_danuvia_submachine_guns
 				bonus = 1
 				uses = 4
-				category = infantry_weapons
+				technology = infantry_weapons2
+				technology = improved_infantry_weapons
+				technology = improved_infantry_weapons_2
+				technology = advanced_infantry_weapons
 			}
 			add_tech_bonus = {
 				name = HUN_danuvia_submachine_guns

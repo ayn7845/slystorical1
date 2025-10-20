@@ -77,13 +77,17 @@ characters={
 				small=GFX_portrait_AST_leslie_morshead_small
 			}
 		}
-		corps_commander={
+		field_marshal={
+			traits={ adaptable brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer ranger urban_assault_specialist infantry_leader infantry_expert }
 			skill=4
 			attack_skill=4
-			defense_skill=2
+			defense_skill=4
 			planning_skill=5
-			logistics_skill=2
+			logistics_skill=5
 			legacy_id=-1
+			visible = {
+				has_completed_focus = AST_promote_reservists
+			}
 		}
 	}
 
@@ -95,13 +99,17 @@ characters={
 				small=GFX_portrait_AST_thomas_blamey_small
 			}
 		}
-		corps_commander={
+		field_marshal={
+			traits={infantry_leader desert_fox infantry_expert trickster trait_engineer ranger hill_fighter mountaineer commando urban_assault_specialist camouflage_expert offensive_doctrine fortress_buster expert_improviser mountaineer }
 			skill=4
 			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
+			visible = {
+				has_completed_focus = AST_promote_reservists
+			}
 		}
 	}
 

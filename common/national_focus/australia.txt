@@ -67,7 +67,7 @@
 		x = 6
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -105,7 +105,7 @@
 		y = 1
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -127,8 +127,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_royal_australian_artillery
-				bonus = 1.0
-				uses = 1
+				bonus = 0.75
+				uses = 6
 				category = artillery
 			}
 			if = {
@@ -150,7 +150,7 @@
 		y = 1
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -170,24 +170,13 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			custom_effect_tooltip = AX_inf_gens
 			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = AST_promote_reservists
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
-			}
-			custom_effect_tooltip = AST_new_general_tt
-			hidden_effect = {
-				add_corps_commander_role = {
-					character = AST_iven_mackay
-					traits = { }
-					skill = 3
-					attack_skill = 2
-					defense_skill = 2
-					planning_skill = 3
-					logistics_skill = 3
-				}
 			}
 		}
 	}
@@ -200,7 +189,7 @@
 		y = 2
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -222,7 +211,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 1.00
+				bonus = 2.00
 				category = motorized_equipment
 			}
 		}
@@ -266,8 +255,9 @@
 			add_tech_bonus = {
 				name = AST_hmas_assault
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = marine_tech
+				category = mountaineers_tech
 			}
 		}
 	}
@@ -280,7 +270,7 @@
 		y = 2
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -303,43 +293,12 @@
 			add_tech_bonus = {
 				name = AST_specialize_equipment
 				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
+				uses = 4
+				technology = infantry_weapons2
+				technology = improved_infantry_weapons
+				technology = improved_infantry_weapons_2
+				technology = advanced_infantry_weapons
 			}
-		}
-	}
-
-	focus = {
-		id = AST_australian_womens_army_service
-		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = AST_hmas_assault }
-		x = -1
-		y = 3
-		relative_position_id = AST_additional_militia_training
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			
-			add_ideas = AST_australian_womens_army_service
 		}
 	}
 
@@ -385,42 +344,6 @@
 		}
 	}
 
-	focus = {
-		id = AST_fund_owen_gun_research
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = AST_hmas_assault }
-		x = 1
-		y = 3
-		relative_position_id = AST_additional_militia_training
-		
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH  }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = AST_fund_owen_gun_research
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-	}
 
 	focus = {
 		id = AST_sentinel_tank_project
@@ -450,15 +373,11 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
 			add_tech_bonus = {
 				name = AST_sentinel_tank_project
 				bonus = 1.0
 				uses = 2
-				category = armor
+				category = cat_light_armor
 			}
 		}
 	}
@@ -472,7 +391,7 @@
 		y = 4
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -492,17 +411,11 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = AST_airborne_defence
-				bonus = 1.0
-				uses = 1
-				category = para_tech
-			}
 			if = {
 				limit = { has_dlc = "Arms Against Tyranny" }
 				add_doctrine_cost_reduction = {
 					cost_reduction = 0.5
-					uses = 1
+					uses = 3
 					category = special_forces_doctrine
 				}
 			}
@@ -1136,7 +1049,7 @@
 		x = 16
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -1244,7 +1157,7 @@
 					}
 					NOT = {state = 674}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1260,7 +1173,7 @@
 					}
 					NOT = {state = 674}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1365,10 +1278,10 @@
 				limit = {
 					has_state_flag = AST_department_of_supply_and_development_AF
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1385,10 +1298,10 @@
 					}
 					NOT = { state = 674 }
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = AST_department_of_supply_and_development_AF
@@ -1523,10 +1436,10 @@
 					}
 					NOT = { state = 674 }
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = AST_allied_works_council_IC1
@@ -1543,7 +1456,7 @@
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -1716,9 +1629,8 @@
 		}
 
 		available = {
-			OR = {
-				threat > 0.20
-				has_war = yes
+			GER = {
+				has_completed_focus = GER_anschluss
 			}
 		}
 		
@@ -1898,7 +1810,6 @@
 
 		completion_reward = {
 			add_ideas = AST_invest_in_victory
-			add_ideas = service_by_requirement
 		}
 	}
 
@@ -1929,8 +1840,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = FRA_national_mobilization_focus
-			#add_ideas = AST_citizen_military_forces
+			add_ideas = AST_citizen_military_forces
 		}
 	}
 

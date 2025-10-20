@@ -9434,6 +9434,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
+			hidden_effect = {
+				HUN = {
+					complete_national_focus = wuw_HUN_carrying_on_arpads_legacy
+				}
+				SOV = {
+					complete_national_focus = SOV_desperate_measures
+				}
+			}
 
 			IF = {
 				limit = { SOV = { has_civil_war = no } }

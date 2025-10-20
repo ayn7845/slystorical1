@@ -1441,11 +1441,6 @@ focus_tree = {
 					category = air_doctrine
 				}
 			}
-			set_technology = { dispersed_industry = 1 }
-			set_technology = { dispersed_industry2 = 1 }
-			set_technology = { dispersed_industry3 = 1 }
-			set_technology = { dispersed_industry4 = 1 }
-			set_technology = { dispersed_industry5 = 1 }
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}

@@ -560,7 +560,6 @@ if = {
 	}
 	#A Loyalist Government DM
 	set_variable = { RAJ_a_loyal_government_political_power_factor = 0.05 }
-	set_variable = { RAJ_a_loyal_government_master_ideology_drift = 0.3 }
 	set_variable = { RAJ_a_loyal_government_consumer_goods_factor = 0 }
 	set_variable = { RAJ_a_loyal_government_political_advisor_cost_factor = 0 }
 	set_variable = { RAJ_a_loyal_government_party_popularity_stability_factor = 0 }

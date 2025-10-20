@@ -11948,7 +11948,7 @@ focus = {
         id = RAJ_royal_indian_artillery_dlc
         #icon = GFX_
         prerequisite = { focus = RAJ_indian_gentleman_officers }
-        x = 6
+        x = 4
         y = 1
         relative_position_id = RAJ_indian_gentleman_officers
         icon = GFX_focus_SWE_let_fly_all_guns
@@ -12337,7 +12337,7 @@ focus = {
         id = RAJ_indian_army_corps_of_engineers
         icon = GFX_focus_SOV_organize_wreckers
         prerequisite = {  focus = RAJ_military_pensions }
-        x = 17
+        x = 15
         y = 0
         relative_position_id = RAJ_legacy_of_military_service
         
@@ -12590,6 +12590,9 @@ focus = {
 
         available = {
 
+        }
+        allow_branch = {
+            always = false
         }
         
         bypass = {

@@ -887,13 +887,7 @@ characters = {
 				large = "GFX_portrait_SOV_vasily_kuznetsov"
 				small= "GFX_idea_SOV_vasily_kuznetsov"
 			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = SOV_vasily_kuznetsov
-			traits = { army_chief_offensive_2}
-		}
-		
+		}		
 		corps_commander = {
 			traits = { trickster skilled_staffer cavalry_officer winter_specialist inflexible_strategist }
 			skill = 5
@@ -1063,15 +1057,10 @@ characters = {
 				small=GFX_portrait_SOV_markian_popov_small
 			}
 		}
-		advisor = {
-			slot = high_command
-			idea_token = SOV_markian_popov
-			traits = { army_CombinedArms_2}
-		}
 		corps_commander = {
-			traits = { brilliant_strategist winter_specialist trickster trait_cautious political_commissar cavalry_leader
+			traits = { brilliant_strategist winter_specialist trickster trait_cautious political_commissar
 			}
-			skill = 5
+			skill = 2
 			attack_skill = 3
 			defense_skill = 4
 			planning_skill = 4

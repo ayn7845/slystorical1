@@ -10,9 +10,11 @@ state = {
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = EVE
-
+		add_extra_state_shared_building_slots = 20
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 5
+			arms_factory = 15
 		}
 
 		victory_points = { #Tura

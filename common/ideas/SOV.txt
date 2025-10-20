@@ -26,6 +26,32 @@ ideas = {
 				cat_mass_assault_cost_factor = 1
 			}
 		}
+		
+		SOV_planograd_idea = {
+			name = "Merged Aircraft Designers"
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_air # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				airforce_air_agility_factor = 0.05
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+			
+		}
+		
 		SOV_tankograd_idea = {
 			name = "Tankograd"
 
@@ -37,11 +63,15 @@ ideas = {
 				always = no
 			}
 
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
 			equipment_bonus = {
 				armor = {
 					build_cost_ic = -0.05
 				}
 			}
+			
 		}
 		SOV_tankograd_idea2 = {
 			name = "Tankograd"
@@ -9814,7 +9844,8 @@ ideas = {
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
 			}
 		}
 
@@ -9843,7 +9874,8 @@ ideas = {
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
 				consumer_goods_expected_value = -0.05
 			}
 		}
@@ -9873,7 +9905,8 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
 				industrial_capacity_factory = 0.05
 			}
 		}
@@ -9903,7 +9936,8 @@ ideas = {
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.1
 				license_purchase_cost = -0.25
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
 				industrial_capacity_dockyard = 0.05
 			}
 		}

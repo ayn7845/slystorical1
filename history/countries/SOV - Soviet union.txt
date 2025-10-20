@@ -536,8 +536,8 @@ set_variable = { SOV_fyp_factory_requirement_tier_4 = 150 }
 set_variable = { SOV_fyp_factory_requirement_tier_5 = 200 }
 
 #THIRD FIVE YEAR PLAN NATIONAL SPIRIT VARS
-set_variable = { SOV_fyp_production_factory_efficiency_gain_factor = -0.15 }
-set_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 }
+set_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0 }
+set_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0 }
 set_variable = { SOV_fyp_consumer_goods_factor = 0.10 }
 set_variable = { SOV_fyp_production_speed_industrial_complex_factor = 0.05 }
 
@@ -592,9 +592,9 @@ set_variable = { SOV_red_fleet_special_forces_cap = 0 } #-> Marines
 
 #DEFENSE INDUSTRY NATIONAL SPIRIT VARS
 set_variable = { SOV_defense_industry_conversion_cost_civ_to_mil_factor = -0.2 }
-set_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.05 }
-set_variable = { SOV_defense_industry_production_factory_efficiency_gain_factor = -0.05 }
-set_variable = { SOV_defense_industry_line_change_production_efficiency_factor = -0.1 }
+set_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.025 }
+set_variable = { SOV_defense_industry_production_factory_efficiency_gain_factor = 0 }
+set_variable = { SOV_defense_industry_line_change_production_efficiency_factor = 0 }
 
 set_variable = { SOV_defense_industry_tank_manufacturer_cost_factor = 0 } #-> Tank Designer focus
 set_variable = { SOV_defense_industry_land_equipment_upgrade_xp_cost = 0 } #-> Tankograd

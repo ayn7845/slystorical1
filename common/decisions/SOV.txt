@@ -8802,15 +8802,9 @@ SOV_merge_designers_dec_cat = {
 		}
 
 		available = {
-			has_full_control_of_state = 195 #LENINGRAD
-			num_of_civilian_factories_available_for_projects > 0
-			SOV_has_active_tank_designer_any = yes
-			NOT = { has_country_flag = SOV_merge_tank_decision_ongoing_flag }
 		}
 
 		visible = {
-			has_completed_focus = SOV_merge_tank_and_materiel_plants
-			SOV_has_tank_merged_1 = no
 		}
 
 		cancel_trigger = {

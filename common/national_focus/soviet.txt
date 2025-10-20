@@ -280,7 +280,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 10
+		cost = 5
 
 		available = {
 			custom_trigger_tooltip = {
@@ -420,7 +420,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_finish_the_five_year_plan
-		cost = 10
+		cost = 5
 
 		available = {
 			SOV_third_five_year_plan_available = yes
@@ -482,7 +482,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = SOV_third_five_year_plan
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_shift_to_armaments_production }
 
@@ -499,7 +499,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.05 }
+				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.02 }
 			}
 			custom_effect_tooltip = SOV_reorganize_the_pc_of_heavy_industry_ns_tt
 			if = {
@@ -545,7 +545,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SOV_reorganize_the_pc_of_heavy_industry
-		cost = 10
+		cost = 5
 
 		available = {
 			SOV_third_five_year_plan_available = yes
@@ -559,9 +559,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_to_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 }
+			add_to_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.025 }
 			add_to_variable = { SOV_fyp_line_change_production_efficiency_factor = 0.1 }
-			custom_effect_tooltip = SOV_industrial_modernization_ns_tt
+			custom_effect_tooltip = SOV_industrial_modernization_ns_ttt
 
 			add_tech_bonus = {
 				name = SOV_industrial_modernization
@@ -679,7 +679,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SOV_third_five_year_plan
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_reorganize_the_pc_of_heavy_industry}
 
@@ -735,7 +735,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SOV_shift_to_armaments_production
-		cost = 10
+		cost = 5
 
 		available = {
 			SOV_third_five_year_plan_available = yes
@@ -1423,7 +1423,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_eastern_development
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -1529,7 +1529,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1555,6 +1555,13 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 50
+			add_tech_bonus = {
+				name = SOV_transpolar_flights
+				bonus = 1.0
+				uses = 2
+				category = cas_bomber
+				category = light_fighter
+			}
 		}
 	}
 
@@ -1566,7 +1573,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 1 
+		cost = 5
 
 		available = {
 			any_owned_state = {
@@ -1635,7 +1642,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 1
+		cost = 5
 
 		available = {
 
@@ -1683,7 +1690,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SOV_modernize_aircraft_facilities
-		cost = 1
+		cost = 5
 
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
@@ -1692,21 +1699,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
+			add_ideas = SOV_planograd_idea
+			653 = {
+				add_resource = {
+					type = aluminium
+					amount = 20
 				}
-				every_military_industrial_organization = {
-					limit = {
-						has_mio_trait = SOV_mio_trait_merge_plant_no_28 #All Aircraft MIOs have this trait
-					}
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_28
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_150
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_vef_plant
-				}
-			}
-			else = {
-				custom_effect_tooltip = SOV_merge_aircraft_plants_tt
 			}
 		}
 	}
@@ -1753,7 +1751,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 1
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_intensify_pilot_training_program }
 
@@ -1806,7 +1804,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -1833,7 +1831,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 1
+		cost = 5
 
 		available = {
 			OR = {
@@ -1866,7 +1864,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_women_in_aviation
-		cost = 1
+		cost = 5
 
 		available = {
 			any_enemy_country = {
@@ -1953,7 +1951,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_increase_aircraft_production }
 
@@ -1984,7 +1982,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 1
+		cost = 5
 
 		available = {
 
@@ -2009,7 +2007,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_increase_aircraft_production
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_long_range_aircraft }
 
@@ -2040,7 +2038,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_intensify_pilot_training_program
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_ground_support }
 
@@ -2073,7 +2071,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_ground_support
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -3206,20 +3204,24 @@ focus_tree = {
 					has_start_date = 1941.1.1.12
 
 				}
-
-
-			
-
 			
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
-
 		completion_reward = {
 			hidden_effect = {
 				add_dynamic_modifier = { modifier = SOV_defense_industry_dynamic_modifier }
 			}
-			custom_effect_tooltip = SOV_found_the_pcdi_ns_tt
+			custom_effect_tooltip = SOV_found_the_pcdi_ns_ttt
+			add_tech_bonus = {
+				name = ENG_infantry_focus
+				bonus = 1.0
+				uses = 4
+				technology = infantry_weapons2
+				technology = improved_infantry_weapons
+				technology = improved_infantry_weapons_2
+				technology = advanced_infantry_weapons
+			}
 		}
 	}
 
@@ -3231,7 +3233,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = SOV_found_the_pcdi
-		cost = 10
+		cost = 5
 
 		available = {
 			has_full_control_of_state = 219 #MOSCOW
@@ -3240,31 +3242,17 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_to_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.05 }
-			add_to_variable = { SOV_defense_industry_production_factory_efficiency_gain_factor = -0.05 }
-			custom_effect_tooltip = SOV_pc_of_mechanical_engineering_ns_tt
+			add_to_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.025 }
+			add_to_variable = { SOV_defense_production_factory_start_efficiency_factor = 0.05 }
+			custom_effect_tooltip = SOV_pc_of_mechanical_engineering_ns_ttt
 
-			if = { #DEFAULT COMMIE
-				limit = {
-					has_government = communism
+			add_tech_bonus = {
+					name = SOV_pc_of_mechanical_engineering
+					ahead_reduction = 2.0
+					bonus = 1.0
+					uses = 1
+					category = cat_mechanized_equipment
 				}
-				add_tech_bonus = {
-					name = SOV_pc_of_mechanical_engineering_name_default
-					bonus = 1
-					uses = 2
-					category = motorized_equipment
-					category = infantry_weapons
-				}
-			}
-			else = { #ALT IDEOLOGY
-				add_tech_bonus = {
-					name = SOV_pc_of_mechanical_engineering_name_alt
-					bonus = 1
-					uses = 2
-					category = motorized_equipment
-					category = infantry_weapons
-				}
-			}
 			
 			219 = {
 				if = {
@@ -3308,7 +3296,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = SOV_superior_war_machines
-				bonus = 0.75
+				bonus = 1
 				uses = 2
 				category = armor
 			}
@@ -3323,7 +3311,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -3338,7 +3326,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SOV_the_means_to_wage_war
 				bonus = 0.75
-				uses = 2
+				uses = 6
 				category = support_tech
 			}
 		}
@@ -3440,7 +3428,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
 			has_full_control_of_state = 219 #MOSCOW
@@ -3590,43 +3578,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				#TANKS
-				every_military_industrial_organization = {
-					limit = {
-						has_mio_trait = SOV_mio_trait_merge_plant_no_174 #All Tank MIOs have this trait
-					}
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_174
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_112
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_ural_heavy_machine_building_plant
-				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				#MATERIEL
-				every_military_industrial_organization = {
-					limit = {
-						has_mio_trait = SOV_mio_trait_merge_nkmz_plant #All Materiel MIOs have this trait
-					}
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_nkmz_plant
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_magnitogorsk_metallurgical_plant
-				}
-				mio:SOV_grabin_design_bureau_organization = {
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_172
-				}
-				mio:SOV_tula_arms_plant_organization = {
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_622
-				}
-				mio:SOV_gaz_organization = {
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_automobile_tool_plant
-				}
-			}
-			else = {
-				custom_effect_tooltip = SOV_merge_tank_and_materiel_plants_tt
-			}
+			add_ideas = SOV_tankograd_idea
 		}
 	}
 
@@ -3693,7 +3645,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SOV_the_means_to_wage_war
-		cost = 10
+		cost = 5
 		dynamic = yes 
 		available = {
 
@@ -5845,7 +5797,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_centre
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -5973,7 +5925,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_zinovyevite_terrorist_center
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -6001,7 +5953,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SOV_socialism_in_one_country
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -6261,7 +6213,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_the_anti_soviet_trotskyist_center
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -6695,9 +6647,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			surrender_progress > 0.25
-			#has_defensive_war = yes
-			has_war_with_major = yes
+			date > 1942.1.1
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -6707,7 +6657,7 @@ focus_tree = {
 		completion_reward = {
 			
 			#add_country_leader_trait = stalin_they_will_know_fear
-			add_ideas = SOV_tankograd_idea
+			add_ideas = motorized_army_two
 			hidden_effect = {
 				add_breakthrough_progress = {
 				specialization = specialization_land
@@ -7096,23 +7046,8 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			#AND = { 
-			#custom_trigger_tooltip = {
-				#tooltip = SOV_propaganda_campaigns_taken_20_or_greater_tt
-				#check_variable = { SOV_propaganda_campaigns_taken = 20 compare = greater_than_or_equals }
-			#}
-			OR = {
-			surrender_progress > 0.45
-			date > 1944.1.1	
-			if = { 
-					limit = { 
-						has_start_date = 1941.1.1.12
-					}
-					date > 1943.5.1
-					}
-				}
-			}
-		#}
+			date > 1943.1.1
+		}
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
@@ -7691,7 +7626,7 @@ focus = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_the_comintern
-		cost = 5
+		cost = 0
 
 		ai_will_do = {
 			factor = 1
@@ -7715,61 +7650,7 @@ focus = {
 			army_experience = 400
 		
 			add_timed_idea = { idea = SOV_military_advisors_in_spain days = 1095 }
-			
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-					has_completed_focus = SOV_covert_support_for_spanish_poum
-					has_completed_focus = SOV_coup_detat
-					has_global_flag = SPR_anarchist_uprising_flag
-					country_exists = SPC
-					SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
-				}
-				SPC = {
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-				}
-			}
-			else_if = {
-				limit = {
-					has_dlc = "La Resistance"
-					country_exists = SPD
-				}
-				SPD = {
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-				}
-			}
-			else_if = {
-				limit = {
-					has_dlc = "La Resistance"
-					NOT = { country_exists = SPD }
-				}
-				custom_effect_tooltip = SOV_aid_republican_spain_tt
-				effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-			}
-			else = {
-				random_country = {
-					limit = {
-						original_tag = SPR
-						has_civil_war = yes
-						OR = {
-							has_government = communism
-							has_government = democratic
-						}
-					}
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-				}
-			}
-			# A Spanish General will join the USSR if his side loses the SCW
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				custom_effect_tooltip = SOV_send_military_advisors_to_spain_generals_tt
-				set_country_flag = SOV_spanish_refugee_generals_welcome_flag
-			}
+			add_timed_idea = { idea = SPR_seized_spanish_gold_reserves days = 365 }
 		}
 	}
 
@@ -8384,7 +8265,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_baltic_security
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

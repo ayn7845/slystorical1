@@ -5226,7 +5226,7 @@ leader_traits = {
 	}
 
 	stalin_they_will_know_fear = {
-		army_armor_attack_factor = 0.1
+		army_armor_attack_factor = 0.05
 	}
 
 	stalin_inheritor_of_lenin = {

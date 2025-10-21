@@ -12127,34 +12127,107 @@ focus = {
 		relative_position_id = ITA_pact_of_steel
 		cost = 1
 		available = {
-			GER = { has_war = yes }
+			FRA = { has_capitulated = yes }
 		}
 
 		bypass = {
-			is_subject = no
-			OR = {
-				GRE = { is_subject_of = ROOT }
-				GRE = { exists = no }
-				is_in_faction_with = GRE
-
-				YUG = { is_subject_of = ROOT }
-				YUG = { exists = no }
-				is_in_faction_with = YUG
-			}
 		}
 		search_filters = {}
 
 		completion_reward = {
-	
-			create_wargoal = {
-				type = annex_everything
-				target = YUG
+			hidden_effect = {
+				ENG = {
+					add_to_faction = YUG
+					add_to_faction = GRE
+				}
+				declare_war_on = {
+					target = CAN
+					type = take_state_focus
+					generator = { 5 }
+				}
+				declare_war_on = {
+					target = RAJ
+					type = take_state_focus
+					generator = { 5 }
+				}
+				declare_war_on = {
+					target = SAF
+					type = take_state_focus
+					generator = { 5 }
+				}
+				declare_war_on = {
+					target = AST
+					type = take_state_focus
+					generator = { 5 }
+				}
+				declare_war_on = {
+						target = ENG
+						type = take_state_focus
+						generator = { 5 }
+					}
+				declare_war_on = {
+					target = FRA
+					type = take_state_focus
+					generator = { 5 }
+				}
+				BUL = {
+					declare_war_on = {
+						target = GRE
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = YUG
+						type = take_state_focus
+						generator = { 5 }
+					}
+				}
+				GER = {
+					declare_war_on = {
+						target = GRE
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = YUG
+						type = take_state_focus
+						generator = { 5 }
+					}
+				}
+				HUN = {
+					declare_war_on = {
+						target = GRE
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = YUG
+						type = take_state_focus
+						generator = { 5 }
+					}
+				}
+				ROM = {
+					declare_war_on = {
+						target = GRE
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = YUG
+						type = take_state_focus
+						generator = { 5 }
+					}
+				}
 			}
-
-
-			create_wargoal = {
-				type = annex_everything
+			declare_war_on = {
 				target = GRE
+				type = take_state_focus
+				generator = { 5 }
+			}
+			declare_war_on = {
+				target = YUG
+				type = take_state_focus
+				generator = { 5 }
 			}
 		
 		}

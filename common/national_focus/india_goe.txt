@@ -7956,7 +7956,7 @@ focus = {
 			name = RAJ_rural_mechanization_program
 			bonus = 0.75
 			uses = 1
-			category = cat_production
+			technology = assembly_line_production
 		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
@@ -8315,7 +8315,8 @@ focus = {
 			name = RAJ_the_empires_workshop
 			bonus = 0.75
 			uses = 2
-			category = industry
+			technology = advanced_machine_tools
+			technology = concentrated_industry3
 		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt

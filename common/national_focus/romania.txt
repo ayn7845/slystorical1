@@ -636,7 +636,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = Polish_Slums
+		id = ROM_free_trade
 		icon = GFX_focus_SOV_zemsky_sobor
 		prerequisite = { focus = ROM_national_recovery }
 		x = 6

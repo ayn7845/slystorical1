@@ -29,9 +29,9 @@ characters={
 			}
 		}
 		field_marshal={
-			traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando urban_assault_specialist camouflage_expert combined_arms_expert offensive_doctrine fortress_buster expert_improviser desert_fox }
+			traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader commando urban_assault_specialist camouflage_expert combined_arms_expert offensive_doctrine fortress_buster expert_improviser desert_fox }
 				skill = 6
-				attack_skill = 6
+				attack_skill = 5
 				defense_skill = 5
 				planning_skill = 6
 				logistics_skill = 6
@@ -47,10 +47,10 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger urban_assault_specialist }
+			traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer urban_assault_specialist }
 				skill = 6
 				attack_skill = 4
-				defense_skill = 6
+				defense_skill = 4
 				planning_skill = 5
 				logistics_skill = 5
 				legacy_id=0

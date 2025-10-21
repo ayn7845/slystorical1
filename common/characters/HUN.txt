@@ -661,9 +661,7 @@ characters = {
 				logistics_skill = 5
 				legacy_id = -1 
 				visible = {
-					visible = {
-						has_completed_focus = wuw_HUN_strenghten_the_order_of_vitez
-					}
+					has_completed_focus = wuw_HUN_strenghten_the_order_of_vitez
 				}
 			}
 
@@ -934,8 +932,8 @@ characters = {
 			corps_commander = {
 				traits = { trait_HUN_vitez trait_HUN_fascist_sympathies desert_fox infantry_leader infantry_expert trickster trait_engineer ranger hill_fighter mountaineer commando urban_assault_specialist camouflage_expert offensive_doctrine fortress_buster expert_improviser}
 				skill = 6
-				attack_skill = 6
-				defense_skill = 6
+				attack_skill = 5
+				defense_skill = 5
 				planning_skill = 5
 				logistics_skill = 5
 				legacy_id = -1

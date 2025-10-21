@@ -1717,12 +1717,12 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_la_division_azul }
+		prerequisite = { focus = SPA_extol_the_martyrs_of_the_war }
 		
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		relative_position_id = SPA_la_division_azul
+		relative_position_id = SPA_extol_the_martyrs_of_the_war
 		cost = 5
 
 		available_if_capitulated = yes

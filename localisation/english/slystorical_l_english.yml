@@ -318,4 +318,8 @@ SOV_fac_evac:0 "Ongoing Factory Evacuation"
 GER_bloat_tt:"§RTHIS FOCUS WILL BUILD 2 MILITARY FACTORIES AND 1 CIVILIAN FACTORY IN EVERY CORE STATE WITH 5 INFRASTRUCTURE AND 2 CIVILIAN FACTORIES.§!"
 GER_warning_tt:"§RWARNING: You will not be able to switch to War Economy right away. This path has significantly less output at War. Be sure you know what you are doing when choosing this.§!"
 GER_war_warning_tt:"§RWARNING: This Focus, as all other Focuses will declare War instantly! Be sure to be prepared.§!"
+
+# Mex
+MEX_focus_Placate_General_Cedillo:0 "Placate General Cedillo"
+MEX_focus_Placate_General_Cedillo_desc:0 "General Cedillo Is given autonomy over the state of San Luis Potosí"
  

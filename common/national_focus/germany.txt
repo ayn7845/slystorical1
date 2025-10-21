@@ -8353,6 +8353,11 @@ focus_tree = {
 					type = take_state_focus
 					generator = { 5 }
 				}
+				declare_war_on = {
+					target = NZL
+					type = take_state_focus
+					generator = { 5 }
+				}
 				ROM = {
 				add_war_support = 0.1
 					declare_war_on = {
@@ -8386,6 +8391,11 @@ focus_tree = {
 					}
 					declare_war_on = {
 						target = AST
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = NZL
 						type = take_state_focus
 						generator = { 5 }
 					}
@@ -8426,6 +8436,11 @@ focus_tree = {
 						type = take_state_focus
 						generator = { 5 }
 					}
+					declare_war_on = {
+						target = NZL
+						type = take_state_focus
+						generator = { 5 }
+					}
 				}
 				HUN = {
 				add_war_support = 0.1
@@ -8463,6 +8478,11 @@ focus_tree = {
 						type = take_state_focus
 						generator = { 5 }
 					}
+					declare_war_on = {
+						target = NZL
+						type = take_state_focus
+						generator = { 5 }
+					}
 				}
 				BUL = {
 				add_war_support = 0.1
@@ -8497,6 +8517,11 @@ focus_tree = {
 					}
 					declare_war_on = {
 						target = AST
+						type = take_state_focus
+						generator = { 5 }
+					}
+					declare_war_on = {
+						target = NZL
 						type = take_state_focus
 						generator = { 5 }
 					}

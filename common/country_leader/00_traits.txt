@@ -10622,9 +10622,7 @@ leader_traits = {
 
 		command_cap_increase = @tier2_cp_cap_increase
 		command_power = @tier2_cp_cost
-
-		equipment_conversion_speed = 0.1
-		equipment_capture_factor = 0.05
+		
 		conversion_cost_civ_to_mil_factor = -0.15
 	}
 

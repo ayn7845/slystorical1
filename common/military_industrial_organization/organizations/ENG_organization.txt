@@ -40,6 +40,7 @@ ENG_vauxhall_organization = {
 			original_tag = USA
 			original_tag = BRA	
 			original_tag = IRE
+			original_TAG = NZL
 		}
 		
 	}
@@ -222,6 +223,7 @@ ENG_rsaf_enfield_organization = {
 			original_tag = ENG
 			original_tag = SAF
 			original_tag = IRE
+			original_TAG = NZL
 		}
 	}
 }
@@ -259,6 +261,7 @@ ENG_vauxhall_automotive_organization = {
 			original_tag = SAF
 			original_tag = AST
 			original_tag = IRE
+			original_TAG = NZL
 		}
 	}
 	

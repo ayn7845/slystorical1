@@ -595,6 +595,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			custom_effect_tooltip = SPA_facilitate_pyrenees_freight_transports_tt
+				hidden_effect = {
 				793 = {
 					add_building_construction = {
 						type = infrastructure
@@ -636,6 +637,7 @@ focus_tree = {
 						level = 5
 						instant_build = yes
 					}
+				}
 				}
 			swap_ideas = {
 				remove_idea = SPA_recovering_from_civil_war_2

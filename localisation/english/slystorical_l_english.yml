@@ -153,7 +153,10 @@ mare_nostrum_required_other_states:0 "Italy or a subject of Italy control \n§YM
 ITA_mare_nostrum_achieved:0 "Roman Ambitions Achieved"
 ITA_production_lines_military_industry_dm_tt_sly:0 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: §G+5.00%§!\n"
 ITA_il_sol_dell_avvenire_military_industry_dm_tt_sly:0 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$: §G+5.00%§! \n"
-ITA_ricostruzione_industriale_cg_penalty_tt_sly:0 "$ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro$ \n$MODIFIER_CONSUMER_GOODS$: §Y+1.0%§! \n\n"
+ITA_ricostruzione_industriale_cg_penalty_tt_sly:0 "$ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro$ \n£civ_factory_consumer_texticon Consumer Goods Factories expected value: §Y+1.0%§! \n\n"
+ITA_investments_in_edison_ricostruzione_industriale_tt:0 "$ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro$ \n£civ_factory_consumer_texticon Consumer Goods Factories expected value: §Y-5.0%§! \n\n"
+ITA_economic_reforms_ricostruzione_industriale_tt:0 "$ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro$\n$modifier_production_speed_arms_factory_factor$: §G+5.00%§! \n$modifier_production_speed_industrial_complex_factor$: §G+5.00%§! \n\n"
+
 # SOV
 SOV_collectivized_society:0 "Collectivized Society"
 stalin_they_will_know_fear:0 "They will know Fear"

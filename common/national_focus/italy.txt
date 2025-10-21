@@ -2298,7 +2298,8 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = 0.05 }
 			custom_effect_tooltip = ITA_il_sol_dell_avvenire_military_industry_dm_tt_sly
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.03 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt_sly
 
 			if = {
@@ -2418,6 +2419,8 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = ITA_investments_in_edison_ricostruzione_industriale_tt
+
+			add_to_variable = { ITA_iri_consumer_goods_factor = -0.05 }
 
 			if = {
 				limit = {
@@ -2735,9 +2738,6 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_line_change_production_efficiency_factor = 0.2 }
 			add_to_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = -0.04 }
 			custom_effect_tooltip = ITA_increase_production_military_industry_tt
-
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.03 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 		}
 	}
 
@@ -2762,9 +2762,6 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = 0.1 }
 			add_to_variable = { ITA_military_industry_dm_line_change_production_efficiency_factor = -0.2 }
 			custom_effect_tooltip = ITA_keep_specialization_military_industry_tt
-
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.03 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 		}
 	}
 
@@ -3695,9 +3692,6 @@ focus_tree = {
 				remove_ideas = ITA_hidden_research_penalties_ns
 			}
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.03 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
-
 			#Update NS icon
 			ITA_improve_regio_esercito_dm_effect = yes
 		}
@@ -3722,9 +3716,6 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0.05 }
 			custom_effect_tooltip = ITA_modernize_ansaldo_facilities_military_industry_tt
-
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
-			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			if = {
 				limit = {
@@ -4000,8 +3991,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			custom_effect_tooltip = ITA_reggianes_exports_ricostruzione_industriale_tt
-
 			if = {
 				limit = {
 					161 = {
@@ -4152,14 +4141,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ITA_hidden_standardization_ns
-			add_tech_bonus = {
-				name = ITA_standardization
-				bonus = 0.5
-				uses = 1
-				category = tactical_bomber
-				category = cat_strategic_bomber
-			}
-
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -4196,7 +4178,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ITA_hidden_specialization_ns
-				air_experience = 15
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 	
 				add_tech_bonus = {
 					name = ITA_specialization
@@ -4204,6 +4187,7 @@ focus_tree = {
 					uses = 1
 					category = cas_bomber
 				}
+				custom_effect_tooltip = generic_skip_one_line_tt
 
 			random_core_state = {
 				limit = {
@@ -7401,7 +7385,8 @@ focus_tree = {
 				}
 				mark_focus_tree_layout_dirty = yes
 			}
-		upgrade_economy_law = yes
+		custom_effect_tooltip = generic_skip_one_line_tt
+		#upgrade_economy_law = yes
 		add_ideas = SPA_expand_conscription
 		}
 		
@@ -10982,7 +10967,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_consumer_goods_factor = -0.01 }
 			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
 			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.05 }
 			custom_effect_tooltip = ITA_economic_reforms_ricostruzione_industriale_tt

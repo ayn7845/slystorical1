@@ -90,11 +90,11 @@ focus_tree = {
 		scroll_wheel_factor = 1.0
 	}
 
-	continuous_focus_position = { x = 3300 y = 1000 }
+	continuous_focus_position = { x = 3400 y = 1150 }
 
 	inlay_window = {
 		id = ger_inner_circle_inlay_window
-		position = { x = 4450 y = 1000 }
+		position = { x = 4550 y = 1150 }
 	}
 
 	

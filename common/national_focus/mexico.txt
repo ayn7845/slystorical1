@@ -2039,6 +2039,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			add_stability = 0.4
 			custom_effect_tooltip = tooltip_mexico_cedillo_will_be_placated
 			MEX_remove_cedillo_tension = yes
 		}

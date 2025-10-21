@@ -109,7 +109,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 5
+		cost = 2
 
 
 		completion_reward = {
@@ -602,10 +602,6 @@ focus_tree = {
 
 		cost = 5
 
-		available = {
-			date > 1937.10.1
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -673,7 +669,7 @@ focus_tree = {
 		relative_position_id = ROM_for_the_preservation_of_greater_romania
 		prerequisite = { focus = ROM_elections_of_1937 }
 		x = 0
-		y = 4
+		y = 3
 
 		cost = 5
 
@@ -885,7 +881,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		completion_reward = {
 			add_research_slot = 1 
@@ -967,7 +963,6 @@ focus_tree = {
 		id = ROM_antonescus_coup_detat
 		icon = GFX_focus_generic_military_dictatorship
 		relative_position_id = ROM_arrest_general_antonescu
-		mutually_exclusive = { focus = ROM_pressure_antonescu_into_becoming_prime_minister }
 		prerequisite = { focus = ROM_the_royal_foundation }
 		x = -1
 		y = 2
@@ -1021,77 +1016,13 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = ROM_pressure_antonescu_into_becoming_prime_minister
-		icon = GFX_focus_rom_abdicate
-		relative_position_id = ROM_institute_a_royal_dictatorship
-		mutually_exclusive = { focus = ROM_antonescus_coup_detat }
-		prerequisite = { focus = ROM_sentinels_of_the_motherland focus = ROM_form_the_front_of_national_rebirth focus = ROM_fascist_economics }
-		x = -2
-		y = 3
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 9
-		}
-
-		available = {
-			date > 1941.01.01
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			if = {
-				limit = { has_country_leader = { id = 550 } }
-				retire_country_leader = yes
-			}
-			set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
-			}	
-			create_country_leader = {
-				name = "Ion Antonescu"
-				desc = "POLITICS_ION_ANTONESCU_DESC"
-				picture = "Portrait_Romania_Ion_Antonescu.dds"
-				expire = "1965.1.1"
-				ideology = fascism_ideology
-				traits = {
-					#
-				}
-			}	
-			news_event = { id = news.486 }
-			if = {
-				limit = {
-					has_idea = ROM_army_tensions
-				}
-				remove_ideas = ROM_army_tensions
-			}	
-			hidden_effect = { 
-				add_political_power = 100
-			}	
-		}
-	}
-
 	focus = {
 		id = ROM_force_the_king_to_abdicate
 		icon = GFX_focus_rom_coup
-		relative_position_id = ROM_institute_a_royal_dictatorship
-		prerequisite = { focus = ROM_pressure_antonescu_into_becoming_prime_minister focus = ROM_antonescus_coup_detat }
+		relative_position_id = ROM_antonescus_coup_detat
+		prerequisite = {focus = ROM_antonescus_coup_detat }
 		x = 0
-		y = 4
+		y = 1
 
 		cost = 5
 

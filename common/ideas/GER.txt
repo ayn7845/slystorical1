@@ -1905,6 +1905,9 @@ ideas = {
 		GER_mefo_bills_ended = {
 			allowed = {
 				original_tag = GER
+				GER = {
+					has_war = no
+				}
 			}
 
 			allowed_civil_war = {
@@ -1916,26 +1919,16 @@ ideas = {
 			picture = ger_mefo_bills_payment
 
 			on_remove = {
-				#if = {
-				#	limit = {
-				#		has_dynamic_modifier = { modifier = GER_wirtschaftswunder_modifier }
-				#	}
-				#	set_variable = { #These numbers must match the once set in the event to stop the #mefo bills
-				#		GER_industrial_consumer_goods_expected_value = 0.05
-				#	}
-				#}
-				if = {
-					limit = {
-						has_dynamic_modifier = { modifier = GER_recovering_economy_modifier }
-					}
-					add_to_variable = { #These numbers must match the once set in the event to stop the mefo bills
-						GER_industrial_consumer_goods_expected_value = GER_economic_crash_consumer_goods
-					}
+				
+			}
+			cancel = {
+				GER = {
+					has_war = yes
 				}
 			}
 
 			modifier = {
-				consumer_goods_expected_value = 0.20
+				consumer_goods_expected_value = 0.50
 			}
 		}
 

@@ -49,6 +49,12 @@ division_template = {
 
 ### Starting Production ###
 instant_effect = {
+		set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+
+
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1

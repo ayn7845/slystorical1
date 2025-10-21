@@ -2567,7 +2567,7 @@ focus_tree = {
 		prerequisite = { focus = GER_reorganize_the_wehrmacht }
 
 
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = GER_reorganize_the_wehrmacht
 
@@ -8127,7 +8127,7 @@ focus_tree = {
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = GER_reorganize_the_wehrmacht }
 
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = GER_reorganize_the_wehrmacht
 		cost = 5
@@ -9482,7 +9482,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_anschluss }
 		prerequisite = { focus = GER_anschluss }
-		x = 4
+		x = 2
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 5

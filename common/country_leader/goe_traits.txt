@@ -410,13 +410,11 @@ leader_traits = {
 	aloof_authority_alt = { # Linlithgow's trait for Loyalist branch - a bit less bad
 		autonomy_gain = -0.1
 		cic_to_overlord_factor = 0.05
-		master_ideology_drift = 0.2
 	}
 
 	aloof_authority_alt_consult = { # Improvement in Loyalist Branch
 		autonomy_gain = -0.1
 		cic_to_overlord_factor = 0.05
-		master_ideology_drift = 0.2
 		stability_factor = 0.1
 	}
 

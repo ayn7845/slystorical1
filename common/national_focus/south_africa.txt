@@ -464,19 +464,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			894 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			895 = {
-			
-				add_extra_state_shared_building_slots = 2
-			}
-			893 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			541 = {
-				add_extra_state_shared_building_slots = 2
-			}
 			random_owned_controlled_state = {
 				prioritize = { 275 }
 				limit = {
@@ -717,9 +704,6 @@ focus_tree = {
 				picture = "Portrait_SouthAfrica_Jan_Smuts.dds"
 				expire = "1965.1.1"
 				ideology = conservatism
-				traits = {
-					rearmer
-				}
 			}
 		}
 	}

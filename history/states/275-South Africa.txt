@@ -4,7 +4,7 @@ state={
 	name="STATE_275" # Transvaal
 	manpower = 4247723
 	
-	state_category = megalopolis
+	state_category = city
 	
 	resources={
 		steel=11 #was: 5   was: 8

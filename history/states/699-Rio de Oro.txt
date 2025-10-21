@@ -3,9 +3,10 @@ state={
 	name="STATE_699"
 	manpower = 1
 	impassable = yes
-	state_category = wasteland
+	state_category = pastoral
 
 	history={
+		owner = SPR
 	}
 	
 	provinces={

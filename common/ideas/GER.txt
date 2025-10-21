@@ -6043,8 +6043,8 @@ ideas = {
 				# PP Cost
 				political_power_gain = -0.1
 
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
 				production_speed_rail_way_factor = 0.1
 			}
 		}
@@ -6063,10 +6063,10 @@ ideas = {
 				# PP Cost
 				political_power_gain = -0.3
 
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
 				production_speed_rail_way_factor = 0.1
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.1
 			}
 		}
@@ -6085,7 +6085,7 @@ ideas = {
 				# PP Cost
 				political_power_gain = -0.1
 
-				production_speed_buildings_factor = 0.05
+				production_speed_buildings_factor = 0.025
 				fascism_drift = 0.01
 			}
 		}
@@ -6104,10 +6104,10 @@ ideas = {
 				# PP Cost
 				political_power_gain = -0.3
 
-				production_speed_buildings_factor = 0.05
+				production_speed_buildings_factor = 0.025
 				fascism_drift = 0.01
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 
@@ -6146,11 +6146,9 @@ ideas = {
 				political_power_gain = -0.3
 
 				local_resources_factor = 0.05
-				#production_lack_of_resource_penalty_factor = -0.05?
-				#industry_free_repair_factor = 0.15?
-				production_factory_max_efficiency_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.05
+				industry_free_repair_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.05
-				production_factory_start_efficiency_factor = 0.05
 				line_change_production_efficiency_factor = 0.05
 			}
 		}

@@ -12146,6 +12146,11 @@ focus = {
 					generator = { 5 }
 				}
 				declare_war_on = {
+					target = NZL
+					type = take_state_focus
+					generator = { 5 }
+				}
+				declare_war_on = {
 					target = RAJ
 					type = take_state_focus
 					generator = { 5 }

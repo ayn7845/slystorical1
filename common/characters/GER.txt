@@ -2490,8 +2490,7 @@ characters = {
 				NOT = { has_government = communism }
 			}
 			traits = {
-				#GER_mefo_bills_architect
-				captain_of_industry
+				GER_mefo_bills_architect
 			}
 			ai_will_do = {
 				base = 15
@@ -2541,8 +2540,7 @@ characters = {
 				}
 			}
 			traits = {
-				#GER_reich_minister_of_economy
-				war_industrialist
+				GER_reich_minister_of_economy
 			}
 			ai_will_do = {
 				base = 5
@@ -2569,13 +2567,27 @@ characters = {
 				original_tag = GER
 			}
 			available = {
-				has_government = fascism 
+				has_country_flag = GER_reinstated_nazi_leadership
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+						has_completed_focus = GER_ascension_of_goebbels
+					}
+				}
 			}
 			visible = {
-				has_government = fascism 
+				has_country_flag = GER_reinstated_nazi_leadership
 			}
 			traits = {
 				GER_reich_minister_of_propaganda
+			}
+			do_effect = {
+				NOT = {
+					has_government = fascism 
+				}
 			}
 			ai_will_do = {
 				base = 0

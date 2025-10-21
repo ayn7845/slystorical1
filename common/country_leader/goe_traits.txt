@@ -401,19 +401,22 @@ leader_traits = {
 		resistance_garrison_penetration_chance = -0.25
 	}
 
+	
 	aloof_authority = {
-
+		neutrality_drift = 0.2
 		autonomy_gain = -0.1
 		cic_to_overlord_factor = 0.05
 	}
 
 	aloof_authority_alt = { # Linlithgow's trait for Loyalist branch - a bit less bad
+	    neutrality_drift = 0.2
 		autonomy_gain = -0.1
 		cic_to_overlord_factor = 0.05
 	}
 
 	aloof_authority_alt_consult = { # Improvement in Loyalist Branch
 		autonomy_gain = -0.1
+		neutrality_drift = 0.2
 		cic_to_overlord_factor = 0.05
 		stability_factor = 0.1
 	}

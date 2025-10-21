@@ -85,7 +85,9 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		 allow_branch = {
+            always = no
+        }
 
 		completion_reward = {
 			custom_effect_tooltip = NZL_transfer_ships_tt
@@ -468,6 +470,9 @@
 		bypass = {
 
 		}
+		   allow_branch = {
+            always = no
+        }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -813,7 +818,7 @@
 	focus = {
 		id = NZL_national_roads_board
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 18
+		x = 10
 		y = 0
 
 		cost = 10
@@ -1007,7 +1012,7 @@
 	focus = {
 		id = NZL_bureau_of_industry
 		icon = GFX_goal_generic_production
-		prerequisite = { focus = NZL_new_zealand_steel focus = NZL_taranaki_oil }
+		prerequisite = { focus = NZL_new_zealand_steel focus = NZL_taranaki_oil focus = NZL_wairarapa_sheep_farms }
 		x = 0
 		y = 2
 		relative_position_id = NZL_national_roads_board
@@ -1109,7 +1114,6 @@
 	focus = {
 		id = NZL_industrial_conscription
 		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = NZL_wairarapa_sheep_farms }
 		prerequisite = { focus = NZL_bureau_of_industry }
 		x = 1
 		y = 3
@@ -1177,8 +1181,7 @@
 		id = NZL_think_big
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = NZL_industrial_conscription }
-		prerequisite = { focus = NZL_domestic_arms_industry }
-		x = 2
+		x = 1
 		y = 4
 		relative_position_id = NZL_national_roads_board
 
@@ -1205,41 +1208,11 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = NZL_think_big_IC1
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = NZL_think_big_AF
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
+	
 
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 284 723 }
-				limit = {				
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -1248,23 +1221,7 @@
 				}
 				set_state_flag = NZL_think_big_IC1
 			}
-			random_owned_controlled_state = {
-				prioritize = { 284 723 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = NZL_think_big_AF
-			}
+	
 		}
 	}
 
@@ -1392,7 +1349,7 @@
 	focus = {
 		id = NZL_army_reforms
 		icon = GFX_goal_generic_army_doctrines
-		x = 23
+		x = 15
 		y = 0
 
 		cost = 10
@@ -1504,25 +1461,13 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = NZL_bob_semple_tank
 			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = { has_dlc = "No Step Back" }
-				}
 				add_tech_bonus = {
 					name = NZL_bob_semple_tank
 					bonus = 1.0
 					uses = 1
 					technology = basic_light_tank
 				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = NZL_bob_semple_tank
-					bonus = 1.0
-					uses = 1
-					technology = basic_light_tank_chassis
-				}
-			}
+			
 		}
 	}
 
@@ -1725,6 +1670,9 @@
 		ai_will_do = {
 			factor = 25
 		}
+		   allow_branch = {
+            always = no
+        }
 
 		available = {
 			is_subject = no
@@ -1803,7 +1751,7 @@
 					ahead_reduction = 2
 					bonus = 1.0
 					uses = 1
-					technology = super_heavy_tank_chassis
+					technology = advanced_light_tank
 				}
 			}
 		}
@@ -1816,7 +1764,7 @@
 	focus = {
 		id = NZL_the_first_labor_government
 		icon = GFX_goal_generic_improve_relations
-		x = 4
+		x = 5
 		y = 0
 
 		cost = 10
@@ -1851,7 +1799,7 @@
 		id = NZL_ratana_alliance
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = NZL_the_first_labor_government }
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
@@ -1991,6 +1939,9 @@
 		relative_position_id = NZL_ratana_alliance
 
 		cost = 10
+		   allow_branch = {
+            always = no
+        }
 
 		ai_will_do = {
 			factor = 1
@@ -2024,7 +1975,7 @@
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = NZL_the_manpower_act }
 		mutually_exclusive = { focus = NZL_amend_the_maori_affairs_act }
-		x = 1
+		x = 0
 		y = 3
 		relative_position_id = NZL_ratana_alliance
 
@@ -2097,6 +2048,9 @@
 		ai_will_do = {
 			factor = 25
 		}
+		   allow_branch = {
+            always = no
+        }
 
 		available = {
 
@@ -2151,7 +2105,7 @@
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = NZL_the_first_labor_government }
 		mutually_exclusive = { focus = NZL_statute_of_westminster }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 

@@ -8321,62 +8321,21 @@ focus_tree = {
 		
 			custom_effect_tooltip = GER_war_warning_tt
 			hidden_effect = {
-			add_war_support = 0.1
-			add_to_variable = { 
-				GER_mefo_production_speed_arms_factory_factor = -0.25
-				tooltip = production_speed_arms_factory_factor_tt
-			}
-			add_to_variable = { 
-				GER_mefo_production_speed_dockyard_factor = -0.25
-				tooltip = production_speed_dockyard_factor_tt
-			}
-			add_to_variable = { 
-				GER_mefo_production_speed_synthetic_refinery_factor = -0.15
-				tooltip = production_speed_industrial_synthetic_refinery_factor_tt
-			}
-				FIN = {
-					country_event = { id = wuw_GER_realpolitik.1 days = 1 }
-				}
-				declare_war_on = {
-					target = CAN
-					type = take_state_focus
-					generator = { 5 }
-				}
-				declare_war_on = {
-					target = RAJ
-					type = take_state_focus
-					generator = { 5 }
-				}
-				declare_war_on = {
-					target = SAF
-					type = take_state_focus
-					generator = { 5 }
-				}
-				declare_war_on = {
-					target = AST
-					type = take_state_focus
-					generator = { 5 }
-				}
-				declare_war_on = {
-					target = NZL
-					type = take_state_focus
-					generator = { 5 }
-				}
-				ROM = {
 				add_war_support = 0.1
-					declare_war_on = {
-						target = POL
-						type = take_state_focus
-					}
-					declare_war_on = {
-						target = ENG
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = FRA
-						type = take_state_focus
-						generator = { 5 }
+				add_to_variable = { 
+					GER_mefo_production_speed_arms_factory_factor = -0.25
+					tooltip = production_speed_arms_factory_factor_tt
+				}
+				add_to_variable = { 
+					GER_mefo_production_speed_dockyard_factor = -0.25
+					tooltip = production_speed_dockyard_factor_tt
+				}
+				add_to_variable = { 
+					GER_mefo_production_speed_synthetic_refinery_factor = -0.15
+					tooltip = production_speed_industrial_synthetic_refinery_factor_tt
+				}
+					FIN = {
+						country_event = { id = wuw_GER_realpolitik.1 days = 1 }
 					}
 					declare_war_on = {
 						target = CAN
@@ -8403,133 +8362,178 @@ focus_tree = {
 						type = take_state_focus
 						generator = { 5 }
 					}
-				}
-				SPR = {
-				add_war_support = 0.1
-					declare_war_on = {
-						target = POL
-						type = take_state_focus
+					ROM = {
+					add_war_support = 0.1
+						declare_war_on = {
+							target = POL
+							type = take_state_focus
+						}
+						declare_war_on = {
+							target = ENG
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = FRA
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = CAN
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = RAJ
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = SAF
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = AST
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = NZL
+							type = take_state_focus
+							generator = { 5 }
+						}
 					}
-					declare_war_on = {
-						target = ENG
-						type = take_state_focus
-						generator = { 5 }
+					SPR = {
+					add_war_support = 0.1
+						declare_war_on = {
+							target = POL
+							type = take_state_focus
+						}
+						declare_war_on = {
+							target = ENG
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = FRA
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = CAN
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = RAJ
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = SAF
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = AST
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = NZL
+							type = take_state_focus
+							generator = { 5 }
+						}
 					}
-					declare_war_on = {
-						target = FRA
-						type = take_state_focus
-						generator = { 5 }
+					HUN = {
+					add_war_support = 0.1
+						declare_war_on = {
+							target = POL
+							type = take_state_focus
+						}
+						declare_war_on = {
+							target = ENG
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = FRA
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = CAN
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = RAJ
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = SAF
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = AST
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = NZL
+							type = take_state_focus
+							generator = { 5 }
+						}
 					}
-					declare_war_on = {
-						target = CAN
-						type = take_state_focus
-						generator = { 5 }
+					BUL = {
+					add_war_support = 0.1
+						declare_war_on = {
+							target = POL
+							type = take_state_focus
+						}
+						declare_war_on = {
+							target = ENG
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = FRA
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = CAN
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = RAJ
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = SAF
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = AST
+							type = take_state_focus
+							generator = { 5 }
+						}
+						declare_war_on = {
+							target = NZL
+							type = take_state_focus
+							generator = { 5 }
+						}
 					}
-					declare_war_on = {
-						target = RAJ
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = SAF
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = AST
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = NZL
-						type = take_state_focus
-						generator = { 5 }
-					}
-				}
-				HUN = {
-				add_war_support = 0.1
-					declare_war_on = {
-						target = POL
-						type = take_state_focus
-					}
-					declare_war_on = {
-						target = ENG
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = FRA
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = CAN
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = RAJ
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = SAF
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = AST
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = NZL
-						type = take_state_focus
-						generator = { 5 }
-					}
-				}
-				BUL = {
-				add_war_support = 0.1
-					declare_war_on = {
-						target = POL
-						type = take_state_focus
-					}
-					declare_war_on = {
-						target = ENG
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = FRA
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = CAN
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = RAJ
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = SAF
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = AST
-						type = take_state_focus
-						generator = { 5 }
-					}
-					declare_war_on = {
-						target = NZL
-						type = take_state_focus
-						generator = { 5 }
-					}
-				}
+				POL = {
+					add_ideas = ai_cap_progress
+					load_oob = "POL_CHROM_SPAWN"
+                }
 			}
 			add_named_threat = { threat = 30 name = GER_danzig_or_war }
 			declare_war_on = {
@@ -8705,6 +8709,23 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
+				HOL = {
+					add_ideas = ai_cap_progress
+                    load_oob = "HOL_CHROM_SPAWN"
+                }
+				ENG = { 
+					set_autonomy = {
+						target = HOL
+						autonomous_state = autonomy_gov_exile
+					}
+				}
+				LUX = {
+                    load_oob = "LUX_CHROM_SPAWN"
+                }
+				BEL = {
+					add_ideas = ai_cap_progress
+                    load_oob = "BEL_CHROM_SPAWN"
+                }
 				ENG = {
 					add_to_faction = HOL
 					add_to_faction = BEL
@@ -8889,6 +8910,14 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
+				NOR = {
+					add_ideas = ai_cap_progress
+                    load_oob = "NOR_CHROM_SPAWN"
+                }
+				DEN = {
+					add_ideas = ai_cap_progress
+                    load_oob = "DEN_CHROM_SPAWN"
+                }
 				ROM = {
 					declare_war_on = {
 						target = DEN

@@ -12136,6 +12136,14 @@ focus = {
 
 		completion_reward = {
 			hidden_effect = {
+				YUG = {
+					add_ideas = ai_cap_progress
+                    load_oob = "YUG_CHROM_SPAWN"
+                }
+				GRE = {
+					add_ideas = ai_cap_progress
+                    load_oob = "GRE_CHROM_SPAWN"
+                }
 				ENG = {
 					add_to_faction = YUG
 					add_to_faction = GRE

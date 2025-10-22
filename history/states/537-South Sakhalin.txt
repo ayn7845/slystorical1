@@ -6,7 +6,7 @@ state= {
 		oil=60
 	}
 	
-	state_category = rural
+	state_category = megalopolis
 
 	history= {
 

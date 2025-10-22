@@ -22,6 +22,7 @@ is_playable_country = {
 		tag = SAF
 		tag = SOV
 		tag = PHI
+		tag = CZE
 
 	}
 }
@@ -56,6 +57,7 @@ allies = {
 
 axis = {
 	OR = {
+		tag = CZE
 		tag = GER
 		tag = ITA
 		tag = HUN
@@ -116,7 +118,6 @@ ai_annex = {
 		tag = LAT
 		tag = EST
 		tag = AUS
-		tag = CZE
 		tag = POR
 	}
 }

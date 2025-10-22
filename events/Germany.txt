@@ -5458,7 +5458,9 @@ country_event = {
 			}
 		}
 		# REVISIT Balance research bonus
+		effect_tooltip = { 
 		give_SOV_armor_research_bonuses = yes
+		}
 		custom_effect_tooltip = generic_skip_one_line_tt
 		add_breakthrough_progress = {
 			specialization = specialization_land

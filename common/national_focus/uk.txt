@@ -4165,7 +4165,7 @@ focus_tree = {
 			factor = 5
 		}
 		completion_reward = {
-			custom_effect_tooltip = SPA_tank_gens
+			#custom_effect_tooltip = SPA_tank_gens
 			swap_ideas = {
 				remove_idea = motorized_army_two
 				add_idea = motorized_army_three

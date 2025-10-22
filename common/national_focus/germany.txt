@@ -3877,7 +3877,7 @@ focus_tree = {
 		completion_reward = {			
 			add_tech_bonus = {
 				name = GER_aeronautical_research_institute
-				bonus = 0.75
+				bonus = 1
 				uses = 1
 				category = light_fighter
 			}
@@ -8157,7 +8157,16 @@ focus_tree = {
 			SOV = {
 				give_SOV_armor_research_bonuses = yes
 			}
-			hidden_effect = { 
+			hidden_effect = {
+				SOV = {
+				country_event = { id = germany.75 days = 1 }
+				custom_effect_tooltip = needs_approval
+				# Actual reward effects added in event if Soviets approve
+				#effect_tooltip = {
+					# Trade influence with the USSR? Or simply let the opinion mod do the work
+				#	give_SOV_armor_research_bonuses = yes
+				#}
+			} 
 				add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0

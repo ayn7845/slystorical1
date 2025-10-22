@@ -90,9 +90,9 @@ IF = {
 	JUNO_set_shared_military_branch_defaults = yes
 
 	# Undiversified Economy Modifier
-	set_variable = { BRA_economy_production_efficiency_gain_factor = -0.2 }
-	set_variable = { BRA_economy_production_max_efficiency_factor = -0.2 }
-	set_variable = { BRA_economy_industrial_capacity_factor = -0.2 }
+	set_variable = { BRA_economy_production_efficiency_gain_factor = 0 }
+	set_variable = { BRA_economy_production_max_efficiency_factor = 0 }
+	set_variable = { BRA_economy_industrial_capacity_factor = 0 }
 	
 	set_variable = { BRA_weak_government_stability_factor = -0.15 }
 	set_variable = { BRA_weak_government_pp_factor = -0.2 }
@@ -191,7 +191,6 @@ IF = {
 	recruit_character = BRA_pedro_henrique
 	recruit_character = BRA_pedro_de_alcantara
 	recruit_character = BRA_alianca_nacional_libertadora_council
-	recruit_character = BRA_minervino_de_oliveira
 	recruit_character = BRA_olga_benario_prestes
 	recruit_character = BRA_war_industrialist
 	recruit_character = BRA_captain_of_industry

@@ -916,45 +916,6 @@ characters={
 		}
 	}
 
-	BRA_minervino_de_oliveira = {
-		name=BRA_minervino_de_oliveira
-		portraits={
-			army={
-				small="GFX_portrait_BRA_minervino_de_oliveira_small"
-				large="GFX_portrait_BRA_minervino_de_oliveira"
-			}
-		}
-		#country_leader = {
-		#	expire = "1965.1.1"
-		#	ideology = liberalism
-		#	id=-1
-		#	traits = {
-		#		ICE_trade_unionist
-		#	}
-		#}
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_minervino_de_oliveira
-			allowed = {
-				original_tag = BRA
-				has_dlc = "Trial of Allegiance"
-			}
-			available  = {
-				#has_government = communism
-			}
-			traits  = {
-				ICE_trade_unionist
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 10
-					has_completed_focus	= BRA_prepare_for_second_intentona
-				}
-			}
-		}		
-	}
-
 	BRA_olga_benario_prestes = {
 		name=BRA_olga_benario_prestes
 		portraits={

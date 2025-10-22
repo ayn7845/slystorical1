@@ -11,7 +11,7 @@ state = {
 		chromium = 3 # was: 4
 	}
 	
-	state_category = wasteland
+	state_category = town
 	
 	history = {
 
@@ -19,6 +19,7 @@ state = {
 
 		buildings = {
 			infrastructure = 3 #was: 6
+			industrial_complex = 3
 		}
 
 		victory_points = {

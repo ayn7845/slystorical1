@@ -7639,26 +7639,6 @@ focus_tree = {
 				transfer_state = 74
 			}
 			hidden_effect = {
-				69 = {
-					set_state_category = town
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-				}
-				972 = {
-					set_state_category = town
-				}
-				74  = {
-					set_state_category = rural
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				}
 					
 			ENG = {
 				add_war_support = 0.1
@@ -7742,18 +7722,6 @@ focus_tree = {
 			hidden_effect = {
 				664 = {
 					add_core_of = HUN
-					set_state_category = town
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
 				}
 				
 			}
@@ -7806,56 +7774,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			
-		
 			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
 			GER = { 
 				transfer_state = 9
 				transfer_state = 75
 			}
-		
 			HUN = {
 				transfer_state = 73
 			}
 			
 			hidden_effect = {
-				9 = {
-				set_state_category =  large_city
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 6
-					instant_build = yes
-				}
-			
-			}
-				75 = {
-				set_state_category =  city
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-			
-			}
-				73 = {
-				set_state_category =  rural
-			
-			}
-				72 = {
-				set_state_category =  rural
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			
-			}
 				add_to_faction = HUN
 				add_to_faction = ROM
 				add_to_faction = BUL

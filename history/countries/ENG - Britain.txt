@@ -2,7 +2,7 @@
 
 
 	set_oob = "ENG_1936"
-
+	load_oob = "ENG_mech_spawn"
 starting_train_buffer = 4
 
 if = {
@@ -32,7 +32,7 @@ recruit_character = ENG_charles_goodeve
 recruit_character = ENG_nevil_shute
 recruit_character = ENG_robert_watson_watt
 
-
+add_manpower = 1244621
 if = {
 		limit = { has_game_rule = { 
 					rule = larp_barb

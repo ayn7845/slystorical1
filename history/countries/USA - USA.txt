@@ -1,7 +1,6 @@
 ﻿capital = 361 # Washington DC
 
 oob = "USA_1936"
-
 starting_train_buffer = 5
 
 if = {

@@ -935,7 +935,6 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			custom_effect_tooltip = AX_inf_gens
 			add_potential_special_forces_tree = yes	
 			add_ideas = ENG_special_air_service_idea
 			custom_effect_tooltip = available_political_advisor

@@ -10937,7 +10937,6 @@ leader_traits = {
 			army_advisor_cost_factor = -0.15
 			navy_advisor_cost_factor = -0.15
 		}
-		supply_node_range = -0.1
 		command_power_gain_mult = 0.1
 	}
 

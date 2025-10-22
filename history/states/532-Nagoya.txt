@@ -2,7 +2,7 @@ state = {
 	id = 532
 	name = "STATE_532" # Tokai
 	manpower = 6174000
-	state_category = large_city
+	state_category = megalopolis
 
 	history = {
 		
@@ -16,7 +16,7 @@ state = {
 		1936.1.1.15 = { owner = JAP add_core_of = JAP }
 
 		add_core_of = JAP
-
+		add_extra_state_shared_building_slots = 17
 		buildings = {
 			infrastructure = 4 #was: 7
 			arms_factory = 1

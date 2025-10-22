@@ -8,6 +8,7 @@ set_war_support = 0.8
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
+	imperial_society
 	state_shintoism
 	limited_exports
 	limited_conscription
@@ -30,56 +31,7 @@ set_power_balance = {
 create_faction = JAP_greater_east_asian_co_prosperity_sphere
 add_to_faction = JAP
 
-609 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-527 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-525 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-745 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-524 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
 647 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-684 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-633 = {
 	start_resistance = yes
 	set_compliance = 20
 	set_resistance = 0

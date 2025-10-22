@@ -87,12 +87,40 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			army_experience = 25
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				custom_effect_tooltip = CHL_skip_one_line_tt
+				add_potential_special_forces_tree = yes
+				custom_effect_tooltip = CHL_skip_one_line_tt
+				add_doctrine_cost_reduction = {
+					name = AST_introduce_unconventional_warfare
+					cost_reduction = 0.5
+					uses = 1
+					category = special_forces_doctrine
+				}
+			}
+			else = {
+				add_doctrine_cost_reduction = {
+					name = AST_introduce_unconventional_warfare
+					cost_reduction = 0.5
+					uses = 1
+					category = land_doctrine
+				}
+				add_doctrine_cost_reduction = {
+					name = AST_introduce_unconventional_warfare
+					cost_reduction = 0.5
+					uses = 1
+					category = naval_doctrine
+				}
+			}
 			add_doctrine_cost_reduction = {
 				name = AST_additional_militia_training
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
+			}
+			hidden_effect = { 
+				army_experience = 25
 			}
 		}
 	}
@@ -170,7 +198,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			custom_effect_tooltip = AX_inf_gens
+			#custom_effect_tooltip = AX_inf_gens
 			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = AST_promote_reservists
@@ -453,32 +481,6 @@
 			army_experience = 35
 			navy_experience = 35
 			air_experience = 300
-			if = {
-				limit = { has_dlc = "Arms Against Tyranny" }
-				custom_effect_tooltip = CHL_skip_one_line_tt
-				add_potential_special_forces_tree = yes
-				custom_effect_tooltip = CHL_skip_one_line_tt
-				add_doctrine_cost_reduction = {
-					name = AST_introduce_unconventional_warfare
-					cost_reduction = 0.5
-					uses = 1
-					category = special_forces_doctrine
-				}
-			}
-			else = {
-				add_doctrine_cost_reduction = {
-					name = AST_introduce_unconventional_warfare
-					cost_reduction = 0.5
-					uses = 1
-					category = land_doctrine
-				}
-				add_doctrine_cost_reduction = {
-					name = AST_introduce_unconventional_warfare
-					cost_reduction = 0.5
-					uses = 1
-					category = naval_doctrine
-				}
-			}
 		}
 	}
 

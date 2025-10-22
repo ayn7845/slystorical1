@@ -2141,43 +2141,14 @@
 	# GO COMMONWEALTH SECTION ##
 	############################
 
-	focus = {
-		id = NZL_2nzef
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = NZL_strengthen_the_commonwealth }
-		x = 0
-		y = 1
-		relative_position_id = NZL_strengthen_the_commonwealth
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = NZL_2nzef
-		}
-	}
 
 	focus = {
 		id = NZL_arrest_pacifist_leaders
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = NZL_2nzef }
+		prerequisite = { focus = NZL_strengthen_the_commonwealth }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = NZL_strengthen_the_commonwealth
 
 		cost = 10
@@ -2209,7 +2180,7 @@
 		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = NZL_arrest_pacifist_leaders }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = NZL_strengthen_the_commonwealth
 
 		cost = 10

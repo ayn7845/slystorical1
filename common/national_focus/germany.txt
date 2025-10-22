@@ -7632,12 +7632,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+
 			GER = { 
 				transfer_state = 69
 				transfer_state = 972
 				transfer_state = 74
 			}
 			hidden_effect = {
+					
 			ENG = {
 				add_war_support = 0.1
 			}
@@ -7721,6 +7723,7 @@ focus_tree = {
 				664 = {
 					add_core_of = HUN
 				}
+				
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -7777,14 +7780,33 @@ focus_tree = {
 				transfer_state = 75
 			}
 			HUN = {
-				transfer_state = 70
-				transfer_state = 71
 				transfer_state = 73
 			}
+			
 			hidden_effect = {
 				add_to_faction = HUN
 				add_to_faction = ROM
 				add_to_faction = BUL
+				CZE = {
+					set_cosmetic_tag = SLO
+						create_country_leader = {
+			             name = "Jozef Tiso"
+			             desc = "POLITICS_Jozef_Tiso_DESC"
+			            picture = GFX_portrait_Jozef_Tiso
+			            expire = "1965.1.1"
+			            ideology = nazism
+			traits = {
+				anti_communist
+			}
+		}
+		
+				}
+				set_autonomy = {
+		            target = CZE
+		            autonomous_state = autonomy_satellite
+		            freedom_level = 0.2
+				}
+
 				ENG = {
 				add_war_support = 0.1
 			}

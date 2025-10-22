@@ -31,3 +31,13 @@ war_of_gazala_speed_modifier = { #SPEED MOD
 	icon = GFX_modifiers_SOV_armored_battery
 	army_speed_factor = global.war_of_gazala_modifier_speed_factor_var
 }
+SLO_divided_nation = { #STATE MODIFIER
+	enable = { is_owned_and_controlled_by = CZE }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	recruitable_population_factor = -1
+	local_building_slots_factor = -1
+	state_resources_factor = -1
+	state_production_speed_buildings_factor = -999
+	local_factories = -1
+}

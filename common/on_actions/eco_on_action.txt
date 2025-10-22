@@ -774,12 +774,8 @@ on_actions = {
 
 			CZE = {
 				add_equipment_to_stockpile = {
-					type = infantry_equipment_0
-					amount = 3250
-				}
-				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 40000
+					amount = 4000
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
@@ -787,23 +783,15 @@ on_actions = {
 				}
 				add_equipment_to_stockpile = {
 					type = motorized_equipment_1
-					amount = 0
+					amount = 100
 				}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
-					amount = 680
-				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 205
+					amount = 200
 				}
 				add_equipment_to_stockpile = {
 					type = convoy
-					amount = 0
+					amount = 200
 				}
 				add_equipment_to_stockpile = {
 					type = train_equipment_1

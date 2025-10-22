@@ -887,7 +887,7 @@ focus_tree = {
 
 		completion_reward = {
 			# ADD RUBBER
-			219 = {
+			651 = {
 				add_resource = {
 					type = Rubber
 					amount = 75 #At least one factory's worth

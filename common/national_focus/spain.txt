@@ -286,16 +286,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			GER = {
-				add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
-			}
+			#GER = {
+				#add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
+			#}
 			add_tech_bonus = {
 				name = SPA_the_condor_legion
-				bonus = 0.75
-				uses = 4
+				bonus = 2
+				uses = 2
 				category = armor
 			}
-			completion_reward = {
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SPA_the_condor_legion
 				ahead_reduction = 2
@@ -303,7 +303,7 @@ focus_tree = {
 				uses = 1
 				category = cat_mechanized_equipment
 			}
-		}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SPA_wilhelm_ritter_von_thoma
 		}
@@ -1200,10 +1200,10 @@ focus_tree = {
 		available = {
 		}
 		bypass = {
-			OR = {
-				controls_province = 858
+			#OR = {
+			#	controls_province = 858
 				has_global_flag = scw_over
-			}
+			#}
 		}
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		
@@ -1216,7 +1216,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			activate_mission = SPA_save_the_alcazar_mission
+			add_political_power = 120
+			add_stability = 0.10
+			#activate_mission = SPA_save_the_alcazar_mission
 		}
 	}
 

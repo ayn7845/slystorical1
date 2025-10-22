@@ -516,7 +516,8 @@ focus_tree = {
 					name = SOV_reorganize_the_pc_of_heavy_industry_name_default
 					bonus = 1.0
 					uses = 2
-					category = industry
+					technology = assembly_line_production
+					technology = concentrated_industry4
 				}
 			}
 			else = {
@@ -530,8 +531,8 @@ focus_tree = {
 					name = SOV_reorganize_the_pc_of_heavy_industry_name_alt
 					bonus = 1.0
 					uses = 2
-					category = industry
-					category = electronics
+					technology = assembly_line_production
+					technology = concentrated_industry4
 				}
 			}
 		}
@@ -568,7 +569,8 @@ focus_tree = {
 				ahead_reduction = 2
 				bonus = 1.0
 				uses = 1
-				category = industry
+				technology = streamlined_line
+				technology = flexible_line
 			}
 		}
 	}

@@ -4567,8 +4567,12 @@ SOV_gosproyektstroy_decision_category = {
 					add_idea = SOV_gosproyektstroy_2_jap
 				}
 			}
-
+			
 			clr_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag
+			SOV = {
+				activate_decision = SOV_gosproyektstroy_focus_civ
+				add_political_power = -50
+			}
 		}
 	}
 

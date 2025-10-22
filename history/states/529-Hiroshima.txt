@@ -2,7 +2,7 @@ state = {
 	id = 529
 	name = "STATE_529" # Chugoku
 	manpower = 5341000
-	state_category = large_city
+	state_category = megalopolis
 
 	history = { 
 		
@@ -16,7 +16,7 @@ state = {
 
         owner = JAP
 		add_core_of = JAP
-
+		add_extra_state_shared_building_slots = 17
 		buildings = {
 			infrastructure = 4 #was: 7
 			air_base = 3

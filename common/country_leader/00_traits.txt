@@ -11033,8 +11033,8 @@ leader_traits = {
 
 		production_speed_buildings_factor = 0.05
 		fascism_drift = 0.01
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
 	}
 
 	GER_goring_fuhrer = { # Göring Fuhrer - Shoud match idea GER_goring_four_year_plan_plenipotentiary
@@ -11043,9 +11043,8 @@ leader_traits = {
 		political_power_gain = 0.25 #Common for all fuhrers (inlcuding Hitler after Fuhrerprinzip)
 
 		local_resources_factor = 0.05
-		production_factory_max_efficiency_factor = 0.05
+		production_lack_of_resource_penalty_factor = -0.05
 		production_factory_efficiency_gain_factor = 0.05
-		production_factory_start_efficiency_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 	}
 

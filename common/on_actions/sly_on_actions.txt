@@ -1,6 +1,86 @@
 on_actions = {
 	on_startup = {
 		effect = {
+		USA = { 
+			diplomatic_relation = {   
+			country = ENG    
+			relation = military_access 
+			active = yes 
+			} 
+		}
+		USA = { 
+			diplomatic_relation = {   
+			country = FRA   
+			relation = military_access 
+			active = yes 
+			} 
+		}
+		USA = { 
+			diplomatic_relation = {   
+			country = CAN    
+			relation = military_access 
+			active = yes 
+			} 
+		}
+		USA = { 
+			diplomatic_relation = {   
+			country = AST    
+			relation = military_access 
+			active = yes 
+			} 
+		}
+		USA = { 
+			diplomatic_relation = {   
+			country = HOL    
+			relation = military_access 
+			active = yes 
+			} 
+		}
+		USA = { 
+			diplomatic_relation = {   
+			country = BEL    
+			relation = military_access 
+			active = yes 
+			} 
+		}
+		USA = { 
+			diplomatic_relation = {   
+			country = RAJ    
+			relation = military_access 
+			active = yes 
+			} 
+		}
+		USA = { 
+			diplomatic_relation = {   
+			country = BRA   
+			relation = military_access 
+			active = yes 
+			} 
+		}
+		USA = { 
+			diplomatic_relation = {   
+			country = SAF    
+			relation = military_access 
+			active = yes 
+			} 
+		}
+		USA = { 
+			diplomatic_relation = {   
+			country = NZL    
+			relation = military_access 
+			active = yes 
+			} 
+		}
+		USA = { 
+			diplomatic_relation = {   
+			country = MEX    
+			relation = military_access 
+			active = yes 
+			} 
+		}
+		USA = { 
+			load_oob = "USA_CONV"
+		}
 		if = { 
 			limit = { 
 				has_game_rule = { 

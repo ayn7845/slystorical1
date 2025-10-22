@@ -1471,7 +1471,7 @@
 
  SOV_modify_defense_industry_ns_intro:0 "Modify §Y$SOV_defense_industry_dynamic_modifier$§! by"
  SOV_found_the_pcdi_ns_ttt:0 "Add §Y$SOV_defense_industry_dynamic_modifier$§!, which grants (Civilian to Military Factory conversion cost: §G-20.00%§!, £prod_eff_cap Production Efficiency Cap: §G+2.50%§!) \n\n"
- SOV_pc_of_mechanical_engineering_ns_ttt:0 "$SOV_modify_defense_industry_ns_intro$ \n £prod_eff_cap Production Efficiency Cap: §G+2.50%§! \n £efficiency_base_texticon Production Efficiency Base: §G+5.00%§! \n\n"
+ SOV_pc_of_mechanical_engineering_ns_ttt:0 "$SOV_modify_defense_industry_ns_intro$ \n £prod_eff_cap Production Efficiency Cap: §G+2.50%§!\n\n" # \n £efficiency_base_texticon Production Efficiency Base: §G+5.00%§! 
  SOV_superior_war_machines_ns_tt:1 "$SOV_modify_defense_industry_ns_intro$ \n$tank_manufacturer_cost_factor$: §G-25%§! \n\n"
  SOV_the_means_to_wage_war_ns_tt:1 "$SOV_modify_defense_industry_ns_intro$ \n$materiel_manufacturer_cost_factor$: §G-25%§! \n\n"
  SOV_development_of_tankograd_ns_tt:0 "$SOV_modify_defense_industry_ns_intro$ \nLand Equipment Experience Cost: §G-10%§! \n\n"

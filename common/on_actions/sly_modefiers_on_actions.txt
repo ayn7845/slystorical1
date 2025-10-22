@@ -127,4 +127,24 @@ on_actions = {
 			}
 		}
 	}
+	on_startup = {
+		effect = {
+			every_state = {
+				add_dynamic_modifier = { modifier = SLO_divided_nation scope = CZE }
+				limit = {
+					OR = {
+						state = 9
+						state = 69
+						state = 74
+						state = 75
+						state = 972
+						state = 664
+						state = 72
+						state  = 73
+						
+					}
+				}
+			}
+		}
+	}
 }

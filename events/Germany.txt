@@ -3211,7 +3211,65 @@ country_event = {
 	is_triggered_only = yes
 
 
-	
+	option = {
+		name = germany.55.b
+		add_political_power = -20
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		trigger = {
+			664 = { is_controlled_by = HUN }
+			HUN = {
+				is_friend_or_potential_friend_of_GER = yes
+			}
+			NOT = { has_global_flag = GER_HUN_CZE_split }
+			any_state = {
+				or = {
+					state = 70
+					state = 71
+					state = 73
+				}
+				NOT = {
+					is_controlled_by = HUN
+				}
+			}
+		}
+		HUN = { country_event = germany.56 }
+		add_war_support = 0.1
+		if = {
+			limit = {
+				country_exists = POL
+			}
+			if = {
+				limit = {
+					OR = {
+						NOT = {	has_wargoal_against = POL }
+						NOT = { POL = { has_wargoal_against = ROOT }}
+						NOT = { has_war_with = POL }
+					}
+					72 = {
+						OR = {
+							is_controlled_by = CZE
+							is_controlled_by = GER
+						}
+					}
+				}
+				POL = { transfer_state = 72 } # Give Poland Zaolzie
+			}
+			else = {
+				POL = { add_state_claim = 72 } 
+			}
+		}
+		
+		GER_czechoslovakia_modify_mefo_bills_or_economy_of_conquest = yes
+		GER_seize_gold_reserves_in_europe_peacefully = yes
+
+		add_to_variable = { var = GER_mefo_bill_counter value = -10 }
+	}
 
 	option = {
 		name = germany.55.c
@@ -3225,33 +3283,8 @@ country_event = {
 		add_political_power = -50
 		if = {
 			limit = { country_exists = CZE }
-			hidden_effect = {
-					add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = 240
-			}
-			add_equipment_to_stockpile = {
-				type = infantry_weapons1
-				amount = 43000
-			}
-			add_equipment_to_stockpile = {
-				type = artillery
-				amount = 680
-			}
-			}
+			annex_country = { target = CZE }
 			add_war_support = 0.1
-			664 = {
-				transfer_state_to = HUN
-			}
-			73 = {
-				transfer_state_to = HUN
-			}
-			75 = {
-				transfer_state_to = GER
-			}
-			9 = {
-				transfer_state_to = GER
-			}
 		}
 		else_if = { #This is a backup and should never be possible
 			limit = {
@@ -3349,7 +3382,25 @@ country_event = {
 	}
 
 
+	option = {
+		name = germany.55.do
+		trigger = {
+			has_global_flag = GER_HUN_CZE_split #promised Hungary Slovakia in earlier event
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 10
+				is_in_faction_with = HUN
+			}
+		}
+		HUN = { country_event = DOD_hungary.101 }
+		add_war_support = 0.1
 
+		GER_czechoslovakia_modify_mefo_bills_or_economy_of_conquest = yes
+		GER_seize_gold_reserves_in_europe_peacefully = yes
+		add_to_variable = { var = GER_mefo_bill_counter value = -10 }
+	}
 }
 
 # Hungary asked to partition Czechoslovakia

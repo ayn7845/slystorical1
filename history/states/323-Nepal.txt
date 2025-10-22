@@ -7,6 +7,8 @@ state={
 	state_category = town
 	resources={
 		chromium=2
+		rubber = 3.000
+		tungsten = 92.000
 	}
 	history={
 		owner = RAJ

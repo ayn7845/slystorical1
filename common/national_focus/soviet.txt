@@ -3236,7 +3236,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.025 }
-			add_to_variable = { SOV_defense_production_factory_start_efficiency_factor = 0.05 }
+			#add_to_variable = { SOV_defense_production_factory_start_efficiency_factor = 0.05 }
 			custom_effect_tooltip = SOV_pc_of_mechanical_engineering_ns_ttt
 
 			add_tech_bonus = {

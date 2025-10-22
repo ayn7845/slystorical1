@@ -1517,50 +1517,52 @@
 				type = take_state_focus
 				generator = { 206 }
 			}
-			declare_war_on = {
-				target = FRA
-				type = take_state_focus
-				generator = { 206 }
-			}
-			declare_war_on = {
-				target = RAJ
-				type = take_state_focus
-				generator = { 206 }
-			}
-			declare_war_on = {
-				target = AST
-				type = take_state_focus
-				generator = { 206 }
-			}
-			declare_war_on = {
-				target = SAF
-				type = take_state_focus
-				generator = { 206 }
-			}
-			declare_war_on = {
-				target = CAN
-				type = take_state_focus
-				generator = { 206 }
-			}
-			declare_war_on = {
-				target = MEX
-				type = take_state_focus
-				generator = { 206 }
-			}
-			declare_war_on = {
-				target = BRA
-				type = take_state_focus
-				generator = { 206 }
-			}
-			declare_war_on = {
-				target = HOL
-				type = take_state_focus
-				generator = { 206 }
-			}
-			declare_war_on = {
-				target = IRE
-				type = take_state_focus
-				generator = { 206 }
+			hidden_effect = {
+				declare_war_on = {
+					target = FRA
+					type = take_state_focus
+					generator = { 206 }
+				}
+				declare_war_on = {
+					target = RAJ
+					type = take_state_focus
+					generator = { 206 }
+				}
+				declare_war_on = {
+					target = AST
+					type = take_state_focus
+					generator = { 206 }
+				}
+				declare_war_on = {
+					target = SAF
+					type = take_state_focus
+					generator = { 206 }
+				}
+				declare_war_on = {
+					target = CAN
+					type = take_state_focus
+					generator = { 206 }
+				}
+				declare_war_on = {
+					target = MEX
+					type = take_state_focus
+					generator = { 206 }
+				}
+				declare_war_on = {
+					target = BRA
+					type = take_state_focus
+					generator = { 206 }
+				}
+				declare_war_on = {
+					target = HOL
+					type = take_state_focus
+					generator = { 206 }
+				}
+				declare_war_on = {
+					target = NZL
+					type = take_state_focus
+					generator = { 206 }
+				}
 			}
 		}
 	}

@@ -36,7 +36,7 @@ shared_focus = {
 		value = GFX_goal_panzerwaffe
 	} 
 
-	x = 20
+	x = 17
 	y = 0
 	
 
@@ -130,7 +130,7 @@ shared_focus = {
 	x = -1
 	y = 1
 
-	cost = 5
+	cost = 10
 
 	available = {
 		any_state = {
@@ -185,39 +185,13 @@ shared_focus = {
 					}
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
-		IF = {
-			limit = {
-				original_tag = CHL
-			}
-			custom_effect_tooltip = CHL_modify_chilean_army_ns_intro
-			add_to_variable = { JUNO_army_production_speed_arms_factory_factor = 0.05 tooltip = production_speed_arms_factory_factor_tt }
-		}
-		ELSE_IF = {
-			limit = {
-				original_tag = BRA
-			}
-			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
-			add_to_variable = { JUNO_army_production_speed_arms_factory_factor = 0.05 tooltip = production_speed_arms_factory_factor_tt }
-		}
-		ELSE_IF = {
-			limit = {
-				original_tag = ARG
-			}
-			custom_effect_tooltip = ARG_modify_argentine_army_ns_intro
-			add_to_variable = { JUNO_army_production_speed_arms_factory_factor = 0.05 tooltip = production_speed_arms_factory_factor_tt }
-		}
-		ELSE = {
-			custom_effect_tooltip = JUNO_modify_south_american_army_ns_intro
-			add_to_variable = { JUNO_army_production_speed_arms_factory_factor = 0.05 tooltip = production_speed_arms_factory_factor_tt }
-		}
-
 	}
 }
 
@@ -226,10 +200,10 @@ shared_focus = {
 	icon = GFX_goal_generic_propaganda
 	relative_position_id = SMB_army
 	prerequisite = { focus = SMB_army }
-	x = -4
+	x = -3
 	y = 1
 
-	cost = 10
+	cost = 5
 
 	available = {
 		OR = {
@@ -255,14 +229,7 @@ shared_focus = {
 		}
 
 	completion_reward = {
-	
 		add_war_support = 0.1
-
-		add_popularity = {
-			ideology = ROOT
-			popularity = 0.05
-		}
-
 	}
 }
 
@@ -271,7 +238,7 @@ shared_focus = {
 	icon = GFX_focus_generic_supply_line
 	relative_position_id = SMB_army 
 	prerequisite = { focus = SMB_army }  
-	x = -6
+	x = 3
 	y = 1
 
 	cost = 10
@@ -397,11 +364,10 @@ shared_focus = {
 	icon = GFX_focus_generic_truck
 	relative_position_id = SMB_military_facilities
 	prerequisite = { focus = SMB_military_facilities focus = SMB_army_academy }
-	mutually_exclusive = { focus = SMB_regular_infantry }
 	x = 0
 	y = 1
 
-	cost = 10
+	cost = 5
 
 	available = {
 
@@ -416,31 +382,11 @@ shared_focus = {
 		}
 
 	completion_reward = {
-		IF = {
-			limit = {
-				has_dlc = "Arms Against Tyranny"
-				original_tag = BRA
-			}
-			IF = {
-				limit = {
-					NOT = { has_completed_focus = BRA_fabrica_nacional_de_motores }
-				}
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = BRA_fnm_organization
-			}
-			mio:BRA_fnm_organization = {
-				add_mio_size = 1
-			}
-
-		}
-		ELSE = {
-			add_ideas = idea_JUNO_truck_production_cost
-			add_tech_bonus = {
-				name = JUNO_motorization_initiative
-				bonus = 0.5
-				uses = 2
-				category = motorized_equipment
-			}
+		add_tech_bonus = {
+			name = JUNO_armor_modernization_initiative
+			bonus = 0.75
+			uses = 1
+			category = motorized_equipment
 		}
 	}
 }
@@ -495,62 +441,21 @@ shared_focus = {
 		}
 		value = GFX_goal_generic_amphibious_assault
 	} 
-	mutually_exclusive = { focus = SMB_foreign_designs }
 	relative_position_id = SMB_tank_warfare
-	prerequisite = { focus = SMB_tank_warfare }
-	x = 0
+	prerequisite = { focus = SMB_tank_warfare focus = SMB_artillery }
+	x = 1
 	y = 1
 
 	cost = 5
-
-	available = {
-
-	}
-
-	bypass = {
-		
-	}
 
 	ai_will_do = {
 			factor = 10
 		}
 
 	completion_reward = {
-		IF = {
-			limit = {
-				original_tag = CHL
-			}
-			custom_effect_tooltip = CHL_modify_chilean_army_ns_intro
-			add_to_variable = { JUNO_army_modifier_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-		}
-		ELSE_IF = {
-			limit = {
-				original_tag = BRA
-			}
-			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
-			add_to_variable = { JUNO_army_modifier_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}		
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = BRA_bernadini_organization
-				mio:BRA_bernadini_organization = {
-					add_mio_size = 2
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {
-				original_tag = ARG
-			}
-			custom_effect_tooltip = ARG_modify_argentine_army_ns_intro
-			add_to_variable = { JUNO_army_modifier_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-		}
-		ELSE = {
-			custom_effect_tooltip = JUNO_modify_south_american_army_ns_intro
-			add_to_variable = { JUNO_army_modifier_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-		}
+		army_experience = 100
+		air_experience = 100
+		navy_experience = 100
 	}
 }
 
@@ -716,8 +621,7 @@ shared_focus = {
 	icon = GFX_goal_generic_army_motorized
 	relative_position_id = SMB_tank_warfare
 	prerequisite = { focus = SMB_tank_warfare }
-	prerequisite = { focus = SMB_motorized}
-	x = -2
+	x = -1
 	y = 1
 
 	cost = 10
@@ -744,7 +648,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = JUNO_armor_modernization_initiative
 			bonus = 0.5
-			uses = 2
+			uses = 1
 			category = motorized_equipment
 		}
 	}
@@ -836,11 +740,10 @@ shared_focus = {
 	icon = GFX_goal_generic_allies_build_infantry
 	relative_position_id = SMB_army_academy
 	prerequisite = { focus = SMB_army_academy focus = SMB_military_facilities }
-	mutually_exclusive = { focus = SMB_motorized }
 	x = 0
 	y = 1
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 			factor = 20
@@ -888,7 +791,7 @@ shared_focus = {
 
 		add_tech_bonus = {
 			name = JUNO_army_modernization_initiative
-			bonus = 0.35	
+			bonus = 0.75	
 			uses = 1
 			category = infantry_weapons
 		}
@@ -932,86 +835,12 @@ shared_focus = {
 		}	
 	}
 }
-
-shared_focus = {
-	id = SMB_foreign_designs
-	icon = GFX_focus_generic_license_production
-	mutually_exclusive = { focus = SMB_domestic_production }
-	relative_position_id = SMB_artillery
-	prerequisite = { focus = SMB_tank_warfare focus = SMB_artillery}
-	x = 0
-	y = 1
-
-	cost = 5
-
-	ai_will_do = {
-			factor = 20
-		}
-
-	available = {
-		NOT = {
-			has_idea = JUNO_license_idea
-		}
-	}
-
-	bypass = {
-		
-	}
-
-	completion_reward = {
-		IF = {
-			limit = {
-				has_dlc = "Arms Against Tyranny"
-			}
-			add_equipment_subsidy = {
-				cic = 1000
-				equipment_type = infantry_equipment
-				seller_tags = { USA JAP ENG FRA ITA GER MEX SOV } 
-			}
-			add_equipment_subsidy = {
-				cic = 1000
-				equipment_type = motorized_equipment
-				seller_tags = { USA JAP ENG FRA ITA GER MEX SOV } 
-			}
-			add_equipment_subsidy = {
-				cic = 1000
-				equipment_type = artillery_equipment
-				seller_tags = { USA JAP ENG FRA ITA GER MEX SOV } 
-			}
-			add_equipment_subsidy = {
-				cic = 1000
-				equipment_type = anti_air_equipment
-				seller_tags = { USA JAP ENG FRA ITA GER MEX SOV } 
-			}
-			if = {
-				limit = {
-					original_tag = BRA
-				}
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = BRA_bernadini_organization
-				mio:BRA_bernadini_organization = {
-					add_mio_size = 2
-				}
-			}
-		}
-
-		IF = {
-			limit = {
-				NOT = {
-					has_idea = JUNO_license_idea
-				}
-			}
-			add_ideas = JUNO_license_idea
-		} 
-	}
-}
-
 shared_focus = {
 	id = SMB_foreign_advisors
 	icon = GFX_focus_generic_military_mission
 	relative_position_id = SMB_domestic_production
-	prerequisite = { focus = SMB_domestic_production focus = SMB_foreign_designs}
-	x = 1
+	prerequisite = { focus = SMB_domestic_production }
+	x = 0
 	y = 1
 
 	cost = 5
@@ -1151,110 +980,13 @@ shared_focus = {
 	}
 }
 
-shared_focus = {
-	id = SMB_experimental_weapons_department
-	icon = GFX_focus_rocketry
-	relative_position_id = SMB_foreign_advisors
-	prerequisite = { focus = SMB_army_professionalism focus = SMB_conscription }
-	x = 0
-	y = 2
 
-	cost = 10
-
-	available = {
-
-	}
-
-	bypass = {
-		
-	}
-
-	ai_will_do = {
-			factor = 20
-		}
-
-	completion_reward = {
-
-		add_breakthrough_progress = {
-			specialization = specialization_air
-			value = 0.75
-		}
-
-		custom_effect_tooltip = generic_skip_one_line_tt
-
-		add_ideas = generic_secret_weapons_ns
-
-		#add_tech_bonus = {
-		#	name = secret_bonus
-		#	bonus = 0.5
-		#	uses = 2
-		#	category = electronics
-		#	category = nuclear
-		#	category = rocketry
-		#}
-
-	}
-}
-
-shared_focus = {
-	id = SMB_nuclear_program
-	icon = GFX_focus_wonderweapons
-	relative_position_id = SMB_experimental_weapons_department
-	prerequisite = { focus = SMB_experimental_weapons_department }
-	#prerequisite = { focus = SMB_strategic_bombing }
-	x = 0
-	y = 1
-
-	cost = 10
-
-	available = {
-
-	}
-
-	bypass = {
-		
-	}
-
-	ai_will_do = {
-		factor = 20
-	} 
-
-	completion_reward = {
-
-		if = {
-			limit = {
-				NOT = {
-					has_tech = atomic_research
-				}
-			}
-			add_tech_bonus = {
-				name = JUNO_nuclear_initiative
-				ahead_reduction = 2
-				bonus = 1
-				uses = 1
-				category = nuclear
-			}
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.25
-			}
-		}
-		else = {
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.75
-			}
-		}
-
-	}   
-}  
- 
 shared_focus = {
 	id = SMB_special_forces
 	icon = GFX_focus_eng_special_air_service
 	relative_position_id = SMB_army_professionalism
 	prerequisite = { focus = SMB_army_professionalism focus = SMB_conscription }
-	x = -2
+	x = 2
 	y = 1
 
 	cost = 5 
@@ -1659,7 +1391,7 @@ shared_focus = {
 	cost = 5
  
 	available = {
-
+		date = 1938.1.1
 	}
 
 	bypass = {
@@ -1890,7 +1622,7 @@ shared_focus = {
 	relative_position_id = SMB_army
 	prerequisite = { focus = SMB_army }
 	prerequisite = { focus = SMB_air_force}
-	x = 4
+	x = 3
 	y = 1
 
 	offset = {
@@ -1902,15 +1634,6 @@ shared_focus = {
 	}
 
 	cost = 5
-
-	available = {
-		any_country = {
-			NOT = {
-				tag = ROOT
-			}
-			has_completed_focus = SMB_establish_aircraft_industry
-		}
-	}
 
 	bypass = {
 		
@@ -1956,7 +1679,7 @@ shared_focus = {
 	#icon = GFX_goal_generic_build_airforce
 	relative_position_id = SMB_army
 	#prerequisite = { focus = SMB_army }
-	x = 10
+	x = 8
 	y = 0
 
 	dynamic = yes
@@ -2124,66 +1847,12 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = SMB_domestic_designs
-	icon = GFX_focus_SMB_purchase_aircraft
-	relative_position_id = SMB_air_academy
-	mutually_exclusive = { focus = SMB_license_designs focus = SMB_purchase_aircraft }
-	prerequisite = { focus = SMB_air_academy focus = SMB_construct_air_bases }
-	x = 0
-	y = 1
-
-	cost = 5
-
-	available = {
-
-	}
-
-	bypass = {
-		
-	}
-
-	ai_will_do = {
-			factor = 10
-		}
-
-	completion_reward = {
-
-		IF = {
-			limit = {
-				original_tag = CHL
-			}
-			custom_effect_tooltip = CHL_modify_chilean_airforce_ns_intro
-			add_to_variable = { JUNO_army_modifier_industrial_capacity_factory_airfoce = 0.05 tooltip = industrial_capacity_factory_tt }
-		}
-		ELSE_IF = {
-			limit = {
-				original_tag = BRA
-			}
-			custom_effect_tooltip = BRA_modify_brazilian_airforce_ns_intro
-			add_to_variable = { JUNO_army_modifier_industrial_capacity_factory_airfoce = 0.05 tooltip = industrial_capacity_factory_tt }
-		}
-		ELSE_IF = {
-			limit = {
-				original_tag = ARG
-			}
-			custom_effect_tooltip = ARG_modify_argentine_airforce_ns_intro
-			add_to_variable = { JUNO_army_modifier_industrial_capacity_factory_airfoce = 0.05 tooltip = industrial_capacity_factory_tt }
-		}
-		ELSE = {
-			custom_effect_tooltip = JUNO_modify_south_american_airforce_ns_intro
-			add_to_variable = { JUNO_army_modifier_industrial_capacity_factory_airfoce = 0.05 tooltip = industrial_capacity_factory_tt }
-		}
-		
-	}
-}
-
-shared_focus = {
 	id = SMB_establish_aircraft_industry
 	icon = GFX_focus_generic_aircraft_production
-	relative_position_id = SMB_air_force
-	prerequisite = { focus = SMB_license_designs focus = SMB_domestic_designs focus = SMB_purchase_aircraft }
+	relative_position_id = SMB_air_academy
+	prerequisite = {focus = SMB_air_academy }
 	x = 0
-	y = 3
+	y = 1
 
 	cost = 10
 
@@ -2204,12 +1873,6 @@ shared_focus = {
 			limit = {
 				original_tag = BRA
 			}
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = BRA_embraer_organization
-			mio:BRA_embraer_organization = {
-				add_mio_size = 1
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 		}
 		random_core_state = {
 			limit = {
@@ -2423,7 +2086,7 @@ shared_focus = {
 	id = SMB_navy
 	#icon = GFX_goal_generic_build_navy
 	relative_position_id = SMB_air_force
-	x = 5
+	x = 4
 	y = 0
 
 	dynamic = yes

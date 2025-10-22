@@ -77,12 +77,13 @@ characters={
 				small=GFX_portrait_NZL_bernard_freyberg_small
 			}
 		}
-		corps_commander={
+		field_marshal={
+			traits={ brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer ranger urban_assault_specialist infantry_leader infantry_expert }
 			skill=4
-			attack_skill=2
+			attack_skill=4
 			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -95,13 +96,13 @@ characters={
 				small=GFX_portrait_NZL_robert_row_small
 			}
 		}
-		corps_commander={
-			traits={ naval_invader }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
+		field_marshal={
+			traits={infantry_leader desert_fox infantry_expert trickster trait_engineer mountaineer commando urban_assault_specialist camouflage_expert offensive_doctrine fortress_buster expert_improviser mountaineer }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}

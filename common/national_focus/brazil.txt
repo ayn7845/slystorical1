@@ -249,44 +249,40 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			IF = {
-				limit = { has_dynamic_modifier = { modifier = BRA_estado_novo_modifier } }
-				custom_effect_tooltip = BRA_modify_estado_novo_ns_intro
-				add_to_variable = {
-					BRA_estado_novo_production_factory_max_efficiency_factor = 0.05
-					tooltip = production_factory_max_efficiency_factor_tt
+				random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						state = 961
+						state = 962
+						state = 963
+						state = 964
+						state = 965
+						state = 966
+						state = 967
+						state = 968
+					}
 				}
-				add_to_variable = {
-					BRA_estado_novo_consumer_goods_factor = -0.05
-					tooltip = consumer_goods_factor_tt
-				}
-				add_to_variable = {
-					BRA_estado_novo_industrial_capacity_dockyard = 0.05
-					tooltip = industrial_capacity_dockyard_tt
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = BRA_modify_estado_moderno_ns_intro
-				add_to_variable = {
-					BRA_estado_moderno_production_factory_max_efficiency_factor = 0.05
-					tooltip = industrial_capacity_factory_tt
-				}
-				add_to_variable = {
-					BRA_estado_moderno_consumer_goods_factor = -0.05
-					tooltip = consumer_goods_factor_tt
-				}
-				add_to_variable = {
-					BRA_estado_moderno_industrial_capacity_dockyard = 0.05
-					tooltip = industrial_capacity_dockyard_tt
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
 				}
 			}
+		
 		}
 	}
 
 	focus = {
 		id = BRA_departamendo_de_propaganda
 		icon = GFX_focus_BRA_department_of_propaganda
-		prerequisite = { focus = BRA_autarky focus = BRA_corporatism }
+		prerequisite = {focus = BRA_corporatism }
 		x = 0
 		y = 1
 		relative_position_id = BRA_corporatism
@@ -304,7 +300,7 @@ focus_tree = {
 	focus = {
 		id = BRA_tech_slot_1
 		icon = GFX_focus_research
-		prerequisite = { focus = BRA_departamento_de_ordem_politica_e_social  focus = BRA_departamendo_de_propaganda }
+		prerequisite = { focus = BRA_departamendo_de_propaganda }
 		x = 1
 		y = 5
 		relative_position_id = BRA_cohen_plan
@@ -492,10 +488,38 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						OR = {
+							state = 961
+							state = 962
+							state = 963
+							state = 964
+							state = 965
+							state = 966
+							state = 967
+							state = 968
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -584,7 +608,7 @@ focus_tree = {
 		id = BRA_coffee_crisis_aftermath
 		icon = GFX_focus_BRA_coffee_crisis
 		#prerequisite = { focus =  }
-		x = 8
+		x = 7
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -597,19 +621,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			custom_effect_tooltip = BRA_modify_economy_intro
-			add_to_variable = {
-				BRA_economy_industrial_capacity_factor = 0.05
-				tooltip = industrial_capacity_factory_tt
-			}
-			add_to_variable = {
-				BRA_economy_production_efficiency_gain_factor = 0.05
-				tooltip = production_factory_efficiency_gain_factor_tt
-			}
-			add_to_variable = {
-				BRA_economy_production_max_efficiency_factor = 0.05
-				tooltip = production_factory_max_efficiency_factor_tt
-			}
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = BRA_departamento_nacional_do_cafe_idea	
 		}
@@ -622,7 +633,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = BRA_coffee_crisis_aftermath
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -647,7 +658,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = BRA_coffee_crisis_aftermath
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -656,17 +667,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = {
-			custom_effect_tooltip = BRA_modify_economy_intro
-			add_to_variable = {
-				BRA_economy_production_efficiency_gain_factor = 0.1
-				tooltip = production_factory_efficiency_gain_factor_tt
-			}
-			add_to_variable = {
-				BRA_economy_production_max_efficiency_factor = 0.1
-				tooltip = production_factory_max_efficiency_factor_tt
-			}	
-			BRA_remove_economy_modifier = yes	
+		completion_reward = {	
 			add_tech_bonus = {
 				name = BRA_electronics_bonus
 				bonus = 0.5
@@ -701,13 +702,13 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				custom_effect_tooltip = BRA_modify_neglected_state
 				add_to_variable = {
-					BRA_state_development_state_resources_factor = 0.1
+					BRA_state_development_state_resources_factor = 0.15
 					tooltip = MODIFIER_STATE_RESOURCES_FACTOR_tt
 				}
 			}
 			add_tech_bonus = {
 				name = BRA_resource_extraction_bonus
-				bonus = 0.50
+				bonus = 0.75
 				uses = 2
 				category = excavation_tech
 			}
@@ -862,12 +863,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			custom_effect_tooltip = BRA_modify_economy_intro
-			add_to_variable = {
-				BRA_economy_industrial_capacity_factor = 0.1
-				tooltip = industrial_capacity_factory_tt
-			}	
-			BRA_remove_economy_modifier = yes
 			random_core_state = {
 				limit = {
 					free_building_slots = {
@@ -894,28 +889,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-		}
-	}
-
-	focus = { #INDUSTRIAL
-		id = BRA_reach_out_to_the_great_powers
-		icon = GFX_focus_ARG_reach_out_to_the_great_powers
-		prerequisite = { focus = BRA_promote_resource_extraction focus = BRA_companhia_siderurgica_nacional }
-		x = 0
-		y = 1
-		relative_position_id = BRA_promote_resource_extraction
-		cost = 5
-		available = {
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		search_filters = { }
-
-		completion_reward = { 
-			custom_effect_tooltip = ARG_international_loan_decisions_tt
 		}
 	}
 
@@ -1100,14 +1073,14 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_resource = {
 					type = rubber
-					amount = 7
+					amount = 12
 				}
 				add_to_variable = {
 					BRA_state_development_local_building_slots_factor = 0.2
 					tooltip = MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR_tt
 				}
 				add_to_variable = {
-					BRA_state_development_state_resources_factor = 0.2
+					BRA_state_development_state_resources_factor = 0.35
 					tooltip = MODIFIER_STATE_RESOURCES_FACTOR_tt
 				}
 				set_state_flag = BRA_resource_boost
@@ -1205,59 +1178,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BRA_fabrica_nacional_de_motores
-		icon = GFX_focus_BRA_fabrica_national_de_motores
-		prerequisite = { focus = BRA_invest_in_road_infrastructure  }
-		x = -1
-		y = 2
-		relative_position_id = BRA_invest_in_road_infrastructure
-		mutually_exclusive = { focus = BRA_expand_fordlandia }
-		cost = 10
-		ai_will_do = {
-			factor = 4
-		}
-		available = {
-		}
-
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				IF = {
-					limit = {
-						NOT = { has_completed_focus = SMB_motorized }
-					}
-					custom_effect_tooltip = available_mio_tt
-					show_mio_tooltip = BRA_fnm_organization
-				}
-				mio:BRA_fnm_organization = {
-					add_mio_size = 3
-				}
-
-			}
-			ELSE = {
-				add_tech_bonus = {
-					name = BRA_nacional_de_motores_bonus
-					bonus = 0.50
-					uses = 2
-					category = motorized_equipment
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = BRA_expand_fordlandia
 		icon = GFX_focus_SWE_lynx_armored_car
 		prerequisite = { focus = BRA_invest_in_road_infrastructure  }
-		x = 1
-		y = 2
+		x = 0
+		y = 1
 		relative_position_id = BRA_invest_in_road_infrastructure
 		mutually_exclusive = { focus = BRA_fabrica_nacional_de_motores }
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 4
 		}
@@ -1291,34 +1219,16 @@ focus_tree = {
 					name = BRA_fordlandia_name
 				}
 			}
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = USA_ford_motor_company_organization
-				mio:USA_ford_motor_company_organization = {
-					add_mio_size = 2
-				}
-			}
-			ELSE = {
-				add_tech_bonus = {
-					name = BRA_nacional_de_motores_bonus
-					bonus = 0.75
-					uses = 1
-					category = motorized_equipment
-				}
-			}
 		}
 	}
 
 	focus = {
 		id = BRA_bonus_tech_slot
 		icon = GFX_focus_research
-		prerequisite = { focus = BRA_invest_in_road_infrastructure  }
-		x = 0
+		prerequisite = { focus = BRA_promote_resource_extraction focus = BRA_companhia_siderurgica_nacional  }
+		x = -1
 		y = 1
-		relative_position_id = BRA_invest_in_road_infrastructure
+		relative_position_id = BRA_companhia_siderurgica_nacional
 		cost = 10
 		ai_will_do = {
 			factor = 4
@@ -1350,20 +1260,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			custom_effect_tooltip = BRA_modify_economy_intro
-			add_to_variable = {
-				BRA_economy_industrial_capacity_factor = 0.05
-				tooltip = industrial_capacity_factory_tt
-			}
-			add_to_variable = {
-				BRA_economy_production_efficiency_gain_factor = 0.05
-				tooltip = production_factory_efficiency_gain_factor_tt
-			}
-			add_to_variable = {
-				BRA_economy_production_max_efficiency_factor = 0.05
-				tooltip = production_factory_max_efficiency_factor_tt
-			}
-			
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = BRA_banco_do_brasil_idea			
 		}

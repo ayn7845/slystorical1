@@ -295,6 +295,15 @@ focus_tree = {
 				uses = 4
 				category = armor
 			}
+			completion_reward = {
+			add_tech_bonus = {
+				name = SPA_the_condor_legion
+				ahead_reduction = 2
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SPA_wilhelm_ritter_von_thoma
 		}

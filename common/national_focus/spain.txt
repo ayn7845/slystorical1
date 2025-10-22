@@ -248,23 +248,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			ITA = {
-				add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
-			}
 			add_tech_bonus = {
 				name = SPA_the_corpo_truppe_volontarie
-				bonus = 0.75
-				uses = 4
-				technology = infantry_weapons2
-				technology = improved_infantry_weapons
-				technology = improved_infantry_weapons_2
-				technology = advanced_infantry_weapons
-			}
-			add_tech_bonus = {
-				name = SPA_the_corpo_truppe_volontarie
-				bonus = 0.5
-				uses = 4
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
 				category = artillery
+				#technology = infantry_weapons2
+				#technology = improved_infantry_weapons
+				#technology = improved_infantry_weapons_2
+				#technology = advanced_infantry_weapons
 			}
 		}
 	}
@@ -1255,12 +1248,14 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SPA_save_the_alcazar }
+		prerequisite = { focus = SPA_foment_a_carlist_split }
+		prerequisite = { focus = SPA_martyrdom_for_primo_de_rivera }
 		
 		icon = GFX_focus_spa_caudillo_of_spain
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = SPA_save_the_alcazar
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -1297,12 +1292,12 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_extol_the_martyrs_of_the_war }
+		prerequisite = { focus = SPA_caudillo_of_spain }
 		
 		icon = GFX_focus_generic_strike_at_democracy1
 		x = -2
 		y = 1
-		relative_position_id = SPA_extol_the_martyrs_of_the_war
+		relative_position_id = SPA_caudillo_of_spain
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1323,15 +1318,13 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_martyrdom_for_primo_de_rivera }
-		prerequisite = { focus = SPA_caudillo_of_spain }
-		prerequisite = { focus = SPA_foment_a_carlist_split }
+		prerequisite = { focus = SPA_save_the_alcazar }
 		
 		icon = GFX_SPR_church
-		x = 2
+		x = 0
 		y = 1
-		relative_position_id = SPA_martyrdom_for_primo_de_rivera
-		cost = 10
+		relative_position_id = SPA_save_the_alcazar
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_SPA_CARLIST_UPRISING}
@@ -1354,7 +1347,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_con_paquito }
 		
 		icon = GFX_goal_generic_position_armies
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = SPA_con_paquito
 		cost = 10
@@ -1467,7 +1460,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_consolidate_the_north
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -1485,12 +1478,12 @@ focus_tree = {
 		bypass = {
 			has_global_flag = SPR_carlist_uprising_flag
 		}
-		prerequisite = { focus = SPA_extol_the_martyrs_of_the_war }
+		prerequisite = { focus = SPA_caudillo_of_spain }
 		
 		icon = GFX_SPR_take
 		x = 2
 		y = 1
-		relative_position_id = SPA_extol_the_martyrs_of_the_war
+		relative_position_id = SPA_caudillo_of_spain
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1530,7 +1523,7 @@ focus_tree = {
 					add_to_faction = SPR
 				}
 			}
-			add_ideas = SPA_la_division_azul
+			#add_ideas = SPA_la_division_azul
 			set_party_name = { ideology = fascism long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
 			set_party_name = { ideology = neutrality long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
 			remove_ideas = SPA_carlism_2
@@ -1783,12 +1776,12 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_extol_the_martyrs_of_the_war }
+		prerequisite = { focus = SPA_adopt_the_26_points }
 		
 		icon = GFX_goal_generic_position_armies
-		x = 0
+		x = -2
 		y = 1
-		relative_position_id = SPA_extol_the_martyrs_of_the_war
+		relative_position_id = SPA_adopt_the_26_points
 		cost = 5
 
 		available_if_capitulated = yes

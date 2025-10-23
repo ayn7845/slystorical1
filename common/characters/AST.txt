@@ -78,7 +78,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer ranger urban_assault_specialist infantry_leader infantry_expert }
+			traits={ brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer infantry_leader infantry_expert }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -97,10 +97,10 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={infantry_leader desert_fox infantry_expert trickster trait_engineer mountaineer commando urban_assault_specialist camouflage_expert offensive_doctrine fortress_buster expert_improviser mountaineer }
+			traits={infantry_leader desert_fox infantry_expert trickster trait_engineer offensive_doctrine fortress_buster expert_improviser mountaineer }
 			skill=4
 			attack_skill=4
-			defense_skill=3
+			defense_skill=4
 			planning_skill=4
 			logistics_skill=4
 			legacy_id=-1

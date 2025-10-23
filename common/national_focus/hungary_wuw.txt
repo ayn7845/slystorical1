@@ -3281,20 +3281,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SPA_tank_gens
 			hidden_effect = {
-				HUN_ivan_hindy = {
-					promote_leader = yes
-					add_defense = 5
-					add_attack = 3
-					add_logistics = 5
-					add_planning = 4
-				}
-				HUN_lajos_veress = {
-					promote_leader = yes
-					add_defense = 5
-					add_attack = 5
-					add_planning = 4
-					add_logistics = 3
-				}
+	
 			}
 		}
 	}

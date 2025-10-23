@@ -112,11 +112,11 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ adaptable brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer infantry_leader infantry_expert }
+			traits={ brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer infantry_leader infantry_expert }
 			skill=4
 			attack_skill=4
-			defense_skill=3
-			planning_skill=5
+			defense_skill=4
+			planning_skill=4
 			logistics_skill=5
 			legacy_id=-1
 		}

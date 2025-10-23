@@ -652,9 +652,9 @@ characters = {
 			}
 			
 			# Will be upgradeable through various focuses
-			corps_commander = {
-				traits = {  trait_HUN_vitez adaptable brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer ranger infantry_leader infantry_expert }
-				skill = 6
+			field_marshal = {
+				traits = {  trait_HUN_vitez brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer infantry_leader infantry_expert }
+				skill = 5
 				attack_skill = 4
 				defense_skill = 3
 				planning_skill = 5
@@ -685,11 +685,11 @@ characters = {
 				}
 			}
 
-			corps_commander = {
-				traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger }
-				skill = 6
-				attack_skill = 3
-				defense_skill = 2
+			field_marshal = {
+				traits = { brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster skilled_staffer cavalry_leader organizer }
+				skill = 5
+				attack_skill = 4
+				defense_skill = 5
 				planning_skill = 5
 				logistics_skill = 5
 				legacy_id = -1
@@ -708,15 +708,13 @@ characters = {
 					small = "GFX_idea_HUN_ivan_hindy"
 				}
 			}
-
-			# Will be upgradeable thorugh the focus tree
-			corps_commander = {
-				traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger }
-				skill = 6
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
+			field_marshal = {
+				traits = { brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer }
+				skill = 5
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 5
+				logistics_skill = 5
 				legacy_id = -1
 				visible = {
 						has_completed_focus = wuw_HUN_award_military_promotions
@@ -844,13 +842,13 @@ characters = {
 				}
 			}
 
-			corps_commander = {
-				traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando combined_arms_expert offensive_doctrine }
-				skill = 6
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
+			field_marshal = {
+				traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader commando combined_arms_expert offensive_doctrine }
+				skill = 5
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 5
 				legacy_id = -1
 			}
 
@@ -871,12 +869,12 @@ characters = {
 			}
 			
 			corps_commander = {
-				traits = { cavalry_officer desert_fox panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando urban_assault_specialist combined_arms_expert offensive_doctrine fortress_buster expert_improviser }
-				skill = 6
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
+				traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader commando combined_arms_expert offensive_doctrine fortress_buster expert_improviser }
+				skill = 5
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 5
 				legacy_id = -1
 				visible = {
 						has_completed_focus = wuw_HUN_award_military_promotions
@@ -930,8 +928,8 @@ characters = {
 			
 			# Can become a field marshal through the military promotions focus
 			corps_commander = {
-				traits = { trait_HUN_vitez trait_HUN_fascist_sympathies desert_fox infantry_leader infantry_expert trickster trait_engineer ranger hill_fighter mountaineer commando urban_assault_specialist camouflage_expert offensive_doctrine fortress_buster expert_improviser}
-				skill = 6
+				traits = { trait_HUN_vitez trait_HUN_fascist_sympathies infantry_leader infantry_expert trickster trait_engineer mountaineer commando camouflage_expert offensive_doctrine fortress_buster expert_improviser}
+				skill = 5
 				attack_skill = 5
 				defense_skill = 5
 				planning_skill = 5

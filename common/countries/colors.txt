@@ -10,7 +10,7 @@ ENG = {
    color_ui = rgb { 200  10  10 }
 }
 SOV = {
-	color = HSV { 0 1.6 1.8 }
+	color = HSV { 0 1.6 1.85 }
 	color_ui = rgb { 188 0 0 }
 }
 SWE = {

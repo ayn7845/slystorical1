@@ -22,7 +22,7 @@ USA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			industrial_capacity_dockyard = 0.15
+			industrial_capacity_dockyard = 0.05
 		}
 
 		complete_effect = {
@@ -58,7 +58,7 @@ USA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			consumer_goods_expected_value = -0.03
+			consumer_goods_factor = -0.05
 		}
 
 		complete_effect = {
@@ -91,17 +91,14 @@ USA_propaganda_campaigns = {
 		days_re_enable = 360
 
 		cost = 25
-
-		modifier = {
-			industrial_capacity_factory = 0.10
-		}
-
 		complete_effect = {
+			add_ideas = USA_keep_em_firing
 			set_variable = { USA_new_propaganda_campaign = 4 }
 			USA_pick_propaganda_campaign_slot_effect = yes
 		}
 
 		remove_effect = {
+			remove_ideas = USA_keep_em_firing
 			set_variable = { USA_propaganda_campaign_to_remove = 4 }
 			USA_reset_propaganda_campaign_slot_effect = yes
 			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
@@ -209,8 +206,8 @@ USA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			production_factory_efficiency_gain_factor = 0.1
-			line_change_production_efficiency_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.025
+			line_change_production_efficiency_factor = 0.025
 		}
 
 		complete_effect = {
@@ -246,9 +243,8 @@ USA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			production_factory_max_efficiency_factor = 0.1
+			production_factory_max_efficiency_factor = 0.025
 		}
-
 
 		complete_effect = {
 			set_variable = { USA_new_propaganda_campaign = 8 }

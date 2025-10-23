@@ -829,6 +829,9 @@ focus_tree = {
 		available = {
 			threat > 0.35
 		}
+		allow_branch = {
+			always = false
+		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -923,6 +926,10 @@ focus_tree = {
 		cost = 5
 		available = {
 		}
+		allow_branch = {
+			always = false
+		}
+
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_CHARACTER }
 
@@ -1097,6 +1104,9 @@ focus_tree = {
 			controls_state = 213 #MURMANSK
 			controls_state = 215 #ONEGA
 			controls_state = 216 #OLONETS
+		}
+		allow_branch = {
+			always = false
 		}
 
 		search_filters = {}
@@ -2728,6 +2738,9 @@ focus_tree = {
 				NOT = { is_justifying_wargoal_against = ROOT	}
 			}
 		}
+		allow_branch = {
+			always = false
+		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INTERNATIONAL_TRADE }
 
@@ -3235,6 +3248,9 @@ focus_tree = {
 		available = {
 		}
 
+		allow_branch = {
+			always = false
+		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_CHARACTER }
 
 		completion_reward = {

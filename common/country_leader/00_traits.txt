@@ -11005,8 +11005,6 @@ leader_traits = {
 		random = no
 		
 		party_popularity_stability_factor = 0.1
-		planning_speed_ = 0.2
-		max_planning_factor = 0.1
 		max_command_power_mult = 0.25
 		production_speed_buildings_factor = 0.05
 		production_factory_max_efficiency_factor = 0.025

@@ -653,10 +653,10 @@ characters = {
 			
 			# Will be upgradeable through various focuses
 			corps_commander = {
-				traits = {  trait_HUN_vitez adaptable brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer ranger urban_assault_specialist infantry_leader infantry_expert }
+				traits = {  trait_HUN_vitez adaptable brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer ranger infantry_leader infantry_expert }
 				skill = 6
 				attack_skill = 4
-				defense_skill = 5
+				defense_skill = 3
 				planning_skill = 5
 				logistics_skill = 5
 				legacy_id = -1 
@@ -686,10 +686,10 @@ characters = {
 			}
 
 			corps_commander = {
-				traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger urban_assault_specialist }
+				traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger }
 				skill = 6
 				attack_skill = 3
-				defense_skill = 3
+				defense_skill = 2
 				planning_skill = 5
 				logistics_skill = 5
 				legacy_id = -1
@@ -711,7 +711,7 @@ characters = {
 
 			# Will be upgradeable thorugh the focus tree
 			corps_commander = {
-				traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger urban_assault_specialist }
+				traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger }
 				skill = 6
 				attack_skill = 1
 				defense_skill = 1
@@ -845,7 +845,7 @@ characters = {
 			}
 
 			corps_commander = {
-				traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando urban_assault_specialist camouflage_expert combined_arms_expert offensive_doctrine fortress_buster expert_improviser }
+				traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando combined_arms_expert offensive_doctrine }
 				skill = 6
 				attack_skill = 1
 				defense_skill = 1
@@ -871,7 +871,7 @@ characters = {
 			}
 			
 			corps_commander = {
-				traits = { cavalry_officer desert_fox panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando urban_assault_specialist camouflage_expert combined_arms_expert offensive_doctrine fortress_buster expert_improviser }
+				traits = { cavalry_officer desert_fox panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando urban_assault_specialist combined_arms_expert offensive_doctrine fortress_buster expert_improviser }
 				skill = 6
 				attack_skill = 1
 				defense_skill = 1

@@ -656,7 +656,7 @@ characters={
 			visible = { 
 				has_completed_focus = SPA_the_national_army_of_spain
 			}
-			traits={ trickster career_officer trait_SPA_nationalist_sympathies combined_arms_expert offensive_doctrine camouflage_expert ambusher cavalry_leader infantry_leader commando skilled_staffer hill_fighter ranger desert_fox }
+			traits={ trickster career_officer trait_SPA_nationalist_sympathies combined_arms_expert offensive_doctrine ambusher cavalry_leader infantry_leader commando skilled_staffer hill_fighter desert_fox }
 			skill = 6
 			attack_skill = 4
 			defense_skill = 10
@@ -677,10 +677,10 @@ characters={
 			visible = { 
 				has_completed_focus = SPA_the_popular_army_of_spain
 			}
-			traits={ trickster expert_improviser career_officer trait_SPA_nationalist_sympathies organizer combined_arms_expert commando offensive_doctrine camouflage_expert panzer_leader cavalry_leader commando skilled_staffer hill_fighter ranger desert_fox }
+			traits={ trickster expert_improviser career_officer trait_SPA_nationalist_sympathies organizer combined_arms_expert offensive_doctrine camouflage_expert panzer_leader cavalry_leader commando skilled_staffer hill_fighter desert_fox }
 			skill = 6
-			attack_skill = 5
-			defense_skill = 5
+			attack_skill = 4
+			defense_skill = 3
 			planning_skill = 6
 			logistics_skill = 6
 			legacy_id=1109
@@ -826,10 +826,10 @@ characters={
 				visible = { 
 					has_completed_focus = SPA_the_popular_army_of_spain
 				}
-				traits={ brilliant_strategist logistics_wizard thorough_planner panzer_leader combined_arms_expert aggressive_assaulter trait_reckless trait_SPA_nationalist_sympathies panzer_leader cavalry_leader infantry_leader organizer ranger trickster }
+				traits={ brilliant_strategist logistics_wizard thorough_planner panzer_leader combined_arms_expert aggressive_assaulter trait_reckless trait_SPA_nationalist_sympathies panzer_leader cavalry_leader infantry_leader organizer trickster }
 				skill = 6
 				attack_skill = 4
-				defense_skill = 4
+				defense_skill = 3
 				planning_skill = 6
 				logistics_skill = 6
 				legacy_id=1112

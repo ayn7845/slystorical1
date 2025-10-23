@@ -325,7 +325,7 @@ ideas = {
 							tag = MEX
 						}
 					}
-					date > 1942.7.1
+					#date > 1942.7.1
 				}
 				OR = {
 					has_government = fascism
@@ -589,7 +589,7 @@ ideas = {
 							tag = MEX
 						}
 					}
-					date > 1942.7.1
+					#date > 1942.7.1
 				}
 				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
 				OR = {
@@ -848,7 +848,7 @@ ideas = {
 							tag = MEX
 						}
 					}
-					date > 1942.7.1
+					#date > 1942.7.1
 				}
 				#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
 				has_war = yes
@@ -1087,7 +1087,7 @@ ideas = {
 							tag = MEX
 						}
 					}
-					date > 1942.7.1
+					#date > 1942.7.1
 				}
 				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
 				has_war = yes

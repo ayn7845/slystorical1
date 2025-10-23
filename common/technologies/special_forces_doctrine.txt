@@ -222,9 +222,6 @@ technologies = {
 		category_mountaineers = {
 			defense = 0.10
 		}
-		mountaineers = {
-			combat_width = -0.2
-		}
 		
 		path = {
 			leads_to_tech = mountaineers_combat_3

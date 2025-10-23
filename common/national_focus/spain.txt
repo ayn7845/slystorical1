@@ -454,7 +454,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SPA_equipment_modernization
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = infantry_weapons
 			}
 		}
@@ -564,7 +564,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPA_equipment_modernization
-				bonus = 2.0
+				bonus = 1
 				uses = 1
 				category = motorized_equipment
 			}

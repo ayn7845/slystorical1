@@ -156,7 +156,7 @@
 			add_tech_bonus = {
 				name = AST_royal_australian_artillery
 				bonus = 0.75
-				uses = 6
+				uses = 2
 				category = artillery
 			}
 			if = {
@@ -320,12 +320,9 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_specialize_equipment
-				bonus = 1.0
-				uses = 4
-				technology = infantry_weapons2
-				technology = improved_infantry_weapons
-				technology = improved_infantry_weapons_2
-				technology = advanced_infantry_weapons
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
 			}
 		}
 	}
@@ -1812,6 +1809,8 @@
 
 		completion_reward = {
 			add_ideas = AST_invest_in_victory
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = extensive_conscription
 		}
 	}
 

@@ -1524,7 +1524,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SAF_expand_the_south_african_artillery
 				bonus = 0.5
-				uses = 4
+				uses = 2
 				category = artillery
 			}
 		}
@@ -1632,12 +1632,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_infantry_training_school
-				bonus = 1
-				uses = 4
-				technology = infantry_weapons2
-				technology = improved_infantry_weapons
-				technology = improved_infantry_weapons_2
-				technology = advanced_infantry_weapons
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
 			}			
 		}
 	}

@@ -661,7 +661,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = BUL_reorganize_the_military_industry
 			    bonus = 1.0
-			    uses = 2
+			    uses = 1
 			    category = infantry_weapons
 			}
 		}
@@ -836,7 +836,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = BUL_darzhavna_voenna_fabrika
 			    bonus = 1
-			    uses = 2
+			    uses = 1
 				category = infantry_weapons
 				category = support_tech
 			}
@@ -1150,14 +1150,14 @@ focus_tree = {
 			add_tech_bonus = {
 				name = BUL_war_logistics
 			    bonus = 1
-			    ahead_reduction = 1
+			    #ahead_reduction = 1
 			    uses = 1
 				category = cat_mechanized_equipment
 			}
 			add_tech_bonus = {
 				name = BUL_war_logistics
 			    bonus = 1
-			    uses = 2
+			    uses = 1
 				category = support_tech
 			}
 		}

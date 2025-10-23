@@ -3081,20 +3081,10 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = HUN_danuvia_submachine_guns
-				bonus = 1
-				uses = 4
-				technology = infantry_weapons2
-				technology = improved_infantry_weapons
-				technology = improved_infantry_weapons_2
-				technology = advanced_infantry_weapons
-			}
-			add_tech_bonus = {
-				name = HUN_danuvia_submachine_guns
 				bonus = 0.75
-				uses = 6
-				category = artillery
+				uses = 2
+				category = infantry_weapons
 			}
-
 			custom_effect_tooltip = generic_skip_one_line_tt
 		}
 	}
@@ -3131,16 +3121,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = wuw_HUN_form_the_gyorshadtest
-				ahead_reduction = 2
-				bonus = 1
+				bonus = 0.75
 				uses = 1
 				category = cat_mechanized_equipment
-			}
-			add_tech_bonus = {
-				name = wuw_HUN_form_the_gyorshadtest
-				bonus = 1
-				uses = 1
-				category = motorized_equipment
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -3181,30 +3164,6 @@ focus_tree = {
 
 		completion_reward = {
 
-			random_owned_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
 			random_owned_state = {
 				limit = {
 					is_fully_controlled_by = ROOT

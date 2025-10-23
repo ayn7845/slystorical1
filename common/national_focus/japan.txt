@@ -3662,6 +3662,13 @@
 
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_small_arms_modernization
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons	
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			army_experience = 100
 		}
 	}
@@ -3701,7 +3708,7 @@
 			add_tech_bonus = {
 				name = JAP_small_arms_modernization
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = infantry_weapons	
 			}
 		}

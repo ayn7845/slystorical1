@@ -1096,7 +1096,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ROM_artillery_modernization
 				bonus = 0.5
-				uses = 4
+				uses = 2
 				category = artillery
 			}
 		}
@@ -1281,10 +1281,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 2500 producer = ROM }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = ROM }
 			add_tech_bonus = {
 				category = artillery
-				uses = 2
+				uses = 1
 				bonus = 0.5
 				name = ROM_import_and_convert_antique_artillery
 			}
@@ -1325,7 +1325,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = support_equipment amount = 250 producer = ROM }
 			add_tech_bonus = {
 				category = support_tech
-				uses = 2
+				uses = 1
 				bonus = 0.5
 				name = ROM_organizing_logistics
 			}
@@ -1434,11 +1434,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ROM_modernize_the_army
 				bonus = 1
-				uses = 4
-				technology = infantry_weapons2
-				technology = improved_infantry_weapons
-				technology = improved_infantry_weapons_2
-				technology = advanced_infantry_weapons
+				uses = 1
+				category = infantry_weapons
 			}
 		}
 	}	
@@ -1456,7 +1453,7 @@ focus_tree = {
 		completion_reward = {
 				add_tech_bonus = {
 				name = ROM_invite_axis_motor_companies 
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = motorized_equipment
 			}
@@ -1477,14 +1474,14 @@ focus_tree = {
 			add_tech_bonus = {
 				category = cat_mechanized_equipment
 				uses = 1
-				bonus = 1
+				bonus = 0.5
 				name = ROM_mechanization_of_our_soldiers
 			}
 			army_experience = 25
 			add_tech_bonus = {
 				category = support_tech 
 				uses = 1
-				bonus = 1 
+				bonus = 0.5 
 				name = ROM_mechanization_of_our_soldiers
 			}
 		}
@@ -1508,7 +1505,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				uses = 2
+				uses = 1
 				bonus = 1
 				category = cat_light_armor
 			}

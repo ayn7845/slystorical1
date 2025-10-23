@@ -1916,7 +1916,10 @@ focus_tree = {
 				name = CAN_army_modernization
 				bonus = 1
 				uses = 2
-				category = armor
+				technology = improved_medium_tank
+				technology = advanced_medium_tank
+				technology = improved_heavy_tank
+				technology = advanced_heavy_tank
 			}
 		}
 	}
@@ -1951,12 +1954,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_canadian_infantry_corps
-				bonus = 1.0
-				uses = 4
-				technology = infantry_weapons2
-				technology = improved_infantry_weapons
-				technology = improved_infantry_weapons_2
-				technology = advanced_infantry_weapons
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
 			}
 		}
 	}
@@ -2066,8 +2066,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_royal_regiment_of_canadian_artillery
-				bonus = 0.5
-				uses = 6
+				bonus = 1
+				uses = 2
 				category = artillery
 			}
 		}
@@ -2163,7 +2163,7 @@ focus_tree = {
 		id = CAN_the_valentine_tank
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = CAN_a_motorized_army }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = CAN_a_motorized_army 
 
@@ -2191,7 +2191,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAN_the_valentine_tank
 				bonus = 1.0
-				uses = 3
+				uses = 1
 				category = armor
 			}
 			add_tech_bonus = {
@@ -2199,7 +2199,7 @@ focus_tree = {
 				ahead_reduction = 2
 				bonus = 1.0
 				uses = 1
-				category = cat_light_armor
+				technology = advanced_light_tank
 			}
 
 		}

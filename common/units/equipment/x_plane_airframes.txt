@@ -1333,7 +1333,7 @@ equipments = {
 		air_defence = 25
 		air_bombing = 37.5
 
-		# build_cost_ic = 36
+		# build_cost_ic = 72
 		upgrades = {
 			plane_bomb_upgrade
 			plane_range_upgrade

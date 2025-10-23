@@ -29,9 +29,9 @@ characters={
 			}
 		}
 		field_marshal={
-			traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader commando urban_assault_specialist camouflage_expert combined_arms_expert offensive_doctrine fortress_buster expert_improviser desert_fox }
-				skill = 6
-				attack_skill = 5
+			traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader urban_assault_specialist combined_arms_expert offensive_doctrine fortress_buster expert_improviser desert_fox }
+				skill = 5
+				attack_skill = 4
 				defense_skill = 5
 				planning_skill = 6
 				logistics_skill = 6
@@ -46,9 +46,24 @@ characters={
 				large = "gfx/leaders/SAF/Portrait_SAF_Dan_Pienaar.png"
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = SAF_Dan_Pienaar
+			ledger = army
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_CombinedArms_1
+			}
+			cost = 100
+			ai_will_do = {
+				base = 2
+			}
+		}
 		field_marshal = {
-			traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer urban_assault_specialist }
-				skill = 6
+			traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer }
+				skill = 5
 				attack_skill = 4
 				defense_skill = 4
 				planning_skill = 5

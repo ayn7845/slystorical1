@@ -19,7 +19,7 @@ ideas = {
 
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
-				production_factory_start_efficiency_factor = 0.10
+				production_factory_start_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.10
 			}
 		}
@@ -38,7 +38,7 @@ ideas = {
 			picture = prc_low_popular_support3
 
 			modifier = {
-				production_factory_max_efficiency_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 
@@ -56,7 +56,7 @@ ideas = {
 			picture = generic_war_preparation
 
 			modifier = {
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.05
 			}
 		}
 
@@ -429,8 +429,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_max_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
 			}
 			research_bonus = { industry = 0.05}
 		}

@@ -22,9 +22,8 @@ ENG_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			research_sharing_per_country_bonus_factor = 0.5
-			command_power_gain_mult = 0.25
-			subjects_autonomy_gain = 0.5
+			research_sharing_per_country_bonus_factor = 0.25
+			command_power_gain_mult = 0.1
 		}
 
 		complete_effect = {
@@ -59,8 +58,8 @@ ENG_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			production_factory_start_efficiency_factor = 0.1
-			line_change_production_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			line_change_production_efficiency_factor = 0.025
 		}
 
 		complete_effect = {
@@ -96,10 +95,9 @@ ENG_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			air_home_defence_factor = 0.25
-			army_core_attack_factor = 0.2
-			army_core_defence_factor = 0.2
-			minimum_training_level = -0.2
+			air_home_defence_factor = 0.1
+			army_core_attack_factor = 0.1
+			army_core_defence_factor = 0.1
 		}
 
 		complete_effect = {
@@ -175,8 +173,7 @@ ENG_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			air_intercept_efficiency = 0.05
-			air_mission_efficiency = 0.1
+			air_fuel_consumption_factor = -0.5
 		}
 
 		complete_effect = {
@@ -212,8 +209,7 @@ ENG_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			local_resources_factor = 0.1
-			min_export = -0.1
+			local_resources_factor = 0.05
 		}
 
 		complete_effect = {
@@ -251,11 +247,11 @@ ENG_propaganda_campaigns = {
 
 		targeted_modifier = {
 			tag = JAP
-			attack_bonus_against = 0.1
+			attack_bonus_against = 0.025
 		}
 		targeted_modifier = {
 			tag = GER
-			attack_bonus_against = -0.1
+			attack_bonus_against = -0.025
 		}
 
 
@@ -408,11 +404,11 @@ ENG_propaganda_campaigns = {
 
 		targeted_modifier = {
 			tag = GER
-			attack_bonus_against = 0.1
+			attack_bonus_against = 0.025
 		}
 		targeted_modifier = {
 			tag = JAP
-			attack_bonus_against = -0.1
+			attack_bonus_against = -0.025
 		}
 
 		complete_effect = {
@@ -447,7 +443,7 @@ ENG_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			consumer_goods_expected_value = -0.05
+			consumer_goods_factor = -0.05
 		}
 
 		complete_effect = {

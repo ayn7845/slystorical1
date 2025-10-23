@@ -19,7 +19,6 @@ JAP_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			compliance_gain = 0.02
 			resistance_target = -0.05
 		}
 
@@ -128,7 +127,7 @@ JAP_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			industrial_capacity_factory = 0.05
+			industrial_capacity_factory = 0.025
 			production_lack_of_resource_penalty_factor = -0.2
 		}
 
@@ -421,8 +420,8 @@ JAP_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			army_armor_attack_factor = 0.15
-			army_armor_defence_factor = 0.1
+			army_armor_attack_factor = 0.05
+			army_armor_defence_factor = 0.05
 		}
 
 		complete_effect = {

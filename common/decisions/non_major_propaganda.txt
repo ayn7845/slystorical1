@@ -84,7 +84,7 @@ AXIS_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-            industrial_capacity_factory = 0.05
+            industrial_capacity_factory = 0.025
             production_lack_of_resource_penalty_factor = -0.2
 		}
 
@@ -233,7 +233,7 @@ AXIS_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-            research_speed_factor = 0.05
+            research_speed_factor = 0.025
 		}
 
 		complete_effect = {
@@ -856,7 +856,7 @@ ALLIES_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-			industrial_capacity_dockyard = 0.15
+			industrial_capacity_dockyard = 0.05
 		}
 
 		complete_effect = {
@@ -907,7 +907,7 @@ ALLIES_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-			consumer_goods_expected_value = -0.09
+			consumer_goods_expected_value = -0.025
 		}
 
 		complete_effect = {
@@ -958,7 +958,7 @@ ALLIES_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-			industrial_capacity_factory = 0.075
+			industrial_capacity_factory = 0.025
 		}
 
 		complete_effect = {
@@ -1008,8 +1008,7 @@ ALLIES_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-			stability_weekly = 0.005
-			command_power_gain_mult = 0.25
+			command_power_gain_mult = 0.15
 		}
 
 		complete_effect = {
@@ -1115,8 +1114,8 @@ ALLIES_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-			production_factory_efficiency_gain_factor = 0.1
-			line_change_production_efficiency_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.025
+			line_change_production_efficiency_factor = 0.025
 		}
 
 		complete_effect = {
@@ -1167,9 +1166,8 @@ COM_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-			research_sharing_per_country_bonus_factor = 0.5
-			command_power_gain_mult = 0.25
-			autonomy_gain = 0.5
+			research_sharing_per_country_bonus_factor = 0.25
+			command_power_gain_mult = 0.15
 		}
 
 		complete_effect = {
@@ -1214,8 +1212,8 @@ COM_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-			production_factory_start_efficiency_factor = 0.1
-			line_change_production_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			line_change_production_efficiency_factor = 0.025
 		}
 
 		complete_effect = {
@@ -1269,10 +1267,7 @@ COM_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-			command_power_gain_mult = 0.10
 			mobilization_speed = 0.1
-			minimum_training_level = -0.2
-			training_time_army_factor = -0.2
 		}
 
 		complete_effect = {
@@ -1370,8 +1365,7 @@ COM_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-			air_intercept_efficiency = 0.05
-			air_mission_efficiency = 0.1
+			air_untrained_pilots_penalty_factor = -0.01
 		}
 
 		complete_effect = {
@@ -1419,8 +1413,7 @@ COM_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-			local_resources_factor = 0.1
-			min_export = -0.1
+			local_resources_factor = 0.05
 		}
 
 		complete_effect = {

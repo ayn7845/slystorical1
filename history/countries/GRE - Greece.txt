@@ -106,6 +106,7 @@ if = {
 			export_focus
 			limited_conscription
 			civilian_economy
+			no_meme_justifying
 			GRE_george_ii
 			GRE_debt_to_the_ifc
 			GRE_foreign_monopolies

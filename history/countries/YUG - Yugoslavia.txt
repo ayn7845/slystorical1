@@ -76,6 +76,7 @@ if = {
 		has_dlc = "Death or Dishonor"
 	}
 	add_ideas = {
+		no_meme_justifying
 		YUG_idea_croatian_opposition
 		YUG_idea_macedonian_opposition
 		YUG_idea_slovene_nationalism

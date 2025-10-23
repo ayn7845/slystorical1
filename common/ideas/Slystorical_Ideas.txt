@@ -1,6 +1,21 @@
 
 ideas = {
+	country = { 
+		no_meme_justifying = { 
+			name = "Secure Our Borders"
 
+		picture = generic_manpower_bonus
+
+		allowed = { 
+			
+		}
+		removal_cost = -1
+
+		modifier = { 
+			enemy_justify_war_goal_time = 1
+			}
+		}
+	}
 	country = {
         crusade_against_communism = {
 

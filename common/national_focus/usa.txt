@@ -863,14 +863,9 @@ focus_tree = {
 		#}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
-				name = USA_rubber_reserve_company
-				bonus = 1.0
-				uses = 2
-				technology = rubber_processing
-				technology = improved_rubber_processing
-				technology = advanced_rubber_processing
-				technology = modern_rubber_processing
+			set_technology = {
+				improved_rubber_processing = 1
+				advanced_rubber_processing = 1
 			}
 		}
 	}
@@ -2111,12 +2106,8 @@ focus_tree = {
 			if = {
 				limit = {
 					has_character = USA_mark_clark
-					USA_mark_clark = {
-						NOT = { has_trait = infantry_expert }
-					}
 				}
 				USA_mark_clark = {
-					add_trait = { trait = infantry_leader }
 					add_trait = { trait = naval_invader }
 					gain_xp = 2501
 				}
@@ -2124,13 +2115,9 @@ focus_tree = {
 			if = {
 				limit = {
 					has_character = USA_douglas_macarthur
-					USA_douglas_macarthur = {
-						NOT = { has_trait = invader }
-					}
 				}
 				USA_douglas_macarthur = {
 					add_trait = { trait = naval_invader }
-					add_trait = { trait = infantry_leader }
 					add_trait = { trait = organizer }
 					gain_xp = 4501
 						}
@@ -2431,6 +2418,14 @@ focus_tree = {
 				}
 				USA_douglas_macarthur = {
 					add_trait = { trait = jungle_rat }
+				}
+			}
+			if = { 
+				limit = { 
+					has_character = USA_mark_clark
+				}
+			USA_mark_clark = { 
+				add_trait = { trait = jungle_rat }
 				}
 			}
 			650 = {

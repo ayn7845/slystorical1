@@ -299,7 +299,7 @@ characters={
 		}
 		
 		corps_commander={
-				traits = { desert_fox infantry_leader infantry_expert trickster trait_engineer ranger hill_fighter mountaineer commando urban_assault_specialist camouflage_expert offensive_doctrine fortress_buster expert_improviser}
+				traits = { desert_fox infantry_leader infantry_expert trickster trait_engineer mountaineer commando urban_assault_specialist camouflage_expert offensive_doctrine fortress_buster expert_improviser}
 				skill = 6
 				attack_skill = 4
 				defense_skill = 4
@@ -318,8 +318,8 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando urban_assault_specialist camouflage_expert combined_arms_expert offensive_doctrine fortress_buster expert_improviser desert_fox }
-				skill = 6
+			traits = { cavalry_officer panzer_leader trickster skilled_staffer cavalry_leader commando camouflage_expert combined_arms_expert offensive_doctrine fortress_buster expert_improviser }
+				skill = 5
 				attack_skill = 4
 				defense_skill = 4
 				planning_skill = 6
@@ -336,16 +336,31 @@ characters={
 				small=GFX_portrait_ENG_alan_cunningham_small
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = ENG_alan_cunningham
+			ledger = army
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1
+			}
+		}
 		corps_commander={
-			traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger urban_assault_specialist }
+			traits = { brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster skilled_staffer cavalry_leader organizer }
 				skill = 6
 				attack_skill = 4
 				defense_skill = 4
 				planning_skill = 5
 				logistics_skill = 5
 				legacy_id=0
+			}
 		}
-	}
 
 	ENG_william_slim={
 		name=ENG_william_slim
@@ -355,8 +370,23 @@ characters={
 				small=GFX_portrait_ENG_william_slim_small
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = ENG_william_slim
+			ledger = army
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
 		corps_commander={
-			traits = { adaptable brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer ranger urban_assault_specialist infantry_leader infantry_expert }
+			traits = { brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer infantry_leader infantry_expert }
 				skill = 6
 				attack_skill = 4
 				defense_skill = 4

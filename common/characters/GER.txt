@@ -599,7 +599,7 @@ characters = {
 			}
 			traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger urban_assault_specialist }
 			skill = 6
-			attack_skill = 4
+			attack_skill = 6
 			defense_skill = 7
 			planning_skill = 6
 			logistics_skill = 6

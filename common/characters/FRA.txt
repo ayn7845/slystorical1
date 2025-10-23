@@ -142,7 +142,7 @@ characters={
 		advisor = {
 			slot = high_command
 			idea_token = FRA_jean_de_lattre_de_tassigny
-			traits = { army_armored_1 }
+			traits = { army_armored_2 }
 		}
 		field_marshal ={
 			traits={ brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter combined_arms_expert panzer_leader cavalry_leader organizer war_hero trickster }

@@ -293,7 +293,7 @@ characters={
 				original_tag = AST
 			}
 			traits = {
-				army_chief_defensive_2
+				army_chief_defensive_1
 			}
 			cost = 100
 			ai_will_do = {

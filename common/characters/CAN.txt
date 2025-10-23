@@ -98,10 +98,25 @@ characters={
 				small=GFX_portrait_CAN_charles_foulkes_small
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = CAN_charles_foulkes
+			ledger = army
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		field_marshal={
-			traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader commando urban_assault_specialist camouflage_expert combined_arms_expert offensive_doctrine fortress_buster expert_improviser desert_fox }
+			traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader urban_assault_specialist combined_arms_expert offensive_doctrine fortress_buster expert_improviser desert_fox }
 				skill = 6
-				attack_skill = 5
+				attack_skill = 4
 				defense_skill = 5
 				planning_skill = 6
 				logistics_skill = 6
@@ -119,8 +134,8 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits = { adaptable brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer urban_assault_specialist }
-				skill = 6
+			traits = { }
+				skill = 4
 				attack_skill = 4
 				defense_skill = 4
 				planning_skill = 5
@@ -137,16 +152,16 @@ characters={
 				small=GFX_portrait_CAN_bert_hoffmeister_small
 			}
 		}
-		corps_commander={
-			traits={ panzer_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=5
-			logistics_skill=3
-			legacy_id=-1
+		field_marshal = {
+			traits = { brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer }
+				skill = 5
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 5
+				logistics_skill = 5
+				legacy_id=0
+			}
 		}
-	}
 
 	CAN_leonard_w_murray={
 		name=CAN_leonard_w_murray

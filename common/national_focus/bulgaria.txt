@@ -80,7 +80,7 @@ focus_tree = {
 					has_state_flag = BUL_initial_bulgarian_state_flag
 					NOT = { state = 48 }
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -88,7 +88,7 @@ focus_tree = {
 				}
 			}
 			48 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -661,7 +661,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = BUL_reorganize_the_military_industry
 			    bonus = 1.0
-			    uses = 4
+			    uses = 2
 			    category = infantry_weapons
 			}
 		}
@@ -1150,15 +1150,15 @@ focus_tree = {
 			add_tech_bonus = {
 				name = BUL_war_logistics
 			    bonus = 1
-			    ahead_reduction = 2
-			    uses = 2
+			    ahead_reduction = 1
+			    uses = 1
 				category = cat_mechanized_equipment
 			}
 			add_tech_bonus = {
 				name = BUL_war_logistics
 			    bonus = 1
 			    uses = 2
-				category = motorized_equipment
+				category = support_tech
 			}
 		}
 	}

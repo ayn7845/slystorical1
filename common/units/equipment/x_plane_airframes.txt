@@ -1196,7 +1196,7 @@ equipments = {
 		air_attack = 69
 		air_defence = 15
 
-		build_cost_ic = 62
+		build_cost_ic = 93
 		resources = {
 			#oil = 1
 			aluminium = 2
@@ -1225,7 +1225,7 @@ equipments = {
 		air_attack = 81
 		air_defence = 18
 
-		build_cost_ic = 64
+		build_cost_ic = 96
 		resources = {
 			#oil = 1
 			aluminium = 3

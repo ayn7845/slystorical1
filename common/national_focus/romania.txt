@@ -342,31 +342,6 @@ focus_tree = {
 				remove_idea = ROM_the_resource_curse_2
 				add_idea = ROM_the_resource_curse_3
 			}
-			
-			83 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = fuel_silo
-					instant_build = yes 
-					level = 3
-				}
-			}
-			82 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = fuel_silo
-					instant_build = yes 
-					level = 3
-				}
-			}
-			81 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = fuel_silo
-					instant_build = yes 
-					level = 3
-				}
-			}
 		}
 	}
 

@@ -535,10 +535,7 @@ technologies = {
 	kampfgruppe = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		category_all_armor = {
-			hard_attack = 0.075
-			soft_attack = 0.075
-		}
+		
 		category_all_infantry = {
 			default_morale = 0.2
 			max_organisation = 10
@@ -708,6 +705,10 @@ technologies = {
 		category_tanks = {
 			max_organisation = 3
 			breakthrough = 0.20
+		}
+		category_all_armor = {
+			hard_attack = 0.05
+			soft_attack = 0.05
 		}
 
 		category_all_armor = {
@@ -2987,10 +2988,6 @@ technologies = {
 		xp_unlock_cost = 100
 		supply_consumption_factor = -0.10
 		
-		infantry = {
-			combat_width = -0.3
-		}
-
 		
 		enable_tactic = tactic_overwhelming_fire
 		

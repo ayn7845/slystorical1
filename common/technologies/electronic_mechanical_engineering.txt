@@ -217,9 +217,6 @@ technologies = {
 	
 	radio_detection = {
 		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_air_radar
-			}
 		}
 
 		enable_building = {

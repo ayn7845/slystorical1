@@ -210,6 +210,7 @@ NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
 NDefines.NAir.AIR_WING_XP_LEVELS = { 20, 40, 60, 80, 100, 140, 180, 220, 260, 300, 380, 460, 640, 620, 700, 740, 780, 820, 860, 900 }
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6;
 -- kill vanilla lol
+
 --- cope mod spirits
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.15 --- modifier for divs speed under red air
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20.0 -- vanilla 10 Modifier for army manpower reinforcement delivery speed (travel time)
@@ -250,8 +251,8 @@ NDefines.NGeography.MEDITERRANEAN_SEA_REGIONS = { 15, 29, 68, 69, 168, 169, 202,
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.0   --vanilla 3
 NDefines.NAir.DISRUPTION_FACTOR = 5.5 --cas enters battle at 30+%
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 0.0
-NDefines.NAir.COMBAT_MULTIPLANE_CAP = 3							-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.5						-- Higher value = more shot down planes
+NDefines.NAir.COMBAT_MULTIPLANE_CAP = 3					-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.45				-- Higher value = more shot down planes
 -- Bombing Fix
 NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 4.9
 NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 0.6 --Chrom Bombing Fix; HMM = 0.6
@@ -290,6 +291,3 @@ NDefines.NNavy.MISSION_FUEL_COSTS = {  -- fuel cost for each mission
 --	AIR_EQUIPMENT_RAMP_COST = 5,
 
 --}
-
-NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 0
-NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0

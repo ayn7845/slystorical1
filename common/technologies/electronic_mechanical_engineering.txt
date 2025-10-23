@@ -362,9 +362,7 @@ technologies = {
 			level = 4
 		}
 		allow = {
-	 		ROOT = {
-				has_tech = improved_radio
-			}	
+	 		
 		}
 		is_special_project_tech = yes
 		special_project_specialization = { specialization_air specialization_nuclear }
@@ -419,9 +417,7 @@ technologies = {
 			level = 5
 		}
 		allow = {
-	 		ROOT = {
-				has_tech = improved_radio
-			}	
+	 	
 		}
 		coordination_bonus = 0.01
 		enable_equipment_modules = {
@@ -476,9 +472,7 @@ technologies = {
 			level = 6
 		}
 		allow = {
-	 		ROOT = {
-				has_tech = advanced_radio
-			}	
+	 		
 		}
 		coordination_bonus = 0.01
 		enable_equipment_modules = { 

@@ -247,10 +247,10 @@ characters={
 		}
 
 		field_marshal={
-			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine panzer_leader }
+			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine panzer_leader combined_arms_expert thorough_planner }
 			skill=5
-			attack_skill=3
-			defense_skill=3
+			attack_skill=4
+			defense_skill=4
 			planning_skill=5
 			logistics_skill=5
 			legacy_id=602
@@ -628,7 +628,7 @@ characters={
 				original_tag = USA
 			}
 			traits = {
-				army_commando_2
+				army_commando_3
 			}
 			cost = 100
 			ai_will_do = {

@@ -1,6 +1,25 @@
 ideas = {
 
 	country = {
+	USA_keep_em_firing = { # ID = 4
+		priority = 10
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			USA_propaganda_poster_slot_available = yes
+		}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.025 instant = yes 
+				}
+			}
+		}
 		great_depression = {
 			picture = usa_great_depression_3
 			

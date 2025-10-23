@@ -247,11 +247,11 @@ NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY = -1.5
 NDefines.NGeography.MEDITERRANEAN_SEA_REGIONS = { 15, 29, 68, 69, 168, 169, 202, 299, 300, 301, } -- The sea regions that are considered as part of the Mediterranean sea
 
 -- Air Rework
-NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2.0   --vanilla 3
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.0   --vanilla 3
 NDefines.NAir.DISRUPTION_FACTOR = 5.5 --cas enters battle at 30+%
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 0.0
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 3							-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.25						-- Higher value = more shot down planes
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.5						-- Higher value = more shot down planes
 -- Bombing Fix
 NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 4.9
 NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 0.6 --Chrom Bombing Fix; HMM = 0.6
@@ -292,6 +292,7 @@ NDefines.NNavy.MISSION_FUEL_COSTS = {  -- fuel cost for each mission
 --}
 
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 0
+<<<<<<< HEAD
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0
 
 --Combat stuff
@@ -357,3 +358,6 @@ NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_ATTACK = -0.50    -- attack comba
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_DEFEND = -0.15    -- defend combat penalty for defender if out of supply
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.70    -- defend combat penalty for attacker if out of supply
 NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.20    -- attack combat penalty for attacker if out of supply
+=======
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0
+>>>>>>> parent of 8251fab (Defines)

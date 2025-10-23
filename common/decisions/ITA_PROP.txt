@@ -202,12 +202,7 @@ ITA_propaganda_campaigns = {
 
 		available = {
 			ITA_propaganda_poster_slot_available = yes
-			NOT = {
-				any_state = {
-					is_controlled_by = ITA
-					is_on_continent = africa
-				}
-			}
+			has_war = yes
 		}
 
 		days_remove = 365
@@ -440,7 +435,7 @@ ITA_propaganda_campaigns = {
 
 		modifier = {
 			recruitable_population = 0.01
-			consumer_goods_expected_value = 0.075
+			consumer_goods_expected_value = 0.01
 		}
 
 		complete_effect = {

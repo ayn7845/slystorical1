@@ -90,7 +90,6 @@ JAP_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			air_mission_efficiency = 0.05
 			air_untrained_pilots_penalty_factor = -0.5
 		}
 

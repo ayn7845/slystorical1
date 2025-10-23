@@ -252,7 +252,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={infantry_leader desert_fox infantry_expert trickster hill_fighter mountaineer commando offensive_doctrine fortress_buster expert_improviser }
+			traits={infantry_leader infantry_expert trickster mountaineer commando offensive_doctrine fortress_buster expert_improviser }
 			skill=4
 			attack_skill=4
 			defense_skill=3

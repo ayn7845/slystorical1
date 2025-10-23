@@ -7832,35 +7832,10 @@ leader_traits = {
 	HUN_arpads_successor_trait = {
 		random = no
 		sprite = 13
-		targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.15
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.15
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.15
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.15
-			}
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.15
-			}
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.05
+				attack_bonus_against = 0.025
+				defense_bonus_against = 0.025
 			}
 	}
 

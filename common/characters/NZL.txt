@@ -77,13 +77,28 @@ characters={
 				small=GFX_portrait_NZL_bernard_freyberg_small
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = NZL_bernard_freyberg
+			ledger = army
+			allowed = {
+				original_tag = NZL
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		field_marshal={
-			traits={ brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter trickster trait_engineer skilled_staffer organizer ranger urban_assault_specialist infantry_leader infantry_expert }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=5
-			logistics_skill=5
+			traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader urban_assault_specialist combined_arms_expert offensive_doctrine fortress_buster expert_improviser desert_fox }
+				skill = 5
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 6
 			legacy_id=-1
 		}
 	}
@@ -96,15 +111,30 @@ characters={
 				small=GFX_portrait_NZL_robert_row_small
 			}
 		}
-		field_marshal={
-			traits={infantry_leader desert_fox infantry_expert trickster trait_engineer mountaineer commando urban_assault_specialist camouflage_expert offensive_doctrine fortress_buster expert_improviser mountaineer }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=-1
+		advisor={
+			slot = high_command
+			idea_token = NZL_robert_row
+			ledger = army
+			allowed = {
+				original_tag = NZL
+			}
+			traits = {
+				army_combinedarms_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
+		field_marshal = {
+			traits = { brilliant_strategist logistics_wizard thorough_planner combined_arms_expert aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer }
+				skill = 5
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 5
+				legacy_id=0
+			}
 	}
 
 	NZL_william_stevens={

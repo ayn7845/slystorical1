@@ -282,11 +282,13 @@ focus_tree = {
 			#GER = {
 				#add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
 			#}
+			effect_tooltip = {
 			add_tech_bonus = {
 				name = SPA_the_condor_legion
 				bonus = 1
-				uses = 3
+				uses = 2
 				category = armor
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
@@ -299,8 +301,20 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SPA_wilhelm_ritter_von_thoma
+			hidden_effect = { 
+				add_tech_bonus = {
+				name = SPA_the_condor_legion
+				bonus = 1
+				uses = 2
+				technology = advanced_light_tank
+				technology = improved_medium_tank
+				technology = advanced_medium_tank
+				technology = improved_heavy_tank
+				technology = advanced_heavy_tank
+					}
+				}
+			}
 		}
-	}
 	
 	focus = {
 		id = SPA_the_popular_army_of_spain
@@ -1166,11 +1180,7 @@ focus_tree = {
 			hidden_trigger = { always = no }
 		}
 		bypass = {
-			NOT = {
-				168  = {
-					is_controlled_by = SPR
-				}
-			}
+			
 		}
 		prerequisite = { focus = SPA_con_paquito }
 		
@@ -1193,10 +1203,7 @@ focus_tree = {
 		available = {
 		}
 		bypass = {
-			#OR = {
-			#	controls_province = 858
-				has_global_flag = scw_over
-			#}
+			
 		}
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		

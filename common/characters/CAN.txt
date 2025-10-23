@@ -121,7 +121,6 @@ characters={
 				planning_skill = 6
 				logistics_skill = 6
 				legacy_id=0
-			legacy_id=-1
 		}
 	}
 

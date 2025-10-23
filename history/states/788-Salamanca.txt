@@ -3,7 +3,7 @@ state={
 	name="STATE_788"
 
 	resources={
-		tungsten=210 #added due to Portugal Setup
+		tungsten=100 #added due to Portugal Setup
 	}
 	history={
 		add_extra_state_shared_building_slots = 8

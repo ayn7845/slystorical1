@@ -3213,10 +3213,9 @@ focus_tree = {
 			}
 			custom_effect_tooltip = SOV_found_the_pcdi_ns_ttt
 			add_tech_bonus = {
-				name = ENG_infantry_focus
+				name = SOV_found_the_pcdi
 				bonus = 1.0
-				uses = 4
-				technology = infantry_weapons2
+				uses = 2
 				technology = improved_infantry_weapons
 				technology = improved_infantry_weapons_2
 				technology = advanced_infantry_weapons

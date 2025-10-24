@@ -248,12 +248,12 @@ NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY = -1.5
 NDefines.NGeography.MEDITERRANEAN_SEA_REGIONS = { 15, 29, 68, 69, 168, 169, 202, 299, 300, 301, } -- The sea regions that are considered as part of the Mediterranean sea
 
 -- Air Rework
-NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.0   --vanilla 3
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 3   --vanilla 3
 NDefines.NAir.DISRUPTION_FACTOR = 5.5 --cas enters battle at 30+%
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 0.0
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 3					-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.45				-- Higher value = more shot down planes
--- Bombing Fix
+NDefines.NMilitary.AIR_SUPPORT_BASE = 1 -- Bombing Fix
 NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 4.9
 NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 0.6 --Chrom Bombing Fix; HMM = 0.6
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.04 -- Vanilla 0.07, keeping an eye on this
@@ -296,8 +296,7 @@ NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE =
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0
 
 
-NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.8
-NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2.0   --vanilla 3
+NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.8  
 NDefines.NAir.DISRUPTION_FACTOR = 4 --cas enters battle at 30+%
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2							-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.03						-- Higher value = more shot down planes
@@ -322,7 +321,7 @@ NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.70	-- Vanilla 0,75
 NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 0
 NDefines.NMilitary.FRONT_MIN_PATH_TO_REDEPLOY = 3				--should really help--	-- If a units path is at least this long to reach its front location it will strategically redeploy.
-NDefines.NMilitary.ARMY_INITIATIVE_REINFORCE_FACTOR = 0.5		-- scales initiative for reinforce chance
+NDefines.NMilitary.ARMY_INITIATIVE_REINFORCE_FACTOR = 0.25		-- scales initiative for reinforce chance
 NDefines.NMilitary.REINFORCE_CHANCE = 0.10
 NDefines.NMilitary.RELIABILTY_RECOVERY = 0
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.034   -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
@@ -337,7 +336,7 @@ NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.3
 NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.15
 NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.6
 NDefines.NMilitary.RECON_SKILL_IMPACT = 7
-NDefines.NMilitary.COMBAT_MINIMUM_TIME = 4
+NDefines.NMilitary.COMBAT_MINIMUM_TIME = 6
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.65
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 25
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.08

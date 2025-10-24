@@ -212,7 +212,7 @@ NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6;
 -- kill vanilla lol
 
 --- cope mod spirits
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.15 --- modifier for divs speed under red air
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.35 --- modifier for divs speed under red air
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20.0 -- vanilla 10 Modifier for army manpower reinforcement delivery speed (travel time)
 NDefines.NTechnology.MAX_SUBTECHS = 4 
 -- FUWG/TFB style converts
@@ -297,7 +297,6 @@ NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT
 
 
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.8
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.05 --- modifier for divs speed under red air
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2.0   --vanilla 3
 NDefines.NAir.DISRUPTION_FACTOR = 4 --cas enters battle at 30+%
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2							-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )

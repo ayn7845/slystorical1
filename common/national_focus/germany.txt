@@ -9389,85 +9389,16 @@ focus_tree = {
 		will_lead_to_war_with = SOV
 
 		bypass = {
-			OR = {
-				has_war_with = SOV
-				SOV = {
-					exists = no
-				}
-			}
 		}
 
 		available_if_capitulated = no
 
 		available = {
-
-			if = { 
-				limit = {
-					has_game_rule = {
-						rule = barb_date_lock
-						option = locked
-					}	
-				}
 				date > 1941.6.21
-			}
-
-			is_subject = no
-		}
-
-		cancel = {
-			is_subject = yes
-			NOT = { country_exists = SOV }
-		}
-
-		historical_ai = {
-			# Only if we have defeated our enemies
-			NOT = {
-				any_home_area_neighbor_country = {
-					has_war_with = ROOT
-					has_capitulated = no
-					# Honestly, let's not care about the scandinavian countries
-					NOT = {
-						OR = {
-							tag = NOR
-							tag = DEN 
-							tag = LUX # Or Luxenburg for that matter. 
-						}
-					}
-				}
-			}
+			
 		}
 		
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				OR = {
-					
-					any_home_area_neighbor_country = {
-						has_war_with = ROOT
-					}
-				}
-			}
-			modifier = {
-				factor = 0 #AI should not pick this focus if it does not share a border with the Soviets
-				NOT = { 
-					any_home_area_neighbor_country = {
-						tag = SOV
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-				date < 1939.1.1
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_government = democratic
-					has_government = communism
-				}
-			}
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
@@ -9476,51 +9407,43 @@ focus_tree = {
 			hidden_effect = {
 				HUN = {
 					complete_national_focus = wuw_HUN_carrying_on_arpads_legacy
+					declare_war_on = {
+						target = SOV
+						type = take_state_focus
+						generator = { 206 }
+					}
+				}
+				ROM = {
+					declare_war_on = {
+						target = SOV
+						type = take_state_focus
+						generator = { 206 }
+					}
+				}
+				BUL = {
+					declare_war_on = {
+						target = SOV
+						type = take_state_focus
+						generator = { 206 }
+					}
+				}
+				FIN = {
+					declare_war_on = {
+						target = SOV
+						type = take_state_focus
+						generator = { 206 }
+					}
 				}
 				SOV = {
 					complete_national_focus = SOV_desperate_measures
 				}
 			}
-
-			IF = {
-				limit = { SOV = { has_civil_war = no } }
-				declare_war_on = {
+			declare_war_on = {
 					target = SOV
 					type = take_state_focus
 					generator = { 206 }
 				}
-			}
-			ELSE = {
-				every_country = {
-					limit = { original_tag = SOV }
-					GER = {
-						declare_war_on = {
-							target = SOV
-							type = take_state_focus
-							generator = { 206 }
-						}
-					}
-				}
-			}
-
-			IF = {
-				limit = {
-					KUB = {
-						exists = no
-					}
-					DON = {
-						exists = no
-					}
-					SOV = {
-						NOT = {
-							has_completed_focus = SOV_beaten_but_not_defeated
-						}
-					}
-				}
-				country_event = {
-					id = wuw_GER_legions.8
-				}	
-			}
+			
 			HUN = { 
 				add_timed_idea = { 
 					idea = crusade_against_communism
@@ -9528,6 +9451,18 @@ focus_tree = {
 				}
 			}
 			ROM = { 
+				add_timed_idea = { 
+					idea = crusade_against_communism
+					days = 365
+				}
+			}
+			BUL = { 
+				add_timed_idea = { 
+					idea = crusade_against_communism
+					days = 365
+				}
+			}
+			FIN = { 
 				add_timed_idea = { 
 					idea = crusade_against_communism
 					days = 365

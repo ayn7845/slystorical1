@@ -106,21 +106,21 @@ focus_tree = {
 		}
 		
 		
-		icon = GFX_SPR_legacy
-		x = 24
-		y = 0
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_completed_focus = SPA_a_great_spain
-				has_global_flag = spanish_civil_war
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
+		#icon = GFX_SPR_legacy
+		#x = 24
+		#y = 0
+		#offset = {
+			#x = -14
+		#	y = 0
+		#	trigger = {
+			#	has_completed_focus = SPA_a_great_spain
+			#	has_global_flag = spanish_civil_war
+			#	has_game_rule = {
+			#		rule = obsolete_focus_branches_visibility
+			#		option = HIDE
+			#	}
+			#}
+		#}
 		cost = 5
 
 		available_if_capitulated = yes
@@ -265,6 +265,7 @@ focus_tree = {
 	focus = {
 		id = SPA_the_condor_legion
 		available = {
+			date > 1936.8.1
 		}
 		bypass = {
 		}
@@ -282,14 +283,14 @@ focus_tree = {
 			#GER = {
 				#add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
 			#}
-			effect_tooltip = {
+			#effect_tooltip = {
 			add_tech_bonus = {
 				name = SPA_the_condor_legion
-				bonus = 1
+				bonus = 0.75
 				uses = 2
 				category = armor
 				}
-			}
+			#}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SPA_the_condor_legion
@@ -302,16 +303,7 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SPA_wilhelm_ritter_von_thoma
 			hidden_effect = { 
-				add_tech_bonus = {
-				name = SPA_the_condor_legion
-				bonus = 1
-				uses = 2
-				technology = advanced_light_tank
-				technology = improved_medium_tank
-				technology = advanced_medium_tank
-				technology = improved_heavy_tank
-				technology = advanced_heavy_tank
-					}
+			
 				}
 			}
 		}

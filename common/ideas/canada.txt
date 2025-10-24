@@ -180,7 +180,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_expected_value = -0.025
 			}
 		}
 
@@ -261,8 +261,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				production_factory_start_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.05
 				industrial_capacity_factory = 0.05
 			}
 		}

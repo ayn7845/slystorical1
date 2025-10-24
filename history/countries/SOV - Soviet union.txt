@@ -736,7 +736,6 @@ starting_train_buffer = 3.0
 set_oob = "SOV_1936"
 	set_technology = { 
 		mobile_warfare = 1
-		cas1 = 1
 	}
 if = {
 	limit = { has_dlc = "Man the Guns" }

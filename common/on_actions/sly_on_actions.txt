@@ -209,15 +209,6 @@ on_actions = {
 			}
 			every_country = {
 				limit = {
-					is_major = no
-				}
-				add_ideas = {
-					meme_minors
-				}
-				#create_intelligence_agency = yes
-			}
-			every_country = {
-				limit = {
 					is_playable_country = yes
 				}
 				add_ideas = {

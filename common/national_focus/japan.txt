@@ -3275,7 +3275,7 @@
 
 
 		completion_reward = {
-		  add_ideas = JAP_japan_patriarchate_restored
+		  #add_ideas = JAP_japan_patriarchate_restored
 		  	MAN = {				
 				add_stability = 0.1
 				add_war_support = 0.1

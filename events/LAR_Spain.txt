@@ -148,7 +148,6 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		set_global_flag = spanish_civil_war
-		set_global_flag = scw_over
 		hidden_effect = {
 				SPA = { # Switch the tag alias for SPA - it now becomes SPD - the republicans
 					clr_country_flag = SPR_nationalist_spain_flag
@@ -349,6 +348,9 @@ country_event = {
 					}
 				}
 			}
+		}
+		SPR = {
+			country_lock_all_division_template = no
 		}
 		# Remove Spirits that will no longer be relevant
 		custom_effect_tooltip = nationalists_chosen

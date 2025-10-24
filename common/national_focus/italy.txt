@@ -11114,12 +11114,6 @@ focus_tree = {
 
 		cost = 10
 		available = {
-			GRE = { 
-				has_capitulated = yes
-			}
-			YUG = { 
-				has_capitulated = yes
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -11132,23 +11126,6 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_production_lack_of_resource_penalty_factor = -0.05 }
 			custom_effect_tooltip = ITA_expanded_corporatism_military_industry_tt
 
-			every_controlled_state = {
-
-				limit = {
-					NOT = {	is_core_of = ROOT }
-					NOT = {	is_core_of = HOL }
-					NOT = {	is_core_of = BEl }
-					NOT = {	is_core_of = LUX }
-					NOT = {	is_core_of = POL }
-					NOT = {	is_core_of = NOR }
-					NOT = {	is_core_of = DEN }
-					# is_fully_controlled_by = ROOT
-				}
-				add_dynamic_modifier = {
-					modifier = ITA_expanded_corporatism_modifier
-					scope = ITA
-				}
-			}
 
 			
 			if = {

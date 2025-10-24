@@ -483,6 +483,7 @@ GER_mefo_bills_modifier = { #MEFO Bills and Economy of Conquest uses the same co
 	production_speed_infrastructure_factor = GER_mefo_production_speed_infrastructure_factor
 	global_building_slots_factor = GER_mefo_global_building_slots_factor
 	resource_trade_cost_bonus_per_factory = GER_industrial_resource_trade_cost_bonus_per_factory
+	local_resources_factor = GER_recovering_economy_modifier_local_resources_factor
 	political_power_cost = GER_mefo_power_cost
 }
 
@@ -517,6 +518,7 @@ GER_economy_of_conquest_modifier = { #MEFO Bills and Economy of Conquest uses th
 	production_speed_infrastructure_factor = GER_mefo_production_speed_infrastructure_factor
 	global_building_slots_factor = GER_mefo_global_building_slots_factor
 	resource_trade_cost_bonus_per_factory = GER_industrial_resource_trade_cost_bonus_per_factory
+	local_resources_factor = GER_recovering_economy_modifier_local_resources_factor
 	#consumer_goods_expected_value = 0.05
 }
 

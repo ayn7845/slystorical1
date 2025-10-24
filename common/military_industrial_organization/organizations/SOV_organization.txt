@@ -156,17 +156,6 @@ SOV_okmo_organization = {
 	}
 }
 
-SOV_mytishchy_machine_building_plant_organization = {
-	include = generic_tank_refurbishment_plant_organization
-	icon = GFX_idea_SOV_mytishchy_machine_building_plant
-	
-	allowed = {	
-		OR = {
-			tag = SOV
-		}
-	}
-}
-
 SOV_kirov_organization = {
 	include = generic_heavy_tank_organization
 	icon = GFX_idea_SOV_kirov

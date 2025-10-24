@@ -3874,7 +3874,7 @@ BUL_internal_factions = {
 		}
 	}
 
-	BUL_impending_zveno_coup  = { #The ZVENO is preparing a coup
+	BUL_impending_zveno_coup = { #The ZVENO is preparing a coup
 
 		priority = 100
 
@@ -3911,6 +3911,7 @@ BUL_internal_factions = {
 		
 		}
 	}
+}
 
 
 #### ##     ## ########   #######  

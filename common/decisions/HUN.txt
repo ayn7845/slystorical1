@@ -328,12 +328,12 @@ HUN_gyor_program_initiatives_category = {
 			}
 		} 
 
-		days_remove = 70
+		days_remove = 100
 
 		cost = 75
 
 		modifier = {
-			consumer_goods_expected_value = 0.05
+			consumer_goods_expected_value = 0.1
 		}
 
 		complete_effect = { 
@@ -406,12 +406,12 @@ HUN_gyor_program_initiatives_category = {
 			}
 		} 
 
-		days_remove = 84
+		days_remove = 120
 
 		cost = 75
 
 		modifier = {
-			consumer_goods_expected_value = 0.05
+			consumer_goods_expected_value = 0.1
 		}
 
 		complete_effect = { 
@@ -482,12 +482,12 @@ HUN_gyor_program_initiatives_category = {
 			}
 		} 
 
-		days_remove = 70
+		days_remove = 100
 
 		cost = 50
 
 		modifier = {
-			consumer_goods_expected_value = 0.05
+			consumer_goods_expected_value = 0.1
 		}
 
 		complete_effect = { 
@@ -559,12 +559,12 @@ HUN_gyor_program_initiatives_category = {
 			}
 		} 
 
-		days_remove = 70
+		days_remove = 100
 
 		cost = 50
 
 		modifier = {
-			consumer_goods_expected_value = 0.05
+			consumer_goods_expected_value = 0.1
 		}
 
 		complete_effect = { 
@@ -667,12 +667,12 @@ HUN_gyor_program_initiatives_category = {
 			}
 		} 
 
-		days_remove = 84
+		days_remove = 160
 
 		cost = 100
 
 		modifier = {
-			consumer_goods_expected_value = 0.05
+			consumer_goods_expected_value = 0.1
 		}
 
 		complete_effect = { 
@@ -754,12 +754,12 @@ HUN_gyor_program_initiatives_category = {
 			}
 		} 
 
-		days_remove = 35
+		days_remove = 70
 
 		cost = 50
 
 		modifier = {
-			consumer_goods_expected_value = 0.1
+			consumer_goods_expected_value = 0.2
 		}
 
 		complete_effect = { 

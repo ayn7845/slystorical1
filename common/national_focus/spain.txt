@@ -311,7 +311,7 @@ focus_tree = {
 	focus = {
 		id = SPA_the_popular_army_of_spain
 		available = {
-			has_global_flag = scw_over
+			
 		}
 		bypass = {
 		}
@@ -363,7 +363,7 @@ focus_tree = {
 	focus = {
 		id = SPA_the_national_army_of_spain
 		available = {
-			has_global_flag = scw_over
+			
 		}
 		bypass = {
 		}
@@ -877,7 +877,7 @@ focus_tree = {
 	focus = {
 		id = SPA_national_recovery
 		available = {
-			has_global_flag = scw_over
+			
 		}
 		bypass = {
 		}
@@ -1533,7 +1533,7 @@ focus_tree = {
 	focus = {
 		id = SPA_adopt_the_26_points
 		available = {
-			has_global_flag = scw_over
+			
 		}
 		bypass = {
 		}

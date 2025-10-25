@@ -198,6 +198,14 @@ on_actions = {
 					instant_build = yes
 				}
 			}
+			664 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			144 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -344,8 +352,22 @@ on_actions = {
 					instant_build = yes
 				}
 			}
-
-			
+			69 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			9 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
 			980 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -752,8 +774,12 @@ on_actions = {
 
 			CZE = {
 				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 3250
+				}
+				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 4000
+					amount = 40000
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
@@ -761,15 +787,23 @@ on_actions = {
 				}
 				add_equipment_to_stockpile = {
 					type = motorized_equipment_1
-					amount = 100
+					amount = 0
 				}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
-					amount = 200
+					amount = 680
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment_1
+					amount = 0
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment_1
+					amount = 205
 				}
 				add_equipment_to_stockpile = {
 					type = convoy
-					amount = 200
+					amount = 0
 				}
 				add_equipment_to_stockpile = {
 					type = train_equipment_1

@@ -7,7 +7,7 @@ state={
 		oil = 2 # was: 4
 	}
 
-	state_category = wasteland
+	state_category = city
 
 	history={
 		owner = CZE
@@ -19,6 +19,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 4
 			air_base = 5
 
 		}

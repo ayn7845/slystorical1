@@ -41,7 +41,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			is_ai = no
 		}
 
 		bypass = {
@@ -151,7 +151,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			is_ai = no
 		}
 
 		bypass = {
@@ -2028,7 +2028,7 @@ focus_tree = {
 		relative_position_id = MEX_focus_national_bank
 		cost = 1
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {

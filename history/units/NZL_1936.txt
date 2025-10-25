@@ -1,7 +1,5 @@
 ﻿division_template = {
-	name = "District Force"		# Military District Forces (reserve/garrison forces)
-	# Note: all forces at reserve levels in 1936
-
+	name = "District Force"	
 	division_names_group = NZL_MIL_01
 
 	regiments = {
@@ -15,22 +13,86 @@
 }
 
 division_template = {
-	name = "Armoured Division"
-
-	division_names_group = NZL_ARM_01
-
+	name = "BIG BOB"
+	priority = 3
 	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 4 }
+		
+		heavy_armor = { x = 2 y = 0 }
+		heavy_armor = { x = 2 y = 1 }
+		heavy_armor = { x = 2 y = 2 }
+		heavy_armor = { x = 2 y = 3 }
+		heavy_armor = { x = 2 y = 4 }
+		
+		heavy_armor = { x = 3 y = 0 }
+		heavy_armor = { x = 3 y = 1 }
+		heavy_armor = { x = 3 y = 2 }
+		heavy_armor = { x = 3 y = 3 }
+		heavy_armor = { x = 3 y = 4 }
 	}
-}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		light_tank_recon = { x = 0 y = 1  }
+		anti_air = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		armored_engineer = { x = 0 y = 4  }
+		light_flame_tank = { x = 0 y = 5 }
+		}
+	}
 
+	division_template = {
+	name = "BOB SEMPLE"
+	priority = 3
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 4 }
+		
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		light_armor = { x = 2 y = 3 }
+		light_armor = { x = 2 y = 4 }
+		
+		light_armor = { x = 3 y = 0 }
+		light_armor = { x = 3 y = 1 }
+		light_armor = { x = 3 y = 2 }
+		light_armor = { x = 3 y = 3 }
+		light_armor = { x = 3 y = 4 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		light_tank_recon = { x = 0 y = 1  }
+		anti_air = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		armored_engineer = { x = 0 y = 4  }
+		light_flame_tank = { x = 0 y = 5 }
+		}
+	}
 
 
 ##### Starting Production #####
 instant_effect = {
+	set_technology = {
+		basic_train = 1
+		motorised_infantry = 1
+	}
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
@@ -40,4 +102,23 @@ instant_effect = {
 		progress = 0.62
 		efficiency = 100
 	}
+
+		add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 1500
+		producer = NZL
+		}
+		add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 150
+		producer = NZL
+		}
+		add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 150
+		}
+		add_equipment_to_stockpile = {
+		type = train_equipment_1
+		amount = 20
+		}
 }

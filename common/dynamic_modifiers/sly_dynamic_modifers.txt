@@ -31,3 +31,4 @@ war_of_gazala_speed_modifier = { #SPEED MOD
 	icon = GFX_modifiers_SOV_armored_battery
 	army_speed_factor = global.war_of_gazala_modifier_speed_factor_var
 }
+

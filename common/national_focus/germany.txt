@@ -7967,31 +7967,7 @@ focus_tree = {
 					target = CZE
 				}
 			}
-			hidden_effect = { 
-	
-				add_to_faction = HUN
-				add_to_faction = ROM
-				add_to_faction = BUL
-				set_autonomy = {
-		            target = CZE
-		            autonomous_state = autonomy_satellite
-		            freedom_level = 0.2
-				}
-				CZE = {
-					set_cosmetic_tag = SLO
-						create_country_leader = {
-			             name = "Jozef Tiso"
-			             desc = "POLITICS_Jozef_Tiso_DESC"
-			            picture = GFX_portrait_Jozef_Tiso
-			            expire = "1965.1.1"
-			            ideology = nazism
-			traits = {
-				anti_communist
-			}
-				
-			}
 		}
-	}
 	}
 
 	focus = {

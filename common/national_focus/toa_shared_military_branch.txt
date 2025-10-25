@@ -36,7 +36,7 @@ shared_focus = {
 		value = GFX_goal_panzerwaffe
 	} 
 
-	x = 17
+	x = 18
 	y = 0
 	
 
@@ -200,7 +200,7 @@ shared_focus = {
 	icon = GFX_goal_generic_propaganda
 	relative_position_id = SMB_army
 	prerequisite = { focus = SMB_army }
-	x = -3
+	x = -4
 	y = 1
 
 	cost = 5
@@ -446,8 +446,8 @@ shared_focus = {
 		value = GFX_goal_generic_amphibious_assault
 	} 
 	relative_position_id = SMB_tank_warfare
-	prerequisite = { focus = SMB_tank_warfare focus = SMB_artillery }
-	x = 1
+	prerequisite = { focus = SMB_tank_warfare  }
+	x = 0
 	y = 1
 
 	cost = 5
@@ -625,7 +625,7 @@ shared_focus = {
 	icon = GFX_goal_generic_army_motorized
 	relative_position_id = SMB_tank_warfare
 	prerequisite = { focus = SMB_tank_warfare }
-	x = -1
+	x = 2
 	y = 1
 
 	cost = 10
@@ -1103,58 +1103,7 @@ shared_focus = {
 	}
 
 
-shared_focus = {
-	id = SMB_nuclear_program
-	icon = GFX_focus_wonderweapons
-	relative_position_id = SMB_experimental_weapons_department
-	prerequisite = { focus = SMB_experimental_weapons_department }
-	#prerequisite = { focus = SMB_strategic_bombing }
-	x = 0
-	y = 1
 
-	cost = 10
-
-	available = {
-
-	}
-
-	bypass = {
-		
-	}
-
-	ai_will_do = {
-		factor = 20
-	} 
-
-	completion_reward = {
-
-		if = {
-			limit = {
-				NOT = {
-					has_tech = atomic_research
-				}
-			}
-			add_tech_bonus = {
-				name = JUNO_nuclear_initiative
-				ahead_reduction = 2
-				bonus = 1
-				uses = 1
-				category = nuclear
-			}
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.25
-			}
-		}
-		else = {
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.75
-			}
-		}
-
-	}   
-}  
  
 shared_focus = {
 	id = SMB_special_forces
@@ -1797,7 +1746,7 @@ shared_focus = {
 	relative_position_id = SMB_army
 	prerequisite = { focus = SMB_army }
 	prerequisite = { focus = SMB_air_force}
-	x = 3
+	x = 4
 	y = 1
 
 	offset = {
@@ -2086,7 +2035,7 @@ shared_focus = {
 	relative_position_id = SMB_air_defense
 	prerequisite = { focus = SMB_army_academy }
 	prerequisite = { focus = SMB_air_academy }
-	x = 0
+	x = -1
 	y = 1
 
 	cost = 10

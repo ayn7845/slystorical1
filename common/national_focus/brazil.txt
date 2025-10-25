@@ -337,48 +337,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL}
 
 		completion_reward = {
-			IF = {
-				limit = {
-					fascism > 0.4
-				}
-				start_civil_war = {
-					ideology = fascism #SPLITTING TAG
-					size = party_popularity@fascism
-				}
-				hidden_effect = {
-					set_popularities = {
-						fascism = 0
-					}
-				}
-			}
-			ELSE_IF = {
-				limit = {
-					communism > 0.4
-				}
-				start_civil_war = {
-					ideology = communism #SPLITTING TAG
-					size = party_popularity@communism
-				}
-				hidden_effect = {
-					set_popularities = {
-						communism = 0
-					}				
-				}
-			}
-			ELSE_IF = {
-				limit = {
-					democratic > 0.4
-				}
-				start_civil_war = {
-					ideology = democratic #SPLITTING TAG
-					size = party_popularity@democratic
-				}
-				hidden_effect = {
-					set_popularities = {
-						democratic = 0
-					}				
-				}
-			}
+		
 			custom_effect_tooltip = BRA_modify_estado_novo_ns_intro
 			add_to_variable = {
 				BRA_estado_novo_fascism_factor = -0.2

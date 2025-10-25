@@ -828,6 +828,7 @@
 		}
 
 		available = {
+			is_ai = no
 
 		}
 
@@ -1359,6 +1360,7 @@
 		}
 
 		available = {
+			is_ai = no
 
 		}
 
@@ -1771,6 +1773,7 @@
 		}
 
 		available = {
+			is_ai = no
 
 		}
 

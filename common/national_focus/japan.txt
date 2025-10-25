@@ -3612,18 +3612,18 @@
 		completion_reward = {
 			
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				
 			}	random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3789,7 +3789,7 @@
 			add_tech_bonus = {
 				name = JAP_modern_artillery
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = artillery	
 			}
 		}
@@ -3872,11 +3872,18 @@
 
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_modern_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery	
+			}
+			hidden_effect = { 
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = hajime_sugiyama
+				}
+			}
 		}
-	}
-
 	focus = {
 		id = JAP_supremacy_of_will
 		icon = GFX_focus_jap_pacific_guardian

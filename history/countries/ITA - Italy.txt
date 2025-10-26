@@ -3,7 +3,7 @@
 ETH_set_up_lon_arms_resolution_effect = yes 
 
 set_oob = "ITA_1936"
-
+load_oob = "ITA_CONV"
 
 starting_train_buffer = 1.5
 

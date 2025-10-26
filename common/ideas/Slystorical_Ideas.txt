@@ -29,4 +29,48 @@ ideas = {
 			}
         }
     }
+	country = {
+        secure_our_borders = {
+
+            Name = "Secure Our Borders"
+			
+			allowed = {
+				
+            }
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_fortify_the_borders
+
+			modifier = {
+				enemy_justify_war_goal_time = 1
+			}
+        }
+    }
+	country = {
+        slystorical_ai = {
+
+            Name = "AI"
+			
+			allowed = {
+				
+            }
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_fortify_the_borders
+
+			modifier = {
+				justify_war_goal_time = 10
+			}
+        }
+    }
 }

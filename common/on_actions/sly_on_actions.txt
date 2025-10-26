@@ -1,7 +1,6 @@
 on_actions = {
 	on_startup = {
 		effect = {
-<<<<<<< HEAD
 		if = { #eng civs for no tradeback
 			limit = {
 				has_game_rule = {
@@ -51,7 +50,6 @@ on_actions = {
 					remove_ideas = BUL_army_restrictions
 				}
 			}
-=======
 		USA = { 
 			diplomatic_relation = {   
 			country = ENG    
@@ -132,7 +130,6 @@ on_actions = {
 		USA = { 
 			load_oob = "USA_CONV"
 		}
->>>>>>> 8900299 (spawn in day 1 for help)
 		if = { 
 			limit = { 
 				has_game_rule = { 

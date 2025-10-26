@@ -93,7 +93,7 @@ JAP_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			industrial_capacity_factory = 0.05
+			industrial_capacity_factory = 0.025
 			production_lack_of_resource_penalty_factor = -0.2
 		}
 

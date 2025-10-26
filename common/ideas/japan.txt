@@ -1289,6 +1289,16 @@ ideas = {
 				naval_strike_attack_factor = 0.12
 				naval_strike_targetting_factor = 0.12
 				naval_strike_agility_factor = 0.12
+				army_defence_factor = 0.20
+			}
+			equipment_bonus = {
+				infantry_weapons = { 
+					hard_attack = 0.25
+					#piercing = 0.15
+				} 
+				cv_small_plane_airframe = {
+					air_range = 0.15 instant = yes
+				}
 			}
 		}
 

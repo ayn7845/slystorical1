@@ -647,6 +647,9 @@ on_actions = {
 						target = USA
 						type = annex_everything
 					}
+					add_timed_idea = { 
+						idea = JAP_tora_tora_tora_idea days = 120
+					}
 				}
 			}
 			if = {

@@ -6,7 +6,7 @@ state={
 		aluminium=9 # was: 16.000
 	}
 	
-	state_category = megalopolis
+	state_category = metropolis
 
 	history={
 		# No Asia + Scraping

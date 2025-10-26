@@ -8,13 +8,16 @@ state={
 	impassable = yes
 
 	history={
-		
-		
+		owner = ITA
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 		
 	}
 
 	provinces={
-		 4913
+		4913 8092 2095 1033 10791 12702 12769 7984 8053 12788
 	}
 
 	local_supplies=0.0 

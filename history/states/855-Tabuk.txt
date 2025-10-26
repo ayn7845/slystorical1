@@ -6,7 +6,7 @@ state={
 		add_core_of = WST
 	}
 	provinces={
-		1033 2095 8092 12101 
+		12101 
 	}
 	manpower = 1
 	state_category = wasteland

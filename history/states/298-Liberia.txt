@@ -6,12 +6,12 @@ state=
 	
 	state_category = rural
 	resources={
-		rubber= 20 # was: 7
+		rubber= 0 # was: 7
 	}	
 	
 
 	history= {
-		owner = FRA
+		owner = WST
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -26,7 +26,6 @@ state=
 		add_core_of = WST
 			1941.1.1 = {
 		owner = WST
-		add_core_of = WST
 		}
 	}
 	provinces={

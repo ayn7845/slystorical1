@@ -7,6 +7,7 @@ state={
 	impassable = yes
 
 	history={
+		owner = FRA
 		1941.1.1 = {
 		owner = WST
 		add_core_of = WST
@@ -14,8 +15,7 @@ state={
 	}
 
 	provinces={
-		2047 2170 7424 
-		
+		2047 4893 12871 10476 2062 2078 1948 2101 5020 5064 8090 10789		
 	}
 
 	local_supplies=0.0 

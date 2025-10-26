@@ -17,8 +17,7 @@ state={
 	}
 
 	provinces={
-		7916 7984 10737 10852 
-		12769 #NEW PROVINCE
+		7916 10737 10852
 	}
 
 	local_supplies=0.0 

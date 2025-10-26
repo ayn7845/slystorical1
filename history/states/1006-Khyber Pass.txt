@@ -4,7 +4,7 @@ state={
 	manpower = 1
 	state_category = rural
 	provinces={
-		5082 12831 
+		5082 
 	}
 	history={
 	1941.1.1 = {

@@ -3,7 +3,7 @@ state={
 	name="STATE_1009"
 	state_category = rural
 	provinces={
-		2017 2062 2078 1948 2101
+		2017
 	}
 	history={
 		1941.1.1 = {

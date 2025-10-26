@@ -9,14 +9,15 @@ state={
 
 	history={
 		
-		
-
-	
-
+		owner = ENG
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={
-		10814
+		10814 10786 2170 7424 5093 2090 5037 12883 10907
 	}
 
 	local_supplies=0.0 

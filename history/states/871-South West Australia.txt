@@ -7,11 +7,11 @@ state={
 	history = {
 		buildings = {
 			infrastructure = 2
+			arms_factory = 2
 		}
 		# Less Minors + Scraping
 		1936.1.1.15 = { owner = RAJ add_core_of = AST}
 		1936.1.1.14 = { owner = RAJ add_core_of = AST }
-		arms_factory = 2
 
         owner = AST
 		add_core_of = AST

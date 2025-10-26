@@ -1551,7 +1551,7 @@
 1550;7;99;15;land;true;plains;3
 1551;7;99;165;land;false;mountain;6
 1552;7;99;220;land;false;hills;5
-1553;7;102;80;land;false;mountain;6
+1553;7;102;80;land;false;urban;6
 1554;7;102;130;land;false;desert;6
 1555;7;102;185;land;false;plains;3
 1556;7;105;45;land;true;forest;2

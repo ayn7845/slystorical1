@@ -31,7 +31,9 @@ if = {
 		}
 	}
 }
-
+	add_ideas = {
+		free_trade
+		}
 set_research_slots = 3
 
 if = {

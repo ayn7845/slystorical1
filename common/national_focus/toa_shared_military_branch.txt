@@ -2259,6 +2259,7 @@ shared_focus = {
 	}
 
 	available = {
+		date = 1939.1.1
 		any_owned_state = {
 			is_controlled_by = ROOT
 			is_coastal = yes

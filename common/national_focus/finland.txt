@@ -90,6 +90,7 @@ focus_tree = {
 		available = {
 			has_government = neutrality
 			is_subject = no
+			is_ai = no
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
@@ -232,7 +233,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 100
-			FIN_bop_low_increase_effect = yes
+
 
 			add_popularity = {
 				ideology = neutrality
@@ -264,7 +265,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 
-			FIN_bop_very_low_increase_effect = yes
+	
 
 			add_popularity = {
 				ideology = neutrality
@@ -293,7 +294,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 
-			FIN_bop_very_low_increase_effect = yes
+		
 
 			add_popularity = {
 				ideology = neutrality
@@ -323,7 +324,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 
-			FIN_bop_very_low_increase_effect = yes
 
 			add_popularity = {
 				ideology = democratic
@@ -572,11 +572,13 @@ focus_tree = {
 				}
 			}
 		}
+		allow_branch = {
+			always = no
+		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
-			FIN_bop_low_increase_effect = yes
 
 			add_political_power = 100
 
@@ -693,7 +695,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
-			FIN_bop_low_increase_effect = yes
+		
 
 			army_experience = 50
 			air_experience = 25
@@ -740,11 +742,14 @@ focus_tree = {
 				character = FIN_risto_ryti
 			}
 		}
+		allow_branch = {
+			always = no
+		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL_CHARACTER }
 
 		completion_reward = {
-			FIN_bop_low_increase_effect = yes
+
 
 			add_political_power = 100
 
@@ -758,61 +763,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = FIN_reach_out_to_scandinavia
-		icon = GFX_focus_generic_nordic_territory
-		prerequisite = { focus = FIN_finnish_neutrality }
 
-		x = 0
-		y = 1
-		relative_position_id = FIN_finnish_neutrality
-		cost = 5
-		available = {
-		}
-
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			every_other_country = {
-				limit = {
-					NORDIC_is_nordic = yes
-					NOT = { has_war_with = ROOT }
-				}
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = FIN_nordic_amity
-				}
-				ROOT = {
-					add_opinion_modifier = {
-						target = PREV
-						modifier = FIN_nordic_amity
-					}
-				}
-			}
-
-			hidden_effect = {
-				every_other_country = {
-					limit = {
-						NORDIC_is_nordic = yes
-						NOT = { has_war_with = ROOT }
-					}
-					add_ai_strategy = {
-						type = befriend 
-						id = ROOT
-						value = 25
-					}
-					ROOT = {
-						add_ai_strategy = {
-							type = befriend 
-							id = PREV
-							value = 25
-						}
-					}
-				}
-			}
-		}
-	}
-	
 	
 	focus = {
 		id = FIN_weapon_caches
@@ -828,6 +779,9 @@ focus_tree = {
 		available = {
 			threat > 0.35
 		}
+		allow_branch = {
+			always = false
+		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -841,8 +795,8 @@ focus_tree = {
 		icon = GFX_focus_EST_national_pride_in_finland
 		prerequisite = { focus = FIN_finnish_neutrality  }
 
-		x = -2
-		y = 0
+		x = 14
+		y = 1
 		relative_position_id = FIN_weapon_caches
 		cost = 10
 		available = {
@@ -852,7 +806,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
-			FIN_bop_medium_increase_effect = yes
+
 
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = FIN_vilho_annala
@@ -922,6 +876,10 @@ focus_tree = {
 		cost = 5
 		available = {
 		}
+		allow_branch = {
+			always = false
+		}
+
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_CHARACTER }
 
@@ -1097,11 +1055,12 @@ focus_tree = {
 			controls_state = 215 #ONEGA
 			controls_state = 216 #OLONETS
 		}
+	
 
 		search_filters = {}
 
 		completion_reward = {
-			FIN_bop_low_increase_effect = yes
+
 
 			213 = { #MURMANSK
 				add_core_of = ROOT
@@ -1179,6 +1138,7 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 111 #UUSIMAA (Helsinki)
 			has_full_control_of_state = 926 #TURKU
+			is_ai = no
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2264,6 +2224,7 @@ focus_tree = {
 		relative_position_id = FIN_enhance_southern_infrastructure
 		cost = 5
 		available = {
+			is_ai = no
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
@@ -2724,6 +2685,9 @@ focus_tree = {
 				has_capitulated = no
 				NOT = { is_justifying_wargoal_against = ROOT	}
 			}
+		}
+		allow_branch = {
+			always = false
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INTERNATIONAL_TRADE }
@@ -3232,6 +3196,9 @@ focus_tree = {
 		available = {
 		}
 
+		allow_branch = {
+			always = false
+		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_CHARACTER }
 
 		completion_reward = {

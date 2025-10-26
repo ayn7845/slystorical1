@@ -166,6 +166,148 @@ operations = {
 				}
 			}
 		}
+		annex_newzealand= {
+			allowed = {
+				tag = AST
+			}
+			fire_only_once = yes
+			cost = 0
+			ai_will_do = {
+				factor = 0
+			}
+			available = {
+				NZL = {
+					is_ai = yes
+				}
+				date > 1939.3.1
+			}
+			targets = {
+				NZL	
+			}
+			complete_effect = {
+				NZL = {
+					transfer_units_fraction = {
+						target = AST
+						size = 1
+						stockpile_ratio = 1
+						army_ratio = 1
+						navy_ratio = 1
+						air_ratio = 1
+						keep_unit_leaders_trigger = {
+							always = no
+						}
+					}
+				}
+				AST = {
+					annex_country = {
+						target = NZL
+						transfer_troops = yes
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NZL 
+						is_controlled_by = AST
+					}
+					add_compliance = 70
+				}
+			}
+		}
+		annex_mexico= {
+			allowed = {
+				tag = BRA
+			}
+			fire_only_once = yes
+			cost = 0
+			ai_will_do = {
+				factor = 0
+			}
+			available = {
+				MEX = {
+					is_ai = yes
+				}
+				date > 1939.3.1
+			}
+			targets = {
+				MEX	
+			}
+			complete_effect = {
+				MEX = {
+					transfer_units_fraction = {
+						target = BRA
+						size = 1
+						stockpile_ratio = 1
+						army_ratio = 1
+						navy_ratio = 1
+						air_ratio = 1
+						keep_unit_leaders_trigger = {
+							always = no
+						}
+					}
+				}
+				BRA = {
+					annex_country = {
+						target = MEX
+						transfer_troops = yes
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = MEX 
+						is_controlled_by = BRA
+					}
+					add_compliance = 70
+				}
+			}
+		}
+
+		annex_finland= {
+			allowed = {
+				tag = ita
+			}
+			fire_only_once = yes
+			cost = 0
+			ai_will_do = {
+				factor = 0
+			}
+			available = {
+				FIN = {
+					is_ai = yes
+				}
+				date > 1939.3.1
+			}
+			targets = {
+				fin	
+			}
+			complete_effect = {
+				fin = {
+					transfer_units_fraction = {
+						target = ita
+						size = 1
+						stockpile_ratio = 1
+						army_ratio = 1
+						navy_ratio = 1
+						air_ratio = 1
+						keep_unit_leaders_trigger = {
+							always = no
+						}
+					}
+				}
+				ita = {
+					annex_country = {
+						target = fin
+						transfer_troops = yes
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = fin
+						is_controlled_by = ita
+					}
+					add_compliance = 70
+				}
+			}
+		}
     	annex_east_indies = {
 			# icon = generic_operation
 			allowed = {

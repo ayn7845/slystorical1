@@ -233,7 +233,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 100
-			FIN_bop_low_increase_effect = yes
+
 
 			add_popularity = {
 				ideology = neutrality
@@ -265,7 +265,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 
-			FIN_bop_very_low_increase_effect = yes
+	
 
 			add_popularity = {
 				ideology = neutrality
@@ -294,7 +294,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 
-			FIN_bop_very_low_increase_effect = yes
+		
 
 			add_popularity = {
 				ideology = neutrality
@@ -324,7 +324,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 
-			FIN_bop_very_low_increase_effect = yes
 
 			add_popularity = {
 				ideology = democratic
@@ -573,11 +572,13 @@ focus_tree = {
 				}
 			}
 		}
+		allow_branch = {
+			always = no
+		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
-			FIN_bop_low_increase_effect = yes
 
 			add_political_power = 100
 
@@ -694,7 +695,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
-			FIN_bop_low_increase_effect = yes
+		
 
 			army_experience = 50
 			air_experience = 25
@@ -741,11 +742,14 @@ focus_tree = {
 				character = FIN_risto_ryti
 			}
 		}
+		allow_branch = {
+			always = no
+		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL_CHARACTER }
 
 		completion_reward = {
-			FIN_bop_low_increase_effect = yes
+
 
 			add_political_power = 100
 
@@ -856,7 +860,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
-			FIN_bop_medium_increase_effect = yes
+
 
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = FIN_vilho_annala
@@ -1105,14 +1109,12 @@ focus_tree = {
 			controls_state = 215 #ONEGA
 			controls_state = 216 #OLONETS
 		}
-		allow_branch = {
-			always = false
-		}
+	
 
 		search_filters = {}
 
 		completion_reward = {
-			FIN_bop_low_increase_effect = yes
+
 
 			213 = { #MURMANSK
 				add_core_of = ROOT

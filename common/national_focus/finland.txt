@@ -90,6 +90,7 @@ focus_tree = {
 		available = {
 			has_government = neutrality
 			is_subject = no
+			is_ai = no
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
@@ -1179,6 +1180,7 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 111 #UUSIMAA (Helsinki)
 			has_full_control_of_state = 926 #TURKU
+			is_ai = no
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2264,6 +2266,7 @@ focus_tree = {
 		relative_position_id = FIN_enhance_southern_infrastructure
 		cost = 5
 		available = {
+			is_ai = no
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }

@@ -5,7 +5,7 @@ state={
 	manpower = 5824712
 	
 	
-	state_category = megalopolis
+	state_category = metropolis
 	
 	resources={
 		oil=320 # was: 580
@@ -24,7 +24,7 @@ state={
         owner = USA
 		buildings = {
 			infrastructure = 3 #was: 6
-			industrial_complex = 10
+			industrial_complex = 14
 			arms_factory = 2
 			air_base = 3
 			10337 = {

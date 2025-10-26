@@ -1566,7 +1566,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 0
+		cost = 5
 
 		available = {
 			any_owned_state = {

@@ -80,6 +80,9 @@ add_command_power = 20
 
 # Starting tech
 set_technology = {
+	tech_mountaineers = 1
+	marines  = 1
+	paratroopers = 1 
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1

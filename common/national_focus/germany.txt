@@ -9555,7 +9555,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-
+			custom_effect_tooltip = cheap_makeshift_bridges_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
 			IF = {
 				limit = { SOV = { has_civil_war = no } }
 				declare_war_on = {

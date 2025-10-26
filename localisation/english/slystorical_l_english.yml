@@ -248,6 +248,10 @@ MEX_focus_Placate_General_Cedillo_desc:0 "General Cedillo Is given autonomy over
 
 ENG_the_rock:0 "The Rock"
 
+# Abilities
+
+cheap_makeshift_bridges_tt:0 "Allows the use of the §YMakeshift Bridges§W command ability at greatly reduced cost." 
+
 # VP NAMES
   VICTORY_POINTS_10749:0 "Musus"
   VICTORY_POINTS_8030:0 "El-Shaif"

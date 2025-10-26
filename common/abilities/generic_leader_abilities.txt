@@ -255,15 +255,15 @@ ability = {
 		allowed = {
 			has_ability = makeshift_bridges
 			is_border_war = no
-			if = { 
-				limit = { 
-					OWNER = { 
-					has_game_rule = { 
-					rule = larp_barb
-					option = on
-					}
-				}
-			}
+			#if = { 
+				#limit = { 
+				#	OWNER = { 
+				#	has_game_rule = { 
+				#	rule = larp_barb
+				#	option = on
+				#	}
+				#}
+			#}
 			NOT = {
 				has_idea = GER_barbarossa
 				has_idea = german_1942_offensive
@@ -271,7 +271,7 @@ ability = {
 				ability = ger_barb_makeshift_bridges
 					}
 				}
-			}
+			#}
 		
 		
 		unit_modifiers = {

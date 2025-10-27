@@ -1293,8 +1293,9 @@ ideas = {
 			}
 			equipment_bonus = {
 				infantry_weapons = { 
-					hard_attack = 0.25
-					#piercing = 0.15
+					hard_attack = 1
+					ap_attack = 1
+					breakthrough = 1
 				} 
 				cv_small_plane_airframe = {
 					air_range = 0.15 instant = yes

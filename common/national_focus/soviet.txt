@@ -6949,18 +6949,18 @@ focus_tree = {
 		cost = 5
 		
 		available = { 
-			OR = { 
+			#OR = { 
 			custom_trigger_tooltip = {
 				tooltip = SOV_propaganda_campaigns_taken_10_or_greater_tt
 				check_variable = { SOV_propaganda_campaigns_taken = 10 compare = greater_than_or_equals }
 			}
-			if = { 
-					limit = { 
-						has_start_date = 1941.1.1.12
-					}
-					date > 1942.3.1
-				}
-			}
+			#if = { 
+			#		limit = { 
+			#			has_start_date = 1941.1.1.12
+			#		}
+			#		date > 1942.3.1
+			#	}
+			#}
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
@@ -7028,18 +7028,18 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_architect_of_communism }
 		
 		available = { 
-			OR = { 
+		#	OR = { 
 			custom_trigger_tooltip = {
 				tooltip = SOV_propaganda_campaigns_taken_15_or_greater_tt
 				check_variable = { SOV_propaganda_campaigns_taken = 15 compare = greater_than_or_equals }
 			}
-				if = { 
-					limit = { 
-						has_start_date = 1941.1.1.12
-					}
-					date > 1942.6.1
-				}
-			}
+			#	if = { 
+			#		limit = { 
+			#			has_start_date = 1941.1.1.12
+			#		}
+			#		date > 1942.6.1
+			#	}
+		#	}
 		}
 		
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
@@ -7104,21 +7104,11 @@ focus_tree = {
 
 		available = {
 			#AND = { 
-			#custom_trigger_tooltip = {
-				#tooltip = SOV_propaganda_campaigns_taken_20_or_greater_tt
-				#check_variable = { SOV_propaganda_campaigns_taken = 20 compare = greater_than_or_equals }
-			#}
-			OR = {
-			surrender_progress > 0.45
-			date > 1944.1.1	
-			if = { 
-					limit = { 
-						has_start_date = 1941.1.1.12
-					}
-					date > 1943.5.1
-					}
-				}
+			custom_trigger_tooltip = {
+				tooltip = SOV_propaganda_campaigns_taken_20_or_greater_tt
+				check_variable = { SOV_propaganda_campaigns_taken = 20 compare = greater_than_or_equals }
 			}
+		}
 		#}
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY}
 

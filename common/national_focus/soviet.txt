@@ -3824,15 +3824,7 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 219 #MOSCOW
 			has_equipment = { train_equipment > 119 } #20 trains per factory
-			OR = {
-				threat > 0.85
-				any_enemy_country = {
-					SOV_is_major_not_original_sov = yes
-					capital_scope = {
-						is_on_continent = europe
-					}
-				}
-			}
+			has_war = yes
 		}
 		offset = {
 			x = -12

@@ -9717,6 +9717,7 @@ focus_tree = {
 				category = armor
 			}
 			SOV = {
+				country_event = { id = germany.75 }
 				give_SOV_armor_research_bonuses = yes
 			}
 			hidden_effect = { 

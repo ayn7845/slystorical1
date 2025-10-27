@@ -203,7 +203,7 @@ give_SOV_armor_research_bonuses = { #this effect is run for the Soviets!
 			name = armor_bonus
 			ahead_reduction = 0.25
 			technology = advanced_medium_tank
-			technology = advanced_heavy_tank
+			#technology = advanced_heavy_tank
 		}
 		add_tech_bonus = {
 			name = armor_bonus

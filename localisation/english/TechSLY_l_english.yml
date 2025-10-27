@@ -16,6 +16,12 @@ cat_air_bombs:0 "Bomb Locks"
 advanced_ship_hull_heavy:0 "1942 Heavy Ship Hull"
 
 mechanised_infantry:0 "Mechanized Infantry"
+basic_medium_tank:0 "Medium Tank I"
+improved_medium_tank:0" "Medium Tank II"
+advanced_medium_tank:0" "Medium Tank III"
+basic_heavy_tank:0" "Heavy Tank I"
+improved_heavy_tank:0" "Heavy Tank II"
+advanced_heavy_tank:0" "Heavy Tank III"
 fighter2:0 "Fighter II"
 
 # TECH RUSH LOC

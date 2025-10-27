@@ -268,10 +268,14 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-					load_oob = "ENG_mech_spawn"
+					#load_oob = "ENG_mech_spawn"
 					add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 10000
+					amount = 30000
+					}
+					add_equipment_to_stockpile = {
+					type = anti_air_equipment_1
+					amount = 350
 					}
 				}
 			}
@@ -298,6 +302,7 @@ focus_tree = {
 		completion_reward = {
 			set_technology = { 
 					mechanised_infantry = 1
+					basic_medium_tank = 1
 				}
 			if = {
 				limit = {
@@ -4271,7 +4276,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = GER_build_panzer_army
 				bonus = 1.0
-				ahead_reduction = 1
+				#ahead_reduction = 1
 				uses = 1
 				category = armor
 			}

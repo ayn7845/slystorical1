@@ -874,7 +874,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_steel_casting_industry
-		cost = 0
+		cost = 5
 
 		available = {
 			SOV_third_five_year_plan_available = yes

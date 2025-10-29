@@ -160,10 +160,48 @@ technology_folders = {
 	}
 	air_techs_folder = {
 		available = {
+			AND = {
 				NOT = { 
 					has_country_flag = barbstart
 				}
+				NOT = { 
+					tag = FIN
+				}
+				NOT = { 
+					tag = HUN
+				}
+				NOT = { 
+					tag = ROM
+				}
+				NOT = { 
+					tag = MEX
+				}
+				NOT = { 
+					tag = BRA
+				}
+				NOT = { 
+					tag = FRA
+				}
+				NOT = { 
+					tag = SPR
+				}
+				NOT = { 
+					tag = SAF
+				}
+				NOT = { 
+					tag = AST
+				}
+				NOT = { 
+					tag = RAJ
+				}
+				NOT = { 
+					tag = BUL
+				}
+				NOT = { 
+					tag = NZL
+				}
 			}
+		}
 		ledger = air
 	}
 	bba_air_techs_folder = {

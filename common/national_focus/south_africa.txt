@@ -190,7 +190,8 @@ focus_tree = {
 				name = SAF_new_machine_tools
 				bonus = 1
 				uses = 1
-				category = industry
+				technology = advanced_machine_tools
+                technology = assembly_line_production
 			}
 		}
 	}
@@ -272,7 +273,10 @@ focus_tree = {
 				name = SAF_heavy_engineering
 				bonus = 0.5
 				uses = 2
-				category = industry
+				technology = advanced_machine_tools
+                technology = assembly_line_production
+                technology = concentrated_industry3
+                technology = concentrated_industry4
 			}
 		}
 	}

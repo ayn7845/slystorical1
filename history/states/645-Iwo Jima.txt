@@ -18,14 +18,16 @@ state=
 		add_core_of = JAP
 		buildings = {
 			infrastructure = 2
-			air_base = 1
-			13025 = {
-				naval_base = 1
-
+			air_base = 5
+			10436 = {
+				naval_base = 3
 			}
 		}
 		victory_points = {
-			13025 5
+			13025 10
+		 }
+		 victory_points = {
+			8250 2
 		 }
 		1941.1.1 = {
 		owner = WST
@@ -34,7 +36,7 @@ state=
 
 	}
 	provinces={
-		13025
+		13025 8250 10436
 	}
 
 	local_supplies=0.0 

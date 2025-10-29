@@ -17,7 +17,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_armor
+			picture = ETH_peacekeeping_forces
 
 			modifier = {
 				mobilization_speed = 1
@@ -26,6 +26,60 @@ ideas = {
 			Targeted_modifier = {
 				tag = SOV
 				defense_bonus_against = 0.05
+			}
+        }
+    }
+    country = {
+        phoney_war_idea_fra = {
+
+            Name = "Phoney War"
+			
+			allowed = {
+				
+            }
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ETH_peacekeeping_forces
+
+			modifier = {
+				mobilization_speed = 1
+			}
+			
+			Targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.50
+			}
+        }
+    }
+     country = {
+        phoney_war_idea_ger = {
+
+            Name = "Phoney War"
+			
+			allowed = {
+				
+            }
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_armor
+
+			modifier = {
+				mobilization_speed = 1
+			}
+			
+			Targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = -0.50
 			}
         }
     }

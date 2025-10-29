@@ -6,7 +6,7 @@ state=
 	
 	state_category = large_town
 	resources={
-		rubber=23 # was: 70
+		rubber=23
 	}
 	history= {
 		# No Asia + Scraping
@@ -21,12 +21,43 @@ state=
 		add_core_of = CHI
 		
 		buildings = {
-			infrastructure = 3 #was: 5
+			anti_air_building = 5
+			infrastructure = 3
 			arms_factory = 1
 			air_base = 6
 			12068 = {
 				naval_base = 10
+				coastal_bunker = 2
 			}
+			7186 = {
+				naval_base = 10
+				coastal_bunker = 2
+			}
+			9955 = {
+				coastal_bunker = 2
+			}
+			4096 = {
+				coastal_bunker = 2
+			}
+			1175 = {
+				coastal_bunker = 2
+			}
+			11914 = {
+				coastal_bunker = 2
+			}
+			1091 = {
+				coastal_bunker = 2
+			}
+			11959 = {
+				coastal_bunker = 2
+			}
+			7214 = {
+				coastal_bunker = 2
+			}
+			12027 = {
+				bunker = 2
+			}
+
 		}
 		victory_points = {
 			7186 5 

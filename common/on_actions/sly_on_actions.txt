@@ -307,6 +307,42 @@ on_actions = {
 				}
 			
 			}
+
+			524 = { 
+				if = { 
+					limit = { 
+						JAP = { 
+							owns_state = 524
+						}
+					}
+					add_dynamic_modifier = { modifier = JAP_Jigoku_de_au_ze scope = JAP }
+				}
+			
+			}
+
+			526 = { 
+				if = { 
+					limit = { 
+						JAP = { 
+							owns_state = 526
+						}
+					}
+					add_dynamic_modifier = { modifier = JAP_Jigoku_de_au_ze scope = JAP }
+				}
+			
+			}
+
+			645 = { 
+				if = { 
+					limit = { 
+						JAP = { 
+							owns_state = 645
+						}
+					}
+					add_dynamic_modifier = { modifier = JAP_Jigoku_de_au_ze scope = JAP }
+				}
+			
+			}
 			SOV = { 
 					
 			if = {

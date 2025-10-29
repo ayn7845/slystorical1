@@ -19,8 +19,18 @@ state=
 		buildings = {
 			infrastructure = 2
 			air_base = 5
+			anti_air_building = 2
 			10436 = {
 				naval_base = 3
+				coastal_bunker = 2
+			}
+			8250 = {
+				naval_base = 3
+				coastal_bunker = 2
+				bunker = 2
+			}
+			13025 = {
+				bunker = 3
 			}
 		}
 		victory_points = {

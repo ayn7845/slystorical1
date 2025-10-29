@@ -905,43 +905,11 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = MEX_focus_international_peacekeepers
-		icon = GFX_focus_generic_paratrooper
-		prerequisite = {focus = MEX_focus_capital_reserves}
-		x = 0
-		y = 1
-		relative_position_id = MEX_focus_capital_reserves
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			has_offensive_war = no
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			set_rule = { can_send_volunteers = yes }
-			add_ideas = MEX_international_peacekeepers
-		}
-	}
 	
 	focus = {
 		id = MEX_focus_control_the_army
 		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = MEX_focus_exile_calles focus = MEX_focus_jefe_maximo }
+		prerequisite = {focus = MEX_focus_jefe_maximo }
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_jefe_maximo
@@ -1686,7 +1654,7 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_spanish_civil_war_refugees
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = MEX_focus_professional_army focus = MEX_focus_soldaderas  }
+		prerequisite = {focus = MEX_focus_soldaderas  }
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_soldaderas
@@ -1858,21 +1826,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = MEX_astimar_gulf_organization
-				mio:MEX_astimar_gulf_organization = {
-					add_mio_funds = 500
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = MEX_astimar_gulf
-			}
 		}
 	}
 
@@ -1937,22 +1890,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = MEX_astimar_pacific_organization
-				mio:MEX_astimar_pacific_organization = {
-					add_mio_funds = 500
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = MEX_astimar_pacific
-			}
-			
 		}
 	}
 
@@ -2174,25 +2111,6 @@ focus_tree = {
 				uses = 1
 				category = armor
 			}
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = MEX_tga_organization
-				mio:MEX_tga_organization = {
-					add_mio_funds = 500
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = MEX_tga
-			}
 		}
 	}
 	
@@ -2232,29 +2150,9 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = air_doctrine
 				cost_reduction = 0.5
-				uses = 1
+				uses = 2
 				category = air_doctrine
 			}
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.25
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = MEX_tnca_organization
-				mio:MEX_tnca_organization = {
-					add_mio_funds = 500
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = MEX_tnca
-			}
-			
 		}
 	}
 	
@@ -2277,14 +2175,6 @@ focus_tree = {
 			}
 		}
 
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -2294,12 +2184,8 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = air_doctrine
 				cost_reduction = 0.5
-				uses = 1
+				uses = 2
 				category = air_doctrine
-			}
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.5
 			}
 		}
 	}

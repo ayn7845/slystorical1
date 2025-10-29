@@ -76,7 +76,7 @@ ideas = {
 	country = {
         meme_minors = {
 
-            Name = "Anti Toast"
+            Name = "no meme minors"
 
             allowed = {
                 
@@ -91,11 +91,12 @@ ideas = {
             picture = generic_armor
 
             modifier = {
-                air_mission_efficiency = -1
+                air_mission_efficiency = -9.99
             }
             equipment_bonus = {
                 #AIRCRAFT
-                small_plane_airframe = {
+				
+				small_plane_airframe = {
                     build_cost_ic = 9.99 instant = yes
                 }
                 small_plane_cas_airframe = {
@@ -113,6 +114,7 @@ ideas = {
                 large_plane_airframe = {
                     build_cost_ic = 9.99 instant = yes
                 }
+              
 				ship_hull_submarine = {
                     build_cost_ic = 9.99 instant = yes
                 }
@@ -122,6 +124,7 @@ ideas = {
 				ship_hull_heavy = {
                     build_cost_ic = 9.99 instant = yes
                 }
+				
             }
         }
     }

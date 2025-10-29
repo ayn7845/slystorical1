@@ -114,5 +114,20 @@ instant_effect = {
 		efficiency = 50
 		industrial_manufacturer = mio:ENG_vauxhall_organization
 	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 50000
+		producer = ENG	
+		}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 3000
+		producer = ENG	
+	}
+	add_equipment_to_stockpile = {
+		type = anti_air_equipment_1
+		amount = 2000
+		producer = ENG	
+	}
 }
 	#####################

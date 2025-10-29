@@ -76,7 +76,7 @@ ideas = {
 	country = {
         meme_minors = {
 
-            Name = "no meme minors"
+            Name = "No Meme Minors :{"
 
             allowed = {
                 

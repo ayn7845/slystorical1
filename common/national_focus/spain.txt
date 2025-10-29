@@ -1362,32 +1362,7 @@ focus_tree = {
 			add_ideas = SPA_the_duty_to_work
 		}
 	}
-	focus = {
-		id = SPA_italian_shipbuilding_expertise
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_support_the_war_industry }
-		
-		icon = GFX_focus_generic_navy_battleship2
-		x = -1
-		y = 1
-		relative_position_id = SPA_support_the_war_industry
-		cost = 10
 
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_ideas = SPA_italian_shipbuilding_expertise
-			add_tech_bonus = {
-				name = SPA_italian_shipbuilding_expertise
-				bonus = 1
-				uses = 1
-				category = bb_tech
-			}
-		}
-	}
 	focus = {
 		id = SPA_support_the_war_industry
 		available = {
@@ -2595,39 +2570,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SPA_the_plan_imperial
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_expand_the_slipways }
-		
-		icon = GFX_goal_generic_navy_battleship
-		x = 0
-		y = 2
-		relative_position_id = SPA_expand_the_slipways
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			navy_experience = 50
-			add_ideas = SPA_the_plan_imperial
-			add_tech_bonus = {
-				name = SPA_glory_and_wealth_on_the_sea_lanes
-				bonus = 1
-				uses = 1
-				category = bb_tech
-			}
-			add_tech_bonus = {
-				name = SPA_glory_and_wealth_on_the_sea_lanes
-				bonus = 1
-				uses = 1
-				category = cv_tech
-			}
-		}
-	}
+	
 
 	focus = {
 		id = SPA_la_division_azul

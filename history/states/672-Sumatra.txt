@@ -38,6 +38,9 @@ state = {
 			12268 = {
 				naval_base = 1
 			}
+			10354 = {
+				naval_base = 2
+			}
 		}
 			1941.1.1 = {
 		owner = WST

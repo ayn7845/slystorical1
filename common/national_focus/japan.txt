@@ -2610,6 +2610,12 @@
 				add_idea = JAP_militarism_showa
 			}
 		hidden_effect = {
+		647= {
+			set_compliance = 53
+		}
+		524= {
+			set_compliance = 53
+		}
 		289= {
 			set_compliance = 53
 		}

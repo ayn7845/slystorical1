@@ -821,5 +821,145 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12033
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12033
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9989
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9989
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 5078
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 5078
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12764
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12764
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10835
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10835
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 7148
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 7148
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12091
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12091
+		division_template = "AFRICA BRICKS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
 }
 	#####################

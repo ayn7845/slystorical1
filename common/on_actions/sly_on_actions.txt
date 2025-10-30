@@ -1218,4 +1218,466 @@ on_actions = {
 			
 		}
 	}	
+	on_weekly = { # FUCK SPANISH AIRPORTS
+		effect = {
+			if = {
+				limit = {
+					171 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				171 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					415 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				415 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					174 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				174 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					416 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				416 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					176 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				176 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					411 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				411 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					172 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				172 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					166 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				166 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					415 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				415 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					410 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				410 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					41 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				41 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					170 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				170 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					169 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				169 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					415 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				415 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					414 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				414 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					412 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				412 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					175 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				175 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					173 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				173 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					168 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				168 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					167 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				167 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					418 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				418 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					165 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				165 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					177 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				177 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					290 = {
+						non_damaged_building_level = {
+							building = air_base
+							level > 0
+						}
+					}
+				}
+				290 = {
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+				}
+			}
+		}
+	}
+	# No more safari gang!
+	on_state_control_changed = {
+		effect = {
+			# It used to check for all the states that should be to allies , but unfortunatly unless we make new states or something like that it will have to look like this
+			#TODO: change if needed
+			if = {
+				limit = {
+					456 = { 
+						OR = {
+							controller = { has_scripted_trigger = axis }
+							owner = { has_scripted_trigger = axis }
+						}
+					}
+					457 = { 
+						OR = {
+							controller = { has_scripted_trigger = axis }
+							owner = { has_scripted_trigger = axis }
+						}
+					}
+				}
+				# If the allies do not pull out on time , then GG WP ALLIED IC
+				551 = { set_state_flag = german_faction_demilitarized_zone }
+				883 = { set_state_flag = german_faction_demilitarized_zone }
+			}
+		}
+	}
+	# The bulgarian has said that it needs to be like this mkay?
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { date > 1941.03.01 }
+				}
+				every_state = {
+					limit = {
+						has_state_flag = german_faction_demilitarized_zone
+						OR = {
+							controller = { has_scripted_trigger = axis }
+							owner = { has_scripted_trigger = axis }
+						}
+					}
+					set_demilitarized_zone = yes
+				}
+			}
+			
+			# After March 1941 - CLEAR EVERYTHING (remilitarize and remove flags)
+			if = {
+				limit = {
+					date > 1941.03.01
+				}
+				every_state = {
+					limit = {
+						has_state_flag = german_faction_demilitarized_zone
+					}
+					set_demilitarized_zone = no
+					clr_state_flag = german_faction_demilitarized_zone
+				}
+			}
+			# Also clear if Axis loses control (regardless of date)
+			every_state = {
+				limit = {
+					has_state_flag = german_faction_demilitarized_zone
+					NOT = {
+						OR = {
+							controller = { has_scripted_trigger = axis }
+							owner = { has_scripted_trigger = axis }
+						}
+					}
+				}
+				set_demilitarized_zone = no
+				clr_state_flag = german_faction_demilitarized_zone
+			}
+		}
+	}
 }

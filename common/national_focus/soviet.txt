@@ -3824,7 +3824,7 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 219 #MOSCOW
 			has_equipment = { train_equipment > 119 } #20 trains per factory
-			has_war = yes
+			date > 1941.4.1
 		}
 		offset = {
 			x = -12

@@ -181,7 +181,7 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 2
+		combat_width = 3
 		
 		#Size Definitions
 		max_organisation = 55

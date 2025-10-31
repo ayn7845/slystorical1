@@ -235,7 +235,7 @@ NDefines.NCountry.CONVOY_LENDLEASE_RANGE_FACTOR = 0.01 -- How much range affects
 
 
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 0				-- Political power cost to send attache
-
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0	-- vanilla 50.0, -- Command Power sent attache usage cost
 
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 20
 NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 50

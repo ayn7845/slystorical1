@@ -116,9 +116,6 @@ advanced_heavy_tank:0 "Heavy Tank III"
 
 ITA_military_industry_dynamic_modifier_tankettes_sly_tt:1 "Modify §YMilitary Industry§W by \n§Y$light_tank_chassis$§!: $production_cost_tt$ §G-5.00%§! \n§Y$light_tank_chassis$§!: Reliability: §G+5.00%§! \n§Y$medium_tank_chassis$§!: $production_cost_tt$ §G-5.00%§! \n§Y$medium_tank_chassis$§!: Reliability: §G+5.00%§! \n"
 ITA_fighter_innovations_bonus_tt:0 "\n£GFX_focus_bonuses_icon\n§Y1x §G75.00%§W Research bonus for:§Y Fighter II§W"
-ITA_production_lines_military_industry_dm_tt:0 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: §G+5.00%§! \n\n"
-ITA_il_sol_dell_avvenire_military_industry_dm_tt:0 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$: §G+5.00%§! \n\n"
-
 
 add_convoy:0 "Add Convoy"
 peace_training:0 "Peacetime Training"

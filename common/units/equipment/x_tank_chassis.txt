@@ -1238,7 +1238,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 4
-		reliability = 0.55
+		reliability = 0.6
 
 		#Defensive Abilities
 		defense = 6
@@ -1284,7 +1284,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 5
-		reliability = 0.75
+		reliability = 0.70
 		#Defensive Abilities
 		defense = 8
 		breakthrough = 50
@@ -1315,7 +1315,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 6
-		reliability = 0.85
+		reliability = 0.90
 		#Defensive Abilities
 		defense = 9
 		breakthrough = 60
@@ -1347,7 +1347,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 4
-		reliability = 0.55
+		reliability = 0.6
 		upgrades = {
 			tank_reliability_upgrade
 			tank_engine_upgrade
@@ -1390,7 +1390,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 5
-		reliability = 0.65
+		reliability = 0.7
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 3
@@ -1423,7 +1423,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 6
-		reliability = 0.85
+		reliability = 0.9
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 3.5
@@ -1458,7 +1458,7 @@ equipments = {
 		}
 		#Misc Abilities
 		maximum_speed = 4
-		reliability = 0.55
+		reliability = 0.6
 
 		#Defensive Abilities
 		defense = 4
@@ -1531,7 +1531,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 6
-		reliability = 0.85
+		reliability = 0.9
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 1.8
@@ -1569,7 +1569,7 @@ equipments = {
 		}
 		#Misc Abilities
 		maximum_speed = 4
-		reliability = 0.55
+		reliability = 0.6
 
 		#Defensive Abilities
 		defense = 2
@@ -1607,7 +1607,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 5
-		reliability = 0.65
+		reliability = 0.75
 		#Defensive Abilities
 		defense = 5
 		breakthrough = 7
@@ -1642,7 +1642,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 6
-		reliability = 0.85
+		reliability = 0.9
 
 		
 		#Defensive Abilities

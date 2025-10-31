@@ -29,6 +29,11 @@ state=
 				coastal_bunker = 2
 				bunker = 2
 			}
+			8235 = {
+				naval_base = 3
+				coastal_bunker = 2
+				bunker = 2
+			}
 			13025 = {
 				bunker = 3
 			}
@@ -46,7 +51,7 @@ state=
 
 	}
 	provinces={
-		13025 8250 10436
+		13025 8250 10436 8235
 	}
 
 	local_supplies=0.0 

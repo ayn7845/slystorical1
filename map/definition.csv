@@ -8233,7 +8233,7 @@
 8232;94;165;46;land;false;mountain;4
 8233;94;165;196;land;false;plains;3
 8234;94;168;11;land;false;plains;4
-8235;94;168;161;land;false;mountain;4
+8235;94;168;161;land;true;plains;6
 8236;94;171;51;land;true;forest;2
 8237;94;171;76;land;false;desert;4
 8238;94;174;41;land;false;forest;3

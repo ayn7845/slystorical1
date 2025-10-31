@@ -2296,7 +2296,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
+			#add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = 0.05 }
 			custom_effect_tooltip = ITA_il_sol_dell_avvenire_military_industry_dm_tt
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
@@ -4154,7 +4154,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_ideas = ITA_hidden_standardization_ns
 			add_tech_bonus = {
 				name = ITA_standardization
 				bonus = 0.5
@@ -4162,7 +4161,9 @@ focus_tree = {
 				category = tactical_bomber
 				category = cat_strategic_bomber
 			}
-
+		custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = ITA_hidden_standardization_ns
+		custom_effect_tooltip = generic_skip_one_line_tt
 			random_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -4198,16 +4199,16 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			add_ideas = ITA_hidden_specialization_ns
-				air_experience = 15
-	
+			
 				add_tech_bonus = {
 					name = ITA_specialization
 					bonus = 1
 					uses = 1
 					category = cas_bomber
 				}
-
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = ITA_hidden_specialization_ns
+		custom_effect_tooltip = generic_skip_one_line_tt
 			random_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -10997,6 +10998,16 @@ focus_tree = {
 			add_to_variable = { ITA_iri_consumer_goods_factor = -0.05 }
 			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
 			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.05 }
+
+			add_tech_bonus = {
+				name = ITA_economic_reforms
+				bonus = 1
+				uses = 1
+				technology = advanced_machine_tools
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			custom_effect_tooltip = ITA_economic_reforms_ricostruzione_industriale_tt
 		}
 	}
@@ -11081,7 +11092,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = 0.05 }
-			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.1 }
 			custom_effect_tooltip = ITA_production_lines_military_industry_dm_tt
 
 			custom_effect_tooltip = ITA_production_lines_factories_tt
@@ -11143,12 +11153,6 @@ focus_tree = {
 
 		cost = 10
 		available = {
-			GRE = { 
-				has_capitulated = yes
-			}
-			YUG = { 
-				has_capitulated = yes
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -11159,26 +11163,6 @@ focus_tree = {
 			custom_effect_tooltip = ITA_expanded_corporatism_ricostruzione_industriale_tt
 
 			add_to_variable = { ITA_military_industry_dm_production_lack_of_resource_penalty_factor = -0.05 }
-			custom_effect_tooltip = ITA_expanded_corporatism_military_industry_tt
-
-			every_controlled_state = {
-
-				limit = {
-					NOT = {	is_core_of = ROOT }
-					NOT = {	is_core_of = HOL }
-					NOT = {	is_core_of = BEl }
-					NOT = {	is_core_of = LUX }
-					NOT = {	is_core_of = POL }
-					NOT = {	is_core_of = NOR }
-					NOT = {	is_core_of = DEN }
-					# is_fully_controlled_by = ROOT
-				}
-				add_dynamic_modifier = {
-					modifier = ITA_expanded_corporatism_modifier
-					scope = ITA
-				}
-			}
-
 			
 			if = {
 				limit = {
@@ -11192,10 +11176,10 @@ focus_tree = {
 					}
 				}
 				2 = { #LATIUM
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -11211,10 +11195,10 @@ focus_tree = {
 						}
 					}
 					prioritize = { 157 849 115 } #ABRUZZO as main fallback
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -11227,10 +11211,10 @@ focus_tree = {
 					}
 				}
 				117 = { #CAMPANIA
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -11242,10 +11226,10 @@ focus_tree = {
 					}
 				}
 				161 = { #EMILIA ROMAGNA
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -11257,10 +11241,10 @@ focus_tree = {
 					}
 				}
 				162 = { #TUSCANY
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}

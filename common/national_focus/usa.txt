@@ -2325,6 +2325,14 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_yellow show_effect_tooltip = yes show_modifiers = yes }
+			378 = { 
+					add_extra_state_shared_building_slots = 10
+					add_building_construction = {
+						type = dockyard
+						level = 10
+						instant_build = yes
+					}
+				}
 		}
 	}
 	
@@ -2342,8 +2350,8 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = { date > 1941.3.1
-
+		available = { 
+			date > 1941.3.1
 		}
 		
 		bypass = {
@@ -2355,14 +2363,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-				378 = { 
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = dockyard
-						level = 5
-						instant_build = yes
-					}
-				}
+			add_timed_idea = {
+				idea = USA_repair_yards
+				days = 180
+			}
 		}
 	}
 	
@@ -2430,6 +2434,17 @@ focus_tree = {
 					}
 				}
 				USA_douglas_macarthur = {
+					add_trait = { trait = jungle_rat }
+				}
+			}
+			if = {
+				limit = {
+					has_character = USA_mark_clark
+					USA_mark_clark = {
+						NOT = { has_trait = jungle_rat }
+					}
+				}
+				USA_mark_clark = {
 					add_trait = { trait = jungle_rat }
 				}
 			}

@@ -735,7 +735,7 @@ equipments = {
 
 		# Air vs Navy - high damage / medium hit chance / easy to hurt
 		naval_strike_attack = 18.75
-		naval_strike_targetting = 7.5
+		naval_strike_targetting = 12
 		surface_detection = 15 # For airwing of 100 planes (Destroyer I: 20 surface detection)
 		sub_detection = 10 # For airwing of 100 planes (Destroyer I: 5 sub detection )
 
@@ -766,7 +766,7 @@ equipments = {
 		air_attack = 10
 		air_defence = 14
 		naval_strike_attack = 25
-		naval_strike_targetting = 10
+		naval_strike_targetting = 17
 		surface_detection = 25 # For airwing of 100 planes (Destroyer I: 20 surface detection)
 		sub_detection = 15 # For airwing of 100 planes (Destroyer I: 5 sub detection )
 
@@ -797,7 +797,7 @@ equipments = {
 		air_attack = 14
 		air_defence = 16
 		naval_strike_attack = 31.25
-		naval_strike_targetting = 12.5
+		naval_strike_targetting = 22
 		surface_detection = 35 # For airwing of 100 planes (Destroyer I: 20 surface detection)
 		sub_detection = 18 # For airwing of 100 planes (Destroyer I: 5 sub detection )
 
@@ -853,7 +853,7 @@ equipments = {
 
 		# Air vs Navy - high damage / medium hit chance / easy to hurt
 		naval_strike_attack = 18.75
-		naval_strike_targetting = 7.5
+		naval_strike_targetting = 12
 		surface_detection = 20 # For airwing of 100 planes (Destroyer I: 20 surface detection)
 		sub_detection = 10 # For airwing of 100 planes (Destroyer I: 5 sub detection )
 
@@ -884,7 +884,7 @@ equipments = {
 		air_attack = 10
 		air_defence = 15
 		naval_strike_attack = 25
-		naval_strike_targetting = 10
+		naval_strike_targetting = 17
 		surface_detection = 25 # For airwing of 100 planes (Destroyer I: 20 surface detection)
 		sub_detection = 15 # For airwing of 100 planes (Destroyer I: 5 sub detection )
 		build_cost_ic = 66 # cv_version costs 20% more of base archetype
@@ -914,7 +914,7 @@ equipments = {
 		air_attack = 14
 		air_defence = 17
 		naval_strike_attack = 31.25
-		naval_strike_targetting = 12.5
+		naval_strike_targetting = 22
 		surface_detection = 35 # For airwing of 100 planes (Destroyer I: 20 surface detection)
 		sub_detection = 18 # For airwing of 100 planes (Destroyer I: 5 sub detection )
 		build_cost_ic = 70 # cv_version costs 20% more of base archetype

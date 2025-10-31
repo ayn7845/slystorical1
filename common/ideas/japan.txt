@@ -853,8 +853,8 @@ ideas = {
 			
 			modifier = {
 				# special_forces_cap = 0.05
-				naval_invasion_capacity = 30
-				naval_invasion_planning_bonus_speed = 0.7
+				naval_invasion_capacity = 10
+				naval_invasion_planning_bonus_speed = 0.30
 			}
 		}
 
@@ -1283,20 +1283,27 @@ ideas = {
 			picture = generic_navy_carrier_bonus
 			
 			modifier = {
-				port_strike = 1
-				carrier_capacity_penalty_reduction = -0.5
-				sortie_efficiency = 0.5
-				naval_strike_attack_factor = 0.12
-				naval_strike_targetting_factor = 0.12
-				naval_strike_agility_factor = 0.12
+				port_strike = 1.5
+				sortie_efficiency = 0.50
+				naval_strike_attack_factor = 0.25
+				naval_strike_targetting_factor = 0.25
+				naval_strike_agility_factor = 0.25
+				invasion_preparation = -0.5
+				amphibious_invasion = 0.50
+				naval_speed_factor = 0.2
+				naval_hit_chance = 0.1
+				naval_critical_score_chance_factor = 0.1
+				naval_damage_factor = 0.1
+				naval_defense_factor = 0.1
+				navy_anti_air_attack_factor = 0.1
+				experience_gain_navy_unit_factor = 0.33
 				army_defence_factor = 0.20
 			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.05
+			}
 			equipment_bonus = {
-				infantry_weapons = { 
-					hard_attack = 1
-					ap_attack = 1
-					breakthrough = 1
-				} 
 				cv_small_plane_airframe = {
 					air_range = 0.15 instant = yes
 				}

@@ -145,7 +145,7 @@ equipments = {
 
 		naval_range = 2500
 		reliability = 0.70
-		max_strength = 20
+		max_strength = 1
 		
 
 		
@@ -196,7 +196,7 @@ equipments = {
 		
 		naval_range = 3000
 		
-		max_strength = 30
+		max_strength = 2
 
 
 		
@@ -245,7 +245,7 @@ equipments = {
 
 		naval_range = 3500
 		
-		max_strength = 35
+		max_strength = 4
 		
 
 		

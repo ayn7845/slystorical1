@@ -772,7 +772,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_reorganize_the_pc_of_heavy_industry
-		cost = 10
+		cost = 5
 
 		available = {
 			any_owned_state = {

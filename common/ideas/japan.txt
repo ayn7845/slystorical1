@@ -1283,6 +1283,7 @@ ideas = {
 			picture = generic_navy_carrier_bonus
 			
 			modifier = {
+				custom_modifier_tooltip = JAP_tungsten_bullets_tt
 				port_strike = 1.5
 				sortie_efficiency = 0.50
 				naval_strike_attack_factor = 0.25

@@ -684,8 +684,9 @@ on_actions = {
 						type = annex_everything
 					}
 					add_timed_idea = { 
-						idea = JAP_tora_tora_tora_idea days = 120
+						idea = JAP_tora_tora_tora_idea days = 150
 					}
+					set_technology = { special_tungsten_bullets = 1 popup = no }
 				}
 			}
 			if = {

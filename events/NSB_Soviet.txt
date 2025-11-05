@@ -91,6 +91,7 @@ country_event = {
 		hidden_effect = {
 			every_character = {
 				limit = {
+					NOT = { is_character = SOV_nikolay_voznesensky }
 					is_character_slot = political_advisor
 					has_character_flag = SOV_targeted_for_purge_flag
 				}
@@ -374,6 +375,7 @@ country_event = {
 		hidden_effect = {
 			every_character = {
 				limit = {
+					NOT = { is_character = SOV_nikolay_voznesensky }
 					is_character_slot = political_advisor
 					has_character_flag = SOV_targeted_for_purge_flag
 				}

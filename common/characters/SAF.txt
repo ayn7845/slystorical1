@@ -28,19 +28,13 @@ characters={
 				large = "gfx/leaders/SAF/Portrait_SAF_Evered_Poole.png"
 			}
 		}
-		corps_commander = {
-			traits = {
-				armor_officer
-				trickster
-				career_officer
-				panzer_leader
-
-			}
+		field_marshal = {
+			traits={ brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter combined_arms_expert panzer_leader cavalry_leader organizer war_hero trickster }
 			skill = 4
-			attack_skill = 4
+			attack_skill = 3
 			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
 			legacy_id=-1
 		}
 	}
@@ -344,9 +338,9 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={  panzer_leader }
+			traits={ career_officer trait_cautious combined_arms_expert offensive_doctrine fortress_buster armor_officer cavalry_leader panzer_leader trait_engineer }
 			skill=5
-			attack_skill=5
+			attack_skill=4
 			defense_skill=4
 			planning_skill=4
 			logistics_skill=4

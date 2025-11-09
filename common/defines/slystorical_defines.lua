@@ -212,14 +212,22 @@ NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6;
 -- kill vanilla lol
 
 --- cope mod spirits(dopamine COMBAT)
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.15 --- modifier for divs speed under red air
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.10 --- modifier for divs speed under red air
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20.0 -- vanilla 10 Modifier for army manpower reinforcement delivery speed (travel time)
 NDefines.NMilitary.SOFT_ATTACK_TARGETING_FACTOR = 1.0		-- vanilla 1 -- How much we care about potential soft attacks when evaluating priority combat target
 NDefines.NMilitary.HARD_ATTACK_TARGETING_FACTOR = 1.2	--vanilla 1.2 --  How much we care about potential hard attacks when evaluating priority combat target
 NDefines.NMilitary.COMBAT_VALUE_ORG_IMPORTANCE = 0 		-- VANILLA 1 - changed to force tanks into battle first (most of the time) |  Multiplier on TotalOrganisation when determining the combat value of a division
 NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0 		-- VANILLA 1  - changed to force tanks into battle first (most of the time) |  Multiplier on TotalStrength when determining the combat value of a division
 NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.4 -- vanilla 0.25
-NDefines.NTechnology.MAX_SUBTECHS = 4 
+NDefines.NTechnology.MAX_SUBTECHS = 4
+NDefines.NMilitary.RELIABILTY_RECOVERY = 0
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.034   -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
+NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.041 -- was 0.027 -- vanilla 0.053
+NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FORT_FACTOR = 0.003		-- Factor to scale collateral damage to forts with.
+NDefines.NMilitary.LAND_COMBAT_COLLATERAL_INFRA_FACTOR = 0.002	-- Factor to scale collateral damage to infra with.
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.025    -- air global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.018    -- global damage modifier
+NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.56 -- vanilla 0.70,
 
 -- FUWG/TFB style converts
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 

@@ -334,14 +334,14 @@ ENG_propaganda_campaigns = {
 		complete_effect = {
 			set_variable = { ENG_new_propaganda_campaign = 10 }
 			ENG_pick_propaganda_campaign_slot_effect = yes
-			add_ideas = ROM_local_development
+			add_ideas = ENG_fighter_idea
 		}
 
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 10 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
 			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
-			remove_ideas = ROM_local_development
+			remove_ideas = ENG_fighter_idea
 		}
 	}
 	

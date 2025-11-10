@@ -180,6 +180,67 @@ characters={
 		}
 	}
 
+	FRA_louis_koeltz ={
+		name = "Louis Koeltz"
+		portraits={
+			army={
+				large= GFX_portrait_koeltz
+				small= GFX_portrait_koeltz_small
+			}
+		}
+		advisor = {
+			visible = { 
+				has_completed_focus = FRA_continue_the_fight2
+			}
+			slot = high_command
+			idea_token = FRA_louis_koeltz
+			traits = { army_CombinedArms_2 }
+		}
+
+		field_marshal ={
+			visible = { 
+				has_completed_focus = FRA_continue_the_fight2
+			}
+			traits={ combined_arms_expert }
+			skill=4
+			attack_skill= 3
+			defense_skill= 3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+	FRA_henry_martin ={
+		name = "Henry Martin"
+		portraits={
+			army={
+				large= GFX_portrait_martin
+				small= GFX_portrait_martin_small
+			}
+		}
+		advisor = {
+			visible = { 
+				has_completed_focus = FRA_continue_the_fight2
+			}
+			slot = high_command
+			idea_token = FRA_henry_martin
+			traits = { army_armored_2 }
+		}
+
+		field_marshal ={
+			visible = { 
+				has_completed_focus = FRA_continue_the_fight2
+			}
+			traits={ panzer_leader }
+			skill=4
+			attack_skill= 3
+			defense_skill= 3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
 	FRA_maurice_gamelin={
 		name=FRA_maurice_gamelin
 		portraits={

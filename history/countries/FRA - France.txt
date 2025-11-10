@@ -482,6 +482,8 @@ recruit_character = FRA_emile_rimailho
 recruit_character = FRA_eugene_schneider_ii
 recruit_character = FRA_henri_edmond_fouche
 recruit_character = FRA_joseph_bethenod
+recruit_character = FRA_henry_martin
+recruit_character = FRA_louis_koeltz
 
 
 if = {

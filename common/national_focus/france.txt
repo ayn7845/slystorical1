@@ -4113,7 +4113,10 @@ focus = {
 			factor = 1
 		}
 		available = {
-			NOT = { country_exists = EFR }	
+			AND ={
+				NOT = { country_exists = EFR }
+				date > 1941.6.1	
+			}
 		}
 		
 		bypass = {
@@ -4124,25 +4127,28 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-			add_manpower = 22000
 			set_nationality = {
     				target_country = FRA
     				character = FRA_henri_giraud
 			}
-			set_nationality = {
-    				target_country = FRA
-    				character = FRA_alphonse_juin
+			effect_tooltip = {
+				custom_effect_tooltip = available_chief_of_army
+				show_ideas_tooltip = FRA_louis_koeltz
+				create_corps_commander = {
+					name = "Louis Koeltz"
+					GFX = GFX_portrait_koeltz
+					skill = 2
+					traits = {  }
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 1
+				}
 			}
-			create_corps_commander = {
-				name = "Louis Koeltz"
-				GFX = GFX_portrait_koeltz
-				skill = 2
-				traits = {  }
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 1
-			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			effect_tooltip = {
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = FRA_henry_martin
 			create_corps_commander = {
 				name = "Henry Martin"
 				GFX = GFX_portrait_martin
@@ -4152,10 +4158,17 @@ focus = {
 				defense_skill = 2
 				planning_skill = 1
 				logistics_skill = 2
+				}
 			}
+			hidden_effect = {
+			add_manpower = 22000
 			set_nationality = {
     				target_country = FRA
     				character = FRA_jean_de_lattre_de_tassigny
+			}
+			set_nationality = {
+    				target_country = FRA
+    				character = FRA_alphonse_juin
 			}
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = FRA_alphonse_juin
@@ -4167,6 +4180,7 @@ focus = {
 			effect_tooltip = {
 				create_corps_commander = {
 					name = "Jean de Lattre de Tassigny"
+					}
 				}
 			}
 		}

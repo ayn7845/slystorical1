@@ -91,7 +91,7 @@ equipments = {
 
 		fuel_consumption = 1
 		
-		build_cost_ic = 320
+		build_cost_ic = 960
 		resources = {
 			#oil = 1
 			steel = 1
@@ -149,7 +149,7 @@ equipments = {
 		
 
 		
-		build_cost_ic = 350
+		build_cost_ic = 1000
 		resources = {
 			#oil = 1
 			steel = 2
@@ -200,7 +200,7 @@ equipments = {
 
 
 		
-		build_cost_ic = 420
+		build_cost_ic = 1100
 		resources = {
 			steel = 2
 		}
@@ -249,7 +249,7 @@ equipments = {
 		
 
 		
-		build_cost_ic = 550
+		build_cost_ic = 1300
 		resources = {
 			steel = 3
 			chromium = 1
@@ -310,7 +310,7 @@ equipments = {
 
 
 		
-		build_cost_ic = 490
+		build_cost_ic = 700
 		resources = {
 			steel = 2
 		}
@@ -403,7 +403,7 @@ equipments = {
 		manpower = 100
 
 		
-		build_cost_ic = 150
+		build_cost_ic = 600
 		resources = {
 			steel = 1
 		}
@@ -474,7 +474,7 @@ equipments = {
 
 
 		
-		build_cost_ic = 1150
+		build_cost_ic = 1440
 		resources = {
 			steel = 3
 			chromium = 2

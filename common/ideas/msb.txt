@@ -58,7 +58,7 @@ ideas = {
 			removal_cost = -1
 			picture = RAJ_partition_india_united
 			modifier = {
-				forced_surrender_limit = -0.12
+				forced_surrender_limit = -0.05
 			}
 		}
 	}

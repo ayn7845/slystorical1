@@ -4132,7 +4132,7 @@ focus = {
     				character = FRA_henri_giraud
 			}
 			effect_tooltip = {
-				custom_effect_tooltip = available_chief_of_army
+				custom_effect_tooltip = available_military_high_command
 				show_ideas_tooltip = FRA_louis_koeltz
 				create_corps_commander = {
 					name = "Louis Koeltz"
@@ -4147,7 +4147,7 @@ focus = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			effect_tooltip = {
-			custom_effect_tooltip = available_chief_of_army
+			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = FRA_henry_martin
 			create_corps_commander = {
 				name = "Henry Martin"

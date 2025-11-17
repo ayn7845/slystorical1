@@ -3397,7 +3397,7 @@ technologies = {
 				add = yes
 			}
 		}
-		land_reinforce_rate = 0.05
+		land_reinforce_rate = 0.10
 		#land_reinforce_rate = 0.15		
 		
 		path = {

@@ -1078,7 +1078,7 @@ tactic_sf_armor_supported_assault = { #Assault using specialist armoured vehicle
 	picture = tactic_sf_armor_supported_assault
 	
 	attacker = 0.15
-	combat_width = -0.1
+	#combat_width = -0.1 
 	defender_org_damage_modifier = -0.1
 }
 

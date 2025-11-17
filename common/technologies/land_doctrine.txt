@@ -3397,8 +3397,8 @@ technologies = {
 				add = yes
 			}
 		}
-
-		land_reinforce_rate = 0.15		
+		land_reinforce_rate = 0.05
+		#land_reinforce_rate = 0.15		
 		
 		path = {
 			leads_to_tech = guerilla_warfare

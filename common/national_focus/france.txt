@@ -4160,6 +4160,29 @@ focus = {
 				logistics_skill = 2
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_character = FRA_jean_de_lattre_de_tassigny
+					FRA_jean_de_lattre_de_tassigny = {
+						NOT = { has_trait = ranger }
+					}
+				}
+				FRA_jean_de_lattre_de_tassigny = {
+					add_trait = { trait = ranger }
+				}
+			}
+			if = {
+				limit = {
+					has_character = FRA_alphonse_juin
+					FRA_alphonse_juin = {
+						NOT = { has_trait = ranger }
+					}
+				}
+				FRA_alphonse_juin = {
+					add_trait = { trait = ranger }
+				}
+			}
 			hidden_effect = {
 			add_manpower = 22000
 			set_nationality = {

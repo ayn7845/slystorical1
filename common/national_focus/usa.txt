@@ -2401,7 +2401,7 @@ focus_tree = {
 		completion_reward = {
 				add_timed_idea = {
 						idea = USA_overlord
-						days = 90
+						days = 365
 				}
 			}
 		}

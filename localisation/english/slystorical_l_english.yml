@@ -151,7 +151,10 @@ italian_arms_discount:0 "Bresica Small Arms Industry"
 greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YMatrouh§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"
 mare_nostrum_required_other_states:0 "Italy or a subject of Italy control \n§YMatrouh§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§! \n§YCyprus§! \n§YGibraltar§! \n§YSuez§!"
 ITA_mare_nostrum_achieved:0 "Roman Ambitions Achieved"
-
+ITA_production_lines_military_industry_dm_tt_sly:0 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: §G+5.00%§! \n\n"
+ITA_il_sol_dell_avvenire_military_industry_dm_tt_sly:0 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$: §G+15.00%§! \n\n"
+ITA_increase_production_military_industry_tt_sly:2 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR$: §G+20.00%§! \n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: §R-4.00%§! \n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: §G+10.00%§! \n\n"
+ITA_economic_reforms_ricostruzione_industriale_tt_sly:0 "$ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro$ \n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-2.5%§! \n$modifier_production_speed_arms_factory_factor$: §G+5.00%§! \n$modifier_production_speed_industrial_complex_factor$: §G+5.00%§! \n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: §G+10.00%§! \n\n"
 # SOV
 SOV_collectivized_society:0 "Collectivized Society"
 stalin_they_will_know_fear:0 "They will know Fear"

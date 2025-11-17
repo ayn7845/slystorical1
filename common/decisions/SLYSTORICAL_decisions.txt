@@ -113,7 +113,8 @@ operations = {
 						is_core_of = BUL 
 						is_controlled_by = ITA
 					}
-					add_compliance = 100
+				add_core_of = ITA
+					#add_compliance = 100
 				}
 			}
 		}

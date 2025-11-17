@@ -2296,9 +2296,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
-			add_to_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = 0.05 }
-			custom_effect_tooltip = ITA_il_sol_dell_avvenire_military_industry_dm_tt
+			#add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
+			add_to_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = 0.15 }
+			custom_effect_tooltip = ITA_il_sol_dell_avvenire_military_industry_dm_tt_sly
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
@@ -2615,7 +2615,7 @@ focus_tree = {
 		relative_position_id = ITA_fiocchi_munizioni
 		cost = 5
 		available = {
-			is_special_project_completed = sp:sp_air_radar
+			#is_special_project_completed = sp:sp_air_radar
 			has_full_control_of_state = 159
 		}
 
@@ -2732,11 +2732,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.05 }
-			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
+			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.10 }
+			#add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
 			add_to_variable = { ITA_military_industry_dm_line_change_production_efficiency_factor = 0.2 }
 			add_to_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = -0.04 }
-			custom_effect_tooltip = ITA_increase_production_military_industry_tt
+			custom_effect_tooltip = ITA_increase_production_military_industry_tt_sly
 
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
@@ -10997,7 +10997,14 @@ focus_tree = {
 			add_to_variable = { ITA_iri_consumer_goods_factor = -0.05 }
 			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
 			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.05 }
-			custom_effect_tooltip = ITA_economic_reforms_ricostruzione_industriale_tt
+			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.10 }
+			custom_effect_tooltip = ITA_economic_reforms_ricostruzione_industriale_tt_sly
+			add_tech_bonus = {
+				name = ITA_economic_reforms
+				bonus = 1
+				uses = 1
+				technology = advanced_machine_tools
+			}
 		}
 	}
 
@@ -11073,7 +11080,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_improve_the_industries
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -11081,8 +11088,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = 0.05 }
-			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.1 }
-			custom_effect_tooltip = ITA_production_lines_military_industry_dm_tt
+			#add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.1 }
+			custom_effect_tooltip = ITA_production_lines_military_industry_dm_tt_sly
 
 			custom_effect_tooltip = ITA_production_lines_factories_tt
 			hidden_effect = {

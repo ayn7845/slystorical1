@@ -96,7 +96,7 @@ ENG_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			air_home_defence_factor = 0.25
+			#air_home_defence_factor = 0.25
 			army_core_attack_factor = 0.2
 			army_core_defence_factor = 0.2
 			minimum_training_level = -0.2
@@ -164,7 +164,7 @@ ENG_propaganda_campaigns = {
 
 		available = {
 			ENG_propaganda_poster_slot_available = yes
-			has_completed_focus = air_rearmament_focus
+			date > 1942.1.1
 			has_war = yes
 		}
 

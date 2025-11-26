@@ -55,6 +55,7 @@ ideas = {
 			modifier={
 				production_lack_of_resource_penalty_factor = -1
 				min_export = -1
+				resource_trade_cost_bonus_per_factory = -20
 			}
 		}
 		WAR_join = {

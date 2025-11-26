@@ -96,7 +96,7 @@ ENG_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			air_home_defence_factor = 0.25
+			air_home_defence_factor = 0.05
 			army_core_attack_factor = 0.2
 			army_core_defence_factor = 0.2
 			minimum_training_level = -0.2
@@ -176,7 +176,7 @@ ENG_propaganda_campaigns = {
 
 		modifier = {
 			air_intercept_efficiency = 0.05
-			air_mission_efficiency = 0.1
+			#air_mission_efficiency = 0.1
 		}
 
 		complete_effect = {

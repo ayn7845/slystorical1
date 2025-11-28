@@ -7262,7 +7262,7 @@ BUL_foreign_agreements = {
 		
 		modifier = {
 			political_power_factor = -0.15
-			consumer_goods_factor = 0.50
+			consumer_goods_expected_value = 0.20
 		}
 		
 		complete_effect = {
@@ -7392,7 +7392,7 @@ BUL_foreign_agreements = {
 		
 		modifier = {
 			political_power_factor = -0.15
-			consumer_goods_factor = 0.50
+			consumer_goods_expected_value = 0.20
 		}
 		
 		complete_effect = {
@@ -7510,7 +7510,7 @@ BUL_foreign_agreements = {
 		
 		modifier = {
 			political_power_factor = -0.15
-			consumer_goods_factor = 0.50
+			consumer_goods_expected_value = 0.20
 		}
 		
 		complete_effect = {
@@ -8656,7 +8656,7 @@ BUL_the_balkan_federation_dream = {
 		days_remove = 90
 
 		modifier = {
-			consumer_goods_factor = 0.10
+			consumer_goods_expected_value = 0.02
 		}
 		
 		complete_effect = {
@@ -9982,7 +9982,7 @@ BUL_balkan_confederation = {
 		days_remove = 120	
 
 		modifier = {
-			consumer_goods_factor = 0.10
+			consumer_goods_expected_value = 0.02
 		}
 		
 		complete_effect = {

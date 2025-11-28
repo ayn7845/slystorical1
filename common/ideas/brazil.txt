@@ -17,7 +17,7 @@ ideas = {
 			
 			modifier = {
 
-				consumer_goods_factor = -0.075
+				consumer_goods_expected_value = -0.02
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				
@@ -402,7 +402,7 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.1
 				stability_factor = -0.1
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.02
 				drift_defence_factor = 0.1
 			}
 		}
@@ -420,7 +420,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.05
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.02
 				production_speed_buildings_factor = 0.15
 				industrial_capacity_factory = 0.1
 			}
@@ -439,7 +439,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.05
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.02
 				#political_power_factor = -0.05
 			}
 		}
@@ -510,7 +510,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.02
 				industrial_capacity_factory = 0.1
 				communism_drift = 0.01
 
@@ -692,7 +692,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.025
+				consumer_goods_expected_value = 0.01
 				production_speed_arms_factory_factor = 0.05
 			}
 		}
@@ -708,7 +708,7 @@ ideas = {
 			}
 
 			modifier = {
-				#consumer_goods_factor = 0.05
+				#consumer_goods_expected_value = 0.02
 				production_speed_dockyard_factor = 0.1
 			}
 		}	
@@ -724,7 +724,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.02
 				research_speed_factor = 0.05
 			}
 		}
@@ -892,7 +892,7 @@ ideas = {
 			picture =  generic_goods_red_bonus
 
 			modifier = { #REMEMBER TO UPDATE REARMING 
-				consumer_goods_factor = -0.10
+				consumer_goods_expected_value = -0.02
 				war_support_factor = 0.2
 			}
 		}
@@ -907,7 +907,7 @@ ideas = {
 			}
 			allowed_civil_war = { always = yes }
 			modifier = {
-				consumer_goods_factor = 0.06
+				consumer_goods_expected_value = 0.02
 				line_change_production_efficiency_factor = 0.1
 				war_stability_factor = 0.15
 			}
@@ -1282,7 +1282,7 @@ ideas = {
 			}
 			traits = { central_bank } 
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.02
 			}
 		}
 

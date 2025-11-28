@@ -56,7 +56,7 @@ set_variable = { IRE_scars_of_The_Potato_Famine_production_speed_arms_factory_fa
 set_variable = { IRE_scars_of_The_Potato_Famine_army_org_factor = -0.15 }
 set_variable = { IRE_scars_of_The_Potato_Famine_conscription_factor = -0.15 }
 	
-set_variable = { IRE_economic_downturn_consumer_goods_factor = 0.30 }
+set_variable = { IRE_economic_downturn_consumer_goods_expected_value = 0.10 }
 set_variable = { IRE_economic_downturn_industrial_capacity_factory = -0.25 }
 
 set_variable = { IRE_Autonomous_Dominion_political_power_factor = -0.5 }

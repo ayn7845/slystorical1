@@ -556,7 +556,6 @@ GER_recovering_economy_modifier = { #Recovering Economy NS #Aufrüstung and Reco
 	production_factory_start_efficiency_factor = GER_industrial_production_factory_start_efficiency_factor
 	line_change_production_efficiency_factor = GER_industrial_line_change_production_efficiency_factor
 	equipment_conversion_speed = GER_industrial_equipment_conversion_speed
-	consumer_goods_expected_value = GER_industrial_consumer_goods_expected_value
 }
 
 GER_wirtschaftswunder_modifier = { #Wirtschaftswunder NS #Aufrüstung and Recovering Economy/Wirtschaftswunder uses the same modifiers so that you can switch from Aufrüstung to Recovering Economy and keep the modifiers
@@ -587,7 +586,6 @@ GER_wirtschaftswunder_modifier = { #Wirtschaftswunder NS #Aufrüstung and Recove
 	production_factory_start_efficiency_factor = GER_industrial_production_factory_start_efficiency_factor
 	line_change_production_efficiency_factor = GER_industrial_line_change_production_efficiency_factor
 	equipment_conversion_speed = GER_industrial_equipment_conversion_speed
-	consumer_goods_expected_value = GER_industrial_consumer_goods_expected_value
 }
 
 #REMINDER to always update the fake NS if these numbers are altered!

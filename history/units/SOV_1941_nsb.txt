@@ -425,10 +425,10 @@ units = {
 
 	#FYP NS
 	add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }
-	add_to_variable = { SOV_fyp_consumer_goods_expected_value = 0.02 }
+	add_to_variable = { SOV_fyp_consumer_goods_factor = 0.10 }
 	remove_dynamic_modifier = { modifier = SOV_second_five_year_plan_dynamic_modifier }
 	add_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier }
-	add_to_variable = { SOV_fyp_consumer_goods_expected_value = -0.02 }
+	add_to_variable = { SOV_fyp_consumer_goods_factor = -0.05 }
 	add_to_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 }
 	add_to_variable = { SOV_fyp_line_change_production_efficiency_factor = 0.1 }
 	#DEFENSE INDUSTRY NS

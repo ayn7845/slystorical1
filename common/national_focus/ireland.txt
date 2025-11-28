@@ -806,7 +806,7 @@ focus_tree = {
 			custom_effect_tooltip = CHL_skip_one_line_tt
 			custom_effect_tooltip = IRE_economic_downturn
 			add_to_variable = { 
-				IRE_economic_downturn_consumer_goods_expected_value = -0.02
+				IRE_economic_downturn_consumer_goods_factor = -0.05
 				tooltip = consumer_goods_factor_tt
 			}
 			add_to_variable = { 
@@ -834,7 +834,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = IRE_economic_downturn
 			add_to_variable = { 
-				IRE_economic_downturn_consumer_goods_expected_value = -0.02
+				IRE_economic_downturn_consumer_goods_factor = -0.05
 				tooltip = consumer_goods_factor_tt
 			}
 		}
@@ -895,7 +895,7 @@ focus_tree = {
 			custom_effect_tooltip = CHL_skip_one_line_tt
 			custom_effect_tooltip = IRE_economic_downturn
 			add_to_variable = { 
-				IRE_economic_downturn_consumer_goods_expected_value = -0.02
+				IRE_economic_downturn_consumer_goods_factor = -0.05
 				tooltip = consumer_goods_factor_tt
 			}
 			add_to_variable = { 
@@ -1007,7 +1007,7 @@ focus_tree = {
 			custom_effect_tooltip = CHL_skip_one_line_tt
 			custom_effect_tooltip = IRE_economic_downturn
 			add_to_variable = { 
-				IRE_economic_downturn_consumer_goods_expected_value = -0.02
+				IRE_economic_downturn_consumer_goods_factor = -0.05
 				tooltip = consumer_goods_factor_tt
 			}
 			add_to_variable = { 

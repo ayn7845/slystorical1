@@ -500,7 +500,7 @@ ideas = {
 			picture = ger_rebuild_the_nation
 
 			modifier = {
-				consumer_goods_factor = -0.50
+				consumer_goods_expected_value = -0.20
 			}
 		}
 
@@ -644,7 +644,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 			}
 		}
 
@@ -663,7 +663,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.02
 				production_speed_infrastructure_factor = 0.1
 				production_speed_rail_way_factor = 0.1
 				production_speed_fuel_silo_factor = 0.1
@@ -769,7 +769,7 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.02
 				industrial_capacity_dockyard = -0.20
 			}
 		}
@@ -798,7 +798,7 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.02
 				industrial_capacity_dockyard = -0.1
 			}
 		}
@@ -1005,7 +1005,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.02
 				min_export = 0.05
 			}
 		}
@@ -1028,7 +1028,7 @@ ideas = {
 			picture = HUN_treaty_of_triannon
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 			}
 		}
 
@@ -1050,7 +1050,7 @@ ideas = {
 			picture = HUN_treaty_of_triannon
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 				compliance_growth = 0.02
 			}
 		}
@@ -1082,7 +1082,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.05
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				min_export = 0.15
@@ -1359,7 +1359,7 @@ ideas = {
 			picture = EST_exploit_the_banks
 
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.02
 			}
 		}
 
@@ -1922,7 +1922,7 @@ ideas = {
 				#		has_dynamic_modifier = { modifier = GER_wirtschaftswunder_modifier }
 				#	}
 				#	set_variable = { #These numbers must match the once set in the event to stop the #mefo bills
-				#		GER_industrial_consumer_goods_factor = 0.1
+				#		GER_industrial_consumer_goods_expected_value = 0.02
 				#	}
 				#}
 				if = {
@@ -1936,7 +1936,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.40
+				consumer_goods_expected_value = 0.15
 			}
 		}
 
@@ -2055,7 +2055,7 @@ ideas = {
 				research_speed_factor = 0.1
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 				local_resources_factor = 0.10
 			}
 		}
@@ -2725,7 +2725,7 @@ ideas = {
 
 			modifier = {
 				industry_repair_factor = 0.25
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.02
 			}
 		}
 
@@ -2892,7 +2892,7 @@ ideas = {
 			picture = ARG_civilian_economy_boost
 
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.02
 			}
 		}
 
@@ -2910,7 +2910,7 @@ ideas = {
 			picture = EST_ismaaliit
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.02
 			}
 		}
 
@@ -2928,7 +2928,7 @@ ideas = {
 			picture = LAT_saeimas
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.02
 			}
 		}
 
@@ -2946,7 +2946,7 @@ ideas = {
 			picture = LIT_victory_in_trust
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.02
 			}
 		}
 
@@ -2974,7 +2974,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.02
 			}
 
 			targeted_modifier = {
@@ -3023,7 +3023,7 @@ ideas = {
 			picture = tur_balkan_central_bank_wealthy_greece
 
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.02
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 			}
@@ -3044,7 +3044,7 @@ ideas = {
 			picture = EST_exploit_the_banks
 
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.02
 			}
 		}
 
@@ -4031,7 +4031,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.02
 				cic_to_overlord_factor = 0.25
 				mic_to_overlord_factor = 0.25
 			}

@@ -1779,7 +1779,7 @@ focus_tree = {
 				}
 				custom_effect_tooltip = BRA_modify_estado_novo_ns_intro
 				add_to_variable = {
-					BRA_estado_novo_consumer_goods_factor = 0.05
+					BRA_estado_novo_consumer_goods_expected_value = 0.02
 					tooltip = consumer_goods_factor_tt
 				}
 				add_to_variable = {
@@ -1799,7 +1799,7 @@ focus_tree = {
 				}
 				custom_effect_tooltip = BRA_modify_estado_moderno_ns_intro
 				add_to_variable = {
-					BRA_estado_moderno_consumer_goods_factor = -0.05
+					BRA_estado_moderno_consumer_goods_expected_value = -0.02
 					tooltip = consumer_goods_factor_tt
 				}
 				add_to_variable = {
@@ -1816,7 +1816,7 @@ focus_tree = {
 				custom_effect_tooltip = BRA_consolidation_of_labor_laws_fallback_tt
 				effect_tooltip = {
 					add_to_variable = {
-						BRA_estado_moderno_consumer_goods_factor = -0.05
+						BRA_estado_moderno_consumer_goods_expected_value = -0.02
 						tooltip = consumer_goods_factor_tt
 					}
 					add_to_variable = {

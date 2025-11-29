@@ -7120,7 +7120,7 @@ focus = {
 	completion_reward = {
 		custom_effect_tooltip = RAJ_modify_a_loyal_government_tt
 		add_to_variable = { RAJ_a_loyal_government_political_power_factor = 0.1	tooltip = political_power_factor_tt }
-		add_to_variable = { RAJ_a_loyal_government_consumer_goods_factor = -0.1	tooltip = consumer_goods_factor_tt }
+		add_to_variable = { RAJ_a_loyal_government_consumer_goods_expected_value = -0.02	tooltip = consumer_goods_factor_tt }
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 		every_core_state = {

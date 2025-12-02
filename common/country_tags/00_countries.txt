@@ -45,9 +45,6 @@ PHI = "countries/Philipines.txt"
 VEN = "countries/Venezula.txt"
 EFR = "countries/Vichy France.txt"
 
-MON = "countries/Mongolia.txt"
-TAN = "countries/Tannu Tuva.txt"
-TUR = "countries/Turkey.txt"
 
 
 # REICHSKOMMISSARIATS (no cores) (European)

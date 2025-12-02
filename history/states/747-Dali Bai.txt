@@ -8,31 +8,26 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
-		owner = CHI
-		
+				# No Asia + Scraping
+		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1936.1.1.14 = { owner = WST add_core_of = WST }
+
+        owner = CHI
+
+       # Less Minors
+		1936.1.1.15 = { owner = CHI add_core_of = CHI }
 		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = CHI
+		
 		victory_points = {
 			7965 3 
 		}
 		buildings = {
 			infrastructure = 2
 		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-
-			}
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 
 	}

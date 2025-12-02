@@ -14,12 +14,16 @@ state=
 			5068 1
 		}
 		owner = ENG
-		add_core_of = SOM
+		add_core_of = WST
 		buildings = {
 			infrastructure = 2
 			10833 = {
 				naval_base = 1
 			}
+		}
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 	provinces={

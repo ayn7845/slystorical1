@@ -7,7 +7,7 @@ state={
 
 	history={
 		owner = HOL
-		add_core_of = INS
+		add_core_of = WST
 		buildings = {
 			infrastructure = 2
 			1355 = {
@@ -24,7 +24,10 @@ state={
 			}
 
 		}
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={

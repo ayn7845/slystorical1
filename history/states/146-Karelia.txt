@@ -6,9 +6,14 @@ state={
 	state_category = town
 
 	history={
-		owner = FIN
+		# Less Minors + Scraping
+		1936.1.1.15 = { owner = GER add_core_of = GER }
+		1936.1.1.14 = { owner = GER add_core_of = GER }
+
+        owner = FIN
+
 		add_core_of = FIN
-		
+		add_core_of = WST
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
@@ -26,6 +31,10 @@ state={
 		}
 		victory_points = { #Viipuri
 			9206 3 
+		}
+		1941.1.1 = {
+		owner = SOV
+		add_core_of = SOV
 		}
 		
 

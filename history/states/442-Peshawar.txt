@@ -17,9 +17,11 @@ state={
 			infrastructure = 1
 			air_base = 1
 		}
-		add_core_of = NWF
-		add_core_of = PAK
-		add_core_of = KHL
+		add_core_of = TUM
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={

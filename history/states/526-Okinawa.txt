@@ -1,31 +1,44 @@
-state = {
-	id = 526
+
+state={
+	id=526
 	name="STATE_526"
 	manpower = 578000
-
-	resources = {
-		coal = 4 # Represents the Iriomote and Utara coal mines (and quite a few more)
-	}
 	
 	state_category = small_island
 
-	history = {
+	history={
+		# No Asia + Scraping
+		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1936.1.1.14 = { owner = WST add_core_of = WST }
 
-		owner = JAP
+        owner = JAP
+
+       # Less Minors
+		1936.1.1.15 = { owner = JAP add_core_of = JAP }
+
 		add_core_of = JAP
-		
-
 		buildings = {
 			infrastructure = 2
 			air_base = 3
+			anti_air_building = 2
 			11932 = {
 				naval_base = 3
+				coastal_bunker = 2
+				bunker = 2
+			}
+			10124 = {
+				coastal_bunker = 2
+			}
+			1123 = {
+				coastal_bunker = 2
+			}
+			7115 = {
+				coastal_bunker = 2
 			}
 
 		}
-
 		victory_points = {
-			11932 10 # Naha
+			11932 10 
 		}
 		strategic_province_location = {
 		 	defensible_coastline = 11932
@@ -43,16 +56,15 @@ state = {
 		strategic_province_location = {
 			defensive_chokepoint = 11932
 		}
-		
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
-
-
-
-	provinces = {
+	provinces={
 		1123 7115 10124 11932 
 	}
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

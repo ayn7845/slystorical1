@@ -13,10 +13,16 @@ state = {
 		owner = ITA
 		buildings = {
 			infrastructure = 2 #was 3 before split
+			arms_factory = 1
+			industrial_complex = 1
 		}
 		add_core_of = ITA
 		add_core_of = WST
 		add_claim_by = AUS
+			1941.1.1 = {
+		owner = GER
+		add_core_of = GER
+		}
 	}
 
 	provinces = {

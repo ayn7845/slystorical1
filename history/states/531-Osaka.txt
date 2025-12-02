@@ -2,24 +2,34 @@
 state = {
 	id = 531
 	name = "STATE_531" # Kansai
-	manpower = 12015000 # was 11015000
-	state_category = metropolis
+	manpower = 11015000
+	state_category = megalopolis
 	resources = {
 		aluminium = 3 # was: 6
 	}
 
 	history = {
 
-		owner = JAP
-		add_core_of = JAP
+		# No Asia + Scraping
+		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1936.1.1.14 = { owner = WST add_core_of = WST }
 
+	
+
+        owner = JAP
+
+       # Less Minors
+		1936.1.1.15 = { owner = JAP add_core_of = JAP }
+
+		add_core_of = JAP
+		add_extra_state_shared_building_slots = 17
 		buildings = {
 			infrastructure = 4 #was: 8
 			arms_factory = 2
 			industrial_complex = 4
 			dockyard = 2
 			1136 = {
-				naval_base = 6
+				naval_base = 10
 			}
 			7072 = {
 				naval_base = 3
@@ -35,15 +45,9 @@ state = {
 			11960 20 # Kyoto
 		}
 
-		victory_points = {
-			1136 1 # Maizuru
-		}
-
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-				industrial_complex = 5
-			}
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 
 	}

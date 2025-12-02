@@ -10,10 +10,13 @@ state = {
 		victory_points = {
 			9793 1
 		}
+		resources={
+		steel=40
+	}
 
 		owner = SPR
 		add_core_of = SPR
-		add_claim_by = CAT
+		add_claim_by = WST
 
 		buildings = {
 			infrastructure = 3 #was: 6
@@ -25,7 +28,10 @@ state = {
 				naval_base = 1
 			}
 		}
-		
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 	
 	provinces = { 7114 9793 9845 }

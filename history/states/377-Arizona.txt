@@ -9,11 +9,18 @@ state={
 	resources={
 		steel=20 # was: 40
 		oil=5 # was: 10
-		aluminium=8 # was: 16
+		aluminium=36 # was: 16
 	}
 
 	history={
-		owner = USA
+		# No Asia + Scraping
+		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1936.1.1.14 = { owner = WST add_core_of = WST }
+
+		# Less Minors
+		1936.1.1.15 = { owner = USA add_core_of = USA }
+
+        owner = USA
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -23,7 +30,10 @@ state={
 		victory_points = {
 			853 3 
 		}
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={

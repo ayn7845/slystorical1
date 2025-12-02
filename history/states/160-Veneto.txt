@@ -23,7 +23,7 @@ state = {
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 2
-			industrial_complex = 4
+			industrial_complex = 1
 			dockyard = 1
 			air_base = 3
 			11584 = {
@@ -32,11 +32,9 @@ state = {
 		}
 		add_core_of = ITA
 		add_core_of = WST
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-				industrial_complex = 5
-			}
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 
 	}

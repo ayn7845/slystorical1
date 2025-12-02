@@ -2,30 +2,27 @@ state=
 {
 	id=318
 	name="STATE_318"
-	manpower = 2380000
+	manpower = 1
 	
 	state_category = town
-	
-	resources={
-		chromium=2 # was: 3
-	}
+
 	history=
 	{
-		owner = WST
+		# No Asia + Scraping
+		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1936.1.1.14 = { owner = WST add_core_of = WST }
+
+        # Less Minors
+		1936.1.1.15 = { owner = USA add_core_of = USA }
+
+        owner = WST
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2 
-			air_base = 1
-			4641 = {
-				naval_base = 3
-			}
 		}
 		add_core_of = WST
-		victory_points = {
-			4641 5 
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
-
 	}
 	provinces={
 		1594 1635 4641

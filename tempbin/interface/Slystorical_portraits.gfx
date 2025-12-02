@@ -1,0 +1,10 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_francisco_franco_generalissimo"
+		texturefile = "gfx/leaders/SPR/francisco_franco_generalissimo.dds"
+	}
+	spriteType = {
+		name = "Portrait_Ethiopia_Haile_Selassie2"
+		texturefile = "gfx/leaders/ETH/Portrait_Ethiopia_Haile_Selassie2.dds"
+	}
+}

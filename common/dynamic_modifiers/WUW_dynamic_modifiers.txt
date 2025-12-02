@@ -556,7 +556,6 @@ GER_recovering_economy_modifier = { #Recovering Economy NS #Aufrüstung and Reco
 	production_factory_start_efficiency_factor = GER_industrial_production_factory_start_efficiency_factor
 	line_change_production_efficiency_factor = GER_industrial_line_change_production_efficiency_factor
 	equipment_conversion_speed = GER_industrial_equipment_conversion_speed
-	consumer_goods_expected_value = GER_industrial_consumer_goods_expected_value
 }
 
 GER_wirtschaftswunder_modifier = { #Wirtschaftswunder NS #Aufrüstung and Recovering Economy/Wirtschaftswunder uses the same modifiers so that you can switch from Aufrüstung to Recovering Economy and keep the modifiers
@@ -587,7 +586,6 @@ GER_wirtschaftswunder_modifier = { #Wirtschaftswunder NS #Aufrüstung and Recove
 	production_factory_start_efficiency_factor = GER_industrial_production_factory_start_efficiency_factor
 	line_change_production_efficiency_factor = GER_industrial_line_change_production_efficiency_factor
 	equipment_conversion_speed = GER_industrial_equipment_conversion_speed
-	consumer_goods_expected_value = GER_industrial_consumer_goods_expected_value
 }
 
 #REMINDER to always update the fake NS if these numbers are altered!
@@ -604,7 +602,7 @@ GER_army_modifier = { #Army NS
 	mechanized_attack_factor = GER_military_mechanized_attack_factor
 	army_org_factor = GER_military_army_org_factor
 	planning_speed = GER_military_planning_speed
-	supply_factor = GER_military_supply_factor
+	supply_consumption_factor = GER_military_supply_consumption_factor #was GER_military_supply_consumption_factor
 	equipment_capture = GER_military_equipment_capture
 	initiative_factor = GER_military_initiative_factor
 	army_fuel_consumption_factor = GER_military_army_fuel_consumption_factor
@@ -650,7 +648,7 @@ GER_army_communist_modifier = { #Communist Army NS
 	mechanized_attack_factor = GER_military_mechanized_attack_factor
 	army_org_factor = GER_military_army_org_factor
 	planning_speed = GER_military_planning_speed
-	supply_factor = GER_military_supply_factor
+	supply_consumption_factor = GER_military_supply_consumption_factor
 	equipment_capture = GER_military_equipment_capture
 	initiative_factor = GER_military_initiative_factor
 	army_fuel_consumption_factor = GER_military_army_fuel_consumption_factor
@@ -808,10 +806,6 @@ GER_military_intelligence_service_modifier = { #Spy Stuff
 	# Basic
 	master_ideology_drift = GER_military_intelligence_service_master_ideology_drift
 	consumer_goods_factor = GER_military_intelligence_service_consumer_goods_factor
-	compliance_gain =  GER_military_intelligence_service_compliance_gain #0.01 
-	resistance_damage_to_garrison = GER_military_intelligence_service_resistance_damage_to_garrison #-0.1
-	resistance_growth = GER_military_intelligence_service_resistance_growth #-0.1
-	resistance_target = GER_military_intelligence_service_resistance_target #-0.05
 
 	# LaR
 	operative_slot = GER_military_intelligence_service_operative_slot
@@ -1724,7 +1718,7 @@ idea_COG_river_navy = { #STATE MODIFIER
 	remove_trigger = { 
 		COG = { has_capitulated = yes } 
 	}
-	icon = GFX_MODIFIER_NAVAL_INVASION_CAPACITY
+	icon = GFX_MODIFIER_NAVAL_INVASION_DIVISION_CAP
 	army_core_defence_factor = 0.1
 	resistance_target = 0.5
 	resistance_growth_on_our_occupied_states = 0.25

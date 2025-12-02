@@ -70,10 +70,6 @@ NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0				    -- XP cost for addi
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0				-- XP cost for converting one equipment module to a related module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0
-
--- NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1							-- Max number of mines that can be layed by the ships. The value should be hidden from the user, as we present % so it's an abstract value that should be used for balancing.
--- NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0						-- Value used to overall balance of the speed of planting naval mines
-
 -- Anti-Autism
 NDefines.NOperatives.BOOST_IDEOLOGY_NATIONAL_COVERAGE_FACTOR = 0
 NDefines.NOperatives.BOOST_IDEOLOGY_MAX_DRIFT_BY_OPERATIVE = 0
@@ -130,76 +126,13 @@ NDefines.NTrade.DISTANCE_TRADE_FACTOR = 0				-- Trade factor is modified by dist
 NDefines.NTrade.RELATION_TRADE_FACTOR = 0				-- Trade factor is modified by Opinion value times this
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all the factories in a territory when you annex it
 
-
+NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 10            -- base days needed to prepare a naval invasion
+NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 999                    -- base cap of naval invasions can be planned at the same time
+NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 10 -- base cap of divisions that can be assigned in a naval invasion
 
 NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0 --Mio costs 0 XP to apply
 
---NDefines_Graphics.NAirGfx.MAX_MISSILE_BOMBING_SCENARIOS = 0
---NDefines_Graphics.NAirGfx.MAX_BOMBING_SCENARIOS = 0
-NDefines_Graphics.NAirGfx.MAX_PATROL_SCENARIOS = 0
-NDefines_Graphics.NAirGfx.MAX_DOGFIGHTS_SCENARIOS = 0
-NDefines_Graphics.NAirGfx.MAX_TRANSPORT_SCENARIOS = 0
-NDefines_Graphics.NGraphics.CAMERA_ZOOM_SPEED_DISTANCE_MULT = 20
-NDefines_Graphics.NGraphics.MAPICON_GROUP_STRATEGIC_SIZE = 1000
-NDefines_Graphics.NGraphics.MAP_ICONS_STATE_HUGE = 100
-NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_REFRESH = 30
--- NDefines_Graphics.NGraphics.DECISION_MAP_ICON_DISTANCE_CUTOFF = 100
-NDefines_Graphics.NGraphics.NAVAL_COMBAT_DISTANCE_CUTOFF = 1200
-NDefines_Graphics.NGraphics.PROVINCE_ANIM_TEXT_DISTANCE_CUTOFF = 200
-NDefines_Graphics.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.8
-NDefines_Graphics.NGraphics.AIRBASE_ICON_DISTANCE_CUTOFF = 600
-NDefines_Graphics.NGraphics.NAVALBASE_ICON_DISTANCE_CUTOFF = 600
-NDefines_Graphics.NGraphics.RADAR_ICON_DISTANCE_CUTOFF = 150
-NDefines_Graphics.NAirGfx.AIRPLANES_ANIMATION_GLOBAL_SPEED_PER_GAMESPEED = {0.3, 0.3, 0.3, 0.3, 0.3, 0.3}
-NDefines_Graphics.NGraphics.DRAW_MAP_OBJECTS_CUTOFF = 1.0
-NDefines_Graphics.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {200, 350, 500}
-NDefines_Graphics.NGraphics.MAX_MESHES_LOADED_PER_FRAME = 5
-NDefines_Graphics.NMapMode.RADAR_ROTATION_SPEED = 0.0
-NDefines_Graphics.NMapMode.AIR_RANGE_INDICATOR_ROTATION_SPEED = 0.0000
-NDefines_Graphics.NAirGfx.AIRPLANES_SMOOTH_INTERPOLATION_MOVE = 0.02
-NDefines_Graphics.NAirGfx.AIRPLANES_SMOOTH_INTERPOLATION_TURN = 0.02
-NDefines_Graphics.NInterface.GRIDBOX_ELEMENTS_INTERPOLATION_SPEED = 0.2
-NDefines_Graphics.NGraphics.TREE_FADE_NEAR = 150.0
-NDefines_Graphics.NGraphics.TREE_FADE_FAR = 250.0
-NDefines_Graphics.NGraphics.RESOURCE_MAP_ICON_TEXT_CUTOFF = 400
-NDefines_Graphics.NGraphics.UNITS_DISTANCE_CUTOFF = 100
-NDefines_Graphics.NGraphics.SHIPS_DISTANCE_CUTOFF = 200
-NDefines_Graphics.NGraphics.UNIT_ARROW_DISTANCE_CUTOFF = 500
-NDefines_Graphics.NGraphics.UNITS_ICONS_DISTANCE_CUTOFF = 700
-NDefines_Graphics.NGraphics.NAVAL_COMBAT_DISTANCE_CUTOFF = 1000
-NDefines_Graphics.NGraphics.ADJACENCY_RULE_DISTANCE_CUTOFF = 1300
-NDefines_Graphics.NGraphics.LAND_COMBAT_DISTANCE_CUTOFF = 800
-NDefines_Graphics.NGraphics.SUPPLY_ICON_DISTANCE_CUTOFF = 1500
-NDefines_Graphics.NGraphics.PROV_CONSTRUCTION_ICON_DISTANCE_CUTOFF = 300
-NDefines_Graphics.NGraphics.STATE_CONSTRUCTION_ICON_DISTANCE_CUTOFF = 600
-NDefines_Graphics.NGraphics.GRADIENT_BORDERS_REFRESH_FREQ = 0.2
-NDefines_Graphics.NGraphics.MAPICON_GROUP_PASSES = 5
-NDefines_Graphics.NGraphics.DRAW_REFRACTIONS_CUTOFF = 0
-NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_REFRESH = 40
-NDefines_Graphics.NGraphics.WEATHER_DISTANCE_CUTOFF = 50
-NDefines_Graphics.NGraphics.MAP_ICONS_GROUP_CAM_DISTANCE = 100
-NDefines_Graphics.NGraphics.MAP_ICONS_STATE_GROUP_CAM_DISTANCE = 300
-NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_GROUP_CAM_DISTANCE = 400
-NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_AREA_HUGE = 250
-NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 300
-NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE_STRATEGIC = 0
-NDefines_Graphics.NGraphics.BLOOM_WIDTH = 0
-NDefines_Graphics.NGraphics.BLOOM_SCALE = 0
-NDefines_Graphics.NGraphics.BRIGHT_THRESHOLD = 0
-NDefines_Graphics.NGraphics.EMISSIVE_BLOOM_STRENGTH = 0
-NDefines_Graphics.NGraphics.DAY_NIGHT_FEATHER = 0.024
-NDefines_Graphics.NGraphics.DRAW_SHADOWS_CUTOFF = 0
-NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
-NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
-NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
---new graphics
-
---NDefines.NGraphics.COUNTRY_COLOR_SATURATION_MODIFIER = 0.85 -- 0.6
---NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.8 -- 0.8
 NDefines.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.2
---test
-NDefines_Graphics.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.8
-NDefines_Graphics.NGraphics.BORDER_WIDTH = 1
 -------------------------------------------------------------------------------------------
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 10
@@ -218,7 +151,7 @@ NDefines.NMilitary.SOFT_ATTACK_TARGETING_FACTOR = 1.0		-- vanilla 1 -- How much 
 NDefines.NMilitary.HARD_ATTACK_TARGETING_FACTOR = 1.2	--vanilla 1.2 --  How much we care about potential hard attacks when evaluating priority combat target
 NDefines.NMilitary.COMBAT_VALUE_ORG_IMPORTANCE = 0 		-- VANILLA 1 - changed to force tanks into battle first (most of the time) |  Multiplier on TotalOrganisation when determining the combat value of a division
 NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0 		-- VANILLA 1  - changed to force tanks into battle first (most of the time) |  Multiplier on TotalStrength when determining the combat value of a division
-NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.4 -- vanilla 0.25
+NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.35 -- vanilla 0.25
 NDefines.NTechnology.MAX_SUBTECHS = 4
 NDefines.NMilitary.RELIABILTY_RECOVERY = 0
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.034   -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
@@ -280,19 +213,7 @@ NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = 0 --Vanilla -0.12
  NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.06	-- How much efficiency to regain per day. Gain applied hourly.
  NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_FIGHTER = 1.5			-- How much efficiency to regain per day. Gain applied hourly.
  NDefines.NAir.EFFICIENCY_REGION_CHANGE_PENALTY_FACTOR = 1.0				-- Penalty applied for changing region
- 
-NDefines.NNavy.MISSION_FUEL_COSTS = {  -- fuel cost for each mission
-		0.0, -- HOLD (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
-		0.25, -- PATROL
-		1.0, -- STRIKE FORCE (does not cost fuel at base, and uses IN_COMBAT_FUEL_COST in combat. this is just for the movement in between)
-		1.0, -- CONVOY RAIDING
-		1.0, -- CONVOY ESCORT
-		1.0, -- MINES PLANTING
-		1.0, -- MINES SWEEPING
-		0.6, -- TRAIN
-		0.0, -- RESERVE_FLEET (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
-		1.0, -- NAVAL_INVASION_SUPPORT (does not cost fuel at base, only costs while doing bombardment and escorting units)
-	}
+
 
 
 --NMilitary = {

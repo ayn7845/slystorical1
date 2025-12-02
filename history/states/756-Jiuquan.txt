@@ -11,7 +11,16 @@ state={
 		owner = WST
 		add_core_of = WST
 	
-		
+		buildings = {
+			2028 = {
+				landmark_great_wall_section = {
+				    level = 1
+				    allowed = {
+				        has_dlc = "No Compromise, No Surrender"
+				    }
+				}
+			}
+		}
 	
 
 	}

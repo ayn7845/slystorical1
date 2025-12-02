@@ -311,7 +311,7 @@ leader_traits = {
 	well_mannered_iman = {
 		sprite = 13
 		research_speed_factor = 0.06
-		consumer_goods_expected_value = -0.02
+		consumer_goods_factor = -0.1
 	}
 
 	muslim_scholar = {
@@ -401,23 +401,24 @@ leader_traits = {
 		resistance_garrison_penetration_chance = -0.25
 	}
 
-	
 	aloof_authority = {
-		neutrality_drift = 0.2
+		autonomy_gain_ll_to_overlord = -0.1
 		autonomy_gain = -0.1
 		cic_to_overlord_factor = 0.05
 	}
 
 	aloof_authority_alt = { # Linlithgow's trait for Loyalist branch - a bit less bad
-	    neutrality_drift = 0.2
+		autonomy_gain_ll_to_overlord = -0.1
 		autonomy_gain = -0.1
 		cic_to_overlord_factor = 0.05
+		master_ideology_drift = 0.2
 	}
 
 	aloof_authority_alt_consult = { # Improvement in Loyalist Branch
+		autonomy_gain_ll_to_overlord = -0.1
 		autonomy_gain = -0.1
-		neutrality_drift = 0.2
 		cic_to_overlord_factor = 0.05
+		master_ideology_drift = 0.2
 		stability_factor = 0.1
 	}
 
@@ -441,7 +442,7 @@ leader_traits = {
 
 	socialist_modernizer = {
 		research_speed_factor = 0.07
-		consumer_goods_expected_value = -0.02
+		consumer_goods_factor = -0.1
 	}
 
 	top_down_heavy_policies = {
@@ -479,7 +480,7 @@ leader_traits = {
 	}
 
 	RAJ_GOE_wealthy_philantrophist = {
-		consumer_goods_expected_value = -0.02
+		consumer_goods_factor = -0.1
 		sprite = 13
 	}
 
@@ -508,7 +509,7 @@ leader_traits = {
 	}
 
 	RAJ_GOE_economic_realist = {
-		consumer_goods_expected_value = -0.05
+		consumer_goods_factor = -0.15
 		stability_factor = -0.025
 		sprite = 10
 	}
@@ -557,7 +558,7 @@ leader_traits = {
 	}
 
 	RAJ_GOE_costly_reformer = {
-		consumer_goods_expected_value = 0.022
+		consumer_goods_factor = 0.12
 		stability_factor = 0.05
 		political_power_factor = -0.05
 		sprite = 10
@@ -600,13 +601,13 @@ leader_traits = {
 	RAJ_founder_of_the_csp = {
 		sprite = 13
 		communism_drift = 0.03
-		consumer_goods_expected_value = -0.02
+		consumer_goods_factor = -0.05
 		production_factory_start_efficiency_factor = 0.1
 	}
 
 	RAJ_union_leader = {
 		sprite = 10
-		consumer_goods_expected_value = 0.02
+		consumer_goods_factor = 0.08
 		production_factory_efficiency_gain_factor = 0.06
 		production_factory_max_efficiency_factor = 0.06
 		communism_drift = 0.03

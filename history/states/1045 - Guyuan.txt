@@ -50,7 +50,7 @@ state = {
 	}
 
 	provinces = {
-		
+		1985 3745 5025 6638
 	}
 	
 	buildings_max_level_factor = 1.000

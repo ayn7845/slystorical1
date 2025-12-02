@@ -5,7 +5,7 @@ state = {
 	state_category = town
 	resources = {
 		steel = 20 
-		aluminium = 41
+		aluminium = 5
 	}
 
 	history = {
@@ -16,10 +16,6 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3 #was: 6
-		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
 		}
 	}
 

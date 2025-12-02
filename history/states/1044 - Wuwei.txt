@@ -6,8 +6,8 @@ state = {
 
 	history = {
 
-		owner = XSM
-		add_core_of = XSM
+		owner = CHI
+		
 		add_core_of = CHI
 		add_core_of = PRC
 
@@ -19,16 +19,7 @@ state = {
 			5100 1 #Wuwei
 		}
 
-		1936.1.1 = {
-			IF = {
-				limit = {
-					has_dlc = "No Compromise, No Surrender" 
-				}
-				GSM = { transfer_state = PREV }
-				add_core_of = GSM
-				remove_core_of = XSM
-			}
-		}
+
 
 		1938.10.25 = {
 			if = {

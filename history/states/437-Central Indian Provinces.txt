@@ -11,16 +11,12 @@ state={
 
 	history={
 		owner = RAJ
-		add_core_of = TUM
+		add_core_of = CIP
 		victory_points = {
 			4106 5
 		}
 		buildings = {
 			infrastructure = 1
-		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
 		}
 	}
 }

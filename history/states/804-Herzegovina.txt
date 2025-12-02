@@ -8,7 +8,7 @@ state={
 	state_category = town
 	
 	resources={
-		aluminium=10 # was: 10
+		aluminium=7 # was: 10
 	}
 
 	history={
@@ -20,11 +20,8 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = YUG
-		add_claim_by = ITA
-			1941.1.1 = {
-		owner = WST
 		add_core_of = WST
-		}
+		
 	}
 
 	provinces={

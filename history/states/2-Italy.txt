@@ -1,7 +1,7 @@
 state = {
 	id = 2
 	name = "STATE_2" # Latium
-	manpower = 5356691
+	manpower = 2781971
 	
 	state_category = city
 
@@ -31,9 +31,11 @@ state = {
 		}
 		add_core_of = ITA
 		add_core_of = WST
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+				industrial_complex = 5
+			}
 		}
 	}
 

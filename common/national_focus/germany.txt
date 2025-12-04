@@ -1878,20 +1878,20 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			GER_modify_industrial_modifier = yes
-			add_to_variable = { 
-				GER_industrial_consumer_goods_factor = 0.1
-				tooltip = consumer_goods_factor_tt
-			}
-			if = {
-				limit = {
-					OR = {
-						has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
-						has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
-					}
-				}
-				GER_add_mefo_bills_penalty = yes
-			}
+		#	GER_modify_industrial_modifier = yes
+		#	add_to_variable = { 
+		#		GER_industrial_consumer_goods_factor = 0.1
+		#		tooltip = consumer_goods_factor_tt
+		#	}
+		#	if = {
+		#		limit = {
+		#			OR = {
+		#				has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
+		#				has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+		#			}
+		#		}
+		#		GER_add_mefo_bills_penalty = yes
+		#	}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -2084,20 +2084,20 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			GER_modify_industrial_modifier = yes
-			add_to_variable = { 
-				GER_industrial_consumer_goods_factor = 0.1
-				tooltip = consumer_goods_factor_tt
-			}
-			if = {
-				limit = {
-					OR = {
-						has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
-						has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
-					}
-				}
-				GER_add_mefo_bills_penalty = yes
-			}
+		#	GER_modify_industrial_modifier = yes
+		#	add_to_variable = { 
+		#		GER_industrial_consumer_goods_factor = 0.1
+		#		tooltip = consumer_goods_factor_tt
+		#	}
+		#	if = {
+		#		limit = {
+		#			OR = {
+		#				has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
+		#				has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+		#			}
+		#		}
+		#		GER_add_mefo_bills_penalty = yes
+		#	}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -2161,20 +2161,20 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			GER_modify_industrial_modifier = yes
-			add_to_variable = { 
-				GER_industrial_consumer_goods_factor = 0.1
-				tooltip = consumer_goods_factor_tt
-			}
-			if = {
-				limit = {
-					OR = {
-						has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
-						has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
-					}
-				}
-				GER_add_mefo_bills_penalty = yes
-			}
+			#	GER_modify_industrial_modifier = yes
+		#	add_to_variable = { 
+		#		GER_industrial_consumer_goods_factor = 0.1
+		#		tooltip = consumer_goods_factor_tt
+		#	}
+		#	if = {
+		#		limit = {
+		#			OR = {
+		#				has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
+		#				has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+		#			}
+		#		}
+		#		GER_add_mefo_bills_penalty = yes
+		#	}
 
 			GER_add_or_modify_wehrwirtschaft = yes
 			add_to_variable = { 
@@ -2268,20 +2268,20 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			GER_modify_industrial_modifier = yes
-			add_to_variable = { 
-				GER_industrial_consumer_goods_factor = 0.1
-				tooltip = consumer_goods_factor_tt
-			}
-			if = {
-				limit = {
-					OR = {
-						has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
-						has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
-					}
-				}
-				GER_add_mefo_bills_penalty = yes
-			}
+			#	GER_modify_industrial_modifier = yes
+		#	add_to_variable = { 
+		#		GER_industrial_consumer_goods_factor = 0.1
+		#		tooltip = consumer_goods_factor_tt
+		#	}
+		#	if = {
+		#		limit = {
+		#			OR = {
+		#				has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
+		#				has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+		#			}
+		#		}
+		#		GER_add_mefo_bills_penalty = yes
+		#	}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -2379,20 +2379,20 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			GER_modify_industrial_modifier = yes
-			add_to_variable = { 
-				GER_industrial_consumer_goods_factor = 0.1
-				tooltip = consumer_goods_factor_tt
-			}
-			if = {
-				limit = {
-					OR = {
-						has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
-						has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
-					}
-				}
-				GER_add_mefo_bills_penalty = yes
-			}
+			#	GER_modify_industrial_modifier = yes
+		#	add_to_variable = { 
+		#		GER_industrial_consumer_goods_factor = 0.1
+		#		tooltip = consumer_goods_factor_tt
+		#	}
+		#	if = {
+		#		limit = {
+		#			OR = {
+		#				has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
+		#				has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+		#			}
+		#		}
+		#		GER_add_mefo_bills_penalty = yes
+		#	}
 		}
 	}
 	
@@ -3597,7 +3597,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = GER_the_prussian_legacy
-		cost = 5
+		cost = 3
 		available = {
 		}
 
@@ -3660,7 +3660,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_instill_auftragstaktik
-		cost = 5
+		cost = 2
 		available = {
 			OR = {
 				AND = {
@@ -3791,7 +3791,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_instill_auftragstaktik
-		cost = 5
+		cost = 3
 		available = {
 		}
 
@@ -4050,7 +4050,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_panzergrenadier
-		cost = 5
+		cost = 2
 		available = {
 			has_war = yes
 		}

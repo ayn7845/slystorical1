@@ -2,7 +2,7 @@
 state={
 	id=425
 	name="STATE_425" # Mysore
-	manpower = 655200
+	manpower = 6552000 #12348200
 	
 	state_category = rural
 	
@@ -13,7 +13,7 @@ state={
 
 	history={
 		owner = RAJ
-		add_core_of = TUM
+		add_core_of = MYS
 		victory_points = {
 			8011 10
 		}
@@ -33,10 +33,7 @@ state={
 				naval_base = 1
 			}
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces={

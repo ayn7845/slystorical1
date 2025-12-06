@@ -1,12 +1,12 @@
 state = {
 	id = 46
 	name = "STATE_46" # Muntenia
-	manpower = 5014440 # was 4461400
+	manpower = 3971400 # was 4461400
 	resources = {
 		oil = 44 # was: 70
 	}
 
-	state_category = megalopolis
+	state_category = city
 
 	history = {
 
@@ -22,19 +22,10 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			arms_factory = 3
 			industrial_complex = 1
 			air_base = 3
-		}
-		1941.1.1 = {
-			add_manpower = 750000
-			buildings = {
-				infrastructure = 5
-				arms_factory = 16
-				industrial_complex = 8
-				air_base = 3
-			}
 		}
 		
 	}

@@ -6,12 +6,13 @@ state = {
 	state_category = town
 	
 	resources = {
-		tungsten = 200 #was 150 # was: 300
+		tungsten = 95 #was 150 # was: 300
+		coal = 1 #initial distribution
 	}
 
 	history = {
 
-		owner =POR
+		owner = POR
 		add_core_of = POR
 
 		victory_points = {
@@ -24,11 +25,13 @@ state = {
 
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 2
+
+			# Cabril Dam
+			#11885 = { dam = 1 }
+			
 		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+		
 	}
 
 	provinces = {

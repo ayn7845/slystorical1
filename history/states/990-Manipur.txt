@@ -8,17 +8,13 @@ state={
 	manpower = 445606
 	history={
 		owner = RAJ
-		add_core_of = TUM
+		add_core_of = MPU
 		buildings = {
 			infrastructure = 1
 		}
 
 		victory_points = {
 			1553 5
-		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
 		}
 	}
 	buildings_max_level_factor=1.000

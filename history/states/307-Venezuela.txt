@@ -5,28 +5,30 @@ state={
 	
 	state_category = city
 	
-	manpower = 1
+	manpower = 1335010
 	resources={
-		oil=41
-		Tungsten = 35
+		oil=41 # was: 58
 	}
 
 	history={
-		owner = VEN
+		owner = WST
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 5
+			air_base = 2
 			8113 = {
 				naval_base = 3
 			}
+			10912 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = VEN
+		add_core_of = WST
 		victory_points = {
 			8113 5 
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces={

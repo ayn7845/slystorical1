@@ -6,16 +6,9 @@ state={
 	state_category = enclave
 	
 	history={
-				# No Asia + Scraping
-		1936.1.1.13 = { owner = WST add_core_of = WST }
-		1936.1.1.14 = { owner = WST add_core_of = WST }
-
-        owner = CHI
-
-       # Less Minors
-		1936.1.1.15 = { owner = CHI add_core_of = CHI }
+		owner = POR
 		add_core_of = CHI
-		
+		add_core_of = PRC
 		victory_points = {
 			4189 1 
 		}
@@ -24,10 +17,6 @@ state={
 			4189 = {
 				naval_base = 1
 			}
-		}
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
 		}
 	}
 	

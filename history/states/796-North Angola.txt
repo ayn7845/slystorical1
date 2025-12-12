@@ -2,7 +2,7 @@ state={
 	id=796
 	name="STATE_796"
 	history={
-		owner = POR
+		owner = FRA
 		buildings = {
 			infrastructure = 1
 			2115 = {
@@ -13,6 +13,14 @@ state={
 			2115 1 
 		}
 		add_core_of = WST
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 	provinces={
 		2115 

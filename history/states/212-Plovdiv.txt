@@ -6,13 +6,18 @@ state={
 	
 	state_category = large_town
 
-	resources={
-		chromium = 1
-		coal = 2 # initial distribution / 3 total
+	resources = {
+		chromium = 21
+		aluminium = 3
+		steel= 6
 	}
 
 	history={
-		owner = BUL
+		# Scraping
+		1936.1.1.14 = { owner = ITA add_core_of = ITA }
+
+        owner = BUL
+
 		victory_points = { #Plovdiv
 			6923 10
 		}
@@ -26,9 +31,13 @@ state={
 			infrastructure = 2
 			arms_factory = 3
 			industrial_complex =2
-			air_base = 2
+			air_base = 8
 		}
 		add_core_of = BUL
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={

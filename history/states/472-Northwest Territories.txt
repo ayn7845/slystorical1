@@ -3,13 +3,21 @@ state={
 	name="STATE_472"
 
 	history={
-		owner = CAN
+		# Less Minors + Scraping
+		1936.1.1.15 = { owner = SAF add_core_of = SAF }
+		1936.1.1.14 = { owner = SAF add_core_of = SAF }
+
+        owner = CAN
+
 		buildings = {
 			infrastructure = 1
 
 		}
 		add_core_of = CAN
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={

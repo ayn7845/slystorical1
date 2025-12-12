@@ -14,7 +14,6 @@ state={
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
-			industrial_complex = 1
 			10840 = {
 				naval_base = 1
 			}
@@ -23,6 +22,10 @@ state={
 			10840 3 
 		}
 		add_core_of = WST
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={

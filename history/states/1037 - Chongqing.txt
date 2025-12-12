@@ -25,7 +25,15 @@ state = {
 			11972 1 # Yibin
 		}
 
-
+		1936.1.1 = {
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+				transfer_state_to = SIC
+				add_core_of = SIC
+			}
+		}
 
 		1938.10.25 = {	
 			IF = {

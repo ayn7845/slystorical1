@@ -17,7 +17,6 @@ state = {
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
-			industrial_complex = 1 
 			10760 = {
 				naval_base = 3
 			}
@@ -26,7 +25,10 @@ state = {
 		victory_points = {
 			10760 3 # Muscat
 		}
-		
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces = {

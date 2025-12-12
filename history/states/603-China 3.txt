@@ -3,9 +3,16 @@ state={
 	name="STATE_603"
 
 	history={
-		owner = CHI
+				# No Asia + Scraping
+		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1936.1.1.14 = { owner = WST add_core_of = WST }
+
+        owner = CHI
+
+       # Less Minors
+		1936.1.1.15 = { owner = CHI add_core_of = CHI }
 		add_core_of = CHI
-		add_core_of = PRC
+		
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
@@ -25,17 +32,17 @@ state={
 		victory_points = {
 			4504 3 
 		}
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
+	
 
 	provinces={
-		1474 1884 4504 4532 7521 7549 7577 8095 10616 10819  
+		1474 1884 4192 4504 4532 5072 7521 7549 7577 8095 10616 10819 12841 
 	}
 	manpower=7543200
-
-	resources = {
-		coal = 3 # initial distribution
-	}
 	buildings_max_level_factor=1.000
 	state_category=town
 

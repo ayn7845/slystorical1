@@ -10,7 +10,6 @@ state={
 	local_supplies=0.000
 	history={
 		owner = RAJ
-		add_claim_by = KHL
 		victory_points = {
 			1377 10
 		}
@@ -20,6 +19,9 @@ state={
 			infrastructure = 1
 			industrial_complex = 1
 		}
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 }

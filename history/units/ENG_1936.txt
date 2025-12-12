@@ -115,7 +115,7 @@ instant_effect = {
 		industrial_manufacturer = mio:ENG_vauxhall_organization
 	}
 	add_equipment_to_stockpile = {
-		type = infantry_equipment_1
+		type = infantry_equipment_0
 		amount = 150000
 		producer = ENG	
 		}

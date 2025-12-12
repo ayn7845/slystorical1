@@ -6,7 +6,7 @@ replace_path="common/countries"
 replace_path="common/characters"
 replace_path="common/national_focus"
 replace_path="common/opinion_modifiers"
-
+replace_path="map/strategicregions"
 replace_path="history/states"
 replace_path="history/general"
 replace_path="history/units"

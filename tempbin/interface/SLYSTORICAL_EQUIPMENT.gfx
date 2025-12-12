@@ -1,7 +1,0 @@
-spriteTypes = {
-
-SpriteType = {	
-		name = "GFX_USA_amphibious_tank_chassis"
-		texturefile = "gfx/interface/technologies/USA_amphibious_tank_chassis.dds"
-	}
-}

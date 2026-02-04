@@ -11,7 +11,7 @@ state= {
 	history=
 	{
 		owner = ENG
-		add_core_of = WST
+		add_core_of = CYP
 		victory_points = {
 			11984 5
 		}
@@ -23,16 +23,9 @@ state= {
 			air_base = 1
 			7193 = {
 				naval_base = 2
-				coastal_bunker = 2
-			}
-			11984 = {
-				coastal_bunker = 2
 			}
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 	provinces= { 7193 11984 }
 

@@ -2,7 +2,7 @@
 
 
 	set_oob = "ENG_1936"
-	load_oob = "ENG_mech_spawn"
+	#load_oob = "ENG_mech_spawn"
 starting_train_buffer = 4
 
 if = {

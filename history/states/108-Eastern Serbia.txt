@@ -3,7 +3,6 @@ state={
 	id=108
 	name="STATE_108"
 
-
 	history={
 		victory_points = {
 			9602 3 
@@ -15,11 +14,7 @@ state={
 		}
 		add_core_of = YUG
 		add_core_of = WST
-		add_claim_by = ITA
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces={

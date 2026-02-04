@@ -1,16 +1,15 @@
 #reload countrycolors
 
 GER = {
-	color = HSV { 0 0 0.25 }
+	color = HSV { 0 0 0.4}
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
-	color = rgb { 180 0 0 }
-   #color = HSV { 1 .5 2 }
+   color = HSV { 1 .5 2 }
    color_ui = rgb { 200  10  10 }
 }
 SOV = {
-	color = HSV { 0 1.6 1.9 }
+	color = HSV { 0 1.6 1.88 }
 	color_ui = rgb { 188 0 0 }
 }
 SWE = {
@@ -18,19 +17,18 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-    color = HSV { .6 1.3 .6 }
+    color = HSV { .6 .5 2 }
     color_ui = rgb { 74 147 255 }
 }
 LUX = {
 	color = rgb { 65 175 179 }
 	color_ui = rgb { 85 228 233 }
 }
-BEL = { color = rgb { 215 190 8 }
-		#color = HSV { .15 .9 0.9 }
+BEL = { 
+		color = HSV { .15 .9 0.9 }
 		color_ui = rgb { 251 222 10 }
 	  }
-HOL = {	 color = rgb { 203 138 50 }
-	#color = hsv { 0.09 0.8 1 }
+HOL = {	color = hsv { 0.09 0.8 1 }
 		color_ui = rgb { 255 179 96 }
 }
 CZE = {	color = rgb { 0 170 170 }
@@ -62,15 +60,23 @@ SPR = {
 }
 ITA = {
 	color = RGB { 10 120 10 }
- color_ui = rgb { 0 51 0 }
+ 	color_ui = rgb { 0 51 0 }
 }
 ROM = {
-	color = HSV { .14 .88 0.9 }
+	color = HSV { .14 1 0.9 }
 	color_ui = rgb { 251 222 10 }
 }
 YUG = {
 	color = rgb { 50 50 120 }
 	color_ui = rgb { 94 95 164 }
+}
+SWI = {
+	color = rgb { 224 5 5 }
+	color_ui = rgb { 193 81 81 }
+}
+TUR = {
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 222 247 198 }
 }
 GRE = {
 	color = rgb { 50 150 220 }
@@ -105,15 +111,15 @@ IRE = {
 	color_ui = rgb { 104 207 117 }
 }
 HUN = {
-	color = hsv { 0.07 0.96 1 }
+	color = hsv { 0.07 1.1 1 }
 	color_ui = rgb { 128 64 0 }
 }
 AST = {
-    color = rgb { 0 140 60 }
+    color = rgb { 0 140 70 }
     color_ui = rgb { 24 12 101 }
 }
 BRA = {
-    color = RGB { 0 150 0  }
+    color = HSV { 221  178  83 }
     color_ui = rgb { 94 139 53 }
 }
 CAN = {
@@ -121,19 +127,19 @@ CAN = {
     color_ui = rgb { 155 62 51 }
 }
 CHI = {
-      color = HSV { .6 1 .8 }
-   # color = rgb { 237 152 18 }
-    color_ui = rgb { 221  178  83 } 
+	color = rgb { 40 40 140 }
+	color_ui = rgb { 40 40 140 }
 }
 ETH = {
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 198 169 248 }
 }
-JAP = { color = rgb { 221  178  83  }
-	#color = rgb { 230 200 200 }
-	color_ui = rgb { 230 230 230 }
+JAP = {
+	color = hsv { 0.05 0.3 1 }
+	color_ui = hsv { 0.05 0.25 1.2 }
 }
-MEX = { color = RGB { 96 163 52 }
+MEX = {
+	color = rgb { 30 140 20 }
 	color_ui = rgb { 99 189 82 }
 }
 NZL = {
@@ -142,7 +148,7 @@ NZL = {
 }
 
 PER = {
-    color = rgb { 20 120 100 }
+    color = rgb { 20 100 100 }
     color_ui = rgb { 92 147 126 }
 }
 
@@ -167,10 +173,27 @@ USA = {
 	color_ui = rgb { 87 160 255 }
 }
 
+MON = {
+	#color = HSV { 0.1 0.15 0.4 }
+	color = rgb { 108 140 42 }
+	color_ui = rgb { 209 247 133 }
+}
+
+TAN = {
+	color = rgb { 152 130 191 }
+	color_ui = rgb { 198 169 248 }
+}
+
 RAJ = {
 	color = rgb { 93  9  9 }
 	color_ui = rgb { 226  135  40 }
 }
+
+ICE = {
+	color = rgb { 100  125  175 }
+	color_ui = rgb { 100  125  175 }
+}
+
 MAN = {
 	color = rgb { 255 120 71 }
 	color_ui = rgb { 255 120 71 }
@@ -178,6 +201,10 @@ MAN = {
 COG = {
 	color = rgb { 152 159 209 }
 	color_ui = rgb { 152 159 209 }
+}
+EFR = {
+	color = rgb { 126  76  120 } 
+	color_ui = rgb { 126  76  120 }
 }
 D01 = {
 	color = rgb { 122 179 97 }
@@ -475,15 +502,4 @@ RAA = {
 	color = rgb { 115 115 115 }
 	color_ui = rgb { 122 145 93 }
 }
-DON = {
-	color = rgb { 255 170 0 }
-	color_ui = rgb { 179 119 0 }
-}
-KUB = {
-	color = rgb { 102 102 153 }
-	color_ui = rgb { 61 61 92 }
-}
-EFR = {
-	color = rgb { 126  76  120 } 
-	color_ui = rgb { 126  76  120 }
-}
+

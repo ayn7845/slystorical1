@@ -4,7 +4,7 @@ state={
 	name="STATE_19"
 	resources={
 		steel=14 #was 25
-		aluminium=5
+		aluminium=11
 	}
 
 	history={
@@ -26,10 +26,7 @@ state={
 		}
 		add_core_of = WST
 		add_core_of = FRA
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces={

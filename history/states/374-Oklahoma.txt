@@ -7,34 +7,26 @@ state={
 	state_category = city
 	
 	resources={
-		oil=102 # was: 100
-		aluminium=56 # was: 32
+		oil=60 # was: 100
+		aluminium=20 # was: 32
 	}
 
 
 	history={
-		# No Asia + Scraping
-		1936.1.1.13 = { owner = WST add_core_of = WST }
-		1936.1.1.14 = { owner = WST add_core_of = WST }
-
-		# Less Minors
-		1936.1.1.15 = { owner = USA add_core_of = USA }
-
-        owner = USA
+		owner = USA
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 			air_base = 2
 		}
 		add_core_of = USA
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 		victory_points = {
 			1806 1 
 		}
 
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 
 	}
 

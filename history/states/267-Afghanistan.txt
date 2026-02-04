@@ -6,18 +6,12 @@ state={
 	
 	state_category = town
 	
-	resources={
-		#tungsten=3 # was: 3
-	}
-	history={
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+	history = {
 	}
 
+
 	provinces={
-		7916 10737 10852
+		7916 7984 10737 10852 12769 
 	}
 
 	local_supplies=0.0 

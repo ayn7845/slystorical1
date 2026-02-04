@@ -2,21 +2,18 @@
 state={
 	id=48
 	name="STATE_48"
-	manpower = 2036869
-	resources = {
-		chromium = 50
-		aluminium = 5
-	} 
-	
+	manpower = 1685989
+	resources={
+		aluminium = 8
+		coal = 1 #initial distribution
+		chromium = 20.000
+	}
+
 	
 	state_category = city
 
 	history={
-		# Scraping
-		1936.1.1.14 = { owner = ITA add_core_of = ITA }
-
-        owner = BUL
-
+		owner = BUL
 		victory_points = { #Sofia
 			949 15 
 		}
@@ -24,18 +21,13 @@ state={
 			9771 1
 		}
 		buildings = {
-           965 = {
-                land_facility = 1 
-            }
 			infrastructure = 3
 			industrial_complex = 6
-			air_base = 9
+			air_base = 3
 		}
 		add_core_of = BUL
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+		# Scraping the Barrel
+		1936.1.1.14 = { owner = ITA add_core_of = ITA }
 	}
 
 	provinces={

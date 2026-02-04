@@ -3,33 +3,25 @@ state={
 	id=394
 	name="STATE_394"
 	manpower = 2939004
-	state_category = megalopolis
+	state_category = city
 	
 	resources={
 		steel=53 # was: 84
 	}
 
 	history={
-		# No Asia + Scraping
-		1936.1.1.13 = { owner = WST add_core_of = WST }
-		1936.1.1.14 = { owner = WST add_core_of = WST }
-
-		# Less Minors
-		1936.1.1.15 = { owner = USA add_core_of = USA }
-
-        owner = USA
+		owner = USA
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 3
 		}
 		add_core_of = USA
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 		victory_points = {
 			12357 5 
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces={

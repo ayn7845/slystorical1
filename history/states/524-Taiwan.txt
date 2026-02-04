@@ -1,79 +1,45 @@
-state=
-{
-	id=524
-	name="STATE_524"
-	manpower = 4592537
+state = {
+	id = 524
+	name = "STATE_524"
+	manpower = 5291537 # was 4592537
 	
 	state_category = large_town
-	resources={
-		rubber=23
+
+	resources = {
+		coal = 8 # 200,000 metric tons produced 
+		oil = 3 #1m barrels annually
 	}
-	history= {
-		# No Asia + Scraping
+
+	history = {
+
+		owner = JAP
+		# No Asia
 		1936.1.1.13 = { owner = WST add_core_of = WST }
-		1936.1.1.14 = { owner = WST add_core_of = WST }
-
-        owner = JAP
-
-       # Less Minors
-		1936.1.1.15 = { owner = JAP add_core_of = WST }
-
 		add_core_of = CHI
-		
 		buildings = {
-			anti_air_building = 5
-			infrastructure = 3
+			infrastructure = 3 #was: 5
 			arms_factory = 1
 			air_base = 6
 			12068 = {
 				naval_base = 10
-				coastal_bunker = 2
+				naval_supply_hub = 1
 			}
 			7186 = {
-				naval_base = 10
-				coastal_bunker = 2
+				naval_base = 2
 			}
-			9955 = {
-				coastal_bunker = 2
-			}
-			4096 = {
-				coastal_bunker = 2
-			}
-			1175 = {
-				coastal_bunker = 2
-			}
-			11914 = {
-				coastal_bunker = 2
-			}
-			1091 = {
-				coastal_bunker = 2
-			}
-			11959 = {
-				coastal_bunker = 2
-			}
-			7214 = {
-				coastal_bunker = 2
-			}
-			12027 = {
-				bunker = 2
-			}
+		}
 
+		victory_points = {
+			7186 5 # Taipei
 		}
 		victory_points = {
-			7186 5 
-		}
-		victory_points = {
-			12068 1 
-		}
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+			12068 1 # Gaoxiong
 		}
 
 	}
-	provinces={
+	provinces = {
 		1091 1175 4096 7186 7214 9955 11914 11959 12027 12068
-		}
+	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

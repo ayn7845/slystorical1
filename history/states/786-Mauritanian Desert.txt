@@ -1,21 +1,30 @@
-state={
-	id=786
-	name="STATE_786" # Mauritanian Desert
-	manpower = 1
+state = {
+	id = 786
+	name = "STATE_786" # Mauritanian Desert # North Wales
+	manpower = 692769
 	
-	state_category = wasteland
-	impassable = yes
+	state_category = town
 
-	history={
-		owner = FRA
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+	
+	resources={
+		coal = 15 
 	}
 
-	provinces={
-		2047 4893 12871 10476 2062 2078 1948 2101 5020 5064 8090 10789		
+	history= {
+		owner = ENG
+	
+		victory_points = {
+			311 5 #Wrexham
+		}
+		victory_points = { 311 5 }
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = ENG
+	}
+
+	provinces= {
+		 311 6363 9364 
 	}
 
 	local_supplies=0.0 

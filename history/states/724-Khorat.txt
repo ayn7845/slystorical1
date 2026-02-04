@@ -6,20 +6,14 @@ state={
 	state_category = town
 	
 	resources={
-		rubber=23 # was: 70
+		rubber=40 # was: 70
 	}
 
 
 	history={
-				# No Asia + Scraping
+		owner = SIA
+		# No Asia
 		1936.1.1.13 = { owner = WST add_core_of = WST }
-		1936.1.1.14 = { owner = WST add_core_of = WST }
-
-        owner = JAP
-
-       # Less Minors
-		1936.1.1.15 = { owner = SIA add_core_of = SIA }
-
 		buildings = {
 			infrastructure = 2
 			12230 = {
@@ -28,10 +22,6 @@ state={
 		}
 		victory_points = {
 			7236 1 
-		}
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
 		}
 		add_core_of = SIA
 	}

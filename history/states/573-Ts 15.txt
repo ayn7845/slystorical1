@@ -7,6 +7,7 @@ state={
 	state_category = pastoral
 	resources={
 		chromium=23 # was: 32
+		coal = 10
 	}
 
 	history={
@@ -19,12 +20,7 @@ state={
 
 		}
 		add_core_of = SOV
-		1941.1.1 = {
-			buildings = {
-				arms_factory = 6
-				}
-			}
-		}
+	}
 
 	provinces={
 		237 278 361 3280 4758 7320 10136 10329 11223 11307 

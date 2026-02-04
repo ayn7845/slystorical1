@@ -12,13 +12,18 @@ state = {
 
 		
 
-		
+		buildings = {
+			infrastructure = 1
+			12702 = {
+				naval_base = 6
+			}
+		}
 	}
 	
 	provinces = {
-		1955 
+		1955 10791 10850 12702 
 	}
 	state_category = wasteland
 	buildings_max_level_factor = 1.000
-	local_supplies=0.0
+	local_supplies = 0.0
 }

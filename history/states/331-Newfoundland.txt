@@ -9,6 +9,8 @@ state = {
 
 		owner = ENG
 		add_core_of = CAN
+		# Scraping the Barrel
+		1936.1.1.14 = { owner = SAF add_core_of = SAF }
 
 		buildings = {
 			infrastructure = 2
@@ -21,10 +23,7 @@ state = {
 		victory_points = {
 			12505 2 
 		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+		
 	}
 
 	provinces = {

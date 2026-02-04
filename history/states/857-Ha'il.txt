@@ -2,7 +2,7 @@ state={
 	id=857
 	name="STATE_857"
 	provinces={
-		 10892 
+		4968 5058 10892 10923 12749 
 	}
 	history = {
 		owner = WST
@@ -11,5 +11,5 @@ state={
 	manpower = 1
 	state_category = wasteland
 	buildings_max_level_factor=1.000
-	local_supplies=0.0
+	local_supplies = 0.0
 }

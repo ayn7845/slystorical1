@@ -4,15 +4,9 @@ state={
 	name="STATE_519"
 
 	history={
-		# Less Minors + Scraping
-		1936.1.1.15 = { owner = RAJ add_core_of = AST}
-		1936.1.1.14 = { owner = RAJ add_core_of = AST }
-
-        owner = AST
-
+		owner = AST
 		buildings = {
-			infrastructure = 3
-			arms_factory = 2
+			infrastructure = 1
 			12910 = {
 				naval_base = 2
 
@@ -23,10 +17,9 @@ state={
 			12910 15 
 		}
 		add_core_of = AST
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+		# Scraping the Barrel
+		1936.1.1.14 = { owner = RAJ add_core_of = RAJ }
+
 	}
 
 	provinces={
@@ -34,7 +27,7 @@ state={
 	}
 	manpower=200800
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 
 	local_supplies=0.0 
 }

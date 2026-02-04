@@ -1,24 +1,17 @@
-
-state={
-	id=273
-	name="STATE_273" # Libyan Desert
+state = {
+	id = 273
+	name = "STATE_273" # Libyan Desert
 	manpower = 1
 	
 	state_category = wasteland
 	impassable = yes
 
-	history={
-		owner = ITA
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
-		
+	history = {
 	}
 
-	provinces={
-		4913 8092 2095 1033 10791 12702 12769 7984 8053 12788
+	provinces = {
+		4191 
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

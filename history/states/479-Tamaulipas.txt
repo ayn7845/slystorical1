@@ -12,15 +12,10 @@ state = {
 	
 	history = {
 
-		# No Asia + Scraping
-		1936.1.1.13 = { owner = WST add_core_of = WST }
-		1936.1.1.14 = { owner = WST add_core_of = WST }
-
-        # Less Minors
-		1936.1.1.15 = { owner = USA add_core_of = USA }
-
-        owner = MEX
+		owner = MEX
 		add_core_of = MEX
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 		add_core_of = WST
 
 		buildings = {
@@ -34,10 +29,7 @@ state = {
 		victory_points = {
 			5015 5
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces = {

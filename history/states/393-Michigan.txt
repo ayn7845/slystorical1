@@ -6,17 +6,10 @@ state={
 		oil=6 # was: 10.000
 	}
 
-	state_category = megalopolis
+	state_category = metropolis
 
 	history={
-		# No Asia + Scraping
-		1936.1.1.13 = { owner = WST add_core_of = WST }
-		1936.1.1.14 = { owner = WST add_core_of = WST }
-
-		# Less Minors
-		1936.1.1.15 = { owner = USA add_core_of = USA }
-
-        owner = USA
+		owner = USA
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 1
@@ -29,13 +22,12 @@ state={
 
 		}
 		add_core_of = USA
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 		victory_points = {
 			6710 20 # Detriot
 		}
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 
 	}
 

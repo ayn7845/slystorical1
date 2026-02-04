@@ -5,20 +5,14 @@ state={
 	state_category = city
 	resources={
 		tungsten=8 # was: 10
-		steel= 20 # was: 20
+		steel= 15 # was: 20
 		chromium = 3 # was: 4
 	}
 
 	history={
-				# No Asia + Scraping
-		1936.1.1.13 = { owner = WST add_core_of = WST }
-		1936.1.1.14 = { owner = WST add_core_of = WST }
+		owner = CHI
+		
 
-        owner = CHI
-
-       # Less Minors
-		1936.1.1.15 = { owner = CHI add_core_of = CHI }
-		add_core_of = CHI
 		add_core_of = CHI
 		
 		
@@ -27,7 +21,6 @@ state={
 			arms_factory = 2
 			industrial_complex = 2
 			air_base = 3
-			dockyard = 1
 			1047 = { # Guangzhou
 				naval_base = 5
 				coastal_bunker = 1
@@ -35,14 +28,17 @@ state={
 			}
 
 		}
+
 		victory_points = {
-			1047 5 # Guangzhou
+			1047 10 # Guangzhou
 		}
 
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+		victory_points = {
+			12077 1 # Maoming
 		}
+
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 	}
 
 	provinces={

@@ -8,7 +8,6 @@ state = {
 	history = {
 		owner = ITA
 		add_core_of = WST
-		set_demilitarized_zone = yes
 		victory_points = {
 		 	12941 1 
 		}
@@ -17,10 +16,7 @@ state = {
 			12941 = {
 				naval_base = 2
 			}
-		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+			
 		}
 	}
 	provinces = { 

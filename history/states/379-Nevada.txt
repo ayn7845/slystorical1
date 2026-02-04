@@ -7,21 +7,16 @@ state = {
 	
 	resources = {
 		steel = 70 # was: 136
-		tungsten = 41 # was: 62
-		aluminium = 85 # was: 44
+		tungsten = 32 # was: 62
+		aluminium = 25 # was: 44
 	}
 
 	history = {
 
-		# No Asia + Scraping
-		1936.1.1.13 = { owner = WST add_core_of = WST }
-		1936.1.1.14 = { owner = WST add_core_of = WST }
-
-		# Less Minors
-		1936.1.1.15 = { owner = USA add_core_of = USA }
-
-        owner = USA
+		owner = USA
 		add_core_of = USA
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 
 		buildings = {
 			infrastructure = 2
@@ -34,10 +29,7 @@ state = {
 		victory_points = {
 			4799 5 # Las Vegas
 		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+		
 	}
 
 	provinces = {

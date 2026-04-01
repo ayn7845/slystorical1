@@ -2171,9 +2171,10 @@ shared_focus = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
+					has_game_rule = { 
+					rule = air_designer
+					option = off
+				}
 				}
 				if = {
 					limit = {

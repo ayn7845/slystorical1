@@ -700,7 +700,14 @@ focus_tree = {
 
 			if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				every_country_division = {
 					random_select_amount = 12

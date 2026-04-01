@@ -1374,7 +1374,14 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				air_experience = 25
 				add_tech_bonus = {
@@ -1423,7 +1430,14 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				air_experience = 25
 				add_tech_bonus = {
@@ -1472,7 +1486,14 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				air_experience = 25
 				add_tech_bonus = {

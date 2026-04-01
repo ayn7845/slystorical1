@@ -5084,9 +5084,10 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
+					has_game_rule = { 
+					rule = air_designer
+					option = off
+				}
 				}
 				NOT = {
 					has_tech = fighter3

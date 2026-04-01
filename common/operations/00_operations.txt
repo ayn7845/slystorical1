@@ -2882,7 +2882,14 @@ operation_steal_tech_airforce = { ### 18 3/55
 		ROOT = {
 			if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				steal_random_tech_bonus = {
 					folder = bba_air_techs_folder
@@ -3001,7 +3008,14 @@ operation_steal_tech_airforce = { ### 18 3/55
 		ROOT = {
 			if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				steal_random_tech_bonus = {
 					folder = bba_air_techs_folder

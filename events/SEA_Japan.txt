@@ -11681,9 +11681,16 @@ country_event = {
 		name = SEA_japan_popup_events.41.a
 		
 		effect_tooltip = {
-			IF = {
+			if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				FROM = {
 					send_embargo = ROOT

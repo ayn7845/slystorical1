@@ -4958,7 +4958,14 @@ focus_tree = {
 			# On historical, this focus is completed mid-late 1939
 			if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				create_equipment_variant = { 
@@ -5104,7 +5111,14 @@ focus_tree = {
 
 			if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				create_equipment_variant = { 
@@ -5247,7 +5261,14 @@ focus_tree = {
 
 			if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				create_equipment_variant = { 
@@ -5486,7 +5507,14 @@ focus_tree = {
 			#This one is not really needed, first 'FW 190'
 			if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				create_equipment_variant = { 
@@ -5989,7 +6017,14 @@ focus_tree = {
 
 			if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				create_equipment_variant = { 
@@ -6142,7 +6177,14 @@ focus_tree = {
 
 			if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				create_equipment_variant = { 
 					name = "Me 262" 

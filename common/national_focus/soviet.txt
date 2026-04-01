@@ -1892,7 +1892,14 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_dlc = "By Blood Alone"
+						AND = {
+							has_dlc = "By Blood Alone"
+							
+							has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+						}
 					}
 					create_equipment_variant = {
 						name = "U-2" #

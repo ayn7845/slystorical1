@@ -2816,9 +2816,16 @@ focus_tree = {
 					}
 				}
 			}
-			ELSE_IF = {
+			ELSE_if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				add_equipment_to_stockpile = { 
 					type = small_plane_airframe_1
@@ -2958,9 +2965,16 @@ focus_tree = {
 				IRQ_air_nav_efficiency = 0.1
 				tooltip = air_nav_efficiency_tt
 			}
-			IF = {
+			if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				IF = {
 					limit = {
@@ -4316,9 +4330,16 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			IF = {
+			if = {
 				limit = {
+					AND = {
 					has_dlc = "By Blood Alone"
+
+					has_game_rule = { 
+							rule = air_designer
+							option = on
+							}
+					}
 				}
 				add_equipment_to_stockpile = { 
 					type = small_plane_airframe_1

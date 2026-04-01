@@ -193,8 +193,30 @@ on_actions = {
 					add_ideas = no_tradebacks
 				}
 			}
+			if = { 
+				limit = { 
+					has_game_rule = { 
+						rule = soviet_collectivized_economy
+						option = on
+					}
+				}
+				SOV = { 
+					add_ideas = SOV_collectivized_society
+					}
+				}
+				if = { 
+				limit = { 
+					has_game_rule = { 
+						rule = soviet_research_slot
+						option = on
+					}
+				}
+				SOV = { 
+					add_research_slot = 1
+					}
+				}
+			}
 		}
-	}
 	on_monthly = {
 		effect = {
 			if = {

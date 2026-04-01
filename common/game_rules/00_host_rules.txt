@@ -110,6 +110,37 @@ air_designer = {
 		desc = "R DOESNT WORK YET PLEASE DONT TURN ON"
 	}
 }
+soviet_research_slot = {
+	name = "Soviet 4th Research Slot"
+	group = "HMM Rules"
+	icon = "GFX_decision_SOV_secure_the_administration"
+	option = {
+		name = on
+		text = "Soviet 4th Slot"
+		desc = ""
+	} 
+	default = {
+		name = off
+		text = "No 4th Slot"
+		desc = ""
+	}
+
+}
+soviet_collectivized_economy = {
+	name = "Soviet Collectivized Economy"
+	group = "HMM Rules"
+	icon = "GFX_decision_SOV_secure_the_administration"
+	option = {
+		name = on
+		text = "Soviet on Collectivized"
+		desc = ""
+	} 
+	default = {
+		name = off
+		text = "Soviet NOT on Collectivized"
+		desc = ""
+	}
+}
 Brasil_AC_rule = {
 	name = "Select if Brazil can be AC"
 	group = "HMM Rules"

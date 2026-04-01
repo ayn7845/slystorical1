@@ -1442,7 +1442,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SOV_eastern_development
 		cost = 10
-
+		
 		available = {
 
 		}
@@ -4412,6 +4412,12 @@ focus_tree = {
 		relative_position_id = SOV_the_means_to_wage_war
 		cost = 10
 		dynamic = yes 
+		bypass = {
+			has_game_rule = { 
+				rule = soviet_research_slot
+				option = on
+			}
+		}
 		available = {
 
 		}

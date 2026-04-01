@@ -106,7 +106,7 @@ air_designer = {
 	} 
 	option = {
 		name =  on
-		text = "Air Designer on"
+		text = "R DOESNT WORK YET PLEASE DONT TURN ON"
 		desc = ""
 	}
 }

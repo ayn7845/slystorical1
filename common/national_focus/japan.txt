@@ -11559,8 +11559,11 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
+			has_game_rule = { 
+					rule = air_designer
+					option = off
 				}
+			}
 				custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
 				hidden_effect = { set_technology = { suicide_craft = 1 } }
 			}

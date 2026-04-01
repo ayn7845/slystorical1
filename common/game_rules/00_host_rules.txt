@@ -106,8 +106,8 @@ air_designer = {
 	} 
 	option = {
 		name =  on
-		text = "R DOESNT WORK YET PLEASE DONT TURN ON"
-		desc = ""
+		text = "on"
+		desc = "R DOESNT WORK YET PLEASE DONT TURN ON"
 	}
 }
 Brasil_AC_rule = {
@@ -145,12 +145,12 @@ Germany_Wirtschaftswunder = {
 	name = "Select if Germany is allowed to complete Prioritize Economic Growth "
 	group = "HMM Rules"
 	icon = "GFX_volunteers"
-	default = {
+	option = {
 		name = Germany_no_wirtschaftswunder
 		text = "Germany can't do the Left Side Economy Tree"
 		desc = ""
 	}
-	option = {
+	default = {
 		name = Germany_wirtschaftswunder
 		text = "Germany can do the Left Side Economy Tree"
 		desc = ""
@@ -161,12 +161,12 @@ Germany_Cancel_Mefo= {
 	name = "Select if Germany is allowed to cancel MEFO Bills"
 	group = "HMM Rules"
 	icon = "GFX_volunteers"
-	default = {
+	option = {
 		name = Germany_no_cancel_MEFO_Bills
 		text = "Germany can't cancel MEFO Bills"
 		desc = ""
 	}
-	option = {
+	default = {
 		name = Germany_cancel_MEFO_Bills
 		text = "Germany can cancel MEFO Bills"
 		desc = ""

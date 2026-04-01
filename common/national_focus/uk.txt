@@ -1361,8 +1361,11 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
+			has_game_rule = { 
+					rule = air_designer
+					option = off
 				}
+			}
 				air_experience = 25
 				add_tech_bonus = {
 					name = fighter_command_focus
@@ -1417,8 +1420,11 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
+			has_game_rule = { 
+					rule = air_designer
+					option = off
 				}
+			}
 				air_experience = 25
 				add_tech_bonus = {
 					name = bomber_command_focus
@@ -1473,8 +1479,11 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
+			has_game_rule = { 
+					rule = air_designer
+					option = off
 				}
+			}
 				air_experience = 25
 				add_tech_bonus = {
 					name = coastal_command_focus

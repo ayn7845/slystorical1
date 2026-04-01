@@ -342,20 +342,7 @@
 		}
 
 		available = {
-			OR = {
 				num_of_factories > 50
-				all_state = {
-					OR = {
-						NOT = { is_core_of = CHI }
-						NOT = { is_core_of = PRC }
-						OR = {
-							is_controlled_by = ROOT
-							CONTROLLER = { is_in_faction_with = ROOT }
-							CONTROLLER = { is_subject_of = ROOT }
-						}
-					}
-				}
-			}
 		}
 
 		bypass = {
@@ -1809,62 +1796,10 @@
 	}
 
 	focus = {
-		id = MAN_tsr_vassalize_mengukuo
-		icon = GFX_focus_JAP_mengjiang_united_autonomous_government 
-		prerequisite = { focus = MAN_tsr_chinese_leadership }
-		x = -1
-		y = 1
-		relative_position_id = MAN_tsr_chinese_leadership
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			is_subject_of = JAP
-			NOT = { has_war_with = JAP }
-			NOT = { has_war_with = MEN }
-			MEN = {
-				exists = yes
-				is_subject_of = JAP
-			}
-		}
-
-		bypass = {
-			MEN = {
-				OR = {
-					exists = no
-					NOT = {
-						is_subject_of = JAP
-					}
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		
-
-		completion_reward = {
-			MEN = {
-				every_army_leader = {
-					set_nationality = MAN
-				}
-			}
-			annex_country = { target = MEN transfer_troops = yes }
-		}
-	}
-
-	focus = {
 		id = MAN_tsr_national_cooperation_government
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = MAN_tsr_chinese_leadership }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = MAN_tsr_chinese_leadership
 
@@ -1915,16 +1850,6 @@
 		available = {
 			is_subject_of = JAP
 			compare_autonomy_state > autonomy_wtt_imperial_protectorate			
-			MAN = { 
-				ic_ratio = {
-					tag = JAP
-					ratio > 0.2
-				}
-			}
-			strength_ratio = {
-				tag = JAP
-				ratio > 0.25
-			}
 			controls_state = 608
 		}
 
@@ -2198,11 +2123,8 @@
 		available = {
 
 		}
+		allow_branch = { always = no}
 
-		allow_branch = {
-			always = no
-		}
-		
 		bypass = {
 		}
 
@@ -3043,27 +2965,10 @@
 				popularity = 0.2
 			}
 			remove_ideas = MAN_kwantung_veto
-
-			IF = {
-				limit = {
-					KOR = {
-						exists = yes
-						is_ally_with = JAP
-					}
-				}
-				add_timed_idea = {
-					idea = MAN_korean_liberation_army
-					days = 365
-				}
+			add_timed_idea = {
+				idea = MAN_korean_liberation_army
+				days = 365
 			}
-			ELSE = {
-				add_timed_idea = {
-					idea = MAN_korean_liberation_army_no_korea
-					days = 365
-				}	
-			}
-			
-
 			hidden_effect = { set_variable = { MAN_independence_target = OVERLORD } } #We're using a variable here because the saved event target becomes invalidated deep in ScopedEventTarget 
 			OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
 			effect_tooltip = {		
@@ -4121,7 +4026,7 @@
 		cost = 5
 
 		ai_will_do = {
-			base = 10
+			factor = 10
 		}
 
 		available = {
@@ -4168,7 +4073,7 @@
 		cost = 10
 
 		ai_will_do = {
-			base = 1
+			factor = 10
 		}
 
 		available = {
@@ -4274,7 +4179,7 @@
 		cost = 5
 
 		ai_will_do = {
-			base = 10
+			factor = 10
 		}
 
 		available = {
@@ -4327,7 +4232,7 @@
 		cost = 5
 
 		ai_will_do = {
-			base = 10
+			factor = 10
 		}
 
 		available = {
@@ -4368,7 +4273,7 @@
 		cost = 10
 
 		ai_will_do = {
-			base = 10
+			factor = 1
 		}
 
 		available = {
@@ -4425,7 +4330,7 @@
 		cost = 5
 
 		ai_will_do = {
-			base = 5
+			factor = 1
 		}
 
 		available = {
@@ -4492,7 +4397,7 @@
 		cost = 10
 
 		ai_will_do = {
-			base = 10
+			factor = 1
 		}
 
 		available = {
@@ -4538,7 +4443,7 @@
 		cost = 10
 
 		ai_will_do = {
-			base = 5
+			factor = 5
 		}
 
 		available = {
@@ -4573,7 +4478,7 @@
 		cost = 10
 
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 
 		available = {
@@ -4618,7 +4523,7 @@
 		cost = 10
 
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 
 		available = {
@@ -4659,7 +4564,7 @@
 		cost = 5
 
 		ai_will_do = {
-			base = 25
+			factor = 10
 		}
 
 		available = {
@@ -4708,7 +4613,7 @@
 		cost = 10
 
 		ai_will_do = {
-			base = 25
+			factor = 10
 		}
 
 		available = {
@@ -4912,7 +4817,7 @@
 		cost = 10
 
 		ai_will_do = {
-			base = 10
+			factor = 10
 		}
 
 		available = {
@@ -4991,7 +4896,7 @@
 		cost = 10
 
 		ai_will_do = {
-			base = 50
+			factor = 20
 		}
 
 		available = {

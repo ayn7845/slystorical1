@@ -33,7 +33,6 @@ NZL_historical = {
 	research = {
 		industry = 1000
 		air_equipment = -1000
-		air_doctrine = -1000
 	}
 	
     traits = {
@@ -42,13 +41,6 @@ NZL_historical = {
         victory_through_airpower = -1000
         close_air_support_proponent = -1000
         assault_avaition = -1000
-        light_aircraft_manufacturer = -1000
-        light_aircraft_manufacturer_2 = -1000
-        CAS_manufacturer = -1000
-        medium_aircraft_manufacturer = -1000
-        fuel_efficient_aircraft_manufacturer = -1000
-        heavy_aircraft_manufacturer = -1000
-        naval_aircraft_manufacturer = -1000
         air_chief_reform_1 = -1000
         air_chief_reform_2 = -1000
         air_chief_reform_3 = -1000

@@ -317,16 +317,111 @@ add_ideas = {
 	JAP_japanese_armor_doctrine
 }
 
-IF = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = MTG_naval_treaty_adherent
+
+
+
+
+#######################################
+### Setup Resistance and Compliance ###
+#######################################
+
+# East Hebei
+609 = {
+	start_resistance = yes
+	set_compliance = 15
+	set_resistance = 5
+	set_garrison_strength = 1.0
 }
 
+# Dalian
+745 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
 
+# Taiwan
+524 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
 
+# Palau
+647 = {
+	start_resistance = yes
+	set_compliance = 25
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
 
+# Caroline Islands
+684 = {
+	start_resistance = yes
+	set_compliance = 25
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
+
+# Marshall Islands
+633 = {
+	start_resistance = yes
+	set_compliance = 25
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
+
+# Korea 
+
+# Heian-Koukai
+527 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+# Kankyou
+1028 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+# Keiki 
+525 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+# Kougen 
+1029 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+# Keishou 
+1030 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+# Chuusei-Zenra 
+1031 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
 
 
 
@@ -347,7 +442,6 @@ set_technology = {
 	marines  = 1
 	paratroopers = 1
 	gw_artillery = 1
-	interwar_antiair = 1
 	bicycle_infantry = 1 # They start with it now 
 	JAP_silver_wheels = 1 # Small bicycle terrain boost 
 	JAP_lighter_tanks = 1 # Small tank terrain boost 
@@ -385,12 +479,28 @@ add_breakthrough_progress = {
 	value = 0.1
 }
 
-set_technology = {
-	gwtank = 1
-	basic_light_tank = 1
-	improved_light_tank = 1
+IF = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+	}
+	set_oob = "JAP_1936"
 }
-set_oob = "JAP_1936"
+IF = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+	}
+	set_oob = "JAP_1936_nsb"
+}
 
 IF = {
 	limit = {
@@ -449,10 +559,27 @@ IF = {
 	set_naval_oob = "JAP_1936_naval_legacy"
 }
 
+IF = {
+	limit = { 
+		has_dlc = "By Blood Alone" 
+	}
+	set_air_oob = "JAP_1936_air_bba"
+	set_technology = {
+		aa_lmg = 1
+		engines_1 = 1
+		engines_2 = 1
+		early_bombs = 1
+		aircraft_construction = 1
+		iw_small_airframe = 1
+		iw_medium_airframe = 1
+		basic_small_airframe = 1
+		air_torpedoe_1 = 1
+		bba_early_transport_plane = 1
+	}
+	ELSE = {
 		set_air_oob = "JAP_1936_air_legacy"
 		set_technology = {
 			cv_early_fighter = 1
-			fighter1 = 1
 			cv_CAS1 = 1
 			cv_naval_bomber1 = 1
 			early_fighter = 1
@@ -461,6 +588,8 @@ IF = {
 			CAS1 = 1
 			early_transport_plane = 1
 		}
+	}
+}
 
 
 

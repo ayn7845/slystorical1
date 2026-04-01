@@ -1,14 +1,39 @@
 state = {
 	id = 889
 	name = "STATE_889"
-	manpower = 1
+	manpower = 708190
 	state_category = pastoral
 
 	resources = {
-		tungsten = 2.000
+		tungsten = 2
+		coal = 4
 	}
 
 	history = {
+
+		owner = BEL
+
+		IF = {
+			limit = {
+				has_dlc = "Gotterdammerung"
+			}
+			transfer_state_to = COG
+			add_dynamic_modifier = {
+				modifier = COG_state_loyal_to_free_congo_modifier
+			}
+		}
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		add_core_of = COG
+		add_core_of = WST
+
+		victory_points = {
+			191 2 # Elizabehville
+		}
+
 	}
 	
 	provinces = {

@@ -167,7 +167,7 @@ air_subdoctrine_tactical_battlefield_support = {
     xp_type = air
 
     available = {
-       # always = no
+        always = no
     }
 
     ai_will_do = {
@@ -189,7 +189,7 @@ air_subdoctrine_tactical_battlefield_support = {
 
     # EFFECTS
 	category_tac_bomber = {
-		air_ground_attack = 0.05
+		air_ground_attack = 0.1
 	}
 
     rewards = {

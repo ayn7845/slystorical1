@@ -155,7 +155,7 @@ characters={
 		advisor={
 			cost = 150
 
-			slot = high_command
+			slot = theorist
 			idea_token = george_patton
 			ledger = army
 				allowed = {
@@ -163,15 +163,15 @@ characters={
 				}
 
 				traits = {
-					army_armored_2
+					mobile_warfare_expert
 				}
 		}
 
 		corps_commander={
 			traits={ trait_reckless armor_officer war_hero trickster panzer_leader }
 			skill=5
-			attack_skill=7
-			defense_skill=3
+			attack_skill=6
+			defense_skill=4
 			planning_skill=2
 			logistics_skill=4
 			legacy_id=0
@@ -189,7 +189,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = omar_bradley
 			ledger = army
@@ -198,15 +198,15 @@ characters={
 			}
 
 			traits = {
-				military_theorist
+				superior_firepower_expert
 			}
 		}
 
 		corps_commander={
 			traits={ brilliant_strategist trait_cautious harsh_leader trait_engineer }
 			skill=5
-			attack_skill=3
-			defense_skill=5
+			attack_skill=2
+			defense_skill=6
 			planning_skill=4
 			logistics_skill=4
 			legacy_id=0
@@ -247,10 +247,10 @@ characters={
 		}
 
 		field_marshal={
-			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine }
+			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine naval_invader }
 			skill=5
-			attack_skill=3
-			defense_skill=3
+			attack_skill=2
+			defense_skill=4
 			planning_skill=5
 			logistics_skill=5
 			legacy_id=602
@@ -324,8 +324,8 @@ characters={
 		corps_commander={
 			traits={ trait_reckless infantry_officer }
 			skill=4
-			attack_skill=5
-			defense_skill=3
+			attack_skill=4
+			defense_skill=4
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=0
@@ -372,7 +372,7 @@ characters={
 		}
 
 		field_marshal={
-			traits={ brilliant_strategist career_officer media_personality politically_connected offensive_doctrine }
+			traits={ brilliant_strategist career_officer media_personality politically_connected offensive_doctrine naval_invader }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -767,18 +767,14 @@ characters={
 			allowed = {
 				original_tag = USA
 			}
-			available  = {
-				#has_completed_focus  = USA_reestablish_the_gold_standard
-				#has_completed_focus = USA_war_plan_orange
-			}
 			traits = {
-				navy_chief_decisive_battle_2
+				navy_chief_reform_2
 			}
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
-				}
 			}
+		}
 
 		navy_leader={
 			traits={ navy_career_officer aviation_enthusiast caustic_personality blockade_runner superior_tactician }
@@ -1552,7 +1548,7 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus  = USA_reestablish_the_gold_standard
+					has_completed_focus  = USA_america_first
 				}
 			}
 			visible  = {
@@ -1561,7 +1557,7 @@ characters={
 			traits  = {
 				captain_of_industry
 			}
-			cost  = 0.000
+			cost  = 50.000
 			do_effect  = {
 			}
 			ai_will_do  = {
@@ -1614,12 +1610,12 @@ characters={
 
 	USA_charles_coughlin={
 		name=USA_charles_coughlin
-		portraits	= {
-			army	=	{
+		portraits={
+			army={
 				small="GFX_idea_charles_coughlin"
 			}
 		}
-		advisor	= {
+		advisor={
 			slot = political_advisor
 			idea_token = charles_coughlin
 			allowed  = {
@@ -1715,7 +1711,7 @@ characters={
 				small="GFX_idea_USA_joseph_mccarthy"
 			}
 		}
-		advisor	=	{
+		advisor={
 			slot = political_advisor
 			idea_token = USA_joseph_mccarthy
 			allowed  = {
@@ -1799,7 +1795,7 @@ characters={
 				small=GFX_portrait_USA_henry_stimson_small
 			}
 		}
-		advisor	= {
+		advisor={
 			slot = political_advisor
 			idea_token = USA_henry_stimson
 			allowed  = {
@@ -1807,9 +1803,9 @@ characters={
 			}
 			traits  = {
 				war_industrialist
-					}
-				}
 			}
+		}
+	}
 
 	USA_donald_nelson={
 		name=USA_donald_nelson

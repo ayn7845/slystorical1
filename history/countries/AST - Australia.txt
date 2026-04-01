@@ -3,11 +3,8 @@
 oob = "AST_1936"
 set_stability = 0.8
 set_war_support = 0.3
-
-set_research_slots = 3
 # Starting tech
 set_technology = {
-	motorised_infantry = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1		
@@ -16,21 +13,30 @@ set_technology = {
 	tech_trucks = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	tech_mountaineers = 1
-	marines  = 1
-	paratroopers = 1 
-	
 	basic_train = 1
-	trench_warfare = 1
 	fuel_silos = 1
 
-	fleet_in_being = 1
 }
 
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
 	set_technology = {
 		gwtank = 1
 	}
-
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -64,11 +70,11 @@ if = {
 	set_naval_oob = "AST_1936_naval"
 }
 if = {
-		limit = { has_game_rule = { 
-					rule = larp_barb
-					option = on } 
-		}
-		set_air_oob = "AST_1936_air_bba"
+	limit = { has_dlc = "By Blood Alone" }
+	set_air_oob = "AST_1936_air_bba"
+	set_technology = {
+		bba_early_transport_plane = 1
+	}
 	else = {
 		set_air_oob = "AST_1936_air_legacy"
 		set_technology = {
@@ -78,6 +84,7 @@ if = {
 			naval_bomber1 = 1
 			early_bomber = 1
 			CAS1 = 1
+			early_transport_plane = 1
 		}
 	}
 }
@@ -195,12 +202,7 @@ if = {
 		
 
 		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
+		#air_superiority = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -218,6 +220,11 @@ if = {
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
+
+	set_grand_doctrine = grand_battleplan
+	set_grand_doctrine = new_fleet_in_being
+	set_grand_doctrine = new_strategic_destruction
+
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}
@@ -285,7 +292,7 @@ set_popularities = {
 	communism = 2
 }
 
-set_convoys = 125
+set_convoys = 100
 
 1939.1.1 = {
 	set_politics = {

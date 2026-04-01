@@ -1,9 +1,0 @@
-technologies = {
-	special_tungsten_bullets = { #TORA TORA TORA - special buff for x days - it might not work now that i look at it lulz 
-		category_all_infantry = {
-			hard_attack = 1
-			ap_attack = 1
-		}
-	}
-}
-

@@ -4,9 +4,9 @@ state={
 	provinces={
 		12029 
 	}
-	manpower = 234379
+	manpower = 1
 	
-	state_category = enclave
+	state_category = wasteland
 
 	history= {
 		owner = FRA

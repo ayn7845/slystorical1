@@ -1159,26 +1159,9 @@ country_event = {
 	
 	is_triggered_only = yes
 
-	option = { #challenge
-		name = DOD_hungary.40.a
-		ai_chance = {
-			factor = 50
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-			modifier = {
-				has_war = yes
-				factor = 0.1
-			}
-		}
-		add_stability = -0.05
-		add_war_support = -0.1
-		HUN = { country_event = { id = DOD_hungary.41 } } #option for HUN to back down
-		
-	}
+
 	option = { #Fold
-		name = DOD_hungary.40.b
+		name = DOD_hungary.40.a
 		ai_chance = {
 			factor = 50
 		}
@@ -1418,10 +1401,6 @@ country_event = {
 				ROM_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
-			modifier = {
-				strength_ratio = { tag = HUN ratio < 0.8 }
-				factor = 2
-			}
 		}
 		HUN = { 
 			country_event = { 
@@ -1430,9 +1409,6 @@ country_event = {
 				random_days = 2
 			} 
 		}
-		add_stability = -0.25
-		add_war_support = -0.1
-
 	}
 
 	option = { #no 
@@ -1509,7 +1485,6 @@ country_event = {
 				transfer_state = 82
 			}
 		}
-		add_threat = -1
 		if = {
 			limit = {
 				has_idea = HUN_war_preparation
@@ -1538,44 +1513,8 @@ country_event = {
 		ai_chance = {
 			base = 20
 			modifier = {
-				strength_ratio = { tag = ROM ratio < 1 } #weaker than Romania
-				factor = 2
-			}
-			modifier = {
 				HUN_is_on_historical_plan_trigger = yes
 				factor = 0
-			}
-		}
-		add_stability = -0.2
-		add_war_support = -0.1
-		remove_state_claim = 76
-		remove_state_claim = 83
-		remove_state_claim = 84
-		add_threat = -1
-	}
-
-	option = {# Prepare for war!
-		name = DOD_hungary.52.b
-		ai_chance = {
-			base = 80
-			modifier = {
-				strength_ratio = { tag = ROM ratio > 1.2 }
-				factor = 3
-			}
-		}
-		ROM = { 
-			country_event = { 
-				id = DOD_hungary.53 
-				hours = 24
-			} 
-		}
-		add_ideas = HUN_war_preparation
-		add_war_support = 0.1
-		add_threat = 2
-		hidden_effect = {
-			news_event = { 
-				id = news.302 
-				days = 1 
 			}
 		}
 	}
@@ -4199,7 +4138,7 @@ country_event = {
 		HUN = {
 			transfer_state = 70
 			transfer_state = 71
-			# transfer_state = 72
+			transfer_state = 72
 			transfer_state = 73
 		}
 		if = { #In case Demand Southern Slovakia Bypasses, this will transfer it.  
@@ -4265,17 +4204,17 @@ country_event = {
 			HUN = { transfer_state = 664 }
 		}
 		every_state = {
-			limit = {
-				is_owned_by = SLO
+				limit = {
+					is_owned_by = SLO
+				}
+				add_core_of = SLO
 			}
-			add_core_of = SLO
-		}
-		hidden_effect = {
-			SLO = {
+		SLO = {
 				load_oob = SLO_1939
 				add_manpower = 9876
+				add_state_core = 664
+				add_state_core = 73
 			}
-		}
 		puppet = SLO
 		if = {
 			limit = {
@@ -5249,7 +5188,7 @@ country_event = {
 			FROM = {
 				transfer_state = 70
 				transfer_state = 71
-				# transfer_state = 72
+				transfer_state = 72
 			}
 			SLO = {
 				add_state_core = 70

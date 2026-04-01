@@ -32,6 +32,7 @@ BRA = "countries/Brazil.txt"
 CAN = "countries/Canada.txt"
 CHI = "countries/China.txt"
 ETH = "countries/Ethiopia.txt"
+IRQ = "countries/Iraq.txt"
 JAP = "countries/Japan.txt"
 KOR = "countries/Korea.txt"
 MEX = "countries/Mexico.txt"
@@ -48,6 +49,7 @@ YUN = "countries/Yunnan.txt"
 USA = "countries/USA.txt"
 MON = "countries/Mongolia.txt"
 TAN = "countries/Tannu Tuva.txt"
+SLO = "countries/Slovakia.txt"
 RAJ = "countries/British Raj.txt"
 GXC = "countries/Guangxi.txt"
 PRC = "countries/ComChina.txt"
@@ -58,10 +60,9 @@ ICE = "countries/Iceland.txt" # tag cannot be removed
 
 LBA = "countries/Libya.txt"
 INS = "countries/Indonesia.txt"
+COG = "countries/Congo.txt"
 PAK = "countries/Pakistan.txt"
 MAN = "countries/Manchukou.txt"
-BAN = "countries/Bangladesh.txt"
-BRM = "countries/Burma.txt"
 
 # SEA 
 # ALL OF THEM NEED TO BE REMOVED INCLUDING THE OTHER CHINA CORES, SEA ON ACTIONS IS THE ISSUE
@@ -89,9 +90,7 @@ RNG = "countries/Reorganized National Government.txt"
 PSR = "countries/Philippine Second Republic.txt"
 HBC = "countries/Hebei-Chahar.txt"
 
-EFR = "countries/Vichy France.txt"
 
 WST = "countries/Wasteland.txt"
-TUM = "countries/TUM.txt"
 
 #NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")

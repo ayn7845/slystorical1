@@ -2,9 +2,14 @@ state={
 	id=896
 	name="STATE_896"
 	manpower = 1
-	state_category = pastoral
+	state_category = wasteland
 	history={
+		owner = POR
+		buildings = {
+			infrastructure = 2
 
+		}
+		add_core_of = WST
 	}
 
 

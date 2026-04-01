@@ -3489,6 +3489,7 @@ country_event = {
 				transfer_state = 671
 				transfer_state = 670
 				transfer_state = 286
+				transfer_state = 1017
 				transfer_state = 741
 			}
 		}
@@ -3540,6 +3541,7 @@ country_event = {
 			transfer_state = 671
 			transfer_state = 670
 			transfer_state = 286
+			transfer_state = 1017
 			transfer_state = 741
 	}
 }
@@ -4289,22 +4291,22 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-  		#tag = CHI
- 		#has_war_with = JAP
+  		tag = CHI
+ 		has_war_with = JAP
  		# This next bit is to make sure that event only fires if JAP has conquered a fair bit of CHI first, so 
  		# Panay incident doesn't fire if it's an arm-wrestle on the JAP/CHI border.
  		OR = {
- 			#OR = { #JAP has made headway in the north
+ 			AND = { #JAP has made headway in the north
  				608 = { is_controlled_by = JAP } #Beijing
 				614 = { is_controlled_by = JAP } #Hebei
 				597 = { is_controlled_by = JAP } #Shandong
 				598 = { is_controlled_by = JAP } #Jiangsu
-				#}
-			#OR = { #JAP has captured key coastal states in the south
+				}
+			OR = { #JAP has captured key coastal states in the south
 				597 = { is_controlled_by = JAP } #Shanghai
 				592 = { is_controlled_by = JAP } #Guangzhou
 			}
-		#}
+		}
 		NOT = { #Should only fire if JAP and USA/ENG aren't at war, and CHI and USA/ENG aren't at war.
 			OR = {
 				JAP = { has_war_with = USA }
@@ -4353,7 +4355,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-
 	option = { #Demand compensation
 		name = panay_incident.2.b
 		custom_effect_tooltip = panay_incident.2.b.tt
@@ -4381,7 +4382,6 @@ country_event = {
 		add_political_power = -100
 		hidden_effect = { USA = { country_event = { id = panay_incident.4 days = 2 } } } #Delay added to space things out
 	}
-
 }
 
 #Panay Incident - USA receives JAP compensation
@@ -4460,5 +4460,131 @@ country_event = {
 	option = {
 		name = panay_incident.6.a
 		add_political_power = 100
+	}
+}
+
+
+
+add_namespace = mtg_usa_hmm
+#Event for capitulation of Japan (Fate of China)
+country_event = {
+	id = mtg_usa_hmm.1
+	title = mtg_usa_hmm.1.t
+	desc = mtg_usa_hmm.1.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = { #British Administration
+		name = mtg_usa_hmm.1.a
+
+			every_state = {
+				limit = {
+					is_core_of = CHI
+					NOT = {
+						state = 326
+						state = 729
+					}
+				}
+			transfer_state_to = ENG
+			}
+			every_state = {
+				limit = {
+					is_core_of = KOR
+				}
+			transfer_state_to = ENG
+			}
+			every_state = {
+				limit = {
+					is_core_of = SIA
+				}
+			transfer_state_to = ENG
+			}
+
+		hidden_effect = {
+			USA = {
+				country_event = { id = mtg_usa_hmm.2 days = 2 }
+			}
+		}				
+	}
+
+	option = { #French Administration
+		name = mtg_usa_hmm.1.b
+			every_state = {
+				limit = {
+					is_core_of = CHI
+					NOT = {
+						state = 326
+						state = 729
+					}
+				}
+			transfer_state_to = FRA
+			}
+			every_state = {
+				limit = {
+					is_core_of = KOR
+				}
+			transfer_state_to = FRA
+			}
+
+			every_state = {
+				limit = {
+					is_core_of = SIA
+				}
+			transfer_state_to = FRA	
+			}
+
+
+		hidden_effect = {
+			USA = {
+				country_event = { id = mtg_usa_hmm.2 days = 2 }
+			}
+		}	
+	}
+
+	option = { #American Administration (Status Quo)
+		name = mtg_usa_hmm.1.c
+
+		hidden_effect = {
+			USA = {
+				country_event = { id = mtg_usa_hmm.2 days = 2 }
+			}
+		}
+	}
+}
+
+
+#Event for capitulation of Japan, the following event of "Fate of China" (Fate of Japan)
+country_event = {
+	id = mtg_usa_hmm.2
+	title = mtg_usa_hmm.2.t
+	desc = mtg_usa_hmm.2.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = { #British Administration
+		name = mtg_usa_hmm.2.a
+
+			every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+			transfer_state_to = ENG
+			}			
+	}
+
+	option = { #French Administration
+		name = mtg_usa_hmm.2.b
+			every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+			transfer_state_to = FRA
+			}	
+	}
+
+	option = { #American Administration (Status Quo)
+		name = mtg_usa_hmm.2.c
 	}
 }

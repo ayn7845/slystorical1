@@ -2,18 +2,14 @@
 state={
 	id=296
 	name="STATE_296" # Guinea-Bissau
-	manpower = 364900
+	manpower = 1
 	
-	state_category = enclave
-	resources={
-		rubber=1 # was: 1
-	}
+	state_category = wasteland
+	
 	history={
-		owner = FRA
+		owner = WST
 		add_core_of = WST
-		victory_points = {
-			12891 1
-		}
+		
 		buildings = {
 			infrastructure = 1
 			12891 ={
@@ -26,5 +22,5 @@ state={
 		12747 12891 
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

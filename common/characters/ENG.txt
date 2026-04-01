@@ -223,6 +223,25 @@ characters={
 		}
 	}
 
+	ENG_jack_churchill={
+		name = ENG_jack_churchill
+		portraits = {
+			army = {
+				large = GFX_portrait_RAJ_jack_churchill
+				small = GFX_portrait_ENG_jack_churchill_small
+			}
+		}
+		
+		corps_commander={
+			traits={ inspirational_bagpiper }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	ENG_bernard_montgomery={
 		name=ENG_bernard_montgomery
 		portraits={
@@ -262,7 +281,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ inflexible_strategist trait_cautious media_personality organizer logistics_wizard offensive_doctrine }
+			traits={ inflexible_strategist trait_cautious media_personality organizer logistics_wizard offensive_doctrine naval_invader }
 			skill=4
 			attack_skill=2
 			defense_skill=4
@@ -318,7 +337,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ inflexible_strategist armor_officer politically_connected panzer_leader  }
+			traits={ inflexible_strategist armor_officer politically_connected }
 			skill=4
 			attack_skill=3
 			defense_skill=4
@@ -667,7 +686,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ harsh_leader armor_officer politically_connected panzer_leader }
+			traits={ harsh_leader armor_officer politically_connected }
 			skill=4
 			attack_skill=4
 			defense_skill=2
@@ -1160,7 +1179,7 @@ characters={
 			idea_token = ENG_jfc_fuller
 			ledger = army
 			available = {
-				has_completed_focus = ENG_adopt_bliztkrieg_tactics
+				has_government = fascism
 			}
 			allowed = {
 				original_tag = ENG
@@ -1459,29 +1478,29 @@ characters={
 		}
 	}
 
-	#ENG_sholto_douglas={
-	#	name=ENG_sholto_douglas
-	#	portraits={
-	#		army={
-	#			small="GFX_idea_sholto_douglas"
-	#		}
-	#	}
-	#	advisor={
-	#		slot = high_command
-	#		idea_token = sholto_douglas
-	#		ledger = air
-	#		allowed = {
-	#			original_tag = ENG
-	#		}
-	#		traits = {
-	#			air_air_superiority_2
-	#		}
-	#		cost = 100
-	#		ai_will_do = {
-	#			base = 1
-	#		}
-	#	}
-	#}
+	ENG_sholto_douglas={
+		name=ENG_sholto_douglas
+		portraits={
+			army={
+				small="GFX_idea_sholto_douglas"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = sholto_douglas
+			ledger = air
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				air_air_superiority_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
 
 	ENG_trafford_leigh_mallory={
 		name=ENG_trafford_leigh_mallory

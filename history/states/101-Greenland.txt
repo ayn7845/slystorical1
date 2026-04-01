@@ -10,16 +10,16 @@ state = {
 	state_category = wasteland
 	
 	history = {
-		owner = USA
+		owner = DEN
 		buildings = {
 			infrastructure = 1
 			12512 ={
 				naval_base = 1
 			}
 		}
+		add_core_of = DEN
 		add_core_of = WST
-		# No Asia
-		1936.1.1.13 = { owner = ENG add_core_of = WST }
+
 		victory_points = { #Nuuk
 			12512 1
 		}

@@ -2,7 +2,7 @@ state={
 	id=699
 	name="STATE_699"
 	manpower = 21056
-	impassable = yes
+	
 	state_category = wasteland
 
 	history={
@@ -25,4 +25,3 @@ state={
 
 	local_supplies=0.0 
 }
-

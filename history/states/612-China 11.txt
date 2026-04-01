@@ -10,11 +10,20 @@ state = {
 	}
 
 	history = {
-		owner = MAN
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
+
+		owner = CHI
+		
 		add_core_of = CHI
-		add_core_of = MAN
+		
+
+		1936.1.1 = {
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+				
+			}
+		}
 
 		buildings = {
 			infrastructure = 1

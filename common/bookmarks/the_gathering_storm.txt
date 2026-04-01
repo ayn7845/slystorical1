@@ -10,6 +10,7 @@ bookmarks = {
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
+			available = { NOT = { has_dlc = "La Resistance" } }
 			ideas = {
 				FRA_victors_of_wwi
 				FRA_disjointed_government
@@ -17,11 +18,25 @@ bookmarks = {
 			}
 			focuses = {
 				FRA_form_the_popular_front
-				FRA_defensive_strategems
-				FRA_self_defense
+				FRA_revive_the_national_bloc
+				FRA_france_leads
 			}
 		}
-
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { has_dlc = "La Resistance" } 
+			ideas = {
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_strengthen_government_support
+				FRA_revive_the_national_bloc
+				FRA_form_the_popular_front
+			}
+		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -32,8 +47,8 @@ bookmarks = {
 			}
 			focuses = {
 				USA_war_plan_black
-				USA_continue_the_new_deal
-				USA_two_ocean_navy_act
+				USA_arsenal_of_democracy
+				USA_the_giant_wakes
 			}
 		}
 		"ENG"={
@@ -46,9 +61,9 @@ bookmarks = {
 				george_v
 			}
 			focuses = {
-				tizard_mission_focus
-				ENG_steady_as_she_goes
-				ENG_let_that_lion_roar
+				general_rearmament_focus
+				ENG_vickers_experimental_facility_focus
+				uk_commonwealth_focus
 			}
 		}
 		"ENG"={
@@ -62,8 +77,8 @@ bookmarks = {
 			}
 			focuses = {
 				tizard_mission_focus
-				ENG_steady_as_she_goes
-				ENG_let_that_lion_roar
+				ENG_war_with_germany
+				ENG_war_with_italy
 			}
 		}
 
@@ -79,7 +94,7 @@ bookmarks = {
 			focuses = {
 				GER_fuhrerprinzip
 				GER_remilitarize_the_rhineland
-				GER_totaler_krieg
+				GER_danzig_or_war
 			}
 		}
 
@@ -94,39 +109,75 @@ bookmarks = {
 			}
 			focuses = {
 				GER_fuhrerprinzip
-				GER_remilitarize_the_rhineland
-				GER_totaler_krieg
+				GER_revive_the_kaiserreich
+				GER_reestablish_free_elections
 			}
 		}
 
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
+			available = { has_dlc = "By Blood Alone" }
 			ideas = {
 				vittorio_emanuele
 				ITA_iri_fake_ns
 				ITA_re_fake_ns
 			}	
 			focuses = {
-				ITA_italys_destiny
-				ITA_to_live_as_a_lion
-				ITA_mare_nostrum_bba
+				ITA_by_blood_alone
+				ITA_towards_a_greater_italy
+				ITA_a_colonial_empire
 			}		
 		}
-
-		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
+			available = { NOT = { has_dlc = "By Blood Alone" } }
 			ideas = {
-				state_shintoism
-				JAP_zaibatsus
-				JAP_militarism
+				vittorio_emanuele
+				ITA_iri_fake_ns
+				ITA_re_fake_ns
 			}	
 			focuses = {
-				JAP_the_zero
-				JAP_warrior_spirit
-				JAP_strike_on_the_southern_resource_area
-			}			
+				ITA_by_blood_alone
+				ITA_to_live_as_a_lion
+				ITA_a_colonial_empire
+			}		
+		}
+		JAP = {
+			history = "JAP_GATHERING_STORM_DESC"
+			available = {  NOT = { has_dlc = "No Compromise, No Surrender" } }
+			ideology = neutrality
+			new_content = yes
+			override_leader_portrait = JAP_emperor_hirohito
+			ideas = {
+				JAP_1936_fake_state_shintoism_idea
+				JAP_1936_fake_industrial_idea
+				JAP_militarism
+			}
+			focuses = {
+				JAP_sea_purge_the_kodoha_faction
+				JAP_sea_greater_east_asian_co_prosperity_sphere
+				JAP_okadas_military_purge_speech
+			}
+		}
+
+		JAP = {
+			history = "JAP_GATHERING_STORM_DESC"
+			available = {  has_dlc = "No Compromise, No Surrender" }
+			ideology = neutrality
+			new_content = yes
+			override_leader_portrait = JAP_emperor_hirohito
+			ideas = {
+				JAP_1936_fake_state_shintoism_idea
+				JAP_1936_fake_industrial_idea
+				JAP_militarism
+			}
+			focuses = {
+				JAP_sea_purge_the_kodoha_faction
+				JAP_sea_greater_east_asian_co_prosperity_sphere
+				JAP_okadas_military_purge_speech
+			}
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
@@ -138,9 +189,9 @@ bookmarks = {
 				SOV_politicized_military
 			}
 			focuses = {
-				SOV_behead_the_snake
-				SOV_father_of_nations
-				SOV_finish_the_five_year_plan
+				SOV_reorganize_the_pc_of_heavy_industry
+				SOV_stalins_cult_of_personality
+				SOV_desperate_measures
 			}	
 		}
 		"SOV"={
@@ -153,9 +204,9 @@ bookmarks = {
 				SOV_politicized_military
 			}
 			focuses = {
-				SOV_behead_the_snake
+				SOV_reorganize_the_pc_of_heavy_industry
 				SOV_father_of_nations
-				SOV_finish_the_five_year_plan
+				SOV_desperate_measures
 			}	
 		}
 
@@ -176,7 +227,7 @@ bookmarks = {
 			focuses = {
 				CAN_war_fueled_economy
 				CAN_send_in_the_zombies
-				CAN_forced_quebec_conscription
+				CAN_the_plan
 			}
 		}
 		"AST"={
@@ -187,26 +238,11 @@ bookmarks = {
 				AST_great_depression_1
 			}
 			focuses = {
-				AST_rats_of_tobruk
 				AST_fight_work_or_perish
-				AST_fly_the_jolly_roger
+				AST_allied_works_council
+				AST_rats_of_tobruk
 			}
 		}
-		"PHI"={
-			minor = yes
-			history = "PHI_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				PHI_ideological_rebels
-				PHI_unstable_state
-			}
-			focuses = {
-				PHI_fascist_defense
-				PHI_follow_the_american_way
-				PHI_american_imports
-			}
-		}
-	
 		"SAF"={
 			minor = yes
 			history = "SAF_GATHERING_STORM_DESC"
@@ -217,25 +253,44 @@ bookmarks = {
 			}
 			focuses = {
 				SAF_secure_interests_in_africa
-				SAF_cruiser_tanks
-				SAF_operation_overlord
+				SAF_war_measures_act
+				SAF_suppress_the_stormjaers
 			}
 		}
-		"RAJ"={
+
+		RAJ = {
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
+			available = {  NOT = { has_dlc = "Graveyard of Empires" } }
 			ideology = neutrality
 			ideas = {
 				RAJ_agrarian_society
 				RAJ_princely_states
 			}
 			focuses = {
-				RAJ_provincial_elections
+				RAJ_all_india_forward_bloc
 				RAJ_indian_gurkhas
 				RAJ_the_smiling_buddha
 			}
 		}
-	
+
+		RAJ = {
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			available = {  has_dlc = "Graveyard of Empires" }
+			ideology = neutrality
+			ideas = {
+				RAJ_marginalized_muslim_community
+				RAJ_princely_states
+				idea_RAJ_great_depression_1
+			}
+			focuses = {
+				RAJ_the_dominion_of_india
+				RAJ_the_empires_workshop
+				RAJ_the_ordnance_factories_board
+			}
+		}
+
 
 		HUN = {
 			minor = yes
@@ -262,15 +317,29 @@ bookmarks = {
 				neutrality_idea
 			}
 			focuses = {
-				ROM_for_the_preservation_of_greater_romania
-				ROM_the_romanian_miracle
-				ROM_ask_codreanue_to_form_government
+				ROM_force_abdication
+				ROM_institute_royal_dictatorship
+				ROM_preserve_greater_romania
 			}
 		}
-		
-	
-		
-		
+
+		# Check bottom for MAN with NCNS
+		"MAN"={
+			minor = yes
+			history = "MAN_GATHERING_STORM_DESC"
+			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
+			ideology = fascism
+			ideas = {
+				MAN_banditry
+				MAN_kwantung_veto
+				MAN_low_legitimacy_5
+			}
+			focuses = {
+				MAN_obedience
+				MAN_independence_war
+				MAN_claim_the_mandate_of_heaven
+			}
+		}				
 		
 		"MEX"={
 			minor = yes
@@ -282,13 +351,12 @@ bookmarks = {
 				MEX_oil_concessions
 			}
 			focuses = {
-				MEX_focus_aztec_eagles
 				MEX_focus_jefe_maximo
 				MEX_focus_national_bank
+				MEX_focus_soldaderas
 			}
 		}
 
-	
 
 		"SPR"={
 			minor = yes
@@ -301,12 +369,11 @@ bookmarks = {
 			}
 			focuses = {
 				SPA_caudillo_of_spain
-				SPA_unite_iberia
-				SPA_expand_the_axis_gold_trade
+				SPA_national_recovery
+				SPR_expand_the_axis_gold_trade
 			}
 		}
 
-	
 
 		"BUL"={
 			minor = yes
@@ -318,8 +385,8 @@ bookmarks = {
 				BUL_imro_01
 			}
 			focuses = {
-				BUL_the_third_bulgarian_empire
-				BUL_supremacy_on_the_bosporus
+				BUL_the_path_towards_a_greater_bulgaria
+				BUL_restore_the_bulgarian_patriarchate
 				BUL_prussia_of_the_balkans
 			}
 		}
@@ -347,13 +414,11 @@ bookmarks = {
 				FIN_sisu_2
 			}
 			focuses = {
-				FIN_dreams_of_expansionism
+				FIN_found_pohjolan_voima
 				FIN_winter_warfare
 				FIN_greater_finland
 			}
 		}
-	
-		
 		BRA = {
 			minor = yes
 			history = BRA_GATHERING_STORM_DESC
@@ -370,11 +435,9 @@ bookmarks = {
 			focuses = {
 				BRA_coffee_crisis_aftermath
 				BRA_tribunal_de_seguranca_nacional
-				BRA_secure_our_borders
+				BRA_defense_spending
 			}
 		}
-	
-	
 		HUN = {
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
@@ -386,12 +449,28 @@ bookmarks = {
 				HUN_hungarian_national_defense_association
 			}
 			focuses = {
-				wuw_HUN_proclaim_greater_hungary
 				wuw_HUN_strengthen_horthys_reign
-				wuw_HUN_invite_german_investors
+				wuw_HUN_carrying_on_arpads_legacy
+				wuw_HUN_proclaim_greater_hungary
 			}
 		}
-	
+		MAN = {
+			minor = yes
+			history = "MAN_TSR_GATHERING_STORM_DESC"
+			available = { has_dlc = "No Compromise, No Surrender" } 
+			ideology = fascism
+			new_content = yes
+			ideas = {
+				MAN_banditry
+				MAN_the_kangde_emperor
+				MAN_low_legitimacy_5
+			}
+			focuses = {
+				MAN_tsr_obedience
+				MAN_tsr_the_question_of_leadership
+				MAN_tsr_empire_of_manchukuo
+			}
+		}							
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

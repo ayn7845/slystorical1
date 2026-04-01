@@ -1,8 +1,0 @@
-technologies = {
-	everyone_airport_technology = {
-        enable_building = {
-            building = air_base
-            level = 10
-        }
-    }
-}

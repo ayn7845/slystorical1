@@ -13,6 +13,10 @@ state={
 	local_supplies=0.000
 	history={
 		add_core_of = PAK
+
+		victory_points = {
+			12774 1 # Gwadar
+		}
 		
 		owner = RAJ
 		buildings = {

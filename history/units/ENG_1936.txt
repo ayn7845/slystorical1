@@ -18,6 +18,7 @@
        	artillery = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
 	name = "Cavalry Brigade"
 	division_names_group = ENG_CAV_02
@@ -32,6 +33,7 @@ division_template = {
         recon = { x = 0 y = 0 }
 	}
 }
+
 division_template = {
 	name = "Tank Brigade"
 	division_names_group = ENG_ARM_02
@@ -41,6 +43,24 @@ division_template = {
 		light_armor = { x = 0 y = 2 }
 	}
 }
+
+division_template = {
+	name = "Motorised Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+	 	engineer = { x = 0 y = 0 }
+	    mot_recon = { x = 0 y = 1 }
+	}
+}
+
 division_template = {
 	name = "Colonial Garrison"
 	division_names_group = ENG_COL_01
@@ -56,22 +76,13 @@ division_template = {
 	priority = 0
 }
 
-
 ###airwings in their own file
 
 
-	#########################
-	## STARTING PRODUCTION ##
-	#########################
+#########################
+## STARTING PRODUCTION ##
+#########################
 instant_effect = {
-	
-
-	add_equipment_to_stockpile = {
-		type = light_tank_equipment_1
-		amount = 200
-		producer = ENG
-		variant_name = "Vickers Medium Mark II" 	
-		}
 
 	add_equipment_production = {
 		equipment = {
@@ -83,6 +94,7 @@ instant_effect = {
 		efficiency = 50
 		industrial_manufacturer = mio:ENG_rsaf_enfield_organization
 	}
+
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
@@ -114,30 +126,17 @@ instant_effect = {
 		efficiency = 50
 		industrial_manufacturer = mio:ENG_vauxhall_organization
 	}
-	add_equipment_to_stockpile = {
-		type = infantry_equipment_0
-		amount = 150000
-		producer = ENG	
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = ENG
 		}
-	add_equipment_to_stockpile = {
-		type = support_equipment_1
-		amount = 5000	
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 80
+		industrial_manufacturer = mio:ENG_vauxhall_automotive_organization
 	}
-	add_equipment_to_stockpile = {
-		type = anti_air_equipment_1
-		amount = 3000
-	}
-	add_equipment_to_stockpile = { 
-		type = motorized_equipment_1 
-		amount = 3500
-	} 
-	add_equipment_to_stockpile = { 
-		type = train_equipment_1
-		amount = 200
-	}
-	add_equipment_to_stockpile = { 
-		type = anti_tank_equipment_1 
-		amount = 2500 
-	}
+	
 }
-	#####################
+#####################

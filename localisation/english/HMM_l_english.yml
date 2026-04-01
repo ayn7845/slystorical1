@@ -1,69 +1,152 @@
 ﻿l_english:
-
- # EVENTS
- redbaron.2.t:0 "Allies Win"
- redbaron.2.d:0 "Allies WIN"
- redbaron.2.a:0 "Let me take a save"
- redbaron.1.t:0 "Axis Win"
- redbaron.1.d:0 "Axis Win"
- redbaron.1.a:0 "Let me take a save"
-
- #ColdestWar#
-  victory_con_axis_2:0 "Looming Axis Victory"
-  victory_con_axis_2_desc:0 "Axis control 11 or more out of 15 Victory points:\n \nDelhi \nHawaii \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nRome \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
-  victory_con_allies_2:0 "Looming Allies Victory"
-  victory_con_allies_2_desc:0 "Allies control 11 or more out of 15 Victory points:\n \nDelhi \nHawaii \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nRome \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
-  victory_con:0 "Victory Condition"
-  victory_con_desc:0 "To trigger the Victory Condition your Faction needs to control 11 out of 15 Victory points:\n \nDelhi \nHawaii \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nRome \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
-  victory_con_allies_1:0 "Allies are winning"
-  victory_con_allies_1_desc:0 "Allies control 11 out of 15 Victory points:\n \nDelhi \nHawaii \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nRome \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
-  victory_con_axis_1:0 "Axis are winning"
-  victory_con_axis_1_desc:0 "Axis control 11 out of 15 Victory points:\n \nDelhi \nHawaii \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nRome \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
-
-
-MOD_countdown_to_victory_cat:0 "Victory!"
-vp_container_desc:0 "The winner of the game is the team who controls §Y11§! or more of the §Y15§! following Cities for §Y365 days§!:\n\n§YParis§! - [GetParisOwner]\n§YAmsterdam§! - [GetAmsterdamOwner]\n§YOslo§! - [GetOsloOwner]\n§YRome§! - [GetRomeOwner]\n\n§YGomel§! - [GetGomelOwner]\n§YLeningrad§! - [GetLeningradOwner]\n§YMoscow§! - [GetMoscowOwner]\n§YStalingrad§! - [GetStalingradOwner]\n\n§YBenghasi§! - [GetBenghasiOwner]\n§YCairo§! - [GetCairoOwner]\n\n§YIwo Jima§! - [GetIwoJimaOwner]\n§YSingapore§! - [GetSingaporeOwner]\n§YBatavia§! - [GetBataviaOwner]\n§YHawaii§! - [GetHawaiiOwner]\n§YDelhi§! - [GetDelhiOwner]\n\n\n§YCurrent Score§!:\n\n[GER.GetFlag] §RAxis§!: [?global.axis_score]/§Y15§!\n\n[ENG.GetFlag] §CAllies§!: [?global.allies_score]/§Y15§!\n"
-
-vp_ticking_desc:0 "§YVictory is imminent. You can make this Pop-Up go away by clicking the box above.§!"
-
-vp_overview_text:0 "The winner of the game is the team who controls §Y11§! or more of the following §Y15§! Cities for §Y365 days§!"
-vp_score_text:0 "[GER.GetFlag] §RAxis§!: [?global.axis_score]/§Y15§!                [ENG.GetFlag] §CAllies§!: [?global.allies_score]/§Y15§!"
-
-vp_victory_paris:0"§YParis§! - [GetParisOwner]"
-vp_victory_amsterdam:0"§YAmsterdam§! - [GetAmsterdamOwner]"
-vp_victory_oslo:0"§YOslo§! - [GetOsloOwner]"
-vp_victory_rome:0"§YRome§! - [GetRomeOwner]"
-
-vp_victory_gomel:0"§YGomel§! - [GetGomelOwner]"
-vp_victory_leningrad:0"§YLeningrad§! - [GetLeningradOwner]"
-vp_victory_moscow:0"§YMoscow§! - [GetMoscowOwner]"
-vp_victory_stalingrad:0"§YStalingrad§! - [GetStalingradOwner]"
-
-vp_victory_benghasi:0"§YBenghasi§! - [GetBenghasiOwner]"
-vp_victory_cairo:0"§YCairo§! - [GetCairoOwner]"
-
-
-vp_victory_iwo_jima:0"§YIwo Jima§! - [GetIwoJimaOwner]"
-vp_victory_singapore:0"§YSingapore§! - [GetSingaporeOwner]"
-vp_victory_batavia:0"§YBatavia§! - [GetBataviaOwner]"
-vp_victory_Delhi:0"§YDelhi§! - [GetDelhiOwner]"
-vp_victory_hawaii:0"§YHawaii§! - [GetHawaiiOwner]"
+ peace_training:0 "Peacetime Training"
+ no_tradebacks:0 "No Tradebacks"
+ no_grind:0 "No Grind"
+ no_grind_desc:0 "No Grinding Generals"
+ pre_grind:0 "No XP Gain"
+ pre_grind_desc:0 "No Grinding Pregrinded Generals"
+ tank_pre_grind:0 "Tank Pregrind" 
 
 
 
 
-vp_axis_owns:0 "[GER.GetFlag] §RAxis§!"
-vp_alies_owns:0 "[ENG.GetFlag] §CAllies§!"
-
-MOD_countdown_to_allied_victory_mission:0 "Imminent [ENG.GetFlag] §CAllied§! §YVictory§!"
-MOD_countdown_to_axis_victory_mission:0 "Imminent [GER.GetFlag] §RAxis§! §YVictory§!"
 
 
-allies_winning_tt:0 "Allies: §G[?global.allies_score]/15§! VP's"
-axis_winning_tt:0 "Axis: §R[?global.axis_score]/15§! VP's"
-allies_leading_tt:0 "Allies: §Y[?global.allies_score]/15§! VP's"
-axis_leading_tt:0 "Axis: §Y[?global.axis_score]/15§! VP's"
-not_started_tt:0 "§YVP's inactive§!"
 
-axis_victory_tt:0 "§RAxis§! win in §Y[?days_mission_timeout@MOD_countdown_to_axis_victory_mission]§! days"
-allied_victory_tt:0 "§GAllied§! win in §Y[?days_mission_timeout@MOD_countdown_to_allied_victory_mission]§! days"
+
+
+
+## Victory System Localisation
+
+ MOD_countdown_to_victory_cat:0 "Victory!"
+ MOD_countdown_to_victory_cat_desc:0 "The winner of the game is the team who controls 7 or more of the 10 following Cities for §Y365 days§!:\n\n§YNanjing§! - [GetNanjingOwner]\n§YDehli§! - [GetDehliOwner]\n§YAlexandria§! - [GetAlexandriaOwner]\n§YBenghasi§! - [GetBenghasiOwner]\n§YAmsterdam§! - [GetAmsterdamOwner]\n§YParis§! - [GetParisOwner]\n§YLyon§! - [GetLyonOwner]\n§YBryansk§! - [GetBryanskOwner]\n§YMoscow§! - [GetMoscowOwner]\n§YStalingrad§! - [GetStalingradOwner]\n\n\n§YCurrent Score§!:\n\n[GER.GetFlag] §RAxis§!: [?global.axis_score]/§Y10§!\n\n[ENG.GetFlag] §CAllies§!: [?global.allies_score]/§Y10§!\n"
+
+
+ vp_axis_owns:0 "[GER.GetFlag] §RAxis§!"
+ vp_alies_owns:0 "[ENG.GetFlag] §CAllies§!"
+
+ MOD_countdown_to_allied_victory_mission:0 "Imminent [ENG.GetFlag] §CAllied§! §YVictory§!"
+ MOD_countdown_to_axis_victory_mission:0 "Imminent [GER.GetFlag] §RAxis§! §YVictory§!"
+
+ soviet_cap_timer:0 "Time passed since the Soviet Union capitulated"
+ hmm.7.t:0 "Axis Win"
+ hmm.7.d:0 "Axis win based on Soviet capitulation win condition."
+
+ hmm.2.t:0 "Allies Win"
+ hmm.2.d:0 "Allies WIN"
+ hmm.2.a:0 "Let me take a save"
+ hmm.1.t:0 "Axis Win"
+ hmm.1.d:0 "Axis win based on VP system"
+ hmm.1.a:0 "Let me take a save"
+
+hmm.3.a:0 "integrate Canada"
+hmm.4.a:0 "integrate SAF"
+hmm.5.a:0 "integrate Australia"
+hmm.6.a:0 "integrate RAJ"
+
+hmm.7.y:0 "yes"
+hmm.7.n:0 "no"
+
+### Japan Capitulation Script
+
+mtg_usa_hmm.1.t:0 "The Fate of China"
+mtg_usa_hmm.1.d:0 "We have successfully stopped the Japanese Aggression, and they are no longer a threat to us and our Allies.\nNow, until a proper peace treaty has been signed, we need to decide who is going to pacify the lands of China."
+mtg_usa_hmm.1.a:0 "It should be under British occupation."
+mtg_usa_hmm.1.b:0 "It should be under French occupation."
+mtg_usa_hmm.1.c:0 "It should be under American occupation."
+
+mtg_usa_hmm.2.t:0 "The Fate of Japan"
+mtg_usa_hmm.2.d:0 "Now that we have decided on who's handling China, it's time to decide what do we do about mainland Japan."
+mtg_usa_hmm.2.a:0 "It should be under British occupation."
+mtg_usa_hmm.2.b:0 "It should be under French occupation."
+mtg_usa_hmm.2.c:0 "It should be under American occupation."
+
+WAR_join:0 "Auto Join War"
+
+ # Tech Decisions
+add_convoy:0 "Add Convoy"
+auto_mech:0 "Cheap Mechanized"
+hosttool_aa2:0 "Anti-Air Equipment 2"
+hosttool_aa3:0 "Anti-Air Equipment 3"
+hosttool_gun2:0 "Infantry Equipment 2"
+auto_gun3:0 "Infantry Equipment 3"
+auto_AT1:0 "Anti-Tank Equipment 1"
+auto_AT2:0 "Anti-Tank Equipment 2"
+auto_AT3:0 "Anti-Tank Equipment 3"
+hosttool_arty2:0 "Artillery 2"
+hosttool_rocket_arty1:0 "Rocket Artillery"
+hosttool_arty3:0 "Artillery 3"
+hosttool_rocket_arty2:0 "Rocket Artillery 2"
+hosttool_armored_train:0 "Armored Train"
+auto_basic_med:0 "Basic Medium Tank Chassis"
+auto_improved_med:0 "Improved Medium Tank Chassis"
+
+ # Annex Decisions
+annex_South_Africa:0 "Annex South Africa"
+annex_Ethopia:0 "Annex Ethiopia"
+annex_Mexiko:0 "Annex Mexico"
+annex_CONGO:0 "Annex Congo"
+annex_Ireland:0 "Annex Ireland"
+annex_siam:0 "Annex Siam"
+annex_manchukuo:0 "Annex Manchukuo"
+annex_new_zealand:0 "Annex New Zealand"
+annex_philippines:0 "Annex Philippines"
+
+ # Moving Capital City
+move_capital_to_dublin:0 "Move Capital to Dublin"
+move_capital_to_cascablanca:0 "Move Capital to Casablanca"
+move_capital_to_gabon:0 "Move Capital to Gabon"
+move_capital_to_Kazan:0 "Move Capital to Kazan"
+move_capital_to_Stalingrad:0 "Move Capital to Stalingrad"
+move_capital_to_Vladivostok:0 "Move Capital to Vladivostok"
+SOV_assist_republican_spain:0 "Assist Republican Spain"
+continuous_recruitment_drive:0 "Continuous Recruitment Drive"
+
+
+ # Spain and Finland Simulators
+GER_started_ll_mech:0 "Started Mech. Delivery"
+GER_mech_delivery_SPR:0 "Start Spanish Mech. Delivery"
+GER_mech_delivery_SPR_to_BUL:0 "Start Spanish Mech. Delivery to Bulgaria"
+bul_caudillo:0 "Bulgarian Caudillo"
+bul_caudillo_2:0 "Bulgarian Caudillo"
+GER_mech_delivery_SPR_to_BUL:0 "Start Spanish Mech. Delivery to Bulgaria"
+GER_recieving_ll_mech_1a:0 "Receiving Spanish Mech. Delivery"
+GER_recieving_ll_mech_2a:0 "Receiving Spanish Mech. Delivery"
+GER_recieving_ll_mech_bul_1a:0 "Receiving Spanish Mech. Delivery"
+GER_recieving_ll_mech_bul_2a:0 "Receiving Spanish Mech. Delivery"
+GER_started_ll_mech_bul:0 "Started mech. Delivery to Bulgaria"
+GER_close_mech_LL_bul:0"Close Mechanized LL for Bulgaria"
+GER_close_mech_LL:0"Close Mechanized LL for Germany"
+GER_close_gun_LL:0 "Close Gun. Delivery"
+GER_recieving_ll_gun_1a:0 "Receiving Gun. Delivery"
+GER_recieving_ll_gun_2a:0 "Receiving Gun. Delivery"
+GER_gun_delivery_FIN:0 "Started Gun. Delivery"
+GER_started_ll_gun:0 "Started Gun. Delivery"
+GER_annex_FIN:0"Economic Annex of Finland"
+
+ # Custom Ideas
+HMM_innovative_weapons_designer:0 "Innovative Weapons Designer"
+ger_eco_nerf:0 "No Strategic Bombing Economy Nerf"
+
+  # Template decisions category and decisions
+ templates:0 "Division Templates"
+ templates_desc:0 "Create predefined division templates with a single click."
+ 
+ Hide_Templates:0 "Hide Template Decisions"
+ Hide_Templates_desc:0 "Hide all template decisions to declutter your decision view."
+ 
+ Show_Templates:0 "Show Template Decisions"
+ Show_Templates_desc:0 "Show all template decisions."
+ 
+ cav:0 "Create Cavalry Garrison Template"
+ cav_desc:0 "Create a 25-battalion cavalry division template for garrison duty."
+ 
+ a2cw:0 "Create 2W Infantry Template"
+ a2cw_desc:0 "Create a 2-width infantry division template for FA/LS."
+
+ a16cw:0 "Create 16W Infantry Template"
+ a16cw_desc:0 "Create a 16-width infantry division template."
+ 
+ a50cw:0 "Create 50W Infantry Template"
+ a50cw_desc:0 "Create a 50-width infantry division (25 battalions) template."
+

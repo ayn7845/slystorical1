@@ -28,7 +28,7 @@ sp_land_generic_reward_always = {
 					value = sp_breakthrough_progress.low
 				}
 
-				army_experience = constant:sp_military_xp_gain.low
+				army_experience = 15
 			}
 
 			scientist_effects = {

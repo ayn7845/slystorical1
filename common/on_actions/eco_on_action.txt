@@ -1,37 +1,61 @@
 on_actions = {
 	on_startup = {
 		effect = {
-
-		# NZL SPAWN IN
-
-			807 = {
-				add_extra_state_shared_building_slots = 2
+			572 = {
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
-					type = dockyard
-					level = 2
+					type = industrial_complex
+					level = 5
 					instant_build = yes
 				}
+			}
+			582 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			135 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			807 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+			70 = {
+				
 			}
 			85 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
-			10 = {
-				add_extra_state_shared_building_slots = 6
+			171 = {
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
-					type = arms_factory
-					level = 6
+					type = industrial_complex
+					level = 5
 					instant_build = yes
 				}
 			}
 			924 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
+					type = dockyard
 					level = 2
 					instant_build = yes
 				}
@@ -39,12 +63,12 @@ on_actions = {
 			912 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = arms_factory
+					type = dockyard
 					level = 1
 					instant_build = yes
 				}
 			}
-			44 = {
+			186 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
@@ -55,12 +79,83 @@ on_actions = {
 			35 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			812 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
 					type = industrial_complex
 					level = 3
 					instant_build = yes
 				}
 			}
-
+			13 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			191 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			813 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			812 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			808 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			12 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			810 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			10 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			98 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -94,50 +189,51 @@ on_actions = {
 				}
 			}
 			106 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			853 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}	
-			109 = {
-				add_extra_state_shared_building_slots = 7
-				add_building_construction = {
-					type = arms_factory
-					level = 7
+					level = 2
 					instant_build = yes
 				}
 			}
-
 			803 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			803 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			
+			
+			7 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
 			}
 			106 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			7 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 3
 					instant_build = yes
 				}
@@ -177,7 +273,7 @@ on_actions = {
 			99 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = arms_factory
+					type = industrial_complex
 					level = 3
 					instant_build = yes
 				}
@@ -193,7 +289,7 @@ on_actions = {
 			110 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
-					type = arms_factory
+					type = industrial_complex
 					level = 4
 					instant_build = yes
 				}
@@ -255,18 +351,10 @@ on_actions = {
 				}
 			}
 			47 = {
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
-					instant_build = yes
-				}
-			}
-			185 = {
-				add_extra_state_shared_building_slots = 7
-				add_building_construction = {
-					type = arms_factory
-					level = 7
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -310,8 +398,30 @@ on_actions = {
 					instant_build = yes
 				}
 			}
-		
-		
+			113 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			135 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			134 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 			44 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -384,22 +494,8 @@ on_actions = {
 					instant_build = yes
 				}
 			}
-			34 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-			}
-			6 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
+			
+			
 			606 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -413,6 +509,22 @@ on_actions = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
+					instant_build = yes
+				}
+			}
+			603 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			620 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -456,291 +568,12 @@ on_actions = {
 					instant_build = yes
 				}
 			}
-		# Portugal Spawn in POR
-			180 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
-			181 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			112 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-		
-			}
-			179 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}	
-			}
-			795 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}	
-			}
 
-		# Former AI Ireland Docks now for UK
-			119 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = dockyard
-					level = 5
-					instant_build = yes
-				}
-			}
-
-		# LIT Lithunia Spawn in Baltic
-			814 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			188 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			189 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			815 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-
-			}
-		# EST Estonia
-			812 = {
-				add_extra_state_shared_building_slots = 7
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			813 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
-			13 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-			191 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			811 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-
-		# LAT Latvia
-			808 = {
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 6
-					instant_build = yes
-				}
-			}
-			12 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			810 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			190 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			809 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			# SIA Siam
-			724 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-			}
-			289 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-			868 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-
-
-
-		# EQ Equipment
 
 			AUS = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 10000
+					amount = 0
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
@@ -758,16 +591,16 @@ on_actions = {
 					type = artillery_equipment_1
 					amount = 121
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = convoy
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 2
 				}
 			}
@@ -775,11 +608,11 @@ on_actions = {
 			CZE = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 3250
+					amount = 0
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 40000
+					amount = 34000
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
@@ -806,8 +639,14 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 11
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_2
+					amount = 700
+					producer = CZE
+					variant_name = "TNH"
 				}
 			}
 			YUG = {
@@ -844,7 +683,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 14
 				}
 			}
@@ -853,36 +692,36 @@ on_actions = {
 					type = infantry_equipment_0
 					amount = 1100
 				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = infantry_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
 					amount = 400
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 177
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = convoy
 					amount = 114
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 10
 				}
 			}
@@ -891,28 +730,28 @@ on_actions = {
 					type = support_equipment_1
 					amount = 320
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = artillery_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = convoy
 					amount = 5
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 2
 				}
 			}
@@ -929,28 +768,28 @@ on_actions = {
 					type = support_equipment_1
 					amount = 292
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 265
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = convoy
 					amount = 45
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 4
 				}
 			}
@@ -967,28 +806,28 @@ on_actions = {
 					type = support_equipment_1
 					amount = 241
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 216
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = convoy
 					amount = 10
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 10
 				}
 			}
@@ -1005,28 +844,28 @@ on_actions = {
 					type = support_equipment_1
 					amount = 654
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = artillery_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = convoy
 					amount = 5
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 10
 				}
 			}
@@ -1064,7 +903,7 @@ on_actions = {
 					amount = 80
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 40
 				}
 			}
@@ -1102,7 +941,7 @@ on_actions = {
 					amount = 172
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 37
 				}
 			}
@@ -1119,28 +958,28 @@ on_actions = {
 					type = support_equipment_1
 					amount = 293
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 43
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = convoy
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 30
 				}
 			}
@@ -1153,10 +992,10 @@ on_actions = {
 					type = support_equipment_1
 					amount = 490
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 200
@@ -1165,16 +1004,16 @@ on_actions = {
 					type = anti_tank_equipment_1
 					amount = 75
 				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = convoy
 					amount = 106
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 76
 				}
 			}
@@ -1191,18 +1030,18 @@ on_actions = {
 					type = support_equipment_1
 					amount = 430
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 470
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = anti_air_equipment_1
 					amount = 230
@@ -1212,7 +1051,7 @@ on_actions = {
 					amount = 428
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 98
 				}
 			}
@@ -1250,7 +1089,7 @@ on_actions = {
 					amount = 22
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 19
 				}
 			}
@@ -1259,26 +1098,26 @@ on_actions = {
 					type = infantry_equipment_0
 					amount = 18000
 				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = infantry_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = support_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 400
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = anti_air_equipment_1
 					amount = 77
@@ -1288,50 +1127,50 @@ on_actions = {
 					amount = 45
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 20
 				}
 			}
 			ENG = {
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 74
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 37733
+					amount = 6000
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 21600
+					amount = 20000
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
-					amount = 1559
+					amount = 510
 				}
 				add_equipment_to_stockpile = {
 					type = motorized_equipment_0
-					amount = 200
+					amount = 0
 				}
 				add_equipment_to_stockpile = {
 					type = motorized_equipment_1
-					amount = 100
+					amount = 0
 				}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
-					amount = 135
+					amount = 200
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = anti_air_equipment_1
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
+					type = armored_car_equipment
+					amount = 462
 				}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
@@ -1342,7 +1181,7 @@ on_actions = {
 			}
 			USA= {
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 121
 				}
 				add_equipment_to_stockpile = {
@@ -1369,18 +1208,19 @@ on_actions = {
 					type = artillery_equipment_1
 					amount = 106
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = anti_air_equipment_1
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			PHI = {
 				add_equipment_to_stockpile = {
@@ -1395,30 +1235,31 @@ on_actions = {
 					type = support_equipment_1
 					amount = 30
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_0
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_0
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			MEX = {
 				add_equipment_to_stockpile = {
@@ -1445,22 +1286,23 @@ on_actions = {
 					type = artillery_equipment_1
 					amount = 55
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
 				add_equipment_to_stockpile = {
 					type = anti_air_equipment_1
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			BRA = {
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 4
 				}
 				add_equipment_to_stockpile = {
@@ -1479,26 +1321,27 @@ on_actions = {
 					type = motorized_equipment_0
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 48
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			FRA = {
 				add_equipment_to_stockpile = {
@@ -1525,16 +1368,16 @@ on_actions = {
 					type = artillery_equipment_1
 					amount = 217
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = anti_air_equipment_1
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
+					type = armored_car_equipment
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
@@ -1556,7 +1399,7 @@ on_actions = {
 					variant_name = "H-35"
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 82
 				}
 				
@@ -1578,30 +1421,31 @@ on_actions = {
 					type = motorized_equipment_0
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			AST = {
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 4
 				}
 				add_equipment_to_stockpile = {
@@ -1620,26 +1464,27 @@ on_actions = {
 					type = motorized_equipment_0
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			NZL = {
 				add_equipment_to_stockpile = {
@@ -1658,30 +1503,31 @@ on_actions = {
 					type = motorized_equipment_0
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			SOV = {
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 266
 				}
 				add_equipment_to_stockpile = {
@@ -1708,16 +1554,16 @@ on_actions = {
 					type = artillery_equipment_1
 					amount = 814
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = anti_air_equipment_1
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
+					type = armored_car_equipment
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
@@ -1736,15 +1582,15 @@ on_actions = {
 			RAJ = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 0
+					amount = 12400
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 2900
+					amount = 3800
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
-					amount = 0
+					amount = 30
 				}
 				add_equipment_to_stockpile = {
 					type = motorized_equipment_0
@@ -1758,27 +1604,28 @@ on_actions = {
 					type = artillery_equipment_1
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
-			RAJ = {
+			IRQ = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 2900
+					amount = 0
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 0
+					amount = 1000
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
@@ -1796,22 +1643,23 @@ on_actions = {
 					type = artillery_equipment_1
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			CAN = {
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 5
 				}
 				add_equipment_to_stockpile = {
@@ -1830,40 +1678,40 @@ on_actions = {
 					type = motorized_equipment_0
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = artillery_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			SIA = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
 					amount = 1800
 				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = infantry_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = support_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = motorized_equipment_0
 					amount = 0
@@ -1876,108 +1724,116 @@ on_actions = {
 					type = artillery_equipment_1
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = anti_air_equipment_1
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			MAN = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
 					amount = 3900
 				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = infantry_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = support_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = motorized_equipment_0
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
+				#add_equipment_to_stockpile = {
+				#	type = artillery_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			JAP = {
-				add_equipment_to_stockpile = {
-					type = train_equipment_1
-					amount = 29
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_0
-					amount = 5700
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 32100
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment_1
-					amount = 762
-				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_0
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 880
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment_1
-					amount = 25
-				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = light_tank_chassis_0
-					amount = 336
-					producer = JAP
-					variant_name = "Type 94 Tankette"
-				}
-			}
+                add_equipment_to_stockpile = {
+                    type = train_equipment
+                    amount = 29
+                }
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment_0
+                    amount = 5760
+                }
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment_1
+                    amount = 32128
+                }
+                add_equipment_to_stockpile = {
+                    type = support_equipment_1
+                    amount = 762
+                }
+                add_equipment_to_stockpile = {
+                    type = motorized_equipment_0
+                    amount = 0
+                }
+                add_equipment_to_stockpile = {
+                    type = motorized_equipment_1
+                    amount = 880
+                }
+                add_equipment_to_stockpile = {
+                    type = artillery_equipment_1
+                    amount = 228
+                }
+                add_equipment_to_stockpile = {
+                    type = anti_tank_equipment_1
+                    amount = 0
+                }
+                #add_equipment_to_stockpile = {
+                #    type = anti_air_equipment_1
+                #    amount = 0
+                #}
+                add_equipment_to_stockpile = {
+                    type = armored_car_equipment
+                    amount = 0
+                }
+                add_equipment_to_stockpile = {
+                    type = light_tank_chassis_0
+                    amount = 67
+                    producer = JAP
+                    variant_name = "Type 94 Tankette"
+                }
+                add_equipment_to_stockpile = {
+                    type = medium_tank_chassis_0
+                    amount = 280
+                    producer = JAP
+                    variant_name = "Type 89 I-Go"
+                }
+            }
 			GER = {
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 45
 				}
 				add_equipment_to_stockpile = {
@@ -2004,16 +1860,16 @@ on_actions = {
 					type = artillery_equipment_1
 					amount = 349
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = anti_air_equipment_1
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
+					type = armored_car_equipment
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
@@ -2025,7 +1881,7 @@ on_actions = {
 			}
 			BUL = {
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 5
 				}
 				add_equipment_to_stockpile = {
@@ -2048,26 +1904,27 @@ on_actions = {
 					type = motorized_equipment_1
 					amount = 42
 				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
+				#add_equipment_to_stockpile = {
+				#	type = artillery_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			HUN = {
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 3
 				}
 				add_equipment_to_stockpile = {
@@ -2094,22 +1951,22 @@ on_actions = {
 					type = artillery_equipment_1
 					amount = 56
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			ROM = {
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 18
 				}
 				add_equipment_to_stockpile = {
@@ -2136,27 +1993,27 @@ on_actions = {
 					type = artillery_equipment_1
 					amount = 87
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			ITA = {
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 29
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 65160
+					amount = 5160
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
@@ -2178,16 +2035,16 @@ on_actions = {
 					type = artillery_equipment_1
 					amount = 240
 				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = anti_air_equipment_1
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
+					type = armored_car_equipment
 					amount = 150
 				}
 				add_equipment_to_stockpile = {
@@ -2203,7 +2060,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment_1
+					type = train_equipment
 					amount = 6
 				}
 				add_equipment_to_stockpile = {
@@ -2218,92 +2075,78 @@ on_actions = {
 					type = motorized_equipment_0
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
+				#add_equipment_to_stockpile = {
+				#	type = artillery_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
 				add_equipment_to_stockpile = {
 					type = anti_air_equipment_1
 					amount = 0
 				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 				
 			}
-			MON = {
+			IRQ = {
 				add_equipment_to_stockpile = {
-					type = convoy
-					amount = 200
+					type = train_equipment
+					amount = 4
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 7000
+					amount = 0
 				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 840
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 0
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment_0
+					amount = 0
+				}
+				#add_equipment_to_stockpile = {
+				#	type = motorized_equipment_1
+				#	amount = 0
+				#}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 0
+				}
+				#add_equipment_to_stockpile = {
+				#	type = anti_tank_equipment_1
+				#	amount = 0
+				#}
+				#There is no need for the "0" ones but what ever i guess??? Also this spewed out an error
+				#add_equipment_to_stockpile = {
+				#	type = anti_air_equipment_1
+				#	amount = 0
+				#}
+				#add_equipment_to_stockpile = {
+				#	type = armored_car_equipment
+				#	amount = 0
+				#}
 			}
 			
 			
 		}
 	}
-
-		on_startup = {
-			effect = {
-				if = {
-				limit = {
-					has_game_rule = {
-						rule = tradebacks
-						option = on
-					}
-				}
-				every_country = {
-					limit = {
-						is_playable_country = yes
-					}
-					add_ideas = tradeback_is_cancer
-				}
-			}
-
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = larp_barb
-						option = on
-					}
-				}
-				every_country = {
-					limit = {
-						is_playable_country = yes
-					}
-					#add_ideas = tradeback_is_cancer
-					add_ideas = click_barb
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = larp_barb
-						option = on
-					}
-				}
-				every_country = {
-					limit = {
-						is_playable_country = yes
-					}
-					#add_ideas = tradeback_is_cancer
-					add_ideas = no_intel_advantage
-				}
-			}
-
-
+	on_startup = {
+		effect = {
 			if = { #sov civs
 			limit = {
 				has_game_rule = {
@@ -2496,7 +2339,7 @@ on_actions = {
 			ITA = {
 				add_offsite_building = {
 					type = industrial_complex
-					level = 8
+					level = ita8
 				}
 			}
 		}
@@ -2581,20 +2424,6 @@ on_actions = {
 				add_offsite_building = {
 					type = industrial_complex
 					level = 8
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_game_rule = {
-					rule = usa_boost
-					option = usa12
-				}
-			}
-			USA = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 12
 				}
 			}
 		}

@@ -18,12 +18,18 @@ IF = {
 	}
 }
 
-	set_air_oob = "PHI_1936_air_legacy"
-	set_technology = {
-		early_fighter = 1
-		early_bomber = 1
-	}
 
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "PHI_1936_air_bba"
+	else = {
+		set_air_oob = "PHI_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+		}
+	}
+}
 
 set_stability = 0.50
 set_war_support = 0.15 
@@ -283,7 +289,6 @@ IF = {
 	recruit_character = PHI_back_soon
 	recruit_character = PHI_infante_juan_iii
 	recruit_character = PHI_emma_rotor
-	recruit_character = PHI_basilio_j_valdez
 	
 	ELSE = {
 		## Vanilla characters

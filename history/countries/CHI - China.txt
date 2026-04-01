@@ -8,59 +8,6 @@ IF = {
 	else = {
 		set_oob = "CHI_1936"
 	}
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		create_equipment_variant = {
-			name = "L3/35"
-			type = light_tank_chassis_1
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_heavy_machine_gun
-				turret_type_slot = tank_light_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 1
-				tank_nsb_armor_upgrade = 1
-			}
-			icon = "GFX_ITA_basic_light_tank_medium"
-		}
-		create_equipment_variant = {
-			name = "Panzer I Ausf. A"
-			type = light_tank_chassis_1
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_heavy_machine_gun
-				turret_type_slot = tank_light_one_man_tank_turret
-				suspension_type_slot = tank_christie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = tank_radio_1
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 5
-				tank_nsb_armor_upgrade = 1
-			}
-			icon = "GFX_GER_basic_light_tank_medium"
-		}
-
-		add_equipment_to_stockpile = { 
-			type = light_tank_chassis_1
-			variant_name = "L3/35"
-			amount = 20
-			producer = ITA
-		}
-		add_equipment_to_stockpile = { 
-			type = light_tank_chassis_1
-			variant_name = "Panzer I Ausf. A"
-			amount = 16
-			producer = GER
-		}
-	}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -69,14 +16,18 @@ if = {
 		set_naval_oob = "CHI_1936_naval_legacy"
 	}
 }
-
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "CHI_1936_air_bba"
+	else = {
 		set_air_oob = "CHI_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
 			early_bomber = 1
 		}
-	
-
+	}
+}
+create_faction_from_template = faction_template_chinese_united_front
 
 IF = {
 	limit = {
@@ -134,7 +85,6 @@ IF = {
 	recruit_character = CHI_sun_fo
 	recruit_character = CHI_zhang_lan # Needs to be able to be transferred to PRC as well
 	recruit_character = CHI_symeon_du
-	recruit_character = CHI_zhu_jiahua
 	ELSE = { 
 		recruit_character = CHI_zhang_xueliang 
 		recruit_character = CHI_gu_zhutong # Sent to Sichuan
@@ -147,10 +97,11 @@ IF = {
 		recruit_character = CHI_bo_yibo # Communist
 		recruit_character = CHI_zhu_de # Communist
 		recruit_character = CHI_zhang_guotao # In PRC content 
+		recruit_character = CHI_weng_wenhao
 		recruit_character = CHI_huang_shen # Not a real person
+
 	}
 }
-recruit_character = CHI_weng_wenhao
 recruit_character = CHI_random_prince_of_terror 
 recruit_character = CHI_chiang_kaishek
 recruit_character = CHI_wang_jingwei
@@ -206,11 +157,19 @@ set_technology = {
 set_grand_doctrine = mass_assault
 set_grand_doctrine = new_fleet_in_being
 
-
-	set_technology = {
-		gwtank = 1
+if = {
+	limit = {
+		has_dlc = "No Step Back"
 	}
-
+	set_technology = {
+		gwtank_chassis = 1
+	}
+	else = {
+		set_technology = {
+			gwtank = 1
+		}
+	}
+}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -309,22 +268,13 @@ IF = {
 283 = { #Gansu
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
-#598 = { #Jiangsu
-#	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-#}
+598 = { #Jiangsu
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
 753 = { #Gannan
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 599 = { #Guangxi 
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-1045 = { #Guyuan  
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-616 = { #Ningxia   
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
-1044 = { #Wuwei    
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 IF = {
@@ -381,7 +331,7 @@ IF = {
 	set_variable = { CHI_illicit_trade_industrial_capacity_dockyard = 0 }
 	# Inefficient Economy
 	set_variable = { CHI_inefficient_economy_factory_max_efficiency_factor = 0 } 
-	set_variable = { CHI_inefficient_economy_factory_efficiency_gain_factor = -0.35 }
+	set_variable = { CHI_inefficient_economy_factory_efficiency_gain_factor = -0.4 }
 	set_variable = { CHI_inefficient_economy_base_fuel_gain_factor = -0.5 }
 	# Neglected Countryside
 	set_variable = { CHI_neglected_countryside_communism_drift = 0.05 }
@@ -536,8 +486,7 @@ IF = {
 
 	set_variable = { political_power_warlord_integration_cost_reduction = 0.25 }
 
-	set_variable = { warlord_subjects_pp_gain_base = 1 } #PP gain from one nation, undivided monthly per warlord
-	set_variable = { t_warlord_subjects_pp_gain = 0 }
+	set_variable = { warlord_subjects_pp_gain_base = 7 } #PP gain from one nation, undivided monthly per warlord
 
 	#Demonstrate our resolve rewards
 	set_variable = { demonstrate_resolve_cic_reward = 1000 }
@@ -676,6 +625,178 @@ IF = {
 save_global_event_target_as = WTT_current_china_leader
 
 set_convoys = 40
+
+1939.1.1 = {
+
+	IF = {
+		limit = {
+			has_dlc = "No Compromise, No Surrender"
+		}
+		set_oob = "CHI_1939_sea"
+		
+		complete_national_focus = CHI_dang_guo 							
+		complete_national_focus = CHI_promote_the_national_currency 		
+		complete_national_focus = CHI_denounce_feudalism 					
+		complete_national_focus = CHI_decree_the_end_to_corruption 		
+		complete_national_focus = CHI_arrest_the_seven_gentlemen 			
+		complete_national_focus = CHI_military_affairs_commission_sea 	
+		complete_national_focus = CHI_protracted_warfare 					
+		complete_national_focus = CHI_defence_in_depth 
+		complete_national_focus = CHI_initiate_the_gung_ho_movement 		
+		complete_national_focus = CHI_one_nation_undivided 				
+		#complete_national_focus = CHI_the_three_year_plan 				
+		complete_national_focus = CHI_the_4_defence_areas					
+		complete_national_focus = CHI_finance_cooperatives				
+		complete_national_focus = CHI_guerrilla_warfare
+		complete_national_focus = CHI_relocate_factories_from_the_coast	
+		complete_national_focus = CHI_expand_the_cooperatives				
+		complete_national_focus = CHI_formalize_field_promotions			
+		complete_national_focus = CHI_demonstrate_our_resolve 			
+		complete_national_focus = CHI_send_the_first_lady_abroad			
+		complete_national_focus = CHI_administer_cooperatives
+		complete_national_focus = CHI_secure_the_soviet_border			
+		complete_national_focus = CHI_crackdown_on_corruption_in_recruitment
+		complete_national_focus = CHI_facilitate_operation_zet
+
+		add_dynamic_modifier = { modifier = CHI_american_support }
+		add_dynamic_modifier = { modifier = CHI_soviet_support }
+
+		set_variable = { nine_power_justify_war_goal_time = -0.14 } #8
+		set_variable = { nine_power_min_export = 0.14 } 
+		set_variable = { nine_power_treaty_cg = 0.14 }
+		else = {
+			complete_national_focus = CHI_unified_industrial_planning
+			complete_national_focus = CHI_mission_to_germany
+			complete_national_focus = CHI_rural_reconstruction_movement
+			complete_national_focus = CHI_invite_foreign_investors
+			complete_national_focus = CHI_british_cooperation
+			unlock_national_focus = CHI_fighter_purchases
+			complete_national_focus = CHI_mission_to_the_us
+			complete_national_focus = CHI_mission_to_the_soviet_union
+			complete_national_focus = CHI_hire_chennault
+			complete_national_focus = CHI_rapprochement_with_soviet_union
+			complete_national_focus = CHI_invite_soviet_advisers
+			complete_national_focus = CHI_military_affairs_commission
+			complete_national_focus = CHI_burma_road
+			unlock_national_focus = CHI_the_soviet_volunteer_group
+			complete_national_focus = CHI_bureau_of_investigation_and_statistics
+			complete_national_focus = CHI_camco
+			complete_national_focus = CHI_three_principles_of_the_people
+			complete_national_focus = CHI_army_reform
+			complete_national_focus = CHI_nationalism
+		}
+	}
+
+	add_political_power = 1198
+	add_command_power = 100
+	set_stability = 0.5
+	set_war_support = 0.7
+	
+
+	add_ideas = {
+		#laws
+		war_economy
+		service_by_requirement
+		closed_economy
+
+		#ministers
+		CHI_bo_yibo
+		CHI_xiao_yisu
+		CHI_chen_shaokuan
+		jiangnan_shipyard_group
+		camco
+
+	}
+	if = {
+		limit = { 
+			NOT = { has_dlc = "No Compromise, No Surrender" }
+		}
+		remove_ideas = CHI_army_corruption_1
+		add_ideas = {
+			#national spirits
+			CHI_hyper_inflation_1
+			CHI_nine_power_treaty
+			CHI_army_corruption_2
+			CHI_ineffective_bureaucracy
+			CHI_incompetent_officers
+			free_trade
+			CHI_military_affairs_commission
+		}
+		set_oob = "CHI_1939"
+	}
+	
+	set_global_flag = fall_of_nanjing
+	create_faction_from_template = faction_template_chinese_united_front
+	add_to_faction = PRC
+	remove_opinion_modifier = { target = PRC modifier = hostile_status }
+	#load_oob = "CHI_united_front"
+	set_global_flag = CHI_unite
+	
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "CHI_1939_air_bba"
+		else = {
+			set_air_oob = "CHI_1939_air_legacy"
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+			set_naval_oob = "CHI_1939_naval_mtg"
+		else = {
+			set_naval_oob = "CHI_1939_naval_legacy"
+		}
+	}
+	set_technology = {
+
+		#PLACEHOLDER techs for vehicles
+		motorised_infantry = 1
+		tech_support = 1		
+		tech_recon = 1
+		tech_engineers = 1
+		tech_trucks = 1
+
+		#doctrines
+		#air_superiority = 1
+		#pocket_defence = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		fuel_silos = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
+	}
+
+set_grand_doctrine = mass_assault
+set_grand_doctrine = new_fleet_in_being
+set_grand_doctrine = new_strategic_destruction
+set_sub_doctrine = large_unit_tactics
+add_mastery = {
+    amount = 200
+    sub_doctrine = large_unit_tactics
+}
+
+
+	complete_special_project = {
+		project = sp:sp_air_radar
+	}
+}
 
 set_politics = {
 	ruling_party = neutrality

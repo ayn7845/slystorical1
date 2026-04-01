@@ -1,3 +1,5 @@
+#Added the way it is so there can be less errors in the log
+
 GER_unit_production = {
 	allowed = {
 		original_tag = GER
@@ -580,8 +582,6 @@ GER_blitzkrieg_poland = {
 		value = 30  # +30 %
 	}
 }
-
-
 GER_war_with_soviets = {
 	allowed = {
 		original_tag = GER

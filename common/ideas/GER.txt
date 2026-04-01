@@ -1,57 +1,6 @@
 ideas = {
 
 	country = {
-
-		################ MSB ################
-		GER_tankograd_idea = {
-			name = "Panzerkampfwagen Production"
-
-			removal_cost = -1
-
-			picture = man_five_year_plan_tank # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
-
-			allowed = {
-				always = no
-			}
-
-			equipment_bonus = {
-				armor = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
-			}
-		}
-			r56_ger_naval_treaty = {
-			allowed = {
-				original_tag = GER
-				always = no
-			}
-			cancel = {
-				OR = {
-					has_war = yes
-					is_in_faction_with = ENG
-					is_subject_of = ENG
-					NOT = {
-						country_exists = ENG
-					}
-					ENG = {
-						is_subject = yes
-					}
-				}
-			}
-			removal_cost = -1
-			picture = generic_the_london_naval_treaty
-			modifier = {
-				production_speed_dockyard_factor = -0.1
-				industrial_capacity_dockyard = -0.15
-				ship_hull_submarine_design_cost_factor = 0.5
-				ship_hull_heavy_design_cost_factor = 0.5
-			}
-		}
-
-		################ MSB ################
-
-
 		sour_loser = {
 			
 			allowed = {
@@ -1177,14 +1126,12 @@ ideas = {
 
 			picture = generic_acquire_tanks
 
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.10
-				defense_bonus_against = 0.05
-			}
-			#modifier = {
-				#supply_node_range = 0.1
+			#targeted_modifier = {
+			#	tag = SOV
+			#	attack_bonus_against = 0.10
+			#	defense_bonus_against = 0.05
 			#}
+
 		}
 
 		GER_alpine_warfare_idea = {
@@ -1378,7 +1325,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1408,7 +1355,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1438,7 +1385,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1468,7 +1415,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1498,7 +1445,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1528,7 +1475,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1558,7 +1505,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1588,7 +1535,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1618,7 +1565,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1648,7 +1595,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1678,7 +1625,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1708,7 +1655,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1738,7 +1685,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1768,7 +1715,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1798,7 +1745,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1828,7 +1775,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1858,7 +1805,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1888,7 +1835,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -2253,13 +2200,13 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-			 	#air_home_defence_factor = 0.1
+			 	air_home_defence_factor = 0.1
 			 	production_speed_anti_air_building_factor = 0.25
 			}
 
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.025
+					build_cost_ic = -0.05 
 					instant = yes
 				}
 			}
@@ -2275,7 +2222,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-			 	#air_intercept_efficiency = 0.05
+			 	air_intercept_efficiency = 0.05
 			 	production_speed_radar_station_factor = 0.25
 			}
 		}
@@ -2290,10 +2237,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				#air_intercept_efficiency = 0.05
-			 	#air_superiority_efficiency = 0.05
-				industry_air_damage_factor = -0.15
-			 	air_night_penalty = -0.10
+				air_intercept_efficiency = 0.1
+			 	air_superiority_efficiency = 0.1
+			 	air_night_penalty = -0.1
 			}
 		}
 
@@ -2428,7 +2374,7 @@ ideas = {
 
 			modifier = {
 				attrition = -0.05
-				supply_factor = 0.05
+				supply_consumption_factor = -0.05
 				supply_node_range = 0.1
 				naval_attrition = -0.05
 			}
@@ -3902,6 +3848,7 @@ ideas = {
 				IF = {
 					limit = {
 						is_subject = no
+						communism > 0.39 # It needs to be 40% or higher
 					}
 					country_event = {
 						id = wuw_GER_diplomacy.75
@@ -4276,7 +4223,7 @@ ideas = {
 			modifier = { #REMINDER to always update these if the dynamic modifier is altered!
 				army_org_factor = 0.05
 				planning_speed = 0.25
-				supply_factor = -0.15
+				supply_consumption_factor = 0.15
 			}
 		}
 		GER_army_1939_fake_ns = { #Fake National Spirit for showing off dynamic modifier at games start-up
@@ -4292,7 +4239,7 @@ ideas = {
 			modifier = { #REMINDER to always update these if the dynamic modifier is altered!
 				army_org_factor = 0.05
 				planning_speed = 0.25
-				supply_factor = -0.15
+				supply_consumption_factor = 0.15
 				unit_leader_as_advisor_cp_cost_factor = -0.15
 				coordination_bonus = 0.05
 			}
@@ -4756,6 +4703,7 @@ ideas = {
 
 		GER_germaniawerft_improved = {
 			name = germaniawerft
+			picture = germaniawerft
 			allowed = {
 				original_tag = GER
 			}
@@ -4798,6 +4746,7 @@ ideas = {
 
 		GER_blohm_und_voss_improved = {
 			name = blohm_und_voss
+			picture = blohm_und_voss
 
 			allowed = {
 				original_tag = GER
@@ -5616,8 +5565,8 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_synthetic_refinery_factor = 0.15
-				production_speed_fuel_silo_factor = 0.15
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_fuel_silo_factor = 0.1
 			}
 			
 			traits = { refinery_concern }
@@ -6195,7 +6144,7 @@ ideas = {
 				non_core_manpower = 0.02
 
 				subversive_activites_upkeep = -0.25
-				
+				operative_slot = 1
 				intelligence_agency_defense = 0.2
 				intel_from_combat_factor = 0.25
 			}
@@ -6220,7 +6169,7 @@ ideas = {
 				non_core_manpower = 0.04
 
 				subversive_activites_upkeep = -0.25
-				
+				operative_slot = 1
 				intelligence_agency_defense = 0.2
 				intel_from_combat_factor = 0.25
 
@@ -6319,7 +6268,7 @@ ideas = {
 				surrender_limit = 0.1
 				offensive_war_stability_factor = 0.1
 				defensive_war_stability_factor = 0.1
-				
+				operative_slot = 1
 				boost_ideology_mission_factor = 0.15
 				boost_resistance_factor = 0.15
 			}

@@ -34,8 +34,17 @@ state = {
 			industrial_complex = 2
 		}
 
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1938.10.25 = {
+			#remove_core_of = SHX
+			owner = CHI
+			controller = JAP
+			PRC = {
+				set_province_controller = 1034
+				set_province_controller = 1531
+				set_province_controller = 4074
+				set_province_controller = 10367
+			}
+		}
 
 	}
 

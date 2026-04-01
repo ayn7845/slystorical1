@@ -3,10 +3,8 @@ state={
 	name="STATE_737"
 
 	history={
-		add_core_of = AST
+		add_core_of = WST
 		owner = AST
-		# Scraping the Barrel
-		1936.1.1.14 = { owner = RAJ add_core_of = RAJ }
 		buildings = {
 			infrastructure = 1
 			air_base = 1

@@ -4,15 +4,22 @@ state={
 	name="STATE_415" # Herat
 	manpower = 1
 	
-	state_category = rural
+	state_category = wasteland
 
-	history = {
+	history={
+		owner = WST
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1  
+		}
+		
+		add_core_of = WST
 	}
-
 
 	provinces={
 		1995 4893 8053 12788 12871 10476
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

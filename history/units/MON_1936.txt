@@ -9,19 +9,3 @@
 		cavalry = { x = 0 y = 2 }
 	}
 }
-
-
-
-##### No notable air force (only about 6 aircraft in 1936) #####
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "MON"
-		}
-		requested_factories = 1
-		progress = 0.20
-		efficiency = 100
-	}
-}

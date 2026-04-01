@@ -4,14 +4,29 @@ state = {
 
 	history = {
 
-		owner = SOV
-		add_core_of = SOV
-
+		owner = CHI
+		
+		add_core_of = WST
+		add_core_of = CHI
 
 		buildings = {
 			infrastructure = 0
 		}
 
+		1936.1.1 = {
+
+		}	
+
+		1938.10.25 = {
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender" 
+				}
+				remove_core_of = KHM
+			}	
+			owner = CHI
+			controller = SIK		
+		}	
 	}
 
 

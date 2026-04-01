@@ -1,14 +1,15 @@
 state = {
 	id = 782
 	name = "STATE_782" # Tombouctou
-	manpower = 1
+	manpower = 79243
 	
 	state_category = wasteland
-	#impassable = yes
+	impassable = yes
+	force_link_ownership_to = 898 # Gao
 
 	history = {
 
-		owner = WST
+		owner = FRA
 		add_core_of = WST
 
 		buildings = {
@@ -16,9 +17,9 @@ state = {
 		}
 
 	}
-	# STATE UNUSED MSB
+
 	provinces = {
-		8073
+		1115 2068 10725 10868
 	}
 
 	local_supplies = 0.0 

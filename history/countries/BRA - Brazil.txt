@@ -7,11 +7,8 @@ every_core_state = {
 		add_to_array = { cores_at_game_start = PREV }
 	}
 }
-if = {
-		limit = { has_game_rule = { 
-					rule = larp_barb
-					option = on } 
-		}
+IF = {
+	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "BRA_1936_air_bba"
 	ELSE = {
 		set_air_oob = "BRA_1936_air_legacy"
@@ -90,9 +87,9 @@ IF = {
 	JUNO_set_shared_military_branch_defaults = yes
 
 	# Undiversified Economy Modifier
-	set_variable = { BRA_economy_production_efficiency_gain_factor = 0 }
-	set_variable = { BRA_economy_production_max_efficiency_factor = 0 }
-	set_variable = { BRA_economy_industrial_capacity_factor = 0 }
+	set_variable = { BRA_economy_production_efficiency_gain_factor = -0.2 }
+	set_variable = { BRA_economy_production_max_efficiency_factor = -0.2 }
+	set_variable = { BRA_economy_industrial_capacity_factor = -0.2 }
 	
 	set_variable = { BRA_weak_government_stability_factor = -0.15 }
 	set_variable = { BRA_weak_government_pp_factor = -0.2 }
@@ -186,15 +183,22 @@ IF = {
 	recruit_character = BRA_joao_neves_da_fortuna
 	recruit_character = BRA_joao_marques_de_reis
 	recruit_character = BRA_francisco_campos
+	recruit_character = BRA_filinto_muller
 	recruit_character = BRA_indigenous_council
+	recruit_character = BRA_lindolfo_collor
+	recruit_character = BRA_jose_americo_de_almeida
+	recruit_character = BRA_anisio_teixeira
 	recruit_character = BRA_integralist_militia_general
 	recruit_character = BRA_pedro_henrique
 	recruit_character = BRA_pedro_de_alcantara
 	recruit_character = BRA_alianca_nacional_libertadora_council
+	recruit_character = BRA_minervino_de_oliveira
 	recruit_character = BRA_olga_benario_prestes
+	recruit_character = BRA_apolonio_de_carvalho
 	recruit_character = BRA_war_industrialist
 	recruit_character = BRA_captain_of_industry
 	recruit_character = BRA_leoncio_basbaum
+	recruit_character = BRA_geremia_lunarelli
 	recruit_character = BRA_henry_ford
 	recruit_character = BRA_gustavo_barroso
 	recruit_character = BRA_miguel_reale
@@ -246,7 +250,6 @@ IF = {
 
 # Starting tech
 set_technology = {
-	motorised_infantry = 1
 	infantry_weapons = 1
 	tech_support = 1		
 	tech_engineers = 1
@@ -254,16 +257,24 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	basic_train = 1	
-	tech_mountaineers = 1
-	marines  = 1
-	paratroopers = 1 
-	infantry_weapons1 = 1
 }
 
+IF = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+IF = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
 	set_technology = {
 		gwtank = 1
 	}
-
+}
 IF = {
 	limit = {
 		NOT = { has_dlc = "Man the Guns"}
@@ -316,6 +327,7 @@ recruit_character = BRA_ismael_motta_paes
 recruit_character = BRA_jorge_martins
 recruit_character = BRA_newton_cavalcanti
 recruit_character = BRA_afranio_de_mello_franco
+recruit_character = BRA_washington_luis_pereira
 recruit_character = BRA_osvaldo_aranha
 recruit_character = BRA_arlindo_veiga_dos_santos
 recruit_character = BRA_random_army_chief
@@ -382,13 +394,7 @@ recruit_character = BRA_random_army_chief
 		
 
 		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
+		#air_superiority = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -409,6 +415,11 @@ recruit_character = BRA_random_army_chief
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+set_grand_doctrine = new_strategic_destruction
+
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}

@@ -156,11 +156,8 @@ recruit_character = ETH_makonnen_endelkatchew
 # Military Advisors
 recruit_character = ETH_john_robinson
 
-if = {
-		limit = { has_game_rule = { 
-					rule = larp_barb
-					option = on } 
-		}
+IF = {
+	limit = { has_dlc = "By Blood Alone" }
 	recruit_character = ETH_hailu_tekle_haymanot
 	recruit_character = ETH_abba_jofir
 	recruit_character = ETH_amha_selassie
@@ -247,10 +244,6 @@ set_convoys = 5
 	
 	set_technology = {
 
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
@@ -266,6 +259,9 @@ set_convoys = 5
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
+
+set_grand_doctrine = grand_battleplan
+
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}
@@ -278,11 +274,8 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-if = {
-		limit = { has_game_rule = { 
-					rule = larp_barb
-					option = on } 
-		}
+IF = {
+	limit = { has_dlc = "By Blood Alone" }
 	set_popularities = {
 		neutrality = 70
 		fascism = 20 

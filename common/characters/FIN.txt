@@ -10,12 +10,54 @@ characters = {
                                                                                                                   
 
 	### NEUTRALITY ###
+	FIN_pehr_evind_svinhufvud = {
+		name = FIN_pehr_evind_svinhufvud
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FIN_pehr_evind_svinhufvud
+			}
+		}
+		country_leader = {
+			ideology = moderatism #National Coalition Party
+			expire = "1965.1.1.1"
+			id = -1
+			traits = { member_of_the_suojeluskunta conservative_nationalist personal_agenda_svinhufvud }
+		}
+	}
+
+	FIN_kyosti_kallio = {
+		name = FIN_kyosti_kallio
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FIN_kyosti_kallio
+			}
+		}
+		country_leader = {
+			ideology = centrism #Agrarian League
+			expire = "1965.1.1.1"
+			id = -1
+			traits = { anti_communist backed_by_political_coalition personal_agenda_kallio }
+		}
+	} 
 
 	#Risto Ryti further down to keep order
 
 	# MANNERHEIM BELOW AS FIELD MARSHAL
 
-
+	FIN_juho_kusti_paasikivi = {
+		name = FIN_juho_kusti_paasikivi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FIN_juho_kusti_paasikivi
+			}
+		}
+		country_leader = {
+			ideology = moderatism #National Coalition Party
+			expire = "1965.1.1.1"
+			id = -1
+			traits = { paasikivi_doctrine personal_agenda_paasikivi }
+		}
+	}
 
 
 	### FASCIST ###
@@ -53,7 +95,6 @@ characters = {
 			}
 		}
 		country_leader = {
-			is_country_leader = yes
 			ideology = oligarchism # no party
 			expire = "1965.1.1.1"
 			id = -1
@@ -1465,6 +1506,12 @@ characters = {
 				large = GFX_portrait_FIN_risto_ryti
 				small = GFX_portrait_FIN_risto_ryti_small
 			}
+		}
+		country_leader = {
+			ideology = centrism #National Progressive Party
+			expire = "1965.1.1.1"
+			id = -1
+			traits = { white_liberal_leader personal_agenda_ryti }
 		}
 		advisor = {
 			slot = political_advisor

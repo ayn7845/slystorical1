@@ -8,9 +8,12 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = wasteland
 	history={
+
 		owner = CHI
+		
 		add_core_of = CHI
 		
+
 		victory_points = {
 			7971 1 # Jiuquan 
 		}
@@ -27,8 +30,21 @@ state={
 			}
 		}
 
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
+
+
+		1938.10.25 = {
+			IF = {
+				limit = {
+					NOT = {
+						has_dlc = "Waking the Tiger" 
+					}
+				}
+				CHI = {
+					transfer_state = PREV
+
+				}
+			}
+		}
 	}
 
 	local_supplies = 0.0 

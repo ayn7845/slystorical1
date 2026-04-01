@@ -31,8 +31,8 @@ state={
 	provinces={
 		652 4583 6935 7470 11880 12376 13121 
 	}
-	manpower = 365490
-	state_category = rural
+	manpower = 1
+	state_category = wasteland
 
 	local_supplies=0.0 
 }

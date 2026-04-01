@@ -110,6 +110,21 @@ Brasil_AC_rule = {
 	}
 
 }
+italy_alt_hist = {
+	name = "Italy Alt-Hist Paths"
+	group = "HMM Rules"
+	icon = "GFX_decision_ITA_claim_yugo_4"
+	default = {
+		name = on
+		text = "Italy can go A-Hist"
+		desc = ""
+	} 
+	option = {
+		name =  off
+		text = "Italy forced on Hist"
+		desc = ""
+	}
+}
 Germany_Wirtschaftswunder = {
 	name = "Select if Germany is allowed to complete Prioritize Economic Growth "
 	group = "HMM Rules"

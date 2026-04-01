@@ -37,7 +37,15 @@ if = {
 
 
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "BEL_1936_air_bba"
 	else = {
 		set_technology = {
@@ -111,7 +119,15 @@ if = {
 }
 
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "BEL_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
@@ -510,7 +526,15 @@ IF = {
 	}
 
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "BEL_1939_air_bba"
 		else = {
 			set_air_oob = "BEL_1939_air_legacy"

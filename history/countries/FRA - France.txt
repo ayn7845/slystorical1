@@ -28,7 +28,15 @@ if = {
 }
 
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "FRA_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
@@ -267,7 +275,15 @@ if = {
 		}
 	}
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "FRA_1939_air_bba"
 			set_technology = {
 				basic_small_airframe = 1
@@ -619,9 +635,15 @@ if = {
 	}
 }
 if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 	create_equipment_variant = {
 		name = "Br. 19" #
 		type = small_plane_cas_airframe_0
@@ -1159,8 +1181,14 @@ if = {
 # 1939 Start #
 1939.1.1 = {
 	if = {
-		limit = {
+		limit = { 
+		AND = { 
 			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
 		}
 		create_equipment_variant = {
 			name = "M.S. 406" #

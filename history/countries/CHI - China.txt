@@ -17,7 +17,15 @@ if = {
 	}
 }
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "CHI_1936_air_bba"
 	else = {
 		set_air_oob = "CHI_1936_air_legacy"
@@ -733,7 +741,15 @@ set_convoys = 40
 	set_global_flag = CHI_unite
 	
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "CHI_1939_air_bba"
 		else = {
 			set_air_oob = "CHI_1939_air_legacy"

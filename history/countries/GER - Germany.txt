@@ -36,7 +36,15 @@ set_grand_doctrine = new_convoy_raiding
 set_grand_doctrine = new_strategic_destruction
 
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "GER_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
@@ -798,7 +806,15 @@ set_war_support = 0.3
 	}
 
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "GER_1939_air_bba"
 		else = {
 			set_air_oob = "GER_1939_air_legacy"
@@ -1372,10 +1388,11 @@ if = {
 }
 if = {
 	limit = {
-		NOT = {
-			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = off
+				}
 		}
-	}
 	create_equipment_variant = {
 		name = "Ju 86"
 		type = tac_bomber_equipment_0
@@ -1405,9 +1422,15 @@ if = {
 }
 
 if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 	create_equipment_variant = {
 		name = "Do 23"
 		type = medium_plane_airframe_0
@@ -1711,7 +1734,12 @@ if = {
 	}
 
 	if = {
-		limit = { NOT = { has_dlc = "By Blood Alone" } }
+		limit = { 
+			has_game_rule = { 
+					rule = air_designer
+					option = off
+				}
+			}
 		create_equipment_variant = {
 			name = "He 112"
 			type = fighter_equipment_1
@@ -1734,8 +1762,14 @@ if = {
 		}
 	}
 	if = {
-		limit = {
+		limit = { 
+		AND = { 
 			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
 		}
 		create_equipment_variant = {
 			name = "Bf 109 E"

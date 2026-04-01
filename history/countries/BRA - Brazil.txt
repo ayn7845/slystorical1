@@ -8,7 +8,15 @@ every_core_state = {
 	}
 }
 IF = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "BRA_1936_air_bba"
 	ELSE = {
 		set_air_oob = "BRA_1936_air_legacy"
@@ -380,7 +388,15 @@ recruit_character = BRA_random_army_chief
 	
 	oob = "BRA_1939"
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "BRA_1939_air_bba"
 		else = {
 			set_air_oob = "BRA_1939_air_legacy"

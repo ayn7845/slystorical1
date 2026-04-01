@@ -22,9 +22,12 @@ set_grand_doctrine = new_convoy_raiding
 set_grand_doctrine = new_battlefield_support
 
 if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
+	limit = { 
+			has_game_rule = { 
+					rule = air_designer
+					option = off
+				}
+			}
 	set_technology = {
 		early_fighter = 1
 		fighter1 = 1

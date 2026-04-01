@@ -16,7 +16,15 @@ IF = {
 }
 
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "AUS_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1

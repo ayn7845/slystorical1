@@ -9,7 +9,15 @@ if = {
 	}
 }
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "GRE_1936_air_bba"
 		set_technology = {
 			bba_early_transport_plane = 1
@@ -251,7 +259,15 @@ set_convoys = 10
 		}
 	}
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "GRE_1939_air_bba"
 		else = {
 			set_air_oob = "GRE_1939_air_legacy"

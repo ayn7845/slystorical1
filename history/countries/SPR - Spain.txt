@@ -278,9 +278,12 @@ set_technology = {
 	basic_train = 1
 }
 if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
+	limit = { 
+			has_game_rule = { 
+					rule = air_designer
+					option = off
+				}
+			}
 	set_technology = {
 		early_fighter = 1
 		early_bomber = 1

@@ -15,7 +15,15 @@ if = {
 	}
 }
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "DEN_1936_air_bba"
 	else = {
 		set_air_oob = "DEN_1936_air_legacy"
@@ -512,7 +520,15 @@ if = {
 		}
 	}
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "DEN_1939_air_bba"
 		else = {
 			set_air_oob = "DEN_1939_air_legacy"

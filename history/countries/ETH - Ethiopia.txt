@@ -1,9 +1,15 @@
 capital = 271
 
 IF = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 	ETH_set_up_lon_arms_resolution_effect = yes 
 	set_war_support = 0.30 # People are beginning to lose heart a bit
 	set_oob = "ETH_1936_bba"
@@ -124,9 +130,12 @@ IF = {
 	}
 }
 IF = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
+	limit = { 
+			has_game_rule = { 
+					rule = air_designer
+					option = off
+				}
+			}
 	set_oob = "ETH_1936"
 	set_variable = { ETH_war_escalation_level = 0 }
 	set_variable = { ETH_war_escalation_length = 123 } # Six months, starting in October

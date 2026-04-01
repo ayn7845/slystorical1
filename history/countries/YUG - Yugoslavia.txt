@@ -127,9 +127,12 @@ set_technology = {
 set_grand_doctrine = superior_firepower
 
 if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
+	limit = { 
+			has_game_rule = { 
+					rule = air_designer
+					option = off
+				}
+			}
 	set_technology = {
 		early_fighter = 1
 	}

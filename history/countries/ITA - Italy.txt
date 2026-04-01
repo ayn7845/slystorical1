@@ -875,9 +875,12 @@ recruit_character = ITA_curio_bernardis
 
 ### IF NOT BBA, trigger the first Missiolini from here
 if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
+	limit = { 
+			has_game_rule = { 
+					rule = air_designer
+					option = off
+				}
+			}
 	ITA_benito_mussolini = { unit_leader_event = { id = BBA_italo_ethiopian_war_events.01 days = 14 } }  # JAN 36 - Conquer Ethiopia  - APR/JUNE 36 - (120-170 days)
 }
 

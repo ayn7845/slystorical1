@@ -3,7 +3,15 @@
 #TROOPS
 oob = "BUL_1936" #VANILLA & DLC
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "BUL_1936_air_bba"
 	else = {
 		set_air_oob = "BUL_1936_air_legacy"
@@ -336,11 +344,12 @@ set_technology = { #VANILLA & DLC
 }
 
 if = {
-	limit = {
-		NOT = {
-			has_dlc = "By Blood Alone"
-		}
-	}
+		limit = { 
+			has_game_rule = { 
+					rule = air_designer
+					option = off
+				}
+			}
 	set_technology = {
 		early_fighter = 1
 	}
@@ -502,7 +511,15 @@ set_grand_doctrine = new_operational_integrity
 		set_oob = "BUL_1939_nsb"
 	}
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "BUL_1939_air_bba"
 			set_technology = {
 				bba_early_transport_plane = 1

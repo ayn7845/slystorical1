@@ -16,7 +16,15 @@ IF = {
 }
 
 IF = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "HUN_1936_air_bba"
 		set_technology = {
 			iw_small_airframe = 1
@@ -197,9 +205,15 @@ set_variable = { HUN_academy_of_sciences_research_speed_factor = 0.03 }
 
 ### PLANE VARIANTS ###
 IF = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 	create_equipment_variant = {
 		name = "Weiss WM-16 Budapest"
 		type = small_plane_cas_airframe_0
@@ -725,7 +739,15 @@ set_grand_doctrine = new_strategic_destruction
 	}
 
 	IF = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "HUN_1939_air_bba"
 			set_technology = {
 				iw_small_airframe = 1

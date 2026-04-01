@@ -94,6 +94,22 @@ horst_host_country = {
 		desc = ""
 	}
 }
+
+air_designer = {
+	name = "Air Designer"
+	group = "HMM Rules"
+	icon = "GFX_decision_ITA_claim_yugo_4"
+	default = {
+		name = off
+		text = "Air Designer is Removed"
+		desc = ""
+	} 
+	option = {
+		name =  on
+		text = "Air Designer on"
+		desc = ""
+	}
+}
 Brasil_AC_rule = {
 	name = "Select if Brazil can be AC"
 	group = "HMM Rules"

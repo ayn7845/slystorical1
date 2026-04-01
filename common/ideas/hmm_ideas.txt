@@ -84,6 +84,32 @@ ideas = {
 			} 
 		}
 
+		ai_cap_progress = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+			}
+			removal_cost = -1
+			picture = RAJ_partition_india_united
+			modifier = {
+				surrender_limit = -0.2
+			}
+		}
+		easier_cap_progress = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+			}
+			removal_cost = -1
+			picture = RAJ_partition_india_united
+			modifier = {
+				forced_surrender_limit = -0.05
+			}
+		}
+
+
 		ai_idea = {
 			cancel = {
 				is_ai = no
@@ -111,6 +137,20 @@ ideas = {
 	}
 
 	hidden_ideas = {
+		sees_more = { 
+			name = "See More"
+			removal_cost = -1
+			picture = ger_mefo_bills_payment
+			allowed = {
+				is_ai = yes
+			}
+			modifier = { 
+				navy_intel_to_others = 55
+				army_intel_to_others = 55
+				airforce_intel_to_others = 55
+				civilian_intel_to_others = 55
+			}
+		}
 		noresistance = {
 			allowed = {
 				always = no

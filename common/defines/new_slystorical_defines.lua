@@ -206,3 +206,10 @@ NDefines_Graphics.NGraphics.DRAW_SHADOWS_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+--SLYSTORICAL AGENCY REMOVE
+
+NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999				        -- Number of factories used to create an intelligence agency , no agency fuck agency agency is cringe
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.0			--Remove intel advantage

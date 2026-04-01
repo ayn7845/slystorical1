@@ -10,7 +10,15 @@ IF = {
 	}
 }
 IF = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 	set_air_oob = "MEX_1936_air_bba"
 	set_technology = {
 		aa_lmg = 1
@@ -147,7 +155,15 @@ IF = {
 	
 	oob = "MEX_1939"
 	IF = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "MEX_1936_air_bba" #deliberately using 1936
 		ELSE = {
 			set_air_oob = "MEX_1936_air_legacy"

@@ -189,7 +189,15 @@ sp_air_earthshaker_bomb = {
 
 	available = { 
 		if = {
-			limit = { has_dlc = "By Blood Alone" }
+			limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			FROM = {
 				has_tech = heavy_bombs
 			}
@@ -221,7 +229,15 @@ sp_air_earthshaker_bomb = {
 			custom_effect_tooltip = sp_air_earthshaker_bomb_completion_tt
 		}
 		enable_equipment_modules = {
-			limit = { has_dlc = "By Blood Alone" }
+			limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			earthshaker_bomb_release
 		}
 	}
@@ -750,7 +766,15 @@ sp_air_jet_engine = {
 	available = { 
 		FROM = {
 			if = {
-				limit = { has_dlc = "By Blood Alone" }
+				limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 				has_tech = engines_2
 				OR = {
 					has_tech = improved_small_airframe
@@ -848,7 +872,15 @@ sp_air_jet_engine = {
 		}	
 
 		enable_equipment_modules = {
-			limit = { has_dlc = "By Blood Alone" }
+			limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			jet_engine_1x
 			jet_engine_2x
 			jet_engine_3x
@@ -1017,7 +1049,15 @@ sp_air_axial_jet_engine = {
 	available = { 
 		FROM = {
 			if = {
-				limit = { has_dlc = "By Blood Alone" }
+				limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 				has_tech = engines_3
 				OR = {
 					has_tech = advanced_small_airframe
@@ -1052,7 +1092,15 @@ sp_air_axial_jet_engine = {
 	project_output = {
 		country_effects = {
 			if = {
-				limit = { has_dlc = "By Blood Alone" }
+				limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 				custom_effect_tooltip = {
 					localization_key = SP_UNLOCK_TECH
 					TECH = modern_small_airframe
@@ -1312,7 +1360,15 @@ sp_air_supersonic_jet = {
 	project_output = {
 		country_effects = {
 			if = {
-				limit = { has_dlc = "By Blood Alone" }
+				limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 				add_design_template_bonus = {
 					name = sp_air_supersonic_jet_fighter_free_design
 					uses = 1

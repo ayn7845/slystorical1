@@ -20,7 +20,15 @@ IF = {
 
 
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "PHI_1936_air_bba"
 	else = {
 		set_air_oob = "PHI_1936_air_legacy"
@@ -419,7 +427,15 @@ IF = {
 	oob = "PHI_1939"
 
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "PHI_1936_air_bba" #no difference between 36 and 39 airforces
 		else = {
 			set_air_oob = "PHI_1936_air_legacy"

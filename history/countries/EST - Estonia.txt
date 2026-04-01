@@ -157,7 +157,15 @@ set_convoys = 5
 		}
 	}
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "EST_1936_air_bba" #deliberately using 1936 OOB since no change in aircraft strength or models
 			set_technology = {
 				bba_early_transport_plane = 1

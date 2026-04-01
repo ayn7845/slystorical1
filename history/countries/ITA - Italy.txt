@@ -444,7 +444,15 @@ if = {
 }
 
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "ITA_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
@@ -686,7 +694,15 @@ add_mastery = {
 		set_oob = "ITA_1939_nsb"
 	}
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "ITA_1939_air_bba"
 			set_technology = {
 				aa_hmg = 1
@@ -955,7 +971,15 @@ if = {
 	}
 }
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 	create_equipment_variant = {
 		name = "CR.32" #
 		type = small_plane_airframe_0

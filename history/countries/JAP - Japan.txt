@@ -1129,7 +1129,15 @@ add_mastery = {
 		}
 	}
 	IF = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "JAP_1939_air_bba"
 			set_technology = {
 				basic_medium_airframe = 1

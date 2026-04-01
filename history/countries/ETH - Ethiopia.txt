@@ -166,7 +166,15 @@ recruit_character = ETH_makonnen_endelkatchew
 recruit_character = ETH_john_robinson
 
 IF = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 	recruit_character = ETH_hailu_tekle_haymanot
 	recruit_character = ETH_abba_jofir
 	recruit_character = ETH_amha_selassie
@@ -284,7 +292,15 @@ set_politics = {
 	elections_allowed = no
 }
 IF = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 	set_popularities = {
 		neutrality = 70
 		fascism = 20 

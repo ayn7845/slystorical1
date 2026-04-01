@@ -22,7 +22,15 @@ if = {
 	}
 }
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 		set_air_oob = "YUG_1936_air_bba"
 		set_technology = {
 			iw_small_airframe = 1
@@ -258,7 +266,15 @@ if = {
 		}
 	}
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { 
+		AND = { 
+			has_dlc = "By Blood Alone"
+			has_game_rule = { 
+					rule = air_designer
+					option = on
+				}
+			}
+		}
 			set_air_oob = "YUG_1939_air_bba"
 			set_technology = {
 				engines_2 = 1

@@ -16,12 +16,11 @@ IF = {
 }
 
 IF = {
-	limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+	limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -205,12 +204,11 @@ set_variable = { HUN_academy_of_sciences_research_speed_factor = 0.03 }
 
 ### PLANE VARIANTS ###
 IF = {
-	limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+	limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -739,12 +737,11 @@ set_grand_doctrine = new_strategic_destruction
 	}
 
 	IF = {
-		limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+		limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}

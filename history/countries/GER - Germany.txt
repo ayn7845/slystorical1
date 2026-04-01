@@ -36,12 +36,11 @@ set_grand_doctrine = new_convoy_raiding
 set_grand_doctrine = new_strategic_destruction
 
 if = {
-	limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+	limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -807,14 +806,11 @@ set_war_support = 0.3
 
 	if = {
 		limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
 			has_game_rule = { 
 					rule = air_designer
 					option = on
 				}
 			}
-		}
 			set_air_oob = "GER_1939_air_bba"
 		else = {
 			set_air_oob = "GER_1939_air_legacy"
@@ -1423,14 +1419,11 @@ if = {
 
 if = {
 	limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
 			has_game_rule = { 
 					rule = air_designer
 					option = on
 				}
 			}
-		}
 	create_equipment_variant = {
 		name = "Do 23"
 		type = medium_plane_airframe_0
@@ -1763,14 +1756,11 @@ if = {
 	}
 	if = {
 		limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
 			has_game_rule = { 
 					rule = air_designer
 					option = on
 				}
 			}
-		}
 		create_equipment_variant = {
 			name = "Bf 109 E"
 			type = small_plane_airframe_1

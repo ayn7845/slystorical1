@@ -17,12 +17,11 @@ if = {
 	}
 }
 if = {
-	limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+	limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -741,12 +740,11 @@ set_convoys = 40
 	set_global_flag = CHI_unite
 	
 	if = {
-		limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+		limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}

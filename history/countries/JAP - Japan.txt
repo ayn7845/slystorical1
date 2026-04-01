@@ -560,9 +560,14 @@ IF = {
 }
 
 IF = {
-	limit = { 
-		has_dlc = "By Blood Alone" 
-	}
+	limit = {
+		NOT = {  
+			has_game_rule = { 
+					rule = air_designer
+					option = off
+				}
+			}
+		}
 	set_air_oob = "JAP_1936_air_bba"
 	set_technology = {
 		aa_lmg = 1
@@ -1129,12 +1134,11 @@ add_mastery = {
 		}
 	}
 	IF = {
-		limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+		limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -1305,8 +1309,13 @@ IF = {
 IF = {
 
 	limit = {
-		has_dlc = "By Blood Alone"
-	}
+		NOT = {  
+			has_game_rule = { 
+					rule = air_designer
+					option = off
+				}
+			}
+		}
 
 	create_equipment_variant = {
 		name = "Ki-10"
@@ -2102,7 +2111,12 @@ create_equipment_variant = {
 
 	IF = {
 		limit = {
-			has_dlc = "By Blood Alone"
+		NOT = {  
+			has_game_rule = { 
+					rule = air_designer
+					option = off
+				}
+			}
 		}
 		create_equipment_variant = {
 			name = "Ki-27"

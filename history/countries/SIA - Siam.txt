@@ -9,12 +9,11 @@ if = {
 	}
 }
 if = {
-	limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+	limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -104,12 +103,11 @@ set_convoys = 15
 		}
 	}
 	if = {
-		limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+		limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}

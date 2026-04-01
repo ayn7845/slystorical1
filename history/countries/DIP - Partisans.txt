@@ -8,12 +8,14 @@ set_technology = {
 
 }
 if = {
-	limit = { 
+	limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
+		}
 	set_technology = {
 		early_fighter = 1
 		early_bomber = 1

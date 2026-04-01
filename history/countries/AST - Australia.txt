@@ -70,12 +70,11 @@ if = {
 	set_naval_oob = "AST_1936_naval"
 }
 if = {
-	limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+	limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -157,12 +156,11 @@ if = {
 	add_command_power = 100
 	oob = "AST_1939"
 	if = {
-		limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+		limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}

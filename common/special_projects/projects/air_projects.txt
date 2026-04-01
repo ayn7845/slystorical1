@@ -189,12 +189,11 @@ sp_air_earthshaker_bomb = {
 
 	available = { 
 		if = {
-			limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+			limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -229,12 +228,11 @@ sp_air_earthshaker_bomb = {
 			custom_effect_tooltip = sp_air_earthshaker_bomb_completion_tt
 		}
 		enable_equipment_modules = {
-			limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+			limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -766,12 +764,11 @@ sp_air_jet_engine = {
 	available = { 
 		FROM = {
 			if = {
-				limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+				limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -872,12 +869,11 @@ sp_air_jet_engine = {
 		}	
 
 		enable_equipment_modules = {
-			limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+			limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -1049,12 +1045,11 @@ sp_air_axial_jet_engine = {
 	available = { 
 		FROM = {
 			if = {
-				limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+				limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -1092,12 +1087,11 @@ sp_air_axial_jet_engine = {
 	project_output = {
 		country_effects = {
 			if = {
-				limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+				limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -1360,12 +1354,11 @@ sp_air_supersonic_jet = {
 	project_output = {
 		country_effects = {
 			if = {
-				limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+				limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}

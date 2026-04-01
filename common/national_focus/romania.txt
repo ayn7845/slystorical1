@@ -2401,12 +2401,11 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+				limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}

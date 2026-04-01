@@ -3,12 +3,11 @@
 #TROOPS
 oob = "BUL_1936" #VANILLA & DLC
 if = {
-	limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+	limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}
@@ -511,12 +510,11 @@ set_grand_doctrine = new_operational_integrity
 		set_oob = "BUL_1939_nsb"
 	}
 	if = {
-		limit = { 
-		AND = { 
-			has_dlc = "By Blood Alone"
+		limit = {
+		NOT = {  
 			has_game_rule = { 
 					rule = air_designer
-					option = on
+					option = off
 				}
 			}
 		}

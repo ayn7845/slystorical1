@@ -2924,6 +2924,7 @@ focus_tree = {
 		relative_position_id = GER_develop_modern_maneuver_warfare
 		cost = 5
 		available = {
+			always = no
 		}
 
 		search_filters = { FOCUS_FILTER_ARMY_XP }

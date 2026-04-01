@@ -1,5 +1,15 @@
 ideas = {
 	country = {
+		AXIS_free_fuel = {
+			allowed = {
+				always = no
+			}
+			picture = generic_refining_concern_1
+			removal_cost=-1
+			modifier={
+				base_fuel_gain = 1800
+			}
+		}
 		peace_training = {
 			allowed = {
 				always = no

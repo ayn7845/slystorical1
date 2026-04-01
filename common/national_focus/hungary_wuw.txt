@@ -4150,98 +4150,15 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = wuw_HUN_tap_newfound_oil_deposits
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = wuw_HUN_expand_the_lignite_industry }
-		mutually_exclusive = { focus = wuw_HUN_hungarian_tradition }
-		x = 1
-		y = 1
-		relative_position_id = wuw_HUN_expand_the_lignite_industry
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		available = {
-			AND = {
-				ROOT = {
-					has_full_control_of_state = 155
-				}
-				ROOT = {
-					has_full_control_of_state = 974
-				}
-				ROOT = {
-					has_full_control_of_state = 973
-				}
-			}
-			has_tech = excavation3
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-
-			155 = {
-				add_resource = {
-					type = oil
-					amount = 5
-				}
-			}
-			974 = {
-				add_resource = {
-					type = oil
-					amount = 4
-				}
-			}
-
-			973 = {
-				add_resource = {
-					type = oil
-					amount = 6
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			unlock_decision_tooltip = {
-				decision = HUN_tap_the_nagylengyel_oil_field
-				show_effect_tooltip = no # default is no
-				show_modifiers = no # default is no
-			}
-
-			unlock_decision_tooltip = {
-				decision = HUN_explore_the_oil_fields_around_nagykanizsa
-				show_effect_tooltip = no # default is no
-				show_modifiers = no # default is no
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = HUN_maort
-
-		}
-	}
 
 	focus = {
 		id = wuw_HUN_hungarian_autarky
 		icon = GFX_focus_generic_stockpile_fuel
 		prerequisite = { focus = wuw_HUN_hungarian_tradition focus = wuw_HUN_tap_newfound_oil_deposits }
 		#mutually_exclusive = { focus = wuw_HUN_avoid_interventionalist_destablilization }
-		x = -1
+		x = 0
 		y = 1
-		relative_position_id = wuw_HUN_tap_newfound_oil_deposits
+		relative_position_id = wuw_HUN_hungarian_tradition
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH }
 
@@ -4329,8 +4246,8 @@ focus_tree = {
 		id = wuw_HUN_hungarian_tradition
 		icon = GFX_focus_HUN_hungarian_tradition
 		prerequisite = { focus = wuw_HUN_expand_the_lignite_industry }
-		mutually_exclusive = { focus = wuw_HUN_tap_newfound_oil_deposits }
-		x = -1
+		#mutually_exclusive = { focus = wuw_HUN_tap_newfound_oil_deposits }
+		x = 0
 		y = 1
 		relative_position_id = wuw_HUN_expand_the_lignite_industry
 

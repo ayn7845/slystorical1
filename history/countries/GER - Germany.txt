@@ -848,6 +848,7 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	AXIS_free_fuel
 }
 
 # Activates the MEFO Bills Mission

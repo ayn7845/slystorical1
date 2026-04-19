@@ -91,6 +91,7 @@ country_event = {
 		hidden_effect = {
 			every_character = {
 				limit = {
+					NOT = { is_character = SOV_nikolay_voznesensky }
 					is_character_slot = political_advisor
 					has_character_flag = SOV_targeted_for_purge_flag
 				}
@@ -374,6 +375,7 @@ country_event = {
 		hidden_effect = {
 			every_character = {
 				limit = {
+					NOT = { is_character = SOV_nikolay_voznesensky }
 					is_character_slot = political_advisor
 					has_character_flag = SOV_targeted_for_purge_flag
 				}
@@ -634,6 +636,11 @@ country_event = {
 			base = 10
 		}
 
+		add_timed_idea = {
+			idea = SOV_training_activities_curtailed
+			days = 365
+		}
+
 		#Update purged portraits in UI
 		hidden_effect = {
 			SOV_paranoia_update_portraits_ui = yes
@@ -650,6 +657,30 @@ country_event = {
 		}
 		# Increase opposition Army Support 
 		SOV_increase_opposition_army_support_small = yes 
+	}
+
+	option = { #NO WAIT! Let's Think about it
+		name = NSB_soviet_paranoia_system_events.23.b
+		ai_chance = {
+			base = 1
+			modifier = { #Don't go to negative PP please
+				factor = 0
+				has_political_power < SOV_purge_event_pp_to_avoid_regular_pay
+			}
+			modifier = { #Don't risk starting CW too early
+				factor = 0
+				SOV_is_opposition = yes 
+			}
+		}
+
+		trigger = {
+			NOT = { has_political_power < SOV_purge_event_pp_to_avoid_regular }
+		}
+
+		add_political_power = SOV_purge_event_pp_to_avoid_regular_pay
+
+		#PARANOIA increases
+		SOV_paranoia_low_increase_effect = yes
 	}
 }
 
@@ -3093,16 +3124,9 @@ country_event = {
 						tag = FROM
 						ratio < 0.6
 					}
-					surrender_progress > 0.95
+					surrender_progress > 0.25
 				}
 			}
-		}
-
-		IF = {
-			limit = {
-				has_dlc = "Graveyard of Empires"
-			}
-			set_country_flag = PER_operation_countenance_flag
 		}
 
 		set_global_flag = SOV_soviet_invasion_of_iran_flag
@@ -3116,8 +3140,6 @@ country_event = {
 			transfer_state = 419 #Tibriz (AZB)
 			transfer_state = 420 #Gilan (AZB)
 			transfer_state = 416 #Khorasan
-			transfer_state = 1000 #East Azerbaijan
-			transfer_state = 1004 #North Khorasan
 			PER = {
 				give_resource_rights = { receiver = SOV state = 411 }
 				give_resource_rights = { receiver = SOV state = 412 }
@@ -3145,10 +3167,6 @@ country_event = {
 				is_in_faction_with = ENG
 			}
 			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-			modifier = {
 				factor = 2
 				has_opinion = {
 					target = FROM
@@ -3169,7 +3187,7 @@ country_event = {
 						tag = FROM
 						ratio < 0.6
 					}
-					surrender_progress > 0.95
+					surrender_progress > 0.25
 				}
 			}
 		}
@@ -3190,8 +3208,6 @@ country_event = {
 				transfer_state = 419 #Tibriz (AZB)
 				transfer_state = 420 #Gilan (AZB)
 				transfer_state = 416 #Khorasan
-				transfer_state = 1000 #East Azerbaijan
-				transfer_state = 1004 #North Khorasan
 			}
 			PER = {
 				give_resource_rights = { receiver = SOV state = 411 }
@@ -3207,8 +3223,6 @@ country_event = {
 			transfer_state = 419 #Tibriz (AZB)
 			transfer_state = 420 #Gilan (AZB)
 			transfer_state = 416 #Khorasan
-			transfer_state = 1000 #East Azerbaijan
-			transfer_state = 1004 #North Khorasan
 			PER = {
 				give_resource_rights = { receiver = SOV state = 411 }
 				give_resource_rights = { receiver = SOV state = 412 }
@@ -3235,10 +3249,6 @@ country_event = {
 			modifier = {
 				factor = 100
 				is_in_faction_with = FROM
-			}
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
 			}
 			modifier = {
 				factor = 2
@@ -3276,13 +3286,6 @@ country_event = {
 				}
 			}
 		}
-
-		IF = {
-			limit = {
-				has_dlc = "Graveyard of Empires"
-			}
-			set_country_flag = PER_operation_countenance_flag
-		}
 		
 		set_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
 
@@ -3296,8 +3299,6 @@ country_event = {
 				transfer_state = 419 #Tibriz (AZB)
 				transfer_state = 420 #Gilan (AZB)
 				transfer_state = 416 #Khorasan
-				transfer_state = 1000 #East Azerbaijan
-				transfer_state = 1004 #North Khorasan
 			}
 			PER = {
 				give_resource_rights = { receiver = SOV state = 411 }
@@ -3349,8 +3350,6 @@ country_event = {
 			transfer_state = 419 #Tibriz (AZB)
 			transfer_state = 420 #Gilan (AZB)
 			transfer_state = 416 #Khorasan
-			transfer_state = 1000 #East Azerbaijan
-			transfer_state = 1004 #North Khorasan
 			PER = {
 				give_resource_rights = { receiver = SOV state = 411 }
 				give_resource_rights = { receiver = SOV state = 412 }
@@ -3376,21 +3375,12 @@ country_event = {
 		activate_mission = SOV_preparations_for_operation_countenance
 		custom_effect_tooltip = SOV_preparations_for_operation_countenance_tt
 
-		IF = {
-			limit = {
-				has_dlc = "Graveyard of Empires"
-			}
-			set_country_flag = PER_operation_countenance_flag
-		}
-
 		effect_tooltip = {
 			custom_effect_tooltip = SOV_operation_countenance_successful_tt
 			puppet = PER
 			transfer_state = 419 #Tibriz (AZB)
 			transfer_state = 420 #Gilan (AZB)
 			transfer_state = 416 #Khorasan
-			transfer_state = 1000 #East Azerbaijan
-			transfer_state = 1004 #North Khorasan
 			PER = {
 				give_resource_rights = { receiver = SOV state = 411 }
 				give_resource_rights = { receiver = SOV state = 412 }
@@ -3412,8 +3402,6 @@ country_event = {
 		transfer_state = 419 #Tibriz (AZB)
 		transfer_state = 420 #Gilan (AZB)
 		transfer_state = 416 #Khorasan
-		transfer_state = 1000 #East Azerbaijan
-		transfer_state = 1004 #North Khorasan
 		PER = {
 			give_resource_rights = { receiver = SOV state = 411 }
 			give_resource_rights = { receiver = SOV state = 412 }
@@ -3437,8 +3425,6 @@ country_event = {
 		transfer_state = 419 #Tibriz (AZB)
 		transfer_state = 420 #Gilan (AZB)
 		transfer_state = 416 #Khorasan
-		transfer_state = 1000 #East Azerbaijan
-		transfer_state = 1004 #North Khorasan
 		PER = {
 			give_resource_rights = { receiver = SOV state = 411 }
 			give_resource_rights = { receiver = SOV state = 412 }
@@ -3568,23 +3554,6 @@ country_event = {
 				country_event = { id = NSB_soviet_foreign_politics_events.150 hours = 1 }
 			}
 		}
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = SOV 
-					has_government = communism
-				}
-				ROOT = {
-					original_tag = SIK
-				}
-			}
-			set_cosmetic_tag = SIK_ssr
-			set_party_name = {
-			    ideology = communism
-			    long_name = SIK_CPSU_communism_party_long
-			    name = SIK_CPSU_communism_party
-			}
-		}
 	}
 
 	option = { #Join Faction - Keep government
@@ -3700,12 +3669,6 @@ country_event = {
 					value > 75
 				}
 			}
-
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-
 			modifier = {
 				add = 0.5
 				OR = {
@@ -3785,7 +3748,7 @@ country_event = {
 		name = NSB_soviet_foreign_politics_events.210.c
 
 		ai_chance = {
-			base = 100
+			base = 20
 			modifier = {
 				factor = 2
 				is_historical_focus_on = yes
@@ -4209,7 +4172,8 @@ country_event = {
 			modifier = { #Is going commie or historical
 				factor = 0
 				OR = {
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
+					has_completed_focus = JAP_the_unthinkable_option
+					has_completed_focus = JAP_purge_the_kodoha_faction
 				}
 			}
 		}
@@ -5883,25 +5847,14 @@ country_event = {
 		}
 
 		add_political_power = 75
-
-		custom_effect_tooltip = generic_skip_one_line_tt
-
 		SOV = {
 			puppet = ROOT
+
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = SOV_complied_with_our_demands
 			}
 		}
-
-		set_cosmetic_tag = SIK_ssr
-		set_party_name = {
-		    ideology = communism
-		    long_name = SIK_CPSU_communism_party_long
-		    name = SIK_CPSU_communism_party
-		}
-
-		custom_effect_tooltip = generic_skip_one_line_tt
 
 		FROM = {
 			country_event = { id = NSB_soviet_foreign_politics_events.283 hours = 1 }
@@ -6053,7 +6006,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 2
-			has_full_control_of_state = 1035 # NANJING (CHI)
+			has_full_control_of_state = 613 # NANJING (CHI)
 		}
 		modifier = {
 			factor = 2
@@ -6503,7 +6456,7 @@ country_event = {
 					}
 					if = {
 						limit = {
-							has_tech = basic_heavy_battery
+							has_tech = basic_medium_battery
 						}
 						create_equipment_variant = {
 							name = "Hipper Class"
@@ -6692,7 +6645,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_tech = basic_heavy_battery
+					has_tech = basic_medium_battery
 				}
 				create_equipment_variant = {
 					name = "Hipper Class"
@@ -7571,7 +7524,7 @@ country_event = {
 
 		if = {
 			limit = {
-				NOT = { is_special_project_completed = sp:sp_nuclear_bomb }
+				NOT = { has_tech = nukes }
 			}
 			add_breakthrough_progress = {
 				specialization = specialization_nuclear

@@ -1,0 +1,65 @@
+ideas = {
+	trade_laws = {
+		law = yes
+		SOV_collectivized_society = {
+			picture = SPR_collectivized_society
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				min_export = 0
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.1
+				civilian_intel_to_others = 40
+				navy_intel_to_others = 20
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+	}
+	country = {
+		extra_cp = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+
+			}
+			removal_cost = -1
+			picture = MEX_politicised_army_2
+			modifier = {
+				max_command_power = 110
+				command_power_gain_mult = 0.5
+			}
+		}
+		ai_cap_progress = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+			}
+			removal_cost = -1
+			picture = RAJ_partition_india_united
+			modifier = {
+				surrender_limit = -0.2
+			}
+		}
+		easier_cap_progress = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+			}
+			removal_cost = -1
+			picture = RAJ_partition_india_united
+			modifier = {
+				forced_surrender_limit = -0.05
+			}
+		}
+	}
+}

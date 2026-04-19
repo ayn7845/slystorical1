@@ -8,7 +8,7 @@ state={
 
 	history={
 		owner = HOL
-		add_core_of = INS
+		add_core_of = WST
 		buildings = {
 			infrastructure = 2
 			1574 = {
@@ -20,6 +20,10 @@ state={
 			7413 = {
 				naval_base = 1
 			}
+		}
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 

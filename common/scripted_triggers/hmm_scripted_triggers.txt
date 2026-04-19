@@ -7,8 +7,8 @@ is_playable_country = {
 		tag = SPR
 		tag = BUL
 		tag = JAP
-		tag = SIA
-		tag = MAN
+		# tag = SIA
+		# tag = MAN
 		tag = FIN
 		tag = ENG
 		tag = FRA
@@ -22,7 +22,7 @@ is_playable_country = {
 		tag = SAF
 		tag = SOV
 		tag = PHI
-		tag = IRQ
+
 	}
 }
 
@@ -47,6 +47,9 @@ allies = {
 		tag = POL
 		tag = DEN
 		tag = PHI
+		tag = YUG
+		tag = GRE
+		tag = IRE
 	}
 }
 
@@ -87,7 +90,7 @@ axis = {
 		tag = RAR
 		tag = ROA
 		tag = RAA
-		tag = IRQ
+		tag = EFR
 	}
 }
 ai_manpower = {
@@ -102,6 +105,7 @@ ai_manpower = {
 		tag = GRE
 		tag = DEN
 		tag = ALB
+		tag = EFR
 		tag = IRE
 
 	}
@@ -113,9 +117,7 @@ ai_annex = {
 		tag = EST
 		tag = AUS
 		tag = CZE
-		tag = COG
-		tag = MON
-		tag = TAN	
+		tag = POR
 	}
 }
 ai_rk = {
@@ -149,23 +151,17 @@ ai_rk = {
 ai_black = {
 	OR = {
 		tag = WST
-		tag = TUR
-		tag = POR
+		tag = TUM
+		tag = CHO
 		tag = SWE
+		tag = PER
 	}
 }
 
 DIPLOMACY_PEACE_PROPOSAL_ENABLE_TRIGGER = {
 	always = no
 }
-DIPLOMACY_RETURN_TERRITORY_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			FROM = { tag = WST }
-		}
-		custom_trigger_tooltip = {
-			tooltip = RETURN_TERRITORY_TO_WST_BLOCKED_TOOLTIP
-			NOT = { FROM = { tag = WST } }
-		}
-	}
+
+is_vichy_france = {
+	original_tag = EFR
 }

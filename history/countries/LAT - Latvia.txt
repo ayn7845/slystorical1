@@ -9,13 +9,9 @@ if = {
 	}
 }
 if = {
-	limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
+		limit = { has_game_rule = { 
+					rule = larp_barb
+					option = on } 
 		}
 		set_air_oob = "LAT_1936_air_bba"
 	else = {
@@ -87,7 +83,6 @@ set_technology = {
 	tech_support = 1
 	basic_train = 1
 }
-
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -160,14 +155,7 @@ set_convoys = 10
 		}
 	}
 	if = {
-		limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "LAT_1939_air_bba"
 		else = {
 			set_air_oob = "LAT_1939_air_legacy"
@@ -181,7 +169,12 @@ set_convoys = 10
 		support_weapons = 1
 
 		#doctrines
-		#air_superiority = 1
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -202,11 +195,6 @@ set_convoys = 10
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_strategic_destruction
-
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}

@@ -9,13 +9,9 @@ if = {
 	}
 }
 if = {
-	limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
+		limit = { has_game_rule = { 
+					rule = larp_barb
+					option = on } 
 		}
 		set_air_oob = "SIA_1936_air_bba"
 	else = {
@@ -103,14 +99,7 @@ set_convoys = 15
 		}
 	}
 	if = {
-		limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "SIA_1939_air_bba"
 			set_technology = {
 				bba_early_transport_plane = 1
@@ -130,6 +119,12 @@ set_convoys = 15
 		support_weapons = 1
 		interwar_artillery = 1
 
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
@@ -147,10 +142,6 @@ set_convoys = 15
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}
@@ -175,7 +166,7 @@ set_grand_doctrine = new_fleet_in_being
 			early_ship_hull_submarine = 1
 			basic_ship_hull_submarine = 1
 			early_ship_hull_cruiser = 1
-			#basic_medium_battery = 1
+			basic_medium_battery = 1
 		}
 	}
 }

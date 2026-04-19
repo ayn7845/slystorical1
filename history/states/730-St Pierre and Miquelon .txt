@@ -2,7 +2,7 @@ state={
 	id=730
 	name="STATE_730"
 	manpower=3426
-	state_category = tiny_island
+	state_category = large_town
 
 	history={
 		owner = FRA
@@ -12,7 +12,16 @@ state={
 				naval_base = 1
 			}
 		}
+		victory_points = {
+			373 2
+		}
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
+	add_core_of = WST
+	
 	
 	provinces={ 373 }
 

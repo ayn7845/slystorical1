@@ -178,12 +178,12 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { trait_cautious politically_connected offensive_doctrine desert_fox }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 1
+			traits = { organizer trait_cautious politically_connected hill_fighter desert_fox infantry_leader }
+			skill = 6
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 8
 			legacy_id = 0
 			visible = { has_government = fascism }
 		}
@@ -319,34 +319,25 @@ characters = {
 		}
 
 		advisor = {
-			cost = 150
-			slot = theorist
+			cost = 100
+			slot = army_chief
 			idea_token = giovanni_messe
 			ledger = army
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
-			available = {
-				if = {
-					limit = { has_dlc = "By Blood Alone" }
-					OR = {
-						NOT = { has_government = communism }
-						has_completed_focus = ITA_common_ground
-					}
-				}
-			}
 			traits = {
-				mobile_warfare_expert
+				army_chief_offensive_2
 			}
 		}
 		
-		corps_commander = {
-			traits = { armor_officer war_hero  infantry_leader organizer commando}
+		field_marshal = {
+			traits = { armor_officer war_hero logistics_wizard aggressive_assaulter thorough_planner combined_arms_expert infantry_leader organizer panzer_leader brilliant_strategist }
 			skill = 6
 			attack_skill = 4
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 6
 			legacy_id = 0
 		}
 	}
@@ -396,13 +387,24 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { inflexible_strategist career_officer organizer cavalry_leader trait_engineer infantry_leader commando skilled_staffer }
+			traits = { inflexible_strategist career_officer organizer logistics_wizard unyielding_defender defensive_doctrine ambusher combined_arms_expert cavalry_leader trait_engineer infantry_leader skilled_staffer hill_fighter trait_mountaineer }
 			skill = 6
 			attack_skill = 6
 			defense_skill = 6
 			planning_skill = 5
 			logistics_skill = 4
 			legacy_id = 0
+		}
+			advisor = {
+			slot = army_chief
+			idea_token = sebastiano_visconti_prasca
+			traits = {
+				army_chief_defensive_2 # Was army_chief_maneuver_2 (replaced by Alberto Pariani)
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1
+			}
 		}
 	}
 
@@ -640,14 +642,25 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { cavalry_leader combined_arms_expert } #Motorized
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { organizer combined_arms_expert camouflage_expert ambusher offensive_doctrine infantry_leader trait_engineer cavalry_leader trickster panzer_leader commando } #Motorized
+			skill = 6
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
 			legacy_id = 0
 			visible = { has_government = fascism }
+		}
+		advisor = {
+			slot = high_command
+			idea_token = francesco_zingales
+			traits = {
+				army_armored_2
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1
+			}
 		}
 	}
 
@@ -785,16 +798,26 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { trait_mountaineer } # Infantry, Mountaneers, Armor
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { trait_mountaineer organizer infantry_leader trait_engineer cavalry_leader trickster } # Infantry, Mountaneers, Armor
+			skill = 6
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
 			legacy_id = 0
 		}
+		advisor = {
+			slot = high_command
+			idea_token = ITA_carlo_vecchiarelli
+			traits = {
+				army_CombinedArms_2
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1
+			}
+		}
 	}
-
 	ITA_mario_robotti = {
 		name = ITA_mario_robotti
 		portraits = {
@@ -833,6 +856,17 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = { has_government = fascism }
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ITA_ettore_baldassarre
+			traits = {
+				army_commando_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
 		}
 	}
 
@@ -1056,9 +1090,9 @@ characters = {
 		}
 
 		navy_leader = {
-			traits = { aviation_enthusiast blockade_runner }
-			skill = 3
-			attack_skill = 2
+			traits = { aviation_enthusiast blockade_runner bold superior_tactician green_water_expert inshore_fighter }
+			skill = 4
+			attack_skill = 5
 			defense_skill = 2
 			maneuvering_skill = 4
 			coordination_skill = 2
@@ -1535,25 +1569,6 @@ characters = {
 				small = GFX_idea_silvio_scaroni
 			}
 		}
-
-		advisor = {
-			slot = high_command
-			idea_token = silvio_scaroni
-			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				has_government = fascism
-			}
-			traits = {
-				air_bomber_interception_2
-			}
-			cost = 100
-			ai_will_do = {
-				base = 1.000
-			}
-		}
 	}
 
 	ITA_luigi_mascherpa = {
@@ -1844,7 +1859,7 @@ characters = {
 	ITA_mario_roatta = {
 		name = ITA_mario_roatta
 		portraits = {
-		#MM: In the past we were not able to make this work. I hope that you, people from the future who are seeing this, will be able to use your knowledge and sci-fi technology to make this work. Good luck comrades. 
+		#TODO_Manu: In the past we were not able to make this work. I hope that you, people from the future who are seeing this, will be able to use your knowledge and sci-fi technology to make this work. Good luck comrades. 
 		#Edit: But don't duplicate this character or my cursed spirit will come to haunt you.
 			civilian = {
 				small = GFX_idea_ita_mario_roatta_political_advisor
@@ -3521,167 +3536,167 @@ characters = {
 
 
 	
-	ITA_enrico_fermi = {
-		name = ITA_enrico_fermi
-		portraits = {
-			army = {
-				large = GFX_portrait_ITA_enrico_fermi
-				small = GFX_portrait_ITA_enrico_fermi_small
-			}
+  ITA_enrico_fermi = {
+	name = ITA_enrico_fermi
+	portraits = {
+		army = {
+			large = GFX_portrait_ITA_enrico_fermi
+			small = GFX_portrait_ITA_enrico_fermi_small
+		}
+	}
+
+	scientist = {
+		traits = { scientist_trait_nuclear_specialist scientist_trait_gifted_engineer }
+		skills = {
+			specialization_nuclear = 3
 		}
 
-		scientist = {
-			traits = { scientist_trait_nuclear_specialist scientist_trait_gifted_engineer }
-			skills = {
-				specialization_nuclear = 3
-			}
-
-			visible = {
-				owner = {
-					OR = {
-						has_completed_focus = ITA_meritocracy
-						has_completed_focus = ITA_bring_back_exiled_intellectuals
-					}
+		visible = {
+			owner = {
+				OR = {
+					has_completed_focus = ITA_meritocracy
+					has_completed_focus = ITA_bring_back_exiled_intellectuals
 				}
 			}
 		}
-
-		#advisor = {
-		#	slot = political_advisor
-		#	idea_token = ITA_enrico_fermi
-		#	allowed = {
-		#		original_tag = ITA
-		#		has_dlc = "By Blood Alone"
-		#	}
-		#	available = {
-		#		OR = {
-		#			has_completed_focus = ITA_meritocracy
-		#			has_completed_focus = ITA_bring_back_exiled_intellectuals
-		#		}
-		#	}
-		#	research_bonus = {
-		#		nuclear = 0.15
-		#	}
-		#	traits = {
-		#		nuclear_scientist # Nuclear guy
-		#	}
-		#
-		#	ai_will_do = {
-		#		base = 0.100
-		#	}
-		#}
 	}
 
-	ITA_gaetano_crocco = {
-		name = ITA_gaetano_crocco
-		portraits = {
-			army = {
-				large = GFX_portrait_ITA_gaetano_crocco
-				small = GFX_idea_gaetano_crocco
-			}
-		}
+	#advisor = {
+	#	slot = political_advisor
+	#	idea_token = ITA_enrico_fermi
+	#	allowed = {
+	#		original_tag = ITA
+	#		has_dlc = "By Blood Alone"
+	#	}
+	#	available = {
+	#		OR = {
+	#			has_completed_focus = ITA_meritocracy
+	#			has_completed_focus = ITA_bring_back_exiled_intellectuals
+	#		}
+	#	}
+	#	research_bonus = {
+	#		nuclear = 0.15
+	#	}
+	#	traits = {
+	#		nuclear_scientist # Nuclear guy
+	#	}
+	#
+	#	ai_will_do = {
+	#		base = 0.100
+	#	}
+	#}
+}
 
-		scientist = {
-			traits = { scientist_trait_rocketry_specialist }
-			skills = {
-				specialization_air = 2
-			}
-		}
-
-		#advisor = {
-		#	cost = 100
-		#	slot = theorist
-		#	idea_token = gaetano_crocco
-		#	ledger = air
-		#	allowed = {
-		#		ITA_is_italian_tag = yes
-		#	}
-		#	research_bonus = {
-		#		rocketry = 0.150
-		#	}
-		#	traits = {
-		#		rocket_scientist
-		#	}
-		#}
-	}
-
-	ITA_robert_longhi = {
-		name = ITA_robert_longhi
-		portraits = {
-			army = {
-				large = GFX_portrait_ITA_robert_longhi
-			}
-		}
-
-		scientist = {
-			traits = { scientist_trait_jet_expert scientist_trait_gifted_engineer }
-			skills = {
-				specialization_air = 2
-			}
+ITA_gaetano_crocco = {
+	name = ITA_gaetano_crocco
+	portraits = {
+		army = {
+			large = GFX_portrait_ITA_gaetano_crocco
+			small = GFX_idea_gaetano_crocco
 		}
 	}
 
-	ITA_mario_castoldi = {
-		name = ITA_mario_castoldi
-		portraits = {
-			army = {
-				large = GFX_portrait_ITA_mario_castoldi
-			}
-		}
-
-		scientist = {
-			traits = { scientist_trait_aircraft_specialist }
-			skills = {
-				specialization_air = 2
-			}
+	scientist = {
+		traits = { scientist_trait_rocketry_specialist }
+		skills = {
+			specialization_air = 2
 		}
 	}
 
-	ITA_giovanni_giorgi = {
-		name = ITA_giovanni_giorgi
-		portraits = {
-			army = {
-				large = GFX_portrait_ITA_giovanni_giorgi
-			}
-		}
+	#advisor = {
+	#	cost = 100
+	#	slot = theorist
+	#	idea_token = gaetano_crocco
+	#	ledger = air
+	#	allowed = {
+	#		ITA_is_italian_tag = yes
+	#	}
+	#	research_bonus = {
+	#		rocketry = 0.150
+	#	}
+	#	traits = {
+	#		rocket_scientist
+	#	}
+	#}
+}
 
-		scientist = {
-			traits = { scientist_trait_electronics_specialist }
-			skills = {
-				specialization_air = 2
-			}
+ITA_robert_longhi = {
+	name = ITA_robert_longhi
+	portraits = {
+		army = {
+			large = GFX_portrait_ITA_robert_longhi
 		}
 	}
 
-	ITA_filippo_bonfiglietti = {
-		name = ITA_filippo_bonfiglietti
-		portraits = {
-			army = {
-				large = GFX_portrait_ITA_filippo_bonfiglietti
-			}
+	scientist = {
+		traits = { scientist_trait_jet_expert scientist_trait_gifted_engineer }
+		skills = {
+			specialization_air = 2
 		}
+	}
+}
 
-		scientist = {
-			traits = { scientist_trait_surface_ship_specialist }
-			skills = {
-				specialization_naval = 2
-			}
+ITA_mario_castoldi = {
+	name = ITA_mario_castoldi
+	portraits = {
+		army = {
+			large = GFX_portrait_ITA_mario_castoldi
 		}
 	}
 
-	ITA_curio_bernardis = {
-		name = ITA_curio_bernardis
-		portraits = {
-			army = {
-				large = GFX_portrait_ITA_curio_bernardis
-			}
-		}
-
-		scientist = {
-			traits = { scientist_trait_submarine_specialist scientist_trait_bright }
-			skills = {
-				specialization_naval = 2
-			}
+	scientist = {
+		traits = { scientist_trait_aircraft_specialist }
+		skills = {
+			specialization_air = 2
 		}
 	}
+}
+
+ITA_giovanni_giorgi = {
+	name = ITA_giovanni_giorgi
+	portraits = {
+		army = {
+			large = GFX_portrait_ITA_giovanni_giorgi
+		}
+	}
+
+	scientist = {
+		traits = { scientist_trait_electronics_specialist }
+		skills = {
+			specialization_air = 2
+		}
+	}
+}
+
+ITA_filippo_bonfiglietti = {
+	name = ITA_filippo_bonfiglietti
+	portraits = {
+		army = {
+			large = GFX_portrait_ITA_filippo_bonfiglietti
+		}
+	}
+
+	scientist = {
+		traits = { scientist_trait_surface_ship_specialist }
+		skills = {
+			specialization_naval = 2
+		}
+	}
+}
+
+ITA_curio_bernardis = {
+	name = ITA_curio_bernardis
+	portraits = {
+		army = {
+			large = GFX_portrait_ITA_curio_bernardis
+		}
+	}
+
+	scientist = {
+		traits = { scientist_trait_submarine_specialist scientist_trait_bright }
+		skills = {
+			specialization_naval = 2
+		}
+	}
+}
 }

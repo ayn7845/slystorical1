@@ -57,7 +57,7 @@ on_actions = {
 							is_core_of = POL
 							is_controlled_by = GER
 						}
-						set_compliance = 100
+						set_compliance = 75
 					}
                 }
             }
@@ -96,11 +96,11 @@ on_actions = {
 							set_compliance = 75
 						}
 						custom_effect_tooltip = GER_modify_economy_of_conquest_modifier_tt
-						#add_to_variable = { 
-							#GER_industrial_consumer_goods_factor = -0.45
-							#tooltip = consumer_goods_factor_tt
-							#}
-							#GER_reduce_mefo_bills_penalty = yes
+						add_to_variable = { 
+							GER_industrial_consumer_goods_factor = -0.45
+							tooltip = consumer_goods_factor_tt
+							}
+							GER_reduce_mefo_bills_penalty = yes
 						}
                 	}
            	 	}
@@ -304,41 +304,82 @@ on_actions = {
 				}
 			}
 		}
+		effect = {
+			# Albania
+			if = {
+				limit = { 
+					original_tag = ALB 
+					ITA = { has_war_with = ALB }
+				} 
+				ALB = {
+					transfer_navy = { target = ITA }
+				}
+				ITA = {
+					every_state = {
+						limit = {
+								is_core_of = ALB
+								is_controlled_by = ITA
+						}
+						set_compliance = 100
+					}
+					add_named_threat = { 
+						threat = 2
+						name = ALB_peace
+					}
+					annex_country = {
+						target = ALB
+						transfer_troops = no
+					}
+					if = {
+						limit = { NOT = { has_idea = peace_training } }
+						add_ideas = peace_training
+					}
+				}
+			} 
+		}
 	}
-	on_capitulation = {
-        effect = {
-            if = {
-                limit = {
-                    tag = ALB
-                }
-                ITA = {
-					every_state = {
-						limit = {
-							is_core_of = ALB
-							is_controlled_by = ITA
+	on_state_control_changed = {
+		effect = {
+			# Greece
+			if = {
+				limit = {
+					FROM = { tag = GRE }
+					FROM.FROM = { is_core_of = GRE }
+					OR ={  AND ={  GRE = { surrender_progress > 0.50 NOT = { controls_state = 16 } } }	FRA = { surrender_progress	> 0.7	}	 }
+				}
+				IF = {
+					limit = {
+						GRE = {
+							transfer_navy = { target = ITA }
 						}
-						set_compliance = 50
-					}
-                }
-            }
-        }
-    }
-	on_capitulation = {
-        effect = {
-            if = {
-                limit = {
-                    tag = YUG
-                }
-                ITA = {
-					every_state = {
-						limit = {
-							is_core_of = YUG
-							is_controlled_by = ITA
+						BUL = {
+							transfer_state = 731 # THESALONIKI JEWISH STATE!!
+							transfer_state = 184 # THRACE
 						}
-						set_compliance = 75
+						ITA = {
+							every_state = {
+								limit = {
+									is_core_of = GRE
+									is_controlled_by = ITA
+								}
+								set_compliance = 80
+							}
+							annex_country = {
+								target = GRE
+								transfer_troops = no
+							}
+							add_named_threat = { 
+								threat = 12
+								name = GRE_peace
+							}
+							if = {
+								limit = { NOT = { has_idea = peace_training } }
+								add_ideas = peace_training
+							}
+						}
 					}
-                }
-            }
-        }
+				}
+			}
+		}
     }
 }

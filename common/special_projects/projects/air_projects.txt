@@ -61,7 +61,20 @@ sp_air_bouncing_bomb = {
 	}	
 
 	generic_prototype_rewards = {
-		sp_air_generic_reward_always
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		#sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		#sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		#sp_air_generic_reward_major_progress_3
+		#sp_air_generic_reward_test_failure_1
+		#sp_air_generic_reward_test_failure_2
+		#sp_air_generic_reward_test_failure_3		
 	}
 
 	unique_prototype_rewards = {
@@ -189,14 +202,7 @@ sp_air_earthshaker_bomb = {
 
 	available = { 
 		if = {
-			limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+			limit = { has_dlc = "By Blood Alone" }
 			FROM = {
 				has_tech = heavy_bombs
 			}
@@ -228,20 +234,26 @@ sp_air_earthshaker_bomb = {
 			custom_effect_tooltip = sp_air_earthshaker_bomb_completion_tt
 		}
 		enable_equipment_modules = {
-			limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+			limit = { has_dlc = "By Blood Alone" }
 			earthshaker_bomb_release
 		}
 	}
 
 	generic_prototype_rewards = {
-		sp_air_generic_reward_always	
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3		
 	}
 
 	unique_prototype_rewards = {
@@ -384,26 +396,17 @@ sp_air_intercontinental_bomber = {
 
 	available = { 
 		FROM = {
-			if = {
-				limit = { 
-					has_dlc = "By Blood Alone"
-				}
-				has_tech = improved_large_airframe
-			}
-			else = {
-				has_tech = strategic_bomber2
-			}
+			has_tech = strategic_bomber1
 		}
 	}
-
 	breakthrough_cost = {
-		specialization_air = 2
+		specialization_air = 3
 	}
 	
 	resource_cost = {
 		resources = {
-			aluminium = 24
-			rubber = 12
+			aluminium = 86
+			rubber = 44
 		}
 	}
 	
@@ -438,7 +441,20 @@ sp_air_intercontinental_bomber = {
 	
 
 	generic_prototype_rewards = {
-		sp_air_generic_reward_always	
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3	
 	}
 
 	unique_prototype_rewards = {
@@ -498,8 +514,8 @@ sp_air_intercontinental_bomber = {
 								bonus = {
 									strat_bomber_intercontinental_equipment = { #SETUP IN CASE OF HAVING TO BALANCE DIFFERENTLY FOR NON-BBA AND BBA
 										air_bombing = 0.15
-										air_defence	= -0.05
-										air_attack = -0.1
+										air_defence	= -0.2
+										air_attack = -0.5
 									}
 								}
 							}
@@ -509,9 +525,9 @@ sp_air_intercontinental_bomber = {
 								name = sp_air_intercontinental_bomber_bombing_payload
 								bonus = {
 									strat_bomber_intercontinental_equipment = { #SETUP IN CASE OF HAVING TO BALANCE DIFFERENTLY FOR NON-BBA AND BBA
-								      air_bombing = 0.15
-										air_defence	= -0.05
-										air_attack = -0.1	
+										air_bombing = 0.15
+										air_defence	= -0.2
+										air_attack = -0.5	
 									}
 								}
 							}
@@ -532,9 +548,9 @@ sp_air_intercontinental_bomber = {
 								name = sp_air_intercontinental_bomber_protection
 								bonus = {
 									strat_bomber_intercontinental_equipment = { #SETUP IN CASE OF HAVING TO BALANCE DIFFERENTLY FOR NON-BBA AND BBA
-										air_defence = 0.15
-										air_attack = -0.1
-										air_bombing = -0.1
+										air_defence = 0.2
+										air_attack = -0.6
+										air_bombing = -0.6
 									}
 								}
 							}
@@ -544,9 +560,9 @@ sp_air_intercontinental_bomber = {
 								name = sp_air_intercontinental_bomber_protection
 								bonus = {
 									strat_bomber_intercontinental_equipment = { #SETUP IN CASE OF HAVING TO BALANCE DIFFERENTLY FOR NON-BBA AND BBA
-										air_defence = 0.15
-										air_attack = -0.1
-										air_bombing = -0.1
+										air_defence = 0.2
+										air_attack = -0.6
+										air_bombing = -0.6
 									}
 								}
 							}
@@ -569,9 +585,24 @@ sp_air_mothership_aircraft = {
 	allowed = {
 		has_dlc = "Gotterdammerung"		
 	}
-
+	visible = {
+		always = no
+	}
 	generic_prototype_rewards = {
-		sp_air_generic_reward_always
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		#sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3	
 	}
 
 	available = { 
@@ -760,18 +791,13 @@ sp_air_jet_engine = {
 		sp_tag_aircraft
 		sp_tag_jet
 	}
-
+	visible = {
+		always = no
+	}
 	available = { 
 		FROM = {
 			if = {
-				limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+				limit = { has_dlc = "By Blood Alone" }
 				has_tech = engines_2
 				OR = {
 					has_tech = improved_small_airframe
@@ -869,14 +895,7 @@ sp_air_jet_engine = {
 		}	
 
 		enable_equipment_modules = {
-			limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+			limit = { has_dlc = "By Blood Alone" }
 			jet_engine_1x
 			jet_engine_2x
 			jet_engine_3x
@@ -891,7 +910,20 @@ sp_air_jet_engine = {
 	}
 
 	generic_prototype_rewards = {
-		sp_air_generic_reward_always	
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3		
 	}
 	
 	unique_prototype_rewards = {
@@ -1037,7 +1069,9 @@ sp_air_axial_jet_engine = {
 		sp_tag_aircraft
 		sp_tag_jet
 	}
-
+	visible = {
+		always = no
+	}
 	special_project_parent = {
 		sp_air_jet_engine
 	}
@@ -1045,14 +1079,7 @@ sp_air_axial_jet_engine = {
 	available = { 
 		FROM = {
 			if = {
-				limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+				limit = { has_dlc = "By Blood Alone" }
 				has_tech = engines_3
 				OR = {
 					has_tech = advanced_small_airframe
@@ -1087,14 +1114,7 @@ sp_air_axial_jet_engine = {
 	project_output = {
 		country_effects = {
 			if = {
-				limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+				limit = { has_dlc = "By Blood Alone" }
 				custom_effect_tooltip = {
 					localization_key = SP_UNLOCK_TECH
 					TECH = modern_small_airframe
@@ -1181,7 +1201,20 @@ sp_air_axial_jet_engine = {
 	}
 
 	generic_prototype_rewards = {
-		sp_air_generic_reward_always
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3		
 	}
 
 	unique_prototype_rewards = {
@@ -1326,7 +1359,9 @@ sp_air_supersonic_jet = {
 		sp_tag_aircraft
 		sp_tag_jet
 	}
-
+	visible = {
+		always = no
+	}
 	special_project_parent = {
 		sp_air_axial_jet_engine
 	}
@@ -1354,14 +1389,7 @@ sp_air_supersonic_jet = {
 	project_output = {
 		country_effects = {
 			if = {
-				limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+				limit = { has_dlc = "By Blood Alone" }
 				add_design_template_bonus = {
 					name = sp_air_supersonic_jet_fighter_free_design
 					uses = 1
@@ -1387,7 +1415,20 @@ sp_air_supersonic_jet = {
 	}
 
 	generic_prototype_rewards = {
-		sp_air_generic_reward_always		
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3		
 	}
 
 	unique_prototype_rewards = {
@@ -1531,7 +1572,9 @@ sp_air_helicopter = {
 		sp_tag_aircraft
 		sp_tag_helicopter
 	}
-
+	visible = {
+		always = no
+	}
 	allowed = {
 		has_dlc = "Gotterdammerung"		
 	}
@@ -1585,7 +1628,22 @@ sp_air_helicopter = {
 	}
 
 	generic_prototype_rewards = {
-		sp_air_generic_reward_always		
+		sp_air_scientist_xp_generic_reward
+		sp_air_political_interference_generic_reward
+		sp_air_generic_major_breakthrough_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3		
 	}
 
 	unique_prototype_rewards = {

@@ -1306,7 +1306,7 @@ leader_traits = {
 		}
 		cost = 1000
 		modifier = {
-			terrain_penalty_reduction = 0.30
+			terrain_penalty_reduction = 0.1
 			acclimatization_cold_climate_gain_factor = 0.1
 			acclimatization_hot_climate_gain_factor = 0.1
 		}
@@ -1451,8 +1451,8 @@ leader_traits = {
 		modifier = {
 			desert = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.05
+				defence = 0.05
 			}
 		}
 		new_commander_weight = {
@@ -1479,8 +1479,8 @@ leader_traits = {
 		modifier = {
 			marsh = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.05
+				defence = 0.05
 			}
 		}
 		
@@ -1500,8 +1500,8 @@ leader_traits = {
 		modifier = {
 			mountain = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.05
+				defence = 0.05
 			}
 		}
 		
@@ -1521,8 +1521,8 @@ leader_traits = {
 		modifier = {
 			hills = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.05
+				defence = 0.05
 			}
 		}
 		
@@ -1542,8 +1542,8 @@ leader_traits = {
 		modifier = {
 			jungle = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.05
+				defence = 0.05
 			}
 		}
 		
@@ -1563,8 +1563,8 @@ leader_traits = {
 		modifier = {
 			forest = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.05
+				defence = 0.05
 			}
 		}
 		
@@ -1584,8 +1584,8 @@ leader_traits = {
 		modifier = {
 			urban = {
 				movement = 0.05
-				attack = 0.1
-				defence = 0.1
+				attack = 0.05
+				defence = 0.05
 			}
 		}
 		
@@ -3140,17 +3140,10 @@ leader_traits = {
 		type = all
 		trait_type = status_trait
 		
-	}
-
-	motivated = { 
-		type = land
-		trait_type = status_trait
-		
-		attack_skill = 1
-
-		non_shared_modifier = {
-			army_morale_factor = 0.10
-		}
+		attack_skill = -1
+		defense_skill = -1
+		logistics_skill = -1
+		planning_skill = -1
 	}
 
 	# defective_geneseed = { #needs more code support, remove before launch
@@ -3181,7 +3174,10 @@ leader_traits = {
 		}
 		
 		modifier = {
-			
+			exiled_divisions_attack_factor = 0.1
+			own_exiled_divisions_attack_factor = 0.05 
+			exiled_divisions_defense_factor = 0.1
+			own_exiled_divisions_defense_factor = 0.05			
 		}
 		
 		ai_will_do = {
@@ -3394,14 +3390,6 @@ leader_traits = {
 
 		type = all
 		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			FROM = {
-				original_tag = HUN
-			}
-		}
 
 		new_commander_weight = {
 			factor = 0
@@ -3412,142 +3400,10 @@ leader_traits = {
 
 		type = all
 		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			FROM = {
-				original_tag = HUN
-			}
-		}
 
 		new_commander_weight = {
 			factor = 0
 		}
-	}
-
-	trait_JAP_kodoha_sympathizer = {
-
-		type = all
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			FROM = {
-				original_tag = JAP
-			}
-		}
-		
-		new_commander_weight = {
-			factor = 0  
-		}
-
-	}
-
-	JAP_royal_lineage = { 
-		type = all
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			FROM = {
-				original_tag = JAP
-			}
-		}
-		modifier = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-
-	JAP_kamikaze_proponent = { 
-		type = navy
-		trait_type = personality_trait
-
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			FROM = {
-				original_tag = JAP
-			}
-		}
-		
-		modifier = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-
-	JAP_tohokai_sympathies = {
-
-		type = all
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			FROM = {
-				original_tag = JAP
-			}
-		}
-		
-		new_commander_weight = {
-			factor = 0  
-		}
-
-	}
-
-	JAP_IJA_loyalist = {
-
-		type = all
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			FROM = {
-				original_tag = JAP
-			}
-		}
-		
-		new_commander_weight = {
-			factor = 0  
-		}
-
-	}
-
-	JAP_government_supporter = {
-
-		type = all
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			FROM = {
-				original_tag = JAP
-			}
-		}
-		
-		new_commander_weight = {
-			factor = 0  
-		}
-
 	}
 
 ##################################
@@ -3848,79 +3704,5 @@ leader_traits = {
 			factor = 0  
 		}
 	}
-
-	PRC_survivor_of_the_long_march = {
-		type = { land }
-		trait_type = personality_trait
-		
-		new_commander_weight = {
-			factor = 0  
-		}
-
-		modifier = {
-			out_of_supply_factor = -0.1
-			equipment_capture = 0.03
-		}
-		
-	}
-
-	SIC_dubious_loyalty = {
-		type = { land }
-		trait_type = personality_trait
-		
-		new_commander_weight = {
-			factor = 0  
-		}
-
-		modifier = {
-			
-		}
-		
-	}
-
-	YUN_dubious_loyalty = {
-		type = { land }
-		trait_type = personality_trait
-		
-		new_commander_weight = {
-			factor = 0  
-		}
-
-		modifier = {
-			
-		}
-		
-	}
-	
-	CHI_dubious_loyalty = {
-		type = { land }
-		trait_type = personality_trait
-		
-		new_commander_weight = {
-			factor = 0  
-		}
-
-		modifier = {
-			
-		}
-		
-	}
-
-
-	XSM_dubious_loyalty = {
-		type = { land }
-		trait_type = personality_trait
-		
-		new_commander_weight = {
-			factor = 0  
-		}
-
-		modifier = {
-			
-		}
-		
-	}
-
-
 
 }

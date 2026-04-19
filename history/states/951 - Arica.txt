@@ -11,13 +11,9 @@ state = {
 
 		owner = WST
 		add_core_of = WST
-		add_claim_by = PRU
+		add_claim_by = WST
 
-		buildings = {
-			infrastructure = 1
-			arms_factory = 1
-			air_base = 1
-		}
+		
 		
 		
 
@@ -29,5 +25,5 @@ state = {
 		5131 8217 8231 13303
 	}
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

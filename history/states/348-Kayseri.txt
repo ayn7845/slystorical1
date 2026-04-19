@@ -3,20 +3,15 @@ state={
 	id=348
 	name="STATE_348" # Kayseri
 	manpower = 1
-	resources = { chromium = 32 }
+	
 	
 	state_category = wasteland
 
 	history={
-		owner = TUR
-		victory_points = {
-			3870 5 
-		}
-		buildings = {
-			infrastructure = 2
-
-		}
-		add_core_of = TUR
+		owner =CHO
+		
+		
+		add_core_of =CHO
 
 	}
 

@@ -4,27 +4,27 @@ state={
 	name="STATE_489" # Zulia
 	manpower = 1
 	
-	state_category = wasteland
+	state_category = town
 	
-	
+	resources={
+		oil=35
+	}
 
 	history={
-		owner = WST
+		owner = VEN
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
-			1944 = {
-				naval_base = 5
-			}
 		}
+		add_core_of = VEN
+	1941.1.1 = {
+		owner = WST
 		add_core_of = WST
-		
-
+		}
 	}
 
 	provinces={
 		1944 1997 2052 4526 5088 10855 12772 
 	}
 
-	local_supplies = 0.0 
+	local_supplies=6.0 
 }

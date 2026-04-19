@@ -3,14 +3,18 @@ state={
 	name="STATE_716"
 	resources={
 		steel=27.000
-		chromium = 4
-		tungsten = 4
-		oil = 3 #Japan extracted 1m barrels annually from Manhuria
-		coal = 11
 	}
 
 	history={
-		owner = MAN
+		# No Asia + Scraping
+		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1936.1.1.14 = { owner = WST add_core_of = WST }
+
+        owner = JAP
+
+       # Less Minors
+		1936.1.1.15 = { owner = JAP add_core_of = JAP }
+
 		add_core_of = CHI
 		add_core_of = MAN
 		
@@ -19,24 +23,18 @@ state={
 			arms_factory = 2
 			industrial_complex = 1
 			air_base = 5
-			11764 = {
+			964 = {
 				naval_base = 3
 
 			}
-			11808 = {
-				landmark_great_wall_section = {
-				    level = 1
-				    allowed = {
-				        has_dlc = "No Compromise, No Surrender"
-				    }
-				}
-			}
+
 		}
 		victory_points = {
-			11771 3
+			11771 3 
 		}
-		victory_points = {
-			11764 1 
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 
 	}

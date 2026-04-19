@@ -2,22 +2,28 @@
 state={
 	id=414
 	name="STATE_414"
-	manpower = 1
+	manpower = 243007
 	
 	state_category = wasteland
 
 	history={
-		owner = WST
+		owner = PER
 		buildings = {
 			infrastructure = 1
 		}
-		
+		victory_points = {
+			10913 1 
+		}
+		add_core_of = PER
+			1941.1.1 = {
+		owner = WST
 		add_core_of = WST
+		}
 	}
 
 	provinces={
 		1986 10913 11249 12809 
 	}
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

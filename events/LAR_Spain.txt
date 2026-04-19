@@ -86,44 +86,6 @@ country_event = {
 		}
 	}
 
-	# Popular Front
-	option = {
-		name = lar_spain.1.a
-		trigger = {
-			NOT = {
-				has_completed_focus = SPA_a_great_spain
-			}
-		}
-		add_popularity = {
-			ideology = communism
-			popularity = 0.1
-		}
-		add_political_power = 5
-		if = {
-			limit = {
-				NOT = {
-					has_completed_focus = SPR_the_popular_front
-				}
-			}
-			complete_national_focus = SPR_the_popular_front
-			add_political_power = -35
-			activate_mission = SPR_military_plot_republicans
-			hidden_effect = {
-				country_event = { id = lar_spain.4 days = 4 } # Nationalists working against the government
-				country_event = { id = lar_spain.5 }
-				activate_mission = SPR_military_plot_republicans
-				if = {
-					limit = {
-						NOT = { has_active_mission = SPA_hand_over_the_ceda_campaign_chest_mission }
-					}
-					activate_mission = SPA_hand_over_the_ceda_campaign_chest_mission
-				}
-			}
-		}
-		effect_tooltip = { add_ideas = SPR_government_power_struggle }
-		custom_effect_tooltip = SPR_republican_garrison_control_decisions_tt
-	}
-
 	# Falange
 	option = {
 		name = lar_spain.1.b
@@ -186,6 +148,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+			add_threat = 2 # MSB No Volunteers so SCW needs more tension
 			every_owned_state = {
 				limit = {
 					is_core_of = ROOT
@@ -391,21 +354,7 @@ country_event = {
 					SPD = {
 						transfer_state = 41
 					}
-					41 = {
-						set_state_flag = SPR_sided_with_republicans_flag
-						create_unit = {
-							division = "division_template = \"Guarnición Republicana\" start_experience_factor = 0.1" 
-							owner = SPD
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-						create_unit = {
-							division = "division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.1" 
-							owner = SPA
-							allow_spawning_on_enemy_provs = yes
-							count = 2
-						}
-					}
+					
 				}
 				# If Madrid is controlled by Nationalists, but a random state exists that has total Republican garrison control, give that as capital first
 				if = {
@@ -580,7 +529,7 @@ country_event = {
 							engineer = { x = 0 y = 1 }
 						}
 					}
-					290 = {
+					171 = {
 						create_unit = {
 							division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
 							owner = SPA
@@ -608,6 +557,123 @@ country_event = {
 						}
 					}
 				}
+				if = { # MSB easy spain game rule
+					limit = {
+						has_game_rule = {
+							rule = scw_difficulty
+							option = easy
+						}
+						# has_completed_focus = SPA_the_army_of_africa
+					}
+					division_template = {
+						name = "Noob assistance"
+						template_counter = 20
+						division_names_group = SPA_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							infantry = { x = 3 y = 0 }
+							infantry = { x = 3 y = 1 }
+							artillery_brigade = { x = 4 y = 0 }
+							artillery_brigade = { x = 4 y = 1 }
+							artillery_brigade = { x = 4 y = 3 }
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+						}
+					}
+					174 = {
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+					}
+				}
+
 				# Republicans remove their army
 				SPD = {
 					delete_units = {
@@ -4598,7 +4664,11 @@ country_event = {
 	}
 	option = { # Option for Nationalists - Carlism
 		name = lar_spain.2.c
-		trigger = { has_completed_focus = SPA_a_great_spain }
+		trigger = { 
+			has_completed_focus = SPA_a_great_spain
+			is_ai = yes
+		}
+	
 		ai_chance = {
 			base = 30
 			modifier = {
@@ -7695,7 +7765,7 @@ country_event = {
 				#    planning_skill = 2
 				#    logistics_skill = 3
 				#}
-				add_field_marshal_role = {
+				add_field_marshal_role = { #TODO_Manu: All these guys should be handled with the new char system
 					character = SPR_jose_rovira
 					traits = { infantry_officer politically_connected }
 					skill = 3
@@ -9397,7 +9467,7 @@ country_event = {
 	option = { # Choose first King
 		name = lar_spain.34.a
 		ai_chance = {
-			base = 60
+			base = 66
 		}
 		set_country_flag = SPB_xavier_king
 		custom_effect_tooltip = lar_spain.34.a_tt
@@ -9406,21 +9476,9 @@ country_event = {
 	option = { # Choose second King
 		name = lar_spain.34.b
 		ai_chance = {
-			base = 30
+			base = 34
 		}
 		custom_effect_tooltip = lar_spain.34.b_tt
-	}
-
-	option = { # Choose third King
-		name = lar_spain.34.c
-		trigger = {
-			has_dlc = "Gotterdammerung"
-		}
-		ai_chance = {
-			base = 10
-		}
-		set_country_flag = SPB_karl_pius_king
-		custom_effect_tooltip = lar_spain.34.c_tt
 	}
 }
 
@@ -9495,6 +9553,70 @@ country_event = {
 	picture = GFX_report_event_spr_occupation_of_tangiers
 	
 	is_triggered_only = yes
+	
+	option = { # Protest
+		name = lar_spain.36.a
+		ai_chance = {
+			base = 34
+			modifier = {
+				factor = 3
+				has_war = no
+			}
+			modifier = {
+				factor = 2
+				has_government = democratic
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 5
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+				    tag = FROM
+				    ratio > 3
+				}
+			}
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 2
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { has_political_power > 100 }
+			}
+			modifier = {
+				factor = 0
+				strength_ratio = {
+				    tag = FROM
+				    ratio < 1
+				}
+			}
+			modifier = {
+				factor = 0
+				is_in_faction_with = FROM
+			}
+		}
+		add_political_power = -200
+		custom_effect_tooltip = lar_spain.36_tt
+		effect_tooltip = {
+			create_wargoal = {
+			    type = topple_government
+			    target = FROM
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = lar_spain.37 hours = 18 random_hours = 6 }
+			}
+		}
+	}
 
 	option = { # Let it slide
 		name = lar_spain.36.b

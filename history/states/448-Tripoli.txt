@@ -14,16 +14,20 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			air_base = 6
+			air_base = 9
 			1149 = {
-				naval_base = 5
+				naval_base = 7
 			}
 		}
 		add_core_of = WST
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={
-		1118 1149 1189 4194 7066 7209 9980 12039 
+		 1149 1189 4194 7066 7209 9980 12039 10838
 	}
 
 	local_supplies=0.0 

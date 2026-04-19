@@ -1,0 +1,382 @@
+﻿####### Division Templates #######
+division_template = {
+	template_counter = 1
+	is_locked = no
+	priority = 1
+	name = "CONVERTS"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 2 y = 4 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		infantry = { x = 3 y = 4 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+		infantry = { x = 4 y = 3 }
+		infantry = { x = 4 y = 4 }
+	}
+}
+units = { 
+ 	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7987
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7987
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7206
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7206
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10120
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10120
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4136
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4136
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 5004
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 5004
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9992
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9992
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1130
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1130
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1186
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1186
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10749
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10749
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11954
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11954
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4057
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4057
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11951
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11951
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 13078
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 13078
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10731
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10731
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10780
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10780
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10869
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10869
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10868
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10868
+		division_template = "CONVERTS" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+}
+
+####### Starting Production Queue #######
+instant_effect = { 
+
+
+	} 

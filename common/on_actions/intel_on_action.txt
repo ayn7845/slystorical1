@@ -4,6 +4,7 @@ on_actions = {
 			every_country = {
 				limit = {
 					OR = {
+						tag = MON
 						tag = CAN
 						tag = USA
 						tag = MEX
@@ -357,7 +358,6 @@ on_actions = {
 						tag = SIA
 						tag = SPR
 						tag = AUS
-						tag = IRQ
 					}
 				}
 				if = {
@@ -613,29 +613,7 @@ on_actions = {
 						token = team_airforce
 					}
 				}
-				if = {
-					limit = {
-						NOT = {
-							tag = IRQ
-						}
-					}
-					add_operation_token = {
-						tag = IRQ
-						token = team_civilian
-					}
-					add_operation_token = {
-						tag = IRQ
-						token = team_army
-					}
-					add_operation_token = {
-						tag = IRQ
-						token = team_navy
-					}
-					add_operation_token = {
-						tag = IRQ
-						token = team_airforce
-					}
-				}
+				
 			}
 		}
 	}

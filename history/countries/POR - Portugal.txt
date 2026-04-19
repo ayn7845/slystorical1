@@ -9,13 +9,9 @@ if = {
 	}
 }
 if = {
-	limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
+		limit = { has_game_rule = { 
+					rule = larp_barb
+					option = on } 
 		}
 		set_air_oob = "POR_1936_air_bba"
 	else = {
@@ -27,18 +23,6 @@ if = {
 		}
 	}
 }
-
-send_embargo = USA
-send_embargo = ENG
-send_embargo = FRA
-send_embargo = MEX
-send_embargo = CAN
-send_embargo = SAF
-send_embargo = RAJ
-send_embargo = AST
-send_embargo = SOV
-send_embargo = NZL
-send_embargo = BRA
 
 set_research_slots = 3
 
@@ -76,11 +60,11 @@ if = {
 		mtg_transport = 1
 	}
 }
-add_ideas = free_trade
+
 if = {
 	limit = { has_dlc = "La Resistance" }	
-
-	
+	add_ideas = POR_unreliable_army
+	add_ideas = POR_unstable_republic
 	set_stability = 0.60
 	set_war_support = 0.15	
 	set_research_slots = 2
@@ -178,14 +162,7 @@ if = {
 		}
 	}
 	if = {
-		limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "POR_1939_air_bba"
 		else = {
 			set_air_oob = "POR_1939_air_legacy"
@@ -197,7 +174,12 @@ if = {
 		support_weapons = 1
 
 		#doctrines
-		#air_superiority = 1
+		air_superiority = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+		submarine_operations = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -218,11 +200,6 @@ if = {
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_strategic_destruction
-
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}

@@ -9,13 +9,9 @@ if = {
 	}
 }
 if = {
-	limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
+		limit = { has_game_rule = { 
+					rule = larp_barb
+					option = on } 
 		}
 		set_air_oob = "HOL_1936_air_bba"
 		set_technology = {
@@ -26,7 +22,6 @@ if = {
 			iw_medium_airframe = 1
 			early_bombs = 1
 			bba_early_transport_plane = 1
-			air_torpedoe_1 = 1
 		}
 	else = {
 		set_air_oob = "HOL_1936_air_legacy"
@@ -96,21 +91,21 @@ if = {
 }
 
 # DIPLOMACY
-#if = {
-	#limit = {
-	#	OR = {
-	#		has_dlc = "Together for Victory"
-	#		has_dlc = "Man the Guns"
-	#	}
-	#}
-	#set_autonomy = {
-	#	target = INS
-	#	autonomous_state = autonomy_integrated_puppet
-	#}
-	#else = {
-	#	puppet = INS
-	#}
-#}
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = INS
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = INS
+	}
+}
 
 set_variable = { var = gateway_to_europe_influence_pp_total value = 0 }
 
@@ -127,6 +122,7 @@ if = {
 		HOL_shell_shocked_spectator_5
 		HOL_de_crisisjaren_5
 		HOL_weak_government
+		free_trade
 	}
 }
 
@@ -212,14 +208,7 @@ if = {
 		}
 	}
 	if = {
-		limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "HOL_1939_air_bba"
 			set_technology = {
 				engines_2 = 1
@@ -247,7 +236,12 @@ if = {
 		marines = 1
 
 		#doctrines
-		#air_superiority = 1
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -269,11 +263,6 @@ if = {
 		concentrated_industry2 = 1
 		concentrated_industry3 = 1
 	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_strategic_destruction
-
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}
@@ -290,7 +279,7 @@ set_grand_doctrine = new_strategic_destruction
 			improved_ship_hull_submarine = 1
 			basic_ship_hull_light = 1
 			basic_light_battery = 1
-			#basic_medium_battery = 1
+			basic_medium_battery = 1
 		}
 	}
 	HOL_dirk_jan_de_geer = {
@@ -319,13 +308,8 @@ set_stability = 0.75
 
 if = {
 	limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+		has_dlc = "By Blood Alone"
+	}
 	create_equipment_variant = {
 		name = "Fokker C.X" #also represents Fokker C.V
 		type = small_plane_cas_airframe_0
@@ -511,12 +495,7 @@ if = {
 1939.1.1 = {
 	if = {
 		limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
+			has_dlc = "By Blood Alone"
 		}
 		create_equipment_variant = {
 			name = "Fokker D.XXI"

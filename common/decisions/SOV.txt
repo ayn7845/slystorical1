@@ -2710,6 +2710,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
+				has_completed_focus = SOV_order_270
 				has_completed_focus = SOV_collectivist_propaganda
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
@@ -2819,7 +2820,7 @@ SOV_propaganda_campaigns = {
 					random_unit_leader = {
 						limit = {
 							is_assigned = yes
-							has_trait = panzer_leader
+							has_trait = ranger
 							NOT = { has_trait = trait_SOV_determined }
 						}
 						add_timed_unit_leader_trait = {
@@ -2831,8 +2832,8 @@ SOV_propaganda_campaigns = {
 				else = {
 					random_unit_leader = {
 						limit = {
-							has_trait = panzer_leader
 							NOT = { has_trait = trait_SOV_determined }
+							has_trait = ranger
 						}
 						add_timed_unit_leader_trait = {
 							trait = trait_SOV_determined
@@ -3485,13 +3486,19 @@ SOV_propaganda_campaigns = {
 		}
 
 		available = {
+			AND = { 
+			has_completed_focus = SOV_smersh
 			SOV_propaganda_poster_slot_available = yes
+			}
 		}
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_smersh
+				#has_completed_focus = SOV_smersh
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+				NOT = { 
+					has_country_flag = barbstart
+				}
 			}
 		}
 
@@ -3502,11 +3509,97 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_do_not_blab_cost
 
 		modifier = {
-			army_intel_to_others = -50
-			navy_intel_to_others = -50
-			airforce_intel_to_others = -50
-			civilian_intel_to_others = -50
-			foreign_subversive_activites = -0.25
+			army_attack_factor = 0.05
+			army_defence_factor = 0.10
+			#army_intel_to_others = -50
+			#navy_intel_to_others = -50
+			#airforce_intel_to_others = -50
+			#civilian_intel_to_others = -50
+			#foreign_subversive_activites = -0.25
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 17 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+			SOV_achievement_propaganda_counter_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 17 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+
+			set_variable = { SOV_propaganda_cost = SOV_propaganda_do_not_blab_cost }
+			SOV_increase_propaganda_campaign_cost_effect = yes
+			set_variable = { SOV_propaganda_do_not_blab_cost = SOV_propaganda_cost }
+			clear_variable = SOV_propaganda_cost
+
+			custom_effect_tooltip = SOV_propaganda_campaign_cooldown_tt
+		}
+	}
+
+	SOV_propaganda_do_not_blab2 = { # ID = 17
+		priority = 16
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
+			modifier = {
+				factor = 5
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				has_intelligence_agency = no
+			}
+			modifier = {
+				factor = 0.1
+				check_variable = { SOV_propaganda_do_not_blab_cost > 30 } #Less likely to do it a third time
+			}
+			modifier = {
+				factor = 0.1
+				check_variable = { SOV_propaganda_do_not_blab_cost > 45 } #Even less likely to do it a fourth time
+			}
+			modifier = {
+				factor = 0
+				check_variable = { SOV_propaganda_do_not_blab_cost > 90 } #Shouldn't even considered doing it a fifth time
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			AND = { 
+				has_completed_focus = SOV_smersh
+				SOV_propaganda_poster_slot_available = yes
+			}
+		}
+
+		visible = {
+			OR = {
+				#has_completed_focus = SOV_smersh
+				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+				has_country_flag = barbstart
+			}
+		}
+
+		days_remove = SOV_default_propaganda_campaign_duration
+
+		days_re_enable = SOV_default_propaganda_campaign_cooldown
+
+		cost = SOV_propaganda_do_not_blab_cost
+
+		modifier = {
+			army_attack_factor = 0.075
+			army_defence_factor = 0.075
 		}
 
 		complete_effect = {
@@ -3563,7 +3656,7 @@ SOV_propaganda_campaigns = {
 
 		available = {
 			SOV_propaganda_poster_slot_available = yes
-
+			has_completed_focus = SOV_the_komsomol
 			has_war = yes
 			any_enemy_country = {
 				any_controlled_state = {
@@ -3574,13 +3667,104 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_the_komsomol
+				NOT = { 
+					has_game_rule = { 
+					rule = larp_barb
+					option = on
+					}
+				}
+				#has_completed_focus = SOV_the_komsomol
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
 
 		days_remove = SOV_default_propaganda_campaign_duration
+	
+		days_re_enable = SOV_default_propaganda_campaign_cooldown
 
+		cost = SOV_propaganda_sweep_scum_out_cost
+
+		modifier = {
+			army_core_attack_factor = 0.1
+			army_core_defence_factor = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 18 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+			SOV_achievement_propaganda_counter_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 18 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+
+			set_variable = { SOV_propaganda_cost = SOV_propaganda_sweep_scum_out_cost }
+			SOV_increase_propaganda_campaign_cost_effect = yes
+			set_variable = { SOV_propaganda_sweep_scum_out_cost = SOV_propaganda_cost }
+			clear_variable = SOV_propaganda_cost
+
+			custom_effect_tooltip = SOV_propaganda_campaign_cooldown_tt
+		}
+	}
+	
+	SOV_propaganda_sweep_scum_out2 = { # ID = 18
+		priority = 17
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 0.5
+			modifier = {
+				add = 100
+				has_country_flag = { flag = SOV_great_patriotic_war_flag days > 365 }
+			}
+			modifier = {
+				factor = 0.1
+				surrender_progress > 0.75
+			}
+			modifier = {
+				factor = 0.1
+				check_variable = { SOV_propaganda_sweep_scum_out_cost > 30 } #Less likely to do it a third time
+			}
+			modifier = {
+				factor = 0.1
+				check_variable = { SOV_propaganda_sweep_scum_out_cost > 45 } #Even less likely to do it a fourth time
+			}
+			modifier = {
+				factor = 0
+				check_variable = { SOV_propaganda_sweep_scum_out_cost > 90 } #Shouldn't even considered doing it a fifth time
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			has_completed_focus = SOV_the_komsomol
+			SOV_propaganda_poster_slot_available = yes
+			has_war = yes
+			any_enemy_country = {
+				any_controlled_state = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		visible = {
+				OR = {
+					has_game_rule = { 
+					rule = larp_barb
+					option = on
+				}
+				#has_completed_focus = SOV_the_komsomol
+				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+			}
+		}
+
+		days_remove = SOV_longer_propaganda_campaign_duration
+	
 		days_re_enable = SOV_default_propaganda_campaign_cooldown
 
 		cost = SOV_propaganda_sweep_scum_out_cost
@@ -4296,7 +4480,7 @@ SOV_gosproyektstroy_decision_category = {
 			base = 10
 		}
 
-		targets = { USA ENG GER JAP }
+		# targets = { USA ENG GER JAP }
 
 		#target_trigger = {
 		#	FROM = { SOV_is_valid_subject = yes }
@@ -4310,10 +4494,10 @@ SOV_gosproyektstroy_decision_category = {
 			has_idea = SOV_gosproyektstroy_1
 			NOT = { has_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag }
 			FROM = {
-				has_opinion = {
-					target = ROOT
-					value > 29
-				}
+			#	has_opinion = {
+			#		target = ROOT
+			#		value > 29
+			#	}
 				SOV_is_valid_subject = yes
 				NOT = { has_war_with = ROOT }
 			}
@@ -4327,9 +4511,9 @@ SOV_gosproyektstroy_decision_category = {
 			has_idea = SOV_gosproyektstroy_1
 			NOT = { has_country_flag = SOV_gosproyektstroy_level_2_flag }
 			NOT = { has_country_flag = SOV_gosproyektstroy_level_3_flag }
-			country_exists = FROM
-			NOT = { has_war_with = FROM }
-			FROM = { SOV_is_valid_subject = yes }
+		#	country_exists = FROM
+		#	NOT = { has_war_with = FROM }
+		#	FROM = { SOV_is_valid_subject = yes }
 		}
 
 		cost = SOV_gosproyektstroy_decision_cost
@@ -4343,9 +4527,9 @@ SOV_gosproyektstroy_decision_category = {
 		}
 
 		remove_effect = {
-			if = {
+			if = { 
 				limit = {
-					FROM = { tag = USA }
+				#	FROM = { tag = USA }
 				}
 				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 1 } #USA
 				swap_ideas = {
@@ -4355,7 +4539,7 @@ SOV_gosproyektstroy_decision_category = {
 			}
 			else_if = {
 				limit = {
-					FROM = { tag = ENG }
+				#	FROM = { tag = ENG }
 				}
 				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 2 } #ENG
 				swap_ideas = {
@@ -4365,7 +4549,7 @@ SOV_gosproyektstroy_decision_category = {
 			}
 			else_if = {
 				limit = {
-					FROM = { tag = GER }
+				#	FROM = { tag = GER }
 				}
 				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 3 } #GER
 				swap_ideas = {
@@ -4375,7 +4559,7 @@ SOV_gosproyektstroy_decision_category = {
 			}
 			else_if = {
 				limit = {
-					FROM = { tag = JAP }
+				#	FROM = { tag = JAP }
 				}
 				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 4 } #JAP
 				swap_ideas = {
@@ -7614,7 +7798,7 @@ SOV_diplomacy_asia_decision_category = {
 					target = ROOT
 					value > 80
 				}
-				has_government = ROOT
+				has_government = communism
 			}
 			has_country_flag = { flag = SOV_sinkiang_joined_comintern_counter_flag days > 730 }
 			custom_trigger_tooltip = {
@@ -7636,7 +7820,7 @@ SOV_diplomacy_asia_decision_category = {
 			SIK = {
 				is_subject = no
 			}
-			NOT = { has_war_with = SIK }
+			NOT = { has_war_with = FROM }
 		}
 
 		cost = 100
@@ -7654,14 +7838,6 @@ SOV_diplomacy_asia_decision_category = {
 					modifier = SOV_complied_with_our_demands
 				}
 			}
-				SIK = {
-					set_cosmetic_tag = SIK_ssr
-					set_party_name = {
-					    ideology = communism
-					    long_name = SIK_CPSU_communism_party_long
-					    name = SIK_CPSU_communism_party
-					}
-				}
 
 			# IF THEY REFUSE
 			custom_effect_tooltip = if_they_refuse_tt
@@ -10969,8 +11145,9 @@ SOV_industry_relocation = {
 					has_state_category = large_city
 					has_state_category = megalopolis
 					has_state_category = metropolis
+					has_state_category = rural
 				}
-				infrastructure > 2
+				infrastructure > 1
 			}
 		}
 
@@ -10987,9 +11164,9 @@ SOV_industry_relocation = {
 		available = {
 			FROM = {
 				is_fully_controlled_by = ROOT
-				infrastructure > 2
+				infrastructure > 1
 			}
-			has_equipment = { train_equipment > 79 } #20 trains per factory
+			has_equipment = { train_equipment > 9 } #10 trains per factory
 		}
 
 		visible = {
@@ -11007,7 +11184,7 @@ SOV_industry_relocation = {
 
 		cancel_if_not_visible = no
 
-		cost = 25
+		cost = 15
 
 		days_remove = SOV_industrial_relocation_days
 
@@ -11141,7 +11318,7 @@ SOV_industry_relocation = {
 					add_to_temp_variable = { SOV_factories_counter = 1 }
 				}
 			}
-			custom_effect_tooltip = SOV_relocate_industry_repair_tt
+			# custom_effect_tooltip = SOV_relocate_industry_repair_tt
 			custom_effect_tooltip = SOV_relocate_industry_lose_control_tt
 		}
 	}
@@ -11163,7 +11340,7 @@ SOV_industry_relocation = {
 		available = {
 			has_full_control_of_state = 195
 			has_full_control_of_state = 569
-			has_equipment = { train_equipment > 19 } #20 trains per factory
+			has_equipment = { train_equipment > 9 } #10 trains per factory
 		}
 
 		visible = {
@@ -11176,7 +11353,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = SOV_industrial_relocation_days
 
 		modifier = {
@@ -11934,7 +12111,12 @@ SOV_great_patriotic_war = {
 			any_enemy_country = {
 				SOV_is_major_not_original_sov = yes
 			}
-			has_completed_focus = SOV_lessons_of_war
+			OR = {
+				has_completed_focus = SOV_lessons_of_war
+				has_completed_focus = SOV_study_our_losses
+
+			}
+			
 			surrender_progress > 0.15
 		}
 

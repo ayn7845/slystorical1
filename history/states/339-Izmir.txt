@@ -3,30 +3,17 @@ state={
 	id=339
 	name="STATE_339"
 	manpower = 1
-	resources={
-		chromium=50 # was: 86
-	}
+	
 	
 	state_category = wasteland
 
 	history={
-		owner = TUR
+		owner =CHO
 		
-		victory_points = {
-			4112 15
-		}
-		victory_points = {
-			928 5
-		}
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 2
-			4112 = {
-				naval_base = 5
-			}
-		}
-		add_core_of = TUR
+		
+		
+		
+		add_core_of =CHO
 	}
 
 	provinces={

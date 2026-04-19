@@ -9,10 +9,14 @@ state = {
 	}
 
 	history = {
-		owner = IRQ
-		add_core_of = IRQ
+		owner = ENG
+		add_core_of = WST
 		victory_points = {
 			12413 1 # Rumadiyah
+		}
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 

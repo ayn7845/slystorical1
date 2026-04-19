@@ -15,13 +15,9 @@ if = {
 	}
 }
 if = {
-	limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
+		limit = { has_game_rule = { 
+					rule = larp_barb
+					option = on } 
 		}
 		set_air_oob = "DEN_1936_air_bba"
 	else = {
@@ -209,6 +205,8 @@ if = {
 	#ECONOMIC CRISIS
 	set_variable = { DEN_economic_crisis_monthly_population = -0.1 }
 	set_variable = { DEN_economic_crisis_stability_weekly = -0.001 }
+	set_variable = { DEN_economic_crisis_neutrality_drift = 0.02 }
+	set_variable = { DEN_economic_crisis_democratic_drift = -0.05 }
 	add_dynamic_modifier = { modifier = DEN_economic_crisis_dynamic_modifier }
 
 	#INDUSTRIAL CAPABILITIES
@@ -519,14 +517,7 @@ if = {
 		}
 	}
 	if = {
-		limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "DEN_1939_air_bba"
 		else = {
 			set_air_oob = "DEN_1939_air_legacy"
@@ -545,7 +536,12 @@ if = {
 		support_weapons = 1
 
 		#doctrines
-		#air_superiority = 1
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		convoy_sailing = 1
+		submarine_operations = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -568,11 +564,6 @@ if = {
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_strategic_destruction
-
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}

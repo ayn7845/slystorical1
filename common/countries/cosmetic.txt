@@ -4,12 +4,12 @@ MAL_UK = {
 }
 
 RAJ_UK = {
-	color = rgb { 170  10  10 }
+	color = rgb { 93  9  9 }
 	color_ui = rgb { 200  10  10 }
 }
 
 RAJ_FREE = {
-	color = rgb { 80  165  10 }
+	color = rgb { 93  9  9 }
 	color_ui = rgb { 80  165  10 }
 }
 
@@ -104,8 +104,8 @@ MUT_UNIFIED = {
 }
 
 SPQR_UNIFIED = {
-	color = rgb { 153 0 0 }
-	color_ui = rgb { 153 0 0 }
+	color = rgb { 143 12 125 }
+	color_ui = rgb { 143 12 125 }
 }
 
 PER_UNIFIED = {
@@ -226,11 +226,6 @@ GER_greater_german_reich = {
 	color_ui = rgb { 115 115 115 }
 }
 
-ADU = {
-	color = rgb { 240 230 155 }
-	color_ui = rgb { 240 230 155 }
-}
-
 CAT_aragon = {
 	color = rgb { 166 68 72 }
 	color_ui = rgb { 166 68 72 }
@@ -262,17 +257,17 @@ ENG_imperial_federation_india_unified = {
 }
 
 CAN_north_america_dominion = {
-	color = rgb { 160 0 0 }
-	color_ui = rgb { 235 0 0 }
+	color = HSV { 1 0.8 0.5 }
+	color_ui = rgb { 155 62 51 }
 }
 
 CAN_UK = {
-	color = rgb { 119 48 39 }
+	color = HSV { 1 0.8 0.5 }
 	color_ui = rgb { 155 62 51 }
 }
 
 CAN_FREE = {
-	color = rgb { 233  59  59 }
+	color = HSV { 1 0.8 0.5 }
 	color_ui = rgb { 155 62 51 }
 }
 
@@ -339,8 +334,8 @@ SPC_poum = {
 }
 
 FRA_VICHY = {
-	color = rgb { 80 168 181 }
-	color_ui = rgb {115 185 196 }
+	color = rgb { 31 170 170 }
+	color_ui = rgb {194 140 86 }
 }
 
 united_polynesia = {
@@ -655,22 +650,22 @@ UBF_united_balkan_federation_neutrality = {
 }
 
 TBE_third_bulgarian_empire_communism = {
-	color = rgb { 138 249 195 }
+	color = rgb { 0 170 0 }
 	color_ui = rgb { 138 249 195 }
 }
 
 TBE_third_bulgarian_empire_democratic = {
-	color = rgb { 138 249 195 }
+	color = rgb { 0 170 0 }
 	color_ui = rgb { 138 249 195 }
 }
 
 TBE_third_bulgarian_empire_fascism = {
-	color = rgb { 138 249 195 }
+	color = rgb { 0 170 0 }
 	color_ui = rgb { 138 249 195 }
 }
 
 TBE_third_bulgarian_empire_neutrality = {
-	color = rgb { 138 249 195 }
+	color = rgb { 0 170 0 }
 	color_ui = rgb { 138 249 195 }
 }
 
@@ -857,11 +852,6 @@ horn_of_africa = {
 }
 
 ethiopia_anarcho_communist = {
-	color = rgb { 193 43 43}
-	color_ui = rgb { 193 43 43}
-}
-
-ETH_African_Union = {
 	color = rgb { 193 43 43}
 	color_ui = rgb { 193 43 43}
 }
@@ -1437,19 +1427,9 @@ COG_mittelafrikan_kingdom = {
 	color_ui = rgb { 51 51 51 }
 }
 
-EGY_brit_puppet = {
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 255 73 121 }
-}
-
 reunified_germany = {
 	color = rgb { 128 128 128 }
 	color_ui = rgb { 115 115 115 }
-}
-
-PAL_mandate = {
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 255 73 121 }
 }
 
 BEL_vnv_dominant =  {
@@ -1515,4 +1495,9 @@ GER_greater_proletarian_german_state = {
 BEL_flanders = {
 	color = rgb { 255 204 0 }
 	color_ui = rgb { 179 143 0 }
+}
+
+european_union_leader = {
+	color = rgb { 0 51 153 }
+	color_ui = rgb { 0 51 153 }
 }

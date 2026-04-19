@@ -2,20 +2,8 @@
 
 ETH_set_up_lon_arms_resolution_effect = yes 
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "ITA_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "ITA_1936_nsb"
-}
+set_oob = "ITA_1936"
+load_oob = "ITA_CONV"
 
 starting_train_buffer = 1.5
 
@@ -120,6 +108,7 @@ if = {
 ################ BOP ##################
 #######################################
 
+#set_variable = { ITA_cores_lost_for_modifiers = 0 } #TODO_Manu: This will be killed once there is code support for has_bop_modifier or something like that
 set_variable = { ITA_bop_take_over_ministry_cost = 50 }
 set_variable = { ITA_bop_resign_ministry_cost = 15 }
 set_variable = { ITA_bop_liturgical_reforms_cd = 365 }
@@ -209,7 +198,7 @@ add_dynamic_modifier = { modifier = ITA_ricostruzione_industriale_dynamic_modifi
 
 #MILITARY INDUSTRY
 set_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = -0.05 }
-set_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = -0.1 }
+set_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0 }
 set_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = -0.05 }
 set_variable = { ITA_military_industry_dm_industrial_capacity_factory = -0.1 }
 
@@ -220,7 +209,7 @@ set_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0 }
 set_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = 0 }
 
 add_dynamic_modifier = { modifier = ITA_military_industry_dynamic_modifier }
-add_ideas = ITA_hidden_research_penalties_ns # Hidden NS to apply research penalties as part of the Military Industry Dynamic Modifier.
+add_ideas = ITA_hidden_research_penalties_ns #TODO_Manu: Hidden NS to apply research penalties as part of the Military Industry Dynamic Modifier. Delete when code support is in
 
 
 #REGIO ESERCITO
@@ -270,23 +259,23 @@ add_dynamic_modifier = { modifier = ITA_regio_esercito_dynamic_modifier }
 
 
 #REGIA AERONAUTICA
-set_variable = { ITA_ra_air_ace_generation_chance_factor = 0.1 }
-set_variable = { ITA_ra_air_superiority_bonus_in_combat = 0.05 }
-set_variable = { ITA_ra_air_doctrine_cost_factor = 0.1 }
-set_variable = { ITA_ra_air_nav_efficiency = -0.1 }
-set_variable = { ITA_ra_air_night_penalty = 0.15 }
-set_variable = { ITA_ra_air_weather_penalty = 0.15 }
-set_variable = { ITA_ra_air_accidents_factor= 0.05 }
+#set_variable = { ITA_ra_air_ace_generation_chance_factor = 0.1 }
+#set_variable = { ITA_ra_air_superiority_bonus_in_combat = 0.05 }
+set_variable = { ITA_ra_air_doctrine_cost_factor = -0.10 }
+#set_variable = { ITA_ra_air_nav_efficiency = -0.1 }
+#set_variable = { ITA_ra_air_night_penalty = 0.15 }
+#set_variable = { ITA_ra_air_weather_penalty = 0.15 }
+#set_variable = { ITA_ra_air_accidents_factor= 0.05 }
 
-set_variable = { ITA_ra_air_training_xp_gain_factor = 0 }
-set_variable = { ITA_ra_air_mission_xp_gain_factor = 0 }
-set_variable = { ITA_ra_strategic_bomb_visibility = 0 }
-set_variable = { ITA_ra_air_strategic_bomber_bombing_factor = 0 }
-set_variable = { ITA_ra_air_range_factor = 0 }
-set_variable = { ITA_ra_air_superiority_efficiency = 0 }
-set_variable = { ITA_ra_air_intercept_efficiency = 0 }
-set_variable = { ITA_ra_sp_air_intercontinental_bomber_speed_factor = 0 }
-set_variable = { ITA_ra_sp_air_mothership_aircraft_speed_factor = 0 }
+#set_variable = { ITA_ra_air_training_xp_gain_factor = 0 }
+#set_variable = { ITA_ra_air_mission_xp_gain_factor = 0 }
+#set_variable = { ITA_ra_strategic_bomb_visibility = 0 }
+#set_variable = { ITA_ra_air_strategic_bomber_bombing_factor = 0 }
+#set_variable = { ITA_ra_air_range_factor = 0 }
+#set_variable = { ITA_ra_air_superiority_efficiency = 0 }
+#set_variable = { ITA_ra_air_intercept_efficiency = 0 }
+#set_variable = { ITA_ra_sp_air_intercontinental_bomber_speed_factor = 0 }
+#set_variable = { ITA_ra_sp_air_mothership_aircraft_speed_factor = 0 }
 
 add_dynamic_modifier = { modifier = ITA_regia_aeronautica_dynamic_modifier }
 
@@ -357,18 +346,18 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
+	marines  = 1
+	paratroopers = 1 
 	tech_trucks = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+	trench_warfare = 1
+	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
 }
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-
 if = {
 	limit = {
 		has_dlc = "La Resistance"
@@ -377,24 +366,14 @@ if = {
 		armored_car1 = 1 #Fiat AB611 entered service in 1933
 	}
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
+
 	set_technology = {
 		gwtank = 1
 		basic_light_tank = 1
+		improved_light_tank = 1
 	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-}
+
+
 if = {
 	limit = {
 		has_dlc = "Battle for the Bosporus"
@@ -425,7 +404,7 @@ if = {
 		basic_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_battery = 1
-		#basic_medium_battery = 1
+		basic_medium_battery = 1
 		basic_light_battery = 1
 		basic_heavy_armor_scheme = 1
 		early_ship_hull_submarine = 1
@@ -438,19 +417,19 @@ if = {
 		basic_ship_hull_heavy = 1
 		mtg_transport = 1
 		coastal_defense_ships = 1
-		#improved_airplane_launcher = 1
+		improved_airplane_launcher = 1
+		basic_heavy_shell = 1
+		basic_dp_light_battery = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
 	}
 	set_naval_oob = "ITA_1936_naval_mtg"
 }
 
 if = {
-	limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
+		limit = { has_game_rule = { 
+					rule = larp_barb
+					option = on } 
 		}
 		set_air_oob = "ITA_1936_air_bba"
 		set_technology = {
@@ -470,6 +449,7 @@ if = {
 		set_air_oob = "ITA_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
+			fighter1 = 1
 			early_bomber = 1
 			naval_bomber1 = 1
 			CAS1 = 1
@@ -478,20 +458,14 @@ if = {
 	}
 }
 
-
-
-# DIPLOMACY / WAR 36
 if = {
 	limit = {
-		has_start_date < 1936.01.02
+		has_dlc = "Man the Guns"
 	}
-
-	declare_war_on = {
-		target = ETH
-		type = annex_everything
-	}
-	give_guarantee = ALB
+	add_ideas = MTG_naval_treaty_cheating
 }
+
+# DIPLOMACY / WAR 36
 
 1939.1.1 = {
 
@@ -623,11 +597,18 @@ if = {
 		support_weapons2 = 1
 		tech_recon = 1
 
+		#doctrines
+		grand_battle_plan = 1
+		prepared_defense = 1
+		battlefleet_concentration = 1
+		submarine_operations = 1
+		
 		#Air
-		#force_rotation = 1
-		#fighter_baiting = 1
-		#low_echelon_support = 1
-		#dispersed_fighting = 1
+		force_rotation = 1
+		fighter_baiting = 1
+		low_echelon_support = 1
+		dispersed_fighting = 1
+
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -650,15 +631,6 @@ if = {
 		concentrated_industry2 = 1
 		concentrated_industry3 = 1
 	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_operational_integrity	
-set_sub_doctrine = defensive_postures
-add_mastery = {
-    amount = 100
-    sub_doctrine = defensive_postures
-}
 	
 	complete_special_project = {
 		project = sp:sp_air_radar
@@ -693,14 +665,7 @@ add_mastery = {
 		set_oob = "ITA_1939_nsb"
 	}
 	if = {
-		limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "ITA_1939_air_bba"
 			set_technology = {
 				aa_hmg = 1
@@ -733,7 +698,7 @@ add_mastery = {
 			has_dlc = "Man the Guns"
 		}
 		set_technology = {
-			#improved_airplane_launcher = 1
+			improved_airplane_launcher = 1
 			
 		}
 		set_naval_oob = "ITA_1939_naval_mtg"
@@ -744,7 +709,7 @@ add_mastery = {
 }
 
 
-set_convoys = 200
+set_convoys = 1200
 
 set_politics = {
 	ruling_party = fascism
@@ -887,19 +852,16 @@ recruit_character = ITA_curio_bernardis
 ##### MISSIOLINIS - TRIGGER EVENTS #####
 ########################################
 
-### IF NOT BBA, trigger the first Missiolini from here
+### IF NOT BBA, trigger the first Missiolini from here #TODO_Manu: PLEASE CHECK IF THIS ACTUALLY WORKS (character has just been recruited)
 if = {
-	limit = { 
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
 	ITA_benito_mussolini = { unit_leader_event = { id = BBA_italo_ethiopian_war_events.01 days = 14 } }  # JAN 36 - Conquer Ethiopia  - APR/JUNE 36 - (120-170 days)
 }
 
 ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.11 days = 185 random_days = 5 } } # JUN 36 - Conquer Ethiopia  - DEC 36 - (170 days)
-#ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.21 days = 370 random_days = 5 } } # JAN 37 - Pacify Ethiopia - DEC 39 - (720 days) #MM: This is now triggered after war with MTTH
+#ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.21 days = 370 random_days = 5 } } # JAN 37 - Pacify Ethiopia - DEC 39 - (720 days) #TODO_Manu: This is now triggered after war with MTTH
 ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.31 days = 370 random_days = 5 } } # JAN 37 - Industrialization - DEC 37 - (350 days)
 ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.41 days = 735 random_days = 5 } } # JAN 38 - Increase Army - DEC 38 (350 days)
 ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.00 days = 1105 random_days = 5 } } # JAN 39 - Random mission dispatcher (350 days) - This event auto-triggers itself every 6 months
@@ -969,20 +931,17 @@ if = {
 	}
 }
 if = {
-	limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
+		limit = { has_game_rule = { 
+					rule = larp_barb
+					option = on } 
 		}
 	create_equipment_variant = {
 		name = "CR.32" #
 		type = small_plane_airframe_0
 		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_1_1x
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			engine_type_slot = engine_2_1x
 			special_type_slot_1 = empty
 		}
 	}
@@ -990,8 +949,9 @@ if = {
 		name = "Ca.111" #
 		type = small_plane_cas_airframe_0
 		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			engine_type_slot = engine_1_1x
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = bomb_locks
+			engine_type_slot = engine_2_1x
 			special_type_slot_1 = empty
 		}
 		obsolete = yes
@@ -1002,7 +962,9 @@ if = {
 		type = medium_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
-			engine_type_slot = engine_1_3x
+			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+			fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+			engine_type_slot = engine_2_3x
 			special_type_slot_1 = lmg_defense_turret
 		}
 		obsolete = yes
@@ -1014,7 +976,9 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = bomb_locks
-			engine_type_slot = engine_1_3x
+			fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+			fixed_auxiliary_weapon_slot_3 = torpedo_mounting
+			engine_type_slot = engine_2_3x
 			special_type_slot_1 = lmg_defense_turret_2x
 		}
 		obsolete = yes
@@ -1026,7 +990,9 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-			engine_type_slot = engine_1_3x
+			fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+			fixed_auxiliary_weapon_slot_3 = torpedo_mounting
+			engine_type_slot = engine_2_3x
 			special_type_slot_1 = lmg_defense_turret_2x
 		}
 		obsolete = yes
@@ -1038,7 +1004,9 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-			engine_type_slot = engine_1_3x
+			fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+			fixed_auxiliary_weapon_slot_3 = torpedo_mounting
+			engine_type_slot = engine_2_3x
 			special_type_slot_1 = lmg_defense_turret_2x
 		}
 		icon = "GFX_ITA_early_bomber_medium"
@@ -1049,6 +1017,7 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+			fixed_auxiliary_weapon_slot_2 = torpedo_mounting
 			engine_type_slot = engine_2_3x
 			special_type_slot_1 = lmg_defense_turret_2x
 		}
@@ -1058,8 +1027,8 @@ if = {
 		name = "Ba.65" #
 		type = small_plane_cas_airframe_1
 		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = bomb_locks
 			engine_type_slot = engine_2_1x
 			special_type_slot_1 = empty
 		}
@@ -1069,90 +1038,16 @@ if = {
 }
 
 #TANKS
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "Fiat 3000"
-		type = light_tank_chassis_0
-		parent_version = 0
-		obsolete = yes
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 2
-		}
-		icon = "GFX_gwtank_medium"
-	}
 
-	add_equipment_to_stockpile = {
-		type = light_tank_chassis_0
-		amount = 150
-		variant_name = "Fiat 3000"
-	}
 
-	create_equipment_variant = {
-		name = "Fiat 3000B"
-		type = light_tank_chassis_0
-		parent_version = 1
-		obsolete = yes
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 2
-		}
-		icon = "GFX_gwtank_medium"
-	}
 
-	add_equipment_to_stockpile = {
-		type = light_tank_chassis_0
-		amount = 40
-		variant_name = "Fiat 3000B"
-	}
-
-	create_equipment_variant = {  #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
-		name = "L3/35"
-		type = light_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_fixed_superstructure_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 1
-		}
-		icon = "GFX_ITA_basic_light_tank_medium"
-	}
-}
-
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
 	add_equipment_to_stockpile = {
 		type = gw_tank_equipment
 		amount = 190
 		producer = ITA
 		variant_name = "Fiat 3000"
 	}
-}
+
 
 if = {
 	limit = {

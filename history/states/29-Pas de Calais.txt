@@ -7,8 +7,7 @@ state={
 	state_category = large_city
 	resources={
 		steel=24 #was 42 was: 112
-		aluminium=8 # was: 22
-		coal = 30 # initial distribution / 140 total
+		aluminium=4 # was: 22
 	}
 
 	history={
@@ -31,10 +30,9 @@ state={
 			}
 		}
 		add_core_of = FRA
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 6
-			}
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 

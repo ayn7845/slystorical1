@@ -7,13 +7,13 @@ defined_text = { # global
 			check_variable = {resource_imported@steel>0}
 			check_variable = {resource@steel>resource_imported@steel}
 		}
-		localization_key = "[?resource@steel|0Y]"
+		localization_key = resourcesteel
 	}
 	text = {
 		trigger = {
 			always=yes
 		}
-		localization_key = "[?resource@steel|0+]"
+		localization_key = resourcesteel1
 	}
 
 
@@ -25,13 +25,13 @@ defined_text = { # global
 			check_variable = {resource_imported@rubber>0}
 			check_variable = {resource@rubber>resource_imported@rubber}
 		}
-		localization_key = "[?resource@rubber|0Y]"
+		localization_key = resourcerubber
 	}
 	text = {
 		trigger = {
 			always=yes
 		}
-		localization_key = "[?resource@rubber|0+]"
+		localization_key = resourcerubber1
 	}
 
 
@@ -43,13 +43,13 @@ defined_text = { # global
 			check_variable = {resource_imported@aluminium>0}
 			check_variable = {resource@aluminium>resource_imported@aluminium}
 		}
-		localization_key = "[?resource@aluminium|0Y]"
+		localization_key = resourcealuminium
 	}
 	text = {
 		trigger = {
 			always=yes
 		}
-		localization_key = "[?resource@aluminium|0+]"
+		localization_key = resourcealuminim1
 	}
 
 
@@ -61,13 +61,13 @@ defined_text = { # global
 			check_variable = {resource_imported@tungsten>0}
 			check_variable = {resource@tungsten>resource_imported@tungsten}
 		}
-		localization_key = "[?resource@tungsten|0Y]"
+		localization_key = resourcetungsten
 	}
 	text = {
 		trigger = {
 			always=yes
 		}
-		localization_key = "[?resource@tungsten|0+]"
+		localization_key = resourcetungsten1
 	}
 
 
@@ -79,46 +79,65 @@ defined_text = { # global
 			check_variable = {resource_imported@chromium>0}
 			check_variable = {resource@chromium>resource_imported@chromium}
 		}
-		localization_key = "[?resource@chromium|0Y]"
+		localization_key = resourcechromium
 	}
 	text = {
 		trigger = {
 			always=yes
 		}
-		localization_key = "[?resource@chromium|0+]"
+		localization_key = resourcechromium1
 	}
 
 
 }
 defined_text = { # global
-	name = oil_text
+	name = vp_text
+
 	text = {
 		trigger = {
-			check_variable = {resource_imported@oil>0}
-			check_variable = {resource@oil>resource_imported@oil}
+			check_variable = {global.allies_score = 0}
 		}
-		localization_key = "[?resource@oil|0Y]"
+		localization_key = not_started_tt
 	}
 	text = {
 		trigger = {
-			always=yes
+			check_variable = {global.axis_score > 10}
 		}
-		localization_key = "[?resource@oil|0+]"
+		localization_key = axis_winning_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {global.allies_score > 10}
+		}
+		localization_key = allies_winning_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {global.axis_score > 7}
+		}
+		localization_key = axis_leading_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {global.allies_score > 7}
+		}
+		localization_key = allies_leading_tt
 	}
 }
+
 defined_text = { # global
-	name = coal_text
+	name = vp_ticking_text
+
 	text = {
 		trigger = {
-			check_variable = {resource_imported@coal>0}
-			check_variable = {resource@coal>resource_imported@coal}
+			has_active_mission = MOD_countdown_to_axis_victory_mission
 		}
-		localization_key = "[?resource@coal|0Y]"
+		localization_key = axis_victory_tt
 	}
 	text = {
 		trigger = {
-			always=yes
+			has_active_mission = MOD_countdown_to_allied_victory_mission
 		}
-		localization_key = "[?resource@coal|0+]"
+		localization_key = allied_victory_tt
 	}
 }

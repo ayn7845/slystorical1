@@ -7,24 +7,13 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = TUR
+		owner =CHO
 		
-		victory_points = {
-			9932 15
-		}
-		victory_points = {
-			10472 5
-		}
-		victory_points = {
-			3979 3 
-		}
-		buildings = {
-			infrastructure = 2
-			9932 = {
-				naval_base = 2
-			}
-		}
-		add_core_of = TUR
+		
+		
+		
+		
+		add_core_of =CHO
 	}
 
 	provinces={

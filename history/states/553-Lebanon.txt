@@ -13,13 +13,17 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 1
 			air_base = 5
 			792 = {
 				naval_base = 3
 			}
 		}
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 		add_core_of = WST
 	}
 

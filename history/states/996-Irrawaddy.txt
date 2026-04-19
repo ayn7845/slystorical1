@@ -6,16 +6,14 @@ state = {
 	manpower = 1662669
 	
 	history = {
-		owner = ENG
-		add_core_of = WST
-
+		owner = RAJ
+		add_core_of = TUM
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 1
 		}
-
-		victory_points = {
-			7254 1 # Bassein
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 

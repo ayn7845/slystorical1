@@ -275,12 +275,9 @@ characters = {
 			logistics_skill = 3
 			legacy_id = 1205
 		}
-	}
-
-	BUL_georgi_markov = {
 		advisor = {
 			slot = army_chief
-			idea_token = BUL_georgi_markov
+			idea_token = BUL_ivan_markov
 			allowed = {
 				has_dlc = "Battle for the Bosporus"
 				original_tag = BUL
@@ -291,13 +288,16 @@ characters = {
 				}
 			}
 			traits = {
-				army_chief_offensive_2
+				army_chief_morale_2
 			}
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
+	}
+
+	BUL_georgi_markov = {
 		name = BUL_georgi_markov
 		portraits = {
 			army = {
@@ -305,17 +305,24 @@ characters = {
 				small = GFX_portrait_BUL_georgi_markov_small
 			}
 		}
-		corps_commander = {
-			traits = { old_guard infantry_leader organizer trickster commando}
-			skill = 8
+		field_marshal = {
+			traits = { old_guard infantry_leader organizer logistics_wizard defensive_doctrine combined_arms_expert ambusher cavalry_leader }
+			skill = 6
 			attack_skill = 5
-			defense_skill = 5
+			defense_skill = 10
 			planning_skill = 3
-			logistics_skill = 5
+			logistics_skill = 3
 			legacy_id = 1206
 		}
+		advisor = {
+			slot = high_command
+			idea_token = BUL_georgi_markov
+			traits = {
+				army_CombinedArms_2
+			}
+			cost = 50
+		}
 	}
-
 
 	BUL_asen_nikolov = {
 		instance = {
@@ -396,14 +403,22 @@ characters = {
 				small = GFX_portrait_BUL_damian_velchev_small
 			}
 		}
-		corps_commander = {
-			traits = { trait_reckless harsh_leader trait_BUL_zveno_member organizer panzer_leader cavalry_leader infantry_leader commando skilled_staffer trickster}
+		field_marshal = {
+			traits = { trait_reckless trait_BUL_zveno_member organizer cavalry_leader combined_arms_expert offensive_doctrine infantry_leader ambusher commando camouflage_expert skilled_staffer }
 			skill = 6
 			attack_skill = 5
-			defense_skill = 5
+			defense_skill = 10
 			planning_skill = 4
 			logistics_skill = 5
 			legacy_id = 1210
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BUL_damian_velchev
+			traits = {
+				army_concealment_2
+			}
+			cost = 50
 		}
 	}
 
@@ -424,6 +439,26 @@ characters = {
 			logistics_skill = 3
 			legacy_id = 1211
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = BUL_angel_dotsev
+			allowed = {
+				has_dlc = "Battle for the Bosporus"
+				original_tag = BUL
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			traits = {
+				army_chief_drill_3
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}	
 	}
 
 	BUL_nikola_nakov = {
@@ -2075,7 +2110,7 @@ characters = {
 		}
 	}
 	
-	BUL_bogdan_filov_fascism = { #MM: THIS GUY IS SPLIT INTO TWO VERSIONS -> SHOULD UNIFY
+	BUL_bogdan_filov_fascism = { #TODO_Manu: THIS GUY IS SPLIT INTO TWO VERSIONS -> SHOULD UNIFY
 		advisor = {
 			slot = political_advisor
 			idea_token = BUL_bogdan_filov_fascism

@@ -2,12 +2,22 @@
 state = {
 	id = 111
 	name = "STATE_111" # UUSIMA
-	manpower = 559000
+	manpower = 776440
 	
 	state_category = large_town
 	
 	history = {
-		owner = FIN
+		# Less Minors + Scraping
+		1936.1.1.15 = { owner = GER add_core_of = GER }
+		1936.1.1.14 = { owner = GER add_core_of = GER }
+		add_core_of = FIN
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
+
+        owner = FIN
+
 		add_core_of = FIN
 		victory_points = { #Helsinki
 			11105 15 

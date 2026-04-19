@@ -51,7 +51,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1940
+		start_year = 1939
 		
 		folder = {
 			name = bba_air_techs_folder
@@ -256,11 +256,10 @@ technologies = {
 				localization_key = SP_UNLOCK_PROJECT
 				PROJECT = sp_air_jet_engine	
 			}
-			
 		}				
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 1939
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 6 }
@@ -284,14 +283,14 @@ technologies = {
 			factor = 2
 			
 			modifier = {
-				factor = 5
+				factor = 4
 				is_major = yes
 			}
 
 			modifier = {
 				factor = 0
 				original_tag = GER
-				date < "1940.2.1"
+				date < "1940.6.1"
 			}
 
 			modifier = {
@@ -340,7 +339,7 @@ technologies = {
 			}
 		}		
 		research_cost = 2
-		start_year = 1944
+		start_year = 1942
 
 		folder = {
 			name = bba_air_techs_folder
@@ -587,7 +586,7 @@ technologies = {
 			}
 		}		
 		research_cost = 2
-		start_year = 1940
+		start_year = 1939
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 6 }
@@ -650,7 +649,7 @@ technologies = {
 			}
 		}
 		research_cost = 2
-		start_year = 1944
+		start_year = 1942
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 8 }
@@ -736,12 +735,6 @@ technologies = {
 			large_plane_airframe_0
 			large_plane_maritime_patrol_plane_airframe_0
 		}
-		allow = {
-            has_game_rule = {
-                rule = strat_bombing
-                option = allowed
-            }
-        }
 	
 		path = {
 			leads_to_tech = basic_large_airframe
@@ -759,7 +752,6 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
-			cat_maritime_patrol
 			mio_cat_all_heavy_aircraft_and_modules
 		}
 		special_project_specialization = { specialization_air }
@@ -796,12 +788,6 @@ technologies = {
 			leads_to_tech = improved_large_airframe
 			research_cost_coeff = 1
 		}
-		allow = {
-            has_game_rule = {
-                rule = strat_bombing
-                option = allowed
-            }
-        }
 
 		research_cost = 2
 		start_year = 1936
@@ -814,7 +800,6 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
-			cat_maritime_patrol
 			mio_cat_all_heavy_aircraft_and_modules
 		}
 		special_project_specialization = { specialization_air }
@@ -865,7 +850,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1940
+		start_year = 1939
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 6 }
@@ -875,7 +860,6 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
-			cat_maritime_patrol
 			mio_cat_all_heavy_aircraft_and_modules
 		}
 		special_project_specialization = { specialization_air }
@@ -908,7 +892,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1944
+		start_year = 1942
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 8 }
@@ -918,7 +902,6 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
-			cat_maritime_patrol
 			mio_cat_all_heavy_aircraft_and_modules
 		}
 		special_project_specialization = { specialization_air }
@@ -965,7 +948,6 @@ technologies = {
 			heavy_air
 			jet_technology
 			cat_strategic_bomber
-			cat_maritime_patrol
 			mio_cat_all_heavy_aircraft_and_modules
 		}
 		special_project_specialization = { specialization_air }
@@ -1054,7 +1036,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1176,7 +1158,6 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_bombs
-			cat_maritime_patrol
 			mio_cat_all_naval_bomber_and_modules
 			mio_cat_all_medium_aircraft_and_modules
 			mio_cat_all_heavy_aircraft_and_modules
@@ -1203,7 +1184,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1219,7 +1200,6 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_bombs
-			cat_maritime_patrol
 			mio_cat_all_naval_bomber_and_modules
 			mio_cat_all_medium_aircraft_and_modules
 			mio_cat_all_heavy_aircraft_and_modules
@@ -1257,7 +1237,6 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_bombs
-			cat_maritime_patrol
 			mio_cat_all_naval_bomber_and_modules
 			mio_cat_all_medium_aircraft_and_modules
 			mio_cat_all_heavy_aircraft_and_modules
@@ -1346,7 +1325,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1939
+		start_year = 1938
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1394,7 +1373,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1939
+		start_year = 1938
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1440,7 +1419,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1939
+		start_year = 1938
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1747,7 +1726,7 @@ technologies = {
 			}
 		}		
 		research_cost = 1.5
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1773,29 +1752,22 @@ technologies = {
 		special_project_specialization = { specialization_air }
 
 		ai_will_do = {
-			factor = 3
+			factor = 5
 			modifier = {
 				is_major = yes
-				factor = 8
-				date > "1940.6.1"
-			}
-			modifier = {
-				factor = 0
-				original_tag = GER
-				date < "1940.12.1"
+				factor = 5
 			}
 			modifier = {
 				num_of_military_factories < 10
 				factor = 0
 			}
-			
 			modifier = {
 				date > "1941.1.1"
-				factor = 2
+				factor = 1.5
 			}
 			modifier = {
 				date > "1942.1.1"
-				factor = 2
+				factor = 1.5
 			}
 			modifier = {
 				date > "1943.1.1"
@@ -1815,7 +1787,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1944
+		start_year = 1942
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1970,7 +1942,7 @@ technologies = {
 		}
 				
 		research_cost = 1.5 #Carrier Variant
-		start_year = 1944
+		start_year = 1942
 
 		# only from focus!!! #####
 		allow = {
@@ -2101,7 +2073,7 @@ technologies = {
 		}	
 
 		research_cost = 1.5
-		start_year = 1944
+		start_year = 1942
 
 		folder = {
 			name = bba_air_techs_folder

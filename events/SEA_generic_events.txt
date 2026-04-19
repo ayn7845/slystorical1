@@ -1,7 +1,0 @@
-###########################
-# SEA Events
-###########################
-
-add_namespace = SEA_generic_events
-
-#Dispatcher event

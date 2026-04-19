@@ -2,25 +2,33 @@
 state={
 	id=1000
 	name="STATE_1000"
-	manpower = 1
+	manpower = 715857
+	resources = {
+		steel = 6
+	}
 	
-	
-	state_category = wasteland
+	state_category = town
 	history={
-		owner = WST
+		owner = PER
 		buildings = {
 			infrastructure = 2
 			arms_factory = 2
 		}
-		
+		victory_points = {
+			1896 5 
+		}
+		add_core_of = PER
 		add_core_of = WST
-		
-		
+		add_core_of = WST
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={
 		1896 2071 4755 4825 12793
 	}
 
-	local_supplies = 0.0 
+	local_supplies=4.0 
 }

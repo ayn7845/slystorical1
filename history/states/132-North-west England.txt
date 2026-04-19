@@ -6,9 +6,8 @@ state= {
 	state_category = metropolis
 	
 	resources={
-		steel = 31 # was: 56
-		aluminium = 2 # was: 4
-		coal = 33 #initial distribution
+		steel=31 # was: 56
+		aluminium=36 # was: 4
 	}
 
 	history= {
@@ -31,11 +30,9 @@ state= {
 			}
 		}
 		add_core_of = ENG
-		1939.1.1 = {
-			buildings = {
-				dockyard = 4
-				industrial_complex = 2
-			}
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 	provinces= {

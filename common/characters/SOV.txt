@@ -170,15 +170,16 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { media_personality armor_officer war_hero winter_specialist }
-			skill = 5
+		field_marshal = {
+			traits = { adaptable war_hero brilliant_strategist aggressive_assaulter winter_specialist panzer_leader combined_arms_expert logistics_wizard thorough_planner defensive_doctrine trickster trait_engineer cavalry_leader organizer ranger urban_assault_specialist }
+			skill = 8
 			attack_skill = 5
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 5
+			defense_skill = 7
+			planning_skill = 5
+			logistics_skill = 7
 			legacy_id = 410
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+			visible = { NOT = { has_game_rule = { rule = larp_barb option = on }}
+			}
 		}
 
 		advisor = {
@@ -206,6 +207,38 @@ characters = {
 			}
 		}		
 	}
+	SOV_georgy_zhukov_barb = {
+		name = SOV_georgy_zhukov
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = GFX_portrait_SOV_georgy_zhukov
+			}
+		}
+		advisor = {
+			slot = high_command
+			traits = { army_chief_morale_3 }
+		}
+		field_marshal = {
+			visible = { 
+				has_game_rule = { 
+					rule = larp_barb 
+					option = on
+				}
+			}
+			traits = { adaptable war_hero brilliant_strategist aggressive_assaulter winter_specialist panzer_leader combined_arms_expert logistics_wizard thorough_planner defensive_doctrine trickster trait_engineer cavalry_leader organizer ranger urban_assault_specialist }
+			skill = 8
+			attack_skill = 5
+			defense_skill = 7
+			planning_skill = 5
+			logistics_skill = 7
+			legacy_id = 410
+			visible = { visible = { has_game_rule = { rule = larp_barb option = on	} }
+		}
+	
+		}
+	}
 
 	SOV_konstantin_rokossovsky = {
 		name = SOV_konstantin_rokossovsky
@@ -217,42 +250,35 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { brilliant_strategist trait_cautious armor_officer }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 2
-			logistics_skill = 4
+		field_marshal = {
+			traits = { panzer_leader trickster trait_engineer skilled_staffer cavalry_leader offensive_doctrine ranger commando organizer combined_arms_expert	camouflage_expert expert_improviser fortress_buster } 
+			skill = 6
+			attack_skill = 7
+			defense_skill = 7
+			planning_skill = 6
+			logistics_skill = 7
 			legacy_id = 402
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}
-
+			visible = {
+				NOT = { 
+					has_game_rule = { 
+						rule = larp_barb
+						option = on
+						}
+					}
+				}		
+			}
+				
+		
 		advisor = {
 			slot = high_command
 			idea_token = konstantin_rokossovsky
 			ledger = army
-			allowed = {
-				original_tag = SOV
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 403.000
-						}
-					}
-				}
-			}
 			available = {
-				has_completed_focus = SOV_positive_heroism
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
+					OR = {
+					has_completed_focus = SOV_positive_heroism
+					has_start_date = 1941.1.1.12
 					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
+				}	
 			traits = {
 				army_armored_3
 			}
@@ -261,6 +287,33 @@ characters = {
 				base = 2
 			}
 		}		
+	}
+
+	
+	SOV_konstantin_rokossovsky_barb = {
+		name = SOV_konstantin_rokossovsky
+
+		portraits = {
+			army = {
+				small = "GFX_idea_konstantin_rokossovsky"
+				large = GFX_portrait_SOV_konstantin_rokossovsky
+			}
+		}	
+		field_marshal = {
+			visible = {
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+			traits = { panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando organizer combined_arms_expert	camouflage_expert expert_improviser fortress_buster } 
+			skill = 6
+			attack_skill = 6
+			defense_skill = 7
+			planning_skill = 6
+			logistics_skill = 7
+			legacy_id = 402
+		}
 	}
 
 	SOV_aleksandr_vasilevsky = {
@@ -360,16 +413,6 @@ characters = {
 				small=GFX_portrait_SOV_nikolay_vatutin_small
 			}
 		}
-		corps_commander = {
-			traits = { trait_reckless infantry_officer }
-			skill = 3
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}
 		advisor = {
 			slot = high_command
 			idea_token = nikolay_vatutin
@@ -378,16 +421,20 @@ characters = {
 				original_tag = SOV
 				
 			}
-			#available = {
-			#	NOT = {has_tech = peoples_army}
-			#}
 			traits = {
-				army_infantry_1
+				army_infantry_2
 			}
-			cost = 100
-			ai_will_do = {
-				factor = 2.000
-			}
+			cost = 50
+		}
+		corps_commander = {
+			traits = { trait_reckless infantry_officer infantry_leader }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 0
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -535,10 +582,6 @@ characters = {
 			cost = 50
 			ai_will_do = {
 				base = 1
-				modifier = {
-					factor = 5
-					NOT = { has_character = SOV_semyon_timoshenko }
-				}
 			}
 		}
 
@@ -852,12 +895,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = {  panzer_leader trickster trait_engineer skilled_staffer cavalry_leader  organizer ranger commando urban_assault_specialist pre_grind }
-			skill = 6
-			attack_skill = 6
-			defense_skill = 9
-			planning_skill = 8
-			logistics_skill = 8
+			traits = { trickster skilled_staffer cavalry_officer winter_specialist inflexible_strategist }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1026,12 +1069,13 @@ characters = {
 			traits = { army_CombinedArms_2}
 		}
 		corps_commander = {
-			traits = { brilliant_strategist  winter_specialist panzer_leader trickster trait_engineer  cavalry_leader organizer commando unyielding_defender pre_grind }
-			skill = 8
-			attack_skill = 5
-			defense_skill = 10
-			planning_skill = 7
-			logistics_skill = 10
+			traits = { brilliant_strategist winter_specialist trickster trait_cautious political_commissar cavalry_leader
+			}
+			skill = 5
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1752,10 +1796,6 @@ characters = {
 			cost = 100
 			ai_will_do = {
 				base = 0.5
-				modifier = {
-					factor = 5
-					NOT = { has_character = SOV_semyon_timoshenko }
-				}
 			}
 		}
 
@@ -1791,10 +1831,6 @@ characters = {
 			cost = 100
 			ai_will_do = {
 				base = 1
-				modifier = {
-					factor = 5
-					NOT = { has_character = SOV_semyon_timoshenko }
-				}
 			}
 		}
 
@@ -4099,136 +4135,221 @@ characters = {
   #####    ####   #  ######  #    #    #    #   ####     #     ####  
 
 
-	SOV_igor_kurchatov = {
-		name = SOV_igor_kurchatov
+  SOV_igor_kurchatov = {
+	name = SOV_igor_kurchatov
+	portraits = {
+		army = {
+			large = GFX_portrait_SOV_igor_kurchatov
+			small = GFX_idea_igor_kurchatov
+		}
+	}
+
+	scientist = {
+		traits = { scientist_trait_nuclear_specialist scientist_trait_fast_learner }
+		skills = {
+			specialization_nuclear = 2
+			specialization_naval = 2
+		}
+	}
+
+	#advisor = {
+	#	cost = 100
+	#	slot = theorist
+	#	idea_token = igor_kurchatov
+	#	ledger = army
+	#	allowed = {
+	#		original_tag = SOV
+	#	}
+	#	research_bonus = {
+	#		nuclear = 0.150
+	#	}
+	#	traits = {
+	#		nuclear_scientist
+	#	}
+	#}
+}
+
+SOV_abram_ioffe = {
+	name = SOV_abram_ioffe
+	portraits = {
+		army = {
+			large = GFX_portrait_SOV_abram_ioffe
+		}
+	}
+
+	scientist = {
+		traits = { scientist_trait_nuclear_power_expert }
+		skills = {
+			specialization_nuclear = 2
+		}
+	}
+}
+
+SOV_sergey_korolyov = {
+	name = SOV_sergey_korolyov
+	portraits = {
+		army = {
+			large = GFX_portrait_SOV_sergei_korolev
+			small = GFX_idea_sergei_korolev
+		}
+	}
+
+	scientist = {
+		traits = { scientist_trait_rocketry_specialist scientist_trait_gifted_engineer }
+		skills = {
+			specialization_air = 2
+		}
+	}
+
+	#advisor = {
+	#	cost = 100
+	#	slot = theorist
+	#	idea_token = sergei_korolev
+	#	ledger = air
+	#	allowed = {
+	#		original_tag = SOV
+	#	}
+	#	research_bonus = {
+	#		rocketry = 0.150
+	#	}
+	#	traits = {
+	#		rocket_scientist
+	#	}
+	#}		
+}
+
+SOV_boris_stechkin = {
+	name = SOV_boris_stechkin
+	portraits = {
+		army = {
+			large = GFX_portrait_SOV_boris_stechkin
+		}
+	}
+
+	scientist = {
+		traits = { scientist_trait_jet_expert scientist_trait_brilliant_theorist }
+		skills = {
+			specialization_air = 2
+		}
+	}
+}
+
+SOV_arkady_nazarov = {
+	name = SOV_arkady_nazarov
+	portraits = {
+		army = {
+			large = GFX_portrait_SOV_arkady_nazarov
+		}
+	}
+
+	scientist = {
+		traits = { scientist_trait_aircraft_specialist scientist_trait_fast_learner }
+		skills = {
+			specialization_air = 2
+		}
+	}
+}
+
+SOV_vladimir_kotelnikov = {
+	name = SOV_vladimir_kotelnikov
+	portraits = {
+		army = {
+			large = GFX_portrait_SOV_vladimir_kotelnikov
+		}
+	}
+
+	scientist = {
+		traits = { scientist_trait_electronics_specialist }
+		skills = {
+			specialization_air = 2
+		}
+	}
+}
+
+# custom scientists 
+
+	SOV_Boris_Georgievich_Chilikin = {
+		name = SOV_Boris_Georgievich_Chilikin
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_igor_kurchatov
-				small = GFX_idea_igor_kurchatov
+				large = GFX_portrait_SOV_Boris_Georgievich_Chilikin
 			}
 		}
-
 		scientist = {
-			traits = { scientist_trait_nuclear_specialist scientist_trait_fast_learner }
+			traits = {
+				scientist_trait_surface_ship_specialist
+			}
 			skills = {
-				specialization_nuclear = 2
 				specialization_naval = 2
 			}
 		}
-
-		#advisor = {
-		#	cost = 100
-		#	slot = theorist
-		#	idea_token = igor_kurchatov
-		#	ledger = army
-		#	allowed = {
-		#		original_tag = SOV
-		#	}
-		#	research_bonus = {
-		#		nuclear = 0.150
-		#	}
-		#	traits = {
-		#		nuclear_scientist
-		#	}
-		#}
 	}
-
-	SOV_abram_ioffe = {
-		name = SOV_abram_ioffe
+	SOV_Boris_Mikhailovich_Malinin = {
+		name = SOV_Boris_Mikhailovich_Malinin
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_abram_ioffe
+				large = GFX_portrait_SOV_Boris_Mikhailovich_Malinin
 			}
 		}
-
 		scientist = {
-			traits = { scientist_trait_nuclear_power_expert }
+			traits = {
+				scientist_trait_submarine_specialist
+			}
 			skills = {
-				specialization_nuclear = 2
+				specialization_naval = 2
 			}
 		}
 	}
-
-	SOV_sergey_korolyov = {
-		name = SOV_sergey_korolyov
+	SOV_Mikhail_Ilyich_Koshkin = {
+		name = SOV_Mikhail_Ilyich_Koshkin
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_sergei_korolev
-				small = GFX_idea_sergei_korolev
+				large = GFX_portrait_SOV_Mikhail_Ilyich_Koshkin
 			}
 		}
-
 		scientist = {
-			traits = { scientist_trait_rocketry_specialist scientist_trait_gifted_engineer }
+			traits = {
+				scientist_trait_armored_specialist
+				scientist_trait_gifted_engineer
+			}
 			skills = {
-				specialization_air = 2
+				specialization_land = 3
 			}
 		}
-
-		#advisor = {
-		#	cost = 100
-		#	slot = theorist
-		#	idea_token = sergei_korolev
-		#	ledger = air
-		#	allowed = {
-		#		original_tag = SOV
-		#	}
-		#	research_bonus = {
-		#		rocketry = 0.150
-		#	}
-		#	traits = {
-		#		rocket_scientist
-		#	}
-		#}		
 	}
-
-	SOV_boris_stechkin = {
-		name = SOV_boris_stechkin
+	SOV_Joseph_Yakovlevich_Kotin = {
+		name = SOV_Joseph_Yakovlevich_Kotin
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_boris_stechkin
+				large = GFX_portrait_SOV_Joseph_Yakovlevich_Kotin
 			}
 		}
-
 		scientist = {
-			traits = { scientist_trait_jet_expert scientist_trait_brilliant_theorist }
+			traits = {
+				scientist_trait_armored_specialist
+			}
 			skills = {
-				specialization_air = 2
+				specialization_land = 3
 			}
 		}
 	}
-
-	SOV_arkady_nazarov = {
-		name = SOV_arkady_nazarov
+	SOV_Vasily_Gavrilovich_Grabin = {
+		name = SOV_Vasily_Gavrilovich_Grabin
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_arkady_nazarov
+				large = GFX_portrait_SOV_Vasily_Gavrilovich_Grabin
 			}
 		}
-
 		scientist = {
-			traits = { scientist_trait_aircraft_specialist scientist_trait_fast_learner }
+			traits = {
+				scientist_trait_artillery_specialist
+			}
 			skills = {
-				specialization_air = 2
+				specialization_land = 3
 			}
 		}
 	}
 
-	SOV_vladimir_kotelnikov = {
-		name = SOV_vladimir_kotelnikov
-		portraits = {
-			army = {
-				large = GFX_portrait_SOV_vladimir_kotelnikov
-			}
-		}
-
-		scientist = {
-			traits = { scientist_trait_electronics_specialist }
-			skills = {
-				specialization_air = 2
-			}
-		}
-	}
 
 
 }

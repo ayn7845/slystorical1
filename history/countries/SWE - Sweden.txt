@@ -10,12 +10,10 @@ if = {
 	}
 }
 if = {
-	limit = { 
-			has_game_rule = { 
-					rule = air_designer
-					option = on
-				}
-			}
+		limit = { has_game_rule = { 
+					rule = larp_barb
+					option = on } 
+		}
 		set_air_oob = "SWE_1936_air_bba"
 		set_technology = {
 			iw_small_airframe = 1
@@ -33,9 +31,10 @@ if = {
 		}
 	}
 }
-
+	add_ideas = {
+		free_trade
+		}
 set_research_slots = 3
-add_ideas = free_trade
 
 if = {
 	limit = { has_dlc = "Arms Against Tyranny" }
@@ -74,7 +73,6 @@ send_embargo = RAJ
 send_embargo = AST
 send_embargo = SOV
 send_embargo = NZL
-send_embargo = BRA
 
 set_technology = {
 	tech_trucks = 1
@@ -122,28 +120,13 @@ create_equipment_variant = {
 	}
 } 
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
+
 	set_technology = {
 		gwtank = 1
 		basic_light_tank = 1
-		basic_medium_tank_chassis = 1
-		improved_medium_tank_chassis = 1
 	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		basic_medium_tank_chassis = 1
-		improved_medium_tank_chassis = 1
-	}
-}
+
+
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -244,12 +227,7 @@ if = {
 		}
 	}
 	if = {
-		limit = { 
-			has_game_rule = { 
-					rule = air_designer
-					option = on
-				}
-			}
+		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "SWE_1939_air_bba"
 		else = {
 			set_air_oob = "SWE_1939_air_legacy"
@@ -418,46 +396,6 @@ if = {
 			special_type_slot_1 = empty
 		}
 		obsolete = yes
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "Stridsvagn m/21"
-		type = light_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 1
-		}
-		obsolete = yes #used for oob
-	}
-	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
-		name = "Stridsvagn m/31"
-		type = light_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_two_man_tank_turret
-			suspension_type_slot = tank_torsion_bar_suspension
-			armor_type_slot = tank_welded_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 2
-			tank_nsb_engine_upgrade = 3
-		}
-		icon = "GFX_generic_light_AAB"
 	}
 }
 

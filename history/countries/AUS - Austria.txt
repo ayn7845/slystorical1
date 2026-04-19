@@ -16,13 +16,9 @@ IF = {
 }
 
 if = {
-	limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
+		limit = { has_game_rule = { 
+					rule = larp_barb
+					option = on } 
 		}
 		set_air_oob = "AUS_1936_air_bba"
 		set_technology = {
@@ -97,10 +93,7 @@ IF = {
 
 	# rules are set here
 
-	country_lock_all_division_template = {
-		is_locked = yes
-		desc = AUS_cannot_train_due_to_treaty_of_saint_germain_en_laye
-	}
+	country_lock_all_division_template = yes
 
 
 	

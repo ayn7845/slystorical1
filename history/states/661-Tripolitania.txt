@@ -9,12 +9,17 @@ state={
 		owner = ITA
 		buildings = {
 			infrastructure = 1
+			air_base = 2
 		}
 		add_core_of = WST
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 	
 	provinces={
-		1174 4051 4117 4176 7154 7194 10037 10067 11940 12009 
+		1174 4051 4117 4176 7154 10067 11940 12009 10754 10758 1118 12711 4962 8077 7939 10037 10923
 	}
 
 	local_supplies=0.0 

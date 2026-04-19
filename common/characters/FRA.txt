@@ -23,7 +23,7 @@ characters={
 		}
 		country_leader={
 			ideology=socialism
-			traits={ stout_defender }
+			traits={ stout_defender economist }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -139,13 +139,18 @@ characters={
 				small=GFX_portrait_FRA_jean_de_lattre_de_tassigny_small
 			}
 		}
-		corps_commander={
-			traits={ brilliant_strategist cavalry_leader organizer war_hero trickster skilled_staffer pre_grind }
+		advisor = {
+			slot = high_command
+			idea_token = FRA_jean_de_lattre_de_tassigny
+			traits = { army_armored_1 }
+		}
+		field_marshal ={
+			traits={ brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter combined_arms_expert panzer_leader cavalry_leader organizer war_hero trickster }
 			skill=4
 			attack_skill=4
-			defense_skill=5
+			defense_skill=4
 			planning_skill=4
-			logistics_skill=5
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -158,13 +163,80 @@ characters={
 				small=GFX_portrait_FRA_alphonse_juin_small
 			}
 		}
-		corps_commander={
-			traits={ career_officer trait_cautious armor_officer panzer_leader trait_engineer skilled_staffer pre_grind }
+		advisor = {
+			slot = high_command
+			idea_token = FRA_alphonse_juin
+			traits = { army_CombinedArms_1 }
+		}
+
+		field_marshal ={
+			traits={ career_officer trait_cautious combined_arms_expert offensive_doctrine fortress_buster armor_officer cavalry_leader panzer_leader trait_engineer expert_improviser }
 			skill=4
-			attack_skill= 4
-			defense_skill= 6
+			attack_skill= 5
+			defense_skill= 4
 			planning_skill=4
-			logistics_skill=5
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	FRA_louis_koeltz ={
+		name = "Louis Koeltz"
+		portraits={
+			army={
+				large= GFX_portrait_koeltz
+				small= GFX_portrait_koeltz_small
+			}
+		}
+		advisor = {
+			visible = { 
+				has_completed_focus = FRA_continue_the_fight2
+			}
+			slot = high_command
+			idea_token = FRA_louis_koeltz
+			traits = { army_CombinedArms_2 }
+		}
+
+		field_marshal ={
+			visible = { 
+				has_completed_focus = FRA_continue_the_fight2
+			}
+			traits={ combined_arms_expert }
+			skill=4
+			attack_skill= 3
+			defense_skill= 3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+	FRA_henry_martin ={
+		name = "Henry Martin"
+		portraits={
+			army={
+				large= GFX_portrait_martin
+				small= GFX_portrait_martin_small
+			}
+		}
+		advisor = {
+			visible = { 
+				has_completed_focus = FRA_continue_the_fight2
+			}
+			slot = high_command
+			idea_token = FRA_henry_martin
+			traits = { army_armored_2 }
+		}
+
+		field_marshal ={
+			visible = { 
+				has_completed_focus = FRA_continue_the_fight2
+			}
+			traits={ panzer_leader }
+			skill=4
+			attack_skill= 3
+			defense_skill= 3
+			planning_skill=3
+			logistics_skill=3
 			legacy_id=0
 		}
 	}
@@ -194,7 +266,7 @@ characters={
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 7
+				factor = 1.000
 			}
 		}
 
@@ -234,7 +306,7 @@ characters={
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 7
+				factor = 1.000
 			}
 		}
 		
@@ -792,10 +864,6 @@ characters={
 			cost =  50
 			ai_will_do = {
 				factor = 1.000
-				modifier = {
-					factor = 2
-					has_capitulated = yes
-				}
 			}
 		}		
 	}
@@ -895,7 +963,7 @@ characters={
 			}
 			cost =  50
 			ai_will_do = {
-				factor = 2
+				factor = 1.000
 			}
 		}
 	}
@@ -918,7 +986,7 @@ characters={
 			}
 			cost =  50
 			ai_will_do = {
-				factor = 0.5
+				factor = 1.000
 			}
 		}
 	}
@@ -941,7 +1009,7 @@ characters={
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 1
+				factor = 1.000
 			}
 		}
 	}
@@ -1273,7 +1341,7 @@ characters={
 				has_completed_focus  = FRA_buy_time 
 				has_government  = democratic 
 			}
-			cost  = 75.000
+			cost  = 50
 			traits  = {
 				appeaser 
 			}
@@ -1493,7 +1561,7 @@ characters={
 			do_effect  = {
 			}
 			ai_will_do  = {
-				factor = 0
+				factor  = 1.000
 			}
 		}
 	}
@@ -1551,7 +1619,7 @@ characters={
 			do_effect  = {
 			}
 			ai_will_do  = {
-				factor = 0.5
+				factor  = 1.000
 			}
 		}
 	}
@@ -1602,8 +1670,8 @@ characters={
 			}
 			do_effect  = {
 			}
-			ai_will_do = {
-				factor = 0.75
+			ai_will_do  = {
+				factor  = 1.000
 			}
 		}
 	}
@@ -1629,7 +1697,7 @@ characters={
 			do_effect  = {
 			}
 			ai_will_do  = {
-				factor = 0
+				factor  = 1.000
 			}
 		}
 	}
@@ -1682,9 +1750,6 @@ characters={
 			}
 			traits  = {
 				head_of_intelligence 
-			}
-			ai_will_do  = {
-				factor  = 0.25
 			}
 		}
 	}

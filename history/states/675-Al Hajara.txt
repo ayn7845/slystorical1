@@ -7,8 +7,8 @@ state = {
 
 	history = {
 
-		owner = IRQ
-		add_core_of = IRQ
+		owner = ENG
+		add_core_of = WST
 
 		victory_points = {
 			12879 1 # Samawah
@@ -17,11 +17,15 @@ state = {
 		buildings = {
 			#infrastructure = 1
 		}
-		
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 	
 	provinces = {
-		10744 12879 13368
+		10744 12879 
+		13368 # NEW PROVINCE HAS TO BE ADDED LATER
 	}
 
 	local_supplies = 0.0 

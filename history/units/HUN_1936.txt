@@ -32,7 +32,7 @@ division_template = {
 units = {
 	##### Honvédelmi Fõparancsnokság #####
 	# Gyorshadtest ('Rapid Corps', actual corps raised in 1940)
-	division= {
+	division= {	
 		#name = "1. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -44,7 +44,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
+	division= {	
 		#name = "2. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -58,7 +58,7 @@ units = {
 	}
 
 	# I Hadtest
-	division= {
+	division= {	
 		#name = "1. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -70,7 +70,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
+	division= {	
 		#name = "2. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -84,7 +84,7 @@ units = {
 	}
 
 	# II Hadtest
-	division= {
+	division= {	
 		#name = "3. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -96,7 +96,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
+	division= {	
 		#name = "4. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -110,7 +110,7 @@ units = {
 	}
 
 	# III Hadtest
-	division= {
+	division= {	
 		#name = "5. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -122,7 +122,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
+	division= {	
 		#name = "6. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -136,7 +136,7 @@ units = {
 	}
 
 	# IV Hadtest
-	division= {
+	division= {	
 		#name = "7. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -148,7 +148,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
+	division= {	
 		#name = "8. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -162,7 +162,7 @@ units = {
 	}
 
 	# V Hadtest
-	division= {
+	division= {	
 		#name = "9. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -174,7 +174,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
+	division= {	
 		#name = "10. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -188,7 +188,7 @@ units = {
 	}
 
 	# VI Hadtest
-	division= {
+	division= {	
 		#name = "11. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -200,7 +200,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
+	division= {	
 		#name = "12. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -214,24 +214,24 @@ units = {
 	}
 
 	# VII Hadtest
-	division= {
+	division= {	
 		#name = "13. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 13
-		}
+		}		
 		location = 6751
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
-	division= {
+	division= {	
 		#name = "14. Gyalogdandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 14
-		}
+		}		
 		location = 6751
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
@@ -243,6 +243,33 @@ units = {
 
 ### Starting Production ###
 instant_effect = {
+
+IF = {
+	limit = {
+		has_game_rule = { 
+			rule = larp_barb
+			option = on
+			}
+		}
+	set_technology = {
+		gwtank = 1
+	}
+}
+IF = {
+	limit = {
+		NOT = {
+		has_game_rule = { 
+			rule = larp_barb
+			option = on
+			}
+		}
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+
+
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1

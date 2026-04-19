@@ -1,0 +1,53 @@
+ideas = { 
+	CHI_wave1 = { 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_warlord_integration4
+
+			modifier = {
+			
+			}
+		}
+		CHI_wave2 = { 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_warlord_integration3
+
+			modifier = {
+			
+			}
+		}
+		CHI_wave3 = { 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_warlord_integration
+
+			modifier = {
+			
+			}
+		}
+	}

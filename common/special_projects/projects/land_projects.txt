@@ -17,16 +17,18 @@ sp_land_flamethrower_tank = {
 	ai_will_do = {
 		base = 1
 	}
-
+	visible = {
+		always = no
+	}
 	allowed = {
 		has_dlc = "No Step Back"
 	}
 	
-	available = {
-		FROM = {
-			has_tech = tech_engineers
-		}
-	}
+	#available = {
+	#	FROM = {
+	#		has_tech = sp_armored_advanced_flamethrower_tech
+	#	}
+	#}
 
 	breakthrough_cost = {
 		specialization_land = 1
@@ -74,7 +76,13 @@ sp_land_flamethrower_tank = {
 		}
 
 		enable_equipment_modules = {
-			flamethrower 
+			advanced_flamethrower 
+		}
+		hidden_effect = {
+			set_technology = {
+				sp_armored_advanced_flamethrower_tech = 1
+				popup = no
+				}
 		}
 
 		enable_equipment_modules = {
@@ -84,11 +92,7 @@ sp_land_flamethrower_tank = {
 			lc_flamethrower_turret
 		}
 
-		enable_subunits = { 
-			light_flame_tank
-			medium_flame_tank
-			heavy_flame_tank
-		}
+		
 	}
 
 	generic_prototype_rewards = {
@@ -104,13 +108,14 @@ sp_land_flamethrower_tank = {
        #  #####   #       #       #  ######  #       #       #    #        #######  #####   #    #  #    #  #####   #       #    #       #   #   #       #    #  #  #       #       #            # 
  #     #  #       #       #    #  #  #    #  #       #  #    #    #        #     #  #   #   #    #  #    #  #   #   #       #    #        # #    #       #    #  #  #    #  #       #       #    # 
   #####   #       ######   ####   #  #    #  ######  #   ####     #        #     #  #    #  #    #   ####   #    #  ######  #####          #     ######  #    #  #   ####   ######  ######   ####  
-                                                                                                                                                                                                
 
 sp_land_military_engineering_vehicles = {
 	specialization = specialization_land
 
 	project_tags = sp_tag_tank
-	
+	visible = {
+		always = no
+	}
 	available = {
 		FROM = {
 			has_tech = tech_engineers
@@ -131,12 +136,6 @@ sp_land_military_engineering_vehicles = {
 		}
 
 		enable_subunits = {
-			limit = {
-				has_game_rule = {
-					rule = urban_assault_vechile
-					option = on
-				}
-			}
 			assault_engineer
 		}
 
@@ -192,21 +191,11 @@ sp_land_land_cruiser = {
 	allowed = {
 		has_dlc = "Gotterdammerung"
 	}
-
+	visible = {
+		always = no
+	}
 	available = {
-		if = {
-			limit = {
-				has_dlc = "No Step Back"
-			}
-			FROM = {
-				has_tech = super_heavy_tank_chassis
-			}
-		}
-		else = {
-			FROM = {
-				has_tech = super_heavy_tank
-			}
-		}
+		always = no
 	}
 	
 	prototype_time = sp_time.prototype.medium
@@ -1002,7 +991,6 @@ sp_land_self_propelled_super_heavy_howitzer = {
 	}
 
 	special_project_parent = {
-		sp_land_military_engineering_vehicles
 		sp_land_super_heavy_howitzer
 	}
 	
@@ -1105,17 +1093,18 @@ sp_land_super_heavy_railway_gun = {
 	specialization = specialization_land
 
 	project_tags = sp_tag_artillery
-	visible = {
-		has_game_rule = { rule = super_heavy_railway_gun option = on }
-	}
+
 	allowed = {
 		has_dlc = "No Step Back"
 	}
-
+	visible = {
+		always = no
+	}
 	available = {
-		FROM = {
-			has_tech = railway_gun
-		}
+		always = no
+	#	FROM = {
+		#	has_tech = armored_train
+		#}
 	}
 
 	prototype_time = sp_time.prototype.long
@@ -1136,18 +1125,18 @@ sp_land_super_heavy_railway_gun = {
 	
 	project_output = {
 		enable_equipments = {
-			super_heavy_railway_gun_equipment_1
+			 railway_gun_equipment_1
 		}
 
 		enable_subunits = {
-			super_heavy_railway_gun
+			railway_gun
 		}
 
 		enable_equipment_modules = {
 			limit = {
 				has_dlc = "Gotterdammerung"
 			}
-			lc_super_heavy_railway_gun
+			lc_hull_mounted_railway_gun 
 		}
 
 		country_effects = {
@@ -1156,13 +1145,13 @@ sp_land_super_heavy_railway_gun = {
 					original_tag = GER
 				}
 				create_railway_gun = {
-					equipment = super_heavy_railway_gun_equipment_1
+					equipment = railway_gun_equipment_1
 					name = "Dora"
 				}
 			}
 			else = {
 				create_railway_gun = {
-					equipment = super_heavy_railway_gun_equipment_1
+					equipment = railway_gun_equipment_1
 				}
 			}
 		}
@@ -1173,223 +1162,7 @@ sp_land_super_heavy_railway_gun = {
 	}
 }
 
-sp_land_multi_charge_large_caliber_gun = {
-	specialization = specialization_land
 
-	project_tags = sp_tag_artillery
-	visible = {
-		has_game_rule = { rule = multi_charge_large_caliber_gun option = on }
-	}
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
-
-	special_project_parent = {
-		sp_land_super_heavy_howitzer
-	}
-		
-	prototype_time = sp_time.prototype.medium
-
-	complexity = sp_complexity.small
-
-	breakthrough_cost = {
-		specialization_land = 1
-	}
-
-	resource_cost = {
-		resources = { 
-			steel = 6
-			tungsten = 4
-			chromium = 2
-		}
-	}
-	
-	project_output = {
-		country_effects = {
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = SP_UNLOCK_BUILDING_ICON_DESC
-					BUILDING = mega_gun_emplacement
-					BUILDING_DESCRIPTION = mega_gun_emplacement_desc
-					ICON_FRAME = 24
-				}
-				#hidden_effect = { #MM: Uncomment this if we get code support for implementing small scale of V-3
-				#	if = {
-				#		limit = {
-				#			FROM = { has_project_flag = multi_charge_large_caliber_gun_small_size_flag }
-				#		}
-				#		add_equipment_bonus = {
-				#			bonus = {
-				#				explosive_ammo_equipment_1 = {
-				#					air_range = -0.25
-				#					air_bombing = -0.35
-				#				}
-				#			}
-				#		}
-				#		add_ideas = sp_multi_charge_large_caliber_gun_small_size_ns
-				#	}
-				#}
-				set_technology = {
-					land_multi_charge_large_caliber_gun_tech = 1
-					popup = no
-				}
-			}
-		}
-	}
-
-	generic_prototype_rewards = {
-		sp_land_generic_reward_always
-	}
-
-	unique_prototype_rewards = {
-
-		sp_land_reward_multi_charge_large_caliber_gun_successful_test_firing = {
-			fire_only_once = yes
-
-			threshold = { 
-				min = 0
-				max = 70
-			}
-
-			weight = {
-				base = 5
-			}
-
-			option = {
-				token = sp_land_reward_option_multi_charge_large_caliber_gun_successful_test_firing
-				
-				iteration_output = {
-					country_effects = {
-						FROM = { add_project_progress_ratio = constant:sp_progress.gain.medium }
-					}
-
-					scientist_effects = {
-						if = {
-							limit = {
-								has_scientist_level = {
-									level < 5
-									specialization = specialization_land
-								}
-							}
-							add_scientist_xp = {
-								experience = constant:sp_scientist_xp_gain.low
-								specialization = specialization_land
-							}
-						}
-					}
-				}
-			}
-		}
-
-		sp_land_reward_multi_charge_large_caliber_gun_test_failure = {
-			fire_only_once = yes
-
-			threshold = { 
-				min = 0
-				max = 70
-			}
-
-			weight = {
-				base = 1
-			}
-
-			option = {
-				token = sp_land_reward_option_multi_charge_large_caliber_gun_test_failure
-				
-				iteration_output = {
-					facility_state_effects = {
-						damage_building = {
-							tags = facility
-							damage = 0.25
-							province = var:facility_province_id
-						}
-						damage_building = {
-							type = infrastructure 
-							damage = 0.15
-						}
-					}
-
-					country_effects = {
-						FROM = { add_project_progress_ratio = constant:sp_progress.loss.medium }
-					}
-
-					scientist_effects = {
-						if = {
-							limit = {
-								has_scientist_level = {
-									level < 5
-									specialization = specialization_land
-								}
-							}
-							add_scientist_xp = {
-								experience = constant:sp_scientist_xp_gain.low
-								specialization = specialization_land
-							}
-							injure_scientist_for_days = 60
-						}
-					}
-				}
-			}
-		}
-
-		sp_land_reward_multi_charge_large_caliber_gun_breakthrough_in_propulsion_technology = {
-			fire_only_once = yes
-
-			threshold = { 
-				min = 60
-				max = 100
-			}
-
-			weight = {
-				base = 2
-			}
-
-			option = {
-				token = sp_land_reward_option_multi_charge_large_caliber_gun_breakthrough_in_propulsion_technology
-				
-				iteration_output = {
-					country_effects = {
-						FROM = { add_project_progress_ratio = constant:sp_progress.gain.high }
-
-						add_breakthrough_progress = {
-							specialization = specialization_land
-							value = sp_breakthrough_progress.low
-						}
-					}
-
-					scientist_effects = {
-						if = {
-							limit = {
-								NOT = { has_trait = scientist_trait_fast_learner }
-							}
-							random_list = {
-								70 = {
-									#No effect
-								}
-								30 = {
-									add_scientist_trait = scientist_trait_fast_learner
-								}
-							}
-						}
-						else_if = {
-							limit = {
-								NOT = { has_trait = scientist_trait_bright }
-							}
-							random_list = {
-								80 = {
-									#No effect
-								}
-								20 = {
-									add_scientist_trait = scientist_trait_bright
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
 
 
 ##     ## ########  ######      ###       ########  #######  ########  ######## 

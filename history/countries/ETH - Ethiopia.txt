@@ -2,13 +2,8 @@ capital = 271
 
 IF = {
 	limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
-		}
+		has_dlc = "By Blood Alone"
+	}
 	ETH_set_up_lon_arms_resolution_effect = yes 
 	set_war_support = 0.30 # People are beginning to lose heart a bit
 	set_oob = "ETH_1936_bba"
@@ -129,12 +124,9 @@ IF = {
 	}
 }
 IF = {
-	limit = { 
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
 	set_oob = "ETH_1936"
 	set_variable = { ETH_war_escalation_level = 0 }
 	set_variable = { ETH_war_escalation_length = 123 } # Six months, starting in October
@@ -164,14 +156,10 @@ recruit_character = ETH_makonnen_endelkatchew
 # Military Advisors
 recruit_character = ETH_john_robinson
 
-IF = {
-	limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
+if = {
+		limit = { has_game_rule = { 
+					rule = larp_barb
+					option = on } 
 		}
 	recruit_character = ETH_hailu_tekle_haymanot
 	recruit_character = ETH_abba_jofir
@@ -259,6 +247,10 @@ set_convoys = 5
 	
 	set_technology = {
 
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
@@ -274,9 +266,6 @@ set_convoys = 5
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
-
-set_grand_doctrine = grand_battleplan
-
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}
@@ -289,14 +278,10 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-IF = {
-	limit = {
-		NOT = {  
-			has_game_rule = { 
-					rule = air_designer
-					option = off
-				}
-			}
+if = {
+		limit = { has_game_rule = { 
+					rule = larp_barb
+					option = on } 
 		}
 	set_popularities = {
 		neutrality = 70

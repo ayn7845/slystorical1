@@ -6,27 +6,52 @@ state=
 	state_category = small_island
 	history=
 	{
-		owner = JAP
+		# No Asia + Scraping
+		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1936.1.1.14 = { owner = WST add_core_of = WST }
+
+        owner = JAP
+
+       # Less Minors
+		1936.1.1.15 = { owner = JAP add_core_of = JAP }
+
 		add_core_of = JAP
 		buildings = {
 			infrastructure = 2
-			air_base = 1
+			air_base = 5
+			anti_air_building = 2
+			10436 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
+			8250 = {
+				naval_base = 3
+				coastal_bunker = 2
+				bunker = 2
+			}
+			8235 = {
+				naval_base = 3
+				coastal_bunker = 2
+				bunker = 2
+			}
 			13025 = {
-				naval_base = 1
-
+				bunker = 3
 			}
 		}
 		victory_points = {
-			13025 5
+			13025 10
 		 }
-
-		 strategic_province_location = {
-		 	defensible_coastline = 13025
+		 victory_points = {
+			8250 2
 		 }
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 
 	}
 	provinces={
-		13025
+		13025 8250 10436 8235
 	}
 
 	local_supplies=0.0 

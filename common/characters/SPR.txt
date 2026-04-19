@@ -550,10 +550,11 @@ characters={
 					small=GFX_portrait_SPA_francisco_franco_small
 				}
 			}
+		
 
 			field_marshal={
 				traits={ logistics_wizard organisational_leader expert_delegator trait_SPA_nationalist_sympathies }
-				skill=3
+				skill=4
 				attack_skill=3
 				defense_skill=2
 				planning_skill=3
@@ -638,7 +639,6 @@ characters={
 			}
 		}
 	}
-
 	SPR_mohamed_meziane={
 		name=SPR_mohamed_meziane
 		portraits={
@@ -647,13 +647,42 @@ characters={
 				small=GFX_portrait_SPR_mohamed_meziane_small
 			}
 		}
-		corps_commander={
-			traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies organizer panzer_leader cavalry_leader infantry_leader commando skilled_staffer trickster combined_arms_expert ambusher camouflage_expert}
+		advisor = {
+			slot = high_command
+			idea_token = SPA_mohamed_meziane
+			traits = { army_CombinedArms_2}
+		}
+		field_marshal={
+			visible = { 
+				has_completed_focus = SPA_the_national_army_of_spain
+			}
+			traits={ trickster career_officer trait_SPA_nationalist_sympathies combined_arms_expert offensive_doctrine camouflage_expert ambusher cavalry_leader infantry_leader commando skilled_staffer hill_fighter ranger desert_fox }
 			skill = 6
-			attack_skill = 5
-			defense_skill = 5
+			attack_skill = 4
+			defense_skill = 10
 			planning_skill = 4
 			logistics_skill = 5
+			legacy_id=1109
+		}
+	}
+	SPR_mohamed_meziane_armor = {
+		name=SPR_mohamed_meziane
+		portraits={
+			army={
+				large="GFX_portrait_SPA_mohamed_meziane"
+				small=GFX_portrait_SPR_mohamed_meziane_small
+			}
+		}
+		field_marshal = {
+			visible = { 
+				has_completed_focus = SPA_the_popular_army_of_spain
+			}
+			traits={ trickster expert_improviser career_officer trait_SPA_nationalist_sympathies organizer combined_arms_expert commando offensive_doctrine camouflage_expert panzer_leader cavalry_leader commando skilled_staffer hill_fighter ranger desert_fox }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 6
 			legacy_id=1109
 		}
 	}
@@ -667,8 +696,8 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer trait_SPA_nationalist_sympathies }
-			skill=3
+			traits={ infantry_officer  infantry_leader infantry_expert trait_SPA_nationalist_sympathies }
+			skill= 4
 			attack_skill=3
 			defense_skill=3
 			planning_skill=2
@@ -822,13 +851,16 @@ characters={
 				cost = 100
 			}
 
-			corps_commander={
-				traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies cavalry_leader infantry_leader organizer trickster commando }
-				skill = 8
-				attack_skill = 4
-				defense_skill = 5
+			field_marshal = {
+				visible = { 
+					has_completed_focus = SPA_the_national_army_of_spain
+				}
+				traits={ brilliant_strategist logistics_wizard defensive_doctrine ambusher infantry_leader combined_arms_expert guerilla_fighter trait_reckless trait_SPA_nationalist_sympathies cavalry_leader organizer trickster }
+				skill = 6
+				attack_skill = 3
+				defense_skill = 10
 				planning_skill = 2
-				logistics_skill = 5
+				logistics_skill = 3
 				legacy_id=1112
 				visible = {
 					OR = {
@@ -873,6 +905,54 @@ characters={
 				cost = 100
 				ai_will_do = {
 					factor = 1.000
+				}
+			}
+		}
+	}
+
+		SPA_juan_yague_armor ={ # Falangist
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name= SPA_juan_yague
+			portraits={
+				army={
+					large="GFX_portrait_SPA_juan_yague"
+					small=GFX_portrait_SPA_juan_yague_small
+				}
+			}
+
+			field_marshal = {
+				visible = { 
+					has_completed_focus = SPA_the_popular_army_of_spain
+				}
+				traits={ brilliant_strategist logistics_wizard thorough_planner panzer_leader combined_arms_expert aggressive_assaulter trait_reckless trait_SPA_nationalist_sympathies panzer_leader cavalry_leader infantry_leader organizer ranger trickster }
+				skill = 6
+				attack_skill = 6
+				defense_skill = 5
+				planning_skill = 6
+				logistics_skill = 6
+				legacy_id=1112
+				visible = {
+					OR = {
+						NOT = { has_global_flag = spanish_civil_war }
+						AND = {
+							tag = SPA
+							has_global_flag = spanish_civil_war
+						}
+					}
+				}
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			name=SPA_juan_yague_blanco
+			portraits={
+				army={
+					small="GFX_idea_generic_air_europe_3"
 				}
 			}
 		}
@@ -1060,8 +1140,8 @@ characters={
 			}
 
 			corps_commander={
-				traits={ trait_SPA_nationalist_sympathies organizer infantry_leader }
-				skill=3
+				traits={ trait_SPA_nationalist_sympathies organizer infantry_leader infantry_expert }
+				skill=4
 				attack_skill=3
 				defense_skill=2
 				planning_skill=3
@@ -1542,9 +1622,9 @@ characters={
 				}
 			}
 			traits = {
-				army_chief_drill_2
+				army_chief_drill_3
 			}
-			cost = 100
+			cost = 50
 		}
 	}
 
@@ -2276,8 +2356,7 @@ characters={
 		name=SPR_mate_zalka
 		portraits={
 			army={
-				large = GFX_portrait_SPR_mate_zalka
-				small = GFX_idea_SPR_mate_zalka
+				small="GFX_idea_SPR_mate_zalka"
 			}
 		}
 		advisor={
@@ -2306,19 +2385,6 @@ characters={
 			}
 			traits = { army_chief_offensive_2 }
 			cost = 100
-		}
-		field_marshal={
-			traits={ trickster }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-			legacy_id= -1
-			visible = {
-				has_completed_focus = SPR_international_brigades
-				has_completed_focus = SPR_the_anti_fascist_workers_revolution
-			}
 		}
 	}
 

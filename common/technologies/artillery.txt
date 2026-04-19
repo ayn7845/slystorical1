@@ -30,8 +30,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_anti_air_1
-			tank_small_cannon
-			secondary_turret_small_cannon
 		}
 
 		on_research_complete = {
@@ -83,7 +81,7 @@ technologies = {
 	interwar_artillery = {
 
 		artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
@@ -91,16 +89,6 @@ technologies = {
 		mot_artillery_brigade = {
 			soft_attack = 0.1
 		}
-		category_self_propelled_artillery = {
-			soft_attack = 0.15
-		}
-
-		enable_equipment_modules = {
-			tank_small_cannon_2
-			tank_close_support_gun
-			#secondary_turret_close_support_gun #MM: Has art and loc but no module definition
-		}
-
 		path = {
 			leads_to_tech = artillery1
 			research_cost_coeff = 1
@@ -162,14 +150,6 @@ technologies = {
 		armored_car = {
 			soft_attack = 0.1
 		}
-
-		enable_equipment_modules = {
-			tank_medium_howitzer
-			tank_medium_cannon
-			lc_medium_cannon_turret #Module for Land Cruiser
-			lc_assault_gun #Module for Land Cruiser
-		}
-
 		path = {
 			leads_to_tech = artillery2
 			research_cost_coeff = 1
@@ -224,7 +204,7 @@ technologies = {
 	artillery2 = {
 
 		artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
@@ -232,9 +212,7 @@ technologies = {
 		mot_artillery_brigade = {
 			soft_attack = 0.1
 		}
-		category_self_propelled_artillery = {
-			soft_attack = 0.1
-		}
+		
 
 		path = {
 			leads_to_tech = artillery3
@@ -285,20 +263,13 @@ technologies = {
 	artillery3 = {
 
 		artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
-		}
-		category_self_propelled_artillery = {
-			soft_attack = 0.05
-		}
-
-		enable_equipment_modules = {
-			tank_medium_howitzer_2
 		}
 		path = {
 			leads_to_tech = artillery4
@@ -346,9 +317,6 @@ technologies = {
 			soft_attack = 0.1
 		}
 
-		enable_equipment_modules = {
-			tank_medium_cannon_2
-		}
 
 		path = {
 			leads_to_tech = artillery5
@@ -394,21 +362,13 @@ technologies = {
 	artillery5 = {
 
 		artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
-		}
-		category_self_propelled_artillery = {
-			soft_attack = 0.05
-		}
-
-		enable_equipment_modules = {
-			auto_loader
-			tank_heavy_howitzer
 		}
 
 		research_cost = 1
@@ -482,8 +442,6 @@ technologies = {
 #		}
 
 		enable_equipment_modules = {
-			tank_rocket_launcher
-			rocket_rails
 			lc_rocket_launcher #Module for Land Cruiser
 		}
 
@@ -519,7 +477,16 @@ technologies = {
 
 	rocket_artillery2 = {
 
-		category_rocket_artillery = {
+		rocket_artillery = {
+			soft_attack = 0.15
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		motorized_rocket_brigade = {
 			soft_attack = 0.15
 		}
 
@@ -555,7 +522,16 @@ technologies = {
 
 	rocket_artillery3 = {
 
-	category_rocket_artillery = {
+		rocket_artillery = {
+			soft_attack = 0.15
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		motorized_rocket_brigade = {
 			soft_attack = 0.15
 		}
 
@@ -597,9 +573,6 @@ technologies = {
 		motorized_rocket_brigade = {
 			soft_attack = 0.3
 		}
-		enable_equipment_modules = {
-			tank_rocket_launcher_2
-		}
 		research_cost = 1
 
 		start_year = 1943
@@ -634,15 +607,12 @@ technologies = {
 		armored_car = {
 			hard_attack = 0.1
 		}
+		
 		enable_equipment_modules = {
 			ship_anti_air_2
-			tank_auto_cannon
-			tank_anti_air_cannon
-			tank_heavy_cannon
 			lc_light_anti_air_battery #Module for Land Cruiser
 		}
 		static_anti_air_damage_factor = 0.10
-		tech_air_damage_factor = -0.02
 		enable_building = {
 			building = anti_air_building
 			level = 5
@@ -713,9 +683,6 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
-		category_self_propelled_anti_air = {
-			air_attack = 0.15
-		}
 		static_anti_air_damage_factor = 0.10
 		path = {
 			leads_to_tech = antiair2
@@ -764,13 +731,10 @@ technologies = {
 		armored_car = {
 			hard_attack = 0.1
 		}
-		static_anti_air_damage_factor = 0.10
-		tech_air_damage_factor = -0.02
+		static_anti_air_damage_factor = 0.15
 
 		enable_equipment_modules = {
 			ship_anti_air_3
-			tank_auto_cannon_2
-			tank_anti_air_cannon_2
 			lc_heavy_anti_air_battery #Module for Land Cruiser
 		}
 
@@ -829,13 +793,8 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
-		category_self_propelled_anti_air = {
-			air_attack = 0.1
-		}
-		enable_equipment_modules = {
-			tank_heavy_cannon_2
-		}
-		static_anti_air_damage_factor = 0.1
+
+		static_anti_air_damage_factor = 0.05
 
 		path = {
 			leads_to_tech = antiair4
@@ -887,10 +846,7 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
-		category_self_propelled_anti_air = {
-			air_attack = 0.05
-		}
-		static_anti_air_damage_factor = 0.1
+		static_anti_air_damage_factor = 0.05
 
 		path = {
 			leads_to_tech = antiair5
@@ -939,14 +895,10 @@ technologies = {
 		armored_car = {
 			hard_attack = 0.1
 		}
-		static_anti_air_damage_factor = 0.05
-		tech_air_damage_factor = -0.02
+		static_anti_air_damage_factor = 0.1
 
 		enable_equipment_modules = {
 			ship_anti_air_4
-			tank_heavy_cannon_3
-			tank_anti_air_cannon_3
-			auto_loader
 			lc_heavy_anti_air_platform #Module for Land Cruiser
 		}
 
@@ -991,14 +943,8 @@ technologies = {
 		}
 		armored_car = {
 			ap_attack = 0.1
-		}		
-		enable_equipment_modules = {
-			tank_high_velocity_cannon
-			tank_heavy_cannon
-			tank_buster_1
-			lc_high_velocity_cannon_turret #Module for Land Cruiser
 		}
-
+	
 		path = {
 			leads_to_tech = antitank1
 			research_cost_coeff = 1
@@ -1079,20 +1025,18 @@ technologies = {
 	}
 
 	antitank1 = {
-
-		category_anti_tank = {
+	
+		anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.2
 		}
-
-		category_tank_destroyers = {
-			hard_attack = 0.15
+		anti_tank_brigade = {
+			hard_attack = 0.1
 			ap_attack = 0.2
 		}
-
-		enable_equipment_modules = {
-			tank_medium_cannon
-			squeezebore_adaptor
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.2
 		}
 		path = {
 			leads_to_tech = antitank2
@@ -1158,14 +1102,11 @@ technologies = {
 		}
 		armored_car = {
 			ap_attack = 0.1
-		}	
+		}
 		enable_equipments = {
 			anti_tank_equipment_2
 		}
-		enable_equipment_modules = {
-			tank_heavy_cannon_2
-			tank_buster_2
-		}
+	
 		path = {
 			leads_to_tech = antitank3
 			research_cost_coeff = 1
@@ -1232,18 +1173,19 @@ technologies = {
 	}
 
 	antitank3 = {
-		enable_equipment_modules = {
-			tank_medium_cannon_2
-		}
-		category_anti_tank = {
+		anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
-
-		category_tank_destroyers = {
+		anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.05
+			ap_attack = 0.1
 		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+	
 
 		path = {
 			leads_to_tech = antitank4
@@ -1308,19 +1250,20 @@ technologies = {
 	}
 
 	antitank4 = {
-		enable_equipment_modules = {
-			tank_high_velocity_cannon_2
-		}
-		
-		category_anti_tank = {
+	
+		anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
-
-		category_tank_destroyers = {
-			hard_attack = 0.05
-			ap_attack = 0.05
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.1
+		}
+	
 
 		path = {
 			leads_to_tech = antitank5
@@ -1385,14 +1328,8 @@ technologies = {
 		}
 		armored_car = {
 			ap_attack = 0.1
-		}	
-		enable_equipment_modules = {
-			tank_high_velocity_cannon_3
-			tank_heavy_cannon_3
-			auto_loader
-			lc_heavy_high_velocity_cannons #Module for Land Cruiser
 		}
-
+	
 		research_cost = 1
 
 		start_year = 1943
@@ -1526,7 +1463,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1940 #TODO_Manu: Adjust if necessary
 
 		folder = {
 			name = artillery_folder
@@ -1580,7 +1517,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1940 #TODO_Manu: Adjust if necessary
 
 		folder = {
 			name = artillery_folder
@@ -1665,9 +1602,7 @@ technologies = {
 		mot_artillery_brigade = {
 			soft_attack = 0.2
 		}
-		category_self_propelled_artillery = {
-			soft_attack = 0.1
-		}
+		
 
 		force_use_small_tech_layout = yes
 		research_cost = 1.5

@@ -1970,6 +1970,13 @@ on_actions = {
 				}
 			}  
 		}
+
+		# Creates the Colonial Template Divisions for Belgium
+		effect = {
+			
+			
+		}
+
 		effect = {
 			IF = {
 				limit = { has_dlc = "Gotterdammerung" }

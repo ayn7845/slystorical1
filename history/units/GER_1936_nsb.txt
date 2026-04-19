@@ -127,13 +127,14 @@ set_technology = {
 	tech_mountaineers = 1
 	marines  = 1
 	paratroopers = 1
+	rangers_tech = 1
 	tech_trucks = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	basic_train = 1
-	mobile_warfare = 1
-	trade_interdiction = 1
+	 
+	
 	synth_oil_experiments = 1
 	fuel_silos = 1
 	fuel_refining = 1

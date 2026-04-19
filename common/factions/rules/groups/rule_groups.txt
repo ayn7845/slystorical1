@@ -198,6 +198,14 @@ INFLUENCE_SORT = {
 	}
 }
 
+faction_set_goal_rules = {
+	rules = {
+		goals_only_faction_leader
+		goals_only_player
+	}
+	
+}
+
  ##   ##  #   # ### ###  #  # #   # ### #  # ###     ### #  #     ### #   # ### #   ### 
 #    #  # #   # #   #  # ## # ## ## #   ## #  #       #  ## #     #    # #   #  #   #   
 # ## #  #  # #  ##  ###  # ## # # # ##  # ##  #       #  # ##     ##    #    #  #   ##  

@@ -120,9 +120,9 @@ technologies = {
 		category_cavalry = {
 			maximum_speed = 0.15
 		}
-		category_all_armor = {
-			maximum_speed = 0.1
-		}
+		#category_all_armor = {
+		#	maximum_speed = 0.1
+		#}
 		
 	
 		enable_tactic = tactic_elastic_defense

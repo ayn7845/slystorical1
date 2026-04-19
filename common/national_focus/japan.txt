@@ -3652,7 +3652,7 @@
 		y = 0
 		relative_position_id = JAP_the_manchurian_project 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

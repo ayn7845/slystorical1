@@ -13,13 +13,16 @@ state={
 	local_supplies=0.000
 	history={
 		owner = RAJ
-		add_core_of = RAS
+		add_core_of = TUM
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			1321 3 
 		}
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 }

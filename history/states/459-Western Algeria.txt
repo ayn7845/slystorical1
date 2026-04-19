@@ -7,7 +7,6 @@ state={
 	
 	resources={
 		steel=65 # was:26 was: 36
-		coal = 2 #initial distribution
 	}
 
 	history={
@@ -29,6 +28,10 @@ state={
 			7132 = {
 				naval_base = 6
 			}
+		}
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 

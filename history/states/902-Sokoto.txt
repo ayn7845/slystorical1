@@ -8,7 +8,7 @@ state = {
 
 		owner = ENG
 		add_core_of = WST
-		add_core_of = WST
+		add_core_of = SOK
 
 		buildings = {
 			infrastructure = 1
@@ -17,7 +17,10 @@ state = {
 		victory_points = {
 			1891 1 # Sokoto
 		}
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces = {

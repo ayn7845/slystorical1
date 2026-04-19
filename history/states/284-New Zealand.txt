@@ -3,18 +3,27 @@ state={
 	id=284
 	name="STATE_284" # North Island
 	manpower = 899836
-	
-	resources = {
-		coal = 2 #initial distribution
+	resources={
+		steel= 10
+		oil = 5
 	}
+	
 	state_category = city
 	
 	history={
-		owner = NZL
+		# Less Minors + Scraping
+		1936.1.1.15 = { owner = RAJ add_core_of = AST}
+		1936.1.1.14 = { owner = RAJ add_core_of = AST }
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
+        owner = NZL
+
 		buildings = {
 			infrastructure = 3 #was: 6
-			arms_factory = 1
 			industrial_complex = 4
+			arms_factory = 1
 			air_base = 3
 			4543 = {
 				naval_base = 3
@@ -30,6 +39,10 @@ state={
 			4543 5 
 		}
 		add_core_of = NZL
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={

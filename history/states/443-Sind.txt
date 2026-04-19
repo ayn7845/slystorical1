@@ -9,7 +9,7 @@ state={
 	history={
 		owner = RAJ
 		add_core_of = RAJ
-		add_core_of = SIN
+		add_core_of = TUM
 		victory_points = {
 			3456 25 
 		}
@@ -20,8 +20,10 @@ state={
 				naval_base = 4
 			}
 		}
-		add_core_of = PAK
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={

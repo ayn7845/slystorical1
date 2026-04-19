@@ -1,33 +1,31 @@
 state = {
 	id = 640
 	name = "STATE_640"
-
 	resources = {
-		tungsten = 50 # was 120, 70 was moved to Shan
+		tungsten = 120.000
 	}
 	
 	manpower = 158241
 	state_category = town
 	
 	history = {
-
-		owner = ENG
-		add_core_of = BRM
-
+		owner = RAJ
+		add_core_of = TUM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
-
 		victory_points = {
-			1492 3 # Mandalay
+			1492 3 
 		}
-
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces = {
 		1492 4585 4626 7469 7562 12404 
 	}
-
 	local_supplies = 0.000
 	buildings_max_level_factor = 1.000
 }

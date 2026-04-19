@@ -1,21 +1,30 @@
-state = {
-	id = 535
-	name = "STATE_535" # was Koshinetsu, is actually Hokuriku
+
+state={
+	id=535
+	name="STATE_535" # Koshinetsu
 	manpower = 3871000
-	state_category = city # was large_city
+	state_category = megalopolis
 	
-	resources = {
-		steel = 27 # was: 35
-		tungsten = 8 # was: 10
+	resources={
+		steel=27 # was: 35
+		tungsten=8 # was: 10
 	}
 
-	history = {
+	history={
 
-		owner = JAP
+		# No Asia + Scraping
+		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1936.1.1.14 = { owner = WST add_core_of = WST }
+
+        owner = JAP
+
+       # Less Minors
+		1936.1.1.15 = { owner = JAP add_core_of = JAP }
+
 		add_core_of = JAP
-
+		add_extra_state_shared_building_slots = 17
 		buildings = {
-
+		
 			arms_factory = 1
 			industrial_complex = 2
 			infrastructure = 2
@@ -25,14 +34,17 @@ state = {
 		}
 		
 		victory_points = {
-			10032 15 # Kanazawa
+			10032 15
 		}
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
-	provinces = {
-		998 7102 7217 10032 
+	provinces={
+		998 7102 7217 10015 10032 
 	}
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

@@ -302,12 +302,26 @@ guiTypes = {
 				format = "LEFT"
 			}
 
+			gridboxtype = {
+				name = "rangers_tech_tree"
+				position = { x = 140 y = 1110 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 
 			gridboxtype = {
 				name = "tech_special_forces_tree"
 				position = { x = 140 y = 1140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
+			}
+			#juggle
+			gridboxtype = {
+				name = "Juggle_3_tree"
+				position = { x = 334 y = 402 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
 			}
 		}
 
@@ -538,7 +552,14 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-
+			#juggle
+			gridboxtype = {
+				name = "Juggle_4_tree"
+				position = { x = 334 y = 72 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 		}
 
 		containerWindowType = {
@@ -772,7 +793,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_heavy"
-					position = { x = 480 y = -30 }
+					position = { x = 480 y = 55 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -785,7 +806,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_medium"
-					position = { x = 207 y = 250 }
+					position = { x = 207 y = 55 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -798,7 +819,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_light"
-					position = { x = -84 y = -30  }
+					position = { x = -84 y = 55  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -810,7 +831,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "armour_subtitle_amphibious"
-					position = { x = -360 y = 250 }
+					position = { x = -360 y = 335 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1114,7 +1135,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "armour_subtitle_amphibious"
-					position = { x = -350 y = 230 }
+					position = { x = -350 y = 305 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1149,6 +1170,14 @@ guiTypes = {
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UPPER_LEFT"
+			}
+			#juggle 
+			gridboxtype = {
+				name = "Juggle_5_tree"
+				position = { x = 334 y = 72 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
 			}
 		}
 
@@ -1506,6 +1535,15 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+
+			#juggle
+			gridboxtype = {
+				name = "Juggle_6_tree"
+				position = { x = 334 y = 72 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 		}
 
 		containerWindowType = {
@@ -1568,7 +1606,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1939"
+					text = "1940"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -1581,7 +1619,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1942"
+					text = "1944"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -1732,7 +1770,6 @@ guiTypes = {
 				format = "LEFT"
 			}
 
-
 			gridboxtype = {
 				name = "transport_tree"
 				position = { x = 150 y = 1180 }
@@ -1740,6 +1777,7 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
+			
 
 			#gridboxtype = {
 				#name = "sp_multi_product_supply_ships_tree"
@@ -1872,7 +1910,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1942"
+					text = "1943"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -1909,7 +1947,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_armor"
-					position = { x = 30 y = 485 }
+					position = { x = 30 y = 425 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1923,7 +1961,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_battleship"
-					position = { x = 30 y = 595 }
+					position = { x = 30 y = 545 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1937,7 +1975,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_carrier"
-					position = { x = 30 y = 710 }
+					position = { x = 30 y = 660 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1951,7 +1989,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_sub"
-					position = { x = 30 y = 885 }
+					position = { x = 30 y = 835 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1996,7 +2034,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "basic_cruiser_armor_scheme_tree"
-				position = { x = 70 y = 455 }
+				position = { x = 70 y = 395 }
 				size = { width = 100 height = 210 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -2004,7 +2042,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "early_ship_hull_heavy_tree"
-				position = { x = 70 y = 600 }
+				position = { x = 70 y = 550 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -2012,7 +2050,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "early_ship_hull_carrier_tree"
-				position = { x = 70 y = 780 }
+				position = { x = 70 y = 730 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -2020,12 +2058,12 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "early_ship_hull_submarine_tree"
-				position = { x = 70 y = 1025 }
+				position = { x = 70 y = 975 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-
+			
 		}
 
 		containerWindowType = {
@@ -2081,7 +2119,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1939"
+					text = "1940"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -2094,7 +2132,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1942"
+					text = "1944"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -2116,7 +2154,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_torpedoes"
-					position = { x = 30 y = 585 }
+					position = { x = 30 y = 385 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2129,7 +2167,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_damage_control"
-					position = { x = 30 y = 875 }
+					position = { x = 30 y = 515 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2141,7 +2179,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "naval_subtitle_fire_control"
-					position = { x = 30 y = 1025 }
+					position = { x = 30 y = 655 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2153,7 +2191,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "naval_subtitle_transport"
-					position = { x = 30 y = 1165 }
+					position = { x = 30 y = 795 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2166,7 +2204,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_mines"
-					position = { x = 30 y = 1375 }
+					position = { x = 30 y = 1005 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2194,7 +2232,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "basic_battery_tree"
-				position = { x = 150 y = 275 }
+				position = { x = 150 y = 150 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 35 }
 				format = "LEFT"
@@ -2202,7 +2240,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "basic_torpedo_tree"
-				position = { x = 150 y = 595 }
+				position = { x = 150 y = 395 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -2210,7 +2248,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "damage_control_1_tree"
-				position = { x = 150 y = 895 }
+				position = { x = 150 y = 535 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -2218,7 +2256,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "fire_control_methods_1_tree"
-				position = { x = 150 y = 1030 }
+				position = { x = 150 y = 675 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -2226,7 +2264,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "mtg_transport_tree"
-				position = { x = 150 y = 1175 }
+				position = { x = 150 y = 815 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -2250,7 +2288,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "basic_naval_mines_tree"
-				position = { x = 150 y = 1385 }
+				position = { x = 150 y = 1020 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -3310,6 +3348,14 @@ guiTypes = {
 				hide = yes
 				alwaystransparent = yes
 			}
+			#juggle 
+			gridboxtype = {
+				name = "Juggle_1_tree"
+				position = { x = 834 y = 172 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 		}
 
 		containerWindowType = {
@@ -3751,6 +3797,14 @@ guiTypes = {
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 
+			}
+			#juggle 
+			gridboxtype = {
+				name = "Juggle_2_tree"
+				position = { x = 834 y = 12 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
 			}
 
 		}
@@ -4555,30 +4609,13 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-			containerWindowType = {
-			name = "sub_technology_slot_3"
-			position = { x=140 y=1 }
-			size = { width = 35 height = 26 }
-			clipping = no
-
-			background = {
-				name = "Background"
-				spriteType ="GFX_subtechnology_unavailable_item_bg"
-			}
-
-			iconType = {
-				name = "picture"
-				position = { x=1 y=2 }
-				spriteType = "GFX_subtech_flame"
-				alwaystransparent = yes
-			}
-		}
 
 		iconType = {
 			name = "can_assign_design_team_icon"
 			position = { x=5 y=55 }
 			spriteType = "GFX_design_team_icon"
 		}
+
 	}
 
 	containerWindowType = {

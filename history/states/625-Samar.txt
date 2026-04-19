@@ -2,15 +2,26 @@ state=
 {
 	id=625
 	name="STATE_625"
-	manpower = 1213592
+	manpower = 1138724
 	
-	state_category = town
-
+	state_category = rural
 	history=
 	{
-		owner = PHI
+				# No Asia + Scraping
+		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1936.1.1.14 = { owner = WST add_core_of = WST }
+
+        owner = PHI
+
+       # Less Minors
+		1936.1.1.15 = { owner = PHI  add_core_of = PHI }
+
 		buildings = {
 			infrastructure = 2
+		}
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 		add_core_of = PHI
 	}

@@ -10,7 +10,7 @@ state = {
 
 		owner = RAJ
 		add_core_of = WST
-		add_core_of = FSA
+		add_core_of = WST
 
 		victory_points = {
 			5074 2 # Aden 
@@ -23,15 +23,15 @@ state = {
 				naval_base = 1
 			}
 		}
-
-		1939.1.1 = {
-			owner = ENG
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
-
 	}
 
 	provinces = {
-		5074 13374
+		5074 
+		13374 # HAVE TO ADD NEW PROVINCE
 	}
 	buildings_max_level_factor = 1.000
 	local_supplies = 0.000

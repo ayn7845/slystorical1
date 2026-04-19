@@ -8,9 +8,13 @@ state={
 	manpower = 3523000
 	history={
 		owner = RAJ
-		add_core_of = CIP
+		add_core_of = TUM
 		buildings = {
 			infrastructure = 1
+		}
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 	buildings_max_level_factor=1.000

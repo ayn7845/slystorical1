@@ -8,7 +8,7 @@ state=
 	
 	history=
 	{
-		owner = SPR
+		owner = FRA
 		add_core_of = WST
 		victory_points = {
 			1903 1 
@@ -21,6 +21,10 @@ state=
 			8244 = {
 				naval_base = 1
 			}
+		}
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 	provinces=

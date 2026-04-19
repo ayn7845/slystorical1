@@ -6,7 +6,15 @@ state={
 	state_category = small_island
 
 	history={
-		owner = JAP
+		# No Asia + Scraping
+		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1936.1.1.14 = { owner = WST add_core_of = WST }
+
+        owner = JAP
+
+       # Less Minors
+		1936.1.1.15 = { owner = JAP add_core_of = WST }
+
 		add_core_of = WST
 		buildings = {
 			infrastructure = 2
@@ -42,13 +50,10 @@ state={
 		}
 		victory_points = {
 			13028 1 
-		}		
-		strategic_province_location = {
-			natural_harbor = 2489
 		}
-		
-		strategic_state_location = {
-			favorable_approach = 13031
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 

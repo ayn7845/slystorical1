@@ -7,6 +7,10 @@ state={
 		owner = ENG
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
+			10099 = {
+				naval_base = 1
+			}
 
 		}
 		victory_points = {
@@ -16,7 +20,10 @@ state={
 			10099 1 
 		}
 		add_core_of = WST
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={

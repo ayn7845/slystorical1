@@ -12,14 +12,12 @@ if = {
 	}
 }
 if = {
-	limit = {
-		NOT = {  
+	limit = { 
 			has_game_rule = { 
 					rule = air_designer
-					option = off
+					option = on
 				}
 			}
-		}
 		set_air_oob = "USA_1936_air_bba"
 		set_technology = {
 			iw_small_airframe = 1
@@ -272,14 +270,12 @@ if = {
 		}
 	}
 	if = {
-		limit = {
-		NOT = {  
+		limit = { 
 			has_game_rule = { 
 					rule = air_designer
-					option = off
+					option = on
 				}
 			}
-		}
 			set_air_oob = "USA_1939_air_bba"
 			set_technology = {
 				iw_large_airframe = 1

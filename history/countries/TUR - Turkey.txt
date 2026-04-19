@@ -22,14 +22,12 @@ if = {
 	}
 }
 if = {
-	limit = {
-		NOT = {  
+	limit = { 
 			has_game_rule = { 
 					rule = air_designer
-					option = off
+					option = on
 				}
 			}
-		}
 		set_air_oob = "TUR_1936_air_bba"
 		set_technology = { 
 			bba_early_transport_plane = 1
@@ -267,14 +265,12 @@ if = {
 		}
 	}
 	if = {
-		limit = {
-		NOT = {  
+		limit = { 
 			has_game_rule = { 
 					rule = air_designer
-					option = off
+					option = on
 				}
 			}
-		}
 			set_air_oob = "TUR_1939_air_bba"
 		else = {
 			set_air_oob = "TUR_1939_air_legacy"

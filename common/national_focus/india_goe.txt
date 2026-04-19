@@ -9287,7 +9287,8 @@ focus = {
 	cost = 10
 
 	available = {
-		NOT = { has_idea = RAJ_mobilization_of_the_indian_army }
+        always = no
+		#NOT = { has_idea = RAJ_mobilization_of_the_indian_army }
 	}
 
 	search_filters = {  }

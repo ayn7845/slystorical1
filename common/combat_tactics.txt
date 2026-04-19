@@ -969,9 +969,10 @@ tactic_partisan_sweeps = {
 tactic_urban_defense = { 
 	is_attacker = no
 	trigger = {
-		is_attacker = no
-		is_fighting_in_terrain = urban
-		phase = no
+		#is_attacker = no
+		#is_fighting_in_terrain = urban
+		#phase = no
+		always = no
 	}
 	
 	active = yes
@@ -1012,8 +1013,10 @@ tactic_urban_defense = {
 tactic_sf_storm = { #Basic Urban assault tactic
 	is_attacker = yes
 	trigger = {
-		is_attacker = yes
-		phase = street_fighting
+		#is_attacker = no
+		#is_fighting_in_terrain = urban
+		#phase = no
+		always = no
 	}
 	
 	active = yes
@@ -1034,9 +1037,10 @@ tactic_sf_storm = { #Basic Urban assault tactic
 tactic_sf_barrage = { #Slow moving assault using heavy artillery barrage and artileery sniping
 	is_attacker = yes
 	trigger = {
-		is_attacker = yes
-		phase = street_fighting
-		has_artillery_ratio > 0.1
+		#is_attacker = no
+		#is_fighting_in_terrain = urban
+		#phase = no
+		always = no
 	}
 	
 	active = no
@@ -1056,17 +1060,11 @@ tactic_sf_barrage = { #Slow moving assault using heavy artillery barrage and art
 
 tactic_sf_armor_supported_assault = { #Assault using specialist armoured vehicles
 	is_attacker = yes
-	trigger = {
-		is_attacker = yes
-		phase = street_fighting
-		custom_trigger_tooltip = {
-			tooltip = has_flame_tank_units
-			OR = {
-				has_unit_type = light_flame_tank
-				has_unit_type = medium_flame_tank
-				has_unit_type = heavy_flame_tank
-			}
-		}
+trigger = {
+		#is_attacker = no
+		#is_fighting_in_terrain = urban
+		#phase = no
+		always = no
 	}
 	
 	active = yes 
@@ -1084,13 +1082,11 @@ tactic_sf_armor_supported_assault = { #Assault using specialist armoured vehicle
 
 tactic_sf_mouse_holing = { #House to House assaul, avoiding open streets where possible # Counters fortify
 	is_attacker = yes
-	trigger = {
-		is_attacker = yes
-		phase = street_fighting
-		OR = {
-			has_unit_type = engineer
-			has_unit_type = pioneer_support
-		}
+trigger = {
+		#is_attacker = no
+		#is_fighting_in_terrain = urban
+		#phase = no
+		always = no
 	}
 	
 	active = yes
@@ -1109,9 +1105,11 @@ tactic_sf_mouse_holing = { #House to House assaul, avoiding open streets where p
 
 tactic_sf_defense = { #Basic Urban defensive tactic
 	is_attacker = no
-	trigger = {
-		is_attacker = no
-		phase = street_fighting
+trigger = {
+		#is_attacker = no
+		#is_fighting_in_terrain = urban
+		#phase = no
+		always = no
 	}
 	
 	active = yes
@@ -1129,9 +1127,11 @@ tactic_sf_defense = { #Basic Urban defensive tactic
 
 tactic_sf_fortify = { #countered by mouse holing
 	is_attacker = no
-	trigger = {
-		is_attacker = no
-		phase = street_fighting
+trigger = {
+		#is_attacker = no
+		#is_fighting_in_terrain = urban
+		#phase = no
+		always = no
 	}
 	
 	active = yes
@@ -1149,10 +1149,11 @@ tactic_sf_fortify = { #countered by mouse holing
 }
 
 tactic_sf_ambush = { #countered by mouse holing
-	is_attacker = no
-	trigger = {
-		is_attacker = no
-		phase = street_fighting
+trigger = {
+		#is_attacker = no
+		#is_fighting_in_terrain = urban
+		#phase = no
+		always = no
 	}
 	
 	active = no

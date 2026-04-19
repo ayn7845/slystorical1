@@ -366,6 +366,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	r56_ger_naval_treaty
+	AXIS_free_fuel
 }
 
 # Activates the MEFO Bills Mission

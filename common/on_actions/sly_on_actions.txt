@@ -902,13 +902,32 @@ on_actions = {
 					tooltip = army_attack_factor_tt
 					}
 				}
+				if = { 
+				limit = { 
+					FROM = { 
+						tag = YUG
+						}
+					}
+					GER = { 
+						if = { 
+							limit = { 
+								NOT = { 
+									has_idea = battle_of_africa
+								}
+							}
+						}
+						add_timed_idea = { 
+							idea = battle_of_africa
+							days = 300
+						}
+					}
+				}
 			if = {
 				limit = {
 					FROM = {
 						tag = POL
 					}
 				}
-				
 				every_country = {
 					limit = {
 						allies = yes

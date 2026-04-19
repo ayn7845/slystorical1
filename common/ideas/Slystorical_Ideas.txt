@@ -2,6 +2,26 @@
 ideas = {
 
 	country = {
+        AXIS_free_fuel = {
+			allowed = {
+				always = no
+			}
+			picture = generic_refining_concern_1
+			removal_cost=-1
+			modifier={
+				base_fuel_gain = 2000
+			}
+		}
+        battle_of_africa = { 
+            allowed = { 
+                always = no
+            }
+            picture = generic_supply_depot
+            removal_cost = -1
+            modifier = { 
+                supply_node_range = 0.15
+            }
+        }
         crusade_against_communism = {
 
             Name = "Crusade Against Communism"
@@ -25,7 +45,7 @@ ideas = {
 			
 			Targeted_modifier = {
 				tag = SOV
-				defense_bonus_against = 0.05
+				defense_bonus_against = 0.10
 			}
         }
     }

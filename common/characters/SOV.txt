@@ -171,7 +171,7 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { adaptable war_hero brilliant_strategist aggressive_assaulter winter_specialist panzer_leader combined_arms_expert logistics_wizard thorough_planner defensive_doctrine trickster trait_engineer cavalry_leader organizer ranger urban_assault_specialist }
+			traits = { war_hero brilliant_strategist aggressive_assaulter winter_specialist panzer_leader combined_arms_expert logistics_wizard thorough_planner defensive_doctrine trickster trait_engineer cavalry_leader organizer ranger urban_assault_specialist }
 			skill = 8
 			attack_skill = 5
 			defense_skill = 7

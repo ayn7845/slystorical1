@@ -212,7 +212,7 @@ NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6;
 -- kill vanilla lol
 
 --- cope mod spirits(dopamine COMBAT)
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.10 --- modifier for divs speed under red air
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.20 --- modifier for divs speed under red air
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20.0 -- vanilla 10 Modifier for army manpower reinforcement delivery speed (travel time)
 NDefines.NMilitary.SOFT_ATTACK_TARGETING_FACTOR = 1.0		-- vanilla 1 -- How much we care about potential soft attacks when evaluating priority combat target
 NDefines.NMilitary.HARD_ATTACK_TARGETING_FACTOR = 1.2	--vanilla 1.2 --  How much we care about potential hard attacks when evaluating priority combat target

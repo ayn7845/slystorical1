@@ -13,10 +13,10 @@ on_actions = {
 					type = industrial_complex
 					level = 6
 				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 2
-				}
+				#add_offsite_building = {
+				#	type = arms_factory
+				#	level = 2
+				#}
 			}
 		}
 		YUG = { 

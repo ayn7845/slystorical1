@@ -71,7 +71,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_armor
+			picture = ETH_peacekeeping_forces
 
 			modifier = {
 				mobilization_speed = 1

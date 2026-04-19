@@ -2548,6 +2548,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_ideas = GER_tankograd_idea	
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -2763,7 +2766,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_ideas = GER_tankograd_idea	
+			#add_ideas = GER_tankograd_idea	
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			

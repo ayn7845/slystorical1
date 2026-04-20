@@ -3210,6 +3210,7 @@
 				uses = 2
 				bonus = 2
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = FRA_further_the_reforms
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -3524,7 +3525,7 @@ focus = {
 			
 			add_timed_idea = { 
 				idea = FRA_eco_post_cap_idea 
-				days = 60 
+				days = 45 
 			}
 			EFR = {
 				every_army_leader = {

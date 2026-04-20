@@ -583,6 +583,9 @@ characters = {
 			ai_will_do = {
 				base = 1
 			}
+			visible = { 
+				always = no
+			}
 		}
 
 		field_marshal = {
@@ -1344,6 +1347,9 @@ characters = {
 			ai_will_do = {
 				base = 0.200
 			}
+			visible = { 
+				always = no
+			}
 		}
 
 		navy_leader = {
@@ -1398,6 +1404,9 @@ characters = {
 			cost = 100
 			ai_will_do = {
 				base = 0.200
+			}
+			visible = { 
+				always = no
 			}
 		}
 
@@ -1490,6 +1499,9 @@ characters = {
 			ai_will_do = {
 				base = 1
 			}
+			visible = { 
+				always = no
+			}
 		}
 	}
 
@@ -1539,6 +1551,9 @@ characters = {
 			cost = 100
 			ai_will_do = {
 				base = 1
+			}
+			visible = { 
+				always = no
 			}
 		}		
 	}
@@ -1759,6 +1774,9 @@ characters = {
 			ai_will_do = {
 				base = 0
 			}
+			visible = { 
+				always = no
+			}
 		}
 	}
 
@@ -1846,6 +1864,9 @@ characters = {
 			cost = 100
 			ai_will_do = {
 				base = 1
+			}
+			visible = { 
+				always = no
 			}
 		}
 
@@ -2039,6 +2060,9 @@ characters = {
 			cost = 50
 			ai_will_do = {
 				base = 1
+			}
+			visible = { 
+				always = no
 			}
 		}
 		
@@ -3993,6 +4017,9 @@ characters = {
 			traits = { air_air_superiority_2 }
 			ai_will_do = {
 				base = 1
+			}
+			visible = { 
+				always = no
 			}
 		}
 	}	

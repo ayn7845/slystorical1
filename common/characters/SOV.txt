@@ -171,7 +171,7 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { war_hero brilliant_strategist aggressive_assaulter winter_specialist panzer_leader combined_arms_expert logistics_wizard thorough_planner defensive_doctrine trickster trait_engineer cavalry_leader organizer ranger urban_assault_specialist }
+			traits = { war_hero brilliant_strategist aggressive_assaulter winter_specialist panzer_leader combined_arms_expert logistics_wizard thorough_planner defensive_doctrine trickster cavalry_leader organizer ranger urban_assault_specialist }
 			skill = 8
 			attack_skill = 5
 			defense_skill = 7
@@ -251,9 +251,9 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { panzer_leader trickster trait_engineer skilled_staffer cavalry_leader offensive_doctrine ranger commando organizer combined_arms_expert	camouflage_expert expert_improviser fortress_buster } 
+			traits = { panzer_leader trickster trait_engineer skilled_staffer cavalry_leader offensive_doctrine ranger commando organizer combined_arms_expert expert_improviser fortress_buster } 
 			skill = 6
-			attack_skill = 7
+			attack_skill = 6
 			defense_skill = 7
 			planning_skill = 6
 			logistics_skill = 7
@@ -892,6 +892,7 @@ characters = {
 			slot = army_chief
 			idea_token = SOV_vasily_kuznetsov
 			traits = { army_chief_offensive_2}
+			available = { has_completed_focus = SOV_lessons_of_war }
 		}
 		
 		corps_commander = {

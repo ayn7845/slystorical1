@@ -1,4 +1,4 @@
-version="1.17.*"
+version="1.18.*"
 tags={
 	"Historical"
 }
@@ -17,6 +17,6 @@ replace_path="common/military_industrial_organization"
 replace_path="common/military_industrial_organization/organizations"
 replace_path="gfx/loadingscreens"
 replace_path="map"
-name="Slystorical"
-supported_version="1.17.*"
+name="Slystorical-1.18"
+supported_version="1.18.*"
 remote_file_id="3574837186"

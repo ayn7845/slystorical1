@@ -1748,7 +1748,7 @@
  sp_tag_nuclear_power_speed_factor: "£special_project_nuclear_texticon  Nuclear Power Special Projects Speed"
  sp_tag_radar_speed_factor: "£special_project_radar_texticon  Radar Special Projects Speed"
  
- MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE: "£consumer_goods_texticon  Consumer Goods Factories"
+ MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE: "£civ_factory_consumer_texticon  Expected number of factories put on Consumer Goods"
 
  
 #plane_designer_l_english

@@ -120,9 +120,9 @@ division_template = {
 				}
 			}
 			division_template = {
-				name = "AFRICA BRICKS"
+				name = "AFRICA SMALL"
 				is_locked = no
-				template_counter = 8
+				template_counter = 0
 				priority = 1
 					regiments = {		
 						infantry = { x = 0 y = 0 }		
@@ -137,17 +137,17 @@ division_template = {
 						infantry = { x = 1 y = 4 }		
 						infantry = { x = 2 y = 0 }			
 						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-						infantry = { x = 2 y = 3 }	
-						infantry = { x = 2 y = 4 }		
-						infantry = { x = 3 y = 0 }
-						infantry = { x = 3 y = 1 }
-						infantry = { x = 3 y = 2 }
-						infantry = { x = 4 y = 0 }
-						infantry = { x = 4 y = 1 }
-						infantry = { x = 4 y = 2 }
-						infantry = { x = 4 y = 3 }
-						infantry = { x = 4 y = 4 }		
+						#infantry = { x = 2 y = 2 }
+						#infantry = { x = 2 y = 3 }	
+						#infantry = { x = 2 y = 4 }		
+						#infantry = { x = 3 y = 0 }
+						#infantry = { x = 3 y = 1 }
+						#infantry = { x = 3 y = 2 }
+						#infantry = { x = 4 y = 0 }
+						#infantry = { x = 4 y = 1 }
+						#infantry = { x = 4 y = 2 }
+						#infantry = { x = 4 y = 3 }
+						#infantry = { x = 4 y = 4 }		
 					#medium_tank_destroyer_brigade = { x = 4 y = 2 }
 					#medium_tank_destroyer_brigade = { x = 4 y = 3 }
 				}
@@ -155,8 +155,8 @@ division_template = {
 					anti_tank = { x = 0 y = 0 }
 					anti_air = { x = 0 y = 1 }
 					engineer = { x = 0 y = 2 }
-					field_hospital = { x = 0 y = 3 }
-					logistics_company = { x = 0 y = 4 }
+					signal_company = { x = 0 y = 3 }
+					#logistics_company = { x = 0 y = 4 }
 					#light_tank_recon = { x = 0 y = 5 }
 				}			
 			}
@@ -501,13 +501,13 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
-	division = {
+		division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
 		location = 8118
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -517,7 +517,7 @@ units = {
 				name_order = 3
 		}
 		location = 8118
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -527,7 +527,7 @@ units = {
 				name_order = 3
 		}
 		location = 8101
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -537,7 +537,7 @@ units = {
 				name_order = 3
 		}
 		location = 8101
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -547,7 +547,7 @@ units = {
 				name_order = 3
 		}
 		location = 1071
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -557,7 +557,7 @@ units = {
 				name_order = 3
 		}
 		location = 1071
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -567,7 +567,7 @@ units = {
 				name_order = 3
 		}
 		location = 10901
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -577,7 +577,7 @@ units = {
 				name_order = 3
 		}
 		location = 10901
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -587,7 +587,7 @@ units = {
 				name_order = 3
 		}
 		location = 5099
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -597,7 +597,7 @@ units = {
 				name_order = 3
 		}
 		location = 5099
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -607,7 +607,7 @@ units = {
 				name_order = 3
 		}
 		location = 8060
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -617,7 +617,7 @@ units = {
 				name_order = 3
 		}
 		location = 8060
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -627,7 +627,7 @@ units = {
 				name_order = 3
 		}
 		location = 8004
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -637,7 +637,7 @@ units = {
 				name_order = 3
 		}
 		location = 8004
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -647,7 +647,7 @@ units = {
 				name_order = 3
 		}
 		location = 10870
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -657,7 +657,7 @@ units = {
 				name_order = 3
 		}
 		location = 10870
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -667,7 +667,7 @@ units = {
 				name_order = 3
 		}
 		location = 8030
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -677,7 +677,7 @@ units = {
 				name_order = 3
 		}
 		location = 8030
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -687,7 +687,7 @@ units = {
 				name_order = 3
 		}
 		location = 1068
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -697,7 +697,7 @@ units = {
 				name_order = 3
 		}
 		location = 1068
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -707,7 +707,7 @@ units = {
 				name_order = 3
 		}
 		location = 3996
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -717,7 +717,7 @@ units = {
 				name_order = 3
 		}
 		location = 3996
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -727,7 +727,7 @@ units = {
 				name_order = 3
 		}
 		location = 11974
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -737,7 +737,7 @@ units = {
 				name_order = 3
 		}
 		location = 11974
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -747,7 +747,7 @@ units = {
 				name_order = 3
 		}
 		location = 12071
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -757,7 +757,7 @@ units = {
 				name_order = 3
 		}
 		location = 12071
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -767,7 +767,7 @@ units = {
 				name_order = 3
 		}
 		location = 7011
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -777,7 +777,7 @@ units = {
 				name_order = 3
 		}
 		location = 7011
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -787,7 +787,7 @@ units = {
 				name_order = 3
 		}
 		location = 11999
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -797,7 +797,7 @@ units = {
 				name_order = 3
 		}
 		location = 11999
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -807,7 +807,7 @@ units = {
 				name_order = 3
 		}
 		location = 10099
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -817,7 +817,7 @@ units = {
 				name_order = 3
 		}
 		location = 10099
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.1
 	}
@@ -827,7 +827,7 @@ units = {
 				name_order = 3
 		}
 		location = 12033
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -837,7 +837,7 @@ units = {
 				name_order = 3
 		}
 		location = 12033
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -847,7 +847,7 @@ units = {
 				name_order = 3
 		}
 		location = 9989
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -857,7 +857,7 @@ units = {
 				name_order = 3
 		}
 		location = 9989
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -867,7 +867,7 @@ units = {
 				name_order = 3
 		}
 		location = 5078
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -877,7 +877,7 @@ units = {
 				name_order = 3
 		}
 		location = 5078
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -887,7 +887,7 @@ units = {
 				name_order = 3
 		}
 		location = 12764
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -897,7 +897,7 @@ units = {
 				name_order = 3
 		}
 		location = 12764
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -907,7 +907,7 @@ units = {
 				name_order = 3
 		}
 		location = 10835
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -917,7 +917,7 @@ units = {
 				name_order = 3
 		}
 		location = 10835
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -927,7 +927,7 @@ units = {
 				name_order = 3
 		}
 		location = 7148
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -937,7 +937,7 @@ units = {
 				name_order = 3
 		}
 		location = 7148
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -947,7 +947,7 @@ units = {
 				name_order = 3
 		}
 		location = 12091
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
@@ -957,7 +957,927 @@ units = {
 				name_order = 3
 		}
 		location = 12091
-		division_template = "AFRICA BRICKS" 
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+		division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8118
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8118
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8101
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8101
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1071
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1071
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10901
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10901
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 5099
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 5099
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8060
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8060
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8004
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8004
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10870
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10870
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8030
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8030
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1068
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1068
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 3996
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 3996
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11974
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11974
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12071
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12071
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 7011
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 7011
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11999
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11999
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10099
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10099
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12033
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12033
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9989
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9989
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 5078
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 5078
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12764
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12764
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10835
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10835
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 7148
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 7148
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12091
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12091
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8118
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8118
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8101
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8101
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1071
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1071
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10901
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10901
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 5099
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 5099
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8060
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8060
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8004
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8004
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10870
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10870
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8030
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8030
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1068
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1068
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 3996
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 3996
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11974
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11974
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12071
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12071
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 7011
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 7011
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11999
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11999
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10099
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10099
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12033
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12033
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9989
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9989
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 5078
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 5078
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12764
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12764
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10835
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10835
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 7148
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 7148
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12091
+		division_template = "AFRICA SMALL" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12091
+		division_template = "AFRICA SMALL" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}

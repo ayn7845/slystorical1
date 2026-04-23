@@ -206,12 +206,12 @@ scw_difficulty = {
 	name = "Spanish Civil War" 
 	group = "MSB Rules"
 	icon = GFX_decision_spa_garrison_control_total
-	option = {
+	default = {
 		name = easy
 		text = "REasy"
 		desc = "The Spain player will receive 20 extra fully equipped divisions. (Not Recommmended)"
 	}
-	default = {
+	option = {
 		name = normal
 		text = "GNormal"
 		desc = "The Spanish Civil War will be played without any additional spawn-ins. (Recommmended)"

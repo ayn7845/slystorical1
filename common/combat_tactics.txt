@@ -961,8 +961,8 @@ tactic_partisan_sweeps = {
     picture = partisan_sweeps
     
 	#combat_width = 0.1
-	attacker = 0.25
-	defender = -0.2
+	attacker = 0.20 # was 0.25
+	defender = -0.05 # was -0.2
 }
 
 
